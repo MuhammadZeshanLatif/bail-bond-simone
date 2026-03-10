@@ -1,0 +1,21 @@
+{
+  "name": "A Way to Freedom Bail Bonds",
+  "short_name": "Bail Bonds",
+  "description": "24/7 Professional bail bond services in Delaware",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#D4AF37",
+  "background_color": "#1a1a1a",
+  "display": "standalone",
+  "start_url": "/"
+}

@@ -537,6 +537,9 @@ const SimoneHomePage = () => {
                   We expedite the bail process to get your loved one home as quickly as possible, often within
                   hours.
                 </p>
+                <p>
+                  Serving Wilmington, Newark, New Castle County, and Kent County, Delaware with prompt, reliable processing when it matters most.
+                </p>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
@@ -546,6 +549,7 @@ const SimoneHomePage = () => {
                 </div>
                 <h4>Affordable Rates</h4>
                 <p>Competitive pricing with flexible payment plans. No hidden fees, ever.</p>
+                <p>Serving Wilmington, Newark, New Castle County, and Kent County, Delaware — quality bail bond service at fair rates.</p>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
@@ -555,6 +559,7 @@ const SimoneHomePage = () => {
                 </div>
                 <h4>Compassionate Care</h4>
                 <p>A mother who cares. We treat every client like family during difficult times.</p>
+                <p>Serving Wilmington, Newark, New Castle County, and Kent County, Delaware with understanding and support when you need it.</p>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
@@ -575,6 +580,7 @@ const SimoneHomePage = () => {
                 </div>
                 <h4>Simple Process</h4>
                 <p>We make the bail bond process easy to understand and straightforward.</p>
+                <p>Serving Wilmington, Newark, New Castle County, and Kent County, Delaware — we walk you through each step with clarity and care.</p>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
@@ -597,6 +603,7 @@ const SimoneHomePage = () => {
                 <p>
                   Your privacy is paramount. We handle all cases with complete discretion and confidentiality.
                 </p>
+                <p>Serving Wilmington, Newark, New Castle County, and Kent County, Delaware — your information stays private and secure.</p>
               </div>
             </div>
           </div>

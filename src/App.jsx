@@ -3642,21 +3642,36 @@ const ContactPage = () => {
 const NotFoundPage = ({ navigate }) => {
   useSEO(
     'Page Not Found | A Way to Freedom Bail Bonds',
-    'The page you are looking for could not be found.'
+    'The page you are looking for could not be found. A Way to Freedom Bail Bonds — 24/7 bail bond services in Wilmington, Newark, New Castle County, and Kent County, Delaware.'
   );
 
   return (
-    <div className="page-container">
-      <section className="section-dark" style={{minHeight: '60vh', display: 'flex', alignItems: 'center'}}>
-        <div className="container text-center">
-          <h1 style={{fontSize: '4rem', color: 'var(--primary-gold)'}}>404</h1>
-          <h2>Page Not Found</h2>
-          <p style={{color: 'var(--text-light-secondary)', marginBottom: '2rem'}}>
-            The page you're looking for doesn't exist or has been moved.
-          </p>
-          <a href="#/home" onClick={(e) => {e.preventDefault(); navigate('/home');}} className="btn-primary-gold">
-            <i className="fas fa-home me-2"></i>Back to Home
-          </a>
+    <div className="page-container simone-page">
+      <section className="section-dark not-found-section">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-8 text-center">
+              <div className="not-found-icon">
+                <i className="fas fa-link-slash"></i>
+              </div>
+              <h1 className="not-found-code">404</h1>
+              <h2 className="section-title mb-3">Page Not Found</h2>
+              <p className="not-found-text">
+                The page you&apos;re looking for doesn&apos;t exist or has been moved. We&apos;re here to help — get back on track or reach out for 24/7 bail bond assistance in Delaware.
+              </p>
+              <div className="d-flex flex-wrap justify-content-center gap-3 mt-4">
+                <a href="#/home" onClick={(e) => { e.preventDefault(); navigate('/home'); }} className="btn btn-primary-gold">
+                  <i className="fas fa-home me-2"></i>Back to Home
+                </a>
+                <a href="#/contact" onClick={(e) => { e.preventDefault(); navigate('/contact'); }} className="btn btn-outline-gold">
+                  <i className="fas fa-phone-alt me-2"></i>Contact Us
+                </a>
+              </div>
+              <p className="mt-4 mb-0 text-muted small">
+                Serving Wilmington, Newark, New Castle County, and Kent County, Delaware.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </div>

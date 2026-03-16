@@ -14,14 +14,32 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Check FTP secrets
+        run: |
+          if [ -z "${{ secrets.FTP_SERVER }}" ]; then
+            echo "::error::FTP_SERVER secret missing. Repo → Settings → Secrets and variables → Actions → New repository secret. Name exactly: FTP_SERVER"
+            exit 1
+          fi
+          if [ -z "${{ secrets.FTP_USERNAME }}" ]; then
+            echo "::error::FTP_USERNAME secret missing. Add it in Settings → Secrets and variables → Actions"
+            exit 1
+          fi
+          if [ -z "${{ secrets.FTP_PASSWORD }}" ]; then
+            echo "::error::FTP_PASSWORD secret missing. Add it in Settings → Secrets and variables → Actions"
+            exit 1
+          fi
+          echo "All FTP secrets are set."
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - name: Install dependencies

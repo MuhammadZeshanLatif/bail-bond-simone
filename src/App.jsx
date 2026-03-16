@@ -179,7 +179,7 @@ const Navbar = ({ currentPath, navigate }) => {
             <a href="tel:+17024478550" className="text-decoration-none" style={{color: 'inherit'}}>(702) 447-8550</a>
           </div>
           <a href="tel:+17024478550" className="btn-call-header d-none d-lg-inline-flex">
-            <i className="fas fa-phone-alt me-2"></i>Call Us Now
+            <i className="fas fa-phone-alt me-2"></i>Call Now
           </a>
         </div>
 

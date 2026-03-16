@@ -264,7 +264,7 @@ const Footer = () => {
             Licensed Bail Bond Services • Confidential & Professional Assistance • Available 24/7
           </p>
           <div className="footer-social">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a href="https://www.facebook.com/people/A-Way-to-Freedom-Bail-Bonds/100094085200363/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <i className="fab fa-facebook-f"></i>
             </a>
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -346,7 +346,7 @@ const FloatingButtons = () => {
 const SocialSidebar = () => {
   return (
     <div className="social-sidebar d-none d-md-flex">
-      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Facebook">
+      <a href="https://www.facebook.com/people/A-Way-to-Freedom-Bail-Bonds/100094085200363/" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Facebook">
         <i className="fab fa-facebook-f"></i>
       </a>
       <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Instagram">

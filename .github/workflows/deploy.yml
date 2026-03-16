@@ -1,61 +1,37 @@
-# Deploy: Build and upload to FTP (e.g. away2freedom302.com)
-# Add these secrets in repo: Settings → Secrets and variables → Actions
-#   FTP_SERVER   – host (e.g. 82.25.87.23 or ftp.yourdomain.com)
-#   FTP_USERNAME – FTP username
-#   FTP_PASSWORD – FTP password
+# Push to main → build → upload sirf dist/ ka content Hostinger public_html mein
+# GitHub repo Secrets mein add karo: FTP_HOST, FTP_USERNAME, FTP_PASSWORD
 
-name: Deploy to FTP
+name: Deploy to Hostinger
 
 on:
   push:
-    branches: [master, main]
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Check FTP secrets
-        run: |
-          if [ -z "${{ secrets.FTP_SERVER }}" ]; then
-            echo "::error::FTP_SERVER secret missing. Repo → Settings → Secrets and variables → Actions → New repository secret. Name exactly: FTP_SERVER"
-            exit 1
-          fi
-          if [ -z "${{ secrets.FTP_USERNAME }}" ]; then
-            echo "::error::FTP_USERNAME secret missing. Add it in Settings → Secrets and variables → Actions"
-            exit 1
-          fi
-          if [ -z "${{ secrets.FTP_PASSWORD }}" ]; then
-            echo "::error::FTP_PASSWORD secret missing. Add it in Settings → Secrets and variables → Actions"
-            exit 1
-          fi
-          echo "All FTP secrets are set."
-
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Install and build
+        run: |
+          npm ci
+          npm run build
 
-      - name: Build
-        run: npm run build
-
-      - name: Create 404.html for SPA
-        run: cp dist/index.html dist/404.html
-
-      - name: Deploy to FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy dist to public_html (FTP)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ./
           local-dir: ./dist/
+          server-dir: ./

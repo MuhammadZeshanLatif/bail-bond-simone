@@ -456,6 +456,14 @@ const SimoneHomePage = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const scrollToContact = (e) => {
+    e.preventDefault();
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className="simone-page">
       {/* Hero Section */}
@@ -463,28 +471,30 @@ const SimoneHomePage = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-7 hero-content">
-              <h1 className="hero-subtitle">24/7 BAIL BOND SERVICES</h1>
-              <h1 className="hero-title">
-                Fast, Reliable & <span className="gold-text">Compassionate</span> Bail Bonds in Wilmington & Newark, Delaware
-              </h1>
+              <p className="hero-subtitle">A Way to Freedom Bail Bond Service</p>
+              <h1 className="hero-title">24/7 Bail Bonds Help in Delaware</h1>
               <p className="hero-tagline">
-                &quot;Not Just Another Bail Bonds Agent – A Mother Who Cares&quot;
+                A Way to Freedom provides fast, trusted bail bond help for families, friends, and co-signers after an arrest. We help with felony bonds, misdemeanor bonds, secured bonds, and surety bail bonds. Our goal is to make the process clear, simple, and quick from the first call.
               </p>
-              <div className="hero-cta">
-                <a href="tel:7024478550" className="btn btn-gold me-3 mb-3">
-                  <i className="fas fa-phone-alt me-2"></i>Call Now (702) 447-8550
+              <div className="hero-cta-wrap">
+                <a href="tel:7024478550" className="btn hero-btn-primary">
+                  <i className="fas fa-phone-alt me-2"></i>Call Now
                 </a>
-                <a href="https://wa.me/13029819223?text=Hi%20Simone%2C%20I%20need%20help%20with%20bail%20bond%20services.%20Please%20let%20me%20know%20how%20you%20can%20assist%20me." target="_blank" rel="noopener noreferrer" className="btn btn-outline-gold mb-3">
-                  <i className="fab fa-whatsapp me-2"></i>WhatsApp Us
+                <a href="#contact" onClick={scrollToContact} className="btn hero-btn-outline">
+                  <i className="fas fa-file-signature me-2"></i>Start the Process
+                </a>
+                <a href="tel:7024478550" className="btn hero-btn-outline">
+                  <i className="fas fa-headset me-2"></i>Speak With an Agent
                 </a>
               </div>
-              <div className="mt-4">
-                <span className="location-badge">
-                  <i className="fas fa-map-marker-alt"></i>Serving Newark, Delaware
-                </span>
-                <span className="location-badge">
-                  <i className="fas fa-clock"></i>24/7 Available
-                </span>
+              <div className="hero-badge-row">
+                <span className="hero-badge-item"><i className="fas fa-phone-alt"></i>Free 24/7 Consultation</span>
+                <span className="hero-badge-item"><i className="fas fa-certificate"></i>Licensed &amp; Trusted</span>
+                <span className="hero-badge-item"><i className="fas fa-star"></i>25+ Years Experience</span>
+                <span className="hero-badge-item"><i className="fas fa-bolt"></i>Fast Release Support</span>
+                <span className="hero-badge-item"><i className="fas fa-credit-card"></i>Flexible Payments</span>
+                <span className="hero-badge-item"><i className="fas fa-lock-open"></i>No Collateral Bonds</span>
+                <span className="hero-badge-item"><i className="fas fa-map-marker-alt"></i>Local Agent</span>
               </div>
             </div>
             <div className="col-lg-5">
@@ -500,112 +510,100 @@ const SimoneHomePage = () => {
         </div>
       </section>
 
+      {/* Stats Bar */}
+      <div className="stats-bar">
+        <div className="container-fluid px-0">
+          <div className="row g-0">
+            <div className="col-6 col-md-3">
+              <div className="stat-item">
+                <div className="stat-number">25+</div>
+                <div className="stat-label">Years Experience</div>
+              </div>
+            </div>
+            <div className="col-6 col-md-3">
+              <div className="stat-item">
+                <div className="stat-number">24/7</div>
+                <div className="stat-label">Always Available</div>
+              </div>
+            </div>
+            <div className="col-6 col-md-3">
+              <div className="stat-item">
+                <div className="stat-number">100%</div>
+                <div className="stat-label">Licensed &amp; Trusted</div>
+              </div>
+            </div>
+            <div className="col-6 col-md-3">
+              <div className="stat-item">
+                <div className="stat-number">Fast</div>
+                <div className="stat-label">Release Process</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* About Section */}
       <SimoneAboutSection />
 
       {/* Why Choose Us */}
       <section className="why-choose-section section-padding">
         <div className="container">
-          <div className="text-center mb-5">
+          <div className="text-center mb-2">
+            <div className="section-ornament">✦ &nbsp; WHY CHOOSE US &nbsp; ✦</div>
             <h2 className="section-title">
-              Why Choose <span className="gold-text">Us</span>
+              Why Families in Delaware Choose <span className="gold-text">A Way to Freedom</span>
             </h2>
-            <p className="section-subtitle">The Simone Harris Difference in Wilmington & Newark, Delaware</p>
+            <div className="section-gold-line"></div>
+            <p className="section-subtitle">
+              Families do not call a bail bond company because they have time to compare. They call because they need help now. We keep the process clear, supportive, and easy to begin.
+            </p>
           </div>
-          <div className="row g-4">
-            <div className="col-md-6 col-lg-3">
-              <div className="feature-card">
-                <div className="feature-icon">
-                  <i className="fas fa-clock"></i>
-                </div>
-                <h4>24/7 Availability</h4>
-                <p>
-                  Arrests don&apos;t wait for business hours — and neither do we. A Way to Freedom Bail Bonds is available 24 hours a day, 7 days a week to assist families when they need help the most.
-                </p>
-                <p>
-                  We proudly provide fast, reliable bail bond services throughout Wilmington, Newark, New Castle County, and Kent County, Delaware. No matter the time of day or night, you can count on us to respond quickly and guide you through the bail process.
-                </p>
-              </div>
+          <div className="why-feature-grid">
+            <div className="why-feature-card">
+              <div className="why-feature-icon"><i className="fas fa-bolt"></i></div>
+              <h5>Fast Local Help</h5>
             </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="feature-card">
-                <div className="feature-icon">
-                  <i className="fas fa-bolt"></i>
-                </div>
-                <h4>Fast Release</h4>
-                <p>
-                  We expedite the bail process to get your loved one home as quickly as possible, often within
-                  hours.
-                </p>
-                <p>
-                  Serving Wilmington, Newark, New Castle County, and Kent County, Delaware with prompt, reliable processing when it matters most.
-                </p>
-              </div>
+            <div className="why-feature-card">
+              <div className="why-feature-icon"><i className="fas fa-comments"></i></div>
+              <h5>Clear Answers &amp; Simple Steps</h5>
             </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="feature-card">
-                <div className="feature-icon">
-                  <i className="fas fa-hand-holding-usd"></i>
-                </div>
-                <h4>Affordable Rates</h4>
-                <p>Competitive pricing with flexible payment plans. No hidden fees, ever.</p>
-                <p>Serving Wilmington, Newark, New Castle County, and Kent County, Delaware — quality bail bond service at fair rates.</p>
-              </div>
+            <div className="why-feature-card">
+              <div className="why-feature-icon"><i className="fas fa-file-alt"></i></div>
+              <h5>Bond &amp; Paperwork Support</h5>
             </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="feature-card">
-                <div className="feature-icon">
-                  <i className="fas fa-heart"></i>
-                </div>
-                <h4>Compassionate Care</h4>
-                <p>A mother who cares. We treat every client like family during difficult times.</p>
-                <p>Serving Wilmington, Newark, New Castle County, and Kent County, Delaware with understanding and support when you need it.</p>
-              </div>
+            <div className="why-feature-card">
+              <div className="why-feature-icon"><i className="fas fa-credit-card"></i></div>
+              <h5>Flexible Payment Options</h5>
             </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="feature-card">
-                <div className="feature-icon">
-                  <i className="fas fa-certificate"></i>
-                </div>
-                <h4>Licensed &amp; Trusted</h4>
-                <p>
-                  A Way to Freedom Bail Bonds is led by Simone Harris, a fully licensed bail bond agent serving Wilmington, Newark, New Castle County, and Kent County, Delaware. We operate with professionalism, integrity, and a commitment to helping families navigate the bail process with confidence
-                </p>
-              </div>
+            <div className="why-feature-card">
+              <div className="why-feature-icon"><i className="fas fa-mobile-alt"></i></div>
+              <h5>Start by Phone or E-Paperwork</h5>
             </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="feature-card">
-                <div className="feature-icon">
-                  <i className="fas fa-file-contract"></i>
-                </div>
-                <h4>Simple Process</h4>
-                <p>We make the bail bond process easy to understand and straightforward.</p>
-                <p>Serving Wilmington, Newark, New Castle County, and Kent County, Delaware — we walk you through each step with clarity and care.</p>
-              </div>
+            <div className="why-feature-card">
+              <div className="why-feature-icon"><i className="fas fa-clock"></i></div>
+              <h5>Help After Hours</h5>
             </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="feature-card">
-                <div className="feature-icon">
-                  <i className="fas fa-map-marked-alt"></i>
-                </div>
-                <h4>Local Expertise</h4>
-                <p>
-                  With deep knowledge of the Wilmington, Newark, New Castle County, and Kent County court systems, A Way to Freedom Bail Bonds understands how the local bail process works. Our familiarity with area courts and detention facilities allows us to guide clients efficiently through the steps needed to secure a fast release.
-                </p>
-              </div>
+            <div className="why-feature-card">
+              <div className="why-feature-icon"><i className="fas fa-user-shield"></i></div>
+              <h5>Private &amp; Judgment-Free</h5>
             </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="feature-card">
-                <div className="feature-icon">
-                  <i className="fas fa-user-shield"></i>
-                </div>
-                <h4>Confidential</h4>
-                <p>
-                  Your privacy is paramount. We handle all cases with complete discretion and confidentiality.
-                </p>
-                <p>Serving Wilmington, Newark, New Castle County, and Kent County, Delaware — your information stays private and secure.</p>
-              </div>
+            <div className="why-feature-card">
+              <div className="why-feature-icon"><i className="fas fa-heart"></i></div>
+              <h5>Calm, Caring Communication</h5>
             </div>
+            <div className="why-feature-card">
+              <div className="why-feature-icon"><i className="fas fa-map-marker-alt"></i></div>
+              <h5>Local Delaware Guidance</h5>
+            </div>
+            <div className="why-feature-card">
+              <div className="why-feature-icon"><i className="fas fa-headset"></i></div>
+              <h5>24/7 Urgent Support</h5>
+            </div>
+          </div>
+          <div className="text-center mt-5">
+            <a href="tel:7024478550" className="btn btn-gold btn-shimmer">
+              <i className="fas fa-phone-alt me-2"></i>Call Now — We're Ready
+            </a>
           </div>
         </div>
       </section>
@@ -613,11 +611,13 @@ const SimoneHomePage = () => {
       {/* Services Section */}
       <section id="services" className="services-section section-padding">
         <div className="container">
-          <div className="text-center mb-5">
+          <div className="text-center mb-4">
+            <div className="section-ornament">✦ &nbsp; OUR SERVICES &nbsp; ✦</div>
             <h2 className="section-title">
-              Our <span className="gold-text">Services</span>
+              Main Bail Bond Services We Offer in <span className="gold-text">Delaware</span>
             </h2>
-            <p className="section-subtitle">Complete Bail Bond Services in Wilmington & Newark, Delaware</p>
+            <div className="section-gold-line"></div>
+            <p className="section-subtitle">A Way to Freedom helps families, co-signers, and defendants with fast bail bond support across Delaware.</p>
           </div>
           <div className="row g-4">
             <div className="col-md-6 col-lg-3">
@@ -625,8 +625,8 @@ const SimoneHomePage = () => {
                 <div className="service-icon">
                   <i className="fas fa-shield-alt"></i>
                 </div>
-                <h4>Secured Bail Bonds</h4>
-                <p>Collateral-based bail bonds with flexible terms for larger bond amounts in Delaware.</p>
+                <h3>Bail Bonds</h3>
+                <p>We help people start the release process after bail has been set. Our team explains what the bond amount means, what paperwork is needed, and how the next step works.</p>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
@@ -634,8 +634,8 @@ const SimoneHomePage = () => {
                 <div className="service-icon">
                   <i className="fas fa-gavel"></i>
                 </div>
-                <h4>Felony & Misdemeanor Bonds</h4>
-                <p>Expert handling of felony and misdemeanor bail bonds with fast processing and confidential service. Serving Wilmington, Newark, New Castle County, and Kent County, Delaware.</p>
+                <h3>Criminal Bail Bonds</h3>
+                <p>We help with bail bond needs tied to criminal charges in Delaware, including release conditions and court-related steps.</p>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
@@ -643,13 +643,8 @@ const SimoneHomePage = () => {
                 <div className="service-icon">
                   <i className="fas fa-balance-scale"></i>
                 </div>
-                <h4>Misdemeanor Bonds</h4>
-                <p>
-                  Fast assistance for misdemeanor charges with clear, affordable bail bond services. A Way to Freedom Bail Bonds helps clients secure quick releases while guiding families through the process with professionalism and care.
-                </p>
-                <p>
-                  Serving Wilmington, Newark, New Castle County, and Kent County, Delaware.
-                </p>
+                <h3>Felony Bonds</h3>
+                <p>Felony bonds are tied to more serious criminal charges and often involve higher bond amounts or stricter court conditions.</p>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
@@ -657,8 +652,8 @@ const SimoneHomePage = () => {
                 <div className="service-icon">
                   <i className="fas fa-file-signature"></i>
                 </div>
-                <h4>Surety Bail Bonds</h4>
-                <p>Traditional surety bonds with trusted insurance backing for peace of mind.</p>
+                <h3>Misdemeanor Bonds</h3>
+                <p>Misdemeanor bonds help people get released after less serious charges, with clear explanation of bond amount and co-signer role.</p>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
@@ -666,8 +661,8 @@ const SimoneHomePage = () => {
                 <div className="service-icon">
                   <i className="fas fa-rocket"></i>
                 </div>
-                <h4>Fast Release</h4>
-                <p>Expedited bail processing to minimize time in detention. Often released within hours.</p>
+                <h3>Traffic Bonds</h3>
+                <p>Traffic bonds may apply when someone is arrested for a traffic-related offense and bond is required for release.</p>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
@@ -675,8 +670,8 @@ const SimoneHomePage = () => {
                 <div className="service-icon">
                   <i className="fas fa-user-secret"></i>
                 </div>
-                <h4>Confidential Process</h4>
-                <p>Complete privacy and discretion throughout your entire bail bond experience.</p>
+                <h3>Juvenile Bonds</h3>
+                <p>Juvenile bond situations can feel confusing and emotional for parents and guardians, and we explain each step clearly.</p>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
@@ -684,8 +679,8 @@ const SimoneHomePage = () => {
                 <div className="service-icon">
                   <i className="fas fa-tags"></i>
                 </div>
-                <h4>No Hidden Fees</h4>
-                <p>Transparent pricing with no surprises. What we quote is what you pay.</p>
+                <h3>Secured Bonds</h3>
+                <p>Secured bonds require money, property, or approved security to support the bond amount and co-signer responsibility.</p>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
@@ -693,10 +688,76 @@ const SimoneHomePage = () => {
                 <div className="service-icon">
                   <i className="fas fa-moon"></i>
                 </div>
-                <h4>24/7 Service</h4>
-                <p>Available day and night, weekends and holidays. Call anytime at (702) 447-8550.</p>
+                <h3>Surety Bail Bonds</h3>
+                <p>Surety bail bonds help defendants secure release without paying the full bail amount directly to the court.</p>
               </div>
             </div>
+            <div className="col-md-6 col-lg-3">
+              <div className="service-card">
+                <div className="service-icon">
+                  <i className="fas fa-money-bill-wave"></i>
+                </div>
+                <h3>Cash Bail</h3>
+                <p>Cash bail may require the full cash amount ordered by the court before release can happen.</p>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-3">
+              <div className="service-card">
+                <div className="service-icon">
+                  <i className="fas fa-balance-scale-right"></i>
+                </div>
+                <h3>Appeal Bonds</h3>
+                <p>Appeal bonds may be needed when a case is under appeal and bond-related issues affect release or court obligations.</p>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-3">
+              <div className="service-card">
+                <div className="service-icon">
+                  <i className="fas fa-landmark"></i>
+                </div>
+                <h3>Federal Bonds</h3>
+                <p>Federal bond cases follow a different process than many state court matters, and we explain the conditions clearly.</p>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-3">
+              <div className="service-card">
+                <div className="service-icon">
+                  <i className="fas fa-building-columns"></i>
+                </div>
+                <h3>State Bail Bonds</h3>
+                <p>State bail bonds apply to cases handled in Delaware state courts with clear release and co-signer guidance.</p>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-3">
+              <div className="service-card">
+                <div className="service-icon">
+                  <i className="fas fa-shuffle"></i>
+                </div>
+                <h3>Transfer Bonds</h3>
+                <p>Transfer bonds involve cases where the defendant, hold, or bond process connects to another jurisdiction.</p>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-3">
+              <div className="service-card">
+                <div className="service-icon">
+                  <i className="fas fa-globe"></i>
+                </div>
+                <h3>Out-of-State Transfer Bonds</h3>
+                <p>Out-of-state transfer bond situations can involve added steps and delays because another state is involved.</p>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-3">
+              <div className="service-card">
+                <div className="service-icon">
+                  <i className="fas fa-user-clock"></i>
+                </div>
+                <h3>Violation of Probation Bonds</h3>
+                <p>Violation of probation cases can move quickly, and we explain court-related risk and immediate next steps.</p>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-4">
+            <a href="#/services" className="btn btn-gold">Learn More</a>
           </div>
         </div>
       </section>
@@ -704,56 +765,101 @@ const SimoneHomePage = () => {
       {/* How It Works Section */}
       <section id="process" className="how-it-works-section section-padding">
         <div className="container">
-          <div className="text-center mb-5">
+          <div className="text-center mb-4">
+            <div className="section-ornament">✦ &nbsp; THE PROCESS &nbsp; ✦</div>
             <h2 className="section-title">
-              How The Bail <span className="gold-text">Process Works</span>
+              How Our 24/7 Bail Bond <span className="gold-text">Process Works</span>
             </h2>
-            <p className="section-subtitle">Simple Steps to Freedom in Wilmington & Newark, Delaware</p>
+            <div className="section-gold-line"></div>
+            <p className="section-subtitle">We keep the bail process simple, clear, and easy to start.</p>
           </div>
-          <div className="row">
-            <div className="col-md-6 col-lg-3">
-              <div className="step-card">
-                <div className="step-connector"></div>
-                <div className="step-number">1</div>
-                <h4>Contact Us</h4>
-                <p>
-                  Call (702) 447-8550 or WhatsApp us 24/7. We&apos;ll gather basic information about the arrest and
-                  location.
-                </p>
+          <div className="row justify-content-center">
+            <div className="col-md-6 col-lg-4 col-xl-2-4 mb-4">
+              <div className="step-wrapper">
+                <div className="step-card">
+                  <div className="step-number">1</div>
+                  <h3>Call Our Office</h3>
+                  <p>You call and speak with a local bail bond agent. We listen, answer questions, and explain the next step.</p>
+                </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="step-card">
-                <div className="step-connector"></div>
-                <div className="step-number">2</div>
-                <h4>Get Quote</h4>
-                <p>
-                  We&apos;ll provide a transparent quote with no hidden fees. Discuss payment options that work for
-                  you.
-                </p>
+            <div className="col-md-6 col-lg-4 col-xl-2-4 mb-4">
+              <div className="step-wrapper">
+                <div className="step-card">
+                  <div className="step-number">2</div>
+                  <h3>Share Case Details</h3>
+                  <p>Provide the defendant's name, jail or court info, and the bond amount if available.</p>
+                </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="step-card">
-                <div className="step-connector"></div>
-                <div className="step-number">3</div>
-                <h4>Complete Paperwork</h4>
-                <p>
-                  Quick and simple documentation process. We handle all the paperwork efficiently and
-                  confidentially.
-                </p>
+            <div className="col-md-6 col-lg-4 col-xl-2-4 mb-4">
+              <div className="step-wrapper step-last-in-row">
+                <div className="step-card">
+                  <div className="step-number">3</div>
+                  <h3>Complete Paperwork</h3>
+                  <p>We help complete paperwork quickly. Electronic paperwork is available.</p>
+                </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="step-card">
-                <div className="step-number">4</div>
-                <h4>Fast Release</h4>
-                <p>
-                  We post bail immediately. Your loved one is typically released within 1-2 hours in Wilmington, Newark,
-                  Delaware and surrounding areas.
-                </p>
+            <div className="col-md-6 col-lg-4 col-xl-2-4 mb-4">
+              <div className="step-wrapper">
+                <div className="step-card">
+                  <div className="step-number">4</div>
+                  <h3>Review Payment Options</h3>
+                  <p>We explain the bond process and available payment options in simple terms.</p>
+                </div>
               </div>
             </div>
+            <div className="col-md-6 col-lg-4 col-xl-2-4 mb-4">
+              <div className="step-wrapper step-last-in-row">
+                <div className="step-card">
+                  <div className="step-number">5</div>
+                  <h3>We Start Release</h3>
+                  <p>Once ready, we begin the bond posting process and help move the jail release forward.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-2">
+            <a href="#contact" onClick={scrollToContact} className="btn btn-gold btn-shimmer">
+              <i className="fas fa-file-signature me-2"></i>Start the Process Today
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Flexible Payment Options */}
+      <section className="services-section section-padding">
+        <div className="container">
+          <div className="text-center mb-5">
+            <h2 className="section-title">Flexible Payment Options for Fast Bail Bonds</h2>
+            <p className="section-subtitle">Families often need clear payment information right after an arrest. We explain payment options, bond-related costs, and what may be needed to get started.</p>
+          </div>
+          <div className="row g-4">
+            <div className="col-md-6 col-lg-4">
+              <div className="service-card">
+                <div className="service-icon"><i className="fas fa-credit-card"></i></div>
+                <h3>Flexible Payment Arrangements</h3>
+                <p>We offer flexible payment arrangements for qualifying cases. Our team explains the available options clearly so families and co-signers understand the next step.</p>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <div className="service-card">
+                <div className="service-icon"><i className="fas fa-calculator"></i></div>
+                <h3>What May Affect the Bond Cost</h3>
+                <p>The total cost can depend on the bond amount, bond type, court conditions, collateral, and co-signer details. We explain these factors clearly so there is less confusion.</p>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <div className="service-card">
+                <div className="service-icon"><i className="fas fa-list-check"></i></div>
+                <h3>What to Have Ready When You Call</h3>
+                <p>It helps to have the defendant's name, any bond amount you were given, basic jail or court information, and co-signer details if available. That helps us guide you faster.</p>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-4">
+            <a href="tel:7024478550" className="btn btn-gold">Speak With an Agent</a>
           </div>
         </div>
       </section>
@@ -764,18 +870,9 @@ const SimoneHomePage = () => {
           <div className="row justify-content-center">
             <div className="col-lg-10">
               <div className="local-seo-content text-center">
-                <h2>Trusted Bail Bond Services in Wilmington & Newark, Delaware</h2>
+                <h2>Local Bail Bond Company Across Delaware</h2>
                 <p>
-                  Simone Harris is your local bail bond expert serving Wilmington, Newark, Delaware and the surrounding
-                  areas. With deep knowledge of the Delaware court system, local detention centers, and the
-                  unique needs of the Wilmington and Newark communities, we provide bail bond services that are fast, reliable,
-                  and compassionate.
-                </p>
-                <p>
-                  Whether you need bail bonds in Wilmington, Newark, DE, or surrounding Delaware communities, our 24/7
-                  service ensures you&apos;re never alone during difficult times. We understand the local legal
-                  landscape and work efficiently with Wilmington and Newark courts and detention facilities to secure the
-                  fastest possible release.
+                  A Way to Freedom provides local bail bond services across Delaware, with a strong focus on New Castle County and nearby communities.
                 </p>
                 <div className="mt-4">
                   <span className="location-badge">
@@ -785,15 +882,18 @@ const SimoneHomePage = () => {
                     <i className="fas fa-map-marker-alt"></i>Newark, Delaware
                   </span>
                   <span className="location-badge">
-                    <i className="fas fa-building"></i>Delaware Courts
+                    <i className="fas fa-map-marker-alt"></i>New Castle, Delaware
                   </span>
                   <span className="location-badge">
-                    <i className="fas fa-city"></i>New Castle County
+                    <i className="fas fa-city"></i>New Castle County, Delaware
+                  </span>
+                  <span className="location-badge">
+                    <i className="fas fa-city"></i>Kent County, Delaware
                   </span>
                 </div>
                 <div className="mt-5">
-                  <a href="tel:7024478550" className="btn btn-gold btn-lg">
-                    <i className="fas fa-phone-alt me-2"></i>Call (702) 447-8550
+                  <a href="#/service-areas" className="btn btn-gold btn-lg">
+                    <i className="fas fa-map me-2"></i>View Service Areas
                   </a>
                 </div>
               </div>
@@ -802,39 +902,29 @@ const SimoneHomePage = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* When People Usually Call Section */}
       <section id="testimonials" className="testimonials-section section-padding">
         <div className="container">
-          <div className="text-center mb-5">
+          <div className="text-center mb-4">
+            <div className="section-ornament">✦ &nbsp; WHO CALLS US &nbsp; ✦</div>
             <h2 className="section-title">
-              Client <span className="gold-text">Testimonials</span>
+              When People Usually Call <span className="gold-text">A Way to Freedom</span>
             </h2>
-            <p className="section-subtitle">What Families in Wilmington & Newark, Delaware Say About Us</p>
+            <div className="section-gold-line"></div>
+            <p className="section-subtitle">Most people call during a stressful moment after an arrest — worried about detention, the bond amount, or how to start.</p>
           </div>
-          <div className="row">
+          <div className="row g-4">
             <div className="col-md-6 col-lg-4">
               <div className="testimonial-card">
                 <div className="testimonial-stars">
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
                 </div>
-                <p className="testimonial-text">
-                  &quot;Simone was a lifesaver! When my son was arrested in Newark, I was panicked. She answered my
-                  call at 2 AM and had him home within 2 hours. Her compassion and professionalism are
-                  unmatched.&quot;
-                </p>
+                <p className="testimonial-text">A recent arrest often leaves families unsure about the bond type, bond amount, and next step. We help explain the situation clearly and guide them toward release.</p>
                 <div className="testimonial-author">
-                  <img
-                    src="images/simone1.jpg"
-                    alt="Satisfied Client from Newark Delaware"
-                    loading="lazy"
-                  />
+                  <div className="testimonial-icon-circle"><i className="fas fa-user-clock"></i></div>
                   <div className="author-info">
-                    <h5>Maria Rodriguez</h5>
-                    <p>Newark, Delaware</p>
+                    <h3>After a Recent Arrest</h3>
+                    <p>Urgent support</p>
                   </div>
                 </div>
               </div>
@@ -842,26 +932,14 @@ const SimoneHomePage = () => {
             <div className="col-md-6 col-lg-4">
               <div className="testimonial-card">
                 <div className="testimonial-stars">
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
                 </div>
-                <p className="testimonial-text">
-                  &quot;I&apos;ve never needed a bail bondsman before and was so stressed. Simone made the process so
-                  easy to understand. She truly cares like a mother would. Highly recommend her services in
-                  Delaware!&quot;
-                </p>
+                <p className="testimonial-text">Many calls come from a family member trying to help someone in detention quickly. We explain what may be needed and how to get started right away.</p>
                 <div className="testimonial-author">
-                  <img
-                    src="images/simone2.jpg"
-                    alt="Happy Client Newark DE"
-                    loading="lazy"
-                  />
+                  <div className="testimonial-icon-circle"><i className="fas fa-people-arrows"></i></div>
                   <div className="author-info">
-                    <h5>James Thompson</h5>
-                    <p>Newark, DE</p>
+                    <h3>When a Family Member Needs Help Fast</h3>
+                    <p>Family support</p>
                   </div>
                 </div>
               </div>
@@ -869,29 +947,53 @@ const SimoneHomePage = () => {
             <div className="col-md-6 col-lg-4">
               <div className="testimonial-card">
                 <div className="testimonial-stars">
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
                 </div>
-                <p className="testimonial-text">
-                  &quot;Fast, professional, and affordable. Simone got my brother out of detention quickly and
-                  worked with us on a payment plan. She&apos;s the best bail bond agent in Newark, Delaware!&quot;
-                </p>
+                <p className="testimonial-text">Some people need to begin the process from home, work, or late at night. We help them start by phone and explain the paperwork clearly.</p>
                 <div className="testimonial-author">
-                  <img
-                    src="images/simone1.jpg"
-                    alt="Grateful Family Member Delaware"
-                    loading="lazy"
-                  />
+                  <div className="testimonial-icon-circle"><i className="fas fa-phone"></i></div>
                   <div className="author-info">
-                    <h5>Patricia Williams</h5>
-                    <p>Newark, Delaware</p>
+                    <h3>When You Need to Start by Phone</h3>
+                    <p>Phone-first help</p>
                   </div>
                 </div>
               </div>
             </div>
+            <div className="col-md-6 col-lg-4">
+              <div className="testimonial-card">
+                <div className="testimonial-stars">
+                  <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
+                </div>
+                <p className="testimonial-text">Payment concerns are common after an arrest. We help families understand the next step and explain available options clearly.</p>
+                <div className="testimonial-author">
+                  <div className="testimonial-icon-circle"><i className="fas fa-credit-card"></i></div>
+                  <div className="author-info">
+                    <h3>When You Need Payment Flexibility</h3>
+                    <p>Payment options</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <div className="testimonial-card">
+                <div className="testimonial-stars">
+                  <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
+                </div>
+                <p className="testimonial-text">Confusion is common in the first few hours after detention. We help people understand what information they have and what may be needed next.</p>
+                <div className="testimonial-author">
+                  <div className="testimonial-icon-circle"><i className="fas fa-question-circle"></i></div>
+                  <div className="author-info">
+                    <h3>When You're Not Sure What Bond Was Set</h3>
+                    <p>Bond details support</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-5">
+            <a href="tel:7024478550" className="btn btn-gold btn-shimmer">
+              <i className="fas fa-phone-alt me-2"></i>Talk to a Bail Bond Agent
+            </a>
           </div>
         </div>
       </section>
@@ -900,15 +1002,18 @@ const SimoneHomePage = () => {
       <section className="emergency-banner">
         <div className="container">
           <h2>
-            <i className="fas fa-exclamation-triangle me-3"></i>NEED BAIL BONDS NOW?
+            <i className="fas fa-exclamation-triangle me-3"></i>Talk to A Way to Freedom Now
           </h2>
-          <p>We&apos;re Available 24/7 in Wilmington & Newark, Delaware - Call Anytime!</p>
+          <p>If your loved one was just arrested, do not stay stuck in confusion. A Way to Freedom provides fast local bail bond help across Delaware with clear guidance and simple communication.</p>
           <a href="tel:7024478550" className="emergency-phone">
-            <i className="fas fa-phone-alt me-2"></i>(702) 447-8550
+            <i className="fas fa-phone-alt me-2"></i>Call Now
           </a>
           <div className="mt-3">
-            <a href="https://wa.me/13029819223?text=Hi%20Simone%2C%20I%20need%20help%20with%20bail%20bond%20services.%20Please%20let%20me%20know%20how%20you%20can%20assist%20me." target="_blank" rel="noopener noreferrer" className="btn btn-light btn-lg">
-              <i className="fab fa-whatsapp me-2"></i>WhatsApp Us Now
+            <a href="tel:7024478550" className="btn btn-light btn-lg">
+              <i className="fas fa-bolt me-2"></i>Get Bail Help Now
+            </a>
+            <a href="#contact" onClick={scrollToContact} className="btn btn-light btn-lg ms-2">
+              <i className="fas fa-file-signature me-2"></i>Start the Process Today
             </a>
           </div>
         </div>
@@ -917,11 +1022,13 @@ const SimoneHomePage = () => {
       {/* FAQ Section */}
       <section id="faq" className="faq-section section-padding">
         <div className="container">
-          <div className="text-center mb-5">
+          <div className="text-center mb-4">
+            <div className="section-ornament">✦ &nbsp; FAQs &nbsp; ✦</div>
             <h2 className="section-title">
-              Frequently Asked <span className="gold-text">Questions</span>
+              FAQ About A Way to Freedom Bail Bond <span className="gold-text">Service</span>
             </h2>
-            <p className="section-subtitle">Common Questions About Bail Bonds in Wilmington & Newark, Delaware</p>
+            <div className="section-gold-line"></div>
+            <p className="section-subtitle">Clear answers for families, co-signers, and defendants.</p>
           </div>
           <div className="row justify-content-center">
             <div className="col-lg-8">
@@ -934,15 +1041,12 @@ const SimoneHomePage = () => {
                       data-bs-toggle="collapse"
                       data-bs-target="#faq1"
                     >
-                      How quickly can you post bail in Wilmington & Newark, Delaware?
+                      What is a bail bond?
                     </button>
                   </h2>
                   <div id="faq1" className="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
                     <div className="accordion-body">
-                      We can typically post bail within 1-2 hours in Wilmington, Newark, Delaware and surrounding areas. Our 24/7 service
-                      ensures fast release from detention centers. The exact time depends on the
-                      facility&apos;s processing speed, but we work diligently to expedite the process and get
-                      your loved one home as quickly as possible.
+                      A bail bond helps someone get released from jail without paying the full bail amount upfront. A bail bond company posts the bond so the defendant can be released while the case moves through court.
                     </div>
                   </div>
                 </div>
@@ -954,15 +1058,12 @@ const SimoneHomePage = () => {
                       data-bs-toggle="collapse"
                       data-bs-target="#faq2"
                     >
-                      What payment methods do you accept?
+                      What is the difference between bail and a bail bond?
                     </button>
                   </h2>
                   <div id="faq2" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div className="accordion-body">
-                      We accept cash, credit cards, debit cards, and offer flexible payment plans to make
-                      bail bonds affordable for everyone in Wilmington, Newark, Delaware and surrounding areas. We understand that financial
-                      situations vary, which is why we work with you to create a payment plan that fits
-                      your budget.
+                      Bail is the amount set for release. A bail bond is when a bail bond company helps post that amount, and the family or co-signer usually pays a fee instead of the full amount upfront.
                     </div>
                   </div>
                 </div>
@@ -974,15 +1075,12 @@ const SimoneHomePage = () => {
                       data-bs-toggle="collapse"
                       data-bs-target="#faq3"
                     >
-                      Do you handle felony and misdemeanor bonds?
+                      Why do people use a bail bond instead of paying the full bail amount?
                     </button>
                   </h2>
                   <div id="faq3" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div className="accordion-body">
-                      Yes, Simone Harris handles all types of bail bonds including felony bonds,
-                      misdemeanor bonds, secured bail, and surety bail throughout Delaware. No matter the
-                      charge, we&apos;re here to help you navigate the bail process with compassion and
-                      professionalism.
+                      Many families use a bail bond because the full bail amount is too high to pay at one time. A bail bond helps start the release process when immediate cash is limited.
                     </div>
                   </div>
                 </div>
@@ -994,14 +1092,12 @@ const SimoneHomePage = () => {
                       data-bs-toggle="collapse"
                       data-bs-target="#faq4"
                     >
-                      Is the bail bond process confidential?
+                      What information is needed to start a bail bond?
                     </button>
                   </h2>
                   <div id="faq4" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div className="accordion-body">
-                      Absolutely. We maintain complete confidentiality throughout the entire bail bond
-                      process. Your privacy is our priority. All conversations and transactions are
-                      handled discreetly, and we never share your information with third parties.
+                      Most cases start with the defendant's name, basic jail or court information, and the bond amount if it has already been set. If a co-signer is involved, their information may also be needed.
                     </div>
                   </div>
                 </div>
@@ -1013,14 +1109,12 @@ const SimoneHomePage = () => {
                       data-bs-toggle="collapse"
                       data-bs-target="#faq5"
                     >
-                      What information do I need to provide?
+                      Can a family member or co-signer start the process?
                     </button>
                   </h2>
                   <div id="faq5" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div className="accordion-body">
-                      To start the bail bond process, we&apos;ll need the defendant&apos;s full name, date of birth,
-                      the detention facility location, booking number (if available), and the bail amount.
-                      Don&apos;t worry if you don&apos;t have all this information - we can help you obtain it.
+                      Yes. In many cases, a family member, partner, or co-signer is the person who calls first. They can help start the process and review the next steps.
                     </div>
                   </div>
                 </div>
@@ -1032,14 +1126,84 @@ const SimoneHomePage = () => {
                       data-bs-toggle="collapse"
                       data-bs-target="#faq6"
                     >
-                      Are you available on weekends and holidays?
+                      Can I start a bail bond by phone?
                     </button>
                   </h2>
                   <div id="faq6" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div className="accordion-body">
-                      Yes! We&apos;re available 24/7, 365 days a year, including weekends and holidays. Arrests
-                      don&apos;t wait for business hours, and neither do we. Call us anytime at (702) 447-8550
-                      for immediate assistance in Wilmington, Newark, Delaware and surrounding areas.
+                      Yes. Many people need help from home, work, or late at night. Starting by phone makes it easier to get answers fast and begin the process without delay.
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                      What happens if I do not know the bond amount or bond type yet?
+                    </button>
+                  </h2>
+                  <div id="faq7" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div className="accordion-body">
+                      That is common after a recent arrest. The first step is usually confirming the bond amount, bond type, and basic defendant details so the process can move forward clearly.
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                      Do you get bail money back?
+                    </button>
+                  </h2>
+                  <div id="faq8" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div className="accordion-body">
+                      If the full bail is paid directly to the court, it may be returned at the end of the case if all court requirements are met. If a bail bond company is used, the fee paid for the bond is not refunded.
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
+                      Can collateral be required for a bail bond?
+                    </button>
+                  </h2>
+                  <div id="faq9" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div className="accordion-body">
+                      In some cases, yes. This can depend on the bond amount, the case, and the bond conditions. Larger or higher-risk bonds may involve added financial responsibility.
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10">
+                      What should I think about before helping someone with a bail bond?
+                    </button>
+                  </h2>
+                  <div id="faq10" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div className="accordion-body">
+                      It is important to understand the bond amount, bond conditions, and the responsibility of being a co-signer. People should know the financial risk and what could happen if the defendant misses court.
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11">
+                      What happens if the defendant misses court?
+                    </button>
+                  </h2>
+                  <div id="faq11" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div className="accordion-body">
+                      Missing court can create serious problems for the defendant and for anyone who signed for the bond. That is why co-signers should understand their role before agreeing to help.
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq12">
+                      How do bail bond companies make money?
+                    </button>
+                  </h2>
+                  <div id="faq12" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div className="accordion-body">
+                      Bail bond companies usually earn money by charging a fee for posting the bond. That fee is separate from the full bail amount set by the court.
                     </div>
                   </div>
                 </div>
@@ -1052,10 +1216,12 @@ const SimoneHomePage = () => {
       {/* Contact Section */}
       <section id="contact" className="contact-section section-padding">
         <div className="container">
-          <div className="text-center mb-5">
+          <div className="text-center mb-4">
+            <div className="section-ornament">✦ &nbsp; CONTACT US &nbsp; ✦</div>
             <h2 className="section-title">
               Get In <span className="gold-text">Touch</span>
             </h2>
+            <div className="section-gold-line"></div>
             <p className="section-subtitle">Contact Simone Harris for Bail Bonds in Newark, Delaware</p>
           </div>
           <div className="row">
@@ -1237,115 +1403,145 @@ const HomePage = ({ navigate }) => {
           <div className="row">
             <div className="col-lg-8">
               <div className="hero-content">
-                <div className="hero-badge">
-                  <i className="fas fa-clock"></i>
-                  Available 24/7 • Always Here When You Need Us
+                <p style={{color: 'var(--primary-gold)', fontWeight: '600', marginBottom: '0.5rem'}}>A Way to Freedom Bail Bond Service</p>
+                <h1 className="hero-title">24/7 Bail Bonds Help in Delaware</h1>
+                <p className="hero-subtitle">
+                  A Way to Freedom provides fast, trusted bail bond help for families, friends, and co-signers after an arrest. We help with felony bonds, misdemeanor bonds, secured bonds, and surety bail bonds. Our goal is to make the process clear, simple, and quick from the first call.
+                </p>
+                <div className="features-grid mt-3 mb-3">
+                  <div className="feature-item"><i className="fas fa-phone-alt"></i><span>Free 24/7 Consultation</span></div>
+                  <div className="feature-item"><i className="fas fa-shield-alt"></i><span>Licensed and Trusted</span></div>
+                  <div className="feature-item"><i className="fas fa-star"></i><span>25 years of experience</span></div>
+                  <div className="feature-item"><i className="fas fa-bolt"></i><span>Fast Release Support</span></div>
+                  <div className="feature-item"><i className="fas fa-credit-card"></i><span>Flexible Payment Options</span></div>
+                  <div className="feature-item"><i className="fas fa-lock-open"></i><span>No Collateral Bail Bonds</span></div>
+                  <div className="feature-item"><i className="fas fa-map-marker-alt"></i><span>Local Bail Bond Agent</span></div>
                 </div>
-                <h1 className="hero-title">24/7 Bail Bond Services in Delaware</h1>
-                <p className="hero-subtitle">Fast • Confidential • Professional Assistance</p>
-                <p className="hero-location">
-                  <i className="fas fa-map-marker-alt me-2"></i>
-                  Serving New Castle County & Kent County
-                </p>
-                <p className="hero-trust">
-                  Licensed & Professional Bail Bond Services — Available by Phone or Appointment
-                </p>
+                <p>Trust badges provided by client</p>
                 <div className="hero-buttons">
                   <a href="tel:+17024478550" className="btn-primary-gold">
                     <i className="fas fa-phone-alt"></i>
                     Call Now
                   </a>
                   <a href="#/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-secondary-outline">
-                    <i className="fas fa-clipboard-list"></i>
-                    Start the Bail Process
+                    Start the Process
                   </a>
-                  <a href="https://wa.me/13029819223?text=Hi%20Simone%2C%20I%20need%20help%20with%20bail%20bond%20services.%20Please%20let%20me%20know%20how%20you%20can%20assist%20me." target="_blank" rel="noopener noreferrer" className="btn-secondary-outline btn-whatsapp">
-                    <i className="fab fa-whatsapp"></i>
-                    WhatsApp
+                  <a href="#/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-secondary-outline">
+                    Speak With an Agent
                   </a>
                 </div>
-                <p style={{color: 'var(--text-muted)', fontSize: '0.9rem'}}>
-                  <i className="fas fa-shield-alt me-2 text-gold"></i>
-                  Confidential, Professional Assistance — Available 24/7
-                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Quick Services */}
+      {/* What Are Bail Bonds */}
+      <section className="section-dark-alt">
+        <div className="container">
+          <div className="section-title">
+            <div className="gold-divider"></div>
+            <h2>What Are Bail Bonds in DE?</h2>
+          </div>
+          <p>A bail bond helps a defendant get released from jail without paying the full bail amount upfront. A bail bond company posts the bond and helps families, co-signers, and defendants move forward with the release process. A Way to Freedom explains the steps clearly, helps with paperwork, and provides local support when fast action matters.</p>
+        </div>
+      </section>
+
+      {/* Meet Simone Harris */}
       <section className="section-dark">
         <div className="container">
           <div className="section-title">
             <div className="gold-divider"></div>
-            <h2>Our Bail Bond Services</h2>
-            <p>Comprehensive bail bond solutions tailored to your needs in Newark, Delaware and surrounding areas</p>
+            <h2>Meet Simone Harris, Owner of A Way to Freedom</h2>
           </div>
-          <div className="quick-services-grid">
-            <div className="service-card reveal">
-              <div className="service-card-icon">
-                <i className="fas fa-bolt"></i>
-              </div>
-              <h4>Fast Jail Release Assistance</h4>
-              <p>We work quickly to secure release as fast as possible</p>
-            </div>
-            <div className="service-card reveal">
-              <div className="service-card-icon">
-                <i className="fas fa-gavel"></i>
-              </div>
-              <h4>Felony & Misdemeanor Bonds</h4>
-              <p>Expert handling of all bond types in Delaware courts</p>
-            </div>
-            <div className="service-card reveal">
-              <div className="service-card-icon">
-                <i className="fas fa-credit-card"></i>
-              </div>
-              <h4>Flexible Payment Options</h4>
-              <p>Payment plans designed to fit your budget</p>
-            </div>
-            <div className="service-card reveal">
-              <div className="service-card-icon">
-                <i className="fas fa-laptop"></i>
-              </div>
-              <h4>Electronic Paperwork</h4>
-              <p>Faster processing with digital documentation</p>
-            </div>
-          </div>
+          <p>Simone Harris is the owner of A Way to Freedom. She serves Wilmington, New Castle County, and nearby Delaware communities with trusted local emergency bail bond help. As a mother and community member, she understands how stressful an arrest can be for families. She handles each case with compassion, urgency, and confidentiality, helping people take the next step with clear answers and respectful support.</p>
+          <p className="mt-3" style={{color: 'var(--primary-gold)', fontWeight: '600'}}>More Than Just a Bail Bond Agent. A Professional Who Cares.</p>
         </div>
       </section>
 
-      {/* About Preview */}
+      {/* Main Bail Bond Services */}
       <section className="section-dark-alt">
         <div className="container">
-          <div className="about-section">
-            <div className="about-content reveal">
-              <div className="gold-divider" style={{margin: '0 0 1.5rem 0'}}></div>
-              <h2>Compassionate Help When You Need It Most</h2>
-              <p>
-                At A Way to Freedom Bail Bonds, we understand that this may be a stressful and emotional time. 
-                Our goal is to provide respectful, judgment-free assistance while helping clients move through 
-                the bail process quickly and professionally.
-              </p>
-              <p>
-                With years of experience serving the Newark, Delaware community, we pride ourselves on 
-                being more than just a bail bonds agency – we're a support system for families in crisis.
-              </p>
-              <a href="#/about" onClick={(e) => {e.preventDefault(); navigate('/about');}} className="btn-primary-gold">
-                Learn More About Us
-              </a>
+          <div className="section-title">
+            <div className="gold-divider"></div>
+            <h2>Main Bail Bond Services We Offer in Delaware</h2>
+          </div>
+          <p>A Way to Freedom helps families, co-signers, and defendants with fast bail bond support across Delaware. We help people understand the bond process, paperwork, payment options, and release steps after an arrest. Our goal is to make a stressful situation easier to handle with clear guidance, quick communication, and local support.</p>
+          <div className="quick-services-grid mt-4">
+            <div className="service-card reveal">
+              <h3>Bail Bonds</h3>
+              <p>We help people start the release process after bail has been set. Our team explains what the bond amount means, what paperwork is needed, and how the next step works. This service is for families, co-signers, and defendants who need fast help after an arrest.</p>
+              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
             </div>
-            <div className="about-images reveal">
-              <img 
-                src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&h=500&fit=crop" 
-                alt="Professional bail bond services in Newark Delaware" 
-                className="about-img"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=500&fit=crop" 
-                alt="Trusted bail bond assistance Delaware" 
-                className="about-img"
-              />
+            <div className="service-card reveal">
+              <h3>Criminal Bail Bonds</h3>
+              <p>We help with bail bond needs tied to criminal charges in Delaware. This may include arrest situations involving state charges, court appearances, and release conditions. We explain the process in simple language so families understand what happens next.</p>
+              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+            </div>
+            <div className="service-card reveal">
+              <h3>Felony Bonds</h3>
+              <p>Felony bonds are tied to more serious criminal charges and often involve higher bond amounts or stricter court conditions. We help families and co-signers understand the release process, financial responsibility, and paperwork needed to move forward.</p>
+              <a href="#/services/felony" onClick={(e) => {e.preventDefault(); navigate('/services/felony');}} className="btn-secondary-outline mt-2">Learn More</a>
+            </div>
+            <div className="service-card reveal">
+              <h3>Misdemeanor Bonds</h3>
+              <p>Misdemeanor bonds help people get released after less serious charges, but the stress for the family is still real. We explain the bond amount, release steps, and co-signer role clearly so people can act quickly and make informed decisions.</p>
+              <a href="#/services/misdemeanor" onClick={(e) => {e.preventDefault(); navigate('/services/misdemeanor');}} className="btn-secondary-outline mt-2">Learn More</a>
+            </div>
+            <div className="service-card reveal">
+              <h3>Traffic Bonds</h3>
+              <p>Traffic bonds may apply when someone is arrested for a traffic-related offense and bond is required for release. We help explain the bond process, court-related concerns, and the next step needed to move the release process forward.</p>
+              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+            </div>
+            <div className="service-card reveal">
+              <h3>Juvenile Bonds</h3>
+              <p>Juvenile bond situations can feel confusing and emotional for parents and guardians. We help families understand what bond may apply, what paperwork may be needed, and how to take the next step as quickly and clearly as possible.</p>
+              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+            </div>
+            <div className="service-card reveal">
+              <h3>Secured Bonds</h3>
+              <p>Secured bonds require money, property, or other approved security to support the bond amount. We explain how secured bond situations work, what financial responsibility may be involved, and what the co-signer should understand before signing.</p>
+              <a href="#/services/secured" onClick={(e) => {e.preventDefault(); navigate('/services/secured');}} className="btn-secondary-outline mt-2">Learn More</a>
+            </div>
+            <div className="service-card reveal">
+              <h3>Surety Bail Bonds</h3>
+              <p>Surety bail bonds help defendants secure release without paying the full bail amount directly to the court. We help with the bond application, indemnitor or co-signer review, paperwork, and the release process so families can move forward with less confusion.</p>
+              <a href="#/services/surety" onClick={(e) => {e.preventDefault(); navigate('/services/surety');}} className="btn-secondary-outline mt-2">Learn More</a>
+            </div>
+            <div className="service-card reveal">
+              <h3>Cash Bail</h3>
+              <p>Cash bail may require the full cash amount ordered by the court before release can happen. We explain how cash bail works, what it means in the case, and how families can understand their options during a stressful time.</p>
+              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+            </div>
+            <div className="service-card reveal">
+              <h3>Appeal Bonds</h3>
+              <p>Appeal bonds may be needed when a case is under appeal and bond-related issues affect release or court obligations. These situations can be more complex, so we explain the process carefully and help clients understand what may be required.</p>
+              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+            </div>
+            <div className="service-card reveal">
+              <h3>Federal Bonds</h3>
+              <p>Federal bond cases follow a different process than many state court matters. We help clients understand the bond conditions, paperwork, and release expectations in federal cases so there is less confusion and delay.</p>
+              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+            </div>
+            <div className="service-card reveal">
+              <h3>State Bail Bonds</h3>
+              <p>State bail bonds apply to cases handled in Delaware state courts. We help explain the bond amount, release conditions, co-signer obligations, and next steps so families know how to move forward with more confidence.</p>
+              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+            </div>
+            <div className="service-card reveal">
+              <h3>Transfer Bonds</h3>
+              <p>Transfer bonds involve cases where the defendant, hold, or bond process connects to another jurisdiction. We help explain how the transfer situation may affect release, paperwork, and the overall bond process.</p>
+              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+            </div>
+            <div className="service-card reveal">
+              <h3>Out-of-State Transfer Bonds</h3>
+              <p>Out-of-state transfer bond situations can involve added steps because another state is involved. We help families understand what information may be needed, what delays can happen, and how the bond process may move across jurisdictions.</p>
+              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+            </div>
+            <div className="service-card reveal">
+              <h3>Violation of Probation Bonds</h3>
+              <p>Violation of probation cases can move quickly and create stress for both the defendant and the family. We help explain the bond situation, court-related risk, and the next step needed to begin the release process.</p>
+              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
             </div>
           </div>
         </div>
@@ -1356,24 +1552,291 @@ const HomePage = ({ navigate }) => {
         <div className="container">
           <div className="section-title">
             <div className="gold-divider"></div>
-            <h2>How the Bail Bond Process Works</h2>
-            <p>Simple steps to secure release for you or your loved one</p>
+            <h2>How Our 24/7 Bail Bond Process Works</h2>
           </div>
-          <div className="steps-container">
+          <p>We keep the bail process simple, clear, and easy to start. Our team explains the bond amount, paperwork, and release steps in plain language so families know what happens next.</p>
+          <div className="steps-container mt-4">
             <div className="step-item reveal">
               <div className="step-number">1</div>
-              <h4>Call Us Anytime — 24/7</h4>
-              <p>Reach out to us any time, day or night. We'll answer your questions and guide you through the process.</p>
+              <h3>Call Our Office</h3>
+              <p>You call and speak with a local bail bond agent. We listen, answer your questions, and explain the next step based on the arrest and jail release situation.</p>
             </div>
             <div className="step-item reveal">
               <div className="step-number">2</div>
-              <h4>Complete Paperwork Electronically</h4>
-              <p>Our digital paperwork system makes the process fast and convenient from anywhere in Delaware.</p>
+              <h3>Share the Basic Case Details</h3>
+              <p>You provide the defendant's name, jail or court information, and the bond amount if you have it. We review the details and explain what is needed to move forward.</p>
             </div>
             <div className="step-item reveal">
               <div className="step-number">3</div>
-              <h4>Secure Release Quickly</h4>
-              <p>Once processed, we work efficiently with the court to secure release as fast as possible.</p>
+              <h3>Review Bond and Payment Options</h3>
+              <p>We explain the bond process and available payment options in simple terms. If a co-signer or indemnitor is needed, we explain that clearly.</p>
+            </div>
+            <div className="step-item reveal">
+              <div className="step-number">4</div>
+              <h3>Complete the Paperwork</h3>
+              <p>We help you complete the paperwork as quickly as possible. Electronic paperwork is available, which makes it easier to get started without unnecessary delay.</p>
+            </div>
+            <div className="step-item reveal">
+              <div className="step-number">5</div>
+              <h3>We Start the Release Process</h3>
+              <p>Once everything is ready, we begin the bond posting process and help move the jail release forward. We stay in contact and keep the process as clear as possible.</p>
+            </div>
+          </div>
+          <div className="text-center mt-4">
+            <a href="#/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-primary-gold">
+              Start the Process
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Flexible Payment Options */}
+      <section className="section-dark-alt">
+        <div className="container">
+          <div className="section-title">
+            <div className="gold-divider"></div>
+            <h2>Flexible Payment Options for Fast Bail Bonds</h2>
+          </div>
+          <p>Families often need clear payment information right after an arrest. We explain payment options, bond-related costs, and what may be needed to get started.</p>
+          <div className="quick-services-grid mt-4">
+            <div className="service-card reveal">
+              <h3>Flexible Payment Arrangements</h3>
+              <p>We offer flexible payment arrangements for qualifying cases. Our team explains the available options clearly so families and co-signers understand the next step.</p>
+            </div>
+            <div className="service-card reveal">
+              <h3>What May Affect the Bond Cost</h3>
+              <p>The total cost can depend on the bond amount, bond type, court conditions, collateral, and co-signer details. We explain these factors clearly so there is less confusion.</p>
+            </div>
+            <div className="service-card reveal">
+              <h3>What to Have Ready When You Call</h3>
+              <p>It helps to have the defendant's name, any bond amount you were given, basic jail or court information, and co-signer details if available. That helps us guide you faster.</p>
+            </div>
+          </div>
+          <div className="text-center mt-4">
+            <a href="#/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-primary-gold">
+              Speak With an Agent
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Local Bail Bond Company */}
+      <section className="section-dark">
+        <div className="container">
+          <div className="section-title">
+            <div className="gold-divider"></div>
+            <h2>Local Bail Bond Company Across Delaware</h2>
+          </div>
+          <p>A Way to Freedom provides local bail bond services across Delaware, with a strong focus on New Castle County and nearby communities. We help families who need fast support and clear answers after an arrest.</p>
+          <ul className="mt-3" style={{color: 'var(--text-light-secondary)', paddingLeft: '1.5rem'}}>
+            <li>Wilmington, Delaware</li>
+            <li>Newark, Delaware</li>
+            <li>New Castle, Delaware</li>
+            <li>New Castle County, Delaware</li>
+            <li>Kent County, Delaware</li>
+          </ul>
+          <div className="text-center mt-4">
+            <a href="#/service-areas" onClick={(e) => {e.preventDefault(); navigate('/service-areas');}} className="btn-primary-gold">
+              View Service Areas
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* When People Call */}
+      <section className="section-dark-alt">
+        <div className="container">
+          <div className="section-title">
+            <div className="gold-divider"></div>
+            <h2>When People Usually Call A Way to Freedom</h2>
+          </div>
+          <p>Most people call during a stressful moment after an arrest. They may be worried about detention, the bond amount, or how to start the release process. We help families, co-signers, and defendants get clear answers when urgent help matters.</p>
+          <div className="quick-services-grid mt-4">
+            <div className="service-card reveal">
+              <h3>After a Recent Arrest</h3>
+              <p>A recent arrest often leaves families unsure about the bond type, bond amount, and next step. We help explain the situation clearly and guide them toward release.</p>
+            </div>
+            <div className="service-card reveal">
+              <h3>When a Family Member Needs Help Fast</h3>
+              <p>Many calls come from a family member trying to help someone in detention quickly. We explain what may be needed and how to get started.</p>
+            </div>
+            <div className="service-card reveal">
+              <h3>When You Need to Start by Phone</h3>
+              <p>Some people need to begin the process from home, work, or late at night. We help them start by phone and explain the paperwork clearly.</p>
+            </div>
+            <div className="service-card reveal">
+              <h3>When You Need Payment Flexibility</h3>
+              <p>Payment concerns are common after an arrest. We help families understand the next step and explain available options clearly.</p>
+            </div>
+            <div className="service-card reveal">
+              <h3>When You Are Not Sure What Bond Was Set</h3>
+              <p>Confusion is common in the first few hours after detention. We help people understand what information they have and what may be needed next.</p>
+            </div>
+          </div>
+          <div className="text-center mt-4">
+            <a href="tel:+17024478550" className="btn-primary-gold">
+              <i className="fas fa-phone-alt me-2"></i>Talk to a Bail Bond Agent
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Families Choose */}
+      <section className="section-dark">
+        <div className="container">
+          <div className="section-title">
+            <div className="gold-divider"></div>
+            <h2>Why Families in Delaware Choose A Way to Freedom</h2>
+          </div>
+          <h3 className="mb-3">Why Families Call Us First</h3>
+          <p>Families do not call a bail bond company because they have time to compare complex legal terms. They call because they need help now. A Way to Freedom keeps the process clear, supportive, and easy to begin.</p>
+          <ul className="benefits-list mt-3">
+            <li>Fast local help from the first call</li>
+            <li>Clear answers and simple next steps</li>
+            <li>Support with bond questions, paperwork, and release details</li>
+            <li>Flexible payment help for families and co-signers</li>
+            <li>Easy start by phone or electronic paperwork</li>
+            <li>Help from home, work, or after hours</li>
+            <li>Respectful, private, and judgment-free support</li>
+            <li>Calm communication during a stressful time</li>
+            <li>Local Delaware bail bond guidance</li>
+            <li>24/7 help when urgent support is needed</li>
+          </ul>
+          <div className="text-center mt-4">
+            <a href="tel:+17024478550" className="btn-primary-gold">
+              <i className="fas fa-phone-alt me-2"></i>Call Now
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-dark-alt">
+        <div className="container">
+          <div className="section-title">
+            <div className="gold-divider"></div>
+            <h2>FAQ About A Way to Freedom Bail Bond Service</h2>
+          </div>
+          <div className="accordion" id="homeFaqAccordion">
+            <div className="accordion-item">
+              <h3 className="accordion-header">
+                <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq1">
+                  What is a bail bond?
+                </button>
+              </h3>
+              <div id="hfaq1" className="accordion-collapse collapse show" data-bs-parent="#homeFaqAccordion">
+                <div className="accordion-body">A bail bond helps someone get released from jail without paying the full bail amount upfront. A bail bond company posts the bond so the defendant can be released while the case moves through court.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h3 className="accordion-header">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq2">
+                  What is the difference between bail and a bail bond?
+                </button>
+              </h3>
+              <div id="hfaq2" className="accordion-collapse collapse" data-bs-parent="#homeFaqAccordion">
+                <div className="accordion-body">Bail is the amount set for release. A bail bond is when a bail bond company helps post that amount, and the family or co-signer usually pays a fee instead of the full amount upfront.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h3 className="accordion-header">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq3">
+                  Why do people use a bail bond instead of paying the full bail amount?
+                </button>
+              </h3>
+              <div id="hfaq3" className="accordion-collapse collapse" data-bs-parent="#homeFaqAccordion">
+                <div className="accordion-body">Many families use a bail bond because the full bail amount is too high to pay at one time. A bail bond helps start the release process when immediate cash is limited.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h3 className="accordion-header">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq4">
+                  What information is needed to start a bail bond?
+                </button>
+              </h3>
+              <div id="hfaq4" className="accordion-collapse collapse" data-bs-parent="#homeFaqAccordion">
+                <div className="accordion-body">Most cases start with the defendant's name, basic jail or court information, and the bond amount if it has already been set. If a co-signer is involved, their information may also be needed.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h3 className="accordion-header">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq5">
+                  Can a family member or co-signer start the process?
+                </button>
+              </h3>
+              <div id="hfaq5" className="accordion-collapse collapse" data-bs-parent="#homeFaqAccordion">
+                <div className="accordion-body">Yes. In many cases, a family member, partner, or co-signer is the person who calls first. They can help start the process and review the next steps.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h3 className="accordion-header">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq6">
+                  Can I start a bail bond by phone?
+                </button>
+              </h3>
+              <div id="hfaq6" className="accordion-collapse collapse" data-bs-parent="#homeFaqAccordion">
+                <div className="accordion-body">Yes. Many people need help from home, work, or late at night. Starting by phone makes it easier to get answers fast and begin the process without delay.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h3 className="accordion-header">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq7">
+                  What happens if I do not know the bond amount or bond type yet?
+                </button>
+              </h3>
+              <div id="hfaq7" className="accordion-collapse collapse" data-bs-parent="#homeFaqAccordion">
+                <div className="accordion-body">That is common after a recent arrest. The first step is usually confirming the bond amount, bond type, and basic defendant details so the process can move forward clearly.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h3 className="accordion-header">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq8">
+                  Do you get bail money back?
+                </button>
+              </h3>
+              <div id="hfaq8" className="accordion-collapse collapse" data-bs-parent="#homeFaqAccordion">
+                <div className="accordion-body">If the full bail is paid directly to the court, it may be returned at the end of the case if all court requirements are met. If a bail bond company is used, the fee paid for the bond is not refunded.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h3 className="accordion-header">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq9">
+                  Can collateral be required for a bail bond?
+                </button>
+              </h3>
+              <div id="hfaq9" className="accordion-collapse collapse" data-bs-parent="#homeFaqAccordion">
+                <div className="accordion-body">In some cases, yes. This can depend on the bond amount, the case, and the bond conditions. Larger or higher-risk bonds may involve added financial responsibility.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h3 className="accordion-header">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq10">
+                  What should I think about before helping someone with a bail bond?
+                </button>
+              </h3>
+              <div id="hfaq10" className="accordion-collapse collapse" data-bs-parent="#homeFaqAccordion">
+                <div className="accordion-body">It is important to understand the bond amount, bond conditions, and the responsibility of being a co-signer. People should know the financial risk and what could happen if the defendant misses court.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h3 className="accordion-header">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq11">
+                  What happens if the defendant misses court?
+                </button>
+              </h3>
+              <div id="hfaq11" className="accordion-collapse collapse" data-bs-parent="#homeFaqAccordion">
+                <div className="accordion-body">Missing court can create serious problems for the defendant and for anyone who signed for the bond. That is why co-signers should understand their role before agreeing to help.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h3 className="accordion-header">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq12">
+                  How do bail bond companies make money?
+                </button>
+              </h3>
+              <div id="hfaq12" className="accordion-collapse collapse" data-bs-parent="#homeFaqAccordion">
+                <div className="accordion-body">Bail bond companies usually earn money by charging a fee for posting the bond. That fee is separate from the full bail amount set by the court.</div>
+              </div>
             </div>
           </div>
         </div>
@@ -1382,11 +1845,21 @@ const HomePage = ({ navigate }) => {
       {/* CTA Band */}
       <section className="cta-band">
         <div className="container">
-          <h2>Need Help Now? Call Us 24/7</h2>
-          <a href="tel:+17024478550" className="btn-primary-gold" style={{fontSize: '1.25rem', padding: '1.25rem 3rem'}}>
-            <i className="fas fa-phone-alt me-2"></i>
-            (702) 447-8550
-          </a>
+          <h2>Talk to A Way to Freedom Now</h2>
+          <p style={{color: 'var(--text-light-secondary)', marginBottom: '1.5rem'}}>
+            If your loved one was just arrested, do not stay stuck in confusion. A Way to Freedom provides fast local bail bond help across Delaware with clear guidance, simple communication, and support when families need it most. Call now to start the bail bond process.
+          </p>
+          <div className="hero-buttons">
+            <a href="tel:+17024478550" className="btn-primary-gold">
+              <i className="fas fa-phone-alt me-2"></i>Call Now
+            </a>
+            <a href="tel:+17024478550" className="btn-secondary-outline">
+              Get Bail Help Now
+            </a>
+            <a href="#/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-secondary-outline">
+              Start the Process Today
+            </a>
+          </div>
         </div>
       </section>
     </div>

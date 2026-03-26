@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(node --max-old-space-size=4096 node_modules/.bin/vite build)",
+      "Bash(NODE_OPTIONS=\"--max-old-space-size=4096\" npx vite build)",
+      "Bash(node -e \"require\\(''''fs''''\\).readFileSync\\(''''./src/App.jsx'''', ''''utf8''''\\)\")",
+      "Bash(npx --yes @babel/parser --version)",
+      "Bash(node -e \":*)",
+      "Bash(npx vite:*)"
+    ]
+  }
+}

@@ -369,6 +369,52 @@ const SimoneHomePage = () => {
     'bail bonds Newark Delaware, bail bond agent, bail bondsman, 24/7 bail bonds, fast bail release, Simone Harris bail bonds, Delaware bail bonds, affordable bail bonds, felony bonds, misdemeanor bonds'
   );
 
+  const homePageSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "A Way to Freedom Bail Bonds",
+        "url": "https://away2freedom302.com/"
+      },
+      {
+        "@type": "Organization",
+        "name": "A Way to Freedom Bail Bonds",
+        "url": "https://away2freedom302.com/",
+        "founder": {
+          "@type": "Person",
+          "name": "Simone Harris"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "name": "A Way to Freedom Bail Bonds | 24/7 Bail Bonds in Delaware | Newark, DE",
+        "url": "https://away2freedom302.com/",
+        "description": "Licensed Delaware bail bond agency serving Wilmington, New Castle County, and statewide - 24/7 emergency service."
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "A Way to Freedom Bail Bond Service",
+        "description": "Licensed Delaware bail bond agency serving Wilmington, New Castle County, and statewide - 24/7 emergency service.",
+        "url": "https://away2freedom302.com/",
+        "openingHours": "Mo-Su 00:00-23:59",
+        "priceRange": "10% of bail amount",
+        "areaServed": [
+          "Wilmington DE",
+          "New Castle County DE",
+          "Kent County DE",
+          "Sussex County DE"
+        ],
+        "founder": {
+          "@type": "Person",
+          "name": "Simone Harris"
+        }
+      }
+    ]
+  };
+
+  injectSchema(homePageSchema);
+
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector('.navbar');

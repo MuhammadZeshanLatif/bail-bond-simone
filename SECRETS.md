@@ -26,7 +26,9 @@
 3. **FTP_PASSWORD**  
    Us account ka password jo GitHub secret mein paste karna hai.
 
-**Note:** Panel pe **FTP port** 21 hai aur **Folder to upload files** `public_html` — workflow `server-dir: ./` use karta hai (FTP account ka root = public_html).
+**Note:** Panel pe **FTP port** 21 hai aur **Folder to upload files** `public_html` — workflow `server-dir: ./` use karta hai (FTP account ka root = public_html). Hostinger ke liye workflow **FTPS** use karta hai.
+
+**Important:** Secret name exactly `FTP_HOST` hona chahiye (sirf `FTP_SERVER` mat rakho — workflow `FTP_HOST` read karta hai).
 
 ---
 

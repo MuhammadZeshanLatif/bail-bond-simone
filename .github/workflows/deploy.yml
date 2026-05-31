@@ -34,9 +34,6 @@ jobs:
           SSH_USER: ${{ secrets.SSH_USERNAME }}
           SSH_HOST_VAR: ${{ secrets.SSH_HOST }}
           SSH_PORT_VAR: ${{ secrets.SSH_PORT }}
-          REMOTE_PATH: ${{ secrets.SSH_REMOTE_PATH }}
         run: |
           sudo apt-get install -y sshpass rsync
-          CLEAN_PATH=$(echo "$REMOTE_PATH" | tr -d '\n\r')
-          echo "Deploying to: $CLEAN_PATH"
-          sshpass -e rsync -avz --delete -e "ssh -p $SSH_PORT_VAR -o StrictHostKeyChecking=no" dist/ "$SSH_USER@$SSH_HOST_VAR:$CLEAN_PATH/"
+          sshpass -e rsync -avz --delete -e "ssh -p $SSH_PORT_VAR -o StrictHostKeyChecking=no" dist/ "$SSH_USER@$SSH_HOST_VAR:/home/u932362804/public_html/"

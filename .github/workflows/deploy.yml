@@ -27,13 +27,12 @@ jobs:
         run: npm run build
 
       - name: Deploy via SFTP
+        env:
+          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
+          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+          SSH_REMOTE_PATH: ${{ secrets.SSH_REMOTE_PATH }}
         run: |
           sudo apt-get install -y lftp
-          lftp -c "
-            set sftp:auto-confirm yes;
-            set net:timeout 30;
-            set net:max-retries 3;
-            open sftp://${{ secrets.SSH_USERNAME }}:${{ secrets.SSH_PASSWORD }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_PORT }};
-            mirror -R --delete --verbose dist/ ${{ secrets.SSH_REMOTE_PATH }}/;
-            bye
-          "
+          lftp -u "$SSH_USERNAME,$SSH_PASSWORD" -p "$SSH_PORT" sftp://"$SSH_HOST" -e "set sftp:auto-confirm yes; set net:timeout 30; mirror -R --delete --verbose dist/ $SSH_REMOTE_PATH/; bye"

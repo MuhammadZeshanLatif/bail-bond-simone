@@ -161,9 +161,24 @@ const Navbar = ({ currentPath, navigate }) => {
   }, [showServices]);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-custom">
-      <div className="container navbar-container-custom">
-        <div className="navbar-main-row">
+    <header className="site-header">
+      <div className="navbar-topbar d-none d-lg-flex">
+        <div className="container">
+          <div className="topbar-left">
+            <i className="fas fa-shield-halved"></i>
+            <span>Licensed & Bonded — Available 24/7</span>
+          </div>
+          <div className="topbar-right">
+            <i className="fas fa-phone-alt"></i>
+            <a href="tel:+17024478550">(702) 447-8550</a>
+            <span className="topbar-divider">|</span>
+            <a href="tel:+13026001886">(302) 600-1886</a>
+          </div>
+        </div>
+      </div>
+
+      <nav className="navbar navbar-expand-lg navbar-custom">
+        <div className="container">
           <a href="#/home" onClick={(e) => handleNavClick(e, '/home')} className="navbar-brand-custom text-decoration-none">
             <div className="brand-icon">
               <i className="fas fa-scale-balanced"></i>
@@ -180,76 +195,49 @@ const Navbar = ({ currentPath, navigate }) => {
 
           <div className="collapse navbar-collapse navbar-nav-wrap" id="navbarNav">
             <ul className="navbar-nav mx-auto align-items-center">
-            <li className="nav-item">
-              <a href="#/home" onClick={(e) => handleNavClick(e, '/home')} className={`nav-link-custom nav-link ${isActive('/home') ? 'active' : ''}`}>
-                Home
-              </a>
-            </li>
-            <li className="nav-item dropdown" ref={dropdownRef}>
-              <a 
-                href="#" 
-                className={`nav-link-custom nav-link dropdown-toggle ${currentPath.startsWith('/services') ? 'active' : ''} ${showServices ? 'dropdown-open' : ''}`}
-                onClick={(e) => { e.preventDefault(); setShowServices(!showServices); }}
-                role="button"
-              >
-                Services
-                <i className={`fas fa-chevron-down dropdown-icon ${showServices ? 'rotate' : ''}`}></i>
-              </a>
-              {showServices && (
-                <div className="dropdown-menu-custom position-absolute show">
-                  <a href="#/services/felony" onClick={(e) => {handleNavClick(e, '/services/felony'); setShowServices(false);}} className="dropdown-item-custom d-block">Felony & Misdemeanor Bonds</a>
-                  <a href="#/services/misdemeanor" onClick={(e) => {handleNavClick(e, '/services/misdemeanor'); setShowServices(false);}} className="dropdown-item-custom d-block">Misdemeanor Bonds</a>
-                  <a href="#/services/secured" onClick={(e) => {handleNavClick(e, '/services/secured'); setShowServices(false);}} className="dropdown-item-custom d-block">Secured Bonds</a>
-                  <a href="#/services/surety" onClick={(e) => {handleNavClick(e, '/services/surety'); setShowServices(false);}} className="dropdown-item-custom d-block">Surety Bail</a>
-                  <a href="#/services/fast-release" onClick={(e) => {handleNavClick(e, '/services/fast-release'); setShowServices(false);}} className="dropdown-item-custom d-block">Fast Release Processing</a>
-                  <a href="#/services/payment" onClick={(e) => {handleNavClick(e, '/services/payment'); setShowServices(false);}} className="dropdown-item-custom d-block">Flexible Payment Arrangements</a>
-                  <a href="#/services/e-paperwork" onClick={(e) => {handleNavClick(e, '/services/e-paperwork'); setShowServices(false);}} className="dropdown-item-custom d-block">Electronic Paperwork</a>
-                </div>
-              )}
-            </li>
-            <li className="nav-item">
-              <a href="#/about" onClick={(e) => handleNavClick(e, '/about')} className={`nav-link-custom nav-link ${isActive('/about') ? 'active' : ''}`}>
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#/how-it-works" onClick={(e) => handleNavClick(e, '/how-it-works')} className={`nav-link-custom nav-link ${isActive('/how-it-works') ? 'active' : ''}`}>
-                How It Works
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#/faq" onClick={(e) => handleNavClick(e, '/faq')} className={`nav-link-custom nav-link ${isActive('/faq') ? 'active' : ''}`}>
-                FAQ
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#/blog" onClick={(e) => handleNavClick(e, '/blog')} className={`nav-link-custom nav-link ${currentPath.startsWith('/blog') ? 'active' : ''}`}>
-                Blog
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#/contact" onClick={(e) => handleNavClick(e, '/contact')} className={`nav-link-custom nav-link ${isActive('/contact') ? 'active' : ''}`}>
-                Contact
-              </a>
-            </li>
-          </ul>
-          </div>
-
-          <a href="tel:+17024478550" className="btn-call-header d-none d-lg-inline-flex">
-            <i className="fas fa-phone-alt me-2"></i>Call Now
-          </a>
-        </div>
-
-        <div className="navbar-phone-row d-none d-lg-flex">
-          <div className="header-phone">
-            <i className="fas fa-phone-alt me-2"></i>
-            <a href="tel:+17024478550" className="text-decoration-none" style={{color: 'inherit'}}>(702) 447-8550</a>
-            <span className="phone-divider">|</span>
-            <a href="tel:+13026001886" className="text-decoration-none" style={{color: 'inherit'}}>(302) 600-1886</a>
+              <li className="nav-item">
+                <a href="#/home" onClick={(e) => handleNavClick(e, '/home')} className={`nav-link-custom nav-link ${isActive('/home') ? 'active' : ''}`}>Home</a>
+              </li>
+              <li className="nav-item dropdown" ref={dropdownRef}>
+                <a href="#" className={`nav-link-custom nav-link ${currentPath.startsWith('/services') ? 'active' : ''} ${showServices ? 'dropdown-open' : ''}`}
+                  onClick={(e) => { e.preventDefault(); setShowServices(!showServices); }} role="button">
+                  Services <i className={`fas fa-chevron-down dropdown-icon ${showServices ? 'rotate' : ''}`}></i>
+                </a>
+                {showServices && (
+                  <div className="dropdown-menu-custom position-absolute show">
+                    <a href="#/services/felony" onClick={(e) => {handleNavClick(e, '/services/felony'); setShowServices(false);}} className="dropdown-item-custom d-block">Felony & Misdemeanor Bonds</a>
+                    <a href="#/services/misdemeanor" onClick={(e) => {handleNavClick(e, '/services/misdemeanor'); setShowServices(false);}} className="dropdown-item-custom d-block">Misdemeanor Bonds</a>
+                    <a href="#/services/secured" onClick={(e) => {handleNavClick(e, '/services/secured'); setShowServices(false);}} className="dropdown-item-custom d-block">Secured Bonds</a>
+                    <a href="#/services/surety" onClick={(e) => {handleNavClick(e, '/services/surety'); setShowServices(false);}} className="dropdown-item-custom d-block">Surety Bail</a>
+                    <a href="#/services/fast-release" onClick={(e) => {handleNavClick(e, '/services/fast-release'); setShowServices(false);}} className="dropdown-item-custom d-block">Fast Release Processing</a>
+                    <a href="#/services/payment" onClick={(e) => {handleNavClick(e, '/services/payment'); setShowServices(false);}} className="dropdown-item-custom d-block">Flexible Payment Arrangements</a>
+                    <a href="#/services/e-paperwork" onClick={(e) => {handleNavClick(e, '/services/e-paperwork'); setShowServices(false);}} className="dropdown-item-custom d-block">Electronic Paperwork</a>
+                  </div>
+                )}
+              </li>
+              <li className="nav-item">
+                <a href="#/about" onClick={(e) => handleNavClick(e, '/about')} className={`nav-link-custom nav-link ${isActive('/about') ? 'active' : ''}`}>About</a>
+              </li>
+              <li className="nav-item">
+                <a href="#/how-it-works" onClick={(e) => handleNavClick(e, '/how-it-works')} className={`nav-link-custom nav-link ${isActive('/how-it-works') ? 'active' : ''}`}>How It Works</a>
+              </li>
+              <li className="nav-item">
+                <a href="#/faq" onClick={(e) => handleNavClick(e, '/faq')} className={`nav-link-custom nav-link ${isActive('/faq') ? 'active' : ''}`}>FAQ</a>
+              </li>
+              <li className="nav-item">
+                <a href="#/blog" onClick={(e) => handleNavClick(e, '/blog')} className={`nav-link-custom nav-link ${currentPath.startsWith('/blog') ? 'active' : ''}`}>Blog</a>
+              </li>
+              <li className="nav-item">
+                <a href="#/contact" onClick={(e) => handleNavClick(e, '/contact')} className={`nav-link-custom nav-link ${isActive('/contact') ? 'active' : ''}`}>Contact</a>
+              </li>
+            </ul>
+            <a href="tel:+17024478550" className="btn-call-header d-none d-lg-inline-flex">
+              <i className="fas fa-phone-alt me-2"></i>Call Now
+            </a>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 

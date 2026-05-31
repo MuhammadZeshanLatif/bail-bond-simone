@@ -1,4 +1,4 @@
-name: Deploy to Hostinger
+name: Build & Deploy to Hostinger
 
 on:
   push:
@@ -7,24 +7,37 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "22"
-          cache: "npm"
+          node-version: 20
+          cache: npm
 
-      - name: Install and build
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Clear remote folder
         run: |
-          npm ci
-          npm run build
+          sudo apt-get install -y lftp
+          lftp -e "
+            set ftp:ssl-allow no;
+            open -u '${{ secrets.FTP_USERNAME }}','${{ secrets.FTP_PASSWORD }}' '${{ secrets.FTP_HOST }}';
+            glob -a rm -rf *;
+            glob -a rm -rf .??*;
+            bye
+          "
 
-      - name: Deploy dist to public_html (FTP)
+      - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST }}

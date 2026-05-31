@@ -143,8 +143,40 @@ a:hover {
   gap: 1rem;
 }
 
+.navbar-container-custom {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.35rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-main-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.navbar-nav-wrap {
+  flex: 1 1 auto;
+  justify-content: center;
+}
+
 .navbar-custom .navbar-collapse {
-  flex-grow: 0;
+  flex-grow: 1;
+}
+
+.navbar-phone-row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0.25rem;
+}
+
+.header-phone .phone-divider {
+  margin: 0 0.65rem;
+  color: rgba(212, 175, 55, 0.5);
 }
 
 .navbar-brand-custom {

@@ -162,33 +162,24 @@ const Navbar = ({ currentPath, navigate }) => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-custom">
-      <div className="container">
-        <a href="#/home" onClick={(e) => handleNavClick(e, '/home')} className="navbar-brand-custom text-decoration-none">
-          <div className="brand-icon">
-            <i className="fas fa-scale-balanced"></i>
-          </div>
-          <div>
-            <div className="brand-text">A Way to Freedom</div>
-            <div className="brand-tagline">Bail Bonds</div>
-          </div>
-        </a>
-
-        <div className="d-flex align-items-center gap-3">
-          <div className="header-phone d-none d-lg-flex align-items-center">
-            <i className="fas fa-phone-alt me-2"></i>
-            <a href="tel:+17024478550" className="text-decoration-none" style={{color: 'inherit'}}>(702) 447-8550</a>
-          </div>
-          <a href="tel:+17024478550" className="btn-call-header d-none d-lg-inline-flex">
-            <i className="fas fa-phone-alt me-2"></i>Call Now
+      <div className="container navbar-container-custom">
+        <div className="navbar-main-row">
+          <a href="#/home" onClick={(e) => handleNavClick(e, '/home')} className="navbar-brand-custom text-decoration-none">
+            <div className="brand-icon">
+              <i className="fas fa-scale-balanced"></i>
+            </div>
+            <div>
+              <div className="brand-text">A Way to Freedom</div>
+              <div className="brand-tagline">Bail Bonds</div>
+            </div>
           </a>
-        </div>
 
-        <button className="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style={{background: 'var(--dark-bg-tertiary)', border: '1px solid var(--border-color)'}}>
-          <i className="fas fa-bars text-light"></i>
-        </button>
+          <button className="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style={{background: 'var(--dark-bg-tertiary)', border: '1px solid var(--border-color)'}}>
+            <i className="fas fa-bars text-light"></i>
+          </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto align-items-center">
+          <div className="collapse navbar-collapse navbar-nav-wrap" id="navbarNav">
+            <ul className="navbar-nav mx-auto align-items-center">
             <li className="nav-item">
               <a href="#/home" onClick={(e) => handleNavClick(e, '/home')} className={`nav-link-custom nav-link ${isActive('/home') ? 'active' : ''}`}>
                 Home
@@ -242,6 +233,20 @@ const Navbar = ({ currentPath, navigate }) => {
               </a>
             </li>
           </ul>
+          </div>
+
+          <a href="tel:+17024478550" className="btn-call-header d-none d-lg-inline-flex">
+            <i className="fas fa-phone-alt me-2"></i>Call Now
+          </a>
+        </div>
+
+        <div className="navbar-phone-row d-none d-lg-flex">
+          <div className="header-phone">
+            <i className="fas fa-phone-alt me-2"></i>
+            <a href="tel:+17024478550" className="text-decoration-none" style={{color: 'inherit'}}>(702) 447-8550</a>
+            <span className="phone-divider">|</span>
+            <a href="tel:+13026001886" className="text-decoration-none" style={{color: 'inherit'}}>(302) 600-1886</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -397,6 +402,7 @@ const SimoneHomePage = () => {
         "name": "A Way to Freedom Bail Bond Service",
         "description": "Licensed Delaware bail bond agency serving Wilmington, New Castle County, and statewide - 24/7 emergency service.",
         "url": "https://away2freedom302.com/",
+        "telephone": ["+1-702-447-8550", "+1-302-600-1886"],
         "openingHours": "Mo-Su 00:00-23:59",
         "priceRange": "10% of bail amount",
         "areaServed": [
@@ -404,6 +410,22 @@ const SimoneHomePage = () => {
           "New Castle County DE",
           "Kent County DE",
           "Sussex County DE"
+        ],
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "288 E Main St",
+            "addressLocality": "Newark",
+            "addressRegion": "DE",
+            "postalCode": "19711"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "715 N. King Street",
+            "addressLocality": "Wilmington",
+            "addressRegion": "DE",
+            "postalCode": "19801"
+          }
         ],
         "founder": {
           "@type": "Person",
@@ -1268,7 +1290,7 @@ const SimoneHomePage = () => {
               Get In <span className="gold-text">Touch</span>
             </h2>
             <div className="section-gold-line"></div>
-            <p className="section-subtitle">Contact Simone Harris for Bail Bonds in Newark, Delaware</p>
+            <p className="section-subtitle">Contact Simone Harris for Bail Bonds in Newark &amp; Wilmington, Delaware</p>
           </div>
           <div className="row">
             <div className="col-lg-5 mb-4 mb-lg-0">
@@ -1279,6 +1301,14 @@ const SimoneHomePage = () => {
                   <a href="tel:7024478550">(702) 447-8550</a>
                 </p>
                 <p className="small text-muted">Available 24/7</p>
+              </div>
+              <div className="contact-info-card">
+                <i className="fas fa-phone"></i>
+                <h5>Local Phone</h5>
+                <p>
+                  <a href="tel:3026001886">(302) 600-1886</a>
+                </p>
+                <p className="small text-muted">Wilmington, Delaware</p>
               </div>
               <div className="contact-info-card">
                 <i className="fab fa-whatsapp"></i>
@@ -1301,6 +1331,12 @@ const SimoneHomePage = () => {
                 <h5>Address</h5>
                 <p>288 E Main St, Newark, Delaware 19711</p>
                 <p className="small text-muted">Serving Newark &amp; Surrounding Areas</p>
+              </div>
+              <div className="contact-info-card">
+                <i className="fas fa-map-marker-alt"></i>
+                <h5>Wilmington Address</h5>
+                <p>715 N. King Street, Wilmington, Delaware 19801</p>
+                <p className="small text-muted">Serving Wilmington &amp; Surrounding Areas</p>
               </div>
             </div>
             <div className="col-lg-7">
@@ -1422,11 +1458,11 @@ const SimoneHomePage = () => {
       <section className="map-section">
         <div className="map-container">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3098.7654321!2d-75.7519!3d39.6837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6f4c0a0b0c0d0%3A0x1234567890abcdef!2s288%20E%20Main%20St%2C%20Newark%2C%20DE%2019711!5e0!3m2!1sen!2sus!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.8!2d-75.549!3d39.745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6e8c8c8c8c8c9%3A0x0!2s715%20N%20King%20St%2C%20Wilmington%2C%20DE%2019801!5e0!3m2!1sen!2sus!4v1234567890"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Simone Harris Bail Bonds Location Newark Delaware"
+            title="A Way to Freedom Bail Bonds Wilmington Delaware"
           ></iframe>
         </div>
       </section>
@@ -3985,7 +4021,7 @@ const ContactPage = () => {
             <h2 className="section-title">
               Get In <span className="gold-text">Touch</span>
             </h2>
-            <p className="section-subtitle">Contact Simone Harris for Bail Bonds in Newark, Delaware</p>
+            <p className="section-subtitle">Contact Simone Harris for Bail Bonds in Newark &amp; Wilmington, Delaware</p>
           </div>
           <div className="row">
             <div className="col-lg-5 mb-4 mb-lg-0">
@@ -3996,6 +4032,14 @@ const ContactPage = () => {
                   <a href="tel:7024478550">(702) 447-8550</a>
                 </p>
                 <p className="small text-muted">Available 24/7</p>
+              </div>
+              <div className="contact-info-card reveal">
+                <i className="fas fa-phone"></i>
+                <h5>Local Phone</h5>
+                <p>
+                  <a href="tel:3026001886">(302) 600-1886</a>
+                </p>
+                <p className="small text-muted">Wilmington, Delaware</p>
               </div>
               <div className="contact-info-card reveal">
                 <i className="fab fa-whatsapp"></i>
@@ -4018,6 +4062,12 @@ const ContactPage = () => {
                 <h5>Address</h5>
                 <p>288 E Main St, Newark, Delaware 19711</p>
                 <p className="small text-muted">Serving Newark &amp; Surrounding Areas</p>
+              </div>
+              <div className="contact-info-card reveal">
+                <i className="fas fa-map-marker-alt"></i>
+                <h5>Wilmington Address</h5>
+                <p>715 N. King Street, Wilmington, Delaware 19801</p>
+                <p className="small text-muted">Serving Wilmington &amp; Surrounding Areas</p>
               </div>
             </div>
             <div className="col-lg-7">

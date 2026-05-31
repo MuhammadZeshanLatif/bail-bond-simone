@@ -26,13 +26,22 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy via SFTP
-        env:
-          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
-          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
-          SSH_HOST: ${{ secrets.SSH_HOST }}
-          SSH_PORT: ${{ secrets.SSH_PORT }}
-          SSH_REMOTE_PATH: ${{ secrets.SSH_REMOTE_PATH }}
-        run: |
-          sudo apt-get install -y lftp
-          lftp -u "$SSH_USERNAME,$SSH_PASSWORD" -p "$SSH_PORT" sftp://"$SSH_HOST" -e "set sftp:auto-confirm yes; set net:timeout 30; mirror -R --delete --verbose dist/ $SSH_REMOTE_PATH/; bye"
+      - name: Clear remote folder
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.SSH_PORT }}
+          script: rm -rf ${{ secrets.SSH_REMOTE_PATH }}/* ${{ secrets.SSH_REMOTE_PATH }}/.[!.]*
+
+      - name: Deploy via SCP
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.SSH_PORT }}
+          source: "dist/*"
+          target: ${{ secrets.SSH_REMOTE_PATH }}
+          strip_components: 1

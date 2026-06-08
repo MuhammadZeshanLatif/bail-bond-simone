@@ -1,4 +1,4 @@
-# GitHub Secrets – Hostinger FTP Deploy
+# GitHub Secrets – Hostinger SSH Deploy
 
 **Jahan add karenge:** Repo → **Settings** → **Secrets and variables** → **Actions** → **New repository secret**
 
@@ -6,38 +6,50 @@
 
 ## Required secrets
 
-| GitHub Secret   | Panel mein kaunsa field              | Value |
-|-----------------|--------------------------------------|-------|
-| `FTP_HOST`      | **FTP IP (hostname)**                | `82.25.87.23` |
-| `FTP_USERNAME`  | **FTP username**                     | Main: `u932362804` — Naya account: `SimoneHerris@away2freedom302.com` |
-| `FTP_PASSWORD`  | **FTP password**                     | Jo password aapne Hostinger panel mein set kiya hai |
+| GitHub Secret | Value | Notes |
+|---------------|-------|-------|
+| `SSH_HOST` | `82.25.87.23` | hPanel → **Advanced → SSH Access** → IP/hostname |
+| `SSH_PORT` | `65002` | **Hostinger shared hosting = 65002** (22 nahi!) |
+| `SSH_USERNAME` | `u932362804` | SSH username (FTP jaisa) |
+| `SSH_PASSWORD` | apna SSH password | hPanel mein SSH enable karke set karo |
+| `SSH_REMOTE_PATH` | `/home/u932362804/domains/away2freedom302.com/public_html/` | Deploy folder (trailing `/` rakho) |
+
+## Optional (recommended)
+
+| GitHub Secret | Notes |
+|---------------|-------|
+| `SSH_PRIVATE_KEY` | SSH key auth — password ki jagah ya sath use ho sakti hai |
 
 ---
 
-## Detail
+## Hostinger mein SSH enable karo (zaroori)
 
-1. **FTP_HOST**  
-   Panel pe “FTP IP (hostname)” — sirf host part: **82.25.87.23** (http/ftp prefix mat dalna).
+1. **hPanel** → **Advanced** → **SSH Access**
+2. SSH **Enable** karo
+3. Password set karo (ya SSH key add karo)
+4. Port note karo — usually **65002**
 
-2. **FTP_USERNAME**  
-   - **Main FTP account:** sirf **u932362804**  
-   - **Additional FTP account:** **SimoneHerris@away2freedom302.com** (domain ke sath)
+Agar SSH disabled ho to GitHub Actions se **Connection timed out** aata hai.
 
-3. **FTP_PASSWORD**  
-   Us account ka password jo GitHub secret mein paste karna hai.
+---
 
-**Note:** Panel pe **FTP port** 21 hai aur **Folder to upload files** `public_html` — workflow `server-dir: ./` use karta hai (FTP account ka root = public_html). Hostinger ke liye workflow **FTPS** use karta hai.
+## Common errors
 
-**Important — actual domain vs temp URL:** Agar site `gray-partridge-XXXX.hostingersite.com` par khul rahi hai lekin `away2freedom302.com` par nahi, to FTP account **away2freedom302.com** wale website ka use karo (hPanel → Websites → away2freedom302.com → FTP Accounts). Temp Hostinger URL sirf staging hai; deploy hamesha **away2freedom302.com** ke `public_html` par hona chahiye.
-
-**Important:** Secret name exactly `FTP_HOST` hona chahiye (sirf `FTP_SERVER` mat rakho — workflow `FTP_HOST` read karta hai).
+| Error | Fix |
+|-------|-----|
+| `Connection timed out` | Port `65002` use karo, SSH hPanel se enable karo |
+| `Permission denied` | `SSH_USERNAME` / `SSH_PASSWORD` check karo |
+| Site temp URL par khule | `SSH_REMOTE_PATH` = **away2freedom302.com** ka `public_html`, gray-partridge ka nahi |
 
 ---
 
 ## Checklist
 
-- [ ] `FTP_HOST` = `82.25.87.23`
-- [ ] `FTP_USERNAME` = `u932362804` ya `SimoneHerris@away2freedom302.com`
-- [ ] `FTP_PASSWORD` = apna FTP password
+- [ ] SSH enabled in Hostinger hPanel
+- [ ] `SSH_HOST` = `82.25.87.23`
+- [ ] `SSH_PORT` = `65002`
+- [ ] `SSH_USERNAME` = `u932362804`
+- [ ] `SSH_PASSWORD` = SSH password
+- [ ] `SSH_REMOTE_PATH` = `/home/u932362804/domains/away2freedom302.com/public_html/`
 
-In teeno add karne ke baad **Deploy to Hostinger** workflow chal sakta hai.
+Push to `master` → Actions mein **Test SSH connection** green hona chahiye, phir **Deploy via SSH (SCP)**.

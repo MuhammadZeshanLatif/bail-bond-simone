@@ -1,0 +1,16 @@
+export const MAGAZINE_TOC_ENTRIES = [
+  { id: 'section-intro', prefix: '1.', label: 'Introduction' },
+  { id: 'section-what-is-bail', prefix: '2.', label: 'What Is Bail in Delaware?' },
+  { id: 'section-step-by-step', prefix: '3.', label: 'How Bail Bonds Work Step by Step' },
+  { id: 'section-bond-types', prefix: '4.', label: 'Types of Bail Bonds in Delaware' },
+  { id: 'section-cost', prefix: '5.', label: 'How Much Does a Bail Bond Cost?' },
+  { id: 'section-cosigner', prefix: '6.', label: 'What Does a Co-Signer Promise?' },
+  { id: 'section-after-release', prefix: '7.', label: 'What Happens After Release?' },
+  { id: 'section-mistakes', prefix: '8.', label: 'Common Mistakes to Avoid' },
+  { id: 'section-when-posted', prefix: '9.', label: 'When Can Bond Be Posted?' },
+  { id: 'section-family-court', prefix: '10.', label: 'What If the Person Is in Family Court?' },
+  { id: 'section-need-agent', prefix: '11.', label: 'Do You Need a Bail Bond Agent?' },
+  { id: 'section-checklist', prefix: '12.', label: 'Family Checklist' },
+  { id: 'section-faq', prefix: '13.', label: 'FAQs' },
+  { id: 'section-final', prefix: '14.', label: 'Final Thoughts' },
+];

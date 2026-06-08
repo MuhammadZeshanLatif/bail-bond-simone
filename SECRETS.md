@@ -28,6 +28,8 @@
 
 **Note:** Panel pe **FTP port** 21 hai aur **Folder to upload files** `public_html` — workflow `server-dir: ./` use karta hai (FTP account ka root = public_html). Hostinger ke liye workflow **FTPS** use karta hai.
 
+**Important — actual domain vs temp URL:** Agar site `gray-partridge-XXXX.hostingersite.com` par khul rahi hai lekin `away2freedom302.com` par nahi, to FTP account **away2freedom302.com** wale website ka use karo (hPanel → Websites → away2freedom302.com → FTP Accounts). Temp Hostinger URL sirf staging hai; deploy hamesha **away2freedom302.com** ke `public_html` par hona chahiye.
+
 **Important:** Secret name exactly `FTP_HOST` hona chahiye (sirf `FTP_SERVER` mat rakho — workflow `FTP_HOST` read karta hai).
 
 ---

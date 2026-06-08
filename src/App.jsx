@@ -14,6 +14,16 @@ import {
 } from './blog/hardcoded-static-blog';
 import { usesStaticMagazineArticle } from './blog/pillar-magazine';
 
+const SITE_URL = 'https://away2freedom302.com';
+
+const getCanonicalUrl = () => {
+  const path = window.location.hash
+    ? window.location.hash.slice(1)
+    : window.location.pathname || '/home';
+  const normalized = path.startsWith('/') ? path : `/${path}`;
+  return `${SITE_URL}${normalized}`;
+};
+
 // ============================================
 // CUSTOM ROUTER HOOK
 // ============================================
@@ -97,22 +107,24 @@ useEffect(() => {
       }
     }
 
+    const canonicalUrl = getCanonicalUrl();
+
     // Update OG URL
     let ogUrlEl = document.querySelector('meta[property="og:url"]');
     if (ogUrlEl) {
-      ogUrlEl.setAttribute('content', window.location.href);
+      ogUrlEl.setAttribute('content', canonicalUrl);
     }
 
     // Update Twitter URL
     let twitterUrlEl = document.querySelector('meta[name="twitter:url"]');
     if (twitterUrlEl) {
-      twitterUrlEl.setAttribute('content', window.location.href);
+      twitterUrlEl.setAttribute('content', canonicalUrl);
     }
 
     // Update canonical
     let canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) {
-      canonical.setAttribute('href', window.location.href);
+      canonical.setAttribute('href', canonicalUrl);
     }
   }, [title, description, keywords, ogTitle, ogDescription, ogImage]);
 };

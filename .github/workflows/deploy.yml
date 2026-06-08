@@ -9,6 +9,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - name: Checkout code
@@ -26,14 +28,12 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to Hostinger via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          port: 21
-          local-dir: ./dist/
-          server-dir: ./
-          dangerous-clean-slate: true
+      - name: Deploy via rsync
+        env:
+          SSHPASS: ${{ secrets.SSH_PASSWORD }}
+          SSH_USER: ${{ secrets.SSH_USERNAME }}
+          SSH_HOST_VAR: ${{ secrets.SSH_HOST }}
+          SSH_PORT_VAR: ${{ secrets.SSH_PORT }}
+        run: |
+          sudo apt-get install -y sshpass rsync
+          sshpass -e rsync -avz --delete -e "ssh -p $SSH_PORT_VAR -o StrictHostKeyChecking=no" dist/ "$SSH_USER@$SSH_HOST_VAR:/home/u932362804/domains/away2freedom302.com/public_html/"

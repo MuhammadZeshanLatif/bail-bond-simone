@@ -412,12 +412,12 @@ const SimoneHomePage = () => {
         "@type": "WebPage",
         "name": "A Way to Freedom Bail Bonds | 24/7 Bail Bonds in Delaware | Newark, DE",
         "url": "https://away2freedom302.com/",
-        "description": "Licensed Delaware bail bond agency serving Wilmington, New Castle County, and statewide - 24/7 emergency service."
+        "description": "Licensed Delaware bail bond agency serving New Castle County and Kent County - 24/7 emergency service."
       },
       {
         "@type": "LocalBusiness",
         "name": "A Way to Freedom Bail Bond Service",
-        "description": "Licensed Delaware bail bond agency serving Wilmington, New Castle County, and statewide - 24/7 emergency service.",
+        "description": "Licensed Delaware bail bond agency serving New Castle County and Kent County - 24/7 emergency service.",
         "url": "https://away2freedom302.com/",
         "telephone": ["+1-702-447-8550", "+1-302-600-1886"],
         "openingHours": "Mo-Su 00:00-23:59",
@@ -425,8 +425,7 @@ const SimoneHomePage = () => {
         "areaServed": [
           "Wilmington DE",
           "New Castle County DE",
-          "Kent County DE",
-          "Sussex County DE"
+          "Kent County DE"
         ],
         "address": [
           {
@@ -2636,10 +2635,10 @@ const FAQPage = ({ navigate }) => {
       },
       {
         "@type": "Question",
-        "name": "Do you serve all of Delaware?",
+        "name": "Which counties in Delaware do you serve?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, we serve all of New Castle County and Kent County, Delaware, including Newark, Wilmington, Dover, and surrounding areas."
+          "text": "We serve New Castle County and Kent County, including Newark, Wilmington, Dover, and surrounding areas. We do not serve Sussex County."
         }
       }
     ]
@@ -2677,8 +2676,8 @@ const FAQPage = ({ navigate }) => {
       answer: "The defendant must appear at all scheduled court dates, notify us of any address or employment changes, and comply with any other conditions set by the court. Failure to do so can result in the bail being revoked."
     },
     {
-      question: "Do you serve all of Delaware?",
-      answer: "Yes, we serve all of New Castle County and Kent County, Delaware, including Newark, Wilmington, Dover, and surrounding areas."
+      question: "Which counties in Delaware do you serve?",
+      answer: "We serve New Castle County and Kent County, including Newark, Wilmington, Dover, and surrounding areas. We do not serve Sussex County."
     }
   ];
 

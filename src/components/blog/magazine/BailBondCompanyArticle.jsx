@@ -29,7 +29,7 @@ export function BailBondCompanyArticle({ navigate, onContactClick }) {
         <p>
           This guide covers everything: how bail bonds work in Delaware, the types of bonds available, what the legal fee
           is, and how to choose a bondsman you can trust. Whether you are in Wilmington, Dover, Newark, or anywhere across
-          New Castle, Kent, or Sussex County, we have got you covered.
+          New Castle or Kent County, we have got you covered.
         </p>
       </section>
 
@@ -64,7 +64,7 @@ export function BailBondCompanyArticle({ navigate, onContactClick }) {
         <h2>What Happens After Someone Is Arrested in Delaware?</h2>
         <p>The process moves fast once an arrest happens. Here is the typical sequence in Delaware:</p>
         <ol className="bm-numbered-list">
-          <li><strong>Arrest and Booking</strong> - The defendant is booked at the county jail. In Delaware, major facilities include Howard R. Young Correctional Institution (Wilmington), Sussex Correctional Institution (Georgetown), and James T. Vaughn Correctional Center (Smyrna).</li>
+          <li><strong>Arrest and Booking</strong> - The defendant is booked at the county jail. In the counties we serve, major facilities include Howard R. Young Correctional Institution (Wilmington) and James T. Vaughn Correctional Center (Smyrna).</li>
           <li><strong>Bail Hearing</strong> - A judge reviews the charges and sets a bail amount. The court considers the severity of the charges, criminal history, and flight risk under Delaware Code Title 11, Chapter 21.</li>
           <li><strong>Bail Is Posted</strong> - Once the amount is set, bail can be posted by cash, property, or through a licensed bail bond company.</li>
           <li><strong>Release</strong> - After paperwork is processed, the defendant is released, typically within 2 to 8 hours of bail being posted.</li>
@@ -237,8 +237,8 @@ export function BailBondCompanyArticle({ navigate, onContactClick }) {
       </section>
 
       <section id="section-counties">
-        <h2>Bail Bond Companies Serving All Delaware Counties</h2>
-        <p>Delaware has three counties, each with its own court system and detention facilities. A reputable bail bond company serves all three.</p>
+        <h2>Bail Bond Service in New Castle and Kent Counties</h2>
+        <p>Delaware has three counties, each with its own court system and detention facilities. A Way to Freedom Bail Bonds serves New Castle and Kent counties. We do not serve Sussex County.</p>
         <div className="bm-table-wrap">
           <table className="blog-data-table">
             <thead>
@@ -251,7 +251,6 @@ export function BailBondCompanyArticle({ navigate, onContactClick }) {
             <tbody>
               <tr><td>New Castle</td><td>Wilmington</td><td>Howard R. Young Correctional Institution</td></tr>
               <tr><td>Kent</td><td>Dover</td><td>James T. Vaughn Correctional Center (Smyrna)</td></tr>
-              <tr><td>Sussex</td><td>Georgetown</td><td>Sussex Correctional Institution</td></tr>
             </tbody>
           </table>
         </div>

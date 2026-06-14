@@ -13,7 +13,7 @@ export const BAIL_BOND_COMPANY_META_DESCRIPTION =
   'Need a trusted bail bond company in Delaware? Learn how bail bonds work, what you\'ll pay, and how to get your loved one released fast - call us 24/7.';
 
 export const BAIL_BOND_COMPANY_KEYWORDS =
-  'bail bond company Delaware, bail bondsman Delaware 24/7, bail bond cost Delaware, Wilmington DE bail bonds, New Castle County bail bonds, Kent County bail bonds, Sussex County bail bonds, how to bail someone out of jail in Delaware, Delaware surety bond, best bail bond company Delaware';
+  'bail bond company Delaware, bail bondsman Delaware 24/7, bail bond cost Delaware, Wilmington DE bail bonds, New Castle County bail bonds, Kent County bail bonds, how to bail someone out of jail in Delaware, Delaware surety bond, best bail bond company Delaware';
 
 export const BAIL_BOND_COMPANY_IMAGE =
   '/images/bail-bond-company-delaware/bail-bond-company-delaware.webp';
@@ -35,7 +35,7 @@ export const BAIL_BOND_COMPANY_READ_MIN = 14;
 export const BAIL_BOND_COMPANY_BENEFITS = [
   { icon: 'fa-clock', label: '24/7 Available', sub: 'Delaware Agents' },
   { icon: 'fa-shield-alt', label: 'Licensed & Insured', sub: 'State Certified' },
-  { icon: 'fa-map-marker-alt', label: 'All 3 Counties', sub: 'New Castle, Kent, Sussex' },
+  { icon: 'fa-map-marker-alt', label: '2 Counties Served', sub: 'New Castle & Kent' },
   { icon: 'fa-dollar-sign', label: '10% Premium', sub: 'Clear Delaware Pricing' },
 ];
 
@@ -101,7 +101,7 @@ export const BAIL_BOND_COMPANY_FAQS = [
   {
     question: 'What counties in Delaware does a bail bond company serve?',
     answer:
-      'Most established Delaware bail bond companies serve all three counties: New Castle (Wilmington area), Kent (Dover area), and Sussex (Georgetown area). Confirm coverage before signing any paperwork.',
+      'Delaware has three counties: New Castle, Kent, and Sussex. A Way to Freedom Bail Bonds serves New Castle County (Wilmington and Newark area) and Kent County (Dover and Smyrna area). We do not serve Sussex County. Always confirm coverage before signing any paperwork.',
   },
   {
     question: 'Is it illegal to offer a bail bond for less than 10% in Delaware?',

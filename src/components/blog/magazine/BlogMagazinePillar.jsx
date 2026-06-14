@@ -1,6 +1,7 @@
 import { PILLAR_DEFAULT_HERO } from '../../../blog/pillar-magazine';
 import { BailBondGuideArticle } from './BailBondGuideArticle';
 import { BailBondCompanyArticle } from './BailBondCompanyArticle';
+import { LegacyMagazineArticle } from './LegacyMagazineArticle';
 import { MagazineToc } from './MagazineToc';
 import '../../../blog-magazine.css';
 
@@ -30,7 +31,16 @@ export function BlogMagazinePillar({
   onContactClick,
 }) {
   const cta = { ...DEFAULT_BLOG_CTA, ...(blogCta ?? {}) };
-  const ArticleComponent = ARTICLE_MAP[magazine.articleKey];
+  const ArticleComponent =
+    magazine.articleKey === 'legacy'
+      ? () => (
+          <LegacyMagazineArticle
+            content={magazine.legacyContent}
+            navigate={navigate}
+            onContactClick={onContactClick}
+          />
+        )
+      : ARTICLE_MAP[magazine.articleKey];
   const displayAuthor = 'Simone Harris';
   const trimmed = magazine.heroImage?.trim() ?? '';
   const heroSrc = trimmed && (trimmed.startsWith('/') || trimmed.startsWith('http')) ? trimmed : PILLAR_DEFAULT_HERO;

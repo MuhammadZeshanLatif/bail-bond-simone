@@ -15,7 +15,8 @@ import {
   BAIL_BOND_COMPANY_IMAGE,
   BAIL_BOND_COMPANY_THUMBNAIL,
 } from './blog/bail-bond-company-delaware-blog';
-import { getMagazinePost, isMagazinePost } from './blog/magazine-registry';
+import { getMagazinePost } from './blog/magazine-registry';
+import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
 const SITE_URL = 'https://away2freedom302.com';
 
@@ -2761,54 +2762,6 @@ const blogPosts = [
     content: '',
   },
   {
-    slug: 'how-bail-bonds-work-delaware',
-    title: 'How Bail Bonds Work in Delaware (Step-by-Step for Families)',
-    excerpt: 'Understanding the bail bond process in Delaware can help families navigate this stressful time with confidence. Learn the step-by-step process.',
-    category: 'Bail Process',
-    readTime: '8 min read',
-    date: '2026-03-05',
-    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop',
-    content: `
-Understanding the Bail Bond Process in Delaware
-
-When a loved one is arrested in Newark, Delaware or anywhere in New Castle County or Kent County, the stress can be overwhelming. Understanding how bail bonds work can help you make informed decisions during this difficult time.
-
-What Is a Bail Bond?
-
-A bail bond is a financial guarantee posted to the court that ensures the defendant will appear for all scheduled court dates. When someone is arrested, a judge sets a bail amount based on various factors including the severity of the alleged crime, criminal history, and flight risk.
-
-In Delaware, bail amounts can range from a few hundred dollars to hundreds of thousands of dollars depending on the charges. For many families, paying the full bail amount is not possible, which is where a bail bond comes in.
-
-How the Bail Bond Process Works
-
-Step 1: Contact a Bail Bondsman
-The first step is to contact a licensed bail bond agency like A Way to Freedom Bail Bonds. We'll gather basic information about the defendant and the case.
-
-Step 2: Pay the Premium
-Bail bond premiums in Delaware are typically 10-15% of the total bail amount. This fee is non-refundable and is the cost of the bail bondsman guaranteeing the full bail amount to the court.
-
-Step 3: Complete Paperwork
-You'll need to sign a bail bond agreement and provide necessary documentation. At A Way to Freedom, we offer electronic paperwork to make this process faster and more convenient.
-
-Step 4: Release from Custody
-Once the paperwork is complete and the premium is paid, we post the bail bond with the court. The defendant is then released from custody, typically within a few hours to 24-48 hours depending on the facility.
-
-Important Considerations
-
-- Non-Refundable Premium: The premium you pay for a bail bond is never refunded, even if the charges are dropped.
-- Collateral: Depending on the bail amount, collateral may be required to secure the bond.
-- Defendant Responsibilities: The defendant must appear at all court dates or the bail may be forfeited.
-
-Getting Help in Newark, Delaware
-
-If you're facing a bail situation in Newark, Delaware or any surrounding area, contact A Way to Freedom Bail Bonds. We're available 24/7 to help you through this process with compassion and professionalism.
-
-Serving New Castle County & Kent County, Delaware.
-
-Disclaimer: This information is for educational purposes only and does not constitute legal advice. For specific legal questions, please consult with a licensed attorney in Delaware.
-    `
-  },
-  {
     slug: 'felony-vs-misdemeanor-bonds-delaware',
     title: 'Felony vs Misdemeanor Bonds: What You Need to Know in Delaware',
     excerpt: 'Learn the key differences between felony and misdemeanor bail bonds in Delaware, including costs, requirements, and what to expect.',
@@ -3697,40 +3650,38 @@ const BlogPage = ({ navigate }) => {
 // ============================================
 const BlogPostPage = ({ slug, navigate }) => {
   const post = blogPosts.find(p => p.slug === slug);
-  const magazine = getMagazinePost(slug);
-  const isMagazine = isMagazinePost(slug);
+  const magazine = getMagazinePost(slug) || (post?.content ? buildLegacyMagazinePost(post) : null);
 
   useSEO(
-    isMagazine && magazine ? magazine.metaTitle : post ? `${post.title} | A Way to Freedom Bail Bonds` : 'Blog Post Not Found',
-    isMagazine && magazine ? magazine.metaDescription : post ? post.excerpt : 'The requested blog post could not be found.',
-    isMagazine && magazine ? magazine.keywords : 'bail bonds, Delaware bail, Newark Delaware'
+    magazine ? magazine.metaTitle : post ? `${post.title} | A Way to Freedom Bail Bonds` : 'Blog Post Not Found',
+    magazine ? magazine.metaDescription : post ? post.excerpt : 'The requested blog post could not be found.',
+    magazine ? magazine.keywords : 'bail bonds, Delaware bail, Newark Delaware'
   );
 
-  if (isMagazine && magazine) {
-    const magazineSchema = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BlogPosting",
-          "headline": magazine.title,
-          "description": magazine.metaDescription,
-          "image": magazine.heroImage,
-          "author": { "@type": "Person", "name": "Simone Harris" },
-          "publisher": { "@type": "Organization", "name": "A Way to Freedom Bail Bonds" },
-          "datePublished": magazine.publishedAt,
-          "dateModified": magazine.updatedAt,
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": magazine.faqs.map((faq) => ({
-            "@type": "Question",
-            "name": faq.question,
-            "acceptedAnswer": { "@type": "Answer", "text": faq.answer },
-          })),
-        },
-      ],
-    };
-    injectSchema(magazineSchema);
+  if (magazine) {
+    const schemaGraph = [
+      {
+        "@type": "BlogPosting",
+        "headline": magazine.title,
+        "description": magazine.metaDescription,
+        "image": magazine.heroImage,
+        "author": { "@type": "Person", "name": "Simone Harris" },
+        "publisher": { "@type": "Organization", "name": "A Way to Freedom Bail Bonds" },
+        "datePublished": magazine.publishedAt,
+        "dateModified": magazine.updatedAt,
+      },
+    ];
+    if (magazine.faqs.length > 0) {
+      schemaGraph.push({
+        "@type": "FAQPage",
+        "mainEntity": magazine.faqs.map((faq) => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": { "@type": "Answer", "text": faq.answer },
+        })),
+      });
+    }
+    injectSchema({ "@context": "https://schema.org", "@graph": schemaGraph });
 
     return (
       <BlogMagazinePillar
@@ -3759,204 +3710,7 @@ const BlogPostPage = ({ slug, navigate }) => {
     );
   }
 
-  // Parse content for TOC - Get all headings (## only, ### removed)
-  const allHeadings = post.content.match(/^##\s+(.+)$/gm) || [];
-  const tocItems = allHeadings.map(h => {
-    const level = h.match(/^#+/)[0].length;
-    const text = h.replace(/^#+\s+/, '');
-    const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-    return { text, id, level };
-  });
-
-  const blogPostSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": post.title,
-    "description": post.excerpt,
-    "image": post.image || "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=450&fit=crop",
-    "author": {
-      "@type": "Person",
-      "name": "Muhammad Zeeshan",
-      "jobTitle": "Licensed Bail Bond Agent",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "A Way to Freedom Bail Bonds"
-      }
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "A Way to Freedom Bail Bonds",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://example.com/logo.png"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Newark",
-        "addressRegion": "DE",
-        "addressCountry": "US"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+1-702-447-8550",
-        "contactType": "Customer Service",
-        "areaServed": "US",
-        "availableLanguage": "English"
-      }
-    },
-    "datePublished": post.date,
-    "dateModified": post.date,
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": `https://awaytofreedombailbonds.com/blog/${post.slug}`
-    },
-    "articleSection": post.category,
-    "keywords": `bail bonds, ${post.category}, Delaware bail, Newark Delaware, ${post.title}`,
-    "wordCount": post.content.split(/\s+/).length,
-    "timeRequired": post.readTime
-  };
-
-  injectSchema(blogPostSchema);
-
-  // Render content with anchor IDs
-  const renderContent = () => {
-    return post.content.split('\n').map((line, i) => {
-      // All markdown headings removed - render as regular paragraphs
-      if (line.startsWith('- ')) {
-        return <li key={i}>{line.replace('- ', '')}</li>;
-      }
-      if (line.trim() === '---') {
-        return <hr key={i} style={{borderColor: 'var(--border-color)', margin: '2rem 0'}} />;
-      }
-      if (line.trim() === '') return null;
-      return <p key={i}>{line}</p>;
-    });
-  };
-
-  return (
-    <div className="page-container">
-      <section className="blog-post-hero">
-        <div className="container">
-          <a href="#/blog" onClick={(e) => {e.preventDefault(); navigate('/blog');}} className="back-link">
-            <i className="fas fa-arrow-left"></i> Back to Blog
-          </a>
-          <div className="blog-post-meta">
-            <span className="blog-post-category">{post.category}</span>
-            <span><i className="far fa-clock me-1"></i>{post.readTime}</span>
-            <span><i className="far fa-calendar me-1"></i>{post.date}</span>
-            <span><i className="far fa-user me-1"></i>Muhammad Zeeshan</span>
-          </div>
-          <h1 style={{fontSize: '2.5rem', marginBottom: '1.5rem'}}>{post.title}</h1>
-        </div>
-      </section>
-
-      <section className="section-dark-alt">
-        <div className="container">
-          <div className="blog-post-layout">
-            <article className="blog-post-content">
-              <img 
-                src={post.image || 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=450&fit=crop'}
-                alt={`${post.title} - Professional bail bond services in Newark Delaware`}
-                className="blog-post-image"
-              />
-
-              {tocItems.length > 0 && (
-                <div className="toc-box">
-                  <h4><i className="fas fa-list me-2"></i>Table of Contents</h4>
-                  <ul className="toc-list">
-                    {tocItems.map((item, i) => (
-                      <li key={i} className={`toc-item toc-level-${item.level}`}>
-                        <a href={`#${item.id}`} onClick={(e) => {
-                          e.preventDefault();
-                          const element = document.getElementById(item.id);
-                          if (element) {
-                            element.scrollIntoView({behavior: 'smooth', block: 'start'});
-                            window.history.pushState(null, '', `#${item.id}`);
-                          }
-                        }}>
-                          {item.text}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
-              {renderContent()}
-
-              <div className="blog-disclaimer">
-                <strong>Disclaimer:</strong> This information is for educational purposes only 
-                and does not constitute legal advice. For specific legal questions about your case, 
-                please consult with a licensed attorney in Delaware.
-              </div>
-            </article>
-
-            <aside className="blog-sidebar">
-              <div className="sidebar-widget">
-                <h4>Categories</h4>
-                <ul className="category-list">
-                  <li><a href="#">Bail Process</a></li>
-                  <li><a href="#">Delaware Bail Bonds</a></li>
-                  <li><a href="#">Payment Options</a></li>
-                  <li><a href="#">Court & Responsibilities</a></li>
-                </ul>
-              </div>
-
-              <div className="sidebar-widget cta-widget">
-                <h4>Need Help Now?</h4>
-                <p>Available 24/7 for bail bond assistance in Delaware.</p>
-                <a href="tel:+17024478550" className="btn-primary-gold w-100 mb-2">
-                  <i className="fas fa-phone-alt me-2"></i>Call (702) 447-8550
-                </a>
-                <a href="#/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-secondary-outline w-100">
-                  Contact Us
-                </a>
-              </div>
-            </aside>
-          </div>
-        </div>
-      </section>
-
-      <section className="related-posts section-dark">
-        <div className="container">
-          <h3 className="text-center mb-4">Related Posts</h3>
-          <div className="row">
-            {blogPosts.filter(p => p.slug !== slug).slice(0, 2).map((relatedPost) => (
-              <div className="col-md-6" key={relatedPost.slug}>
-                <article className="blog-card">
-                  <div className="blog-card-content">
-                    <span className="blog-card-category">{relatedPost.category}</span>
-                    <h4>
-                      <a 
-                        href={`#/blog/${relatedPost.slug}`}
-                        onClick={(e) => {e.preventDefault(); navigate(`/blog/${relatedPost.slug}`);}}
-                      >
-                        {relatedPost.title}
-                      </a>
-                    </h4>
-                    <p className="blog-card-excerpt">{relatedPost.excerpt}</p>
-                  </div>
-                </article>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="cta-band">
-        <div className="container">
-          <h2>Need Bail Assistance?</h2>
-          <p style={{color: 'var(--text-light-secondary)', marginBottom: '1.5rem'}}>We're here to help 24/7</p>
-          <a href="tel:+17024478550" className="btn-primary-gold me-2 mb-2">
-            <i className="fas fa-phone-alt me-2"></i>Call (702) 447-8550
-          </a>
-          <a href="https://wa.me/13029819223?text=Hi%20Simone%2C%20I%20need%20help%20with%20bail%20bond%20services.%20Please%20let%20me%20know%20how%20you%20can%20assist%20me." target="_blank" rel="noopener noreferrer" className="btn-secondary-outline btn-whatsapp mb-2">
-            <i className="fab fa-whatsapp me-2"></i>WhatsApp
-          </a>
-        </div>
-      </section>
-    </div>
-  );
+  return null;
 };
 
 // ============================================
@@ -4379,7 +4133,10 @@ function App() {
 
     // Blog post
     if (currentPath.startsWith('/blog/')) {
-      const slug = currentPath.replace('/blog/', '');
+      let slug = currentPath.replace('/blog/', '');
+      if (slug === 'how-bail-bonds-work-delaware') {
+        slug = HARDCODED_BLOG_SLUG;
+      }
       return <BlogPostPage slug={slug} navigate={navigate} />;
     }
 

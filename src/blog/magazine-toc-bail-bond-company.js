@@ -1,0 +1,17 @@
+export const BAIL_BOND_COMPANY_TOC = [
+  { id: 'section-intro', prefix: '1.', label: 'Introduction' },
+  { id: 'section-what-is-company', prefix: '2.', label: 'What Is a Bail Bond Company?' },
+  { id: 'section-after-arrest', prefix: '3.', label: 'After an Arrest in Delaware' },
+  { id: 'section-bail-set', prefix: '4.', label: 'How Bail Is Set' },
+  { id: 'section-bond-types', prefix: '5.', label: 'Types of Bail Bonds' },
+  { id: 'section-cost', prefix: '6.', label: 'Cost and the 10% Fee' },
+  { id: 'section-payment-plans', prefix: '7.', label: 'Payment Plans' },
+  { id: 'section-process', prefix: '8.', label: 'Bail Bond Process Step by Step' },
+  { id: 'section-collateral', prefix: '9.', label: 'Collateral in Delaware' },
+  { id: 'section-skips-court', prefix: '10.', label: 'If Defendant Skips Court' },
+  { id: 'section-counties', prefix: '11.', label: 'Delaware Counties Served' },
+  { id: 'section-choose', prefix: '12.', label: 'How to Choose a Company' },
+  { id: 'section-cash-vs-bond', prefix: '13.', label: 'Cash Bail vs Bail Bond' },
+  { id: 'section-faq', prefix: '14.', label: 'FAQs' },
+  { id: 'section-final', prefix: '15.', label: 'Final Thoughts' },
+];

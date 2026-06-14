@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from 'react';
-import { MAGAZINE_TOC_ENTRIES } from '../../../blog/magazine-toc-entries';
 
 function groupEntries(entries) {
   const groups = [];
@@ -111,8 +110,8 @@ function TocAccordion({ entries, activeId, onLinkClick }) {
   );
 }
 
-export function MagazineToc({ navigate, onContactClick }) {
-  const entries = MAGAZINE_TOC_ENTRIES;
+export function MagazineToc({ navigate, onContactClick, tocEntries }) {
+  const entries = tocEntries;
   const [open, setOpen] = useState(false);
   const [activeId, setActiveId] = useState(entries[0]?.id ?? 'section-1');
 

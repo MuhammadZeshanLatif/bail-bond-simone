@@ -4,15 +4,18 @@ import { BlogMagazinePillar } from './components/blog/magazine/BlogMagazinePilla
 import {
   HARDCODED_BLOG_SLUG,
   HARDCODED_BLOG_TITLE,
-  HARDCODED_BLOG_SUBTITLE,
-  HARDCODED_BLOG_META_TITLE,
   HARDCODED_BLOG_META_DESCRIPTION,
-  HARDCODED_BLOG_KEYWORDS,
   HARDCODED_BLOG_IMAGE,
   HARDCODED_BLOG_THUMBNAIL,
-  HARDCODED_BLOG_FAQS,
 } from './blog/hardcoded-static-blog';
-import { usesStaticMagazineArticle } from './blog/pillar-magazine';
+import {
+  BAIL_BOND_COMPANY_SLUG,
+  BAIL_BOND_COMPANY_TITLE,
+  BAIL_BOND_COMPANY_META_DESCRIPTION,
+  BAIL_BOND_COMPANY_IMAGE,
+  BAIL_BOND_COMPANY_THUMBNAIL,
+} from './blog/bail-bond-company-delaware-blog';
+import { getMagazinePost, isMagazinePost } from './blog/magazine-registry';
 
 const SITE_URL = 'https://away2freedom302.com';
 
@@ -2734,6 +2737,18 @@ const FAQPage = ({ navigate }) => {
 // ============================================
 const blogPosts = [
   {
+    slug: BAIL_BOND_COMPANY_SLUG,
+    title: BAIL_BOND_COMPANY_TITLE,
+    excerpt: BAIL_BOND_COMPANY_META_DESCRIPTION,
+    category: 'Bail Process',
+    readTime: '14 min read',
+    date: '2026-06-08',
+    image: BAIL_BOND_COMPANY_THUMBNAIL,
+    heroImage: BAIL_BOND_COMPANY_IMAGE,
+    isMagazine: true,
+    content: '',
+  },
+  {
     slug: HARDCODED_BLOG_SLUG,
     title: HARDCODED_BLOG_TITLE,
     excerpt: HARDCODED_BLOG_META_DESCRIPTION,
@@ -3682,31 +3697,32 @@ const BlogPage = ({ navigate }) => {
 // ============================================
 const BlogPostPage = ({ slug, navigate }) => {
   const post = blogPosts.find(p => p.slug === slug);
-  const isMagazine = usesStaticMagazineArticle(slug);
+  const magazine = getMagazinePost(slug);
+  const isMagazine = isMagazinePost(slug);
 
   useSEO(
-    isMagazine ? HARDCODED_BLOG_META_TITLE : post ? `${post.title} | A Way to Freedom Bail Bonds` : 'Blog Post Not Found',
-    isMagazine ? HARDCODED_BLOG_META_DESCRIPTION : post ? post.excerpt : 'The requested blog post could not be found.',
-    isMagazine ? HARDCODED_BLOG_KEYWORDS : 'bail bonds, Delaware bail, Newark Delaware'
+    isMagazine && magazine ? magazine.metaTitle : post ? `${post.title} | A Way to Freedom Bail Bonds` : 'Blog Post Not Found',
+    isMagazine && magazine ? magazine.metaDescription : post ? post.excerpt : 'The requested blog post could not be found.',
+    isMagazine && magazine ? magazine.keywords : 'bail bonds, Delaware bail, Newark Delaware'
   );
 
-  if (isMagazine) {
+  if (isMagazine && magazine) {
     const magazineSchema = {
       "@context": "https://schema.org",
       "@graph": [
         {
           "@type": "BlogPosting",
-          "headline": HARDCODED_BLOG_TITLE,
-          "description": HARDCODED_BLOG_META_DESCRIPTION,
-          "image": HARDCODED_BLOG_IMAGE,
+          "headline": magazine.title,
+          "description": magazine.metaDescription,
+          "image": magazine.heroImage,
           "author": { "@type": "Person", "name": "Simone Harris" },
           "publisher": { "@type": "Organization", "name": "A Way to Freedom Bail Bonds" },
-          "datePublished": "2026-03-01",
-          "dateModified": "2026-03-26",
+          "datePublished": magazine.publishedAt,
+          "dateModified": magazine.updatedAt,
         },
         {
           "@type": "FAQPage",
-          "mainEntity": HARDCODED_BLOG_FAQS.map((faq) => ({
+          "mainEntity": magazine.faqs.map((faq) => ({
             "@type": "Question",
             "name": faq.question,
             "acceptedAnswer": { "@type": "Answer", "text": faq.answer },
@@ -3719,15 +3735,7 @@ const BlogPostPage = ({ slug, navigate }) => {
     return (
       <BlogMagazinePillar
         navigate={navigate}
-        slug={slug}
-        title={HARDCODED_BLOG_TITLE}
-        excerpt={HARDCODED_BLOG_SUBTITLE}
-        imageUrl={HARDCODED_BLOG_IMAGE}
-        publishedAt="2026-03-01"
-        updatedAt="2026-03-26"
-        author="Simone Harris"
-        authorRole="Licensed Bail Bond Agent"
-        authorBio="In my experience helping Delaware families, the most important thing is calm guidance. Families do not need confusing legal talk during a crisis. They need clear steps, honest answers, and support they can trust."
+        magazine={magazine}
         relatedPosts={blogPosts.filter((p) => p.slug !== slug).slice(0, 3)}
         onContactClick={(e) => {
           e.preventDefault();

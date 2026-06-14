@@ -1,24 +1,13 @@
-import { PILLAR_CATEGORY_LABEL, PILLAR_DEFAULT_HERO } from '../../../blog/pillar-magazine';
+import { PILLAR_DEFAULT_HERO } from '../../../blog/pillar-magazine';
 import { BailBondGuideArticle } from './BailBondGuideArticle';
+import { BailBondCompanyArticle } from './BailBondCompanyArticle';
 import { MagazineToc } from './MagazineToc';
 import '../../../blog-magazine.css';
 
-const MAGAZINE_READ_MIN = 12;
-
-const BENEFITS = [
-  { icon: 'fa-clock', label: '24/7 Available', sub: 'Delaware Agents' },
-  { icon: 'fa-shield-alt', label: 'Licensed & Insured', sub: 'State Certified' },
-  { icon: 'fa-gavel', label: 'Court Process', sub: 'Step-by-Step Guide' },
-  { icon: 'fa-dollar-sign', label: 'Clear Pricing', sub: 'Bond Cost Explained' },
-];
-
-const ARTICLE_TAGS = [
-  'Delaware Bail Bonds',
-  'Bail Bond Agent',
-  'Bail Bond Cost',
-  'Secured Bond',
-  'Family Guide',
-];
+const ARTICLE_MAP = {
+  'how-bail-bonds-work': BailBondGuideArticle,
+  'bail-bond-company': BailBondCompanyArticle,
+};
 
 const DEFAULT_BLOG_CTA = {
   enabled: true,
@@ -35,33 +24,23 @@ function truncateBreadcrumbTitle(title, max = 48) {
 
 export function BlogMagazinePillar({
   navigate,
-  slug,
-  title,
-  excerpt,
-  imageUrl,
-  publishedAt,
-  updatedAt,
-  author,
-  authorAvatarUrl,
-  authorRole,
-  authorBio,
+  magazine,
   relatedPosts = [],
   blogCta,
   onContactClick,
 }) {
   const cta = { ...DEFAULT_BLOG_CTA, ...(blogCta ?? {}) };
-  const displayAuthor = author ?? 'Simone Harris';
-  const trimmed = imageUrl?.trim() ?? '';
+  const ArticleComponent = ARTICLE_MAP[magazine.articleKey];
+  const displayAuthor = 'Simone Harris';
+  const trimmed = magazine.heroImage?.trim() ?? '';
   const heroSrc = trimmed && (trimmed.startsWith('/') || trimmed.startsWith('http')) ? trimmed : PILLAR_DEFAULT_HERO;
-  const heroAlt =
-    'How bail bonds work in Delaware family guide by Simone Harris';
 
-  const publishedLabel = new Date(publishedAt).toLocaleDateString('en-US', {
+  const publishedLabel = new Date(magazine.publishedAt).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
   });
-  const updatedLabel = new Date(updatedAt).toLocaleDateString('en-US', {
+  const updatedLabel = new Date(magazine.updatedAt).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -81,6 +60,8 @@ export function BlogMagazinePillar({
   const prevPost = relatedPosts[0];
   const nextPost = relatedPosts[1];
 
+  if (!ArticleComponent) return null;
+
   return (
     <div className="blog-magazine blog-post-page">
       <main className="bm-inner">
@@ -92,7 +73,11 @@ export function BlogMagazinePillar({
 
         <div className="bm-grid">
           <div className="bm-toc-col">
-            <MagazineToc navigate={navigate} onContactClick={onContactClick} />
+            <MagazineToc
+              navigate={navigate}
+              onContactClick={onContactClick}
+              tocEntries={magazine.tocEntries}
+            />
           </div>
 
           <div className="bm-center">
@@ -102,33 +87,29 @@ export function BlogMagazinePillar({
                 {' › '}
                 <a href="#/blog" onClick={(e) => handleNav(e, '/blog')}>Blog</a>
                 {' › '}
-                <span>{PILLAR_CATEGORY_LABEL}</span>
+                <span>{magazine.categoryLabel}</span>
                 {' › '}
-                <span aria-current="page">{truncateBreadcrumbTitle(title)}</span>
+                <span aria-current="page">{truncateBreadcrumbTitle(magazine.title)}</span>
               </nav>
 
-              <h1 className="bm-h1">{title}</h1>
-              {excerpt && <p className="bm-subtitle">{excerpt}</p>}
+              <h1 className="bm-h1">{magazine.title}</h1>
+              {magazine.subtitle && <p className="bm-subtitle">{magazine.subtitle}</p>}
 
               <div className="bm-meta-row">
-                {authorAvatarUrl ? (
-                  <img src={authorAvatarUrl} alt="" className="bm-meta-avatar" />
-                ) : (
-                  <img src="/images/simoneimg.webp" alt="" className="bm-meta-avatar" />
-                )}
+                <img src="/images/simoneimg.webp" alt="Simone Harris, licensed bail bond agent in Delaware" className="bm-meta-avatar" />
                 <span className="bm-meta-item">By <strong>{displayAuthor}</strong></span>
-                <span className="bm-meta-item"><i className="far fa-calendar" aria-hidden /><time dateTime={publishedAt}>{publishedLabel}</time></span>
-                <span className="bm-meta-item"><i className="far fa-clock" aria-hidden />{MAGAZINE_READ_MIN} min read</span>
+                <span className="bm-meta-item"><i className="far fa-calendar" aria-hidden /><time dateTime={magazine.publishedAt}>{publishedLabel}</time></span>
+                <span className="bm-meta-item"><i className="far fa-clock" aria-hidden />{magazine.readMin} min read</span>
                 <span className="bm-meta-item"><i className="fas fa-eye" aria-hidden />12.4K views</span>
-                <span className="bm-meta-item bm-meta-item--updated"><i className="fas fa-sync-alt" aria-hidden />Updated: <time dateTime={updatedAt}>{updatedLabel}</time></span>
+                <span className="bm-meta-item bm-meta-item--updated"><i className="fas fa-sync-alt" aria-hidden />Updated: <time dateTime={magazine.updatedAt}>{updatedLabel}</time></span>
               </div>
 
               <div className="bm-hero-image-wrap">
-                <img src={heroSrc} alt={heroAlt} className="bm-hero-img" width={1200} height={630} />
+                <img src={heroSrc} alt={magazine.heroAlt} className="bm-hero-img" width={1200} height={630} />
               </div>
 
               <div className="bm-benefits" role="list">
-                {BENEFITS.map((b) => (
+                {magazine.benefits.map((b) => (
                   <div className="bm-benefit" role="listitem" key={b.label}>
                     <div className="bm-benefit-icon"><i className={`fas ${b.icon} bm-icon-gold`} aria-hidden /></div>
                     <div className="bm-benefit-text"><strong>{b.label}</strong><span>{b.sub}</span></div>
@@ -138,12 +119,12 @@ export function BlogMagazinePillar({
             </header>
 
             <article className="bm-article">
-              <BailBondGuideArticle navigate={navigate} onContactClick={onContactClick} />
+              <ArticleComponent navigate={navigate} onContactClick={onContactClick} />
 
               <div className="bm-tags-share">
                 <div className="bm-tags-row">
                   <span className="bm-tags-label">Tags:</span>
-                  {ARTICLE_TAGS.map((tag) => (
+                  {magazine.tags.map((tag) => (
                     <span key={tag} className="bm-tag-pill">{tag}</span>
                   ))}
                 </div>
@@ -186,10 +167,10 @@ export function BlogMagazinePillar({
           <aside className="bm-sidebar" aria-label="Article sidebar">
             <div className="bm-widget">
               <p className="bm-widget-label">About the Author</p>
-              <img src={authorAvatarUrl || '/images/simoneimg.webp'} alt={`${displayAuthor} avatar`} className="bm-author-avatar" width={56} height={56} />
+              <img src="/images/simoneimg.webp" alt="Simone Harris, licensed bail bond agent in Delaware" className="bm-author-avatar" width={56} height={56} />
               <div className="bm-author-name"><span>{displayAuthor.toUpperCase()}</span><i className="fas fa-check-circle bm-icon-gold" aria-label="Verified" /></div>
-              <p className="bm-author-role">{authorRole?.trim() || 'Licensed Bail Bond Agent'}</p>
-              <p className="bm-author-bio">{authorBio?.trim() || 'In my experience helping Delaware families, the most important thing is calm guidance. Families do not need confusing legal talk during a crisis. They need clear steps, honest answers, and support they can trust.'}</p>
+              <p className="bm-author-role">Licensed Bail Bond Agent</p>
+              <p className="bm-author-bio">In my experience helping Delaware families, the most important thing is calm guidance. Families do not need confusing legal talk during a crisis. They need clear steps, honest answers, and support they can trust.</p>
             </div>
 
             {relatedPosts.length > 0 && (

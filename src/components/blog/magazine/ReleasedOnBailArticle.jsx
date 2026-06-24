@@ -165,7 +165,7 @@ export function ReleasedOnBailArticle({ navigate, onContactClick }) {
           <p className="bm-inline-cta-desc">
             Call A Way to Freedom Bail Bonds. Available 24/7 for families in New Castle and Kent County, Delaware.
           </p>
-          <a href="#/contact" className="bm-btn bm-btn--primary bm-btn--full bm-inline-cta-btn" onClick={handleCta}>
+          <a href="/contact" className="bm-btn bm-btn--primary bm-btn--full bm-inline-cta-btn" onClick={handleCta}>
             Start the Process
           </a>
         </div>

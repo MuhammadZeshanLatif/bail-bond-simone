@@ -345,7 +345,7 @@ export function BailBondCompanyArticle({ navigate, onContactClick }) {
           </div>
           <h3 className="bm-inline-cta-title">Need Help Right Now?</h3>
           <p className="bm-inline-cta-desc">Call A Way to Freedom Bail Bonds. Available 24/7 for families across Delaware.</p>
-          <a href="#/contact" className="bm-btn bm-btn--primary bm-btn--full bm-inline-cta-btn" onClick={handleCta}>
+          <a href="/contact" className="bm-btn bm-btn--primary bm-btn--full bm-inline-cta-btn" onClick={handleCta}>
             Start the Process
           </a>
         </div>

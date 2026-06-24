@@ -27,44 +27,50 @@ import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
 const SITE_URL = 'https://away2freedom302.com';
 
-const getCanonicalUrl = () => {
-  const path = window.location.hash
-    ? window.location.hash.slice(1)
-    : window.location.pathname || '/home';
-  const normalized = path.startsWith('/') ? path : `/${path}`;
-  return `${SITE_URL}${normalized}`;
+const normalizePath = (rawPath) => {
+  if (!rawPath || rawPath === '/') return '/home';
+  const pathOnly = rawPath.split('?')[0].split('#')[0];
+  return pathOnly.startsWith('/') ? pathOnly : `/${pathOnly}`;
+};
+
+const getCanonicalPath = (pathname = window.location.pathname) => {
+  const path = normalizePath(pathname);
+  if (path === '/home') return '/';
+  return path;
+};
+
+const getCanonicalUrl = () => `${SITE_URL}${getCanonicalPath()}`;
+
+const toAbsoluteUrl = (url) => {
+  if (!url) return `${SITE_URL}/og-image.jpg`;
+  if (url.startsWith('http')) return url;
+  return `${SITE_URL}${url.startsWith('/') ? url : `/${url}`}`;
 };
 
 // ============================================
 // CUSTOM ROUTER HOOK
 // ============================================
 const useRouter = () => {
-  const [currentPath, setCurrentPath] = useState(() => {
-    // Support hash fallback
-    if (window.location.hash) {
-      return window.location.hash.slice(1) || '/home';
-    }
-    return window.location.pathname || '/home';
-  });
+  const [currentPath, setCurrentPath] = useState(() => normalizePath(window.location.pathname));
 
   const navigate = useCallback((path) => {
-    // Support hash fallback mode
-    if (window.location.hash) {
-      window.location.hash = path;
-    } else {
-      window.history.pushState(null, '', path);
-    }
-    setCurrentPath(path);
+    const normalized = normalizePath(path);
+    window.history.pushState(null, '', normalized === '/home' ? '/' : normalized);
+    setCurrentPath(normalized);
     window.scrollTo(0, 0);
   }, []);
 
   useEffect(() => {
+    // Migrate legacy hash URLs (#/blog/...) to clean URLs for SEO
+    if (window.location.hash.startsWith('#/')) {
+      const legacyPath = normalizePath(window.location.hash.slice(1));
+      window.history.replaceState(null, '', legacyPath === '/home' ? '/' : legacyPath);
+      setCurrentPath(legacyPath);
+      return;
+    }
+
     const handlePopState = () => {
-      if (window.location.hash) {
-        setCurrentPath(window.location.hash.slice(1) || '/home');
-      } else {
-        setCurrentPath(window.location.pathname);
-      }
+      setCurrentPath(normalizePath(window.location.pathname));
       window.scrollTo(0, 0);
     };
 
@@ -116,6 +122,12 @@ useEffect(() => {
       if (twitterImageEl) {
         twitterImageEl.setAttribute('content', ogImage);
       }
+    }
+
+    // Update meta title tag if present
+    let metaTitle = document.querySelector('meta[name="title"]');
+    if (metaTitle) {
+      metaTitle.setAttribute('content', title || '');
     }
 
     const canonicalUrl = getCanonicalUrl();
@@ -215,7 +227,7 @@ const Navbar = ({ currentPath, navigate }) => {
 
       <nav className="navbar navbar-expand-lg navbar-custom">
         <div className="container">
-          <a href="#/home" onClick={(e) => handleNavClick(e, '/home')} className="navbar-brand-custom text-decoration-none">
+          <a href="/" onClick={(e) => handleNavClick(e, '/home')} className="navbar-brand-custom text-decoration-none">
             <div className="brand-icon">
               <i className="fas fa-scale-balanced"></i>
             </div>
@@ -232,7 +244,7 @@ const Navbar = ({ currentPath, navigate }) => {
           <div className="collapse navbar-collapse navbar-nav-wrap" id="navbarNav">
             <ul className="navbar-nav mx-auto align-items-center">
               <li className="nav-item">
-                <a href="#/home" onClick={(e) => handleNavClick(e, '/home')} className={`nav-link-custom nav-link ${isActive('/home') ? 'active' : ''}`}>Home</a>
+                <a href="/" onClick={(e) => handleNavClick(e, '/home')} className={`nav-link-custom nav-link ${isActive('/home') ? 'active' : ''}`}>Home</a>
               </li>
               <li className="nav-item dropdown" ref={dropdownRef}>
                 <a href="#" className={`nav-link-custom nav-link ${currentPath.startsWith('/services') ? 'active' : ''} ${showServices ? 'dropdown-open' : ''}`}
@@ -241,30 +253,30 @@ const Navbar = ({ currentPath, navigate }) => {
                 </a>
                 {showServices && (
                   <div className="dropdown-menu-custom position-absolute show">
-                    <a href="#/services/felony" onClick={(e) => {handleNavClick(e, '/services/felony'); setShowServices(false);}} className="dropdown-item-custom d-block">Felony & Misdemeanor Bonds</a>
-                    <a href="#/services/misdemeanor" onClick={(e) => {handleNavClick(e, '/services/misdemeanor'); setShowServices(false);}} className="dropdown-item-custom d-block">Misdemeanor Bonds</a>
-                    <a href="#/services/secured" onClick={(e) => {handleNavClick(e, '/services/secured'); setShowServices(false);}} className="dropdown-item-custom d-block">Secured Bonds</a>
-                    <a href="#/services/surety" onClick={(e) => {handleNavClick(e, '/services/surety'); setShowServices(false);}} className="dropdown-item-custom d-block">Surety Bail</a>
-                    <a href="#/services/fast-release" onClick={(e) => {handleNavClick(e, '/services/fast-release'); setShowServices(false);}} className="dropdown-item-custom d-block">Fast Release Processing</a>
-                    <a href="#/services/payment" onClick={(e) => {handleNavClick(e, '/services/payment'); setShowServices(false);}} className="dropdown-item-custom d-block">Flexible Payment Arrangements</a>
-                    <a href="#/services/e-paperwork" onClick={(e) => {handleNavClick(e, '/services/e-paperwork'); setShowServices(false);}} className="dropdown-item-custom d-block">Electronic Paperwork</a>
+                    <a href="/services/felony" onClick={(e) => {handleNavClick(e, '/services/felony'); setShowServices(false);}} className="dropdown-item-custom d-block">Felony & Misdemeanor Bonds</a>
+                    <a href="/services/misdemeanor" onClick={(e) => {handleNavClick(e, '/services/misdemeanor'); setShowServices(false);}} className="dropdown-item-custom d-block">Misdemeanor Bonds</a>
+                    <a href="/services/secured" onClick={(e) => {handleNavClick(e, '/services/secured'); setShowServices(false);}} className="dropdown-item-custom d-block">Secured Bonds</a>
+                    <a href="/services/surety" onClick={(e) => {handleNavClick(e, '/services/surety'); setShowServices(false);}} className="dropdown-item-custom d-block">Surety Bail</a>
+                    <a href="/services/fast-release" onClick={(e) => {handleNavClick(e, '/services/fast-release'); setShowServices(false);}} className="dropdown-item-custom d-block">Fast Release Processing</a>
+                    <a href="/services/payment" onClick={(e) => {handleNavClick(e, '/services/payment'); setShowServices(false);}} className="dropdown-item-custom d-block">Flexible Payment Arrangements</a>
+                    <a href="/services/e-paperwork" onClick={(e) => {handleNavClick(e, '/services/e-paperwork'); setShowServices(false);}} className="dropdown-item-custom d-block">Electronic Paperwork</a>
                   </div>
                 )}
               </li>
               <li className="nav-item">
-                <a href="#/about" onClick={(e) => handleNavClick(e, '/about')} className={`nav-link-custom nav-link ${isActive('/about') ? 'active' : ''}`}>About</a>
+                <a href="/about" onClick={(e) => handleNavClick(e, '/about')} className={`nav-link-custom nav-link ${isActive('/about') ? 'active' : ''}`}>About</a>
               </li>
               <li className="nav-item">
-                <a href="#/how-it-works" onClick={(e) => handleNavClick(e, '/how-it-works')} className={`nav-link-custom nav-link ${isActive('/how-it-works') ? 'active' : ''}`}>How It Works</a>
+                <a href="/how-it-works" onClick={(e) => handleNavClick(e, '/how-it-works')} className={`nav-link-custom nav-link ${isActive('/how-it-works') ? 'active' : ''}`}>How It Works</a>
               </li>
               <li className="nav-item">
-                <a href="#/faq" onClick={(e) => handleNavClick(e, '/faq')} className={`nav-link-custom nav-link ${isActive('/faq') ? 'active' : ''}`}>FAQ</a>
+                <a href="/faq" onClick={(e) => handleNavClick(e, '/faq')} className={`nav-link-custom nav-link ${isActive('/faq') ? 'active' : ''}`}>FAQ</a>
               </li>
               <li className="nav-item">
-                <a href="#/blog" onClick={(e) => handleNavClick(e, '/blog')} className={`nav-link-custom nav-link ${currentPath.startsWith('/blog') ? 'active' : ''}`}>Blog</a>
+                <a href="/blog" onClick={(e) => handleNavClick(e, '/blog')} className={`nav-link-custom nav-link ${currentPath.startsWith('/blog') ? 'active' : ''}`}>Blog</a>
               </li>
               <li className="nav-item">
-                <a href="#/contact" onClick={(e) => handleNavClick(e, '/contact')} className={`nav-link-custom nav-link ${isActive('/contact') ? 'active' : ''}`}>Contact</a>
+                <a href="/contact" onClick={(e) => handleNavClick(e, '/contact')} className={`nav-link-custom nav-link ${isActive('/contact') ? 'active' : ''}`}>Contact</a>
               </li>
             </ul>
             <a href="tel:+17024478550" className="btn-call-header d-none d-lg-inline-flex">
@@ -848,7 +860,7 @@ const SimoneHomePage = () => {
             </div>
           </div>
           <div className="text-center mt-4">
-            <a href="#/services" className="btn btn-gold">Learn More</a>
+            <a href="/services" className="btn btn-gold">Learn More</a>
           </div>
         </div>
       </section>
@@ -983,7 +995,7 @@ const SimoneHomePage = () => {
                   </span>
                 </div>
                 <div className="mt-5">
-                  <a href="#/service-areas" className="btn btn-gold btn-lg">
+                  <a href="/service-areas" className="btn btn-gold btn-lg">
                     <i className="fas fa-map me-2"></i>View Service Areas
                   </a>
                 </div>
@@ -1528,10 +1540,10 @@ const HomePage = ({ navigate }) => {
                     <i className="fas fa-phone-alt"></i>
                     Call Now
                   </a>
-                  <a href="#/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-secondary-outline">
+                  <a href="/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-secondary-outline">
                     Start the Process
                   </a>
-                  <a href="#/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-secondary-outline">
+                  <a href="/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-secondary-outline">
                     Speak With an Agent
                   </a>
                 </div>
@@ -1576,77 +1588,77 @@ const HomePage = ({ navigate }) => {
             <div className="service-card reveal">
               <h3>Bail Bonds</h3>
               <p>We help people start the release process after bail has been set. Our team explains what the bond amount means, what paperwork is needed, and how the next step works. This service is for families, co-signers, and defendants who need fast help after an arrest.</p>
-              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+              <a href="/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
             </div>
             <div className="service-card reveal">
               <h3>Criminal Bail Bonds</h3>
               <p>We help with bail bond needs tied to criminal charges in Delaware. This may include arrest situations involving state charges, court appearances, and release conditions. We explain the process in simple language so families understand what happens next.</p>
-              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+              <a href="/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
             </div>
             <div className="service-card reveal">
               <h3>Felony Bonds</h3>
               <p>Felony bonds are tied to more serious criminal charges and often involve higher bond amounts or stricter court conditions. We help families and co-signers understand the release process, financial responsibility, and paperwork needed to move forward.</p>
-              <a href="#/services/felony" onClick={(e) => {e.preventDefault(); navigate('/services/felony');}} className="btn-secondary-outline mt-2">Learn More</a>
+              <a href="/services/felony" onClick={(e) => {e.preventDefault(); navigate('/services/felony');}} className="btn-secondary-outline mt-2">Learn More</a>
             </div>
             <div className="service-card reveal">
               <h3>Misdemeanor Bonds</h3>
               <p>Misdemeanor bonds help people get released after less serious charges, but the stress for the family is still real. We explain the bond amount, release steps, and co-signer role clearly so people can act quickly and make informed decisions.</p>
-              <a href="#/services/misdemeanor" onClick={(e) => {e.preventDefault(); navigate('/services/misdemeanor');}} className="btn-secondary-outline mt-2">Learn More</a>
+              <a href="/services/misdemeanor" onClick={(e) => {e.preventDefault(); navigate('/services/misdemeanor');}} className="btn-secondary-outline mt-2">Learn More</a>
             </div>
             <div className="service-card reveal">
               <h3>Traffic Bonds</h3>
               <p>Traffic bonds may apply when someone is arrested for a traffic-related offense and bond is required for release. We help explain the bond process, court-related concerns, and the next step needed to move the release process forward.</p>
-              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+              <a href="/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
             </div>
             <div className="service-card reveal">
               <h3>Juvenile Bonds</h3>
               <p>Juvenile bond situations can feel confusing and emotional for parents and guardians. We help families understand what bond may apply, what paperwork may be needed, and how to take the next step as quickly and clearly as possible.</p>
-              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+              <a href="/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
             </div>
             <div className="service-card reveal">
               <h3>Secured Bonds</h3>
               <p>Secured bonds require money, property, or other approved security to support the bond amount. We explain how secured bond situations work, what financial responsibility may be involved, and what the co-signer should understand before signing.</p>
-              <a href="#/services/secured" onClick={(e) => {e.preventDefault(); navigate('/services/secured');}} className="btn-secondary-outline mt-2">Learn More</a>
+              <a href="/services/secured" onClick={(e) => {e.preventDefault(); navigate('/services/secured');}} className="btn-secondary-outline mt-2">Learn More</a>
             </div>
             <div className="service-card reveal">
               <h3>Surety Bail Bonds</h3>
               <p>Surety bail bonds help defendants secure release without paying the full bail amount directly to the court. We help with the bond application, indemnitor or co-signer review, paperwork, and the release process so families can move forward with less confusion.</p>
-              <a href="#/services/surety" onClick={(e) => {e.preventDefault(); navigate('/services/surety');}} className="btn-secondary-outline mt-2">Learn More</a>
+              <a href="/services/surety" onClick={(e) => {e.preventDefault(); navigate('/services/surety');}} className="btn-secondary-outline mt-2">Learn More</a>
             </div>
             <div className="service-card reveal">
               <h3>Cash Bail</h3>
               <p>Cash bail may require the full cash amount ordered by the court before release can happen. We explain how cash bail works, what it means in the case, and how families can understand their options during a stressful time.</p>
-              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+              <a href="/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
             </div>
             <div className="service-card reveal">
               <h3>Appeal Bonds</h3>
               <p>Appeal bonds may be needed when a case is under appeal and bond-related issues affect release or court obligations. These situations can be more complex, so we explain the process carefully and help clients understand what may be required.</p>
-              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+              <a href="/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
             </div>
             <div className="service-card reveal">
               <h3>Federal Bonds</h3>
               <p>Federal bond cases follow a different process than many state court matters. We help clients understand the bond conditions, paperwork, and release expectations in federal cases so there is less confusion and delay.</p>
-              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+              <a href="/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
             </div>
             <div className="service-card reveal">
               <h3>State Bail Bonds</h3>
               <p>State bail bonds apply to cases handled in Delaware state courts. We help explain the bond amount, release conditions, co-signer obligations, and next steps so families know how to move forward with more confidence.</p>
-              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+              <a href="/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
             </div>
             <div className="service-card reveal">
               <h3>Transfer Bonds</h3>
               <p>Transfer bonds involve cases where the defendant, hold, or bond process connects to another jurisdiction. We help explain how the transfer situation may affect release, paperwork, and the overall bond process.</p>
-              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+              <a href="/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
             </div>
             <div className="service-card reveal">
               <h3>Out-of-State Transfer Bonds</h3>
               <p>Out-of-state transfer bond situations can involve added steps because another state is involved. We help families understand what information may be needed, what delays can happen, and how the bond process may move across jurisdictions.</p>
-              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+              <a href="/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
             </div>
             <div className="service-card reveal">
               <h3>Violation of Probation Bonds</h3>
               <p>Violation of probation cases can move quickly and create stress for both the defendant and the family. We help explain the bond situation, court-related risk, and the next step needed to begin the release process.</p>
-              <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
+              <a href="/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="btn-secondary-outline mt-2">Learn More</a>
             </div>
           </div>
         </div>
@@ -1688,7 +1700,7 @@ const HomePage = ({ navigate }) => {
             </div>
           </div>
           <div className="text-center mt-4">
-            <a href="#/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-primary-gold">
+            <a href="/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-primary-gold">
               Start the Process
             </a>
           </div>
@@ -1718,7 +1730,7 @@ const HomePage = ({ navigate }) => {
             </div>
           </div>
           <div className="text-center mt-4">
-            <a href="#/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-primary-gold">
+            <a href="/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-primary-gold">
               Speak With an Agent
             </a>
           </div>
@@ -1741,7 +1753,7 @@ const HomePage = ({ navigate }) => {
             <li>Kent County, Delaware</li>
           </ul>
           <div className="text-center mt-4">
-            <a href="#/service-areas" onClick={(e) => {e.preventDefault(); navigate('/service-areas');}} className="btn-primary-gold">
+            <a href="/service-areas" onClick={(e) => {e.preventDefault(); navigate('/service-areas');}} className="btn-primary-gold">
               View Service Areas
             </a>
           </div>
@@ -1961,7 +1973,7 @@ const HomePage = ({ navigate }) => {
             <a href="tel:+17024478550" className="btn-secondary-outline">
               Get Bail Help Now
             </a>
-            <a href="#/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-secondary-outline">
+            <a href="/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-secondary-outline">
               Start the Process Today
             </a>
           </div>
@@ -2245,7 +2257,7 @@ const ServiceDetailPage = ({ serviceKey, navigate }) => {
     <div className="page-container">
       <section className="service-detail-hero">
         <div className="container">
-          <a href="#/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="back-link">
+          <a href="/services" onClick={(e) => {e.preventDefault(); navigate('/services');}} className="back-link">
             <i className="fas fa-arrow-left"></i> Back to All Services
           </a>
           <div className="gold-divider" style={{margin: '1rem 0'}}></div>
@@ -2325,7 +2337,7 @@ const ServiceDetailPage = ({ serviceKey, navigate }) => {
           <a href="tel:+17024478550" className="btn-primary-gold me-2 mb-2">
             <i className="fas fa-phone-alt me-2"></i>(702) 447-8550
           </a>
-          <a href="#/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-secondary-outline mb-2">
+          <a href="/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-secondary-outline mb-2">
             Contact Us
           </a>
         </div>
@@ -2422,7 +2434,7 @@ const AboutPage = ({ navigate }) => {
                     <i className="fas fa-phone-alt me-2"></i>Call Us Now
                   </a>
                   <a
-                    href="#/contact"
+                    href="/contact"
                     onClick={(e) => {
                       e.preventDefault();
                       navigate('/contact');
@@ -2538,7 +2550,7 @@ const HowItWorksPage = ({ navigate }) => {
                 <a href="tel:+17024478550" className="btn-primary-gold w-100 mb-2">
                   <i className="fas fa-phone-alt me-2"></i>Call (702) 447-8550
                 </a>
-                <a href="#/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-secondary-outline w-100">
+                <a href="/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-secondary-outline w-100">
                   Contact Us
                 </a>
               </div>
@@ -2546,10 +2558,10 @@ const HowItWorksPage = ({ navigate }) => {
               <div className="sidebar-widget mt-4">
                 <h4>Related Services</h4>
                 <ul className="category-list">
-                  <li><a href="#/services/felony" onClick={(e) => {e.preventDefault(); navigate('/services/felony');}}>Felony & Misdemeanor Bonds</a></li>
-                  <li><a href="#/services/misdemeanor" onClick={(e) => {e.preventDefault(); navigate('/services/misdemeanor');}}>Misdemeanor Bonds</a></li>
-                  <li><a href="#/services/fast-release" onClick={(e) => {e.preventDefault(); navigate('/services/fast-release');}}>Fast Release Processing</a></li>
-                  <li><a href="#/services/payment" onClick={(e) => {e.preventDefault(); navigate('/services/payment');}}>Payment Plans</a></li>
+                  <li><a href="/services/felony" onClick={(e) => {e.preventDefault(); navigate('/services/felony');}}>Felony & Misdemeanor Bonds</a></li>
+                  <li><a href="/services/misdemeanor" onClick={(e) => {e.preventDefault(); navigate('/services/misdemeanor');}}>Misdemeanor Bonds</a></li>
+                  <li><a href="/services/fast-release" onClick={(e) => {e.preventDefault(); navigate('/services/fast-release');}}>Fast Release Processing</a></li>
+                  <li><a href="/services/payment" onClick={(e) => {e.preventDefault(); navigate('/services/payment');}}>Payment Plans</a></li>
                 </ul>
               </div>
             </div>
@@ -3647,7 +3659,7 @@ const BlogPage = ({ navigate }) => {
                 <a href="tel:+17024478550" className="btn-primary-gold w-100 mb-2">
                   <i className="fas fa-phone-alt me-2"></i>Call Now
                 </a>
-                <a href="#/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-secondary-outline w-100">
+                <a href="/contact" onClick={(e) => {e.preventDefault(); navigate('/contact');}} className="btn-secondary-outline w-100">
                   Start Bail Process
                 </a>
                 <p className="mt-3 mb-0" style={{fontSize: '0.8rem'}}>
@@ -3682,11 +3694,15 @@ const BlogPostPage = ({ slug, navigate }) => {
         "@type": "BlogPosting",
         "headline": magazine.title,
         "description": magazine.metaDescription,
-        "image": magazine.heroImage,
+        "image": toAbsoluteUrl(magazine.heroImage),
         "author": { "@type": "Person", "name": "Simone Harris" },
         "publisher": { "@type": "Organization", "name": "A Way to Freedom Bail Bonds" },
         "datePublished": magazine.publishedAt,
         "dateModified": magazine.updatedAt,
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": `${SITE_URL}/blog/${magazine.slug}`,
+        },
       },
     ];
     if (magazine.faqs.length > 0) {
@@ -3720,7 +3736,7 @@ const BlogPostPage = ({ slug, navigate }) => {
         <div className="container py-5 text-center">
           <h1>Post Not Found</h1>
           <p style={{color: 'var(--text-light-secondary)'}}>The blog post you're looking for doesn't exist.</p>
-          <a href="#/blog" onClick={(e) => {e.preventDefault(); navigate('/blog');}} className="btn-primary-gold">
+          <a href="/blog" onClick={(e) => {e.preventDefault(); navigate('/blog');}} className="btn-primary-gold">
             Back to Blog
           </a>
         </div>
@@ -4082,10 +4098,10 @@ const NotFoundPage = ({ navigate }) => {
                 The page you&apos;re looking for doesn&apos;t exist or has been moved. We&apos;re here to help — get back on track or reach out for 24/7 bail bond assistance in Delaware.
               </p>
               <div className="d-flex flex-wrap justify-content-center gap-3 mt-4">
-                <a href="#/home" onClick={(e) => { e.preventDefault(); navigate('/home'); }} className="btn btn-primary-gold">
+                <a href="/" onClick={(e) => { e.preventDefault(); navigate('/home'); }} className="btn btn-primary-gold">
                   <i className="fas fa-home me-2"></i>Back to Home
                 </a>
-                <a href="#/contact" onClick={(e) => { e.preventDefault(); navigate('/contact'); }} className="btn btn-outline-gold">
+                <a href="/contact" onClick={(e) => { e.preventDefault(); navigate('/contact'); }} className="btn btn-outline-gold">
                   <i className="fas fa-phone-alt me-2"></i>Contact Us
                 </a>
               </div>

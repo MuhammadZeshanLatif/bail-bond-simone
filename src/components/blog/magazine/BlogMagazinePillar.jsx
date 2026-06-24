@@ -17,7 +17,7 @@ const DEFAULT_BLOG_CTA = {
   title: 'Need Bail Bond Help Now?',
   description: 'Speak with a local agent for fast, clear guidance after an arrest.',
   button_label: 'Start the Process',
-  button_href: '#/contact',
+  button_href: '/contact',
 };
 
 function truncateBreadcrumbTitle(title, max = 48) {
@@ -78,7 +78,7 @@ export function BlogMagazinePillar({
     <div className="blog-magazine blog-post-page">
       <main className="bm-inner">
         <div className="bm-back">
-          <a href="#/blog" onClick={(e) => handleNav(e, '/blog')}>
+          <a href="/blog" onClick={(e) => handleNav(e, '/blog')}>
             <i className="fas fa-arrow-left" aria-hidden /> All Articles
           </a>
         </div>
@@ -95,9 +95,9 @@ export function BlogMagazinePillar({
           <div className="bm-center">
             <header className="bm-hero-block">
               <nav className="bm-breadcrumb" aria-label="Breadcrumb">
-                <a href="#/home" onClick={(e) => handleNav(e, '/home')}>Home</a>
+                <a href="/" onClick={(e) => handleNav(e, '/home')}>Home</a>
                 {' › '}
-                <a href="#/blog" onClick={(e) => handleNav(e, '/blog')}>Blog</a>
+                <a href="/blog" onClick={(e) => handleNav(e, '/blog')}>Blog</a>
                 {' › '}
                 <span>{magazine.categoryLabel}</span>
                 {' › '}
@@ -156,7 +156,7 @@ export function BlogMagazinePillar({
                     <p className="bm-nav-title">{prevPost.title}</p>
                   </a>
                 ) : (
-                  <a href="#/blog" className="bm-prev-card" onClick={(e) => handleNav(e, '/blog')}>
+                  <a href="/blog" className="bm-prev-card" onClick={(e) => handleNav(e, '/blog')}>
                     <p className="bm-nav-direction"><i className="fas fa-arrow-left" aria-hidden />Previous Post</p>
                     <p className="bm-nav-title">Back to Blog</p>
                   </a>
@@ -167,7 +167,7 @@ export function BlogMagazinePillar({
                     <p className="bm-nav-title">{nextPost.title}</p>
                   </a>
                 ) : (
-                  <a href="#/blog" className="bm-next-card" onClick={(e) => handleNav(e, '/blog')}>
+                  <a href="/blog" className="bm-next-card" onClick={(e) => handleNav(e, '/blog')}>
                     <p className="bm-nav-direction bm-nav-direction--right">Next Post<i className="fas fa-arrow-right" aria-hidden /></p>
                     <p className="bm-nav-title">Browse All Articles</p>
                   </a>

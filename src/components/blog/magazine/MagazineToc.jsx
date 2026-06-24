@@ -157,7 +157,7 @@ export function MagazineToc({ navigate, onContactClick, tocEntries }) {
           <h4>Need Bail Bond Help Now?</h4>
           <p>Speak with a local agent for fast, clear guidance after an arrest.</p>
           <a
-            href="#/contact"
+            href="/contact"
             className="bm-notsure-btn"
             onClick={(e) => {
               e.preventDefault();

@@ -1,7 +1,21 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-RewriteRule ^index\.html$ - [L]
+
+# Canonical host: non-www
+RewriteCond %{HTTP_HOST} ^www\.away2freedom302\.com$ [NC]
+RewriteRule ^(.*)$ https://away2freedom302.com/$1 [R=301,L]
+
+# Canonical homepage: /home -> /
+RewriteRule ^home/?$ / [R=301,L]
+
+# Serve prerendered static HTML for nested routes (e.g. /blog/slug)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html -f
+RewriteRule ^(.+?)/?$ $1/index.html [L]
+
+# SPA fallback for client-side navigation
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]

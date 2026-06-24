@@ -1,39 +1,27 @@
-# GitHub Secrets – Hostinger Deploy (FTPS)
+# GitHub Secrets – Hostinger SSH Deploy
 
-**Jahan add karenge:** Repo → **Settings** → **Secrets and variables** → **Actions** → **New repository secret**
-
-Deploy ab **FTPS** use karta hai (SSH password GitHub Actions se often `Permission denied` deta hai).
+**Jahan add karenge:** Repo → **Settings** → **Secrets and variables** → **Actions**
 
 ---
 
-## Required secret (sirf 1)
+## Required secrets (aapke paas ye 5 hain)
 
-| GitHub Secret | Value | Notes |
-|---------------|-------|-------|
-| `FTP_PASSWORD` | apna FTP password | hPanel → **Files** → **FTP Accounts** → password |
-
-Host, username, aur deploy path workflow file mein set hain (`82.25.87.23`, `u932362804`, `domains/away2freedom302.com/public_html/`).
-
----
-
-## Optional (agar alag FTP account ho)
-
-| GitHub Secret | Notes |
-|---------------|-------|
-| `FTP_HOST` | Override server IP |
-| `FTP_USERNAME` | Override username |
-| `FTP_REMOTE_PATH` | Override remote folder |
+| GitHub Secret | Example | Notes |
+|---------------|---------|-------|
+| `SSH_HOST` | `82.25.87.23` | hPanel → SSH Access → IP |
+| `SSH_PORT` | `65002` | Hostinger shared = **65002** (22 nahi) |
+| `SSH_USERNAME` | `u932362804` | SSH username |
+| `SSH_PASSWORD` | apna password | hPanel SSH password |
+| `SSH_REMOTE_PATH` | `/home/u932362804/domains/away2freedom302.com/public_html/` | Trailing `/` rakho |
 
 ---
 
-## hPanel se FTP password kaise lein
+## Deploy kaise hota hai
 
-1. **hPanel** → **Files** → **FTP Accounts**
-2. Apna account dekho (`u932362804`)
-3. Password reset karo agar yaad nahi
-4. Wahi password `FTP_PASSWORD` secret mein daalo
-
-> **Important:** `FTP_PASSWORD` aur `SSH_PASSWORD` same nahi hote. Purane SSH secrets se deploy nahi chalega — ye 4 FTP secrets add karo.
+1. `npm run build` — static pages generate
+2. `deploy.tar.gz` banta hai
+3. SSH se server par upload
+4. `SSH_REMOTE_PATH` mein extract
 
 ---
 
@@ -41,16 +29,14 @@ Host, username, aur deploy path workflow file mein set hain (`82.25.87.23`, `u93
 
 | Error | Fix |
 |-------|-----|
-| `Login authentication failed` | `FTP_PASSWORD` reset karo hPanel se, phir GitHub secret update |
-| `Permission denied` (SSH/rsync) | Purana workflow tha — ab FTPS use hota hai |
-| Site temp URL par khule | `FTP_REMOTE_PATH` = **away2freedom302.com** ka `public_html` |
-| `Connection timed out` | `FTP_HOST` = `82.25.87.23`, port `21`, protocol `ftps` |
+| `Permission denied` | `SSH_PASSWORD` hPanel SSH password se match karo (FTP password alag ho sakta hai) |
+| `Connection timed out` | `SSH_PORT` = `65002`, SSH hPanel se enable karo |
+| Site galat domain par | `SSH_REMOTE_PATH` = **away2freedom302.com** ka `public_html` |
 
 ---
 
 ## Checklist
 
-- [ ] `FTP_PASSWORD` secret add kiya (hPanel FTP password)
-- [ ] Workflow push kiya `master` branch par
-
-Push to `master` → Actions → **Deploy via FTPS** green hona chahiye.
+- [ ] SSH enabled in Hostinger hPanel
+- [ ] 5 secrets set (screenshot jaisa)
+- [ ] Push to `master` → Actions green

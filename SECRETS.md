@@ -6,14 +6,23 @@ Deploy ab **FTPS** use karta hai (SSH password GitHub Actions se often `Permissi
 
 ---
 
-## Required secrets (FTP)
+## Required secret (sirf 1)
 
 | GitHub Secret | Value | Notes |
 |---------------|-------|-------|
-| `FTP_HOST` | `82.25.87.23` | hPanel → **Files** → **FTP Accounts** → hostname/IP |
-| `FTP_USERNAME` | `u932362804` | FTP username |
-| `FTP_PASSWORD` | apna FTP password | **hPanel FTP password** (SSH password alag ho sakta hai) |
-| `FTP_REMOTE_PATH` | `domains/away2freedom302.com/public_html/` | Trailing `/` rakho. Temp domain ka path mat use karo. |
+| `FTP_PASSWORD` | apna FTP password | hPanel → **Files** → **FTP Accounts** → password |
+
+Host, username, aur deploy path workflow file mein set hain (`82.25.87.23`, `u932362804`, `domains/away2freedom302.com/public_html/`).
+
+---
+
+## Optional (agar alag FTP account ho)
+
+| GitHub Secret | Notes |
+|---------------|-------|
+| `FTP_HOST` | Override server IP |
+| `FTP_USERNAME` | Override username |
+| `FTP_REMOTE_PATH` | Override remote folder |
 
 ---
 
@@ -41,9 +50,7 @@ Deploy ab **FTPS** use karta hai (SSH password GitHub Actions se often `Permissi
 
 ## Checklist
 
-- [ ] `FTP_HOST` = `82.25.87.23`
-- [ ] `FTP_USERNAME` = `u932362804`
-- [ ] `FTP_PASSWORD` = hPanel FTP password
-- [ ] `FTP_REMOTE_PATH` = `domains/away2freedom302.com/public_html/`
+- [ ] `FTP_PASSWORD` secret add kiya (hPanel FTP password)
+- [ ] Workflow push kiya `master` branch par
 
 Push to `master` → Actions → **Deploy via FTPS** green hona chahiye.

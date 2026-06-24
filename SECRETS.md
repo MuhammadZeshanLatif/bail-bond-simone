@@ -1,35 +1,30 @@
-# GitHub Secrets – Hostinger SSH Deploy
+# GitHub Secrets – Hostinger Deploy (FTPS)
 
 **Jahan add karenge:** Repo → **Settings** → **Secrets and variables** → **Actions** → **New repository secret**
 
+Deploy ab **FTPS** use karta hai (SSH password GitHub Actions se often `Permission denied` deta hai).
+
 ---
 
-## Required secrets
+## Required secrets (FTP)
 
 | GitHub Secret | Value | Notes |
 |---------------|-------|-------|
-| `SSH_HOST` | `82.25.87.23` | hPanel → **Advanced → SSH Access** → IP/hostname |
-| `SSH_PORT` | `65002` | **Hostinger shared hosting = 65002** (22 nahi!) |
-| `SSH_USERNAME` | `u932362804` | SSH username (FTP jaisa) |
-| `SSH_PASSWORD` | apna SSH password | hPanel mein SSH enable karke set karo |
-| `SSH_REMOTE_PATH` | `/home/u932362804/domains/away2freedom302.com/public_html/` | Deploy folder (trailing `/` rakho) |
-
-## Optional (recommended)
-
-| GitHub Secret | Notes |
-|---------------|-------|
-| `SSH_PRIVATE_KEY` | SSH key auth — password ki jagah ya sath use ho sakti hai |
+| `FTP_HOST` | `82.25.87.23` | hPanel → **Files** → **FTP Accounts** → hostname/IP |
+| `FTP_USERNAME` | `u932362804` | FTP username |
+| `FTP_PASSWORD` | apna FTP password | **hPanel FTP password** (SSH password alag ho sakta hai) |
+| `FTP_REMOTE_PATH` | `domains/away2freedom302.com/public_html/` | Trailing `/` rakho. Temp domain ka path mat use karo. |
 
 ---
 
-## Hostinger mein SSH enable karo (zaroori)
+## hPanel se FTP password kaise lein
 
-1. **hPanel** → **Advanced** → **SSH Access**
-2. SSH **Enable** karo
-3. Password set karo (ya SSH key add karo)
-4. Port note karo — usually **65002**
+1. **hPanel** → **Files** → **FTP Accounts**
+2. Apna account dekho (`u932362804`)
+3. Password reset karo agar yaad nahi
+4. Wahi password `FTP_PASSWORD` secret mein daalo
 
-Agar SSH disabled ho to GitHub Actions se **Connection timed out** aata hai.
+> **Important:** `FTP_PASSWORD` aur `SSH_PASSWORD` same nahi hote. Purane SSH secrets se deploy nahi chalega — ye 4 FTP secrets add karo.
 
 ---
 
@@ -37,19 +32,18 @@ Agar SSH disabled ho to GitHub Actions se **Connection timed out** aata hai.
 
 | Error | Fix |
 |-------|-----|
-| `Connection timed out` | Port `65002` use karo, SSH hPanel se enable karo |
-| `Permission denied` | `SSH_USERNAME` / `SSH_PASSWORD` check karo |
-| Site temp URL par khule | `SSH_REMOTE_PATH` = **away2freedom302.com** ka `public_html`, gray-partridge ka nahi |
+| `Login authentication failed` | `FTP_PASSWORD` reset karo hPanel se, phir GitHub secret update |
+| `Permission denied` (SSH/rsync) | Purana workflow tha — ab FTPS use hota hai |
+| Site temp URL par khule | `FTP_REMOTE_PATH` = **away2freedom302.com** ka `public_html` |
+| `Connection timed out` | `FTP_HOST` = `82.25.87.23`, port `21`, protocol `ftps` |
 
 ---
 
 ## Checklist
 
-- [ ] SSH enabled in Hostinger hPanel
-- [ ] `SSH_HOST` = `82.25.87.23`
-- [ ] `SSH_PORT` = `65002`
-- [ ] `SSH_USERNAME` = `u932362804`
-- [ ] `SSH_PASSWORD` = SSH password
-- [ ] `SSH_REMOTE_PATH` = `/home/u932362804/domains/away2freedom302.com/public_html/`
+- [ ] `FTP_HOST` = `82.25.87.23`
+- [ ] `FTP_USERNAME` = `u932362804`
+- [ ] `FTP_PASSWORD` = hPanel FTP password
+- [ ] `FTP_REMOTE_PATH` = `domains/away2freedom302.com/public_html/`
 
-Push to `master` → Actions mein **Test SSH connection** green hona chahiye, phir **Deploy via SSH (SCP)**.
+Push to `master` → Actions → **Deploy via FTPS** green hona chahiye.

@@ -15,6 +15,13 @@ import {
   BAIL_BOND_COMPANY_IMAGE,
   BAIL_BOND_COMPANY_THUMBNAIL,
 } from './blog/bail-bond-company-delaware-blog';
+import {
+  RELEASED_ON_BAIL_SLUG,
+  RELEASED_ON_BAIL_TITLE,
+  RELEASED_ON_BAIL_META_DESCRIPTION,
+  RELEASED_ON_BAIL_IMAGE,
+  RELEASED_ON_BAIL_THUMBNAIL,
+} from './blog/released-on-bail-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -2736,6 +2743,18 @@ const FAQPage = ({ navigate }) => {
 // BLOG DATA
 // ============================================
 const blogPosts = [
+  {
+    slug: RELEASED_ON_BAIL_SLUG,
+    title: RELEASED_ON_BAIL_TITLE,
+    excerpt: RELEASED_ON_BAIL_META_DESCRIPTION,
+    category: 'Bail Process',
+    readTime: '10 min read',
+    date: '2026-05-31',
+    image: RELEASED_ON_BAIL_THUMBNAIL,
+    heroImage: RELEASED_ON_BAIL_IMAGE,
+    isMagazine: true,
+    content: '',
+  },
   {
     slug: BAIL_BOND_COMPANY_SLUG,
     title: BAIL_BOND_COMPANY_TITLE,

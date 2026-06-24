@@ -27,6 +27,23 @@ import {
   BAIL_BOND_COMPANY_FAQS,
 } from './bail-bond-company-delaware-blog';
 import { BAIL_BOND_COMPANY_TOC } from './magazine-toc-bail-bond-company';
+import {
+  RELEASED_ON_BAIL_SLUG,
+  RELEASED_ON_BAIL_TITLE,
+  RELEASED_ON_BAIL_SUBTITLE,
+  RELEASED_ON_BAIL_META_TITLE,
+  RELEASED_ON_BAIL_META_DESCRIPTION,
+  RELEASED_ON_BAIL_KEYWORDS,
+  RELEASED_ON_BAIL_IMAGE,
+  RELEASED_ON_BAIL_THUMBNAIL,
+  RELEASED_ON_BAIL_HERO_ALT,
+  RELEASED_ON_BAIL_CATEGORY,
+  RELEASED_ON_BAIL_READ_MIN,
+  RELEASED_ON_BAIL_BENEFITS,
+  RELEASED_ON_BAIL_TAGS,
+  RELEASED_ON_BAIL_FAQS,
+} from './released-on-bail-blog';
+import { RELEASED_ON_BAIL_TOC } from './magazine-toc-released-on-bail';
 
 export const MAGAZINE_POSTS = {
   [HARDCODED_BLOG_SLUG]: {
@@ -73,6 +90,26 @@ export const MAGAZINE_POSTS = {
     articleKey: 'bail-bond-company',
     publishedAt: '2026-06-08',
     updatedAt: '2026-06-08',
+  },
+  [RELEASED_ON_BAIL_SLUG]: {
+    slug: RELEASED_ON_BAIL_SLUG,
+    title: RELEASED_ON_BAIL_TITLE,
+    subtitle: RELEASED_ON_BAIL_SUBTITLE,
+    metaTitle: RELEASED_ON_BAIL_META_TITLE,
+    metaDescription: RELEASED_ON_BAIL_META_DESCRIPTION,
+    keywords: RELEASED_ON_BAIL_KEYWORDS,
+    heroImage: RELEASED_ON_BAIL_IMAGE,
+    thumbnail: RELEASED_ON_BAIL_THUMBNAIL,
+    heroAlt: RELEASED_ON_BAIL_HERO_ALT,
+    categoryLabel: RELEASED_ON_BAIL_CATEGORY,
+    readMin: RELEASED_ON_BAIL_READ_MIN,
+    benefits: RELEASED_ON_BAIL_BENEFITS,
+    tags: RELEASED_ON_BAIL_TAGS,
+    faqs: RELEASED_ON_BAIL_FAQS,
+    tocEntries: RELEASED_ON_BAIL_TOC,
+    articleKey: 'released-on-bail',
+    publishedAt: '2026-05-31',
+    updatedAt: '2026-05-31',
   },
 };
 

@@ -44,6 +44,23 @@ import {
   RELEASED_ON_BAIL_FAQS,
 } from './released-on-bail-blog';
 import { RELEASED_ON_BAIL_TOC } from './magazine-toc-released-on-bail';
+import {
+  CASH_BOND_MEANING_SLUG,
+  CASH_BOND_MEANING_TITLE,
+  CASH_BOND_MEANING_SUBTITLE,
+  CASH_BOND_MEANING_META_TITLE,
+  CASH_BOND_MEANING_META_DESCRIPTION,
+  CASH_BOND_MEANING_KEYWORDS,
+  CASH_BOND_MEANING_IMAGE,
+  CASH_BOND_MEANING_THUMBNAIL,
+  CASH_BOND_MEANING_HERO_ALT,
+  CASH_BOND_MEANING_CATEGORY,
+  CASH_BOND_MEANING_READ_MIN,
+  CASH_BOND_MEANING_BENEFITS,
+  CASH_BOND_MEANING_TAGS,
+  CASH_BOND_MEANING_FAQS,
+} from './cash-bond-meaning-blog';
+import { CASH_BOND_MEANING_TOC } from './magazine-toc-cash-bond-meaning';
 
 export const MAGAZINE_POSTS = {
   [HARDCODED_BLOG_SLUG]: {
@@ -110,6 +127,26 @@ export const MAGAZINE_POSTS = {
     articleKey: 'released-on-bail',
     publishedAt: '2026-05-31',
     updatedAt: '2026-05-31',
+  },
+  [CASH_BOND_MEANING_SLUG]: {
+    slug: CASH_BOND_MEANING_SLUG,
+    title: CASH_BOND_MEANING_TITLE,
+    subtitle: CASH_BOND_MEANING_SUBTITLE,
+    metaTitle: CASH_BOND_MEANING_META_TITLE,
+    metaDescription: CASH_BOND_MEANING_META_DESCRIPTION,
+    keywords: CASH_BOND_MEANING_KEYWORDS,
+    heroImage: CASH_BOND_MEANING_IMAGE,
+    thumbnail: CASH_BOND_MEANING_THUMBNAIL,
+    heroAlt: CASH_BOND_MEANING_HERO_ALT,
+    categoryLabel: CASH_BOND_MEANING_CATEGORY,
+    readMin: CASH_BOND_MEANING_READ_MIN,
+    benefits: CASH_BOND_MEANING_BENEFITS,
+    tags: CASH_BOND_MEANING_TAGS,
+    faqs: CASH_BOND_MEANING_FAQS,
+    tocEntries: CASH_BOND_MEANING_TOC,
+    articleKey: 'cash-bond-meaning',
+    publishedAt: '2026-06-01',
+    updatedAt: '2026-06-01',
   },
 };
 

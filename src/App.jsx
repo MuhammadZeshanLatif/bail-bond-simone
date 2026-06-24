@@ -22,6 +22,13 @@ import {
   RELEASED_ON_BAIL_IMAGE,
   RELEASED_ON_BAIL_THUMBNAIL,
 } from './blog/released-on-bail-blog';
+import {
+  CASH_BOND_MEANING_SLUG,
+  CASH_BOND_MEANING_TITLE,
+  CASH_BOND_MEANING_META_DESCRIPTION,
+  CASH_BOND_MEANING_IMAGE,
+  CASH_BOND_MEANING_THUMBNAIL,
+} from './blog/cash-bond-meaning-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -2755,6 +2762,18 @@ const FAQPage = ({ navigate }) => {
 // BLOG DATA
 // ============================================
 const blogPosts = [
+  {
+    slug: CASH_BOND_MEANING_SLUG,
+    title: CASH_BOND_MEANING_TITLE,
+    excerpt: CASH_BOND_MEANING_META_DESCRIPTION,
+    category: 'Bail Process',
+    readTime: '10 min read',
+    date: '2026-06-01',
+    image: CASH_BOND_MEANING_THUMBNAIL,
+    heroImage: CASH_BOND_MEANING_IMAGE,
+    isMagazine: true,
+    content: '',
+  },
   {
     slug: RELEASED_ON_BAIL_SLUG,
     title: RELEASED_ON_BAIL_TITLE,

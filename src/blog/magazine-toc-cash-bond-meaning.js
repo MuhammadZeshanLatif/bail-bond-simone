@@ -1,0 +1,14 @@
+export const CASH_BOND_MEANING_TOC = [
+  { id: 'section-intro', prefix: '1.', label: 'Introduction' },
+  { id: 'section-quick-answer', prefix: '2.', label: 'Quick Answer' },
+  { id: 'section-how-it-works', prefix: '3.', label: 'How a Cash Bond Works' },
+  { id: 'section-after-payment', prefix: '4.', label: 'After You Pay' },
+  { id: 'section-refund', prefix: '5.', label: 'Do You Get Money Back?' },
+  { id: 'section-miss-court', prefix: '6.', label: 'If You Miss Court' },
+  { id: 'section-vs-bail', prefix: '7.', label: 'Cash Bond vs Bail vs Bail Bond' },
+  { id: 'section-who-pays', prefix: '8.', label: 'Who Can Pay' },
+  { id: 'section-types', prefix: '9.', label: 'Types of Bonds' },
+  { id: 'section-example', prefix: '10.', label: 'Real-Life Example' },
+  { id: 'section-faq', prefix: '11.', label: 'FAQs' },
+  { id: 'section-final', prefix: '12.', label: 'Final Thoughts' },
+];

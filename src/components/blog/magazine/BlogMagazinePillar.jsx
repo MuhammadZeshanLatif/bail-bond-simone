@@ -2,6 +2,7 @@ import { PILLAR_DEFAULT_HERO } from '../../../blog/pillar-magazine';
 import { BailBondGuideArticle } from './BailBondGuideArticle';
 import { BailBondCompanyArticle } from './BailBondCompanyArticle';
 import { ReleasedOnBailArticle } from './ReleasedOnBailArticle';
+import { CashBondMeaningArticle } from './CashBondMeaningArticle';
 import { LegacyMagazineArticle } from './LegacyMagazineArticle';
 import { MagazineToc } from './MagazineToc';
 import '../../../blog-magazine.css';
@@ -10,6 +11,7 @@ const ARTICLE_MAP = {
   'how-bail-bonds-work': BailBondGuideArticle,
   'bail-bond-company': BailBondCompanyArticle,
   'released-on-bail': ReleasedOnBailArticle,
+  'cash-bond-meaning': CashBondMeaningArticle,
 };
 
 const DEFAULT_BLOG_CTA = {

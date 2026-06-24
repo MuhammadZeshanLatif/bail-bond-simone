@@ -13,6 +13,7 @@ export const STATIC_ROUTES = [
   '/how-it-works',
   '/faq',
   '/blog',
+  '/blog/cash-bond-meaning',
   '/blog/what-does-released-on-bail-mean',
   '/blog/bail-bond-company-delaware',
   '/blog/how-bail-bonds-work-in-delaware',

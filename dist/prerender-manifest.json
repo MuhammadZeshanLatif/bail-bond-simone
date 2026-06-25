@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T04:17:28.600Z",
+  "generatedAt": "2026-06-25T23:39:58.259Z",
   "pages": [
     {
       "route": "/",
@@ -14,57 +14,62 @@
     {
       "route": "/blog",
       "file": "dist\\blog\\index.html",
-      "bytes": 20344
+      "bytes": 20297
     },
     {
       "route": "/blog/bail-bond-company-delaware",
       "file": "dist\\blog\\bail-bond-company-delaware\\index.html",
-      "bytes": 44456
+      "bytes": 44386
     },
     {
       "route": "/blog/cash-bond-meaning",
       "file": "dist\\blog\\cash-bond-meaning\\index.html",
-      "bytes": 26932
+      "bytes": 26892
     },
     {
       "route": "/blog/choosing-right-bail-bondsman",
       "file": "dist\\blog\\choosing-right-bail-bondsman\\index.html",
-      "bytes": 28219
+      "bytes": 28115
     },
     {
       "route": "/blog/defendant-rights-bail-process",
       "file": "dist\\blog\\defendant-rights-bail-process\\index.html",
-      "bytes": 28904
+      "bytes": 28800
     },
     {
       "route": "/blog/felony-vs-misdemeanor-bonds-delaware",
       "file": "dist\\blog\\felony-vs-misdemeanor-bonds-delaware\\index.html",
-      "bytes": 23926
+      "bytes": 23822
     },
     {
       "route": "/blog/how-bail-bonds-work-in-delaware",
       "file": "dist\\blog\\how-bail-bonds-work-in-delaware\\index.html",
-      "bytes": 34073
+      "bytes": 33969
     },
     {
       "route": "/blog/payment-options-bail-bonds",
       "file": "dist\\blog\\payment-options-bail-bonds\\index.html",
-      "bytes": 25541
+      "bytes": 25437
     },
     {
       "route": "/blog/understanding-bail-amounts-delaware",
       "file": "dist\\blog\\understanding-bail-amounts-delaware\\index.html",
-      "bytes": 24288
+      "bytes": 24184
     },
     {
       "route": "/blog/what-does-released-on-bail-mean",
       "file": "dist\\blog\\what-does-released-on-bail-mean\\index.html",
-      "bytes": 27911
+      "bytes": 27848
+    },
+    {
+      "route": "/blog/what-is-cash-bond",
+      "file": "dist\\blog\\what-is-cash-bond\\index.html",
+      "bytes": 28023
     },
     {
       "route": "/blog/what-to-expect-when-someone-is-arrested",
       "file": "dist\\blog\\what-to-expect-when-someone-is-arrested\\index.html",
-      "bytes": 25308
+      "bytes": 25204
     },
     {
       "route": "/contact",

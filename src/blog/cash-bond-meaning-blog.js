@@ -24,7 +24,7 @@ export const CASH_BOND_MEANING_THUMBNAIL =
 export const CASH_BOND_MEANING_HERO_ALT =
   'Cash bond meaning simple explanation guide by Simone Harris';
 
-export const CASH_BOND_MEANING_CATEGORY = 'Bail Process';
+export const CASH_BOND_MEANING_CATEGORY = 'Cash Bond Meaning';
 
 export const CASH_BOND_MEANING_READ_MIN = 10;
 
@@ -36,8 +36,8 @@ export const CASH_BOND_MEANING_BENEFITS = [
 ];
 
 export const CASH_BOND_MEANING_TAGS = [
-  'Cash Bond',
-  'Bail Bond',
+  'Cash Bond Meaning',
+  'Cash Bail Explained',
   'Bail Process',
   'Delaware Bail Bonds',
   'Court Appearance',

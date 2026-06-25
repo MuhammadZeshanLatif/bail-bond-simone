@@ -29,6 +29,13 @@ import {
   CASH_BOND_MEANING_IMAGE,
   CASH_BOND_MEANING_THUMBNAIL,
 } from './blog/cash-bond-meaning-blog';
+import {
+  WHAT_IS_CASH_BOND_SLUG,
+  WHAT_IS_CASH_BOND_TITLE,
+  WHAT_IS_CASH_BOND_META_DESCRIPTION,
+  WHAT_IS_CASH_BOND_IMAGE,
+  WHAT_IS_CASH_BOND_THUMBNAIL,
+} from './blog/what-is-cash-bond-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -54,35 +61,36 @@ const toAbsoluteUrl = (url) => {
   return `${SITE_URL}${url.startsWith('/') ? url : `/${url}`}`;
 };
 
+const pathToUrl = (path) => {
+  const normalized = normalizePath(path);
+  return normalized === '/home' ? '/' : normalized;
+};
+
 // ============================================
 // CUSTOM ROUTER HOOK
+// WordPress-style: each link loads pre-built static HTML from the server.
 // ============================================
 const useRouter = () => {
   const [currentPath, setCurrentPath] = useState(() => normalizePath(window.location.pathname));
 
   const navigate = useCallback((path) => {
-    const normalized = normalizePath(path);
-    window.history.pushState(null, '', normalized === '/home' ? '/' : normalized);
-    setCurrentPath(normalized);
-    window.scrollTo(0, 0);
+    const url = pathToUrl(path);
+    const current = window.location.pathname.replace(/\/$/, '') || '/';
+    const target = url.replace(/\/$/, '') || '/';
+    if (current === target) {
+      window.scrollTo(0, 0);
+      return;
+    }
+    window.location.assign(url);
   }, []);
 
   useEffect(() => {
-    // Migrate legacy hash URLs (#/blog/...) to clean URLs for SEO
     if (window.location.hash.startsWith('#/')) {
-      const legacyPath = normalizePath(window.location.hash.slice(1));
-      window.history.replaceState(null, '', legacyPath === '/home' ? '/' : legacyPath);
-      setCurrentPath(legacyPath);
+      window.location.replace(pathToUrl(window.location.hash.slice(1)));
       return;
     }
 
-    const handlePopState = () => {
-      setCurrentPath(normalizePath(window.location.pathname));
-      window.scrollTo(0, 0);
-    };
-
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
+    setCurrentPath(normalizePath(window.location.pathname));
   }, []);
 
   return { currentPath, navigate };
@@ -2763,10 +2771,22 @@ const FAQPage = ({ navigate }) => {
 // ============================================
 const blogPosts = [
   {
+    slug: WHAT_IS_CASH_BOND_SLUG,
+    title: WHAT_IS_CASH_BOND_TITLE,
+    excerpt: WHAT_IS_CASH_BOND_META_DESCRIPTION,
+    category: 'Bail Types',
+    readTime: '11 min read',
+    date: '2026-06-02',
+    image: WHAT_IS_CASH_BOND_THUMBNAIL,
+    heroImage: WHAT_IS_CASH_BOND_IMAGE,
+    isMagazine: true,
+    content: '',
+  },
+  {
     slug: CASH_BOND_MEANING_SLUG,
     title: CASH_BOND_MEANING_TITLE,
     excerpt: CASH_BOND_MEANING_META_DESCRIPTION,
-    category: 'Bail Process',
+    category: 'Cash Bond Meaning',
     readTime: '10 min read',
     date: '2026-06-01',
     image: CASH_BOND_MEANING_THUMBNAIL,

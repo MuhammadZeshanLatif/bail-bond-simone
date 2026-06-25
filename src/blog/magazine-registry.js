@@ -61,6 +61,23 @@ import {
   CASH_BOND_MEANING_FAQS,
 } from './cash-bond-meaning-blog';
 import { CASH_BOND_MEANING_TOC } from './magazine-toc-cash-bond-meaning';
+import {
+  WHAT_IS_CASH_BOND_SLUG,
+  WHAT_IS_CASH_BOND_TITLE,
+  WHAT_IS_CASH_BOND_SUBTITLE,
+  WHAT_IS_CASH_BOND_META_TITLE,
+  WHAT_IS_CASH_BOND_META_DESCRIPTION,
+  WHAT_IS_CASH_BOND_KEYWORDS,
+  WHAT_IS_CASH_BOND_IMAGE,
+  WHAT_IS_CASH_BOND_THUMBNAIL,
+  WHAT_IS_CASH_BOND_HERO_ALT,
+  WHAT_IS_CASH_BOND_CATEGORY,
+  WHAT_IS_CASH_BOND_READ_MIN,
+  WHAT_IS_CASH_BOND_BENEFITS,
+  WHAT_IS_CASH_BOND_TAGS,
+  WHAT_IS_CASH_BOND_FAQS,
+} from './what-is-cash-bond-blog';
+import { WHAT_IS_CASH_BOND_TOC } from './magazine-toc-what-is-cash-bond';
 
 export const MAGAZINE_POSTS = {
   [HARDCODED_BLOG_SLUG]: {
@@ -147,6 +164,26 @@ export const MAGAZINE_POSTS = {
     articleKey: 'cash-bond-meaning',
     publishedAt: '2026-06-01',
     updatedAt: '2026-06-01',
+  },
+  [WHAT_IS_CASH_BOND_SLUG]: {
+    slug: WHAT_IS_CASH_BOND_SLUG,
+    title: WHAT_IS_CASH_BOND_TITLE,
+    subtitle: WHAT_IS_CASH_BOND_SUBTITLE,
+    metaTitle: WHAT_IS_CASH_BOND_META_TITLE,
+    metaDescription: WHAT_IS_CASH_BOND_META_DESCRIPTION,
+    keywords: WHAT_IS_CASH_BOND_KEYWORDS,
+    heroImage: WHAT_IS_CASH_BOND_IMAGE,
+    thumbnail: WHAT_IS_CASH_BOND_THUMBNAIL,
+    heroAlt: WHAT_IS_CASH_BOND_HERO_ALT,
+    categoryLabel: WHAT_IS_CASH_BOND_CATEGORY,
+    readMin: WHAT_IS_CASH_BOND_READ_MIN,
+    benefits: WHAT_IS_CASH_BOND_BENEFITS,
+    tags: WHAT_IS_CASH_BOND_TAGS,
+    faqs: WHAT_IS_CASH_BOND_FAQS,
+    tocEntries: WHAT_IS_CASH_BOND_TOC,
+    articleKey: 'what-is-cash-bond',
+    publishedAt: '2026-06-02',
+    updatedAt: '2026-06-02',
   },
 };
 

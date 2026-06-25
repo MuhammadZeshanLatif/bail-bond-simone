@@ -1,3 +1,5 @@
+DirectoryIndex index.html
+
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
@@ -9,13 +11,22 @@ RewriteRule ^(.*)$ https://away2freedom302.com/$1 [R=301,L]
 # Canonical homepage: /home -> /
 RewriteRule ^home/?$ / [R=301,L]
 
-# Serve prerendered static HTML for nested routes (e.g. /blog/slug)
+# Real files (images, css, js) — serve directly
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Folder with index.html (e.g. /blog/slug/)
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME}/index.html -f
+RewriteRule ^ %{REQUEST_URI}/index.html [L]
+
+# Path without trailing slash but folder/index.html exists
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html -f
 RewriteRule ^(.+?)/?$ $1/index.html [L]
 
-# SPA fallback for client-side navigation
+# SPA fallback only when no static page exists
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]

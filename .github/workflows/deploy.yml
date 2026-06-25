@@ -26,8 +26,11 @@ jobs:
       - name: Install Chromium for prerender
         run: npx puppeteer browsers install chrome
 
-      - name: Build
+      - name: Build static site
         run: npm run build
+
+      - name: List prerendered pages
+        run: cat dist/prerender-manifest.json
 
       - name: Pack dist for upload
         run: tar -czf deploy.tar.gz -C dist .

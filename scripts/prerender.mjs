@@ -3,13 +3,15 @@ import path from 'node:path';
 import http from 'node:http';
 import { fileURLToPath } from 'node:url';
 import puppeteer from 'puppeteer';
-import { STATIC_ROUTES } from './static-routes.mjs';
+import { getRoutesFromSitemap } from './get-routes-from-sitemap.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
 const distDir = path.join(root, 'dist');
 const PREVIEW_PORT = 4173;
 const PREVIEW_URL = `http://127.0.0.1:${PREVIEW_PORT}`;
+
+const STATIC_ROUTES = getRoutesFromSitemap();
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
@@ -72,11 +74,34 @@ function routeToOutputFile(route) {
   return path.join(distDir, ...segments, 'index.html');
 }
 
+async function launchBrowser() {
+  const launchOptions = {
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
+  };
+
+  try {
+    return await puppeteer.launch({
+      ...launchOptions,
+      executablePath: puppeteer.executablePath(),
+    });
+  } catch {
+    return await puppeteer.launch({
+      ...launchOptions,
+      channel: 'chrome',
+    });
+  }
+}
+
 async function prerenderRoute(page, route) {
   const url = `${PREVIEW_URL}${route === '/' ? '/' : route}`;
-  await page.goto(url, { waitUntil: 'networkidle0', timeout: 90000 });
-  await page.waitForSelector('main', { timeout: 15000 });
-  await new Promise((r) => setTimeout(r, 800));
+  await page.goto(url, { waitUntil: 'networkidle0', timeout: 120000 });
+  await page.waitForSelector('main', { timeout: 20000 });
+  await page.waitForFunction(
+    () => document.querySelector('main')?.innerHTML.trim().length > 100,
+    { timeout: 20000 }
+  );
+  await new Promise((r) => setTimeout(r, 500));
 
   let html = await page.content();
   html = html.replace(/href="\.\//g, 'href="/');
@@ -94,14 +119,11 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`Prerendering ${STATIC_ROUTES.length} routes...`);
+  console.log(`Prerendering ${STATIC_ROUTES.length} routes from sitemap...`);
   const server = await startStaticServer();
 
   try {
-    const browser = await puppeteer.launch({
-      headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox'],
-    });
+    const browser = await launchBrowser();
     const page = await browser.newPage();
     await page.setViewport({ width: 1280, height: 900 });
 

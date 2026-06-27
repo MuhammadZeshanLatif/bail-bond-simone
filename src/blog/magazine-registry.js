@@ -78,6 +78,23 @@ import {
   WHAT_IS_CASH_BOND_FAQS,
 } from './what-is-cash-bond-blog';
 import { WHAT_IS_CASH_BOND_TOC } from './magazine-toc-what-is-cash-bond';
+import {
+  BAIL_BOND_PROCESS_SLUG,
+  BAIL_BOND_PROCESS_TITLE,
+  BAIL_BOND_PROCESS_SUBTITLE,
+  BAIL_BOND_PROCESS_META_TITLE,
+  BAIL_BOND_PROCESS_META_DESCRIPTION,
+  BAIL_BOND_PROCESS_KEYWORDS,
+  BAIL_BOND_PROCESS_IMAGE,
+  BAIL_BOND_PROCESS_THUMBNAIL,
+  BAIL_BOND_PROCESS_HERO_ALT,
+  BAIL_BOND_PROCESS_CATEGORY,
+  BAIL_BOND_PROCESS_READ_MIN,
+  BAIL_BOND_PROCESS_BENEFITS,
+  BAIL_BOND_PROCESS_TAGS,
+  BAIL_BOND_PROCESS_FAQS,
+} from './bail-bond-process-step-by-step-blog';
+import { BAIL_BOND_PROCESS_TOC } from './magazine-toc-bail-bond-process';
 
 export const MAGAZINE_POSTS = {
   [HARDCODED_BLOG_SLUG]: {
@@ -184,6 +201,26 @@ export const MAGAZINE_POSTS = {
     articleKey: 'what-is-cash-bond',
     publishedAt: '2026-06-02',
     updatedAt: '2026-06-02',
+  },
+  [BAIL_BOND_PROCESS_SLUG]: {
+    slug: BAIL_BOND_PROCESS_SLUG,
+    title: BAIL_BOND_PROCESS_TITLE,
+    subtitle: BAIL_BOND_PROCESS_SUBTITLE,
+    metaTitle: BAIL_BOND_PROCESS_META_TITLE,
+    metaDescription: BAIL_BOND_PROCESS_META_DESCRIPTION,
+    keywords: BAIL_BOND_PROCESS_KEYWORDS,
+    heroImage: BAIL_BOND_PROCESS_IMAGE,
+    thumbnail: BAIL_BOND_PROCESS_THUMBNAIL,
+    heroAlt: BAIL_BOND_PROCESS_HERO_ALT,
+    categoryLabel: BAIL_BOND_PROCESS_CATEGORY,
+    readMin: BAIL_BOND_PROCESS_READ_MIN,
+    benefits: BAIL_BOND_PROCESS_BENEFITS,
+    tags: BAIL_BOND_PROCESS_TAGS,
+    faqs: BAIL_BOND_PROCESS_FAQS,
+    tocEntries: BAIL_BOND_PROCESS_TOC,
+    articleKey: 'bail-bond-process',
+    publishedAt: '2026-06-03',
+    updatedAt: '2026-06-03',
   },
 };
 

@@ -36,6 +36,13 @@ import {
   WHAT_IS_CASH_BOND_IMAGE,
   WHAT_IS_CASH_BOND_THUMBNAIL,
 } from './blog/what-is-cash-bond-blog';
+import {
+  BAIL_BOND_PROCESS_SLUG,
+  BAIL_BOND_PROCESS_TITLE,
+  BAIL_BOND_PROCESS_META_DESCRIPTION,
+  BAIL_BOND_PROCESS_IMAGE,
+  BAIL_BOND_PROCESS_THUMBNAIL,
+} from './blog/bail-bond-process-step-by-step-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -2771,6 +2778,18 @@ const FAQPage = ({ navigate }) => {
 // ============================================
 const blogPosts = [
   {
+    slug: BAIL_BOND_PROCESS_SLUG,
+    title: BAIL_BOND_PROCESS_TITLE,
+    excerpt: BAIL_BOND_PROCESS_META_DESCRIPTION,
+    category: 'Bail Process',
+    readTime: '14 min read',
+    date: '2026-06-03',
+    image: BAIL_BOND_PROCESS_THUMBNAIL,
+    heroImage: BAIL_BOND_PROCESS_IMAGE,
+    isMagazine: true,
+    content: '',
+  },
+  {
     slug: WHAT_IS_CASH_BOND_SLUG,
     title: WHAT_IS_CASH_BOND_TITLE,
     excerpt: WHAT_IS_CASH_BOND_META_DESCRIPTION,
@@ -3724,7 +3743,10 @@ const BlogPostPage = ({ slug, navigate }) => {
   useSEO(
     magazine ? magazine.metaTitle : post ? `${post.title} | A Way to Freedom Bail Bonds` : 'Blog Post Not Found',
     magazine ? magazine.metaDescription : post ? post.excerpt : 'The requested blog post could not be found.',
-    magazine ? magazine.keywords : 'bail bonds, Delaware bail, Newark Delaware'
+    magazine ? magazine.keywords : 'bail bonds, Delaware bail, Newark Delaware',
+    magazine ? magazine.metaTitle : '',
+    magazine ? magazine.metaDescription : '',
+    magazine ? toAbsoluteUrl(magazine.heroImage) : ''
   );
 
   if (magazine) {

@@ -1,0 +1,17 @@
+export const BAIL_BOND_PROCESS_TOC = [
+  { id: 'section-intro', prefix: '1.', label: 'Introduction' },
+  { id: 'section-overview', prefix: '2.', label: 'Quick Overview' },
+  { id: 'section-step-1', prefix: '3.', label: 'Step 1: The Arrest' },
+  { id: 'section-step-2', prefix: '4.', label: 'Step 2: Booking' },
+  { id: 'section-step-3', prefix: '5.', label: 'Step 3: Bail Hearing' },
+  { id: 'section-step-4', prefix: '6.', label: 'Step 4: Bail Amount' },
+  { id: 'section-step-5', prefix: '7.', label: 'Step 5: Contact a Bondsman' },
+  { id: 'section-step-6', prefix: '8.', label: 'Step 6: Paperwork' },
+  { id: 'section-step-7', prefix: '9.', label: 'Step 7: Pay the Fee' },
+  { id: 'section-step-8', prefix: '10.', label: 'Step 8: Release from Jail' },
+  { id: 'section-step-9', prefix: '11.', label: 'Step 9: Court Dates' },
+  { id: 'section-miss-court', prefix: '12.', label: 'If Someone Misses Court' },
+  { id: 'section-example', prefix: '13.', label: 'Real-Life Example' },
+  { id: 'section-faq', prefix: '14.', label: 'FAQs' },
+  { id: 'section-final', prefix: '15.', label: 'Final Thoughts' },
+];

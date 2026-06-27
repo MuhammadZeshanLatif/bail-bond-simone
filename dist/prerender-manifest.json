@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T01:20:07.396Z",
+  "generatedAt": "2026-06-27T02:06:28.578Z",
   "pages": [
     {
       "route": "/",
@@ -14,62 +14,67 @@
     {
       "route": "/blog",
       "file": "dist\\blog\\index.html",
-      "bytes": 20297
+      "bytes": 20350
     },
     {
       "route": "/blog/bail-bond-company-delaware",
       "file": "dist\\blog\\bail-bond-company-delaware\\index.html",
-      "bytes": 44386
+      "bytes": 44511
+    },
+    {
+      "route": "/blog/bail-bond-process-step-by-step",
+      "file": "dist\\blog\\bail-bond-process-step-by-step\\index.html",
+      "bytes": 29493
     },
     {
       "route": "/blog/cash-bond-meaning",
       "file": "dist\\blog\\cash-bond-meaning\\index.html",
-      "bytes": 29245
+      "bytes": 29322
     },
     {
       "route": "/blog/choosing-right-bail-bondsman",
       "file": "dist\\blog\\choosing-right-bail-bondsman\\index.html",
-      "bytes": 28115
+      "bytes": 28226
     },
     {
       "route": "/blog/defendant-rights-bail-process",
       "file": "dist\\blog\\defendant-rights-bail-process\\index.html",
-      "bytes": 28800
+      "bytes": 28917
     },
     {
       "route": "/blog/felony-vs-misdemeanor-bonds-delaware",
       "file": "dist\\blog\\felony-vs-misdemeanor-bonds-delaware\\index.html",
-      "bytes": 23822
+      "bytes": 23939
     },
     {
       "route": "/blog/how-bail-bonds-work-in-delaware",
       "file": "dist\\blog\\how-bail-bonds-work-in-delaware\\index.html",
-      "bytes": 33969
+      "bytes": 34066
     },
     {
       "route": "/blog/payment-options-bail-bonds",
       "file": "dist\\blog\\payment-options-bail-bonds\\index.html",
-      "bytes": 25437
+      "bytes": 25548
     },
     {
       "route": "/blog/understanding-bail-amounts-delaware",
       "file": "dist\\blog\\understanding-bail-amounts-delaware\\index.html",
-      "bytes": 24184
+      "bytes": 24301
     },
     {
       "route": "/blog/what-does-released-on-bail-mean",
       "file": "dist\\blog\\what-does-released-on-bail-mean\\index.html",
-      "bytes": 27848
+      "bytes": 28012
     },
     {
       "route": "/blog/what-is-cash-bond",
       "file": "dist\\blog\\what-is-cash-bond\\index.html",
-      "bytes": 30330
+      "bytes": 30439
     },
     {
       "route": "/blog/what-to-expect-when-someone-is-arrested",
       "file": "dist\\blog\\what-to-expect-when-someone-is-arrested\\index.html",
-      "bytes": 25204
+      "bytes": 25321
     },
     {
       "route": "/contact",

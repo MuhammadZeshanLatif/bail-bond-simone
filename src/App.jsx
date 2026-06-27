@@ -335,7 +335,9 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-service-area">
             <i className="fas fa-map-marker-alt me-2"></i>
-            Serving New Castle County & Kent County, Delaware
+            <a href="/service-areas" className="text-decoration-none" style={{ color: 'inherit' }}>
+              Serving New Castle County &amp; Kent County, Delaware
+            </a>
           </div>
           <p className="footer-tagline">
             Licensed Bail Bond Services • Confidential & Professional Assistance • Available 24/7
@@ -4347,6 +4349,184 @@ const ContactPage = () => {
 // ============================================
 // 404 PAGE
 // ============================================
+// ============================================
+// SERVICE AREAS PAGE  (targets "bail bonds near me" + city/county queries)
+// ============================================
+const ServiceAreasPage = ({ navigate }) => {
+  useSEO(
+    'Bail Bonds Near Me in Delaware | Service Areas — New Castle & Kent County',
+    'Looking for a bail bondsman near you? A Way to Freedom provides 24/7 local bail bonds across New Castle County and Kent County, Delaware — Newark, Wilmington, New Castle, Bear, Middletown, Dover, and surrounding areas. Call (702) 447-8550.',
+    'bail bonds near me, bail bondsman near me, bail bonds near you, Newark DE bail bonds, Wilmington bail bonds, New Castle County bail bonds, Kent County bail bonds, Dover bail bonds, local bail bonds Delaware'
+  );
+
+  const newCastleCities = [
+    { name: 'Wilmington', blurb: 'Fast local bail bond help in Wilmington, including the King Street courts and downtown area.' },
+    { name: 'Newark', blurb: 'Local bail bond agent near Main Street Newark, ready to start the release process quickly.' },
+    { name: 'New Castle', blurb: 'Bail bonds near you in New Castle and nearby communities, available day or night.' },
+    { name: 'Bear', blurb: 'Local bail bond support for families in Bear and the surrounding New Castle County area.' },
+    { name: 'Middletown', blurb: 'Bail bonds for Middletown and the growing southern New Castle County region.' },
+    { name: 'Glasgow', blurb: 'Local bail bond help for Glasgow and nearby Route 40 communities.' },
+    { name: 'Claymont', blurb: 'Bail bond assistance for Claymont and the northern New Castle County area.' },
+    { name: 'Hockessin', blurb: 'Local, confidential bail bond support for Hockessin and Pike Creek.' },
+  ];
+
+  const kentCities = [
+    { name: 'Dover', blurb: 'Bail bonds near you in Dover, Delaware’s capital, with clear local guidance.' },
+    { name: 'Smyrna', blurb: 'Local bail bond help for Smyrna and the New Castle / Kent County line.' },
+    { name: 'Camden', blurb: 'Bail bond support for Camden and the greater Dover area.' },
+    { name: 'Milford', blurb: 'Local bail bonds for the Kent County side of Milford and nearby towns.' },
+  ];
+
+  injectSchema({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": `${SITE_URL}/#localbusiness`,
+        "name": "A Way to Freedom Bail Bonds",
+        "url": `${SITE_URL}/service-areas`,
+        "telephone": ["+1-702-447-8550", "+1-302-600-1886"],
+        "areaServed": [
+          ...newCastleCities.map((c) => ({ "@type": "City", "name": `${c.name}, DE` })),
+          ...kentCities.map((c) => ({ "@type": "City", "name": `${c.name}, DE` })),
+          { "@type": "AdministrativeArea", "name": "New Castle County, Delaware" },
+          { "@type": "AdministrativeArea", "name": "Kent County, Delaware" },
+        ],
+      },
+      buildBreadcrumb([
+        { name: 'Home', path: '/' },
+        { name: 'Service Areas', path: '/service-areas' },
+      ]),
+    ],
+  });
+
+  return (
+    <div className="page-container simone-page">
+      <section className="service-detail-hero">
+        <div className="container">
+          <a href="/" onClick={(e) => { e.preventDefault(); navigate('/home'); }} className="back-link">
+            <i className="fas fa-arrow-left"></i> Back to Home
+          </a>
+          <div className="gold-divider" style={{ margin: '1rem 0' }}></div>
+          <h1>Bail Bonds Near You in Delaware</h1>
+          <p className="lead" style={{ color: 'var(--text-light-secondary)', maxWidth: '760px' }}>
+            Searching for a “bail bondsman near me”? A Way to Freedom is a local Delaware bail bond agency
+            serving New Castle County and Kent County. Wherever you are after an arrest, we provide fast,
+            confidential 24/7 help by phone — so you can start the release process without driving across the state.
+          </p>
+          <div className="hero-cta-wrap mt-3">
+            <a href="tel:+17024478550" className="btn btn-primary-gold">
+              <i className="fas fa-phone-alt me-2"></i>Call (702) 447-8550
+            </a>
+            <a href="https://wa.me/13029819223?text=Hi%20Simone%2C%20I%20need%20a%20local%20bail%20bond%20agent%20near%20me." target="_blank" rel="noopener noreferrer" className="btn btn-outline-gold">
+              <i className="fab fa-whatsapp me-2"></i>WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="services-section section-padding">
+        <div className="container">
+          <div className="text-center mb-4">
+            <div className="section-ornament">✦ &nbsp; NEW CASTLE COUNTY &nbsp; ✦</div>
+            <h2 className="section-title">Bail Bonds in <span className="gold-text">New Castle County</span></h2>
+            <div className="section-gold-line"></div>
+            <p className="section-subtitle">Local bail bond help across the Wilmington and Newark area and nearby communities.</p>
+          </div>
+          <div className="row g-4">
+            {newCastleCities.map((c) => (
+              <div className="col-md-6 col-lg-3" key={c.name}>
+                <div className="service-card">
+                  <div className="service-icon"><i className="fas fa-map-marker-alt"></i></div>
+                  <h3>{c.name}, DE</h3>
+                  <p>{c.blurb}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="services-section section-padding">
+        <div className="container">
+          <div className="text-center mb-4">
+            <div className="section-ornament">✦ &nbsp; KENT COUNTY &nbsp; ✦</div>
+            <h2 className="section-title">Bail Bonds in <span className="gold-text">Kent County</span></h2>
+            <div className="section-gold-line"></div>
+            <p className="section-subtitle">Serving Dover and the surrounding Kent County area with clear, local guidance.</p>
+          </div>
+          <div className="row g-4 justify-content-center">
+            {kentCities.map((c) => (
+              <div className="col-md-6 col-lg-3" key={c.name}>
+                <div className="service-card">
+                  <div className="service-icon"><i className="fas fa-map-marker-alt"></i></div>
+                  <h3>{c.name}, DE</h3>
+                  <p>{c.blurb}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="local-seo-section section-padding">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <div className="local-seo-content text-center">
+                <h2>Why a Local Bail Bond Agent Matters</h2>
+                <p>
+                  When you search for “bail bonds near me,” you want someone who knows the local courts and jails.
+                  A Way to Freedom works with families across New Castle County and Kent County, Delaware, and can
+                  begin the process over the phone — so distance is never a reason to wait.
+                </p>
+                <div className="mt-4">
+                  <span className="location-badge"><i className="fas fa-map-marker-alt"></i>Newark Office</span>
+                  <span className="location-badge"><i className="fas fa-map-marker-alt"></i>Wilmington Office</span>
+                  <span className="location-badge"><i className="fas fa-clock"></i>Available 24/7</span>
+                </div>
+                <div className="row mt-5 text-start">
+                  <div className="col-md-6 mb-3">
+                    <div className="contact-info-card">
+                      <i className="fas fa-map-marker-alt"></i>
+                      <h5>Newark, Delaware</h5>
+                      <p>288 E Main St, Newark, DE 19711</p>
+                      <p className="small text-muted"><a href="tel:+17024478550">(702) 447-8550</a></p>
+                    </div>
+                  </div>
+                  <div className="col-md-6 mb-3">
+                    <div className="contact-info-card">
+                      <i className="fas fa-map-marker-alt"></i>
+                      <h5>Wilmington, Delaware</h5>
+                      <p>715 N. King Street, Wilmington, DE 19801</p>
+                      <p className="small text-muted"><a href="tel:+13026001886">(302) 600-1886</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="cta-band">
+        <div className="container">
+          <h2>Need a Bail Bondsman Near You?</h2>
+          <p style={{ color: 'var(--text-light-secondary)', marginBottom: '1.5rem' }}>
+            Call now for fast, local, confidential bail bond help anywhere in New Castle County or Kent County, Delaware.
+          </p>
+          <a href="tel:+17024478550" className="btn-primary-gold me-2 mb-2">
+            <i className="fas fa-phone-alt me-2"></i>(702) 447-8550
+          </a>
+          <a href="/contact" onClick={(e) => { e.preventDefault(); navigate('/contact'); }} className="btn-secondary-outline mb-2">
+            Contact Us
+          </a>
+        </div>
+      </section>
+    </div>
+  );
+};
+
 const NotFoundPage = ({ navigate }) => {
   useSEO(
     'Page Not Found | A Way to Freedom Bail Bonds',
@@ -4413,6 +4593,11 @@ function App() {
     if (currentPath.startsWith('/services/')) {
       const serviceKey = currentPath.replace('/services/', '');
       return <ServiceDetailPage serviceKey={serviceKey} navigate={navigate} />;
+    }
+
+    // Service areas (local "near me" landing page)
+    if (currentPath === '/service-areas') {
+      return <ServiceAreasPage navigate={navigate} />;
     }
 
     // About

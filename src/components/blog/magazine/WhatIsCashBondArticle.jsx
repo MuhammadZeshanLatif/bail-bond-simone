@@ -57,8 +57,24 @@ export function WhatIsCashBondArticle({ navigate, onContactClick }) {
           <li>A family member</li>
           <li>A friend</li>
           <li>Another responsible adult</li>
+          <li>A licensed bail agent in Delaware</li>
         </ul>
         <p>The court may require identification and may only accept certain payment methods depending on local court rules.</p>
+      </section>
+
+      <section id="section-delaware-agent">
+        <h2>Cash Bond Through a Licensed Bail Agent in Delaware</h2>
+        <p>
+          In the State of Delaware, a cash bond can also be paid by a licensed bail agent at a fee of typically 30 percent.
+        </p>
+        <p>
+          For a cash bail, the fee is 20% to 30% of the total cash bail amount, depending on the circumstances of the case.
+          This fee is non-refundable and is the cost for the bail bond agent company to post the cash bail on the defendant&apos;s
+          behalf in the State of Delaware.
+        </p>
+        <p>
+          This option can help families who cannot pay the full cash bail amount directly to the court upfront.
+        </p>
       </section>
 
       <section id="section-refund">
@@ -90,7 +106,11 @@ export function WhatIsCashBondArticle({ navigate, onContactClick }) {
         <h2>Cash Bond vs. Bail vs. Bail Bond</h2>
         <p>These legal terms are often confused, but they have different meanings.</p>
         <p><strong>Cash Bond</strong></p>
-        <p>A cash bond means the entire bail amount is paid directly to the court.</p>
+        <p>
+          A cash bond means the entire bail amount is paid directly to the court, or a licensed bail agent in Delaware can
+          post cash bail on the defendant&apos;s behalf for a non-refundable fee of typically 20% to 30% of the total cash
+          bail amount.
+        </p>
         <p><strong>Bail</strong></p>
         <p>Bail is the amount of money or security set by a judge to allow temporary release from jail.</p>
         <p><strong>Bail Bond</strong></p>

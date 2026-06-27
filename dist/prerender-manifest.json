@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T23:39:58.259Z",
+  "generatedAt": "2026-06-27T01:20:07.396Z",
   "pages": [
     {
       "route": "/",
@@ -24,7 +24,7 @@
     {
       "route": "/blog/cash-bond-meaning",
       "file": "dist\\blog\\cash-bond-meaning\\index.html",
-      "bytes": 26892
+      "bytes": 29245
     },
     {
       "route": "/blog/choosing-right-bail-bondsman",
@@ -64,7 +64,7 @@
     {
       "route": "/blog/what-is-cash-bond",
       "file": "dist\\blog\\what-is-cash-bond\\index.html",
-      "bytes": 28023
+      "bytes": 30330
     },
     {
       "route": "/blog/what-to-expect-when-someone-is-arrested",

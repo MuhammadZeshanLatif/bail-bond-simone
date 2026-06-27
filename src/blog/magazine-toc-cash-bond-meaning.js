@@ -7,8 +7,9 @@ export const CASH_BOND_MEANING_TOC = [
   { id: 'section-miss-court', prefix: '6.', label: 'If You Miss Court' },
   { id: 'section-vs-bail', prefix: '7.', label: 'Cash Bond vs Bail vs Bail Bond' },
   { id: 'section-who-pays', prefix: '8.', label: 'Who Can Pay' },
-  { id: 'section-types', prefix: '9.', label: 'Types of Bonds' },
-  { id: 'section-example', prefix: '10.', label: 'Real-Life Example' },
-  { id: 'section-faq', prefix: '11.', label: 'FAQs' },
-  { id: 'section-final', prefix: '12.', label: 'Final Thoughts' },
+  { id: 'section-delaware-agent', prefix: '9.', label: 'Delaware Licensed Bail Agent' },
+  { id: 'section-types', prefix: '10.', label: 'Types of Bonds' },
+  { id: 'section-example', prefix: '11.', label: 'Real-Life Example' },
+  { id: 'section-faq', prefix: '12.', label: 'FAQs' },
+  { id: 'section-final', prefix: '13.', label: 'Final Thoughts' },
 ];

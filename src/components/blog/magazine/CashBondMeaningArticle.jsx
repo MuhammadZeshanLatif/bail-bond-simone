@@ -99,7 +99,8 @@ export function CashBondMeaningArticle({ navigate, onContactClick }) {
         <p>
           <strong>Cash Bond:</strong>
           <br />
-          You pay the full amount directly to the court.
+          You pay the full amount directly to the court, or a licensed bail agent in Delaware can post cash bail on the
+          defendant&apos;s behalf for a non-refundable fee of typically 20% to 30% of the total cash bail amount.
         </p>
         <p>
           <strong>Bail:</strong>
@@ -123,8 +124,24 @@ export function CashBondMeaningArticle({ navigate, onContactClick }) {
           <li>The person arrested</li>
           <li>Family members</li>
           <li>Friends</li>
+          <li>A licensed bail agent in Delaware</li>
         </ul>
         <p>The court may require identification and proper documentation when making the payment.</p>
+      </section>
+
+      <section id="section-delaware-agent">
+        <h2>Cash Bond Through a Licensed Bail Agent in Delaware</h2>
+        <p>
+          In the State of Delaware, a cash bond can also be paid by a licensed bail agent at a fee of typically 30 percent.
+        </p>
+        <p>
+          For a cash bail, the fee is 20% to 30% of the total cash bail amount, depending on the circumstances of the case.
+          This fee is non-refundable and is the cost for the bail bond agent company to post the cash bail on the defendant&apos;s
+          behalf in the State of Delaware.
+        </p>
+        <p>
+          This option can help families who cannot pay the full cash bail amount directly to the court upfront.
+        </p>
       </section>
 
       <section id="section-types">

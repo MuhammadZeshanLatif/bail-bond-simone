@@ -7,8 +7,8 @@ const sitemapPath = path.join(root, 'public', 'sitemap.xml');
 
 export function getRoutesFromSitemap() {
   const xml = fs.readFileSync(sitemapPath, 'utf8');
-  const urls = [...xml.matchAll(/<loc>https:\/\/away2freedom302\.com([^<]*)<\/loc>/g)].map((m) => {
-    const pathname = m[1] || '/';
+  const urls = [...xml.matchAll(/<loc>(https:\/\/[^<]+)<\/loc>/g)].map((m) => {
+    const pathname = new URL(m[1]).pathname;
     return pathname === '' ? '/' : pathname;
   });
 

@@ -12,7 +12,7 @@
 | `SSH_PORT` | `65002` | Hostinger SSH port (hPanel → Advanced → SSH Access) |
 | `SSH_USERNAME` | `u932362804` | SSH username |
 | `SSH_PASSWORD` | your SSH password | **SSH password** — FTP password alag ho sakta hai |
-| `SSH_REMOTE_PATH` | `/home/u932362804/domains/away2freedom302.com/public_html/` | Trailing `/` rakho |
+| `SSH_REMOTE_PATH` | `/home/u932362804/domains/delawarebailbond.com/public_html/` | Trailing `/` rakho |
 
 ---
 

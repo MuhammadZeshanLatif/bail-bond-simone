@@ -46,7 +46,7 @@ import {
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
-const SITE_URL = 'https://away2freedom302.com';
+const SITE_URL = 'https://delawarebailbond.com';
 
 const normalizePath = (rawPath) => {
   if (!rawPath || rawPath === '/') return '/home';
@@ -438,12 +438,12 @@ const SimoneHomePage = () => {
       {
         "@type": "WebSite",
         "name": "A Way to Freedom Bail Bonds",
-        "url": "https://away2freedom302.com/"
+        "url": `${SITE_URL}/`
       },
       {
         "@type": "Organization",
         "name": "A Way to Freedom Bail Bonds",
-        "url": "https://away2freedom302.com/",
+        "url": `${SITE_URL}/`,
         "founder": {
           "@type": "Person",
           "name": "Simone Harris"
@@ -452,14 +452,14 @@ const SimoneHomePage = () => {
       {
         "@type": "WebPage",
         "name": "A Way to Freedom Bail Bonds | 24/7 Bail Bonds in Delaware | Newark, DE",
-        "url": "https://away2freedom302.com/",
+        "url": `${SITE_URL}/`,
         "description": "Licensed Delaware bail bond agency serving New Castle County and Kent County - 24/7 emergency service."
       },
       {
         "@type": "LocalBusiness",
         "name": "A Way to Freedom Bail Bond Service",
         "description": "Licensed Delaware bail bond agency serving New Castle County and Kent County - 24/7 emergency service.",
-        "url": "https://away2freedom302.com/",
+        "url": `${SITE_URL}/`,
         "telephone": ["+1-702-447-8550", "+1-302-600-1886"],
         "openingHours": "Mo-Su 00:00-23:59",
         "priceRange": "10% of bail amount",

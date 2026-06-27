@@ -4,9 +4,13 @@ DirectoryIndex index.html
 RewriteEngine On
 RewriteBase /
 
+# Legacy domain → primary domain
+RewriteCond %{HTTP_HOST} ^(www\.)?away2freedom302\.com$ [NC]
+RewriteRule ^(.*)$ https://delawarebailbond.com/$1 [R=301,L]
+
 # Canonical host: non-www
-RewriteCond %{HTTP_HOST} ^www\.away2freedom302\.com$ [NC]
-RewriteRule ^(.*)$ https://away2freedom302.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.delawarebailbond\.com$ [NC]
+RewriteRule ^(.*)$ https://delawarebailbond.com/$1 [R=301,L]
 
 # Canonical homepage: /home -> /
 RewriteRule ^home/?$ / [R=301,L]

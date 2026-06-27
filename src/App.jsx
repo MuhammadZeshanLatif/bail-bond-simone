@@ -197,6 +197,20 @@ const injectSchema = (schema) => {
 };
 
 // ============================================
+// BREADCRUMB SCHEMA BUILDER
+// items: [{ name, path }] in order from Home to current page.
+// ============================================
+const buildBreadcrumb = (items) => ({
+  "@type": "BreadcrumbList",
+  "itemListElement": items.map((item, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "name": item.name,
+    "item": `${SITE_URL}${item.path === '/' ? '/' : item.path}`,
+  })),
+});
+
+// ============================================
 // NAVBAR COMPONENT
 // ============================================
 const Navbar = ({ currentPath, navigate }) => {
@@ -488,6 +502,107 @@ const SimoneHomePage = () => {
           "@type": "Person",
           "name": "Simone Harris"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a bail bond?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A bail bond helps someone get released from jail without paying the full bail amount upfront. A bail bond company posts the bond so the defendant can be released while the case moves through court."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between bail and a bail bond?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bail is the amount set for release. A bail bond is when a bail bond company helps post that amount, and the family or co-signer usually pays a fee instead of the full amount upfront."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do people use a bail bond instead of paying the full bail amount?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Many families use a bail bond because the full bail amount is too high to pay at one time. A bail bond helps start the release process when immediate cash is limited."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What information is needed to start a bail bond?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most cases start with the defendant's name, basic jail or court information, and the bond amount if it has already been set. If a co-signer is involved, their information may also be needed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a family member or co-signer start the process?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. In many cases, a family member, partner, or co-signer is the person who calls first. They can help start the process and review the next steps."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I start a bail bond by phone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Many people need help from home, work, or late at night. Starting by phone makes it easier to get answers fast and begin the process without delay."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if I do not know the bond amount or bond type yet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "That is common after a recent arrest. The first step is usually confirming the bond amount, bond type, and basic defendant details so the process can move forward clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you get bail money back?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If the full bail is paid directly to the court, it may be returned at the end of the case if all court requirements are met. If a bail bond company is used, the fee paid for the bond is not refunded."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can collateral be required for a bail bond?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In some cases, yes. This can depend on the bond amount, the case, and the bond conditions. Larger or higher-risk bonds may involve added financial responsibility."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I think about before helping someone with a bail bond?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It is important to understand the bond amount, bond conditions, and the responsibility of being a co-signer. People should know the financial risk and what could happen if the defendant misses court."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if the defendant misses court?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Missing court can create serious problems for the defendant and for anyone who signed for the bond. That is why co-signers should understand their role before agreeing to help."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do bail bond companies make money?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bail bond companies usually earn money by charging a fee for posting the bond. That fee is separate from the full bail amount set by the court."
+            }
+          }
+        ]
       }
     ]
   };
@@ -627,7 +742,9 @@ const SimoneHomePage = () => {
                 <img
                   src="/images/simoneimg2.webp"
                   alt="Simone Harris Bail Bond Agent Wilmington Newark Delaware - Professional Service"
-                  loading="lazy"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
                 />
               </div>
             </div>
@@ -2015,6 +2132,16 @@ const ServicesPage = ({ navigate }) => {
     'bail bond services, felony bonds, misdemeanor bonds, surety bail, Delaware bail services, New Castle County bail, Kent County bail'
   );
 
+  injectSchema({
+    "@context": "https://schema.org",
+    "@graph": [
+      buildBreadcrumb([
+        { name: 'Home', path: '/' },
+        { name: 'Services', path: '/services' },
+      ]),
+    ],
+  });
+
   const services = [
     { path: '/services/felony', icon: 'fa-gavel', title: 'Felony & Misdemeanor Bonds', desc: 'Expert handling of felony and misdemeanor bail bonds in Delaware courts' },
     { path: '/services/misdemeanor', icon: 'fa-balance-scale', title: 'Misdemeanor Bonds', desc: 'Professional misdemeanor bail bond services' },
@@ -2275,6 +2402,34 @@ const ServiceDetailPage = ({ serviceKey, navigate }) => {
     `${service.title.toLowerCase()}, Delaware bail bonds, ${serviceKey} bail bonds, New Castle County bail, Kent County bail`
   );
 
+  injectSchema({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": service.title,
+        "description": service.description,
+        "serviceType": service.title,
+        "url": `${SITE_URL}/services/${serviceKey}`,
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "New Castle County, Delaware" },
+          { "@type": "AdministrativeArea", "name": "Kent County, Delaware" },
+        ],
+        "provider": {
+          "@type": "LocalBusiness",
+          "@id": `${SITE_URL}/#localbusiness`,
+          "name": "A Way to Freedom Bail Bonds",
+          "telephone": ["+1-702-447-8550", "+1-302-600-1886"],
+        },
+      },
+      buildBreadcrumb([
+        { name: 'Home', path: '/' },
+        { name: 'Services', path: '/services' },
+        { name: service.title, path: `/services/${serviceKey}` },
+      ]),
+    ],
+  });
+
   return (
     <div className="page-container">
       <section className="service-detail-hero">
@@ -2377,6 +2532,16 @@ const AboutPage = ({ navigate }) => {
     'Learn about A Way to Freedom Bail Bonds and Simone Harris - a compassionate bail bonds agent serving Delaware with care and professionalism.',
     'about bail bonds, Simone Harris bail bonds, Delaware bail bonds agent, Newark Delaware bail help'
   );
+
+  injectSchema({
+    "@context": "https://schema.org",
+    "@graph": [
+      buildBreadcrumb([
+        { name: 'Home', path: '/' },
+        { name: 'About', path: '/about' },
+      ]),
+    ],
+  });
 
   return (
     <div className="simone-page">
@@ -2484,6 +2649,16 @@ const HowItWorksPage = ({ navigate }) => {
     'Learn how the bail bond process works in Delaware. Complete guide covering arrest procedures, bond types, and what to expect.',
     'how bail bonds work, Delaware bail process, bail bond steps, bail hearing, defendant rights Delaware'
   );
+
+  injectSchema({
+    "@context": "https://schema.org",
+    "@graph": [
+      buildBreadcrumb([
+        { name: 'Home', path: '/' },
+        { name: 'How It Works', path: '/how-it-works' },
+      ]),
+    ],
+  });
 
   return (
     <div className="page-container">
@@ -2685,7 +2860,16 @@ const FAQPage = ({ navigate }) => {
     ]
   };
 
-  injectSchema(faqSchema);
+  injectSchema({
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "FAQPage", "mainEntity": faqSchema.mainEntity },
+      buildBreadcrumb([
+        { name: 'Home', path: '/' },
+        { name: 'FAQ', path: '/faq' },
+      ]),
+    ],
+  });
 
   const faqs = [
     {
@@ -3498,6 +3682,16 @@ const BlogPage = ({ navigate }) => {
     'bail bond blog, Delaware legal resources, bail process guide, Newark Delaware legal help'
   );
 
+  injectSchema({
+    "@context": "https://schema.org",
+    "@graph": [
+      buildBreadcrumb([
+        { name: 'Home', path: '/' },
+        { name: 'Blog', path: '/blog' },
+      ]),
+    ],
+  });
+
   // Get all unique categories with counts
   const categories = blogPosts.reduce((acc, post) => {
     const cat = post.category;
@@ -3765,6 +3959,11 @@ const BlogPostPage = ({ slug, navigate }) => {
           "@id": `${SITE_URL}/blog/${magazine.slug}`,
         },
       },
+      buildBreadcrumb([
+        { name: 'Home', path: '/' },
+        { name: 'Blog', path: '/blog' },
+        { name: magazine.title, path: `/blog/${magazine.slug}` },
+      ]),
     ];
     if (magazine.faqs.length > 0) {
       schemaGraph.push({
@@ -3820,6 +4019,16 @@ const ContactPage = () => {
     'Contact A Way to Freedom Bail Bonds for 24/7 bail bond services in New Castle County & Kent County, Delaware.',
     'contact bail bonds, Delaware bail bonds contact, Newark Delaware bail help'
   );
+
+  injectSchema({
+    "@context": "https://schema.org",
+    "@graph": [
+      buildBreadcrumb([
+        { name: 'Home', path: '/' },
+        { name: 'Contact', path: '/contact' },
+      ]),
+    ],
+  });
 
   // Reveal animation on scroll
   useEffect(() => {

@@ -1,42 +1,40 @@
-# GitHub Secrets – Hostinger SSH Deploy
+# GitHub Secrets – Hostinger Deploy
 
 **Jahan add karenge:** Repo → **Settings** → **Secrets and variables** → **Actions**
 
 ---
 
-## Required secrets (aapke paas ye 5 hain)
+## Required secrets
 
-| GitHub Secret | Example | Notes |
-|---------------|---------|-------|
-| `SSH_HOST` | `82.25.87.23` | hPanel → SSH Access → IP |
-| `SSH_PORT` | `65002` | Hostinger shared = **65002** (22 nahi) |
-| `SSH_USERNAME` | `u932362804` | SSH username |
-| `SSH_PASSWORD` | apna password | hPanel SSH password |
-| `SSH_REMOTE_PATH` | `/home/u932362804/domains/away2freedom302.com/public_html/` | Trailing `/` rakho |
+| GitHub Secret | Value | Notes |
+|---------------|-------|-------|
+| `SSH_HOST` | `82.25.87.23` | Hostinger server IP |
+| `SSH_USERNAME` | `u932362804` | Same as FTP username |
+| `SSH_PASSWORD` | hPanel password | **FTP password** (hPanel → Files → FTP Accounts) |
 
----
-
-## Deploy kaise hota hai
-
-1. `npm run build` — static pages generate
-2. `deploy.tar.gz` banta hai
-3. SSH se server par upload
-4. `SSH_REMOTE_PATH` mein extract
+> Deploy ab **FTPS (port 21)** use karta hai. GitHub Actions se SSH (port 65002) often **i/o timeout** deta hai — Hostinger external SSH block karta hai.
 
 ---
 
-## Common errors
+## Errors & fixes
 
-| Error | Fix |
-|-------|-----|
-| `Permission denied` | `SSH_PASSWORD` hPanel SSH password se match karo (FTP password alag ho sakta hai) |
-| `Connection timed out` | `SSH_PORT` = `65002`, SSH hPanel se enable karo |
-| Site galat domain par | `SSH_REMOTE_PATH` = **away2freedom302.com** ka `public_html` |
+| Error | Meaning | Fix |
+|-------|---------|-----|
+| `i/o timeout` (SSH) | GitHub server tak SSH nahi pohonch raha | Normal on Hostinger — ab FTPS use hota hai |
+| `Login authentication failed` (FTP) | Galat password | hPanel se FTP password reset karo, `SSH_PASSWORD` secret update |
+| Build green, deploy red | Sirf upload fail | Actions → artifact `static-site-dist` download karke manual upload |
+
+---
+
+## Manual deploy (backup)
+
+1. GitHub → **Actions** → latest run → **Artifacts** → `static-site-dist` download
+2. Extract karo
+3. Hostinger File Manager / FileZilla se `public_html` mein upload karo
 
 ---
 
 ## Checklist
 
-- [ ] SSH enabled in Hostinger hPanel
-- [ ] 5 secrets set (screenshot jaisa)
-- [ ] Push to `master` → Actions green
+- [ ] `SSH_HOST`, `SSH_USERNAME`, `SSH_PASSWORD` set (FTP password use karo)
+- [ ] Push to `master` → **Deploy via FTPS** green hona chahiye

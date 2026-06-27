@@ -39,17 +39,42 @@ jobs:
           path: dist/
           retention-days: 7
 
-      # Hostinger often blocks GitHub Actions SSH (i/o timeout on port 65002).
-      # FTPS uses port 21 and is more reliable from CI runners.
-      - name: Deploy via FTPS
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+      - name: Create deploy archive
+        run: tar -czf dist.tar.gz -C dist .
+
+      - name: Test SSH connection
+        uses: appleboy/ssh-action@v1.2.0
         with:
-          server: ${{ secrets.SSH_HOST }}
+          host: ${{ secrets.SSH_HOST }}
+          port: ${{ secrets.SSH_PORT }}
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
-          port: 21
-          protocol: ftps
-          local-dir: ./dist/
-          server-dir: domains/away2freedom302.com/public_html/
-          log-level: verbose
-          dangerous-clean-slate: false
+          timeout: 60s
+          command_timeout: 2m
+          script: echo "SSH connection OK"
+
+      - name: Upload dist archive
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          port: ${{ secrets.SSH_PORT }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          source: dist.tar.gz
+          target: ${{ secrets.SSH_REMOTE_PATH }}
+          timeout: 120s
+
+      - name: Extract on server
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          port: ${{ secrets.SSH_PORT }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          timeout: 60s
+          command_timeout: 5m
+          script: |
+            cd ${{ secrets.SSH_REMOTE_PATH }}
+            tar -xzf dist.tar.gz
+            rm -f dist.tar.gz
+            echo "Deploy complete"

@@ -43,6 +43,13 @@ import {
   BAIL_BOND_PROCESS_IMAGE,
   BAIL_BOND_PROCESS_THUMBNAIL,
 } from './blog/bail-bond-process-step-by-step-blog';
+import {
+  RELEASED_ON_BOND_MEANING_SLUG,
+  RELEASED_ON_BOND_MEANING_TITLE,
+  RELEASED_ON_BOND_MEANING_META_DESCRIPTION,
+  RELEASED_ON_BOND_MEANING_IMAGE,
+  RELEASED_ON_BOND_MEANING_THUMBNAIL,
+} from './blog/released-on-bond-meaning-delaware-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -2964,6 +2971,18 @@ const FAQPage = ({ navigate }) => {
 // ============================================
 const blogPosts = [
   {
+    slug: RELEASED_ON_BOND_MEANING_SLUG,
+    title: RELEASED_ON_BOND_MEANING_TITLE,
+    excerpt: RELEASED_ON_BOND_MEANING_META_DESCRIPTION,
+    category: 'Bail Bonds',
+    readTime: '18 min read',
+    date: '2026-06-30',
+    image: RELEASED_ON_BOND_MEANING_THUMBNAIL,
+    heroImage: RELEASED_ON_BOND_MEANING_IMAGE,
+    isMagazine: true,
+    content: '',
+  },
+  {
     slug: BAIL_BOND_PROCESS_SLUG,
     title: BAIL_BOND_PROCESS_TITLE,
     excerpt: BAIL_BOND_PROCESS_META_DESCRIPTION,
@@ -3946,38 +3965,42 @@ const BlogPostPage = ({ slug, navigate }) => {
   );
 
   if (magazine) {
-    const schemaGraph = [
-      {
-        "@type": "BlogPosting",
-        "headline": magazine.title,
-        "description": magazine.metaDescription,
-        "image": toAbsoluteUrl(magazine.heroImage),
-        "author": { "@type": "Person", "name": "Simone Harris" },
-        "publisher": { "@type": "Organization", "name": "A Way to Freedom Bail Bonds" },
-        "datePublished": magazine.publishedAt,
-        "dateModified": magazine.updatedAt,
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": `${SITE_URL}/blog/${magazine.slug}`,
+    if (magazine.customSchema) {
+      injectSchema(magazine.customSchema);
+    } else {
+      const schemaGraph = [
+        {
+          "@type": "BlogPosting",
+          "headline": magazine.title,
+          "description": magazine.metaDescription,
+          "image": toAbsoluteUrl(magazine.heroImage),
+          "author": { "@type": "Person", "name": "Simone Harris" },
+          "publisher": { "@type": "Organization", "name": "A Way to Freedom Bail Bonds" },
+          "datePublished": magazine.publishedAt,
+          "dateModified": magazine.updatedAt,
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `${SITE_URL}/blog/${magazine.slug}`,
+          },
         },
-      },
-      buildBreadcrumb([
-        { name: 'Home', path: '/' },
-        { name: 'Blog', path: '/blog' },
-        { name: magazine.title, path: `/blog/${magazine.slug}` },
-      ]),
-    ];
-    if (magazine.faqs.length > 0) {
-      schemaGraph.push({
-        "@type": "FAQPage",
-        "mainEntity": magazine.faqs.map((faq) => ({
-          "@type": "Question",
-          "name": faq.question,
-          "acceptedAnswer": { "@type": "Answer", "text": faq.answer },
-        })),
-      });
+        buildBreadcrumb([
+          { name: 'Home', path: '/' },
+          { name: 'Blog', path: '/blog' },
+          { name: magazine.title, path: `/blog/${magazine.slug}` },
+        ]),
+      ];
+      if (magazine.faqs.length > 0) {
+        schemaGraph.push({
+          "@type": "FAQPage",
+          "mainEntity": magazine.faqs.map((faq) => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": { "@type": "Answer", "text": faq.answer },
+          })),
+        });
+      }
+      injectSchema({ "@context": "https://schema.org", "@graph": schemaGraph });
     }
-    injectSchema({ "@context": "https://schema.org", "@graph": schemaGraph });
 
     return (
       <BlogMagazinePillar

@@ -5,6 +5,7 @@ import { ReleasedOnBailArticle } from './ReleasedOnBailArticle';
 import { CashBondMeaningArticle } from './CashBondMeaningArticle';
 import { WhatIsCashBondArticle } from './WhatIsCashBondArticle';
 import { BailBondProcessArticle } from './BailBondProcessArticle';
+import { ReleasedOnBondMeaningArticle } from './ReleasedOnBondMeaningArticle';
 import { LegacyMagazineArticle } from './LegacyMagazineArticle';
 import { MagazineToc } from './MagazineToc';
 import '../../../blog-magazine.css';
@@ -16,6 +17,7 @@ const ARTICLE_MAP = {
   'cash-bond-meaning': CashBondMeaningArticle,
   'what-is-cash-bond': WhatIsCashBondArticle,
   'bail-bond-process': BailBondProcessArticle,
+  'released-on-bond-meaning': ReleasedOnBondMeaningArticle,
 };
 
 const DEFAULT_BLOG_CTA = {

@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import SimoneAboutSection from './components/SimoneAboutSection';
+import AdminPortal from './components/admin/AdminPortal';
+import { submitContact } from './lib/supabase';
 import { BlogMagazinePillar } from './components/blog/magazine/BlogMagazinePillar';
 import {
   HARDCODED_BLOG_SLUG,
@@ -671,14 +673,18 @@ const SimoneHomePage = () => {
     const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxKQHCrTC01hRCpFSLnUnmZyBx6ypmOvHLDUGdJ3Uu97gJW3OH1aBBMPoqln1KCWa7H/exec';
 
     try {
-      await fetch(GOOGLE_SCRIPT_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-      });
+      // Save to Supabase (admin dashboard) + email via Google Apps Script — run together
+      await Promise.all([
+        submitContact(formData),
+        fetch(GOOGLE_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData)
+        }),
+      ]);
 
       setSubmitStatusHome({
         type: 'success',
@@ -4101,15 +4107,18 @@ const ContactPage = () => {
     const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxKQHCrTC01hRCpFSLnUnmZyBx6ypmOvHLDUGdJ3Uu97gJW3OH1aBBMPoqln1KCWa7H/exec';
 
     try {
-      // Google Apps Script ke liye no-cors mode use karte hain
-      await fetch(GOOGLE_SCRIPT_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-      });
+      // Save to Supabase (admin dashboard) + email via Google Apps Script — run together
+      await Promise.all([
+        submitContact(formData),
+        fetch(GOOGLE_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData)
+        }),
+      ]);
 
       // no-cors mode mein response nahi milta, isliye always success assume karte hain
       setSubmitStatus({
@@ -4660,6 +4669,11 @@ function App() {
     // 404
     return <NotFoundPage navigate={navigate} />;
   };
+
+  // Standalone admin dashboard — no public navbar/footer/chrome
+  if (currentPath === '/admin' || currentPath.startsWith('/admin/')) {
+    return <AdminPortal />;
+  }
 
   return (
     <>

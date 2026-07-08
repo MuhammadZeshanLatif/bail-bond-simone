@@ -113,8 +113,45 @@ import {
   RELEASED_ON_BOND_MEANING_SCHEMA,
 } from './released-on-bond-meaning-delaware-blog';
 import { RELEASED_ON_BOND_MEANING_TOC } from './magazine-toc-released-on-bond-meaning';
+import {
+  FAST_RELIABLE_SLUG,
+  FAST_RELIABLE_TITLE,
+  FAST_RELIABLE_SUBTITLE,
+  FAST_RELIABLE_META_TITLE,
+  FAST_RELIABLE_META_DESCRIPTION,
+  FAST_RELIABLE_KEYWORDS,
+  FAST_RELIABLE_IMAGE,
+  FAST_RELIABLE_THUMBNAIL,
+  FAST_RELIABLE_HERO_ALT,
+  FAST_RELIABLE_CATEGORY,
+  FAST_RELIABLE_READ_MIN,
+  FAST_RELIABLE_BENEFITS,
+  FAST_RELIABLE_TAGS,
+  FAST_RELIABLE_FAQS,
+} from './fast-reliable-bail-bonds-delaware-blog';
+import { FAST_RELIABLE_TOC } from './magazine-toc-fast-reliable-bail-bonds-delaware';
 
 export const MAGAZINE_POSTS = {
+  [FAST_RELIABLE_SLUG]: {
+    slug: FAST_RELIABLE_SLUG,
+    title: FAST_RELIABLE_TITLE,
+    subtitle: FAST_RELIABLE_SUBTITLE,
+    metaTitle: FAST_RELIABLE_META_TITLE,
+    metaDescription: FAST_RELIABLE_META_DESCRIPTION,
+    keywords: FAST_RELIABLE_KEYWORDS,
+    heroImage: FAST_RELIABLE_IMAGE,
+    thumbnail: FAST_RELIABLE_THUMBNAIL,
+    heroAlt: FAST_RELIABLE_HERO_ALT,
+    categoryLabel: FAST_RELIABLE_CATEGORY,
+    readMin: FAST_RELIABLE_READ_MIN,
+    benefits: FAST_RELIABLE_BENEFITS,
+    tags: FAST_RELIABLE_TAGS,
+    faqs: FAST_RELIABLE_FAQS,
+    tocEntries: FAST_RELIABLE_TOC,
+    articleKey: 'fast-reliable-bail-bonds',
+    publishedAt: '2026-07-09',
+    updatedAt: '2026-07-09',
+  },
   [HARDCODED_BLOG_SLUG]: {
     slug: HARDCODED_BLOG_SLUG,
     title: HARDCODED_BLOG_TITLE,

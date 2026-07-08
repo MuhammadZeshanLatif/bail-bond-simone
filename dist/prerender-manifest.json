@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T02:13:09.603Z",
+  "generatedAt": "2026-07-08T22:13:19.469Z",
   "pages": [
     {
       "route": "/",
@@ -14,72 +14,77 @@
     {
       "route": "/blog",
       "file": "dist\\blog\\index.html",
-      "bytes": 20420
+      "bytes": 20424
     },
     {
       "route": "/blog/bail-bond-company-delaware",
       "file": "dist\\blog\\bail-bond-company-delaware\\index.html",
-      "bytes": 45993
+      "bytes": 46081
     },
     {
       "route": "/blog/bail-bond-process-step-by-step",
       "file": "dist\\blog\\bail-bond-process-step-by-step\\index.html",
-      "bytes": 30882
+      "bytes": 31007
     },
     {
       "route": "/blog/cash-bond-meaning",
       "file": "dist\\blog\\cash-bond-meaning\\index.html",
-      "bytes": 30687
+      "bytes": 30775
     },
     {
       "route": "/blog/choosing-right-bail-bondsman",
       "file": "dist\\blog\\choosing-right-bail-bondsman\\index.html",
-      "bytes": 29689
+      "bytes": 29777
     },
     {
       "route": "/blog/defendant-rights-bail-process",
       "file": "dist\\blog\\defendant-rights-bail-process\\index.html",
-      "bytes": 30390
+      "bytes": 30478
+    },
+    {
+      "route": "/blog/fast-reliable-bail-bonds-delaware",
+      "file": "dist\\blog\\fast-reliable-bail-bonds-delaware\\index.html",
+      "bytes": 39188
     },
     {
       "route": "/blog/felony-vs-misdemeanor-bonds-delaware",
       "file": "dist\\blog\\felony-vs-misdemeanor-bonds-delaware\\index.html",
-      "bytes": 25423
+      "bytes": 25511
     },
     {
       "route": "/blog/how-bail-bonds-work-in-delaware",
       "file": "dist\\blog\\how-bail-bonds-work-in-delaware\\index.html",
-      "bytes": 35544
+      "bytes": 35632
     },
     {
       "route": "/blog/payment-options-bail-bonds",
       "file": "dist\\blog\\payment-options-bail-bonds\\index.html",
-      "bytes": 27014
+      "bytes": 27102
     },
     {
       "route": "/blog/released-on-bond-meaning-delaware",
       "file": "dist\\blog\\released-on-bond-meaning-delaware\\index.html",
-      "bytes": 42321
+      "bytes": 42446
     },
     {
       "route": "/blog/understanding-bail-amounts-delaware",
       "file": "dist\\blog\\understanding-bail-amounts-delaware\\index.html",
-      "bytes": 25781
+      "bytes": 25869
     },
     {
       "route": "/blog/what-does-released-on-bail-mean",
       "file": "dist\\blog\\what-does-released-on-bail-mean\\index.html",
-      "bytes": 29501
+      "bytes": 29589
     },
     {
       "route": "/blog/what-is-cash-bond",
       "file": "dist\\blog\\what-is-cash-bond\\index.html",
-      "bytes": 31796
+      "bytes": 31889
     },
     {
       "route": "/blog/what-to-expect-when-someone-is-arrested",
       "file": "dist\\blog\\what-to-expect-when-someone-is-arrested\\index.html",
-      "bytes": 26806
+      "bytes": 26894
     },
     {
       "route": "/contact",

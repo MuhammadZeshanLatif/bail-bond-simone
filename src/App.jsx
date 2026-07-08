@@ -52,6 +52,13 @@ import {
   RELEASED_ON_BOND_MEANING_IMAGE,
   RELEASED_ON_BOND_MEANING_THUMBNAIL,
 } from './blog/released-on-bond-meaning-delaware-blog';
+import {
+  FAST_RELIABLE_SLUG,
+  FAST_RELIABLE_TITLE,
+  FAST_RELIABLE_META_DESCRIPTION,
+  FAST_RELIABLE_IMAGE,
+  FAST_RELIABLE_THUMBNAIL,
+} from './blog/fast-reliable-bail-bonds-delaware-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -2976,6 +2983,18 @@ const FAQPage = ({ navigate }) => {
 // BLOG DATA
 // ============================================
 const blogPosts = [
+  {
+    slug: FAST_RELIABLE_SLUG,
+    title: FAST_RELIABLE_TITLE,
+    excerpt: FAST_RELIABLE_META_DESCRIPTION,
+    category: 'Bail Process',
+    readTime: '10 min read',
+    date: '2026-07-09',
+    image: FAST_RELIABLE_THUMBNAIL,
+    heroImage: FAST_RELIABLE_IMAGE,
+    isMagazine: true,
+    content: '',
+  },
   {
     slug: RELEASED_ON_BOND_MEANING_SLUG,
     title: RELEASED_ON_BOND_MEANING_TITLE,

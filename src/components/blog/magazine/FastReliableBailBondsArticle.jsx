@@ -202,7 +202,7 @@ export function FastReliableBailBondsArticle({ navigate, onContactClick }) {
 
         <ArticleFigure
           src="/images/blog/local-delaware-bail-bond-support.webp"
-          alt="Local Delaware bail bond support with clear guidance and respectful service"
+          alt="Professional bail bond consultation in a Delaware law office with A Way to Freedom"
           caption="Local Delaware bail bond support means clear guidance and respectful service."
         />
 

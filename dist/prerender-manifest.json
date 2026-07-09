@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T11:31:16.593Z",
+  "generatedAt": "2026-07-09T11:48:29.541Z",
   "pages": [
     {
       "route": "/",
@@ -44,7 +44,7 @@
     {
       "route": "/blog/fast-reliable-bail-bonds-delaware",
       "file": "dist\\blog\\fast-reliable-bail-bonds-delaware\\index.html",
-      "bytes": 38884
+      "bytes": 39195
     },
     {
       "route": "/blog/felony-vs-misdemeanor-bonds-delaware",

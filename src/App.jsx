@@ -459,8 +459,8 @@ const SocialSidebar = () => {
 // ============================================
 const SimoneHomePage = () => {
   useSEO(
-    'Simone Harris - Bail Bond Agent in Newark, Delaware | 24/7 Fast Release',
-    'Simone Harris - Not Just Another Bail Bonds Agent, A Mother Who Cares. Professional bail bond services in Newark, Delaware. 24/7 availability, fast release, confidential process. Call (702) 447-8550',
+    'Cheap Bail Bonds, Fast Support 24/7 | Delaware Bail Bonds',
+    'Searching for cheap bail bonds near me? Delaware Bail Bonds provides fast, reliable 24/7 support and affordable payment options. Call now for local help.',
     'bail bonds Newark Delaware, bail bond agent, bail bondsman, 24/7 bail bonds, fast bail release, Simone Harris bail bonds, Delaware bail bonds, affordable bail bonds, felony bonds, misdemeanor bonds'
   );
 

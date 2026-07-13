@@ -59,6 +59,13 @@ import {
   FAST_RELIABLE_IMAGE,
   FAST_RELIABLE_THUMBNAIL,
 } from './blog/fast-reliable-bail-bonds-delaware-blog';
+import {
+  COMMON_MISTAKES_SLUG,
+  COMMON_MISTAKES_TITLE,
+  COMMON_MISTAKES_META_DESCRIPTION,
+  COMMON_MISTAKES_IMAGE,
+  COMMON_MISTAKES_THUMBNAIL,
+} from './blog/common-mistakes-posting-bail-delaware-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -2983,6 +2990,18 @@ const FAQPage = ({ navigate }) => {
 // BLOG DATA
 // ============================================
 const blogPosts = [
+  {
+    slug: COMMON_MISTAKES_SLUG,
+    title: COMMON_MISTAKES_TITLE,
+    excerpt: COMMON_MISTAKES_META_DESCRIPTION,
+    category: 'Bail Bonds',
+    readTime: '9 min read',
+    date: '2026-07-14',
+    image: COMMON_MISTAKES_THUMBNAIL,
+    heroImage: COMMON_MISTAKES_IMAGE,
+    isMagazine: true,
+    content: '',
+  },
   {
     slug: FAST_RELIABLE_SLUG,
     title: FAST_RELIABLE_TITLE,

@@ -130,8 +130,47 @@ import {
   FAST_RELIABLE_FAQS,
 } from './fast-reliable-bail-bonds-delaware-blog';
 import { FAST_RELIABLE_TOC } from './magazine-toc-fast-reliable-bail-bonds-delaware';
+import {
+  COMMON_MISTAKES_SLUG,
+  COMMON_MISTAKES_TITLE,
+  COMMON_MISTAKES_SUBTITLE,
+  COMMON_MISTAKES_META_TITLE,
+  COMMON_MISTAKES_META_DESCRIPTION,
+  COMMON_MISTAKES_KEYWORDS,
+  COMMON_MISTAKES_IMAGE,
+  COMMON_MISTAKES_THUMBNAIL,
+  COMMON_MISTAKES_HERO_ALT,
+  COMMON_MISTAKES_CATEGORY,
+  COMMON_MISTAKES_READ_MIN,
+  COMMON_MISTAKES_BENEFITS,
+  COMMON_MISTAKES_TAGS,
+  COMMON_MISTAKES_FAQS,
+  COMMON_MISTAKES_SCHEMA,
+} from './common-mistakes-posting-bail-delaware-blog';
+import { COMMON_MISTAKES_TOC } from './magazine-toc-common-mistakes';
 
 export const MAGAZINE_POSTS = {
+  [COMMON_MISTAKES_SLUG]: {
+    slug: COMMON_MISTAKES_SLUG,
+    title: COMMON_MISTAKES_TITLE,
+    subtitle: COMMON_MISTAKES_SUBTITLE,
+    metaTitle: COMMON_MISTAKES_META_TITLE,
+    metaDescription: COMMON_MISTAKES_META_DESCRIPTION,
+    keywords: COMMON_MISTAKES_KEYWORDS,
+    heroImage: COMMON_MISTAKES_IMAGE,
+    thumbnail: COMMON_MISTAKES_THUMBNAIL,
+    heroAlt: COMMON_MISTAKES_HERO_ALT,
+    categoryLabel: COMMON_MISTAKES_CATEGORY,
+    readMin: COMMON_MISTAKES_READ_MIN,
+    benefits: COMMON_MISTAKES_BENEFITS,
+    tags: COMMON_MISTAKES_TAGS,
+    faqs: COMMON_MISTAKES_FAQS,
+    tocEntries: COMMON_MISTAKES_TOC,
+    articleKey: 'common-mistakes-posting-bail',
+    customSchema: COMMON_MISTAKES_SCHEMA,
+    publishedAt: '2026-07-14',
+    updatedAt: '2026-07-14',
+  },
   [FAST_RELIABLE_SLUG]: {
     slug: FAST_RELIABLE_SLUG,
     title: FAST_RELIABLE_TITLE,

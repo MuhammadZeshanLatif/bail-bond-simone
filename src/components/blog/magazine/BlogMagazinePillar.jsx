@@ -7,6 +7,7 @@ import { WhatIsCashBondArticle } from './WhatIsCashBondArticle';
 import { BailBondProcessArticle } from './BailBondProcessArticle';
 import { ReleasedOnBondMeaningArticle } from './ReleasedOnBondMeaningArticle';
 import { FastReliableBailBondsArticle } from './FastReliableBailBondsArticle';
+import { CommonMistakesArticle } from './CommonMistakesArticle';
 import { LegacyMagazineArticle } from './LegacyMagazineArticle';
 import { MagazineToc } from './MagazineToc';
 import '../../../blog-magazine.css';
@@ -20,6 +21,7 @@ const ARTICLE_MAP = {
   'bail-bond-process': BailBondProcessArticle,
   'released-on-bond-meaning': ReleasedOnBondMeaningArticle,
   'fast-reliable-bail-bonds': FastReliableBailBondsArticle,
+  'common-mistakes-posting-bail': CommonMistakesArticle,
 };
 
 const DEFAULT_BLOG_CTA = {

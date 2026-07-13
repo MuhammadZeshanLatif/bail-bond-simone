@@ -16,11 +16,11 @@ export const COMMON_MISTAKES_KEYWORDS =
 const COMMON_MISTAKES_IMAGE_BASE = '/images/common-mistakes-to-avoid-when-posting-bail-in-delaware';
 
 export const COMMON_MISTAKES_IMAGES = {
-  hero: `${COMMON_MISTAKES_IMAGE_BASE}/common-mistakes-to-avoid-when-posting-bail-in-delaware-hero.png`,
-  processFlow: `${COMMON_MISTAKES_IMAGE_BASE}/delaware-bail-process-flow.png`,
-  documents: `${COMMON_MISTAKES_IMAGE_BASE}/documents-checklist-for-posting-bail-in-delaware.png`,
-  consultation: `${COMMON_MISTAKES_IMAGE_BASE}/delaware-bail-bond-consultation.png`,
-  courthouse: `${COMMON_MISTAKES_IMAGE_BASE}/delaware-courthouse.png`,
+  hero: `${COMMON_MISTAKES_IMAGE_BASE}/common-mistakes-to-avoid-when-posting-bail-in-delaware-hero.webp`,
+  processFlow: `${COMMON_MISTAKES_IMAGE_BASE}/delaware-bail-process-flow.webp`,
+  documents: `${COMMON_MISTAKES_IMAGE_BASE}/documents-checklist-for-posting-bail-in-delaware.webp`,
+  consultation: `${COMMON_MISTAKES_IMAGE_BASE}/delaware-bail-bond-consultation.webp`,
+  courthouse: `${COMMON_MISTAKES_IMAGE_BASE}/delaware-courthouse.webp`,
 };
 
 export const COMMON_MISTAKES_IMAGE = COMMON_MISTAKES_IMAGES.hero;
@@ -118,7 +118,7 @@ export const COMMON_MISTAKES_SCHEMA = {
       description:
         'Learn the common mistakes to avoid when posting bail in Delaware. Understand the bail process, avoid delays, and make informed decisions with expert guidance.',
       image:
-        'https://delawarebailbond.com/images/common-mistakes-to-avoid-when-posting-bail-in-delaware/common-mistakes-to-avoid-when-posting-bail-in-delaware-hero.png',
+        'https://delawarebailbond.com/images/common-mistakes-to-avoid-when-posting-bail-in-delaware/common-mistakes-to-avoid-when-posting-bail-in-delaware-hero.webp',
       author: {
         '@type': 'Organization',
         name: 'Delaware Bail Bond',

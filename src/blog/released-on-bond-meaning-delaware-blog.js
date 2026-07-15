@@ -95,11 +95,12 @@ export const RELEASED_ON_BOND_MEANING_SCHEMA = {
         'https://delawarebailbond.com/images/what-does-release-on-bond-meaning/what-does-release-on-bond-meaning.webp',
       author: {
         '@type': 'Organization',
-        name: 'Delaware Bail Bond',
+        name: 'A Way to Freedom Bail Bonds LLC',
       },
       publisher: {
         '@type': 'Organization',
-        name: 'Delaware Bail Bond',
+        name: 'A Way to Freedom Bail Bonds LLC',
+        url: 'https://delawarebailbond.com',
       },
       datePublished: '2026-06-30',
       dateModified: '2026-06-30',

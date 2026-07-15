@@ -446,13 +446,13 @@ export function CommonMistakesArticle({ navigate, onContactClick }) {
       </section>
 
       <section id="section-why-choose">
-        <h2>Why Choose Delaware Bail Bond?</h2>
+        <h2>Why Choose A Way to Freedom Bail Bonds LLC?</h2>
         <p>
           When someone you care about has been arrested, you need more than just paperwork&mdash;you need clear guidance,
           honest communication, and a team that understands the Delaware bail process.
         </p>
         <p>
-          At Delaware Bail Bond, we understand how stressful these situations can be. Our goal is to help families
+          At A Way to Freedom Bail Bonds LLC, we understand how stressful these situations can be. Our goal is to help families
           understand the process, answer their questions, and complete the necessary steps as efficiently as possible.
         </p>
         <p>
@@ -460,7 +460,7 @@ export function CommonMistakesArticle({ navigate, onContactClick }) {
           with a knowledgeable local team can help reduce confusion and avoid unnecessary delays.
         </p>
 
-        <h3>Why Families Choose Delaware Bail Bond</h3>
+        <h3>Why Families Choose A Way to Freedom Bail Bonds LLC</h3>
         <ul className="bm-checklist">
           <li>Licensed Delaware bail bond professionals</li>
           <li>Clear explanation of every step</li>
@@ -480,8 +480,8 @@ export function CommonMistakesArticle({ navigate, onContactClick }) {
           </div>
           <h3 className="bm-inline-cta-title">Need Help Posting Bail in Delaware?</h3>
           <p className="bm-inline-cta-desc">
-            Contact Delaware Bail Bond today to learn more about your options and receive professional guidance throughout
-            the Delaware bail process.
+            Contact A Way to Freedom Bail Bonds LLC today to learn more about your options and receive professional
+            guidance throughout the Delaware bail process.
           </p>
           <a href="/contact" className="bm-btn bm-btn--primary bm-btn--full bm-inline-cta-btn" onClick={handleCta}>
             Start the Process
@@ -506,8 +506,8 @@ export function CommonMistakesArticle({ navigate, onContactClick }) {
           company, and follow all court requirements can help reduce stress and keep the process moving smoothly.
         </p>
         <p>
-          If you have questions about posting bail or need guidance specific to your situation, the team at Delaware Bail
-          Bond is available to explain the process and help you understand your options.
+          If you have questions about posting bail or need guidance specific to your situation, the team at A Way to
+          Freedom Bail Bonds LLC is available to explain the process and help you understand your options.
         </p>
       </section>
     </>

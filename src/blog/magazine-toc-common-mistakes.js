@@ -14,7 +14,7 @@ export const COMMON_MISTAKES_TOC = [
   { id: 'section-mistakes-vs-best', prefix: '13.', label: 'Common Mistakes vs Best Practices' },
   { id: 'section-best-practices', prefix: '14.', label: 'Best Practices for Posting Bail' },
   { id: 'section-final-checklist', prefix: '15.', label: 'Before Posting Bail — Final Checklist' },
-  { id: 'section-why-choose', prefix: '16.', label: 'Why Choose Delaware Bail Bond?' },
+  { id: 'section-why-choose', prefix: '16.', label: 'Why Choose A Way to Freedom?' },
   { id: 'section-faq', prefix: '17.', label: 'FAQs' },
   { id: 'section-final', prefix: '18.', label: 'Final Thoughts' },
 ];

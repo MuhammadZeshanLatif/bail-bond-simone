@@ -5,7 +5,7 @@ export const COMMON_MISTAKES_TITLE = 'Common Mistakes to Avoid When Posting Bail
 export const COMMON_MISTAKES_SUBTITLE = '';
 
 export const COMMON_MISTAKES_META_TITLE =
-  'Common Mistakes When Posting Bail in Delaware | Delaware Bail Bond';
+  'Common Mistakes When Posting Bail in Delaware | A Way to Freedom';
 
 export const COMMON_MISTAKES_META_DESCRIPTION =
   'Learn the common mistakes to avoid when posting bail in Delaware. Understand the bail process, avoid delays, and make informed decisions with expert guidance.';
@@ -121,11 +121,12 @@ export const COMMON_MISTAKES_SCHEMA = {
         'https://delawarebailbond.com/images/common-mistakes-to-avoid-when-posting-bail-in-delaware/common-mistakes-to-avoid-when-posting-bail-in-delaware-hero.webp',
       author: {
         '@type': 'Organization',
-        name: 'Delaware Bail Bond',
+        name: 'A Way to Freedom Bail Bonds LLC',
       },
       publisher: {
         '@type': 'Organization',
-        name: 'Delaware Bail Bond',
+        name: 'A Way to Freedom Bail Bonds LLC',
+        url: 'https://delawarebailbond.com',
       },
       datePublished: '2026-07-14',
       dateModified: '2026-07-14',

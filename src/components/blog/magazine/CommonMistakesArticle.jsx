@@ -1,7 +1,6 @@
 import {
   COMMON_MISTAKES_FAQS,
   COMMON_MISTAKES_IMAGES,
-  COMMON_MISTAKES_HERO_ALT,
 } from '../../../blog/common-mistakes-posting-bail-delaware-blog';
 import { ArticleFigure, FaqAccordion, QuickAnswerBox } from './MagazineArticleParts';
 
@@ -15,7 +14,6 @@ export function CommonMistakesArticle({ navigate, onContactClick }) {
   return (
     <>
       <section id="section-intro">
-        <ArticleFigure src={COMMON_MISTAKES_IMAGES.hero} alt={COMMON_MISTAKES_HERO_ALT} />
         <p>
           When a loved one is arrested, everything can happen very quickly. Families often feel overwhelmed, unsure of
           what to do next, and worried about getting the person released as soon as possible. During this stressful time,

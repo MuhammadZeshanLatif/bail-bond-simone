@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T11:43:59.466Z",
+  "generatedAt": "2026-07-15T12:16:56.047Z",
   "pages": [
     {
       "route": "/",
@@ -39,7 +39,7 @@
     {
       "route": "/blog/common-mistakes-to-avoid-when-posting-bail-in-delaware",
       "file": "dist\\blog\\common-mistakes-to-avoid-when-posting-bail-in-delaware\\index.html",
-      "bytes": 47776
+      "bytes": 47462
     },
     {
       "route": "/blog/defendant-rights-bail-process",
@@ -69,7 +69,7 @@
     {
       "route": "/blog/released-on-bond-meaning-delaware",
       "file": "dist\\blog\\released-on-bond-meaning-delaware\\index.html",
-      "bytes": 42651
+      "bytes": 42458
     },
     {
       "route": "/blog/understanding-bail-amounts-delaware",

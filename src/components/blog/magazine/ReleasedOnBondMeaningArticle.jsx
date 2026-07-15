@@ -1,15 +1,10 @@
-import {
-  RELEASED_ON_BOND_MEANING_FAQS,
-  RELEASED_ON_BOND_MEANING_IMAGE,
-  RELEASED_ON_BOND_MEANING_HERO_ALT,
-} from '../../../blog/released-on-bond-meaning-delaware-blog';
-import { ArticleFigure, FaqAccordion, QuickAnswerBox } from './MagazineArticleParts';
+import { RELEASED_ON_BOND_MEANING_FAQS } from '../../../blog/released-on-bond-meaning-delaware-blog';
+import { FaqAccordion, QuickAnswerBox } from './MagazineArticleParts';
 
 export function ReleasedOnBondMeaningArticle() {
   return (
     <>
       <section id="section-intro">
-        <ArticleFigure src={RELEASED_ON_BOND_MEANING_IMAGE} alt={RELEASED_ON_BOND_MEANING_HERO_ALT} />
         <p>
           When someone is arrested and you hear they were &ldquo;released on bond,&rdquo; it can feel like good news and
           confusing news at the same time. You may wonder if they are free, if the case is over, if the money comes back,

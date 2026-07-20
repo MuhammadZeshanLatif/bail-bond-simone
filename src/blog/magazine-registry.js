@@ -148,8 +148,45 @@ import {
   COMMON_MISTAKES_SCHEMA,
 } from './common-mistakes-posting-bail-delaware-blog';
 import { COMMON_MISTAKES_TOC } from './magazine-toc-common-mistakes';
+import {
+  HOW_TO_BOND_SLUG,
+  HOW_TO_BOND_TITLE,
+  HOW_TO_BOND_SUBTITLE,
+  HOW_TO_BOND_META_TITLE,
+  HOW_TO_BOND_META_DESCRIPTION,
+  HOW_TO_BOND_KEYWORDS,
+  HOW_TO_BOND_IMAGE,
+  HOW_TO_BOND_THUMBNAIL,
+  HOW_TO_BOND_HERO_ALT,
+  HOW_TO_BOND_CATEGORY,
+  HOW_TO_BOND_READ_MIN,
+  HOW_TO_BOND_BENEFITS,
+  HOW_TO_BOND_TAGS,
+  HOW_TO_BOND_FAQS,
+} from './how-to-bond-someone-out-of-jail-delaware-blog';
+import { HOW_TO_BOND_TOC } from './magazine-toc-how-to-bond-someone-out';
 
 export const MAGAZINE_POSTS = {
+  [HOW_TO_BOND_SLUG]: {
+    slug: HOW_TO_BOND_SLUG,
+    title: HOW_TO_BOND_TITLE,
+    subtitle: HOW_TO_BOND_SUBTITLE,
+    metaTitle: HOW_TO_BOND_META_TITLE,
+    metaDescription: HOW_TO_BOND_META_DESCRIPTION,
+    keywords: HOW_TO_BOND_KEYWORDS,
+    heroImage: HOW_TO_BOND_IMAGE,
+    thumbnail: HOW_TO_BOND_THUMBNAIL,
+    heroAlt: HOW_TO_BOND_HERO_ALT,
+    categoryLabel: HOW_TO_BOND_CATEGORY,
+    readMin: HOW_TO_BOND_READ_MIN,
+    benefits: HOW_TO_BOND_BENEFITS,
+    tags: HOW_TO_BOND_TAGS,
+    faqs: HOW_TO_BOND_FAQS,
+    tocEntries: HOW_TO_BOND_TOC,
+    articleKey: 'how-to-bond-someone-out',
+    publishedAt: '2026-07-20',
+    updatedAt: '2026-07-20',
+  },
   [COMMON_MISTAKES_SLUG]: {
     slug: COMMON_MISTAKES_SLUG,
     title: COMMON_MISTAKES_TITLE,

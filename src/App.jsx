@@ -66,6 +66,13 @@ import {
   COMMON_MISTAKES_IMAGE,
   COMMON_MISTAKES_THUMBNAIL,
 } from './blog/common-mistakes-posting-bail-delaware-blog';
+import {
+  HOW_TO_BOND_SLUG,
+  HOW_TO_BOND_TITLE,
+  HOW_TO_BOND_META_DESCRIPTION,
+  HOW_TO_BOND_IMAGE,
+  HOW_TO_BOND_THUMBNAIL,
+} from './blog/how-to-bond-someone-out-of-jail-delaware-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -2990,6 +2997,18 @@ const FAQPage = ({ navigate }) => {
 // BLOG DATA
 // ============================================
 const blogPosts = [
+  {
+    slug: HOW_TO_BOND_SLUG,
+    title: HOW_TO_BOND_TITLE,
+    excerpt: HOW_TO_BOND_META_DESCRIPTION,
+    category: 'Bail Process',
+    readTime: '14 min read',
+    date: '2026-07-20',
+    image: HOW_TO_BOND_THUMBNAIL,
+    heroImage: HOW_TO_BOND_IMAGE,
+    isMagazine: true,
+    content: '',
+  },
   {
     slug: COMMON_MISTAKES_SLUG,
     title: COMMON_MISTAKES_TITLE,

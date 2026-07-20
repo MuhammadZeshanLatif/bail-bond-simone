@@ -1107,7 +1107,7 @@ a:hover {
   width: 100%;
   aspect-ratio: 16 / 9;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   background: var(--dark-bg-secondary, #161b22);
   display: block;

@@ -165,8 +165,47 @@ import {
   HOW_TO_BOND_FAQS,
 } from './how-to-bond-someone-out-of-jail-delaware-blog';
 import { HOW_TO_BOND_TOC } from './magazine-toc-how-to-bond-someone-out';
+import {
+  FIND_BAIL_AMOUNT_SLUG,
+  FIND_BAIL_AMOUNT_TITLE,
+  FIND_BAIL_AMOUNT_SUBTITLE,
+  FIND_BAIL_AMOUNT_META_TITLE,
+  FIND_BAIL_AMOUNT_META_DESCRIPTION,
+  FIND_BAIL_AMOUNT_KEYWORDS,
+  FIND_BAIL_AMOUNT_IMAGE,
+  FIND_BAIL_AMOUNT_THUMBNAIL,
+  FIND_BAIL_AMOUNT_OG_IMAGE,
+  FIND_BAIL_AMOUNT_HERO_ALT,
+  FIND_BAIL_AMOUNT_CATEGORY,
+  FIND_BAIL_AMOUNT_READ_MIN,
+  FIND_BAIL_AMOUNT_BENEFITS,
+  FIND_BAIL_AMOUNT_TAGS,
+  FIND_BAIL_AMOUNT_FAQS,
+} from './find-bail-amount-delaware-blog';
+import { FIND_BAIL_AMOUNT_TOC } from './magazine-toc-find-bail-amount';
 
 export const MAGAZINE_POSTS = {
+  [FIND_BAIL_AMOUNT_SLUG]: {
+    slug: FIND_BAIL_AMOUNT_SLUG,
+    title: FIND_BAIL_AMOUNT_TITLE,
+    subtitle: FIND_BAIL_AMOUNT_SUBTITLE,
+    metaTitle: FIND_BAIL_AMOUNT_META_TITLE,
+    metaDescription: FIND_BAIL_AMOUNT_META_DESCRIPTION,
+    keywords: FIND_BAIL_AMOUNT_KEYWORDS,
+    heroImage: FIND_BAIL_AMOUNT_IMAGE,
+    thumbnail: FIND_BAIL_AMOUNT_THUMBNAIL,
+    ogImage: FIND_BAIL_AMOUNT_OG_IMAGE,
+    heroAlt: FIND_BAIL_AMOUNT_HERO_ALT,
+    categoryLabel: FIND_BAIL_AMOUNT_CATEGORY,
+    readMin: FIND_BAIL_AMOUNT_READ_MIN,
+    benefits: FIND_BAIL_AMOUNT_BENEFITS,
+    tags: FIND_BAIL_AMOUNT_TAGS,
+    faqs: FIND_BAIL_AMOUNT_FAQS,
+    tocEntries: FIND_BAIL_AMOUNT_TOC,
+    articleKey: 'find-bail-amount',
+    publishedAt: '2026-07-23',
+    updatedAt: '2026-07-23',
+  },
   [HOW_TO_BOND_SLUG]: {
     slug: HOW_TO_BOND_SLUG,
     title: HOW_TO_BOND_TITLE,

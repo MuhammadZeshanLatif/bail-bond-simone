@@ -73,6 +73,13 @@ import {
   HOW_TO_BOND_IMAGE,
   HOW_TO_BOND_THUMBNAIL,
 } from './blog/how-to-bond-someone-out-of-jail-delaware-blog';
+import {
+  FIND_BAIL_AMOUNT_SLUG,
+  FIND_BAIL_AMOUNT_TITLE,
+  FIND_BAIL_AMOUNT_META_DESCRIPTION,
+  FIND_BAIL_AMOUNT_IMAGE,
+  FIND_BAIL_AMOUNT_THUMBNAIL,
+} from './blog/find-bail-amount-delaware-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -2998,6 +3005,18 @@ const FAQPage = ({ navigate }) => {
 // ============================================
 const blogPosts = [
   {
+    slug: FIND_BAIL_AMOUNT_SLUG,
+    title: FIND_BAIL_AMOUNT_TITLE,
+    excerpt: FIND_BAIL_AMOUNT_META_DESCRIPTION,
+    category: 'Bail Process',
+    readTime: '13 min read',
+    date: '2026-07-23',
+    image: FIND_BAIL_AMOUNT_THUMBNAIL,
+    heroImage: FIND_BAIL_AMOUNT_IMAGE,
+    isMagazine: true,
+    content: '',
+  },
+  {
     slug: HOW_TO_BOND_SLUG,
     title: HOW_TO_BOND_TITLE,
     excerpt: HOW_TO_BOND_META_DESCRIPTION,
@@ -4024,7 +4043,7 @@ const BlogPostPage = ({ slug, navigate }) => {
     magazine ? magazine.keywords : 'bail bonds, Delaware bail, Newark Delaware',
     magazine ? magazine.metaTitle : '',
     magazine ? magazine.metaDescription : '',
-    magazine ? toAbsoluteUrl(magazine.heroImage) : ''
+    magazine ? toAbsoluteUrl(magazine.ogImage || magazine.heroImage) : ''
   );
 
   if (magazine) {
@@ -4036,7 +4055,7 @@ const BlogPostPage = ({ slug, navigate }) => {
           "@type": "BlogPosting",
           "headline": magazine.title,
           "description": magazine.metaDescription,
-          "image": toAbsoluteUrl(magazine.heroImage),
+          "image": toAbsoluteUrl(magazine.ogImage || magazine.heroImage),
           "author": { "@type": "Person", "name": "Simone Harris" },
           "publisher": { "@type": "Organization", "name": "A Way to Freedom Bail Bonds" },
           "datePublished": magazine.publishedAt,

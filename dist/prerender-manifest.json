@@ -1,165 +1,165 @@
 {
-  "generatedAt": "2026-07-23T02:13:11.025Z",
+  "generatedAt": "2026-07-23T08:34:18.558Z",
   "pages": [
     {
       "route": "/",
       "file": "dist\\index.html",
-      "bytes": 47143
+      "bytes": 47113
     },
     {
       "route": "/about",
       "file": "dist\\about\\index.html",
-      "bytes": 16717
+      "bytes": 16687
     },
     {
       "route": "/blog",
       "file": "dist\\blog\\index.html",
-      "bytes": 20876
+      "bytes": 20846
     },
     {
       "route": "/blog/bail-bond-company-delaware",
       "file": "dist\\blog\\bail-bond-company-delaware\\index.html",
-      "bytes": 46245
+      "bytes": 46215
     },
     {
       "route": "/blog/bail-bond-process-step-by-step",
       "file": "dist\\blog\\bail-bond-process-step-by-step\\index.html",
-      "bytes": 31250
+      "bytes": 31220
     },
     {
       "route": "/blog/cash-bond-meaning",
       "file": "dist\\blog\\cash-bond-meaning\\index.html",
-      "bytes": 30939
+      "bytes": 30909
     },
     {
       "route": "/blog/choosing-right-bail-bondsman",
       "file": "dist\\blog\\choosing-right-bail-bondsman\\index.html",
-      "bytes": 29941
+      "bytes": 29911
     },
     {
       "route": "/blog/common-mistakes-to-avoid-when-posting-bail-in-delaware",
       "file": "dist\\blog\\common-mistakes-to-avoid-when-posting-bail-in-delaware\\index.html",
-      "bytes": 47574
+      "bytes": 47544
     },
     {
       "route": "/blog/defendant-rights-bail-process",
       "file": "dist\\blog\\defendant-rights-bail-process\\index.html",
-      "bytes": 30642
+      "bytes": 30612
     },
     {
       "route": "/blog/fast-reliable-bail-bonds-delaware",
       "file": "dist\\blog\\fast-reliable-bail-bonds-delaware\\index.html",
-      "bytes": 39447
+      "bytes": 39417
     },
     {
       "route": "/blog/felony-vs-misdemeanor-bonds-delaware",
       "file": "dist\\blog\\felony-vs-misdemeanor-bonds-delaware\\index.html",
-      "bytes": 25675
+      "bytes": 25645
     },
     {
       "route": "/blog/how-bail-bonds-work-in-delaware",
       "file": "dist\\blog\\how-bail-bonds-work-in-delaware\\index.html",
-      "bytes": 35796
+      "bytes": 35766
     },
     {
       "route": "/blog/how-do-you-find-out-how-much-someones-bail-is",
       "file": "dist\\blog\\how-do-you-find-out-how-much-someones-bail-is\\index.html",
-      "bytes": 44377
+      "bytes": 44347
     },
     {
       "route": "/blog/how-to-bond-someone-out-of-jail-delaware",
       "file": "dist\\blog\\how-to-bond-someone-out-of-jail-delaware\\index.html",
-      "bytes": 55154
+      "bytes": 55124
     },
     {
       "route": "/blog/payment-options-bail-bonds",
       "file": "dist\\blog\\payment-options-bail-bonds\\index.html",
-      "bytes": 27266
+      "bytes": 27236
     },
     {
       "route": "/blog/released-on-bond-meaning-delaware",
       "file": "dist\\blog\\released-on-bond-meaning-delaware\\index.html",
-      "bytes": 42477
+      "bytes": 42447
     },
     {
       "route": "/blog/understanding-bail-amounts-delaware",
       "file": "dist\\blog\\understanding-bail-amounts-delaware\\index.html",
-      "bytes": 26033
+      "bytes": 26003
     },
     {
       "route": "/blog/what-does-released-on-bail-mean",
       "file": "dist\\blog\\what-does-released-on-bail-mean\\index.html",
-      "bytes": 29753
+      "bytes": 29723
     },
     {
       "route": "/blog/what-is-cash-bond",
       "file": "dist\\blog\\what-is-cash-bond\\index.html",
-      "bytes": 32053
+      "bytes": 32023
     },
     {
       "route": "/blog/what-to-expect-when-someone-is-arrested",
       "file": "dist\\blog\\what-to-expect-when-someone-is-arrested\\index.html",
-      "bytes": 27058
+      "bytes": 27028
     },
     {
       "route": "/contact",
       "file": "dist\\contact\\index.html",
-      "bytes": 15552
+      "bytes": 15522
     },
     {
       "route": "/faq",
       "file": "dist\\faq\\index.html",
-      "bytes": 18170
+      "bytes": 18140
     },
     {
       "route": "/how-it-works",
       "file": "dist\\how-it-works\\index.html",
-      "bytes": 14631
+      "bytes": 14601
     },
     {
       "route": "/service-areas",
       "file": "dist\\service-areas\\index.html",
-      "bytes": 18465
+      "bytes": 18435
     },
     {
       "route": "/services",
       "file": "dist\\services\\index.html",
-      "bytes": 14030
+      "bytes": 14000
     },
     {
       "route": "/services/e-paperwork",
       "file": "dist\\services\\e-paperwork\\index.html",
-      "bytes": 14348
+      "bytes": 14318
     },
     {
       "route": "/services/fast-release",
       "file": "dist\\services\\fast-release\\index.html",
-      "bytes": 14393
+      "bytes": 14363
     },
     {
       "route": "/services/felony",
       "file": "dist\\services\\felony\\index.html",
-      "bytes": 14880
+      "bytes": 14850
     },
     {
       "route": "/services/misdemeanor",
       "file": "dist\\services\\misdemeanor\\index.html",
-      "bytes": 14386
+      "bytes": 14356
     },
     {
       "route": "/services/payment",
       "file": "dist\\services\\payment\\index.html",
-      "bytes": 14383
+      "bytes": 14353
     },
     {
       "route": "/services/secured",
       "file": "dist\\services\\secured\\index.html",
-      "bytes": 14292
+      "bytes": 14262
     },
     {
       "route": "/services/surety",
       "file": "dist\\services\\surety\\index.html",
-      "bytes": 14196
+      "bytes": 14166
     }
   ]
 }

@@ -215,34 +215,23 @@ a:hover {
 .navbar-brand-custom {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  flex: 0 0 auto;
+  max-width: 320px;
 }
 
-.brand-icon {
-  width: 45px;
-  height: 45px;
-  background: linear-gradient(135deg, var(--primary-gold) 0%, var(--primary-gold-dark) 100%);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.25rem;
-  color: var(--dark-bg);
+.brand-logo-img {
+  display: block;
+  width: min(310px, 46vw);
+  height: auto;
+  max-height: 76px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.24));
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.brand-text {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.35rem;
-  font-weight: 600;
-  color: var(--text-light);
-  line-height: 1.2;
-}
-
-.brand-tagline {
-  font-size: 0.7rem;
-  color: var(--primary-gold);
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.navbar-brand-custom:hover .brand-logo-img {
+  transform: translateY(-1px);
+  filter: drop-shadow(0 12px 28px rgba(212, 175, 55, 0.18));
 }
 
 .nav-link-custom {
@@ -1872,6 +1861,15 @@ a:hover {
 
 /* Mobile Responsive */
 @media (max-width: 992px) {
+  .navbar-brand-custom {
+    max-width: 250px;
+  }
+
+  .brand-logo-img {
+    width: min(250px, 64vw);
+    max-height: 62px;
+  }
+
   .navbar-collapse {
     background: var(--dark-bg-secondary);
     padding: 1rem;
@@ -2997,6 +2995,15 @@ a:hover {
 }
 
 @media (max-width: 575px) {
+  .navbar-brand-custom {
+    max-width: 220px;
+  }
+
+  .brand-logo-img {
+    width: min(220px, 70vw);
+    max-height: 56px;
+  }
+
   .simone-page .navbar-brand {
     font-size: 1.4rem;
   }

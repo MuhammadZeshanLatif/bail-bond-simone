@@ -301,13 +301,13 @@ const Navbar = ({ currentPath, navigate }) => {
       <nav className="navbar navbar-expand-lg navbar-custom">
         <div className="container">
           <a href="/" onClick={(e) => handleNavClick(e, '/home')} className="navbar-brand-custom text-decoration-none">
-            <div className="brand-icon">
-              <i className="fas fa-scale-balanced"></i>
-            </div>
-            <div>
-              <div className="brand-text">A Way to Freedom</div>
-              <div className="brand-tagline">Bail Bonds</div>
-            </div>
+            <img
+              src="/brand/a-way-to-freedom-logo.svg"
+              alt="A Way to Freedom Bail Bonds"
+              className="brand-logo-img"
+              width="310"
+              height="75"
+            />
           </a>
 
           <button className="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style={{background: 'var(--dark-bg-tertiary)', border: '1px solid var(--border-color)'}}>

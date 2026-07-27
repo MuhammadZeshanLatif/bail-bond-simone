@@ -2187,13 +2187,13 @@ const ServicesPage = ({ navigate }) => {
   });
 
   const services = [
-    { path: '/services/felony', icon: 'fa-gavel', title: 'Felony & Misdemeanor Bonds', desc: 'Expert handling of felony and misdemeanor bail bonds in Delaware courts' },
-    { path: '/services/misdemeanor', icon: 'fa-balance-scale', title: 'Misdemeanor Bonds', desc: 'Professional misdemeanor bail bond services' },
-    { path: '/services/secured', icon: 'fa-lock', title: 'Secured Bonds', desc: 'Secured bail bonds with flexible collateral options' },
-    { path: '/services/surety', icon: 'fa-handshake', title: 'Surety Bail', desc: 'Surety bail bond solutions for all situations' },
-    { path: '/services/fast-release', icon: 'fa-bolt', title: 'Fast Release Processing', desc: 'Expedited bail bond processing for quicker release' },
-    { path: '/services/payment', icon: 'fa-credit-card', title: 'Flexible Payment Arrangements', desc: 'Customized payment plans to fit your budget' },
-    { path: '/services/e-paperwork', icon: 'fa-laptop', title: 'Electronic Paperwork', desc: 'Digital documentation for faster, easier processing' },
+    { path: '/services/felony', icon: 'fa-gavel', title: 'Felony Bonds', desc: 'Focused guidance for felony bond situations in Delaware, including bond type, co-signer questions and paperwork.' },
+    { path: '/services/misdemeanor', icon: 'fa-balance-scale', title: 'Misdemeanor Bail Bonds', desc: 'Clear misdemeanor bail bond help for families who need to confirm bond amount, release type and next steps.' },
+    { path: '/services/secured', icon: 'fa-lock', title: 'Secured Bail', desc: 'Plain-English help understanding secured bail, security requirements and family responsibility.' },
+    { path: '/services/surety', icon: 'fa-handshake', title: 'Surety Bail Bonds', desc: 'Surety bond guidance for families comparing court payment, premium questions and written bond terms.' },
+    { path: '/services/fast-release', icon: 'fa-bolt', title: 'Fast Bail Release Help', desc: 'Fast-response guidance focused on accurate information, paperwork and release-process timing.' },
+    { path: '/services/payment', icon: 'fa-credit-card', title: 'Bail Bond Payment Plans', desc: 'Payment arrangement help with written terms, receipts and co-signer responsibility explained clearly.' },
+    { path: '/services/e-paperwork', icon: 'fa-laptop', title: 'Online Bail Bond Paperwork', desc: 'Electronic paperwork help for families who need to start the bail bond process remotely.' },
   ];
 
   return (
@@ -2201,7 +2201,7 @@ const ServicesPage = ({ navigate }) => {
       <section className="services-hero">
         <div className="container">
           <div className="gold-divider"></div>
-          <h1>Bail Bond Services — New Castle & Kent County</h1>
+          <h1>Delaware Bail Bond Services</h1>
           <p style={{color: 'var(--text-light-secondary)', maxWidth: '700px', margin: '0 auto'}}>
             We provide professional bail bond services designed to help families and defendants 
             navigate the legal process quickly, respectfully, and efficiently. Serving Newark, Delaware 
@@ -2234,8 +2234,8 @@ const ServicesPage = ({ navigate }) => {
 
           <div className="text-center mt-5" style={{color: 'var(--text-light-secondary)'}}>
             <p style={{fontSize: '1.1rem'}}>
-              Complete Bail Bond Services — secured bail, felony bonds, misdemeanor bonds, 
-              surety bail, fast release, confidential process, no hidden fees, 24/7 service
+              Delaware bail bond services with separate help for secured bail, felony bonds, misdemeanor bonds, 
+              surety bail, fast release, payment arrangements and online paperwork.
             </p>
             <p className="mt-3 text-gold">
               <i className="fas fa-map-marker-alt me-2"></i>
@@ -2264,172 +2264,192 @@ const ServicesPage = ({ navigate }) => {
 const ServiceDetailPage = ({ serviceKey, navigate }) => {
   const servicesData = {
     felony: {
-      title: 'Felony & Misdemeanor Bonds',
-      description: 'Professional felony and misdemeanor bail bond services in Delaware. When facing serious or minor charges, you need an experienced bail bondsman who understands the complexity of all case types.',
-      hero: 'Felony & Misdemeanor Bail Bonds in Delaware',
-      benefits: [
-        'Expert handling of all felony and misdemeanor classifications',
-        'Experience with Delaware court procedures',
-        '24/7 availability for urgent situations',
-        'Confidential and professional service',
-        'Understanding of felony and misdemeanor sentencing implications'
+      title: 'Felony Bonds',
+      focusKeyword: 'felony bonds Delaware',
+      metaTitle: 'Felony Bonds Delaware | 24/7 Bail Bond Help',
+      metaDescription: 'Need felony bonds in Delaware? Get 24/7 bail bond guidance for New Castle County and Kent County with clear next steps before signing.',
+      hero: 'Felony Bonds in Delaware',
+      summary: 'Felony bond situations can feel serious and confusing for families. A Way to Freedom Bail Bonds helps people in Delaware understand the bond amount, bond type, paperwork, co-signer questions, and next steps after an arrest.',
+      intro: [
+        'A felony charge can create urgent questions about release, court dates, bond type, and family responsibility. The goal of this page is to help families understand what to ask before moving forward with a felony bail bond in Delaware.',
+        'This service page is focused on felony bonds in Delaware, especially New Castle County and Kent County. For misdemeanor-specific help, use the misdemeanor page so each service has a clear keyword focus and no cannibalization.'
       ],
-      who: [
-        'Defendants charged with Class A, B, C, D, or E felonies',
-        'Individuals facing misdemeanor charges',
-        'Those needing bond amounts posted for any charge type',
-        'Families seeking quick release for loved ones'
+      sections: [
+        { heading: 'What to know about felony bonds in Delaware', body: 'A felony bond may involve a higher bond amount, stricter release conditions, or more detailed co-signer questions. The court order controls what type of bail applies, so families should confirm whether bail is secured, unsecured, cash-only, or another release type before assuming a commercial bond can be used.' },
+        { heading: 'Information to have before calling', list: ['Defendant full legal name and date of birth', 'Arrest location or court information', 'Bond amount if known', 'Bond type if known', 'Charge or case details if available', 'Potential co-signer contact information'] },
+        { heading: 'Questions families should ask', list: ['What type of bail did the court set?', 'What amount must be paid before release?', 'Is collateral required?', 'What does the co-signer agree to do?', 'What happens if the defendant misses court?', 'Will written receipts and documents be provided?'] }
       ],
-      needs: [
-        'Valid photo identification',
-        'Social Security number',
-        'Employment information',
-        'Financial information for collateral',
-        'Basic case information from arrest'
+      faqs: [
+        { question: 'Do felony bonds work differently from misdemeanor bonds?', answer: 'They can. Felony cases may involve different bond amounts, release conditions, or co-signer review. The exact requirements depend on the court order and case details.' },
+        { question: 'Can a felony bond be started by phone?', answer: 'Many conversations can begin by phone. Helpful details include the defendant name, date of birth, location, bond amount, and bond type if known.' },
+        { question: 'Do you guarantee release time?', answer: 'No. Timing depends on the court, jail, paperwork, bond type, and case details. A bail bond agent can help explain the next steps but should not promise a guaranteed release time.' }
+      ],
+      relatedLinks: [
+        { path: '/services/secured', label: 'secured bail bond help' },
+        { path: '/new-castle-county-bail-bonds', label: 'New Castle County bail bond help' },
+        { path: '/blog/how-to-bond-someone-out-of-jail-delaware', label: 'how to bond someone out of jail in Delaware' }
       ]
     },
     misdemeanor: {
-      title: 'Misdemeanor Bonds',
-      description: 'Fast and reliable misdemeanor bail bond services throughout Delaware. We handle all misdemeanor classifications with professionalism and care.',
+      title: 'Misdemeanor Bail Bonds',
+      focusKeyword: 'misdemeanor bail bonds Delaware',
+      metaTitle: 'Misdemeanor Bail Bonds Delaware | 24/7 Help',
+      metaDescription: 'Need misdemeanor bail bonds in Delaware? Get calm 24/7 guidance for Wilmington, Newark, New Castle County and Kent County after an arrest.',
       hero: 'Misdemeanor Bail Bonds in Delaware',
-      benefits: [
-        'Quick release for misdemeanor charges',
-        'Lower bond amounts typically required',
-        'Simple paperwork process',
-        'Flexible payment options',
-        'Expert guidance through the process'
+      summary: 'Misdemeanor cases may feel less serious than felony cases, but families still need clear answers about bond amount, release conditions, paperwork, and court dates.',
+      intro: [
+        'A misdemeanor arrest can still disrupt work, family, and daily life. If someone needs help after a misdemeanor arrest in Delaware, the first step is to confirm the bond amount and bond type before signing anything.',
+        'This page focuses on misdemeanor bail bonds in Delaware. Felony bond questions should be handled on the felony bonds page so each service page has a unique search intent.'
       ],
-      who: [
-        'Defendants charged with misdemeanors',
-        'Individuals facing DUI/DWI charges',
-        'Those with traffic-related offenses',
-        'Anyone needing quick release'
+      sections: [
+        { heading: 'What to know about misdemeanor bail bonds', body: 'Misdemeanor bail bond situations may involve lower bond amounts than some felony cases, but every case is different. The court may also set conditions that the defendant must follow after release.' },
+        { heading: 'Information to prepare', list: ['Defendant full name', 'Date of birth', 'Arrest or court location', 'Bond amount if available', 'Bond type if available', 'A reliable phone number for follow-up'] },
+        { heading: 'Common misdemeanor-related questions', list: ['Has bail already been set?', 'Is the release secured, unsecured, cash-only, or recognizance?', 'Does the defendant have court conditions?', 'Is a co-signer needed?', 'What paperwork needs to be completed?'] }
       ],
-      needs: [
-        'Photo identification',
-        'Basic personal information',
-        'Contact information',
-        'Case details from arrest'
+      faqs: [
+        { question: 'Are misdemeanor bail bonds available 24/7 in Delaware?', answer: 'You can call for guidance 24/7. Actual release timing depends on the court order, jail process, paperwork, and bond type.' },
+        { question: 'Is a co-signer always needed for a misdemeanor bond?', answer: 'Not always. Co-signer needs can depend on the bond amount, bond type, and case details.' },
+        { question: 'Can I call if I do not know the bond amount?', answer: 'Yes. You can call with the details you have and ask what information should be checked next.' }
+      ],
+      relatedLinks: [
+        { path: '/services/felony', label: 'felony bond help' },
+        { path: '/blog/how-do-you-find-out-how-much-someones-bail-is', label: 'how to find out the bail amount' },
+        { path: '/newark-de-bail-bonds', label: 'Newark DE bail bonds' }
       ]
     },
     secured: {
-      title: 'Secured Bonds',
-      description: 'Secured bail bonds using collateral to secure the bond. We offer flexible options for those who need to provide assets as security.',
-      hero: 'Secured Bail Bonds in Delaware',
-      benefits: [
-        'Accept various forms of collateral',
-        'Property, vehicles, and assets accepted',
-        'Flexible repayment options',
-        'Lower upfront costs possible',
-        'Professional asset management'
+      title: 'Secured Bail',
+      focusKeyword: 'secured bail Delaware',
+      metaTitle: 'Secured Bail Delaware | Bail Bond Help 24/7',
+      metaDescription: 'Learn how secured bail works in Delaware and call for 24/7 bail bond guidance in New Castle County, Kent County, Wilmington and Newark.',
+      hero: 'Secured Bail Help in Delaware',
+      summary: 'Secured bail means money, property, or another form of security may be required before release. Families should confirm the court order and understand financial responsibility before moving forward.',
+      intro: [
+        'Secured bail can be confusing because it may involve cash, property, a bail bond, or someone posting security on the defendant\'s behalf. The exact next step depends on what the Delaware court ordered.',
+        'This page focuses on secured bail in Delaware. It should not compete with felony, misdemeanor, payment plan, or county location pages.'
       ],
-      who: [
-        'Those without sufficient cash for bond',
-        'Individuals with property or assets',
-        'Defendants needing larger bonds',
-        'Anyone seeking flexible terms'
+      sections: [
+        { heading: 'What secured bail usually means', body: 'Delaware Courts explain that secured bail requires the defendant to pay the court a designated amount of money or post security in the amount of bail before release. That security may be posted by the defendant or someone else, including a relative or bail bondsman.' },
+        { heading: 'What families should confirm first', list: ['Exact bail amount', 'Whether the order says secured bail or cash-only', 'Who can post security', 'Whether collateral or a co-signer may be required', 'What written agreement will be signed'] },
+        { heading: 'Questions before using secured bail help', list: ['What is due now?', 'What is refundable and what is not?', 'What happens if court is missed?', 'What documents and receipts will be provided?', 'Who is financially responsible?'] }
       ],
-      needs: [
-        'Proof of ownership for collateral',
-        'Property documents or titles',
-        'Vehicle registration',
-        'Financial documentation'
+      faqs: [
+        { question: 'Can a bail bondsman help with secured bail in Delaware?', answer: 'In some secured bail situations, a bail bond agent may be able to help. Cash-only, unsecured, and own-recognizance release work differently, so confirm the exact bond type first.' },
+        { question: 'Is secured bail the same as cash-only bail?', answer: 'No. Secured bail and cash-only bail are different release types. Families should read the court order carefully before assuming a standard bail bond can be used.' },
+        { question: 'What should I ask before posting secured bail?', answer: 'Ask about the full bail amount, security required, premium or payment arrangement, collateral, co-signer responsibility, receipts, and missed-court consequences.' }
+      ],
+      relatedLinks: [
+        { path: '/blog/how-to-bond-someone-out-of-jail-delaware', label: 'Delaware jail bond guide' },
+        { path: '/new-castle-county-bail-bonds', label: 'New Castle County bail bonds' },
+        { path: '/services/payment', label: 'bail bond payment arrangements' }
       ]
     },
     surety: {
-      title: 'Surety Bail',
-      description: 'Surety bail bonds with professional backing. We work as the surety to guarantee the defendant\'s appearance in court.',
+      title: 'Surety Bail Bonds',
+      focusKeyword: 'surety bail bonds Delaware',
+      metaTitle: 'Surety Bail Bonds Delaware | 24/7 Bond Help',
+      metaDescription: 'Need surety bail bonds in Delaware? Learn what a surety bond means and call for 24/7 guidance in Wilmington, Newark and nearby areas.',
       hero: 'Surety Bail Bonds in Delaware',
-      benefits: [
-        'Professional surety guarantee',
-        'No collateral required in many cases',
-        'Quick processing and release',
-        'Flexible terms and conditions',
-        'Experienced bail bond agents'
+      summary: 'A surety bail bond involves a bail bond company acting as surety to help guarantee the defendant\'s court appearance according to the bond agreement.',
+      intro: [
+        'Surety bail bonds can help families when paying the full bail amount directly to the court is not realistic. The agreement still creates serious responsibilities for the defendant and any co-signer.',
+        'This page focuses on surety bail bonds in Delaware, separate from secured bail explanations, payment plan questions, and local county pages.'
       ],
-      who: [
-        'Defendants with good credit history',
-        'Those with stable employment',
-        'Individuals with prior court appearances',
-        'Anyone needing surety bond services'
+      sections: [
+        { heading: 'What a surety bail bond means', body: 'A surety bail bond is a written guarantee connected to the defendant appearing for future court proceedings. The family or co-signer should understand the terms before signing any agreement.' },
+        { heading: 'What may be reviewed', list: ['Defendant information', 'Bond amount and bond type', 'Co-signer information', 'Employment or residence details', 'Payment and responsibility terms'] },
+        { heading: 'What to ask before signing', list: ['Who is responsible if court is missed?', 'What amount is paid as premium?', 'Are there collateral requirements?', 'What written contract and receipts will be provided?', 'How should court date changes be reported?'] }
       ],
-      needs: [
-        'Credit check authorization',
-        'Employment verification',
-        'Personal references',
-        'Signed indemnity agreement'
+      faqs: [
+        { question: 'Is a surety bail bond refundable?', answer: 'The premium paid to a bail bond company is generally a service fee and is not the same as paying the full bail directly to the court.' },
+        { question: 'Does a surety bond guarantee release?', answer: 'No one should guarantee release timing. The court order, jail process, paperwork, and case details can all affect timing.' },
+        { question: 'Can I start a surety bail bond by phone?', answer: 'Many initial steps can begin by phone using the defendant name, date of birth, bond amount, and basic case details if available.' }
+      ],
+      relatedLinks: [
+        { path: '/services/secured', label: 'secured bail in Delaware' },
+        { path: '/blog/what-is-cash-bond', label: 'what is a cash bond' },
+        { path: '/contact', label: 'contact A Way to Freedom' }
       ]
     },
     'fast-release': {
-      title: 'Fast Release Processing',
-      description: 'Expedited bail bond processing to get your loved one out of jail as quickly as possible. Our priority is speed and efficiency.',
-      hero: 'Fast Release Processing in Delaware',
-      benefits: [
-        'Same-day release processing',
-        '24/7 emergency service',
-        'Direct contact with jail facilities',
-        'Electronic filing for faster processing',
-        'Experienced in Delaware procedures'
+      title: 'Fast Bail Release Help',
+      focusKeyword: 'fast bail release Delaware',
+      metaTitle: 'Fast Bail Release Delaware | 24/7 Guidance',
+      metaDescription: 'Need fast bail release help in Delaware? Call for 24/7 guidance on bond amount, paperwork and next steps in New Castle County and Kent County.',
+      hero: 'Fast Bail Release Help in Delaware',
+      summary: 'Fast bail release help means moving quickly with correct information, not making promises that no one can control. The court, jail, bond type, paperwork, and payment details all affect timing.',
+      intro: [
+        'When someone is arrested, families naturally want release to happen as quickly as possible. The fastest path usually starts with accurate information and clear paperwork.',
+        'This page focuses on fast bail release help in Delaware without competing with the broader fast reliable bail bonds blog or city location pages.'
       ],
-      who: [
-        'Anyone needing quick jail release',
-        'Families waiting for loved ones',
-        'Those with time-sensitive situations',
-        'Individuals in distant facilities'
+      sections: [
+        { heading: 'What can make the process move faster', list: ['Correct defendant name and date of birth', 'Known jail or court location', 'Bond amount and bond type', 'Ready co-signer information if needed', 'Fast response to document requests'] },
+        { heading: 'What can slow release down', list: ['Unknown bond amount', 'Cash-only or unclear court order', 'Missing identification or paperwork', 'Payment or collateral questions', 'Court or jail processing delays'] },
+        { heading: 'What fast help should not promise', body: 'A bail bond company can respond quickly, explain steps, and prepare paperwork, but should not guarantee an exact release time. Honest timing depends on the court and jail process.' }
       ],
-      needs: [
-        'Jail location and inmate number',
-        'Bond amount information',
-        'Contact information',
-        'Basic paperwork completion'
+      faqs: [
+        { question: 'Can bail release happen the same day?', answer: 'It may happen in some cases, but it should not be guaranteed. Timing depends on the court order, jail process, paperwork, and bond type.' },
+        { question: 'What should I have ready for fast bail help?', answer: 'Have the defendant name, date of birth, location, bond amount if known, and co-signer contact information if available.' },
+        { question: 'Can I call at night?', answer: 'Yes. A family member can call for 24/7 guidance and ask what information is needed next.' }
+      ],
+      relatedLinks: [
+        { path: '/blog/how-do-you-find-out-how-much-someones-bail-is', label: 'find the bail amount' },
+        { path: '/blog/fast-reliable-bail-bonds-delaware', label: 'fast and reliable bail bonds guide' },
+        { path: '/services/e-paperwork', label: 'electronic paperwork help' }
       ]
     },
     payment: {
-      title: 'Flexible Payment Arrangements',
-      description: 'Customized payment plans designed to make bail bonds affordable. We work with you to find a payment solution that fits your budget.',
-      hero: 'Flexible Payment Plans in Delaware',
-      benefits: [
-        'Customized payment schedules',
-        'Low upfront payments',
-        'No hidden fees',
-        'Flexible financing options',
-        'Online payment available'
+      title: 'Bail Bond Payment Plans',
+      focusKeyword: 'bail bond payment plans Delaware',
+      metaTitle: 'Bail Bond Payment Plans Delaware | 24/7 Help',
+      metaDescription: 'Need bail bond payment plans in Delaware? Ask about payment arrangements, written terms and co-signer responsibilities before signing.',
+      hero: 'Bail Bond Payment Plans in Delaware',
+      summary: 'Payment questions are common after an arrest. Families should ask what is due now, what is a non-refundable premium, what terms are written, and what responsibilities a co-signer accepts.',
+      intro: [
+        'A bail bond payment plan can help families discuss options when paying everything at once is difficult, but the terms need to be clear in writing before anyone signs.',
+        'This page focuses on bail bond payment plans in Delaware. It is separate from bond-type pages like secured bail and surety bail bonds.'
       ],
-      who: [
-        'Anyone needing affordable options',
-        'Families facing financial constraints',
-        'Those without full bond amount',
-        'Individuals seeking payment flexibility'
+      sections: [
+        { heading: 'What to ask about payment arrangements', list: ['What amount is due now?', 'What is the total premium or charge?', 'Are payments written in a contract?', 'Are receipts provided?', 'What happens if a payment is missed?', 'Is collateral involved?'] },
+        { heading: 'Delaware premium caution', body: 'Delaware law requires surety bail bond premiums or charges to follow rates filed with and approved by the Department. For surety bail bonds above $1,000, the total filed premium must be at least 5% and not more than 10%, and at least 5% must be collected before posting.' },
+        { heading: 'Why written terms matter', body: 'A written agreement helps families understand the premium, payment schedule, co-signer responsibilities, and what happens if court or payment obligations are not met.' }
       ],
-      needs: [
-        'Income verification',
-        'Bank account information',
-        'Proof of residence',
-        'Signed payment agreement'
+      faqs: [
+        { question: 'Are bail bond payment plans available in Delaware?', answer: 'Payment arrangement questions can be discussed case by case. Families should ask what is due now, what terms are written, and what responsibilities apply.' },
+        { question: 'Is the bail bond premium refundable?', answer: 'A bail bond premium is generally a service fee and is different from paying full cash bail directly to the court.' },
+        { question: 'Should I ask for receipts?', answer: 'Yes. Ask for written paperwork and receipts so payment responsibilities are clear.' }
+      ],
+      relatedLinks: [
+        { path: '/services/surety', label: 'surety bail bonds' },
+        { path: '/services/secured', label: 'secured bail help' },
+        { path: '/blog/how-do-you-find-out-how-much-someones-bail-is', label: 'how to find out the bail amount' }
       ]
     },
     'e-paperwork': {
-      title: 'Electronic Paperwork',
-      description: 'Digital documentation and electronic filing for faster, more convenient bail bond processing. Complete paperwork from anywhere.',
-      hero: 'Electronic Paperwork Services in Delaware',
-      benefits: [
-        'Complete paperwork from home',
-        'Faster processing times',
-        'Secure digital signatures',
-        'Email and text notifications',
-        'Eco-friendly process'
+      title: 'Online Bail Bond Paperwork',
+      focusKeyword: 'online bail bond paperwork Delaware',
+      metaTitle: 'Online Bail Bond Paperwork Delaware | 24/7 Help',
+      metaDescription: 'Need online bail bond paperwork help in Delaware? Learn what details may be needed and call for 24/7 guidance before signing documents.',
+      hero: 'Online Bail Bond Paperwork in Delaware',
+      summary: 'Electronic paperwork can make the first steps easier for families who cannot visit in person, but documents should still be reviewed carefully before signing.',
+      intro: [
+        'Some bail bond steps may begin electronically, especially when family members are at work, out of town, or trying to help quickly after an arrest. The process still requires accurate information and clear written terms.',
+        'This page focuses on online bail bond paperwork in Delaware, separate from fast release, payment plan, and bond-type pages.'
       ],
-      who: [
-        'Those unable to visit in person',
-        'Out-of-state family members',
-        'Individuals with busy schedules',
-        'Anyone preferring digital options'
+      sections: [
+        { heading: 'What electronic paperwork may help with', list: ['Collecting defendant and co-signer details', 'Reviewing contact and address information', 'Sending documents for review', 'Helping family members start from a distance', 'Reducing unnecessary travel when possible'] },
+        { heading: 'What you should review before signing', list: ['Defendant information', 'Bond amount and bond type', 'Premium or payment terms', 'Co-signer responsibility', 'Collateral terms if any', 'Receipts and copies of signed documents'] },
+        { heading: 'Digital convenience with careful review', body: 'Convenience should not replace understanding. Ask questions before signing electronically and keep copies of documents and receipts.' }
       ],
-      needs: [
-        'Email address for documentation',
-        'Smartphone or computer access',
-        'Valid ID for digital verification',
-        'Digital signature capability'
+      faqs: [
+        { question: 'Can bail bond paperwork be started online in Delaware?', answer: 'Some initial paperwork or information gathering may be handled electronically. The exact process depends on the case, bond type, and required documents.' },
+        { question: 'Is electronic paperwork safe?', answer: 'Families should use secure communication, avoid sharing unnecessary personal data publicly, and keep copies of signed documents.' },
+        { question: 'Can an out-of-town family member help?', answer: 'Often, a family member can start by phone or electronically with the details they have and ask what documents are needed next.' }
+      ],
+      relatedLinks: [
+        { path: '/services/fast-release', label: 'fast bail release help' },
+        { path: '/services/payment', label: 'payment arrangement questions' },
+        { path: '/contact', label: 'contact A Way to Freedom' }
       ]
     }
   };
@@ -2441,18 +2461,17 @@ const ServiceDetailPage = ({ serviceKey, navigate }) => {
   }
 
   useSEO(
-    `${service.title} | A Way to Freedom Bail Bonds Delaware`,
-    service.description + ' Serving Wilmington, Newark, Delaware and surrounding areas.',
-    `${service.title.toLowerCase()}, Delaware bail bonds, ${serviceKey} bail bonds, New Castle County bail, Kent County bail`
+    service.metaTitle,
+    service.metaDescription,
+    `${service.focusKeyword}, ${service.title.toLowerCase()}, Delaware bail bond help, Wilmington Delaware bail bonds, Newark Delaware bail bonds`
   );
-
   injectSchema({
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Service",
         "name": service.title,
-        "description": service.description,
+        "description": service.summary,
         "serviceType": service.title,
         "url": `${SITE_URL}/services/${serviceKey}`,
         "areaServed": [
@@ -2465,6 +2484,17 @@ const ServiceDetailPage = ({ serviceKey, navigate }) => {
           "name": "A Way to Freedom Bail Bonds",
           "telephone": ["+1-702-447-8550", "+1-302-600-1886"],
         },
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": service.faqs.map((faq) => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer,
+          },
+        })),
       },
       buildBreadcrumb([
         { name: 'Home', path: '/' },
@@ -2490,48 +2520,63 @@ const ServiceDetailPage = ({ serviceKey, navigate }) => {
         <div className="container">
           <div className="row">
             <div className="col-lg-8">
-              <p className="lead">{service.description}</p>
+              <p className="lead">{service.summary}</p>
 
               <div className="detail-section">
-                <h3>Benefits of Our {service.title}</h3>
-                <ul className="benefits-list">
-                  {service.benefits.map((benefit, i) => (
-                    <li key={i}>{benefit}</li>
+                {service.intro.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
+              </div>
+
+              {service.sections.map((section, i) => (
+                <div className="detail-section" key={i}>
+                  <h3>{section.heading}</h3>
+                  {section.body && <p>{section.body}</p>}
+                  {section.list && (
+                    <ul className="benefits-list">
+                      {section.list.map((item, itemIndex) => (
+                        <li key={itemIndex}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+
+              <div className="detail-section">
+                <h3>Helpful Related Resources</h3>
+                <ul className="requirements-list">
+                  {service.relatedLinks.map((link, i) => (
+                    <li key={i}>
+                      <a href={link.path} onClick={(e) => { e.preventDefault(); navigate(link.path); }}>
+                        {link.label}
+                      </a>
+                    </li>
                   ))}
                 </ul>
               </div>
 
               <div className="detail-section">
-                <h3>Who This Service Is For</h3>
-                <ul className="requirements-list">
-                  {service.who.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="detail-section">
-                <h3>What You\'ll Need</h3>
-                <ul className="requirements-list">
-                  {service.needs.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
+                <h3>{service.title} FAQs</h3>
+                {service.faqs.map((faq, i) => (
+                  <div key={i} style={{marginBottom: '1.25rem'}}>
+                    <h4 style={{color: 'var(--primary-gold)', fontSize: '1.1rem'}}>{faq.question}</h4>
+                    <p>{faq.answer}</p>
+                  </div>
+                ))}
               </div>
             </div>
-
             <div className="col-lg-4">
               <div className="sidebar-widget">
-                <h4><i className="fas fa-clock me-2"></i>24/7 Availability</h4>
+                <h4><i className="fas fa-clock me-2"></i>24/7 Guidance</h4>
                 <p style={{color: 'var(--text-light-secondary)', fontSize: '0.9rem'}}>
-                  We're available around the clock to help you with your bail bond needs.
+                  You can call any time to ask what information is needed next for this service.
                 </p>
               </div>
 
               <div className="sidebar-widget">
-                <h4><i className="fas fa-shield-alt me-2"></i>Licensed & Confidential</h4>
+                <h4><i className="fas fa-shield-alt me-2"></i>Careful Paperwork</h4>
                 <p style={{color: 'var(--text-light-secondary)', fontSize: '0.9rem'}}>
-                  Fully licensed bail bond services with complete confidentiality guaranteed.
+                  We help families understand paperwork, payment questions, and co-signer responsibility before moving forward.
                 </p>
               </div>
 
@@ -2551,9 +2596,9 @@ const ServiceDetailPage = ({ serviceKey, navigate }) => {
 
       <section className="cta-band">
         <div className="container">
-          <h2>Need {service.title}? We Can Help!</h2>
+          <h2>Need Help With {service.title}?</h2>
           <p style={{color: 'var(--text-light-secondary)', marginBottom: '1.5rem'}}>
-            Contact us now for fast, professional assistance in Wilmington & Newark, Delaware
+            Call A Way to Freedom Bail Bonds for 24/7 help in Delaware, including Wilmington, Newark, New Castle County and nearby areas.
           </p>
           <a href="tel:+17024478550" className="btn-primary-gold me-2 mb-2">
             <i className="fas fa-phone-alt me-2"></i>(702) 447-8550

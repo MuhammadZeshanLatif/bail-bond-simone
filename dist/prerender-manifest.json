@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T03:31:41.860Z",
+  "generatedAt": "2026-07-27T10:39:38.272Z",
   "pages": [
     {
       "route": "/",
@@ -134,42 +134,42 @@
     {
       "route": "/services",
       "file": "dist\\services\\index.html",
-      "bytes": 14172
+      "bytes": 14492
     },
     {
       "route": "/services/e-paperwork",
       "file": "dist\\services\\e-paperwork\\index.html",
-      "bytes": 14490
+      "bytes": 17067
     },
     {
       "route": "/services/fast-release",
       "file": "dist\\services\\fast-release\\index.html",
-      "bytes": 14535
+      "bytes": 16955
     },
     {
       "route": "/services/felony",
       "file": "dist\\services\\felony\\index.html",
-      "bytes": 15022
+      "bytes": 17643
     },
     {
       "route": "/services/misdemeanor",
       "file": "dist\\services\\misdemeanor\\index.html",
-      "bytes": 14528
+      "bytes": 16983
     },
     {
       "route": "/services/payment",
       "file": "dist\\services\\payment\\index.html",
-      "bytes": 14525
+      "bytes": 16952
     },
     {
       "route": "/services/secured",
       "file": "dist\\services\\secured\\index.html",
-      "bytes": 14434
+      "bytes": 17380
     },
     {
       "route": "/services/surety",
       "file": "dist\\services\\surety\\index.html",
-      "bytes": 14338
+      "bytes": 16837
     },
     {
       "route": "/wilmington-de-bail-bonds",

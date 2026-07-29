@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Fictional unsecured bond paperwork example</title>
+  <desc id="desc">Fictional unsecured bond example showing bond type, listed amount, court date, release conditions and signature areas.</desc>
+  <rect width="1200" height="800" fill="#07111f"/>
+  <rect x="130" y="70" width="940" height="660" rx="28" fill="#f7f4eb"/>
+  <rect x="130" y="70" width="940" height="92" rx="28" fill="#c9a962"/>
+  <text x="180" y="130" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#07111f">Example Bond/Order Review</text>
+  <text x="180" y="215" font-family="Arial, sans-serif" font-size="26" fill="#1e293b">Bond Type:</text>
+  <rect x="430" y="180" width="500" height="54" rx="12" fill="#ffffff" stroke="#c9a962" stroke-width="3"/>
+  <text x="455" y="216" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#07111f">Unsecured</text>
+  <text x="180" y="300" font-family="Arial, sans-serif" font-size="26" fill="#1e293b">Listed Amount:</text>
+  <rect x="430" y="265" width="500" height="54" rx="12" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+  <text x="455" y="302" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#07111f">$10,000</text>
+  <text x="180" y="385" font-family="Arial, sans-serif" font-size="26" fill="#1e293b">Court Date:</text>
+  <rect x="430" y="350" width="500" height="54" rx="12" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+  <line x1="455" y1="384" x2="900" y2="384" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+  <text x="180" y="470" font-family="Arial, sans-serif" font-size="26" fill="#1e293b">Release Conditions:</text>
+  <rect x="430" y="435" width="500" height="95" rx="12" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+  <line x1="455" y1="468" x2="900" y2="468" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+  <line x1="455" y1="503" x2="820" y2="503" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+  <text x="180" y="600" font-family="Arial, sans-serif" font-size="26" fill="#1e293b">Defendant Signature:</text>
+  <line x1="430" y1="598" x2="930" y2="598" stroke="#07111f" stroke-width="3"/>
+  <rect x="180" y="650" width="750" height="44" rx="10" fill="#fff7d6"/>
+  <text x="205" y="680" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#684b00">Example only—not an official Delaware court form</text>
+</svg>

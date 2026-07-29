@@ -169,7 +169,7 @@ export function ReleasedOnBondMeaningArticle() {
           </table>
         </div>
         <p>
-          Delaware Courts lists four primary bond types: Own Recognizance, Unsecured, Secured, and Cash Only.
+          Delaware Courts lists four primary bond types: Own Recognizance, Unsecured, Secured, and Cash Only. If your paperwork says unsecured, read <a href="/blog/what-is-unsecured-bail-delaware" onClick={(e) => { e.preventDefault(); navigate('/blog/what-is-unsecured-bail-delaware'); }}>what unsecured bail means in Delaware</a> before assuming money is due upfront.
         </p>
 
         <h3>Own Recognizance or OR Bond</h3>
@@ -430,7 +430,7 @@ export function ReleasedOnBondMeaningArticle() {
         <p>
           Being released on bond is often a relief, but it is not the end of the case. The safest way to think about it is
           this: the person is out of jail for now, but the court still expects them to appear, follow every condition, and
-          take the charge seriously. From experience, most bond problems start with confusion — someone does not read the
+          take the charge seriously. From experience, most bond problems start with confusion - someone does not read the
           paperwork, misses a date, contacts the wrong person, or assumes release means freedom without rules. A clear plan
           after release can prevent those mistakes.
         </p>

@@ -24,7 +24,7 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
         <div className="bm-inline-cta" style={{ background: 'rgba(15, 23, 42, 0.04)', borderLeft: '4px solid #1e3a8a', padding: '1.25rem', borderRadius: '0 8px 8px 0', margin: '1.5rem 0' }}>
           <strong style={{ color: '#0f172a', display: 'block', marginBottom: '0.5rem', fontSize: '1.1rem' }}>Immediate steps after an arrest</strong>
           <ol style={{ margin: 0, paddingLeft: '1.25rem' }}>
-            <li>Confirm the person’s full legal name and date of birth.</li>
+            <li>Confirm the person's full legal name and date of birth.</li>
             <li>Find out where the person is being held.</li>
             <li>Ask whether bail has been set.</li>
             <li>Confirm the bail amount and bail type.</li>
@@ -38,18 +38,18 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
           </div>
           <h3 className="bm-inline-cta-title">Need help understanding the next step?</h3>
           <p className="bm-inline-cta-desc">
-            Contact A Way to Freedom to discuss the defendant’s location, bail amount, bail type, and available information.
+            Contact A Way to Freedom to discuss the defendant's location, bail amount, bail type, and available information.
           </p>
           <a href="/contact" className="bm-btn bm-btn--primary bm-btn--full bm-inline-cta-btn" onClick={(e) => handleCta(e, '/contact')}>
             Contact A Way to Freedom
           </a>
           <p style={{ fontSize: '0.85rem', color: '#64748b', marginTop: '0.75rem', marginBottom: 0 }}>
-            Do not promise a particular release time. Court and correctional-facility procedures remain outside the agency’s full control.
+            Do not promise a particular release time. Court and correctional-facility procedures remain outside the agency's full control.
           </p>
         </div>
 
         <p className="bm-disclaimer">
-          <strong>Important:</strong> This article provides general information and is not legal advice. Follow the court’s order and consult a Delaware attorney about questions involving a specific charge, case, release condition, or court procedure.
+          <strong>Important:</strong> This article provides general information and is not legal advice. Follow the court's order and consult a Delaware attorney about questions involving a specific charge, case, release condition, or court procedure.
         </p>
       </section>
 
@@ -61,7 +61,7 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
 
         <h3>Find Out Where the Person Is Being Held</h3>
         <p>
-          Begin with the defendant’s full legal name and date of birth. Ask the arresting agency or holding facility whether a booking or case number is available. Confirm that you have the correct person and facility, especially when the defendant has a common name or more than one pending case.
+          Begin with the defendant's full legal name and date of birth. Ask the arresting agency or holding facility whether a booking or case number is available. Confirm that you have the correct person and facility, especially when the defendant has a common name or more than one pending case.
         </p>
         <p>
           Do not delay making an initial call solely because one detail is missing. You may be able to begin with the information you have.
@@ -77,7 +77,7 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
         <p>
           An arrest does not automatically mean that a commercial bond can be posted immediately. A judicial officer determines the bail amount, bail type, and any conditions. Delaware Courts says the decision may consider factors such as the alleged offense, flight risk, community safety, Delaware ties, and criminal history.{' '}
           <a href="https://courts.delaware.gov/help/bail/" target="_blank" rel="noopener noreferrer">
-            Review Delaware Courts’ general bail information <i className="fas fa-external-link-alt" style={{ fontSize: '0.8em' }} />
+            Review Delaware Courts' general bail information <i className="fas fa-external-link-alt" style={{ fontSize: '0.8em' }} />
           </a>.
         </p>
         <p>Ask these questions:</p>
@@ -94,7 +94,7 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
         <div className="bm-inline-cta" style={{ background: '#f8fafc', border: '1px solid #e2e8f0', padding: '1.25rem', borderRadius: '8px', margin: '1.5rem 0' }}>
           <strong style={{ color: '#0f172a', display: 'block', marginBottom: '0.5rem', fontSize: '1.05rem' }}>Information to have ready</strong>
           <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
-            <li>Defendant’s full legal name</li>
+            <li>Defendant's full legal name</li>
             <li>Date of birth</li>
             <li>Holding facility</li>
             <li>Booking or case number, when available</li>
@@ -102,35 +102,35 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
             <li>Bail type</li>
             <li>Charges, when known</li>
             <li>Your name, telephone number, and relationship to the defendant</li>
-            <li>Identification or financial information requested under the agency’s verified procedures</li>
+            <li>Identification or financial information requested under the agency's verified procedures</li>
           </ul>
         </div>
         <p>
-          Do not send identification, financial information, or sensitive personal details to an unverified person. Confirm the agency’s identity, license, official contact information, and secure document process first.
+          Do not send identification, financial information, or sensitive personal details to an unverified person. Confirm the agency's identity, license, official contact information, and secure document process first.
         </p>
       </section>
 
       <section id="section-how-to-bond">
         <h2>How Do You Bond Someone Out of Jail in Delaware?</h2>
         <p>
-          To bond someone out in Delaware, verify the defendant’s custody information, confirm that bail has been set, identify the bail type, contact a Delaware-licensed agent when a surety bond is permitted, review the written financial terms, and allow the court and correctional facility to complete their release procedures.
+          To bond someone out in Delaware, verify the defendant's custody information, confirm that bail has been set, identify the bail type, contact a Delaware-licensed agent when a surety bond is permitted, review the written financial terms, and allow the court and correctional facility to complete their release procedures.
         </p>
 
-        <h3>Step 1: Verify the Defendant’s Custody Information</h3>
+        <h3>Step 1: Verify the Defendant's Custody Information</h3>
         <p>
-          Confirm the defendant’s full name, date of birth, facility, and case. When possible, obtain the booking or case number. Accurate information helps the agency, court, and facility distinguish the defendant from people with similar names or additional pending cases.
+          Confirm the defendant's full name, date of birth, facility, and case. When possible, obtain the booking or case number. Accurate information helps the agency, court, and facility distinguish the defendant from people with similar names or additional pending cases.
         </p>
 
         <h3>Step 2: Check the Bail Amount and Bail Type</h3>
         <p>The bail type determines which release options may be available.</p>
         <ul>
           <li><strong>Own recognizance:</strong> The defendant signs a promise to appear without paying money before release.</li>
-          <li><strong>Unsecured bail:</strong> No security is paid upfront, but the defendant may owe the stated amount after failing to appear.</li>
+          <li><strong>Unsecured bail:</strong> No security is paid upfront, but the defendant may owe the stated amount after failing to appear. See <a href="/blog/what-is-unsecured-bail-delaware" onClick={(e) => handleCta(e, '/blog/what-is-unsecured-bail-delaware')}>what unsecured bail means in Delaware</a>.</li>
           <li><strong>Secured bail:</strong> Cash, property, or another permitted form of security must be provided.</li>
           <li><strong>Cash-only bail:</strong> The designated amount must be paid to the court according to its order.</li>
         </ul>
         <p>
-          Delaware Courts identifies these four primary forms of bail. It explains that secured bail may involve cash or property posted by the defendant or someone acting on the defendant’s behalf, including a relative or bail bondsman. Cash-only bail requires the designated payment to be made to the court.{' '}
+          Delaware Courts identifies these four primary forms of bail. It explains that secured bail may involve cash or property posted by the defendant or someone acting on the defendant's behalf, including a relative or bail bondsman. Cash-only bail requires the designated payment to be made to the court.{' '}
           <a href="https://courts.delaware.gov/help/bail/" target="_blank" rel="noopener noreferrer">
             Compare Delaware bail types <i className="fas fa-external-link-alt" style={{ fontSize: '0.8em' }} />
           </a>.
@@ -149,14 +149,14 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
           <li>Which remaining steps depend on the court or facility</li>
         </ul>
         <p>
-          Delaware law regulates bail-agent licensing, registration, contracts, premiums, fees, collateral, records, and advertising. Verify a person’s status before sending money or signing documents.{' '}
+          Delaware law regulates bail-agent licensing, registration, contracts, premiums, fees, collateral, records, and advertising. Verify a person's status before sending money or signing documents.{' '}
           <a href="https://insurance.delaware.gov/services/licenseelookup/" target="_blank" rel="noopener noreferrer">
             Use the Delaware Department of Insurance license lookup <i className="fas fa-external-link-alt" style={{ fontSize: '0.8em' }} />
           </a>.
         </p>
         <p>
           <a href="/services" onClick={(e) => handleCta(e, '/services')}>
-            View A Way to Freedom’s bail-bond services
+            View A Way to Freedom's bail-bond services
           </a>.
         </p>
 
@@ -171,13 +171,13 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
           <li>The amount due before posting</li>
           <li>The payment schedule, when offered</li>
           <li>Any collateral terms</li>
-          <li>The co-signer’s obligations</li>
+          <li>The co-signer's obligations</li>
           <li>Circumstances that may create documented expenses</li>
           <li>The conditions for returning collateral</li>
           <li>What may happen after a missed appearance or contractual breach</li>
         </ul>
         <p>
-          For a surety bail bond above $1,000, Delaware law says the filed premium must be at least 5% and no more than 10%. The agent must charge the approved filed rate, collect at least 5% before posting, and enter into a written contract containing the bond’s terms. Unapproved administrative, service, company, or agent fees are unlawful.{' '}
+          For a surety bail bond above $1,000, Delaware law says the filed premium must be at least 5% and no more than 10%. The agent must charge the approved filed rate, collect at least 5% before posting, and enter into a written contract containing the bond's terms. Unapproved administrative, service, company, or agent fees are unlawful.{' '}
           <a href="https://delcode.delaware.gov/title18/c043/sc02/index.html" target="_blank" rel="noopener noreferrer">
             Review Delaware Code, Title 18, Chapter 43 <i className="fas fa-external-link-alt" style={{ fontSize: '0.8em' }} />
           </a>.
@@ -188,7 +188,7 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
           Posting a bond and physically leaving the facility are separate stages. The court must process the bond or release order, and the correctional facility must receive and act on the required information.
         </p>
         <p>
-          For Court of Common Pleas cases, the court explains that the defendant is released after the correctional facility receives the court’s release order. Procedures may differ by court, facility, case, or other lawful hold.{' '}
+          For Court of Common Pleas cases, the court explains that the defendant is released after the correctional facility receives the court's release order. Procedures may differ by court, facility, case, or other lawful hold.{' '}
           <a href="https://courts.delaware.gov/help/bail/CCPbailbonds.aspx" target="_blank" rel="noopener noreferrer">
             Review the Court of Common Pleas bail Q&amp;A <i className="fas fa-external-link-alt" style={{ fontSize: '0.8em' }} />
           </a>.
@@ -197,7 +197,7 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
         <div className="bm-inline-cta bm-inline-cta--magazine" style={{ margin: '2rem 0' }}>
           <h3 className="bm-inline-cta-title">Ready to discuss the available information?</h3>
           <p className="bm-inline-cta-desc">
-            Have the defendant’s full name, date of birth, facility, bail amount, and bail type ready when available.
+            Have the defendant's full name, date of birth, facility, bail amount, and bail type ready when available.
           </p>
           <a href="/contact" className="bm-btn bm-btn--primary bm-btn--full bm-inline-cta-btn" onClick={(e) => handleCta(e, '/contact')}>
             Contact A Way to Freedom
@@ -247,7 +247,7 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
               <tr style={{ borderBottom: '1px solid #e2e8f0', background: '#f8fafc' }}>
                 <td style={{ padding: '0.75rem' }}><strong>Cash-only</strong></td>
                 <td style={{ padding: '0.75rem' }}>Full designated cash amount</td>
-                <td style={{ padding: '0.75rem' }}>Payment is made according to the court’s order</td>
+                <td style={{ padding: '0.75rem' }}>Payment is made according to the court's order</td>
                 <td style={{ padding: '0.75rem' }}>Do not assume a surety bond can replace the requirement</td>
                 <td style={{ padding: '0.75rem' }}>Pay the court and attend required proceedings</td>
               </tr>
@@ -262,7 +262,7 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
 
         <h3>Unsecured Bail</h3>
         <p>
-          With unsecured bail, the defendant signs a bond without providing security upfront. If the defendant fails to appear, the court may require payment of the designated amount.
+          With unsecured bail, the defendant signs a bond without providing security upfront. If the defendant fails to appear, the court may require payment of the designated amount. For more detail, read <a href="/blog/what-is-unsecured-bail-delaware" onClick={(e) => handleCta(e, '/blog/what-is-unsecured-bail-delaware')}>what unsecured bail means in Delaware</a>.
         </p>
 
         <h3>Secured Bail</h3>
@@ -277,10 +277,10 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
 
         <h3>Cash-Only Bail</h3>
         <p>
-          Cash-only bail requires the designated amount to be paid to the court according to its order. Do not assume that a commercial surety bond can be substituted. Confirm the court’s accepted payment method and procedure before arranging funds.
+          Cash-only bail requires the designated amount to be paid to the court according to its order. Do not assume that a commercial surety bond can be substituted. Confirm the court's accepted payment method and procedure before arranging funds.
         </p>
         <p>
-          These definitions follow Delaware Courts’ public bail guidance.{' '}
+          These definitions follow Delaware Courts' public bail guidance.{' '}
           <a href="https://courts.delaware.gov/help/bail/" target="_blank" rel="noopener noreferrer">
             Read the official Delaware bail definitions <i className="fas fa-external-link-alt" style={{ fontSize: '0.8em' }} />
           </a>.
@@ -306,18 +306,18 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
 
         <h3>Bail Amount Versus Bail-Bond Premium</h3>
         <p>
-          The bail amount is set by the court. The premium is the approved charge for providing the commercial bond. Paying a premium does not change the court’s bail amount or release conditions.
+          The bail amount is set by the court. The premium is the approved charge for providing the commercial bond. Paying a premium does not change the court's bail amount or release conditions.
         </p>
         <p>
           For surety bail bonds above $1,000, Delaware law requires the agent to collect at least 5% of the bond amount before posting it and enter into a written contract. The actual total premium must match the rate filed with and approved by the Department.{' '}
           <a href="https://delcode.delaware.gov/title18/c043/sc02/index.html" target="_blank" rel="noopener noreferrer">
-            Review Delaware’s premium and contract requirements <i className="fas fa-external-link-alt" style={{ fontSize: '0.8em' }} />
+            Review Delaware's premium and contract requirements <i className="fas fa-external-link-alt" style={{ fontSize: '0.8em' }} />
           </a>.
         </p>
 
         <h3>When Payment Arrangements May Be Available</h3>
         <p>
-          A payment arrangement is not a discounted premium. Its availability and terms depend on the agency’s approved practices, the bond, and the written agreement. Do not assume that every applicant qualifies or that the same initial payment applies to every case.
+          A payment arrangement is not a discounted premium. Its availability and terms depend on the agency's approved practices, the bond, and the written agreement. Do not assume that every applicant qualifies or that the same initial payment applies to every case.
         </p>
 
         <h3>When Collateral May Be Requested</h3>
@@ -394,7 +394,7 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
         </div>
 
         <p>
-          For Court of Common Pleas matters, the court says release occurs after the correctional facility receives the court’s order. Other Delaware courts or facilities may use different procedures.{' '}
+          For Court of Common Pleas matters, the court says release occurs after the correctional facility receives the court's order. Other Delaware courts or facilities may use different procedures.{' '}
           <a href="https://courts.delaware.gov/help/bail/CCPbailbonds.aspx" target="_blank" rel="noopener noreferrer">
             Review the Court of Common Pleas process <i className="fas fa-external-link-alt" style={{ fontSize: '0.8em' }} />
           </a>.
@@ -432,7 +432,7 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
 
         <h3>Report Important Changes When the Agreement Requires It</h3>
         <p>
-          The agency’s agreement may require notice when the defendant changes an address, telephone number, employment, or another relevant circumstance. Follow the actual written terms instead of assuming every bail agency uses the same requirements.
+          The agency's agreement may require notice when the defendant changes an address, telephone number, employment, or another relevant circumstance. Follow the actual written terms instead of assuming every bail agency uses the same requirements.
         </p>
         <p>
           A bail agent cannot change the bail amount, bail type, or court-ordered conditions. For Court of Common Pleas cases, the court says a request for a change requires a Motion to Modify Bond and a scheduled hearing. Other courts may use different procedures.{' '}
@@ -445,11 +445,11 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
       <section id="section-after-hours">
         <h2>Can You Get Bail-Bond Help at Night or on a Weekend?</h2>
         <p>
-          You may contact an agency that provides after-hours telephone assistance, but agency availability does not guarantee immediate court or facility action. Have the defendant’s identifying information and bail details ready when possible so the agent can explain which steps may begin and which depend on another institution.
+          You may contact an agency that provides after-hours telephone assistance, but agency availability does not guarantee immediate court or facility action. Have the defendant's identifying information and bail details ready when possible so the agent can explain which steps may begin and which depend on another institution.
         </p>
         <p>
           <a href="/contact" onClick={(e) => handleCta(e, '/contact')}>
-            View A Way to Freedom’s contact information
+            View A Way to Freedom's contact information
           </a>.
         </p>
       </section>
@@ -462,7 +462,7 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
         <ul>
           <li>Bail has not been set.</li>
           <li>The court order does not permit the proposed bond method.</li>
-          <li>Cash-only bail must be paid according to the court’s order.</li>
+          <li>Cash-only bail must be paid according to the court's order.</li>
           <li>Required information or signatures are incomplete.</li>
           <li>Booking remains in progress.</li>
           <li>Another lawful hold applies.</li>
@@ -501,7 +501,7 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
       <section id="section-choosing-agent">
         <h2>What Should You Check Before Choosing a Delaware Bail Agent?</h2>
         <p>
-          Before paying or signing, verify the person’s Delaware license status, registered business identity, written pricing, payment terms, collateral conditions, contact information, business location, and receipt procedures. Avoid providers that guarantee release times or pressure you to send money without written terms.
+          Before paying or signing, verify the person's Delaware license status, registered business identity, written pricing, payment terms, collateral conditions, contact information, business location, and receipt procedures. Avoid providers that guarantee release times or pressure you to send money without written terms.
         </p>
         <ul>
           <li>Active Delaware license status</li>
@@ -535,7 +535,7 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
       <section id="section-next-steps">
         <h2>Need Help With the Next Step in Delaware?</h2>
         <p>
-          When someone you care about is in custody, focus first on confirming the facility, bail amount, and bail type; then review every payment, signature, collateral condition, and co-signer obligation before proceeding. A Way to Freedom can discuss the available information and explain its verified agency procedures, but no bail agency can change the court’s order or guarantee a specific release time.
+          When someone you care about is in custody, focus first on confirming the facility, bail amount, and bail type; then review every payment, signature, collateral condition, and co-signer obligation before proceeding. A Way to Freedom can discuss the available information and explain its verified agency procedures, but no bail agency can change the court's order or guarantee a specific release time.
         </p>
 
         <div className="bm-inline-cta bm-inline-cta--magazine" style={{ margin: '2rem 0' }}>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-hidden="true">
+  <rect width="1200" height="900" rx="0" fill="#07111f"/>
+  <text x="600" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">Check the Bond Type First</text>
+  <text x="600" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#c9a962">The written court order controls what happens next.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="145" y="185" width="410" height="145" rx="22" fill="#0f1b2d" stroke="#c9a962" stroke-width="3"/>
+    <text x="180" y="245" font-size="32" font-weight="700" fill="#ffffff">Unsecured</text>
+    <text x="180" y="292" font-size="24" fill="#dbe4ef">Usually no upfront security</text>
+    <rect x="645" y="185" width="410" height="145" rx="22" fill="#0f1b2d" stroke="#c9a962" stroke-width="3"/>
+    <text x="680" y="245" font-size="32" font-weight="700" fill="#ffffff">Own recognizance</text>
+    <text x="680" y="292" font-size="24" fill="#dbe4ef">Usually no upfront payment</text>
+    <rect x="145" y="390" width="410" height="145" rx="22" fill="#0f1b2d" stroke="#c9a962" stroke-width="3"/>
+    <text x="180" y="450" font-size="32" font-weight="700" fill="#ffffff">Secured</text>
+    <text x="180" y="497" font-size="24" fill="#dbe4ef">Security is required</text>
+    <rect x="645" y="390" width="410" height="145" rx="22" fill="#0f1b2d" stroke="#c9a962" stroke-width="3"/>
+    <text x="680" y="450" font-size="32" font-weight="700" fill="#ffffff">Cash only</text>
+    <text x="680" y="497" font-size="24" fill="#dbe4ef">Follow court payment instructions</text>
+    <rect x="305" y="625" width="590" height="145" rx="22" fill="#fff7d6" stroke="#c9a962" stroke-width="3"/>
+    <text x="600" y="684" text-anchor="middle" font-size="34" font-weight="700" fill="#07111f">Unclear?</text>
+    <text x="600" y="732" text-anchor="middle" font-size="24" fill="#334155">Check the written order before arranging money or property.</text>
+  </g>
+</svg>

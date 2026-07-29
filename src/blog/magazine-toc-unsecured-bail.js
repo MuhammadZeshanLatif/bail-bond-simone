@@ -1,0 +1,15 @@
+export const UNSECURED_BAIL_TOC = [
+  { id: 'section-quick-answer', label: 'Quick Answer' },
+  { id: 'section-meaning', label: 'What Unsecured Bail Means' },
+  { id: 'section-dollar-amount', label: 'Why There Is a Dollar Amount' },
+  { id: 'section-pay-upfront', label: 'Do You Pay Upfront?' },
+  { id: 'section-promises', label: 'What the Defendant Promises' },
+  { id: 'section-compare', label: 'Compare Bail Types' },
+  { id: 'section-signature', label: 'Signature Bond Question' },
+  { id: 'section-who-decides', label: 'Who Decides Bail Type?' },
+  { id: 'section-miss-court', label: 'If Court Is Missed' },
+  { id: 'section-bondsman', label: 'Do You Need a Bondsman?' },
+  { id: 'section-steps', label: 'Seven Family Steps' },
+  { id: 'section-local', label: 'Delaware Local Help' },
+  { id: 'section-faq', label: 'FAQs' },
+];

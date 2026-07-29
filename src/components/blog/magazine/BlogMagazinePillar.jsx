@@ -10,6 +10,7 @@ import { FastReliableBailBondsArticle } from './FastReliableBailBondsArticle';
 import { CommonMistakesArticle } from './CommonMistakesArticle';
 import { HowToBondSomeoneOutArticle } from './HowToBondSomeoneOutArticle';
 import { FindBailAmountArticle } from './FindBailAmountArticle';
+import { UnsecuredBailArticle } from './UnsecuredBailArticle';
 import { LegacyMagazineArticle } from './LegacyMagazineArticle';
 import { MagazineToc } from './MagazineToc';
 import '../../../blog-magazine.css';
@@ -26,6 +27,7 @@ const ARTICLE_MAP = {
   'common-mistakes-posting-bail': CommonMistakesArticle,
   'how-to-bond-someone-out': HowToBondSomeoneOutArticle,
   'find-bail-amount': FindBailAmountArticle,
+  'unsecured-bail': UnsecuredBailArticle,
 };
 
 const DEFAULT_BLOG_CTA = {

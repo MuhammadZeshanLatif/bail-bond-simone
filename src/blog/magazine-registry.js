@@ -183,8 +183,47 @@ import {
   FIND_BAIL_AMOUNT_FAQS,
 } from './find-bail-amount-delaware-blog';
 import { FIND_BAIL_AMOUNT_TOC } from './magazine-toc-find-bail-amount';
+import {
+  UNSECURED_BAIL_SLUG,
+  UNSECURED_BAIL_TITLE,
+  UNSECURED_BAIL_SUBTITLE,
+  UNSECURED_BAIL_META_TITLE,
+  UNSECURED_BAIL_META_DESCRIPTION,
+  UNSECURED_BAIL_KEYWORDS,
+  UNSECURED_BAIL_IMAGE,
+  UNSECURED_BAIL_THUMBNAIL,
+  UNSECURED_BAIL_OG_IMAGE,
+  UNSECURED_BAIL_HERO_ALT,
+  UNSECURED_BAIL_CATEGORY,
+  UNSECURED_BAIL_READ_MIN,
+  UNSECURED_BAIL_BENEFITS,
+  UNSECURED_BAIL_TAGS,
+  UNSECURED_BAIL_FAQS,
+} from './unsecured-bail-delaware-blog';
+import { UNSECURED_BAIL_TOC } from './magazine-toc-unsecured-bail';
 
 export const MAGAZINE_POSTS = {
+  [UNSECURED_BAIL_SLUG]: {
+    slug: UNSECURED_BAIL_SLUG,
+    title: UNSECURED_BAIL_TITLE,
+    subtitle: UNSECURED_BAIL_SUBTITLE,
+    metaTitle: UNSECURED_BAIL_META_TITLE,
+    metaDescription: UNSECURED_BAIL_META_DESCRIPTION,
+    keywords: UNSECURED_BAIL_KEYWORDS,
+    heroImage: UNSECURED_BAIL_IMAGE,
+    thumbnail: UNSECURED_BAIL_THUMBNAIL,
+    ogImage: UNSECURED_BAIL_OG_IMAGE,
+    heroAlt: UNSECURED_BAIL_HERO_ALT,
+    categoryLabel: UNSECURED_BAIL_CATEGORY,
+    readMin: UNSECURED_BAIL_READ_MIN,
+    benefits: UNSECURED_BAIL_BENEFITS,
+    tags: UNSECURED_BAIL_TAGS,
+    faqs: UNSECURED_BAIL_FAQS,
+    tocEntries: UNSECURED_BAIL_TOC,
+    articleKey: 'unsecured-bail',
+    publishedAt: '2026-07-29',
+    updatedAt: '2026-07-29',
+  },
   [FIND_BAIL_AMOUNT_SLUG]: {
     slug: FIND_BAIL_AMOUNT_SLUG,
     title: FIND_BAIL_AMOUNT_TITLE,

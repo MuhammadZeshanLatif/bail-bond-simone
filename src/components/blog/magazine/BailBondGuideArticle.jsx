@@ -35,7 +35,7 @@ const faqs = [
   {
     question: 'Can a bail bond agent help with every bond?',
     answer:
-      'No. A bail bond agent may help with some secured bonds, but not every bond type. If the court orders cash only, the family must follow that specific order.',
+      'No. A bail bond agent may help with some secured bonds, but not every bond type. If the court orders cash only or unsecured release, the family must follow that specific court order.',
   },
   {
     question: 'Is the bail bond premium refundable?',
@@ -174,7 +174,7 @@ export function BailBondGuideArticle({ navigate, onContactClick }) {
         <h2>Types of Bail Bonds in Delaware</h2>
         <p>
           Delaware courts may use different types of bonds. Families should understand the difference before signing
-          anything.
+          anything. If the paperwork says unsecured, read <a href="/blog/what-is-unsecured-bail-delaware" onClick={(e) => { e.preventDefault(); navigate('/blog/what-is-unsecured-bail-delaware'); }}>what unsecured bail means in Delaware</a> before arranging money or property.
         </p>
       </section>
 
@@ -355,7 +355,7 @@ export function BailBondGuideArticle({ navigate, onContactClick }) {
           </div>
           <h3 className="bm-inline-cta-title">Need Help Right Now?</h3>
           <p className="bm-inline-cta-desc">
-            Call A Way to Freedom Bail Bonds — available 24/7 for families across Delaware.
+            Call A Way to Freedom Bail Bonds - available 24/7 for families across Delaware.
           </p>
           <a href="/contact" className="bm-btn bm-btn--primary bm-btn--full bm-inline-cta-btn" onClick={handleCta}>
             Start the Process →

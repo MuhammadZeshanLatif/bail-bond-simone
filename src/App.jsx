@@ -80,6 +80,13 @@ import {
   FIND_BAIL_AMOUNT_IMAGE,
   FIND_BAIL_AMOUNT_THUMBNAIL,
 } from './blog/find-bail-amount-delaware-blog';
+import {
+  UNSECURED_BAIL_SLUG,
+  UNSECURED_BAIL_TITLE,
+  UNSECURED_BAIL_META_DESCRIPTION,
+  UNSECURED_BAIL_IMAGE,
+  UNSECURED_BAIL_THUMBNAIL,
+} from './blog/unsecured-bail-delaware-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -287,7 +294,7 @@ const Navbar = ({ currentPath, navigate }) => {
         <div className="container">
           <div className="topbar-left">
             <i className="fas fa-shield-halved"></i>
-            <span>Licensed & Bonded — Available 24/7</span>
+            <span>Licensed & Bonded - Available 24/7</span>
           </div>
           <div className="topbar-right">
             <i className="fas fa-phone-alt"></i>
@@ -702,7 +709,7 @@ const SimoneHomePage = () => {
     const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxKQHCrTC01hRCpFSLnUnmZyBx6ypmOvHLDUGdJ3Uu97gJW3OH1aBBMPoqln1KCWa7H/exec';
 
     try {
-      // Save to Supabase (admin dashboard) + email via Google Apps Script — run together
+      // Save to Supabase (admin dashboard) + email via Google Apps Script - run together
       await Promise.all([
         submitContact(formData),
         fetch(GOOGLE_SCRIPT_URL, {
@@ -888,7 +895,7 @@ const SimoneHomePage = () => {
           </div>
           <div className="text-center mt-5">
             <a href="tel:7024478550" className="btn btn-gold btn-shimmer">
-              <i className="fas fa-phone-alt me-2"></i>Call Now — We're Ready
+              <i className="fas fa-phone-alt me-2"></i>Call Now - We're Ready
             </a>
           </div>
         </div>
@@ -1197,7 +1204,7 @@ const SimoneHomePage = () => {
               When People Usually Call <span className="gold-text">A Way to Freedom</span>
             </h2>
             <div className="section-gold-line"></div>
-            <p className="section-subtitle">Most people call during a stressful moment after an arrest — worried about detention, the bond amount, or how to start.</p>
+            <p className="section-subtitle">Most people call during a stressful moment after an arrest - worried about detention, the bond amount, or how to start.</p>
           </div>
           <div className="row g-4">
             <div className="col-md-6 col-lg-4">
@@ -2334,12 +2341,13 @@ const ServiceDetailPage = ({ serviceKey, navigate }) => {
         { heading: 'Questions before using secured bail help', list: ['What is due now?', 'What is refundable and what is not?', 'What happens if court is missed?', 'What documents and receipts will be provided?', 'Who is financially responsible?'] }
       ],
       faqs: [
-        { question: 'Can a bail bondsman help with secured bail in Delaware?', answer: 'In some secured bail situations, a bail bond agent may be able to help. Cash-only, unsecured, and own-recognizance release work differently, so confirm the exact bond type first.' },
+        { question: 'Can a bail bondsman help with secured bail in Delaware?', answer: 'In some secured bail situations, a bail bond agent may be able to help. Cash-only, unsecured, and own-recognizance release work differently, so confirm the exact bond type first. If the order says unsecured, read our unsecured bail guide before assuming money is due upfront.' },
         { question: 'Is secured bail the same as cash-only bail?', answer: 'No. Secured bail and cash-only bail are different release types. Families should read the court order carefully before assuming a standard bail bond can be used.' },
         { question: 'What should I ask before posting secured bail?', answer: 'Ask about the full bail amount, security required, premium or payment arrangement, collateral, co-signer responsibility, receipts, and missed-court consequences.' }
       ],
       relatedLinks: [
         { path: '/blog/how-to-bond-someone-out-of-jail-delaware', label: 'Delaware jail bond guide' },
+        { path: '/blog/what-is-unsecured-bail-delaware', label: 'what unsecured bail means in Delaware' },
         { path: '/new-castle-county-bail-bonds', label: 'New Castle County bail bonds' },
         { path: '/services/payment', label: 'bail bond payment arrangements' }
       ]
@@ -2367,6 +2375,7 @@ const ServiceDetailPage = ({ serviceKey, navigate }) => {
       ],
       relatedLinks: [
         { path: '/services/secured', label: 'secured bail in Delaware' },
+        { path: '/blog/what-is-unsecured-bail-delaware', label: 'unsecured bail in Delaware' },
         { path: '/blog/what-is-cash-bond', label: 'what is a cash bond' },
         { path: '/contact', label: 'contact A Way to Freedom' }
       ]
@@ -2644,7 +2653,7 @@ const AboutPage = ({ navigate }) => {
                 Your Trusted Bail Bond Agent in <span className="gold-text">Wilmington & Newark, Delaware</span>
               </h1>
               <p className="hero-tagline">
-                &quot;Not Just Another Bail Bonds Agent – A Mother Who Cares&quot;
+                &quot;Not Just Another Bail Bonds Agent - A Mother Who Cares&quot;
               </p>
               <div className="hero-cta">
                 <a href="tel:7024478550" className="btn btn-gold me-3 mb-3">
@@ -2699,7 +2708,7 @@ const AboutPage = ({ navigate }) => {
                   At A Way to Freedom Bail Bonds, we believe that everyone deserves fair treatment and a chance to navigate the legal system with dignity and respect. Our mission is to help families move through the bail process with clarity, confidence, and support.
                 </p>
                 <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: 'var(--text-light-secondary)', marginBottom: '1.5rem' }}>
-                  When you work with A Way to Freedom Bail Bonds, you're not just another case — you're treated with the care, urgency, and professionalism you deserve.
+                  When you work with A Way to Freedom Bail Bonds, you're not just another case - you're treated with the care, urgency, and professionalism you deserve.
                 </p>
                 <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: 'var(--text-light-secondary)', marginBottom: '2rem' }}>
                   We proudly serve clients throughout Wilmington, Newark, New Castle County, and Kent County, Delaware, and we are available 24 hours a day, 7 days a week to help families in their time of need.
@@ -3050,6 +3059,18 @@ const FAQPage = ({ navigate }) => {
 // BLOG DATA
 // ============================================
 const blogPosts = [
+  {
+    slug: UNSECURED_BAIL_SLUG,
+    title: UNSECURED_BAIL_TITLE,
+    excerpt: UNSECURED_BAIL_META_DESCRIPTION,
+    category: 'Bail Types',
+    readTime: '15 min read',
+    date: '2026-07-29',
+    image: UNSECURED_BAIL_THUMBNAIL,
+    heroImage: UNSECURED_BAIL_IMAGE,
+    isMagazine: true,
+    content: '',
+  },
   {
     slug: FIND_BAIL_AMOUNT_SLUG,
     title: FIND_BAIL_AMOUNT_TITLE,
@@ -4229,7 +4250,7 @@ const ContactPage = () => {
     const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxKQHCrTC01hRCpFSLnUnmZyBx6ypmOvHLDUGdJ3Uu97gJW3OH1aBBMPoqln1KCWa7H/exec';
 
     try {
-      // Save to Supabase (admin dashboard) + email via Google Apps Script — run together
+      // Save to Supabase (admin dashboard) + email via Google Apps Script - run together
       await Promise.all([
         submitContact(formData),
         fetch(GOOGLE_SCRIPT_URL, {
@@ -4758,7 +4779,7 @@ const NewCastleCountyBailBondsPage = ({ navigate }) => {
           <div className="row g-4 align-items-start">
             <div className="col-lg-7">
               <h2 className="section-title">What bail types are used in Delaware-</h2>
-              <p>Delaware courts may use several bail types, including own recognizance, unsecured bail, secured bail, and cash-only bail. A bail bond company may help with some secured bail situations, while unsecured, own-recognizance, or cash-only orders work differently. The next step depends on the exact court order.</p>
+              <p>Delaware courts may use several bail types, including own recognizance, unsecured bail, secured bail, and cash-only bail. A bail bond company may help with some secured bail situations, while unsecured, own-recognizance, or cash-only orders work differently. The next step depends on the exact court order. If the paperwork says unsecured, read <a href="/blog/what-is-unsecured-bail-delaware" onClick={(e) => handleNav(e, '/blog/what-is-unsecured-bail-delaware')}>what unsecured bail means in Delaware</a>.</p>
               <p>The Delaware Courts explain that bail is a written guarantee that a defendant will attend future court proceedings. They list several types of bail and explain that secured bail may involve cash or property posted by the defendant or someone else, including a relative or bail bondsman. <a href="https://courts.delaware.gov/help/bail/" target="_blank" rel="noopener noreferrer">Delaware Courts Bail & Bail Bonds</a></p>
               <blockquote>This page provides general process information, not legal advice. For legal advice about a case, speak with an attorney.</blockquote>
             </div>
@@ -5061,7 +5082,9 @@ const NewarkBailBondsPage = ({ navigate }) => {
                 If you do not know the bail amount yet, read our guide on{' '}
                 <a href="/blog/how-do-you-find-out-how-much-someones-bail-is" onClick={(e) => handleNav(e, '/blog/how-do-you-find-out-how-much-someones-bail-is')}>how to find out how much someone's bail is</a>. If this is your first time helping someone after an arrest, our{' '}
                 <a href="/blog/how-to-bond-someone-out-of-jail-delaware" onClick={(e) => handleNav(e, '/blog/how-to-bond-someone-out-of-jail-delaware')}>Delaware jail bond guide</a>{' '}
-                walks through the bigger process.
+                walks through the bigger process. If the paperwork says unsecured, read{' '}
+                <a href="/blog/what-is-unsecured-bail-delaware" onClick={(e) => handleNav(e, '/blog/what-is-unsecured-bail-delaware')}>what unsecured bail means in Delaware</a>{' '}
+                before arranging money or property.
               </p>
             </div>
             <div className="col-lg-5">
@@ -5146,7 +5169,7 @@ const ServiceAreasPage = ({ navigate }) => {
   ];
 
   const kentCities = [
-    { name: 'Dover', blurb: 'Bail bonds near you in Dover, Delaware’s capital, with clear local guidance.' },
+    { name: 'Dover', blurb: 'Bail bonds near you in Dover, Delaware\'s capital, with clear local guidance.' },
     { name: 'Smyrna', blurb: 'Local bail bond help for Smyrna and the New Castle / Kent County line.' },
     { name: 'Camden', blurb: 'Bail bond support for Camden and the greater Dover area.' },
     { name: 'Milford', blurb: 'Local bail bonds for the Kent County side of Milford and nearby towns.' },
@@ -5185,10 +5208,10 @@ const ServiceAreasPage = ({ navigate }) => {
           <div className="gold-divider" style={{ margin: '1rem 0' }}></div>
           <h1>Bail Bonds Near You in Delaware</h1>
           <p className="lead" style={{ color: 'var(--text-light-secondary)', maxWidth: '760px' }}>
-            Searching for a “bail bondsman near me”? A Way to Freedom is a local Delaware bail bond agency
+            Searching for a "bail bondsman near me"? A Way to Freedom is a local Delaware bail bond agency
             serving New Castle County and Kent County. For county-wide help, visit our{' '}
             <a href="/new-castle-county-bail-bonds" onClick={(e) => handleNav(e, '/new-castle-county-bail-bonds')}>New Castle County bail bonds page</a>. Wherever you are after an arrest, we provide fast,
-            confidential 24/7 help by phone — so you can start the release process without driving across the state.
+            confidential 24/7 help by phone - so you can start the release process without driving across the state.
           </p>
           <div className="hero-cta-wrap mt-3">
             <a href="tel:+17024478550" className="btn btn-primary-gold">
@@ -5252,9 +5275,9 @@ const ServiceAreasPage = ({ navigate }) => {
               <div className="local-seo-content text-center">
                 <h2>Why a Local Bail Bond Agent Matters</h2>
                 <p>
-                  When you search for “bail bonds near me,” you want someone who knows the local courts and jails.
+                  When you search for "bail bonds near me," you want someone who knows the local courts and jails.
                   A Way to Freedom works with families across New Castle County and Kent County, Delaware, and can
-                  begin the process over the phone — so distance is never a reason to wait.
+                  begin the process over the phone - so distance is never a reason to wait.
                 </p>
                 <div className="mt-4">
                   <span className="location-badge"><i className="fas fa-map-marker-alt"></i>Newark Office</span>
@@ -5449,7 +5472,7 @@ const WilmingtonBailBondsPage = ({ navigate }) => {
                   Wilmington is one of Delaware's most important legal hubs. Families may be dealing with the King Street court area, local detention details, or a recent arrest in New Castle County. A local bail bond agent can help you slow the panic down and focus on the information that actually moves the release process forward.
                 </p>
                 <p>
-                  The first step is usually confirming the defendant's name, date of birth, location, bail amount, and bail type. Delaware courts may use own recognizance, unsecured bail, secured bail, or cash-only bail. A commercial bail bond may help in some secured bail situations, while other release types work differently.
+                  The first step is usually confirming the defendant's name, date of birth, location, bail amount, and bail type. Delaware courts may use own recognizance, unsecured bail, secured bail, or cash-only bail. A commercial bail bond may help in some secured bail situations, while other release types work differently. If you see the word unsecured, read our guide to <a href="/blog/what-is-unsecured-bail-delaware" onClick={(e) => handleNav(e, '/blog/what-is-unsecured-bail-delaware')}>what unsecured bail means in Delaware</a>.
                 </p>
                 <div className="row g-4 mt-3">
                   <div className="col-md-4">
@@ -5527,7 +5550,7 @@ const WilmingtonBailBondsPage = ({ navigate }) => {
               </div>
               <div className="faq-item mb-3">
                 <h3>Can a bail bond agent help with secured bail?</h3>
-                <p>In some secured bail situations, yes. Cash-only, unsecured, and own-recognizance release work differently, so the first step is confirming the exact bond type set by the court.</p>
+                <p>In some secured bail situations, yes. Cash-only, unsecured, and own-recognizance release work differently, so the first step is confirming the exact bond type set by the court. If the paperwork says unsecured, read our unsecured bail guide before arranging money.</p>
               </div>
             </div>
           </div>
@@ -5555,7 +5578,7 @@ const WilmingtonBailBondsPage = ({ navigate }) => {
 const NotFoundPage = ({ navigate }) => {
   useSEO(
     'Page Not Found | A Way to Freedom Bail Bonds',
-    'The page you are looking for could not be found. A Way to Freedom Bail Bonds — 24/7 bail bond services in Wilmington, Newark, New Castle County, and Kent County, Delaware.'
+    'The page you are looking for could not be found. A Way to Freedom Bail Bonds - 24/7 bail bond services in Wilmington, Newark, New Castle County, and Kent County, Delaware.'
   );
 
   return (
@@ -5570,7 +5593,7 @@ const NotFoundPage = ({ navigate }) => {
               <h1 className="not-found-code">404</h1>
               <h2 className="section-title mb-3">Page Not Found</h2>
               <p className="not-found-text">
-                The page you&apos;re looking for doesn&apos;t exist or has been moved. We&apos;re here to help — get back on track or reach out for 24/7 bail bond assistance in Delaware.
+                The page you&apos;re looking for doesn&apos;t exist or has been moved. We&apos;re here to help - get back on track or reach out for 24/7 bail bond assistance in Delaware.
               </p>
               <div className="d-flex flex-wrap justify-content-center gap-3 mt-4">
                 <a href="/" onClick={(e) => { e.preventDefault(); navigate('/home'); }} className="btn btn-primary-gold">
@@ -5675,7 +5698,7 @@ function App() {
     return <NotFoundPage navigate={navigate} />;
   };
 
-  // Standalone admin dashboard — no public navbar/footer/chrome
+  // Standalone admin dashboard - no public navbar/footer/chrome
   if (currentPath === '/admin' || currentPath.startsWith('/admin/')) {
     return <AdminPortal />;
   }

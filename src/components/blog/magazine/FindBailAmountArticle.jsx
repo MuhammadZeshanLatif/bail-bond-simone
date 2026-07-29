@@ -114,7 +114,7 @@ export function FindBailAmountArticle({ navigate, onContactClick }) {
         <p>This tells you what kind of release the court ordered. A secured bond, unsecured bond, cash-only bond, or own recognizance release can each work differently.</p>
         <h3>Out-of-Pocket Cost</h3>
         <p>This is what a family may need to pay upfront, if anything. The cost depends on the bail type, whether a commercial bail bond is available, collateral requirements, and the terms of the bond.</p>
-        <p>This is why asking only “how much is bail?” is not enough. You also need to ask, “What type of bail is it?”</p>
+        <p>This is why asking only "how much is bail?" is not enough. You also need to ask, "What type of bail is it?"</p>
       </section>
 
       <section id="section-bail-types">
@@ -176,13 +176,13 @@ export function FindBailAmountArticle({ navigate, onContactClick }) {
         <h2>What Is Unsecured Bail?</h2>
         <p>Unsecured bail usually means the person does not have to pay the full bail amount upfront to be released. However, the amount still matters. If the person misses court or violates release conditions, they may owe the unsecured amount or face other consequences.</p>
         <p>Example: If unsecured bail is set at $2,500, the person may be released without paying $2,500 immediately. But the court is still using that amount as a financial condition tied to future compliance.</p>
-        <p>Unsecured bail is not the same as “nothing matters.” The person must still follow court instructions and appear at required hearings.</p>
+        <p>Unsecured bail is not the same as "nothing matters." The person must still follow court instructions and appear at required hearings.</p>
       </section>
 
       <section id="section-cash-only">
         <h2>What Is Cash-Only Bail?</h2>
         <p>Cash-only bail means the court may require cash rather than allowing a surety bond. This can be frustrating for families because a standard commercial bail bond may not solve a cash-only order.</p>
-        <p>If you hear “cash only,” ask whether the full amount is required in cash, where payment must be made, what forms of payment are accepted, and whether any court process exists to request a change. For legal options about changing bail, speak with an attorney.</p>
+        <p>If you hear "cash only," ask whether the full amount is required in cash, where payment must be made, what forms of payment are accepted, and whether any court process exists to request a change. For legal options about changing bail, speak with an attorney.</p>
       </section>
 
       <section id="section-hard-to-find">
@@ -242,7 +242,7 @@ export function FindBailAmountArticle({ navigate, onContactClick }) {
 
       <section id="section-delaware-state">
         <h2>Delaware State vs. Delaware County Bail Bonds</h2>
-        <p>This is a common search confusion. “Delaware bail bonds” can mean bail bonds in the State of Delaware. But “Delaware County bail bonds” often refers to Delaware County, Ohio or another county named Delaware.</p>
+        <p>This is a common search confusion. "Delaware bail bonds" can mean bail bonds in the State of Delaware. But "Delaware County bail bonds" often refers to Delaware County, Ohio or another county named Delaware.</p>
         <p>A Way to Freedom Bail Bonds focuses on Delaware bail bond help. If you are searching for someone arrested in Wilmington, Dover, Newark, Georgetown, New Castle County, Kent County, or Sussex County, make sure you are using Delaware state information, not a page for Delaware County, Ohio.</p>
       </section>
 
@@ -260,8 +260,8 @@ export function FindBailAmountArticle({ navigate, onContactClick }) {
         <h2>Official Sources</h2>
         <p>For official Delaware court information, review these resources:</p>
         <ul>
-          <li><a href="https://courts.delaware.gov/help/bail/" target="_blank" rel="noopener noreferrer">Delaware Courts — Bail & Bail Bonds</a></li>
-          <li><a href="https://courts.delaware.gov/help/proceedings/jp_infodefendants.aspx" target="_blank" rel="noopener noreferrer">Delaware Courts — Information for Defendants in the Justice of the Peace Courts</a></li>
+          <li><a href="https://courts.delaware.gov/help/bail/" target="_blank" rel="noopener noreferrer">Delaware Courts - Bail & Bail Bonds</a></li>
+          <li><a href="https://courts.delaware.gov/help/proceedings/jp_infodefendants.aspx" target="_blank" rel="noopener noreferrer">Delaware Courts - Information for Defendants in the Justice of the Peace Courts</a></li>
           <li><a href="https://delcode.delaware.gov/title11/c021/sc01/index.html" target="_blank" rel="noopener noreferrer">Delaware Code Title 11, Chapter 21</a></li>
         </ul>
       </section>

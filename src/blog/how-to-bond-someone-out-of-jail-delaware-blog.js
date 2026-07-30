@@ -13,7 +13,7 @@ export const HOW_TO_BOND_META_DESCRIPTION =
   'Learn how to bond someone out of jail in Delaware, compare bail types and costs, understand co-signer duties, and prepare the information needed to call.';
 
 export const HOW_TO_BOND_KEYWORDS =
-  'how to bond someone out of jail in Delaware, 24 hour bail bonds Delaware, bond someone out of jail Delaware, how to bail someone out in Delaware, Delaware bail bond process, bail bondsman Delaware, bond out of jail, affordable bail bonds Delaware, cheapest bail bonds Delaware, Delaware secured bail, Delaware bail bond cost, bail bond co-signer responsibilities, how long does release take after posting bail';
+  'how to bond someone out of jail in Delaware, bond someone out of jail Delaware, how to bail someone out in Delaware, Delaware bail bond process, bond out of jail, Delaware secured bail, Delaware bail bond cost, bail bond co-signer responsibilities, how long does release take after posting bail';
 
 export const HOW_TO_BOND_IMAGE =
   '/images/how-to-bonds-someone-out-of-jail/how-to-bonds-someone-out-of-jail.webp';

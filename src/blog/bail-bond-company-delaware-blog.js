@@ -13,7 +13,7 @@ export const BAIL_BOND_COMPANY_META_DESCRIPTION =
   'Need a trusted bail bond company in Delaware? Learn how bail bonds work, what you\'ll pay, and how to get your loved one released fast - call us 24/7.';
 
 export const BAIL_BOND_COMPANY_KEYWORDS =
-  'bail bond company Delaware, bail bondsman Delaware 24/7, bail bond cost Delaware, Wilmington DE bail bonds, New Castle County bail bonds, Kent County bail bonds, how to bail someone out of jail in Delaware, Delaware surety bond, best bail bond company Delaware';
+  'bail bond company Delaware, licensed bail bond company Delaware, bail bond cost Delaware, Wilmington bail bond company, New Castle County bail bond company, Kent County bail bond help, how to bail someone out of jail in Delaware, Delaware surety bond, best bail bond company Delaware';
 
 export const BAIL_BOND_COMPANY_IMAGE =
   '/images/bail-bond-company-delaware/bail-bond-company-delaware.webp';
@@ -36,12 +36,12 @@ export const BAIL_BOND_COMPANY_BENEFITS = [
   { icon: 'fa-clock', label: '24/7 Available', sub: 'Delaware Agents' },
   { icon: 'fa-shield-alt', label: 'Licensed & Insured', sub: 'State Certified' },
   { icon: 'fa-map-marker-alt', label: '2 Counties Served', sub: 'New Castle & Kent' },
-  { icon: 'fa-dollar-sign', label: '10% Premium', sub: 'Clear Delaware Pricing' },
+  { icon: 'fa-dollar-sign', label: 'Filed Premium', sub: 'Clear Delaware Pricing' },
 ];
 
 export const BAIL_BOND_COMPANY_TAGS = [
   'Bail Bond Company',
-  'Delaware Bail Bonds',
+  'Delaware Bail Help',
   'Wilmington DE',
   'New Castle County',
   '24/7 Bail Bonds',
@@ -51,12 +51,12 @@ export const BAIL_BOND_COMPANY_FAQS = [
   {
     question: 'How does a bail bond company work in Delaware?',
     answer:
-      'A bail bond company pays the full bail amount to the Delaware court on the defendant\'s behalf. You pay the company 10% of that amount as a non-refundable fee. The bondsman then guarantees the court that the defendant will appear at all hearings.',
+      'A bail bond company posts the bond on the defendant\'s behalf when a commercial bond is available. The family pays the company the filed and approved premium or charge, and the bondsman guarantees the court that the defendant will appear at all hearings.',
   },
   {
     question: 'How much does a bail bond cost in Delaware?',
     answer:
-      'The fee is exactly 10% of the total bail amount, set by the Delaware Department of Insurance. For a $25,000 bail, you pay $2,500. This rate is non-negotiable and set by law.',
+      'For surety bail bonds over $1,000, Delaware law requires the total filed premium to be at least 5% and not more than 10%. The actual premium must match the rate filed with and approved by the Department.',
   },
   {
     question: 'How long does it take to get out of jail after a bail bond is posted in Delaware?',
@@ -66,7 +66,7 @@ export const BAIL_BOND_COMPANY_FAQS = [
   {
     question: 'Do I need collateral for a bail bond in Delaware?',
     answer:
-      'Not always. Many companies offer signature bonds that require only your signature and the 10% fee. Collateral such as real estate or a vehicle is typically only required for high-risk or very large bonds.',
+      'Not always. Some bonds may be handled with a signature and the required approved premium, while larger or higher-risk bonds may involve collateral such as real estate or a vehicle.',
   },
   {
     question: 'What happens if the defendant skips court after bail is posted?',
@@ -76,7 +76,7 @@ export const BAIL_BOND_COMPANY_FAQS = [
   {
     question: 'Are bail bond fees refundable in Delaware?',
     answer:
-      'No. The 10% premium paid to the bail bond company is non-refundable, regardless of the outcome of the case, even if charges are dropped.',
+      'A commercial bail bond premium is generally a service fee and is not the same as money posted directly with the court. Ask for the refund terms in writing before signing.',
   },
   {
     question: 'Can a bail bond company refuse to take a client in Delaware?',
@@ -86,7 +86,7 @@ export const BAIL_BOND_COMPANY_FAQS = [
   {
     question: 'Can I pay for a bail bond with a payment plan?',
     answer:
-      'Many Delaware bail bond companies offer flexible payment plans. Ask upfront about financing options. The 10% fee must still be paid in full; plans simply spread that cost over time.',
+      'Many Delaware bail bond companies discuss payment arrangements case by case. Ask upfront what is due before posting, what the total approved premium is, and how the written payment schedule works.',
   },
   {
     question: 'What is a transfer bail bond?',
@@ -104,8 +104,8 @@ export const BAIL_BOND_COMPANY_FAQS = [
       'Delaware has three counties: New Castle, Kent, and Sussex. A Way to Freedom Bail Bonds serves New Castle County (Wilmington and Newark area) and Kent County (Dover and Smyrna area). We do not serve Sussex County. Always confirm coverage before signing any paperwork.',
   },
   {
-    question: 'Is it illegal to offer a bail bond for less than 10% in Delaware?',
+    question: 'Can a Delaware bail agent offer any discount they want?',
     answer:
-      'Yes. Any bail agent charging below the state-mandated 10% rate is in violation of Delaware law. Avoid any company offering discounts; it is either illegal or a bait-and-switch tactic.',
+      'No. The premium or charge must match the rate filed with and approved by the Department. For surety bonds over $1,000, the total filed premium must be between 5% and 10%, and unapproved extra fees are not allowed.',
   },
 ];

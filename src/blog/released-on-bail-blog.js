@@ -13,7 +13,7 @@ export const RELEASED_ON_BAIL_META_DESCRIPTION =
   'Released on bail means leaving jail while the case is still active. Learn the rules, what it does not mean, and real consequences if you break bail conditions.';
 
 export const RELEASED_ON_BAIL_KEYWORDS =
-  'released on bail, what does released on bail mean, bail conditions, bail vs bond, release on recognizance, cash bail, surety bond, Delaware bail bonds, bail process, court appearance';
+  'released on bail, what does released on bail mean, bail conditions, bail vs bond, release on recognizance, cash bail, surety bond, Delaware bail process, court appearance';
 
 export const RELEASED_ON_BAIL_IMAGE =
   '/images/what-does-released-on-bail-mean/what-does-released-on-bail-mean.webp';

@@ -13,7 +13,7 @@ export const WHAT_IS_CASH_BOND_META_DESCRIPTION =
   'Learn what a cash bond is, how it works, who can pay it, when you get your money back, and how it differs from a bail bond in simple terms.';
 
 export const WHAT_IS_CASH_BOND_KEYWORDS =
-  'what is a cash bond, Delaware cash bond fee, licensed bail agent Delaware, cash bail 20 to 30 percent, cash bond refund, cash bond vs bail bond, who can pay a cash bond, Delaware bail bonds';
+  'what is a cash bond, Delaware cash bond fee, licensed bail agent Delaware, cash bail 20 to 30 percent, cash bond refund, cash bond vs bail bond, who can pay a cash bond, Delaware cash bail guide';
 
 export const WHAT_IS_CASH_BOND_IMAGE =
   '/images/what-is-cash-bond-meaning/what-is-cash-bond-meaning.webp';

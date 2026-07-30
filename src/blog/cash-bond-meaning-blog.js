@@ -13,7 +13,7 @@ export const CASH_BOND_MEANING_META_DESCRIPTION =
   'Learn cash bond meaning, how it works, refund rules, and risks. Simple explanation with examples to help you understand bail payments clearly.';
 
 export const CASH_BOND_MEANING_KEYWORDS =
-  'cash bond meaning, Delaware cash bond fee, licensed bail agent Delaware, cash bail 20 to 30 percent, cash bond, cash bail, bail bond vs cash bond, do you get cash bond money back, Delaware bail bonds';
+  'cash bond meaning, Delaware cash bond fee, licensed bail agent Delaware, cash bail 20 to 30 percent, cash bond, cash bail, bail bond vs cash bond, do you get cash bond money back, Delaware cash bail guide';
 
 export const CASH_BOND_MEANING_IMAGE =
   '/images/cash-bond-meaning/cash-bond-meaning.webp';

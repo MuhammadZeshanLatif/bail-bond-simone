@@ -19,14 +19,14 @@ export function buildLegacyMagazinePost(post) {
     subtitle: post.excerpt,
     metaTitle: `${post.title} | A Way to Freedom Bail Bonds`,
     metaDescription: post.excerpt,
-    keywords: `bail bonds, ${category}, Delaware bail bonds, Newark Delaware, Wilmington DE`,
+    keywords: `${category}, Delaware bail help, Newark Delaware bail guide, Wilmington DE bail guide, family bail information`,
     heroImage,
     thumbnail: post.image || heroImage,
     heroAlt: `${post.title} - Delaware bail bond services by A Way to Freedom`,
     categoryLabel: category,
     readMin,
     benefits: DEFAULT_BENEFITS,
-    tags: [category, 'Delaware Bail Bonds', 'Bail Bond Help', 'Newark Delaware', 'Family Guide'].filter(
+    tags: [category, 'Delaware Bail Help', 'Bail Bond Help', 'Newark Delaware', 'Family Guide'].filter(
       (v, i, a) => a.indexOf(v) === i
     ).slice(0, 5),
     faqs: [],

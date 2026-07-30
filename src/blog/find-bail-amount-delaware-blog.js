@@ -13,7 +13,7 @@ export const FIND_BAIL_AMOUNT_META_DESCRIPTION =
   "Learn how to find out someone's bail amount in Delaware, what details to gather, bail types to ask about, and when a bail bond agent can help.";
 
 export const FIND_BAIL_AMOUNT_KEYWORDS =
-  "how do you find out how much someone's bail is, find someone's bail amount Delaware, secured bail, unsecured bail, Delaware bail bonds, bail Delaware, bail secured bond, what is unsecured bail, Delaware bail types";
+  "how do you find out how much someone's bail is, find someone's bail amount Delaware, secured bail, unsecured bail, bail amount Delaware, bail secured bond, what is unsecured bail, Delaware bail types";
 
 const FIND_BAIL_AMOUNT_IMAGE_BASE = '/images/how-do-you-find-out-how-much-someones-bail-is';
 

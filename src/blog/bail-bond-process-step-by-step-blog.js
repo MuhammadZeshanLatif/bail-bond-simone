@@ -13,7 +13,7 @@ export const BAIL_BOND_PROCESS_META_DESCRIPTION =
   'Learn the bail bond process step by step, from arrest and booking to release and court appearances. A simple guide for families and first-time readers.';
 
 export const BAIL_BOND_PROCESS_KEYWORDS =
-  'bail bond process step by step, arrest to release guide, jail booking, bail hearing, bail bond company, bail bond paperwork, court appearances, Delaware bail bonds, bail bond fee';
+  'bail bond process step by step, arrest to release guide, jail booking, bail hearing, bail bond company process, bail bond paperwork, court appearances, Delaware bail release process, bail bond fee';
 
 export const BAIL_BOND_PROCESS_IMAGE =
   '/images/bail-bond-process-step-by-step/bail-bond-process-step-by-step-guide.webp';

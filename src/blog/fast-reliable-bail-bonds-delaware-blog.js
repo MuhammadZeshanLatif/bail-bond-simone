@@ -13,7 +13,7 @@ export const FAST_RELIABLE_META_DESCRIPTION =
   'Need fast & reliable bail bonds in Delaware? Learn what to do first, how bail works, release timing, costs, and how to prepare before calling a local agent.';
 
 export const FAST_RELIABLE_KEYWORDS =
-  'fast and reliable bail bonds in Delaware, Delaware bail bonds, bail bond agent Delaware, bail bond process, secured bail, cash-only bail, Newark Delaware bail bonds, what to do after an arrest';
+  'fast bail release Delaware, reliable bail bond help Delaware, bail bond process, secured bail, cash-only bail, Newark Delaware bail help, what to do after an arrest';
 
 export const FAST_RELIABLE_IMAGE =
   '/images/blog/fast-reliable-bail-bonds-delaware-hero.webp';

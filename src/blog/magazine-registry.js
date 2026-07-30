@@ -201,8 +201,45 @@ import {
   UNSECURED_BAIL_FAQS,
 } from './unsecured-bail-delaware-blog';
 import { UNSECURED_BAIL_TOC } from './magazine-toc-unsecured-bail';
+import {
+  BAIL_BOND_COST_SLUG,
+  BAIL_BOND_COST_TITLE,
+  BAIL_BOND_COST_SUBTITLE,
+  BAIL_BOND_COST_META_TITLE,
+  BAIL_BOND_COST_META_DESCRIPTION,
+  BAIL_BOND_COST_KEYWORDS,
+  BAIL_BOND_COST_IMAGE,
+  BAIL_BOND_COST_THUMBNAIL,
+  BAIL_BOND_COST_HERO_ALT,
+  BAIL_BOND_COST_CATEGORY,
+  BAIL_BOND_COST_READ_MIN,
+  BAIL_BOND_COST_BENEFITS,
+  BAIL_BOND_COST_TAGS,
+  BAIL_BOND_COST_FAQS,
+} from './bail-bond-cost-delaware-blog';
+import { BAIL_BOND_COST_TOC } from './magazine-toc-bail-bond-cost-delaware';
 
 export const MAGAZINE_POSTS = {
+  [BAIL_BOND_COST_SLUG]: {
+    slug: BAIL_BOND_COST_SLUG,
+    title: BAIL_BOND_COST_TITLE,
+    subtitle: BAIL_BOND_COST_SUBTITLE,
+    metaTitle: BAIL_BOND_COST_META_TITLE,
+    metaDescription: BAIL_BOND_COST_META_DESCRIPTION,
+    keywords: BAIL_BOND_COST_KEYWORDS,
+    heroImage: BAIL_BOND_COST_IMAGE,
+    thumbnail: BAIL_BOND_COST_THUMBNAIL,
+    heroAlt: BAIL_BOND_COST_HERO_ALT,
+    categoryLabel: BAIL_BOND_COST_CATEGORY,
+    readMin: BAIL_BOND_COST_READ_MIN,
+    benefits: BAIL_BOND_COST_BENEFITS,
+    tags: BAIL_BOND_COST_TAGS,
+    faqs: BAIL_BOND_COST_FAQS,
+    tocEntries: BAIL_BOND_COST_TOC,
+    articleKey: 'bail-bond-cost-delaware',
+    publishedAt: '2026-07-30',
+    updatedAt: '2026-07-30',
+  },
   [UNSECURED_BAIL_SLUG]: {
     slug: UNSECURED_BAIL_SLUG,
     title: UNSECURED_BAIL_TITLE,

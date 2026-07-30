@@ -11,6 +11,7 @@ import { CommonMistakesArticle } from './CommonMistakesArticle';
 import { HowToBondSomeoneOutArticle } from './HowToBondSomeoneOutArticle';
 import { FindBailAmountArticle } from './FindBailAmountArticle';
 import { UnsecuredBailArticle } from './UnsecuredBailArticle';
+import { BailBondCostDelawareArticle } from './BailBondCostDelawareArticle';
 import { LegacyMagazineArticle } from './LegacyMagazineArticle';
 import { MagazineToc } from './MagazineToc';
 import '../../../blog-magazine.css';
@@ -28,6 +29,7 @@ const ARTICLE_MAP = {
   'how-to-bond-someone-out': HowToBondSomeoneOutArticle,
   'find-bail-amount': FindBailAmountArticle,
   'unsecured-bail': UnsecuredBailArticle,
+  'bail-bond-cost-delaware': BailBondCostDelawareArticle,
 };
 
 const DEFAULT_BLOG_CTA = {

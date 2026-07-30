@@ -4,7 +4,7 @@ DirectoryIndex index.html
 RewriteEngine On
 RewriteBase /
 
-# Legacy domain → primary domain
+# Legacy domain -> primary domain
 RewriteCond %{HTTP_HOST} ^(www\.)?away2freedom302\.com$ [NC]
 RewriteRule ^(.*)$ https://delawarebailbond.com/$1 [R=301,L]
 
@@ -15,7 +15,10 @@ RewriteRule ^(.*)$ https://delawarebailbond.com/$1 [R=301,L]
 # Canonical homepage: /home -> /
 RewriteRule ^home/?$ / [R=301,L]
 
-# Real files (images, css, js) — serve directly
+# Legacy thin payment article -> stronger cost guide
+RewriteRule ^blog/payment-options-bail-bonds/?$ /blog/how-much-does-a-bail-bond-cost-in-delaware [R=301,L]
+
+# Real files (images, css, js) serve directly
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule ^ - [L]
 

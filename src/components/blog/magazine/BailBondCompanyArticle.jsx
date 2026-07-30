@@ -51,7 +51,7 @@ export function BailBondCompanyArticle({ navigate, onContactClick }) {
           bond company steps in as the guarantor.
         </p>
         <QuickAnswerBox>
-          <p><strong>Quick Answer:</strong> A bail bond company helps secure a defendant&apos;s release from jail by posting bail with the court for a non-refundable fee, typically 10% of the total bail amount set by the judge.</p>
+          <p><strong>Quick Answer:</strong> A bail bond company helps secure a defendant&apos;s release from jail by posting bail with the court for a non-refundable filed and approved premium or charge.</p>
         </QuickAnswerBox>
         <blockquote className="bm-pullquote">
           A bail bond company helps people secure release from jail before their trial. When bail is set by a court, a
@@ -101,7 +101,7 @@ export function BailBondCompanyArticle({ navigate, onContactClick }) {
             </thead>
             <tbody>
               <tr><td>Cash Bond</td><td>Full bail amount paid directly to court in cash</td><td>Those with immediate funds</td></tr>
-              <tr><td>Surety Bond</td><td>Bondsman pays bail; you pay 10% fee</td><td>Most common type</td></tr>
+              <tr><td>Surety Bond</td><td>Bondsman posts the bond; you pay the approved premium</td><td>Most common type</td></tr>
               <tr><td>Property Bond</td><td>Real estate used as collateral for bail</td><td>Larger bail amounts</td></tr>
               <tr><td>Signature Bond</td><td>Released on signature; no money required</td><td>Low-risk defendants</td></tr>
               <tr><td>Federal Bond</td><td>For federal charges; higher complexity</td><td>Federal court defendants</td></tr>
@@ -113,28 +113,34 @@ export function BailBondCompanyArticle({ navigate, onContactClick }) {
           </table>
         </div>
         <p>
-          The most common type is the surety bond. A licensed bail bond company posts the full bail amount. You pay 10% of
-          that amount as a non-refundable premium.
+          The most common type is the surety bond. A licensed bail bond company posts the bond, and the family pays the
+          filed and approved premium or charge.
         </p>
       </section>
 
       <section id="section-cost">
         <h2>How Much Does a Bail Bond Cost in Delaware?</h2>
-        <p>Here is the straightforward answer: 10% of the total bail amount, period.</p>
+        <p>Here is the straightforward answer: ask for the filed and approved premium before signing.</p>
         <p>
-          The Delaware Department of Insurance sets this rate. It is state law and not negotiable. Every licensed bail bond
-          company must charge exactly this amount. Not more. Not less.
+          Delaware law requires a bail agent to charge the premium rate or other charge filed with and approved by the
+          Department. For a surety bail bond over $1,000, the total filed premium must be at least 5% and not more than
+          10% of the surety bail bond amount.
         </p>
-        <p><strong>Example:</strong> If the judge sets bail at $25,000, your cost for a bail bond is $2,500. You do not pay the remaining $22,500 unless the defendant skips court and disappears.</p>
-        <h3>Why the 10% Fee Is Non-Negotiable</h3>
+        <p><strong>Example:</strong> If the judge sets bail at $25,000, the 5% to 10% premium range would be $1,250 to $2,500. The actual premium must match the approved filed rate and written agreement.</p>
+        <h3>Why the Filed Premium Matters</h3>
         <p>
-          Some bondsmen may try to offer you a &ldquo;deal&rdquo; at 5% or 7%. Be very careful. Any bail agent charging less
-          than the state-mandated rate is operating illegally under Delaware law. The Delaware Department of Insurance is
-          very clear on this point.
+          Be careful with vague pricing or extra charges that are not clearly approved and written. A bail agent cannot
+          charge unapproved administrative, service, company, or agent fees for surety bail bonds.
         </p>
         <blockquote className="bm-pullquote">
           <strong>Bondsman Tip:</strong> Call the Delaware Department of Insurance (302-674-7300) to verify any bondsman&apos;s license before signing paperwork.
         </blockquote>
+        <p>
+          For a deeper cost breakdown, read our guide on{' '}
+          <a href="/blog/how-much-does-a-bail-bond-cost-in-delaware" onClick={(e) => { e.preventDefault(); navigate('/blog/how-much-does-a-bail-bond-cost-in-delaware'); }}>
+            how much a bail bond costs in Delaware
+          </a>.
+        </p>
       </section>
 
       <section id="section-payment-plans">
@@ -168,7 +174,7 @@ export function BailBondCompanyArticle({ navigate, onContactClick }) {
             <div className="bm-step-icon-wrap"><i className="fas fa-dollar-sign bm-icon-gold" aria-hidden /><span className="bm-step-badge">Step 3</span></div>
             <div className="bm-step-content">
               <p className="bm-step-title">Arrange payment</p>
-              <p className="bm-step-desc">Pay the 10% premium. Discuss collateral or payment plans if needed.</p>
+              <p className="bm-step-desc">Pay the required approved premium amount. Discuss collateral or payment plans if needed.</p>
             </div>
           </div>
           <div className="bm-step-card">
@@ -266,7 +272,7 @@ export function BailBondCompanyArticle({ navigate, onContactClick }) {
         <ul className="bm-checklist">
           <li>Delaware Department of Insurance license number displayed</li>
           <li>Available 24 hours, 7 days a week, including weekends and holidays</li>
-          <li>Transparent 10% fee with no hidden charges</li>
+          <li>Transparent filed premium with no hidden charges</li>
           <li>Payment plan options for qualified clients</li>
           <li>Experience with your specific type of charge (criminal, federal, VOP, etc.)</li>
           <li>Serves your specific county and jail</li>
@@ -302,7 +308,7 @@ export function BailBondCompanyArticle({ navigate, onContactClick }) {
               </tr>
             </thead>
             <tbody>
-              <tr><td>Upfront cost</td><td>100% of bail amount</td><td>10% of bail amount</td></tr>
+              <tr><td>Upfront cost</td><td>100% of bail amount</td><td>Filed and approved premium or payment terms</td></tr>
               <tr><td>Refundable?</td><td>Yes (after case ends)</td><td>No. Fee is kept by bondsman</td></tr>
               <tr><td>Speed</td><td>Fast (if you have the money)</td><td>Fast (2 to 8 hours typical)</td></tr>
               <tr><td>Risk if defendant skips</td><td>You lose full amount</td><td>Bondsman loses full amount</td></tr>

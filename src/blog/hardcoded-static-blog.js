@@ -13,7 +13,7 @@ export const HARDCODED_BLOG_META_DESCRIPTION =
   'Learn how bail bonds work in Delaware, including bond types, costs, court rules, co-signer risks, and what families should do after an arrest.';
 
 export const HARDCODED_BLOG_KEYWORDS =
-  'how bail bonds work in Delaware, Delaware bail bonds, bail bond agent in Delaware, bail bond cost Delaware, secured bond Delaware, cash only bond Delaware, Delaware court bail process, family bail guide Delaware';
+  'how bail bonds work in Delaware, Delaware bail bond process, bail bond agent role in Delaware, bail bond cost Delaware, secured bond Delaware, cash only bond Delaware, Delaware court bail process, family bail guide Delaware';
 
 export const HARDCODED_BLOG_IMAGE = '/images/how-bail-bonds-work/how-bail-bonds-work.webp';
 

@@ -16,10 +16,10 @@ export const BAIL_BOND_COST_KEYWORDS =
   'how much does a bail bond cost in Delaware, bail bond cost Delaware, Delaware bail bond premium, how much do you pay for a bond, bail bond payment plans Delaware, bail bond fees Delaware, bail amount vs bail bond cost';
 
 export const BAIL_BOND_COST_IMAGE =
-  '/images/blog/delaware-bail-bond-call-checklist.webp';
+  '/images/blog/delaware-bail-bond-cost-hero.png';
 
 export const BAIL_BOND_COST_THUMBNAIL =
-  '/images/blog/delaware-bail-bond-call-checklist.webp';
+  '/images/blog/delaware-bail-bond-cost-thumbnail.png';
 
 export const BAIL_BOND_COST_HERO_ALT =
   'Delaware bail bond cost guide for families reviewing payment paperwork';

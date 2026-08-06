@@ -12,6 +12,7 @@ import { HowToBondSomeoneOutArticle } from './HowToBondSomeoneOutArticle';
 import { FindBailAmountArticle } from './FindBailAmountArticle';
 import { UnsecuredBailArticle } from './UnsecuredBailArticle';
 import { BailBondCostDelawareArticle } from './BailBondCostDelawareArticle';
+import { TrafficBondsWilmingtonArticle } from './TrafficBondsWilmingtonArticle';
 import { LegacyMagazineArticle } from './LegacyMagazineArticle';
 import { MagazineToc } from './MagazineToc';
 import '../../../blog-magazine.css';
@@ -30,6 +31,7 @@ const ARTICLE_MAP = {
   'find-bail-amount': FindBailAmountArticle,
   'unsecured-bail': UnsecuredBailArticle,
   'bail-bond-cost-delaware': BailBondCostDelawareArticle,
+  'traffic-bonds-wilmington': TrafficBondsWilmingtonArticle,
 };
 
 const DEFAULT_BLOG_CTA = {

@@ -94,6 +94,13 @@ import {
   BAIL_BOND_COST_IMAGE,
   BAIL_BOND_COST_THUMBNAIL,
 } from './blog/bail-bond-cost-delaware-blog';
+import {
+  TRAFFIC_BONDS_WILMINGTON_SLUG,
+  TRAFFIC_BONDS_WILMINGTON_TITLE,
+  TRAFFIC_BONDS_WILMINGTON_META_DESCRIPTION,
+  TRAFFIC_BONDS_WILMINGTON_IMAGE,
+  TRAFFIC_BONDS_WILMINGTON_THUMBNAIL,
+} from './blog/traffic-bonds-wilmington-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -3099,7 +3106,7 @@ const FAQPage = ({ navigate }) => {
 
       <section className="faq-content">
         <div className="container">
-          <div className="accordion-custom">
+          <div className="accordion-custom" id="faqAccordion">
             {faqs.map((faq, index) => (
               <div className="accordion-item" key={index}>
                 <h2 className="accordion-header">
@@ -3138,8 +3145,20 @@ const FAQPage = ({ navigate }) => {
 
 // ============================================
 // BLOG DATA
-// ============================================
+// ===============================================================================
 const blogPosts = [
+  {
+    slug: TRAFFIC_BONDS_WILMINGTON_SLUG,
+    title: TRAFFIC_BONDS_WILMINGTON_TITLE,
+    excerpt: TRAFFIC_BONDS_WILMINGTON_META_DESCRIPTION,
+    category: 'Bail Process',
+    readTime: '11 min read',
+    date: '2026-08-06',
+    image: TRAFFIC_BONDS_WILMINGTON_THUMBNAIL,
+    heroImage: TRAFFIC_BONDS_WILMINGTON_IMAGE,
+    isMagazine: true,
+    content: '',
+  },
   {
     slug: BAIL_BOND_COST_SLUG,
     title: BAIL_BOND_COST_TITLE,

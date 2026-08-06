@@ -74,7 +74,8 @@ export async function adminSignIn(email, password) {
   const supabase = getSupabase();
   const { error } = await supabase.auth.signInWithPassword({ email, password });
   if (error) {
-    return { ok: false, error: 'Incorrect email or password.' };
+    console.error('admin sign-in:', error.status, error.message);
+    return { ok: false, error: error.message || 'Incorrect email or password.' };
   }
   return { ok: true };
 }

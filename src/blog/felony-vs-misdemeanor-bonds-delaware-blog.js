@@ -15,11 +15,11 @@ export const FELONY_VS_MISDEMEANOR_META_DESCRIPTION =
 export const FELONY_VS_MISDEMEANOR_KEYWORDS =
   'felony vs misdemeanor bonds Delaware, felony bail bonds Delaware, misdemeanor bail bonds Delaware, felony bond Delaware, misdemeanor bond Delaware, Delaware bail types, felony charge Delaware, misdemeanor charge Delaware';
 
-export const FELONY_VS_MISDEMEANOR_IMAGE = '/images/blog/delaware-bail-types-guide.webp';
-export const FELONY_VS_MISDEMEANOR_THUMBNAIL = '/images/blog/delaware-bail-types-guide.webp';
+export const FELONY_VS_MISDEMEANOR_IMAGE = '/images/blog/felony-vs-misdemeanor-bonds-delaware/felony-vs-misdemeanor-bonds-delaware-hero.webp';
+export const FELONY_VS_MISDEMEANOR_THUMBNAIL = '/images/blog/felony-vs-misdemeanor-bonds-delaware/felony-vs-misdemeanor-bonds-delaware-thumbnail.webp';
 
 export const FELONY_VS_MISDEMEANOR_HERO_ALT =
-  'Delaware bail types guide showing own recognizance, unsecured, secured, and cash-only bail, relevant to felony and misdemeanor bonds';
+  'Felony vs. Misdemeanor Bonds in Delaware — a simple guide for families, featuring Simone Harris, Licensed Bail Bond Agent';
 
 export const FELONY_VS_MISDEMEANOR_CATEGORY = 'Bail Types';
 export const FELONY_VS_MISDEMEANOR_READ_MIN = 12;

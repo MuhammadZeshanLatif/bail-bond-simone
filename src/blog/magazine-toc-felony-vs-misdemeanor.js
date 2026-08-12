@@ -1,0 +1,16 @@
+export const FELONY_VS_MISDEMEANOR_TOC = [
+  { id: 'section-intro', prefix: '1.', label: 'Quick Answer' },
+  { id: 'section-difference', prefix: '2.', label: 'Key Difference' },
+  { id: 'section-felony', prefix: '3.', label: 'Felony Charges Explained' },
+  { id: 'section-misdemeanor', prefix: '4.', label: 'Misdemeanor Charges Explained' },
+  { id: 'section-classes', prefix: '5.', label: 'Charge Classes in Delaware' },
+  { id: 'section-bail-types', prefix: '6.', label: 'Which Bail Types Apply' },
+  { id: 'section-hearing', prefix: '7.', label: 'How Bail Is Set' },
+  { id: 'section-compare', prefix: '8.', label: 'Side-by-Side Comparison' },
+  { id: 'section-agent', prefix: '9.', label: 'When an Agent Can Help' },
+  { id: 'section-violations', prefix: '10.', label: 'Release Violations' },
+  { id: 'section-mistakes', prefix: '11.', label: 'Mistakes to Avoid' },
+  { id: 'section-checklist', prefix: '12.', label: 'Family Checklist' },
+  { id: 'section-faq', prefix: '13.', label: 'FAQs' },
+  { id: 'section-final', prefix: '14.', label: 'Next Steps' },
+];

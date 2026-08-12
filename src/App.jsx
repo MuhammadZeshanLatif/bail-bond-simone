@@ -101,6 +101,13 @@ import {
   TRAFFIC_BONDS_WILMINGTON_IMAGE,
   TRAFFIC_BONDS_WILMINGTON_THUMBNAIL,
 } from './blog/traffic-bonds-wilmington-blog';
+import {
+  SECURED_VS_CASH_ONLY_SLUG,
+  SECURED_VS_CASH_ONLY_TITLE,
+  SECURED_VS_CASH_ONLY_META_DESCRIPTION,
+  SECURED_VS_CASH_ONLY_IMAGE,
+  SECURED_VS_CASH_ONLY_THUMBNAIL,
+} from './blog/secured-bail-vs-cash-only-delaware-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -1198,7 +1205,7 @@ const SimoneHomePage = () => {
               <div className="local-seo-content text-center">
                 <h2>Local Bail Bondsman for Delaware Families</h2>
                 <p>
-                  A Way to Freedom is built for families searching for Delaware bail bonds, bail bondsman Delaware help, and urgent release guidance in Wilmington, Newark, New Castle County, and nearby communities. This homepage is the main page for broad Delaware bail bond searches; charge-specific pages explain felony, misdemeanor, secured, and surety situations separately.
+                  A Way to Freedom is built for families searching for Delaware bail bonds, bail bondsman Delaware help, and urgent release guidance in Wilmington, Newark, New Castle County, and nearby communities. This homepage is the main page for broad Delaware bail bond searches; charge-specific pages explain felony, misdemeanor, secured, and surety situations separately. Not sure which charge type applies? Read our guide to <a href="/blog/felony-vs-misdemeanor-bonds-delaware" onClick={(e) => {e.preventDefault(); navigate('/blog/felony-vs-misdemeanor-bonds-delaware');}}>felony vs. misdemeanor bonds in Delaware</a> before contacting an agent.
                 </p>
                 <div className="mt-4">
                   <span className="location-badge">
@@ -2331,7 +2338,8 @@ const ServiceDetailPage = ({ serviceKey, navigate }) => {
         { path: '/services/misdemeanor', label: 'misdemeanor bonds Delaware' },
         { path: '/services/secured', label: 'secured bail bond help' },
         { path: '/new-castle-county-bail-bonds', label: 'New Castle County bail bonds' },
-        { path: '/blog/how-to-bond-someone-out-of-jail-delaware', label: 'how to bond someone out of jail in Delaware' }
+        { path: '/blog/how-to-bond-someone-out-of-jail-delaware', label: 'how to bond someone out of jail in Delaware' },
+        { path: '/blog/felony-vs-misdemeanor-bonds-delaware', label: 'felony vs. misdemeanor bonds guide' }
       ]
     },
     misdemeanor: {
@@ -2362,7 +2370,8 @@ const ServiceDetailPage = ({ serviceKey, navigate }) => {
         { path: '/services/felony', label: 'felony bonds Delaware' },
         { path: '/services/secured', label: 'secured bail Delaware' },
         { path: '/blog/how-do-you-find-out-how-much-someones-bail-is', label: 'how to find out the bail amount' },
-        { path: '/newark-de-bail-bonds', label: 'Newark DE bail bonds' }
+        { path: '/newark-de-bail-bonds', label: 'Newark DE bail bonds' },
+        { path: '/blog/felony-vs-misdemeanor-bonds-delaware', label: 'felony vs. misdemeanor bonds guide' }
       ]
     },
     secured: {
@@ -3148,6 +3157,18 @@ const FAQPage = ({ navigate }) => {
 // ===============================================================================
 const blogPosts = [
   {
+    slug: SECURED_VS_CASH_ONLY_SLUG,
+    title: SECURED_VS_CASH_ONLY_TITLE,
+    excerpt: SECURED_VS_CASH_ONLY_META_DESCRIPTION,
+    category: 'Bail Types',
+    readTime: '13 min read',
+    date: '2026-08-12',
+    image: SECURED_VS_CASH_ONLY_THUMBNAIL,
+    heroImage: SECURED_VS_CASH_ONLY_IMAGE,
+    isMagazine: true,
+    content: '',
+  },
+  {
     slug: TRAFFIC_BONDS_WILMINGTON_SLUG,
     title: TRAFFIC_BONDS_WILMINGTON_TITLE,
     excerpt: TRAFFIC_BONDS_WILMINGTON_META_DESCRIPTION,
@@ -3314,83 +3335,6 @@ const blogPosts = [
     heroImage: HARDCODED_BLOG_IMAGE,
     isMagazine: true,
     content: '',
-  },
-  {
-    slug: 'felony-vs-misdemeanor-bonds-delaware',
-    title: 'Felony vs Misdemeanor Bonds: What You Need to Know in Delaware',
-    excerpt: 'Learn the key differences between felony and misdemeanor bail bonds in Delaware, including costs, requirements, and what to expect.',
-    category: 'Bail Types',
-    readTime: '6 min read',
-    date: '2026-03-06',
-    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=300&fit=crop',
-    content: `
-Felony vs Misdemeanor Bonds in Delaware
-
-Understanding the difference between felony and misdemeanor bonds is crucial when navigating the bail process in Delaware. Each type has different requirements, costs, and implications.
-
-What Are Misdemeanor Bonds?
-
-Misdemeanor bonds are for less serious offenses in Delaware. These typically include:
-
-- DUI/DWI charges
-- Simple assault
-- Theft under a certain dollar amount
-- Disorderly conduct
-- Traffic violations
-
-Characteristics of Misdemeanor Bonds:
-- Lower bail amounts (typically $500 - $10,000)
-- Faster processing time
-- Less stringent requirements
-- Lower premium costs in many cases, depending on the approved premium and bond amount
-
-What Are Felony Bonds?
-
-Felony bonds are for more serious criminal charges. In Delaware, felonies are classified from Class A (most serious) to Class E (least serious).
-
-Common Felony Charges:
-- Aggravated assault
-- Drug trafficking
-- Burglary
-- Robbery
-- Homicide
-
-Characteristics of Felony Bonds:
-- Higher bail amounts (often $10,000 - $500,000+)
-- More thorough background checks
-- May require collateral
-- Longer processing time
-- Higher premium costs in many cases because the bail amount may be higher
-
-Key Differences
-
-1. Bail AmountMisdemeanor bonds generally have lower bail amounts, making them more affordable for families. Felony bonds can be significantly higher, sometimes requiring collateral.
-
-2. Processing TimeMisdemeanor bonds can often be processed within hours. Felony bonds may take longer due to additional verification and documentation requirements.
-
-3. Collateral RequirementsFelony bonds are more likely to require collateral, especially for higher bail amounts. This could include property, vehicles, or other assets.
-
-4. Court Appearance RequirementsBoth require the defendant to appear at all court dates, but felony cases typically have more court appearances and stricter monitoring.
-
-What to Expect
-
-When working with A Way to Freedom Bail Bonds for either type of bond:
-
-- Professional Assessment: We'll evaluate the case and explain all options
-- Transparent Pricing: No hidden fees, clear premium structure
-- Fast Processing: We work quickly to secure release
-- 24/7 Availability: Available whenever you need us
-
-Getting Help in Newark, Delaware
-
-Whether facing misdemeanor or felony charges, Muhammad Zeeshan at A Way to Freedom Bail Bonds is here to help. We understand the stress families face and provide compassionate, professional service.
-
-Contact us 24/7 at (702) 447-8550 for immediate assistance.
-
----
-
-Disclaimer: This information is for educational purposes only and does not constitute legal advice.*
-    `
   },
   {
     slug: 'what-to-expect-when-someone-is-arrested',

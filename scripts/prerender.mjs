@@ -8,7 +8,7 @@ import { getRoutesFromSitemap } from './get-routes-from-sitemap.mjs';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
 const distDir = path.join(root, 'dist');
-const PREVIEW_PORT = 4173;
+const PREVIEW_PORT = Number(process.env.PRERENDER_PORT || 4173);
 const PREVIEW_URL = `http://127.0.0.1:${PREVIEW_PORT}`;
 
 const STATIC_ROUTES = getRoutesFromSitemap();

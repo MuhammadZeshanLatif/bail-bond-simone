@@ -13,6 +13,8 @@ import { FindBailAmountArticle } from './FindBailAmountArticle';
 import { UnsecuredBailArticle } from './UnsecuredBailArticle';
 import { BailBondCostDelawareArticle } from './BailBondCostDelawareArticle';
 import { TrafficBondsWilmingtonArticle } from './TrafficBondsWilmingtonArticle';
+import { SecuredVsCashOnlyArticle } from './SecuredVsCashOnlyArticle';
+import { FelonyVsMisdemeanorArticle } from './FelonyVsMisdemeanorArticle';
 import { LegacyMagazineArticle } from './LegacyMagazineArticle';
 import { MagazineToc } from './MagazineToc';
 import '../../../blog-magazine.css';
@@ -32,6 +34,8 @@ const ARTICLE_MAP = {
   'unsecured-bail': UnsecuredBailArticle,
   'bail-bond-cost-delaware': BailBondCostDelawareArticle,
   'traffic-bonds-wilmington': TrafficBondsWilmingtonArticle,
+  'secured-vs-cash-only': SecuredVsCashOnlyArticle,
+  'felony-vs-misdemeanor': FelonyVsMisdemeanorArticle,
 };
 
 const DEFAULT_BLOG_CTA = {

@@ -1,0 +1,15 @@
+export const SECURED_VS_CASH_ONLY_TOC = [
+  { id: 'section-intro', prefix: '1.', label: 'Quick Answer' },
+  { id: 'section-difference', prefix: '2.', label: 'Key Difference' },
+  { id: 'section-secured', prefix: '3.', label: 'How Secured Bail Works' },
+  { id: 'section-cash-only', prefix: '4.', label: 'How Cash-Only Bail Works' },
+  { id: 'section-compare', prefix: '5.', label: 'Side-by-Side Comparison' },
+  { id: 'section-agent', prefix: '6.', label: 'When an Agent Can Help' },
+  { id: 'section-cost', prefix: '7.', label: 'Cost & Responsibility' },
+  { id: 'section-after-release', prefix: '8.', label: 'After Release' },
+  { id: 'section-order', prefix: '9.', label: 'How to Read the Order' },
+  { id: 'section-mistakes', prefix: '10.', label: 'Mistakes to Avoid' },
+  { id: 'section-checklist', prefix: '11.', label: 'Family Checklist' },
+  { id: 'section-faq', prefix: '12.', label: 'FAQs' },
+  { id: 'section-final', prefix: '13.', label: 'Next Steps' },
+];

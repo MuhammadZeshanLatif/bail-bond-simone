@@ -23,7 +23,7 @@ export function SecuredVsCashOnlyArticle({ navigate, onContactClick }) {
         </p>
         <QuickAnswerBox>
           <p>
-            <strong>Quick answer:</strong> Secured bail requires the amount set by the court or approved security in that amount. Cash-only bail requires the designated amount to be paid to the court. In some secured-bail situations, a bail bondsman may be able to help; do not assume that a commercial bond can replace a cash-only order.
+            <strong>Quick answer:</strong> Secured bail requires the amount set by the court or approved security in that amount. Cash-only bail requires the designated amount to be paid to the court. A licensed bail bond agent may be able to help with either: for secured bail through a surety bond, and for cash-only bail by posting the full cash amount with the court on the family&apos;s behalf for a premium, subject to approval.
           </p>
         </QuickAnswerBox>
         <p>
@@ -61,11 +61,11 @@ export function SecuredVsCashOnlyArticle({ navigate, onContactClick }) {
           Cash-only bail means the designated amount must be paid to the court before release. Delaware Courts also notes that the defendant and any co-signer must sign the bond guaranteeing future court appearances.
         </p>
         <p>
-          Because the order specifies cash-only, do not treat it like a standard secured bond. Ask the court to confirm its accepted payment process, where payment must be made, and whether there are any time-sensitive release instructions. Keep copies of every receipt and court document.
+          Having a cash-only bail does not necessarily mean the family has to come up with the entire amount themselves. When a defendant has a cash-only bail, A Way to Freedom Bail Bonds may be able to post the full cash bail amount with the court on the defendant&apos;s behalf. In that situation, the family or indemnitor pays A Way to Freedom a non-refundable premium based on the total bail amount instead of paying the full designated amount directly to the court. This option is subject to approval and the requirements of the specific case, and a qualified cosigner/indemnitor is required and must complete our application and approval process.
         </p>
         <h3>Example: A Cash-Only Bail Order</h3>
         <p>
-          If the order says $2,500 cash only, do not assume a family can pay a bail-bond premium instead of the $2,500. Confirm directly with the court or detention facility how payment must be delivered and what identification, signatures, or receipts are required. A cash-only order is still a court order that includes future appearance obligations.
+          If the cash-only bail is $10,000, the family would pay a $3,000 premium (30% of the total bail amount), and A Way to Freedom would post the full $10,000 cash bail with the court. This example is illustrative — the exact premium and terms depend on the case. Confirm directly with the court or detention facility how payment must be delivered, and speak with a licensed agent to find out whether the case qualifies for this option before assuming the full amount must be paid out of pocket.
         </p>
       </section>
 
@@ -76,7 +76,7 @@ export function SecuredVsCashOnlyArticle({ navigate, onContactClick }) {
             <thead><tr><th>Question</th><th>Secured Bail</th><th>Cash-Only Bail</th></tr></thead>
             <tbody>
               <tr><td>What is required before release?</td><td>Designated amount or approved security.</td><td>Designated amount paid to the court.</td></tr>
-              <tr><td>May a bail bondsman be involved?</td><td>Possibly, when the order permits a surety bond.</td><td>Do not assume a surety bond can be used.</td></tr>
+              <tr><td>May a bail bondsman be involved?</td><td>Possibly, when the order permits a surety bond.</td><td>Possibly — an agent may post the full cash amount for a premium, subject to approval.</td></tr>
               <tr><td>What should the family verify?</td><td>Accepted security, agreement, and co-signer responsibility.</td><td>Payment method, court instructions, and receipts.</td></tr>
               <tr><td>Does release end the case?</td><td>No. The defendant must follow all release conditions and attend court.</td><td>No. The defendant must follow all release conditions and attend court.</td></tr>
             </tbody>
@@ -93,12 +93,12 @@ export function SecuredVsCashOnlyArticle({ navigate, onContactClick }) {
           A licensed bail bond agent may be able to help when the court has set secured bail and permits a surety bond. The agent reviews the bail type, amount, defendant information, and any co-signer or collateral requirements before deciding whether a bond can be posted. For a walkthrough of that process, read our guide on <a href="/blog/how-to-bond-someone-out-of-jail-delaware" onClick={(event) => handleNav(event, '/blog/how-to-bond-someone-out-of-jail-delaware')}>how to bond someone out of jail in Delaware</a>.
         </p>
         <p>
-          A cash-only order is different. A bail agent can still help a family understand the wording and organize the information they need, but the family should not rely on a commercial surety bond unless the court confirms that it is allowed. The court&apos;s order always controls.
+          A cash-only order works differently than a surety bond, but it does not automatically rule out help. A Way to Freedom may be able to post the full cash-only amount with the court on the family&apos;s behalf for a non-refundable premium, instead of the family paying the court directly. Whether this option is available depends on the court&apos;s order, the case details, and approval of a qualified cosigner/indemnitor through our application process.
         </p>
         <h3>Questions to Ask an Agent</h3>
         <ul>
-          <li>Does the written order allow a surety bond?</li>
-          <li>What information is needed to review the secured-bail situation?</li>
+          <li>Does the written order allow a surety bond, or can the full cash-only amount be posted for a premium?</li>
+          <li>What information is needed to review the secured-bail or cash-only situation?</li>
           <li>What premium, payment arrangement, collateral, or co-signer obligations apply?</li>
           <li>Who should be contacted if a court date or release condition changes?</li>
         </ul>
@@ -107,10 +107,10 @@ export function SecuredVsCashOnlyArticle({ navigate, onContactClick }) {
       <section id="section-cost">
         <h2>Cost, Collateral, and Financial Responsibility</h2>
         <p>
-          The full bail amount is not automatically the same as the cost of a surety bond. When a commercial bond is available, the family should receive a written explanation of the premium, payment arrangement, and any collateral requirement before signing. A premium paid to a bail agency is generally a service charge, while cash posted directly to the court follows the court&apos;s own procedures.
+          The full bail amount is not automatically what a family pays out of pocket. For secured bail, a surety bond premium is generally a non-refundable service charge, separate from the full bail amount. For cash-only bail, A Way to Freedom may be able to post the full amount with the court in exchange for a non-refundable premium based on the total bail amount, instead of the family paying the court directly. Either way, get a written explanation of the premium, payment arrangement, and any collateral requirement before signing.
         </p>
         <p>
-          With cash-only bail, the family should focus on the court&apos;s specific payment instructions and keep the receipt. Do not confuse a payment to the court with a bail-bond premium, and do not rely on verbal promises about refunds or release times. Our <a href="/blog/how-much-does-a-bail-bond-cost-in-delaware" onClick={(event) => handleNav(event, '/blog/how-much-does-a-bail-bond-cost-in-delaware')}>Delaware bail bond cost guide</a> explains the questions families should ask before entering a surety-bond agreement.
+          If a family instead pays a cash-only amount directly to the court, keep the receipt and follow the court&apos;s specific payment instructions. Do not rely on verbal promises about refunds or release times. Our <a href="/blog/how-much-does-a-bail-bond-cost-in-delaware" onClick={(event) => handleNav(event, '/blog/how-much-does-a-bail-bond-cost-in-delaware')}>Delaware bail bond cost guide</a> explains the questions families should ask before entering any bond or premium agreement.
         </p>
       </section>
 

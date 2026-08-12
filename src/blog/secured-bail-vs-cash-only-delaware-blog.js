@@ -53,9 +53,14 @@ export const SECURED_VS_CASH_ONLY_FAQS = [
       'In some secured bail situations, a licensed bail bondsman may be able to post approved security on the defendant’s behalf. The exact court order and circumstances control what is available.',
   },
   {
-    question: 'Can a surety bond replace a cash-only bail order?',
+    question: 'Can a bail bond replace a cash-only bail order?',
     answer:
-      'Do not assume so. A cash-only order requires payment to the court according to that order. Confirm the required payment method and procedure with the court before arranging funds.',
+      'A traditional surety bond does not replace a cash-only order — the court still requires the designated amount. However, A Way to Freedom may be able to post that full cash amount with the court on the family’s behalf for a non-refundable premium, subject to approval and a qualified cosigner/indemnitor. Speak with a licensed agent to confirm whether the case qualifies.',
+  },
+  {
+    question: 'How much does A Way to Freedom charge to post a cash-only bail?',
+    answer:
+      'Typically a 30% non-refundable premium based on the total bail amount — for example, a $3,000 premium on a $10,000 cash-only bail. Exact terms depend on the case and are confirmed during the application and approval process.',
   },
   {
     question: 'What should a co-signer confirm before posting bail?',

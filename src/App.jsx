@@ -108,6 +108,13 @@ import {
   SECURED_VS_CASH_ONLY_IMAGE,
   SECURED_VS_CASH_ONLY_THUMBNAIL,
 } from './blog/secured-bail-vs-cash-only-delaware-blog';
+import {
+  FELONY_VS_MISDEMEANOR_SLUG,
+  FELONY_VS_MISDEMEANOR_TITLE,
+  FELONY_VS_MISDEMEANOR_META_DESCRIPTION,
+  FELONY_VS_MISDEMEANOR_IMAGE,
+  FELONY_VS_MISDEMEANOR_THUMBNAIL,
+} from './blog/felony-vs-misdemeanor-bonds-delaware-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -3156,6 +3163,18 @@ const FAQPage = ({ navigate }) => {
 // BLOG DATA
 // ===============================================================================
 const blogPosts = [
+  {
+    slug: FELONY_VS_MISDEMEANOR_SLUG,
+    title: FELONY_VS_MISDEMEANOR_TITLE,
+    excerpt: FELONY_VS_MISDEMEANOR_META_DESCRIPTION,
+    category: 'Bail Types',
+    readTime: '12 min read',
+    date: '2026-08-13',
+    image: FELONY_VS_MISDEMEANOR_THUMBNAIL,
+    heroImage: FELONY_VS_MISDEMEANOR_IMAGE,
+    isMagazine: true,
+    content: '',
+  },
   {
     slug: SECURED_VS_CASH_ONLY_SLUG,
     title: SECURED_VS_CASH_ONLY_TITLE,

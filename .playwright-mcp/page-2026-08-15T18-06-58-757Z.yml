@@ -1,0 +1,298 @@
+- generic [ref=f40e2]:
+  - banner [ref=f40e3]:
+    - generic [ref=f40e5]:
+      - generic [ref=f40e6]:
+        - generic [ref=f40e7]: 
+        - generic [ref=f40e8]: Licensed & Bonded - Available 24/7
+      - generic [ref=f40e9]:
+        - generic [ref=f40e10]: 
+        - link "(702) 447-8550" [ref=f40e11] [cursor=pointer]:
+          - /url: tel:+17024478550
+        - generic [ref=f40e12]: "|"
+        - link "(302) 600-1886" [ref=f40e13] [cursor=pointer]:
+          - /url: tel:+13026001886
+    - navigation [ref=f40e14]:
+      - generic [ref=f40e15]:
+        - link [ref=f40e16] [cursor=pointer]:
+          - /url: /
+          - img "A Way to Freedom Bail Bonds" [ref=f40e17]
+        - text: 
+        - generic [ref=f40e18]:
+          - list [ref=f40e19]:
+            - listitem [ref=f40e20]:
+              - link "Home" [ref=f40e21] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f40e22]:
+              - button "Services " [ref=f40e23] [cursor=pointer]:
+                - text: Services
+                - generic [ref=f40e24]: 
+            - listitem [ref=f40e25]:
+              - link "About" [ref=f40e26] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f40e27]:
+              - link "How It Works" [ref=f40e28] [cursor=pointer]:
+                - /url: /how-it-works
+            - listitem [ref=f40e29]:
+              - link "FAQ" [ref=f40e30] [cursor=pointer]:
+                - /url: /faq
+            - listitem [ref=f40e31]:
+              - link "Blog" [ref=f40e32] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=f40e33]:
+              - link "Contact" [ref=f40e34] [cursor=pointer]:
+                - /url: /contact
+          - link " Call Now" [ref=f40e35] [cursor=pointer]:
+            - /url: tel:+17024478550
+            - generic [ref=f40e36]: 
+            - text: Call Now
+  - main [ref=f40e37]:
+    - generic [ref=f40e38]:
+      - generic [ref=f40e40]:
+        - heading "Bail Bond Resources & Blog" [level=1] [ref=f40e42]
+        - paragraph [ref=f40e43]: Helpful information and guides for families navigating the bail process in Delaware
+      - generic [ref=f40e46]:
+        - generic [ref=f40e47]:
+          - generic [ref=f40e48]:
+            - article [ref=f40e49]:
+              - img "How Much Is Bail for a DUI in Delaware? Family Cost Guide - Delaware bail guide" [ref=f40e50]
+              - generic [ref=f40e51]:
+                - generic [ref=f40e52]: Bail Types
+                - heading [level=4] [ref=f40e53]:
+                  - link "How Much Is Bail for a DUI in Delaware? Family Cost Guide" [ref=f40e54] [cursor=pointer]:
+                    - /url: "#/blog/dui-bail-bond-cost-delaware"
+                - paragraph [ref=f40e55]: How much is bail for a DUI in Delaware? Learn typical DUI bail amounts, the 5-10% bond premium, payment plans, the 15-day DMV deadline, and what to do after an arrest.
+                - generic [ref=f40e56]:
+                  - generic [ref=f40e57]:
+                    - generic [ref=f40e58]: 
+                    - text: 11 min read
+                  - generic [ref=f40e59]: 2026-08-15
+            - article [ref=f40e60]:
+              - 'img "Bail vs Bond in Delaware: What''s the Difference? - Delaware bail guide" [ref=f40e61]'
+              - generic [ref=f40e62]:
+                - generic [ref=f40e63]: Bail Types
+                - heading [level=4] [ref=f40e64]:
+                  - 'link "Bail vs Bond in Delaware: What''s the Difference?" [ref=f40e65] [cursor=pointer]':
+                    - /url: "#/blog/bail-vs-bond-delaware"
+                - paragraph [ref=f40e66]: What's the difference between bail and bond in Delaware? Learn how bail is set, how surety bonds work, what the premium is, and which option fits your family.
+                - generic [ref=f40e67]:
+                  - generic [ref=f40e68]:
+                    - generic [ref=f40e69]: 
+                    - text: 12 min read
+                  - generic [ref=f40e70]: 2026-08-15
+            - article [ref=f40e71]:
+              - 'img "Felony vs. Misdemeanor Bonds in Delaware: What Families Need to Know - Delaware bail guide" [ref=f40e72]'
+              - generic [ref=f40e73]:
+                - generic [ref=f40e74]: Bail Types
+                - heading [level=4] [ref=f40e75]:
+                  - 'link "Felony vs. Misdemeanor Bonds in Delaware: What Families Need to Know" [ref=f40e76] [cursor=pointer]':
+                    - /url: "#/blog/felony-vs-misdemeanor-bonds-delaware"
+                - paragraph [ref=f40e77]: Compare felony and misdemeanor bonds in Delaware. Learn which bail types apply, how bail is set, and what a bail bondsman can help with for each charge type.
+                - generic [ref=f40e78]:
+                  - generic [ref=f40e79]:
+                    - generic [ref=f40e80]: 
+                    - text: 12 min read
+                  - generic [ref=f40e81]: 2026-08-13
+            - article [ref=f40e82]:
+              - 'img "Secured Bail vs. Cash-Only Bail in Delaware: What Families Need to Know - Delaware bail guide" [ref=f40e83]'
+              - generic [ref=f40e84]:
+                - generic [ref=f40e85]: Bail Types
+                - heading [level=4] [ref=f40e86]:
+                  - 'link "Secured Bail vs. Cash-Only Bail in Delaware: What Families Need to Know" [ref=f40e87] [cursor=pointer]':
+                    - /url: "#/blog/secured-bail-vs-cash-only-bail-delaware"
+                - paragraph [ref=f40e88]: Compare secured bail and cash-only bail in Delaware. Learn what the court requires, whether a bail bondsman can help, and what to confirm before paying.
+                - generic [ref=f40e89]:
+                  - generic [ref=f40e90]:
+                    - generic [ref=f40e91]: 
+                    - text: 13 min read
+                  - generic [ref=f40e92]: 2026-08-12
+            - article [ref=f40e93]:
+              - 'img "Traffic Arrest Bail Bonds in Wilmington Delaware: A Complete Family Guide - Delaware bail guide" [ref=f40e94]'
+              - generic [ref=f40e95]:
+                - generic [ref=f40e96]: Bail Process
+                - heading [level=4] [ref=f40e97]:
+                  - 'link "Traffic Arrest Bail Bonds in Wilmington Delaware: A Complete Family Guide" [ref=f40e98] [cursor=pointer]':
+                    - /url: "#/blog/traffic-bail-bonds-wilmington-delaware"
+                - paragraph [ref=f40e99]: Need a traffic bail bond in Wilmington, Delaware? Learn about DUIs, suspended license arrests, JP Court 11, secured bonds, costs, and fast release options.
+                - generic [ref=f40e100]:
+                  - generic [ref=f40e101]:
+                    - generic [ref=f40e102]: 
+                    - text: 11 min read
+                  - generic [ref=f40e103]: 2026-08-06
+            - article [ref=f40e104]:
+              - img "How Much Does a Bail Bond Cost in Delaware? Simple Family Guide - Delaware bail guide" [ref=f40e105]
+              - generic [ref=f40e106]:
+                - generic [ref=f40e107]: Payment Options
+                - heading [level=4] [ref=f40e108]:
+                  - link "How Much Does a Bail Bond Cost in Delaware? Simple Family Guide" [ref=f40e109] [cursor=pointer]:
+                    - /url: "#/blog/how-much-does-a-bail-bond-cost-in-delaware"
+                - paragraph [ref=f40e110]: Wondering how much a bail bond costs in Delaware? Learn about filed premiums, payment plans, collateral, refunds, and what to ask before signing.
+                - generic [ref=f40e111]:
+                  - generic [ref=f40e112]:
+                    - generic [ref=f40e113]: 
+                    - text: 12 min read
+                  - generic [ref=f40e114]: 2026-07-30
+          - generic [ref=f40e115]:
+            - generic [ref=f40e116]:
+              - button " Previous" [disabled] [ref=f40e117]:
+                - generic [ref=f40e118]: 
+                - text: Previous
+              - generic [ref=f40e119]:
+                - button "1" [ref=f40e120] [cursor=pointer]
+                - button "2" [ref=f40e121] [cursor=pointer]
+                - button "3" [ref=f40e122] [cursor=pointer]
+                - button "4" [ref=f40e123] [cursor=pointer]
+              - button "Next " [ref=f40e124] [cursor=pointer]:
+                - text: Next
+                - generic [ref=f40e125]: 
+            - paragraph [ref=f40e126]: Showing 1-6 of 22 posts
+        - complementary [ref=f40e127]:
+          - generic [ref=f40e128]:
+            - heading "Search" [level=4] [ref=f40e129]
+            - textbox "Search articles..." [ref=f40e130]
+          - generic [ref=f40e131]:
+            - heading "Categories" [level=4] [ref=f40e132]
+            - list [ref=f40e133]:
+              - listitem [ref=f40e134]:
+                - link "All Categories (22)" [ref=f40e135] [cursor=pointer]:
+                  - /url: "#"
+                  - text: All Categories
+                  - generic [ref=f40e136]: (22)
+              - listitem [ref=f40e137]:
+                - link "Bail Types (6)" [ref=f40e138] [cursor=pointer]:
+                  - /url: "#"
+                  - text: Bail Types
+                  - generic [ref=f40e139]: (6)
+              - listitem [ref=f40e140]:
+                - link "Bail Process (8)" [ref=f40e141] [cursor=pointer]:
+                  - /url: "#"
+                  - text: Bail Process
+                  - generic [ref=f40e142]: (8)
+              - listitem [ref=f40e143]:
+                - link "Payment Options (1)" [ref=f40e144] [cursor=pointer]:
+                  - /url: "#"
+                  - text: Payment Options
+                  - generic [ref=f40e145]: (1)
+              - listitem [ref=f40e146]:
+                - link "Bail Bonds (2)" [ref=f40e147] [cursor=pointer]:
+                  - /url: "#"
+                  - text: Bail Bonds
+                  - generic [ref=f40e148]: (2)
+              - listitem [ref=f40e149]:
+                - link "Cash Bond Meaning (1)" [ref=f40e150] [cursor=pointer]:
+                  - /url: "#"
+                  - text: Cash Bond Meaning
+                  - generic [ref=f40e151]: (1)
+              - listitem [ref=f40e152]:
+                - link "Family Guide (1)" [ref=f40e153] [cursor=pointer]:
+                  - /url: "#"
+                  - text: Family Guide
+                  - generic [ref=f40e154]: (1)
+              - listitem [ref=f40e155]:
+                - link "Legal Information (2)" [ref=f40e156] [cursor=pointer]:
+                  - /url: "#"
+                  - text: Legal Information
+                  - generic [ref=f40e157]: (2)
+              - listitem [ref=f40e158]:
+                - link "Tips & Advice (1)" [ref=f40e159] [cursor=pointer]:
+                  - /url: "#"
+                  - text: Tips & Advice
+                  - generic [ref=f40e160]: (1)
+          - generic [ref=f40e161]:
+            - heading "Recent Posts" [level=4] [ref=f40e162]
+            - generic [ref=f40e163]:
+              - link "How Much Is Bail for a DUI in Delaware? Family Cost Guide How Much Is Bail for a DUI in Delaware? Family Cost Guide How much is bail for a DUI in Delaware? Learn typical DUI bail amounts, the 5-10...  2026-08-15" [ref=f40e165] [cursor=pointer]:
+                - /url: "#/blog/dui-bail-bond-cost-delaware"
+                - img "How Much Is Bail for a DUI in Delaware? Family Cost Guide" [ref=f40e167]
+                - generic [ref=f40e168]:
+                  - heading "How Much Is Bail for a DUI in Delaware? Family Cost Guide" [level=5] [ref=f40e169]
+                  - paragraph [ref=f40e170]: How much is bail for a DUI in Delaware? Learn typical DUI bail amounts, the 5-10...
+                  - generic [ref=f40e171]:
+                    - generic [ref=f40e172]: 
+                    - text: 2026-08-15
+              - 'link "Bail vs Bond in Delaware: What''s the Difference? Bail vs Bond in Delaware: What''s the Difference? What''s the difference between bail and bond in Delaware? Learn how bail is set, ...  2026-08-15" [ref=f40e174] [cursor=pointer]':
+                - /url: "#/blog/bail-vs-bond-delaware"
+                - 'img "Bail vs Bond in Delaware: What''s the Difference?" [ref=f40e176]'
+                - generic [ref=f40e177]:
+                  - 'heading "Bail vs Bond in Delaware: What''s the Difference?" [level=5] [ref=f40e178]'
+                  - paragraph [ref=f40e179]: What's the difference between bail and bond in Delaware? Learn how bail is set, ...
+                  - generic [ref=f40e180]:
+                    - generic [ref=f40e181]: 
+                    - text: 2026-08-15
+              - 'link "Felony vs. Misdemeanor Bonds in Delaware: What Families Need to Know Felony vs. Misdemeanor Bonds in Delaware: What Families Need to Know Compare felony and misdemeanor bonds in Delaware. Learn which bail types apply, ...  2026-08-13" [ref=f40e183] [cursor=pointer]':
+                - /url: "#/blog/felony-vs-misdemeanor-bonds-delaware"
+                - 'img "Felony vs. Misdemeanor Bonds in Delaware: What Families Need to Know" [ref=f40e185]'
+                - generic [ref=f40e186]:
+                  - 'heading "Felony vs. Misdemeanor Bonds in Delaware: What Families Need to Know" [level=5] [ref=f40e187]'
+                  - paragraph [ref=f40e188]: Compare felony and misdemeanor bonds in Delaware. Learn which bail types apply, ...
+                  - generic [ref=f40e189]:
+                    - generic [ref=f40e190]: 
+                    - text: 2026-08-13
+              - 'link "Secured Bail vs. Cash-Only Bail in Delaware: What Families Need to Know Secured Bail vs. Cash-Only Bail in Delaware: What Families Need to Know Compare secured bail and cash-only bail in Delaware. Learn what the court requir...  2026-08-12" [ref=f40e192] [cursor=pointer]':
+                - /url: "#/blog/secured-bail-vs-cash-only-bail-delaware"
+                - 'img "Secured Bail vs. Cash-Only Bail in Delaware: What Families Need to Know" [ref=f40e194]'
+                - generic [ref=f40e195]:
+                  - 'heading "Secured Bail vs. Cash-Only Bail in Delaware: What Families Need to Know" [level=5] [ref=f40e196]'
+                  - paragraph [ref=f40e197]: Compare secured bail and cash-only bail in Delaware. Learn what the court requir...
+                  - generic [ref=f40e198]:
+                    - generic [ref=f40e199]: 
+                    - text: 2026-08-12
+              - 'link "Traffic Arrest Bail Bonds in Wilmington Delaware: A Complete Family Guide Traffic Arrest Bail Bonds in Wilmington Delaware: A Complete Family Guide Need a traffic bail bond in Wilmington, Delaware? Learn about DUIs, suspended li...  2026-08-06" [ref=f40e201] [cursor=pointer]':
+                - /url: "#/blog/traffic-bail-bonds-wilmington-delaware"
+                - 'img "Traffic Arrest Bail Bonds in Wilmington Delaware: A Complete Family Guide" [ref=f40e203]'
+                - generic [ref=f40e204]:
+                  - 'heading "Traffic Arrest Bail Bonds in Wilmington Delaware: A Complete Family Guide" [level=5] [ref=f40e205]'
+                  - paragraph [ref=f40e206]: Need a traffic bail bond in Wilmington, Delaware? Learn about DUIs, suspended li...
+                  - generic [ref=f40e207]:
+                    - generic [ref=f40e208]: 
+                    - text: 2026-08-06
+          - generic [ref=f40e209]:
+            - heading "Need Bail Help Now?" [level=4] [ref=f40e210]
+            - paragraph [ref=f40e211]: We're available 24/7 to assist you with bail bond services in Delaware.
+            - link " Call Now" [ref=f40e212] [cursor=pointer]:
+              - /url: tel:+17024478550
+              - generic [ref=f40e213]: 
+              - text: Call Now
+            - link "Start Bail Process" [ref=f40e214] [cursor=pointer]:
+              - /url: /contact
+            - paragraph [ref=f40e215]:
+              - generic [ref=f40e216]: 
+              - text: Newark, Delaware • New Castle County • Kent County
+  - contentinfo [ref=f40e217]:
+    - generic [ref=f40e219]:
+      - generic [ref=f40e220]:
+        - generic [ref=f40e221]: 
+        - text: Serving
+        - link "New Castle County bail bonds" [ref=f40e222] [cursor=pointer]:
+          - /url: /new-castle-county-bail-bonds
+        - text: "&"
+        - link "Kent County, Delaware" [ref=f40e223] [cursor=pointer]:
+          - /url: /service-areas
+      - paragraph [ref=f40e224]: Licensed Bail Bond Services • Confidential & Professional Assistance • Available 24/7
+      - generic [ref=f40e225]:
+        - link "Facebook" [ref=f40e226] [cursor=pointer]:
+          - /url: https://www.facebook.com/people/A-Way-to-Freedom-Bail-Bonds/100094085200363/
+          - generic [ref=f40e227]: 
+        - link "Instagram" [ref=f40e228] [cursor=pointer]:
+          - /url: https://www.instagram.com
+          - generic [ref=f40e229]: 
+        - link "Email" [ref=f40e230] [cursor=pointer]:
+          - /url: mailto:away2freedom302@gmail.com
+          - generic [ref=f40e231]: 
+      - paragraph [ref=f40e233]: © 2026 A Way to Freedom Bail Bonds. All rights reserved.
+  - generic [ref=f40e234]:
+    - link "Chat on WhatsApp" [ref=f40e235] [cursor=pointer]:
+      - /url: https://wa.me/13029819223?text=Hi%20Simone%2C%20I%20need%20help%20with%20bail%20bond%20services.%20Please%20let%20me%20know%20how%20you%20can%20assist%20me.
+      - generic [ref=f40e236]: 
+    - link "Call Now" [ref=f40e237] [cursor=pointer]:
+      - /url: tel:+17024478550
+      - generic [ref=f40e238]: 
+  - generic [ref=f40e239]:
+    - link "Facebook" [ref=f40e240] [cursor=pointer]:
+      - /url: https://www.facebook.com/people/A-Way-to-Freedom-Bail-Bonds/100094085200363/
+      - generic [ref=f40e241]: 
+    - link "Instagram" [ref=f40e242] [cursor=pointer]:
+      - /url: https://www.instagram.com
+      - generic [ref=f40e243]: 
+    - link "Email" [ref=f40e244] [cursor=pointer]:
+      - /url: mailto:away2freedom302@gmail.com
+      - generic [ref=f40e245]: 

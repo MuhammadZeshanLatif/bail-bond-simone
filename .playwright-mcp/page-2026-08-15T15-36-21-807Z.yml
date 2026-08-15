@@ -1,0 +1,140 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e2]:
+    - button "Skip to content" [ref=f1e4]
+    - banner [ref=f1e7]:
+      - navigation [ref=f1e10]:
+        - menubar [ref=f1e11]:
+          - menuitem "More" [ref=f1e12] [cursor=pointer]
+          - menuitem "My profile" [ref=f1e13] [cursor=pointer]
+    - navigation [ref=f1e17]:
+      - generic [ref=f1e18]:
+        - list [ref=f1e19]:
+          - listitem [ref=f1e20]:
+            - link "Home" [ref=f1e21] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/home/
+          - listitem [ref=f1e26]:
+            - link "SEO" [ref=f1e27] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/seo/
+        - list [ref=f1e32]:
+          - listitem [ref=f1e33]:
+            - link "AI" [ref=f1e34] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/ai-seo/overview/
+          - listitem [ref=f1e39]:
+            - link "Traffic & Market" [ref=f1e40] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/traffic/
+          - listitem [ref=f1e44]:
+            - link "Local" [ref=f1e45] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/local-business/
+          - listitem [ref=f1e50]:
+            - link "Content" [ref=f1e51] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/content/
+          - listitem [ref=f1e56]:
+            - link "Ad" [ref=f1e57] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/advertising/
+          - listitem [ref=f1e63]:
+            - link "AI PR" [ref=f1e64] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/pr-toolkit/
+          - listitem [ref=f1e68]:
+            - link "Social" [ref=f1e69] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/social-media/
+        - list [ref=f1e76]:
+          - listitem [ref=f1e77]:
+            - link "Reports" [ref=f1e78] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/my_reports/grid/
+          - listitem [ref=f1e82]:
+            - link "Apps" [ref=f1e83] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/apps/
+      - generic [ref=f1e90]:
+        - generic [ref=f1e91]: SEO
+        - list [ref=f1e93]:
+          - listitem [ref=f1e94]:
+            - link "Dashboard" [ref=f1e96] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/seo/
+        - list [ref=f1e98]:
+          - listitem [ref=f1e99]:
+            - generic [ref=f1e100]: Site Performance
+          - listitem [ref=f1e101]:
+            - link "Site Audit" [ref=f1e103] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/siteaudit/
+          - listitem [ref=f1e104]:
+            - link "Position Tracking" [ref=f1e106] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/position-tracking/
+        - list [ref=f1e108]:
+          - listitem [ref=f1e109]:
+            - generic [ref=f1e110]: Competitive Analysis
+          - listitem [ref=f1e111]:
+            - link "Domain Overview" [ref=f1e113] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/overview/
+          - listitem [ref=f1e114]:
+            - link "Organic Rankings" [ref=f1e116] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/organic/overview
+          - listitem [ref=f1e117]:
+            - link "Top Pages" [ref=f1e119] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/toppages/
+          - listitem [ref=f1e120]:
+            - link "Compare Domains" [ref=f1e122] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/comparedomains/
+          - listitem [ref=f1e123]:
+            - link "Keyword Gap" [ref=f1e125] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/keywordgap/
+          - listitem [ref=f1e126]:
+            - link "Backlink Gap" [ref=f1e128] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/gap/backlinks/
+        - list [ref=f1e130]:
+          - listitem [ref=f1e131]:
+            - generic [ref=f1e132]: Keyword Research
+          - listitem [ref=f1e133]:
+            - link "Keyword Overview" [ref=f1e135] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/keywordoverview/
+          - listitem [ref=f1e136]:
+            - link "Keyword Magic Tool" [ref=f1e138] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/keywordmagic/
+          - listitem [ref=f1e139]:
+            - link "Keyword Strategy Builder" [ref=f1e141] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/keywordmanager/
+        - list [ref=f1e143]:
+          - listitem [ref=f1e144]:
+            - generic [ref=f1e145]: Content Ideas
+          - listitem [ref=f1e146]:
+            - link "SEO Writing Assistant" [ref=f1e148] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/swa/
+          - listitem [ref=f1e149]:
+            - link "Topic Research" [ref=f1e151] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/topic-research/
+        - list [ref=f1e153]:
+          - listitem [ref=f1e154]:
+            - generic [ref=f1e155]: Link Building
+          - listitem [ref=f1e156]:
+            - link "Backlinks" [ref=f1e158] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/backlinks/overview/
+          - listitem [ref=f1e159]:
+            - link "Referring Domains" [ref=f1e161] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/refdomains/report/
+          - listitem [ref=f1e162]:
+            - link "Backlink Audit" [ref=f1e164] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/backlink_audit/
+        - list [ref=f1e166]:
+          - listitem [ref=f1e167]:
+            - generic [ref=f1e168]: Extras
+          - listitem [ref=f1e169]:
+            - link "Sensor" [ref=f1e171] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/sensor/?utm_medium=footer&utm_source=semrush
+          - listitem [ref=f1e172]:
+            - link "SEOquake" [ref=f1e174] [cursor=pointer]:
+              - /url: https://www.seoquake.com/
+          - listitem [ref=f1e175]:
+            - link "Semrush Rank" [ref=f1e177] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/ranks/rank/
+        - list [ref=f1e179]:
+          - listitem [ref=f1e180]:
+            - generic [ref=f1e181]: Other
+          - listitem [ref=f1e182]:
+            - link "On Page SEO Checker" [ref=f1e184] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/on-page-seo-checker/
+          - listitem [ref=f1e185]:
+            - link "Organic Traffic Insights" [ref=f1e187] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/organic_traffic_insights/
+      - button "Hide navigation" [expanded] [ref=f1e189] [cursor=pointer]
+    - main [ref=f1e194]:
+      - img "Loading…" [ref=f1e198]
+  - region "Notifications"

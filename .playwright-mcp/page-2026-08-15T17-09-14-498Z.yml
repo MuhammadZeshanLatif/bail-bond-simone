@@ -1,0 +1,356 @@
+- generic [active] [ref=f8e1]:
+  - link "Skip to content" [ref=f8e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f8e6]:
+    - generic [ref=f8e8]:
+      - navigation "Sidebar" [ref=f8e9]:
+        - button "Open sidebar" [ref=f8e13]
+        - generic [ref=f8e19]:
+          - link "New chat" [ref=f8e21] [cursor=pointer]:
+            - /url: /
+          - button "Search" [ref=f8e28] [cursor=pointer]
+          - button "Pinned" [ref=f8e35] [cursor=pointer]
+          - button "Recents" [ref=f8e42] [cursor=pointer]
+        - button "Open profile menu" [ref=f8e50] [cursor=pointer]:
+          - img "Profile image" [ref=f8e53]
+      - generic:
+        - heading "Chat history" [level=2]
+        - generic:
+          - navigation "Chat history":
+            - generic:
+              - generic:
+                - generic:
+                  - link "Home":
+                    - /url: /
+                    - generic: ChatGPT Go
+                  - generic:
+                    - button "Search"
+                    - button "Close sidebar"
+            - generic:
+              - list:
+                - listitem:
+                  - link "New chat Control Shift O":
+                    - /url: /
+                    - generic: New chat
+                    - generic:
+                      - generic:
+                        - generic "Control":
+                          - generic: Ctrl
+                          - text: +
+                        - generic "Shift": +
+                        - generic: O
+                - listitem
+            - link "Library":
+              - /url: /library?entry_point=sidebar
+            - link "Projects New project":
+              - /url: /projects
+              - generic: Projects
+              - button "New project" [ref=f8e54] [cursor=pointer]
+            - link "Scheduled":
+              - /url: /scheduled
+            - link "Plugins":
+              - /url: /plugins
+            - generic: More
+            - generic:
+              - generic:
+                - button "Pinned" [expanded]:
+                  - heading "Pinned" [level=2]
+              - list:
+                - listitem:
+                  - link "SEO Article Setup Bail Bond, pinned conversation":
+                    - /url: /c/6a3b4790-7e00-83ee-a8cc-a41d75c37dd7
+                    - generic: SEO Article Setup Bail Bond
+                    - generic:
+                      - generic:
+                        - button "Unpin SEO Article Setup Bail Bond" [ref=f8e58] [cursor=pointer]
+                        - button "Open conversation options for SEO Article Setup Bail Bond" [ref=f8e62] [cursor=pointer]
+                - listitem:
+                  - link "Instagram Viewer कमेंट सुझाव, pinned conversation":
+                    - /url: /c/6a5004a4-f564-83e8-8a7d-f808688c41bc
+                    - generic: Instagram Viewer कमेंट सुझाव
+                    - generic:
+                      - generic:
+                        - button "Unpin Instagram Viewer कमेंट सुझाव" [ref=f8e66] [cursor=pointer]
+                        - button "Open conversation options for Instagram Viewer कमेंट सुझाव" [ref=f8e70] [cursor=pointer]
+            - generic:
+              - generic:
+                - button "Recents" [expanded]:
+                  - heading "Recents" [level=2]
+                - generic:
+                  - link "New chat" [ref=f8e74] [cursor=pointer]:
+                    - /url: /
+                  - button "Organize chats" [ref=f8e78] [cursor=pointer]
+              - generic:
+                - list:
+                  - listitem:
+                    - link "Image Text Edit Request":
+                      - /url: /c/6a809c8b-c704-83e9-9ad3-a9f1fefa20b7
+                      - generic:
+                        - generic:
+                          - button "Pin Image Text Edit Request" [ref=f8e580] [cursor=pointer]
+                          - button "Open conversation options for Image Text Edit Request" [ref=f8e581] [cursor=pointer]
+                  - listitem:
+                    - link "Codex se kaam karna":
+                      - /url: /c/6a7eeaec-fb5c-83ee-8e3b-853a3627436b
+                      - generic:
+                        - generic:
+                          - button "Pin Codex se kaam karna" [ref=f8e82] [cursor=pointer]
+                          - button "Open conversation options for Codex se kaam karna" [ref=f8e86] [cursor=pointer]
+                  - listitem:
+                    - link "Codex Limit in Plus":
+                      - /url: /c/6a7e27b7-89fc-83e9-b1fb-067b98f182b4
+                      - generic:
+                        - generic:
+                          - button "Pin Codex Limit in Plus" [ref=f8e90] [cursor=pointer]
+                          - button "Open conversation options for Codex Limit in Plus" [ref=f8e94] [cursor=pointer]
+                  - listitem:
+                    - link "Squarespace Font CSS Comment":
+                      - /url: /c/6a72e6fa-3bdc-83ee-89d6-94fc95c9f21d
+                      - generic:
+                        - generic:
+                          - button "Pin Squarespace Font CSS Comment" [ref=f8e98] [cursor=pointer]
+                          - button "Open conversation options for Squarespace Font CSS Comment" [ref=f8e102] [cursor=pointer]
+                  - listitem:
+                    - link "Inverter Fault Resolution":
+                      - /url: /c/6a7a843e-69ec-83e8-9374-37ea473c7a31
+                      - generic:
+                        - generic:
+                          - button "Pin Inverter Fault Resolution" [ref=f8e106] [cursor=pointer]
+                          - button "Open conversation options for Inverter Fault Resolution" [ref=f8e110] [cursor=pointer]
+                  - listitem:
+                    - link "Bimbo Aesthetic Empowerment":
+                      - /url: /c/6a6be1a9-d790-83ee-add5-2c96bd501f5f
+                      - generic:
+                        - generic:
+                          - button "Pin Bimbo Aesthetic Empowerment" [ref=f8e114] [cursor=pointer]
+                          - button "Open conversation options for Bimbo Aesthetic Empowerment" [ref=f8e118] [cursor=pointer]
+                  - listitem:
+                    - link "वेबसाइट कमेंट्स लिस्ट":
+                      - /url: /c/6a67b3e7-8738-83ee-b759-815be0697f9c
+                      - generic:
+                        - generic:
+                          - button "Pin वेबसाइट कमेंट्स लिस्ट" [ref=f8e122] [cursor=pointer]
+                          - button "Open conversation options for वेबसाइट कमेंट्स लिस्ट" [ref=f8e126] [cursor=pointer]
+                  - listitem:
+                    - link "Komenting aur SEO":
+                      - /url: /c/6a6bdb59-5ccc-83e9-b167-519252f34e17
+                      - generic:
+                        - generic:
+                          - button "Pin Komenting aur SEO" [ref=f8e130] [cursor=pointer]
+                          - button "Open conversation options for Komenting aur SEO" [ref=f8e134] [cursor=pointer]
+                  - listitem:
+                    - link "Email Sign-Off Analysis":
+                      - /url: /c/6a664e64-6850-83e8-93a4-3b9d10b2bd21
+                      - generic:
+                        - generic:
+                          - button "Pin Email Sign-Off Analysis" [ref=f8e138] [cursor=pointer]
+                          - button "Open conversation options for Email Sign-Off Analysis" [ref=f8e142] [cursor=pointer]
+                  - listitem:
+                    - link "Homepage Analysis Aur Comments":
+                      - /url: /c/6a6503a9-9218-83ee-8df7-80834fe49104
+                      - generic:
+                        - generic:
+                          - button "Pin Homepage Analysis Aur Comments" [ref=f8e146] [cursor=pointer]
+                          - button "Open conversation options for Homepage Analysis Aur Comments" [ref=f8e150] [cursor=pointer]
+                  - listitem:
+                    - link "Page Analysis Summary":
+                      - /url: /g/g-6a460d6af158819197862f5c47788f25-backlink-agent/c/6a650378-7820-83ee-b659-35e1a0120840
+                      - generic:
+                        - generic:
+                          - button "Pin Page Analysis Summary" [ref=f8e154] [cursor=pointer]
+                          - button "Open conversation options for Page Analysis Summary" [ref=f8e158] [cursor=pointer]
+                  - listitem:
+                    - link "Website URL aur comment":
+                      - /url: /g/g-6a57f51885b08191a40062e556d318ae-backlink-agent/c/6a6239ac-d67c-83ee-83ea-011ad4f70375
+                      - generic:
+                        - generic:
+                          - button "Pin Website URL aur comment" [ref=f8e162] [cursor=pointer]
+                          - button "Open conversation options for Website URL aur comment" [ref=f8e166] [cursor=pointer]
+                  - listitem:
+                    - link "Website comment suggestion":
+                      - /url: /c/6a614679-6448-83e8-9413-125f5a1b05e2
+                      - generic:
+                        - generic:
+                          - button "Pin Website comment suggestion" [ref=f8e170] [cursor=pointer]
+                          - button "Open conversation options for Website comment suggestion" [ref=f8e174] [cursor=pointer]
+                  - listitem:
+                    - link "Comment Writing Request":
+                      - /url: /c/6a5d33a2-1440-83e8-b1f5-4a532e9e7a33
+                      - generic:
+                        - generic:
+                          - button "Pin Comment Writing Request" [ref=f8e178] [cursor=pointer]
+                          - button "Open conversation options for Comment Writing Request" [ref=f8e182] [cursor=pointer]
+                  - listitem:
+                    - link "वेबसाइट कमेंट लेखन सलाह":
+                      - /url: /c/6a612e29-affc-83e8-a697-803bf84ded5b
+                      - generic:
+                        - generic:
+                          - button "Pin वेबसाइट कमेंट लेखन सलाह" [ref=f8e186] [cursor=pointer]
+                          - button "Open conversation options for वेबसाइट कमेंट लेखन सलाह" [ref=f8e190] [cursor=pointer]
+                  - listitem:
+                    - link "कैसे लिखें कमेंट":
+                      - /url: /c/6a612d15-b5b8-83e8-a1fe-f403fce82a97
+                      - generic:
+                        - generic:
+                          - button "Pin कैसे लिखें कमेंट" [ref=f8e194] [cursor=pointer]
+                          - button "Open conversation options for कैसे लिखें कमेंट" [ref=f8e198] [cursor=pointer]
+                  - listitem:
+                    - link "Website Analysis and Comment":
+                      - /url: /c/6a5ff168-d5d4-83e8-876d-d216a1d3eb4f
+                      - generic:
+                        - generic:
+                          - button "Pin Website Analysis and Comment" [ref=f8e202] [cursor=pointer]
+                          - button "Open conversation options for Website Analysis and Comment" [ref=f8e206] [cursor=pointer]
+                  - listitem:
+                    - link "Educational Purpose Link Advice":
+                      - /url: /c/6a6121a3-80e4-83e8-a3c7-ebcd91b24038
+                      - generic:
+                        - generic:
+                          - button "Pin Educational Purpose Link Advice" [ref=f8e210] [cursor=pointer]
+                          - button "Open conversation options for Educational Purpose Link Advice" [ref=f8e214] [cursor=pointer]
+                  - listitem:
+                    - link "Kommenट लिखने की सलाह":
+                      - /url: /c/6a612165-9000-83ee-afd1-cc681fead513
+                      - generic:
+                        - generic:
+                          - button "Pin Kommenट लिखने की सलाह" [ref=f8e218] [cursor=pointer]
+                          - button "Open conversation options for Kommenट लिखने की सलाह" [ref=f8e222] [cursor=pointer]
+                  - listitem:
+                    - link "वेबसाइट लिंक साझा करना":
+                      - /url: /c/6a611d9a-a1c8-83e8-b419-2d4d1d20f887
+                      - generic:
+                        - generic:
+                          - button "Pin वेबसाइट लिंक साझा करना" [ref=f8e226] [cursor=pointer]
+                          - button "Open conversation options for वेबसाइट लिंक साझा करना" [ref=f8e230] [cursor=pointer]
+                  - listitem:
+                    - link "वायरस चैप्टर डिजाइन":
+                      - /url: /c/6a611bd7-adbc-83ee-8c17-ab9b9ebb6d99
+                      - generic:
+                        - generic:
+                          - button "Pin वायरस चैप्टर डिजाइन" [ref=f8e234] [cursor=pointer]
+                          - button "Open conversation options for वायरस चैप्टर डिजाइन" [ref=f8e238] [cursor=pointer]
+                  - listitem:
+                    - link "सड़क सुरक्षा जागरूकता":
+                      - /url: /c/6a6112c8-7c40-83ee-bbd2-ab2ddd291885
+                      - generic:
+                        - generic:
+                          - button "Pin सड़क सुरक्षा जागरूकता" [ref=f8e242] [cursor=pointer]
+                          - button "Open conversation options for सड़क सुरक्षा जागरूकता" [ref=f8e246] [cursor=pointer]
+                  - listitem:
+                    - link "कमेंट में लिंक जोड़ना":
+                      - /url: /c/6a611293-f560-83ee-9de5-45b02b9d5cd3
+                      - generic:
+                        - generic:
+                          - button "Pin कमेंट में लिंक जोड़ना" [ref=f8e250] [cursor=pointer]
+                          - button "Open conversation options for कमेंट में लिंक जोड़ना" [ref=f8e254] [cursor=pointer]
+                  - listitem:
+                    - link "Strawberry-Rhubarb Pie Analysis":
+                      - /url: /c/6a5ff0e6-d118-83ee-aae1-1ac3bfd37675
+                      - generic:
+                        - generic:
+                          - button "Pin Strawberry-Rhubarb Pie Analysis" [ref=f8e258] [cursor=pointer]
+                          - button "Open conversation options for Strawberry-Rhubarb Pie Analysis" [ref=f8e262] [cursor=pointer]
+                  - listitem:
+                    - link "वेबसाइट विश्लेषण और टिप्पणी":
+                      - /url: /g/g-6a460d6af158819197862f5c47788f25-backlink-agent/c/6a5ff07c-1e6c-83ee-9e88-f93301986e80
+                      - generic:
+                        - generic:
+                          - button "Pin वेबसाइट विश्लेषण और टिप्पणी" [ref=f8e266] [cursor=pointer]
+                          - button "Open conversation options for वेबसाइट विश्लेषण और टिप्पणी" [ref=f8e270] [cursor=pointer]
+                  - listitem:
+                    - link "Comment Writing for Article":
+                      - /url: /c/6a5e7e1d-e2e4-83ee-a238-5901b3637caa
+                      - generic:
+                        - generic:
+                          - button "Pin Comment Writing for Article" [ref=f8e274] [cursor=pointer]
+                          - button "Open conversation options for Comment Writing for Article" [ref=f8e278] [cursor=pointer]
+                  - listitem:
+                    - link "Comment writing help":
+                      - /url: /c/6a5e872a-a014-83ee-842c-04788f7762a0
+                      - generic:
+                        - generic:
+                          - button "Pin Comment writing help" [ref=f8e282] [cursor=pointer]
+                          - button "Open conversation options for Comment writing help" [ref=f8e286] [cursor=pointer]
+                  - listitem:
+                    - link "Comment Writing and Backlink":
+                      - /url: /c/6a5e864f-1814-83e8-a260-3d2ec3078886
+                      - generic:
+                        - generic:
+                          - button "Pin Comment Writing and Backlink" [ref=f8e290] [cursor=pointer]
+                          - button "Open conversation options for Comment Writing and Backlink" [ref=f8e294] [cursor=pointer]
+          - generic:
+            - generic:
+              - button "Muhammad Zeeshan Latif Go, open profile menu":
+                - generic:
+                  - generic:
+                    - generic:
+                      - img "Profile image"
+                  - generic:
+                    - generic: Muhammad Zeeshan Latif
+                    - generic: Go
+                - button "Download apps" [ref=f8e306] [cursor=pointer]
+    - generic [ref=f8e312]:
+      - generic [ref=f8e313]:
+        - banner:
+          - generic [ref=f8e316]:
+            - button "Share" [ref=f8e551] [cursor=pointer]
+            - button "More" [ref=f8e556] [cursor=pointer]
+      - main [ref=f8e327]:
+        - generic [ref=f8e476]:
+          - generic [ref=f8e478]:
+            - generic [ref=f8e479]:
+              - generic [ref=f8e481]:
+                - heading "You said:" [level=4] [ref=f8e482]
+                - generic [ref=f8e484]:
+                  - generic [ref=f8e487]:
+                    - 'button "Open image: delaware-bail-types-guide.webp" [ref=f8e563] [cursor=pointer]':
+                      - img "delaware-bail-types-guide.webp" [ref=f8e564]
+                    - generic [ref=f8e488]: "Please edit this image. Keep the exact same design, colors, layout, background, icons and style. Only change the text on the image. The main title text should say: \"Bail vs Bond in Delaware: What's the Difference?\" The category label should say: \"Bail Types\". Keep the subtitle text if present. Do not change anything else about the image. Make all text perfectly spelled and centered. Render it exactly like the original except the changed text. Output the full image."
+                  - generic [ref=f8e493]:
+                    - group "Your message actions":
+                      - button "Copy message"
+                      - button "Share prompt"
+                      - button "Edit message"
+              - generic [ref=f8e566]:
+                - heading "ChatGPT said:" [level=4] [ref=f8e567]
+                - generic [ref=f8e569]:
+                  - generic [ref=f8e585]:
+                    - button [ref=f8e586] [cursor=pointer]:
+                      - img "Generated image" [ref=f8e589]
+                    - generic [ref=f8e595]:
+                      - button "Edit image" [ref=f8e597] [cursor=pointer]: Edit
+                      - button "Share this image" [ref=f8e599] [cursor=pointer]
+                  - generic [ref=f8e603]:
+                    - group "Response actions":
+                      - button "Copy response"
+                      - button "Like this image"
+                      - button "Dislike this image"
+                      - button "More actions"
+            - generic [ref=f8e505]: ChatGPT can make mistakes. Check important info.
+          - generic:
+            - generic:
+              - generic:
+                - button
+            - generic [ref=f8e517]:
+              - generic [ref=f8e520]:
+                - button "Add files and more" [ref=f8e523] [cursor=pointer]
+                - textbox "Chat with ChatGPT" [ref=f8e355]:
+                  - paragraph [ref=f8e356]: Ask anything
+                - generic [ref=f8e526]:
+                  - button "Think" [ref=f8e530] [cursor=pointer]
+                  - generic [ref=f8e532]:
+                    - button "Start dictation" [ref=f8e534] [cursor=pointer]
+                    - button "Send prompt" [ref=f8e699] [cursor=pointer]
+                - group "sample-hero.png" [ref=f8e705]:
+                  - 'button "Open image: User uploaded image" [ref=f8e708] [cursor=pointer]'
+                  - generic:
+                    - generic:
+                      - generic:
+                        - 'button "Remove file 1: sample-hero.png"'
+              - button [ref=f8e538]
+              - button [ref=f8e539]
+  - alert [ref=f8e373]
+  - status [ref=f8e374]
+  - generic:
+    - heading "Add anything" [level=3]
+    - heading "Drop any file here to add it to the conversation" [level=4]

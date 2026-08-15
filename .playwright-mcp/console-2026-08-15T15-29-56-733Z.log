@@ -1,0 +1,10 @@
+[    4918ms] [WARNING] dataLayerProxy:  prop [[getByName]] is not supported @ https://www.semrush.com/__static__/webpack/sentry.703f3ffbf753febd.js:1
+[    4919ms] [WARNING] dataLayerProxy:  method call is not supported @ https://www.semrush.com/__static__/webpack/sentry.703f3ffbf753febd.js:1
+[    4921ms] [WARNING] dataLayerProxy:  prop [[getByName]] is not supported @ https://www.semrush.com/__static__/webpack/sentry.703f3ffbf753febd.js:1
+[    4921ms] [WARNING] dataLayerProxy:  method call is not supported @ https://www.semrush.com/__static__/webpack/sentry.703f3ffbf753febd.js:1
+[    4922ms] [WARNING] dataLayerProxy:  prop [[getByName]] is not supported @ https://www.semrush.com/__static__/webpack/sentry.703f3ffbf753febd.js:1
+[    4922ms] [WARNING] dataLayerProxy:  method call is not supported @ https://www.semrush.com/__static__/webpack/sentry.703f3ffbf753febd.js:1
+[    5013ms] [LOG] [analytics-team] - adobe launch loaded @ https://www.semrush.com/__static__/webpack/sentry.703f3ffbf753febd.js:1
+[    6034ms] [LOG] [analytics-team] - adobe launch loaded @ https://www.semrush.com/__static__/webpack/sentry.703f3ffbf753febd.js:1
+[    8065ms] [WARNING] [Meta Pixel] - Duplicate Pixel ID: 239948206198576. @ https://www.semrush.com/__static__/webpack/sentry.703f3ffbf753febd.js:1
+[    8996ms] [LOG] Going to iterate over instancesSettings @ https://www.semrush.com/__static__/webpack/sentry.703f3ffbf753febd.js:1

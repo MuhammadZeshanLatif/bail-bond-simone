@@ -115,6 +115,20 @@ import {
   FELONY_VS_MISDEMEANOR_IMAGE,
   FELONY_VS_MISDEMEANOR_THUMBNAIL,
 } from './blog/felony-vs-misdemeanor-bonds-delaware-blog';
+import {
+  BAIL_VS_BOND_SLUG,
+  BAIL_VS_BOND_TITLE,
+  BAIL_VS_BOND_META_DESCRIPTION,
+  BAIL_VS_BOND_IMAGE,
+  BAIL_VS_BOND_THUMBNAIL,
+} from './blog/bail-vs-bond-delaware-blog';
+import {
+  DUI_BAIL_BOND_SLUG,
+  DUI_BAIL_BOND_TITLE,
+  DUI_BAIL_BOND_META_DESCRIPTION,
+  DUI_BAIL_BOND_IMAGE,
+  DUI_BAIL_BOND_THUMBNAIL,
+} from './blog/dui-bail-bond-delaware-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -3163,6 +3177,30 @@ const FAQPage = ({ navigate }) => {
 // BLOG DATA
 // ===============================================================================
 const blogPosts = [
+  {
+    slug: DUI_BAIL_BOND_SLUG,
+    title: DUI_BAIL_BOND_TITLE,
+    excerpt: DUI_BAIL_BOND_META_DESCRIPTION,
+    category: 'Bail Types',
+    readTime: '11 min read',
+    date: '2026-08-15',
+    image: DUI_BAIL_BOND_THUMBNAIL,
+    heroImage: DUI_BAIL_BOND_IMAGE,
+    isMagazine: true,
+    content: '',
+  },
+  {
+    slug: BAIL_VS_BOND_SLUG,
+    title: BAIL_VS_BOND_TITLE,
+    excerpt: BAIL_VS_BOND_META_DESCRIPTION,
+    category: 'Bail Types',
+    readTime: '12 min read',
+    date: '2026-08-15',
+    image: BAIL_VS_BOND_THUMBNAIL,
+    heroImage: BAIL_VS_BOND_IMAGE,
+    isMagazine: true,
+    content: '',
+  },
   {
     slug: FELONY_VS_MISDEMEANOR_SLUG,
     title: FELONY_VS_MISDEMEANOR_TITLE,

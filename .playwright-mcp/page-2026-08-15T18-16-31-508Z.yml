@@ -1,0 +1,428 @@
+- generic [ref=f37e2]:
+  - banner [ref=f37e3]:
+    - generic [ref=f37e5]:
+      - generic [ref=f37e6]:
+        - generic [ref=f37e7]: 
+        - generic [ref=f37e8]: Licensed & Bonded - Available 24/7
+      - generic [ref=f37e9]:
+        - generic [ref=f37e10]: 
+        - link "(702) 447-8550" [ref=f37e11] [cursor=pointer]:
+          - /url: tel:+17024478550
+        - generic [ref=f37e12]: "|"
+        - link "(302) 600-1886" [ref=f37e13] [cursor=pointer]:
+          - /url: tel:+13026001886
+    - navigation [ref=f37e14]:
+      - generic [ref=f37e15]:
+        - link [ref=f37e16] [cursor=pointer]:
+          - /url: /
+          - img "A Way to Freedom Bail Bonds" [ref=f37e17]
+        - text: 
+        - generic [ref=f37e18]:
+          - list [ref=f37e19]:
+            - listitem [ref=f37e20]:
+              - link "Home" [ref=f37e21] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f37e22]:
+              - button "Services " [ref=f37e23] [cursor=pointer]:
+                - text: Services
+                - generic [ref=f37e24]: 
+            - listitem [ref=f37e25]:
+              - link "About" [ref=f37e26] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f37e27]:
+              - link "How It Works" [ref=f37e28] [cursor=pointer]:
+                - /url: /how-it-works
+            - listitem [ref=f37e29]:
+              - link "FAQ" [ref=f37e30] [cursor=pointer]:
+                - /url: /faq
+            - listitem [ref=f37e31]:
+              - link "Blog" [ref=f37e32] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=f37e33]:
+              - link "Contact" [ref=f37e34] [cursor=pointer]:
+                - /url: /contact
+          - link " Call Now" [ref=f37e35] [cursor=pointer]:
+            - /url: tel:+17024478550
+            - generic [ref=f37e36]: 
+            - text: Call Now
+  - main [ref=f37e37]:
+    - main [ref=f37e39]:
+      - link "All Articles" [ref=f37e41] [cursor=pointer]:
+        - /url: /blog
+        - generic [ref=f37e42]: 
+        - text: All Articles
+      - generic [ref=f37e43]:
+        - generic [ref=f37e44]:
+          - text: 
+          - generic [ref=f37e45]:
+            - paragraph [ref=f37e46]: Table of Contents
+            - list [ref=f37e47]:
+              - listitem [ref=f37e48]:
+                - link "1. Quick Answer" [ref=f37e50] [cursor=pointer]:
+                  - /url: "#section-intro"
+                  - generic [ref=f37e51]: "1."
+                  - text: Quick Answer
+              - listitem [ref=f37e52]:
+                - link "2. How DUI Bail Is Set" [ref=f37e54] [cursor=pointer]:
+                  - /url: "#section-how-set"
+                  - generic [ref=f37e55]: "2."
+                  - text: How DUI Bail Is Set
+              - listitem [ref=f37e56]:
+                - link "3. Typical DUI Bail Amounts" [ref=f37e58] [cursor=pointer]:
+                  - /url: "#section-amounts"
+                  - generic [ref=f37e59]: "3."
+                  - text: Typical DUI Bail Amounts
+              - listitem [ref=f37e60]:
+                - link "4. Bail vs Bond Premium" [ref=f37e62] [cursor=pointer]:
+                  - /url: "#section-bail-vs-premium"
+                  - generic [ref=f37e63]: "4."
+                  - text: Bail vs Bond Premium
+              - listitem [ref=f37e64]:
+                - link "5. DUI Bail Bond Cost Rules" [ref=f37e66] [cursor=pointer]:
+                  - /url: "#section-cost-rules"
+                  - generic [ref=f37e67]: "5."
+                  - text: DUI Bail Bond Cost Rules
+              - listitem [ref=f37e68]:
+                - link "6. If You Can't Afford the Premium" [ref=f37e70] [cursor=pointer]:
+                  - /url: "#section-cant-afford"
+                  - generic [ref=f37e71]: "6."
+                  - text: If You Can't Afford the Premium
+              - listitem [ref=f37e72]:
+                - link "7. 15-Day DMV Deadline" [ref=f37e74] [cursor=pointer]:
+                  - /url: "#section-dmv"
+                  - generic [ref=f37e75]: "7."
+                  - text: 15-Day DMV Deadline
+              - listitem [ref=f37e76]:
+                - link "8. After Release" [ref=f37e78] [cursor=pointer]:
+                  - /url: "#section-after-release"
+                  - generic [ref=f37e79]: "8."
+                  - text: After Release
+              - listitem [ref=f37e80]:
+                - link "9. FAQs" [ref=f37e82] [cursor=pointer]:
+                  - /url: "#section-faq"
+                  - generic [ref=f37e83]: "9."
+                  - text: FAQs
+              - listitem [ref=f37e84]:
+                - link "10. Next Steps" [ref=f37e86] [cursor=pointer]:
+                  - /url: "#section-final"
+                  - generic [ref=f37e87]: "10."
+                  - text: Next Steps
+            - generic [ref=f37e88]:
+              - heading "Need Bail Bond Help Now?" [level=4] [ref=f37e89]
+              - paragraph [ref=f37e90]: Speak with a local agent for fast, clear guidance after an arrest.
+              - link "Start the Process →" [ref=f37e91] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=f37e92]:
+          - generic [ref=f37e93]:
+            - navigation "Breadcrumb" [ref=f37e94]:
+              - link "Home" [ref=f37e95] [cursor=pointer]:
+                - /url: /
+              - text: ›
+              - link "Blog" [ref=f37e96] [cursor=pointer]:
+                - /url: /blog
+              - text: › Bail Types › How Much Is Bail for a DUI in Delaware? Family…
+            - heading "How Much Is Bail for a DUI in Delaware? Family Cost Guide" [level=1] [ref=f37e97]
+            - paragraph [ref=f37e98]: Learn how much bail for a DUI is in Delaware, typical first-offense amounts, the 5%–10% surety premium, payment plans, the 15-day DMV deadline, and what happens after release.
+            - generic [ref=f37e99]:
+              - img "Simone Harris, licensed bail bond agent in Delaware" [ref=f37e100]
+              - generic [ref=f37e101]:
+                - text: By
+                - strong [ref=f37e102]: Simone Harris
+              - generic [ref=f37e103]:
+                - generic [ref=f37e104]: 
+                - time [ref=f37e105]: August 15, 2026
+              - generic [ref=f37e106]:
+                - generic [ref=f37e107]: 
+                - text: 11 min read
+              - generic [ref=f37e108]:
+                - generic [ref=f37e109]: 
+                - text: 12.4K views
+              - generic [ref=f37e110]:
+                - generic [ref=f37e111]: 
+                - text: "Updated:"
+                - time [ref=f37e112]: August 15, 2026
+            - img "How much is bail for a DUI in Delaware — a family cost guide from A Way to Freedom Bail Bonds" [ref=f37e114]
+            - list [ref=f37e115]:
+              - listitem [ref=f37e116]:
+                - generic [ref=f37e117]: $
+                - generic [ref=f37e119]:
+                  - strong [ref=f37e120]: Cost Explained
+                  - generic [ref=f37e121]: Amounts + Premium
+              - listitem [ref=f37e122]:
+                - generic [ref=f37e123]: 
+                - generic [ref=f37e125]:
+                  - strong [ref=f37e126]: 24/7 Arraignment
+                  - generic [ref=f37e127]: JP Court 11
+              - listitem [ref=f37e128]:
+                - generic [ref=f37e129]: 
+                - generic [ref=f37e131]:
+                  - strong [ref=f37e132]: 15-Day DMV Alert
+                  - generic [ref=f37e133]: Don't Miss It
+              - listitem [ref=f37e134]:
+                - generic [ref=f37e135]: 
+                - generic [ref=f37e137]:
+                  - strong [ref=f37e138]: Get Help Fast
+                  - generic [ref=f37e139]: DE Licensed Agent
+          - article [ref=f37e140]:
+            - generic [ref=f37e141]:
+              - paragraph [ref=f37e142]:
+                - strong [ref=f37e143]: By Simone Harris
+                - text: Licensed Bail Bond Agent
+              - paragraph [ref=f37e144]: An arrest for driving under the influence (DUI) is stressful and confusing, especially when you are trying to figure out how much money it will take to get your loved one home. The bail amount is only part of the story. What you actually pay out of pocket depends on the bail type the court allows, whether a licensed agent can post a bond, and the filed premium rate.
+              - paragraph [ref=f37e146]:
+                - strong [ref=f37e147]: "Quick answer:"
+                - text: For a first DUI offense in Delaware, bail is commonly set between
+                - strong [ref=f37e148]: $500 and $5,000
+                - text: . If you use a licensed bail bond company, you pay a premium — in Delaware, a filed rate generally between
+                - strong [ref=f37e149]: 5% and 10%
+                - text: of the bail amount for bonds over $1,000 — instead of the full amount. For example, on a $2,000 bail, the premium would typically be
+                - strong [ref=f37e150]: $100 to $200
+                - text: .
+              - paragraph [ref=f37e151]: This guide explains how DUI bail is set in Delaware, what amounts are typical, what you will actually pay, and the urgent deadlines you cannot afford to miss.
+            - generic [ref=f37e152]:
+              - heading "How Is DUI Bail Set in Delaware?" [level=2] [ref=f37e153]
+              - paragraph [ref=f37e154]:
+                - text: After a DUI arrest in New Castle County, the defendant is usually brought before a magistrate at
+                - strong [ref=f37e155]: Justice of the Peace (JP) Court 11
+                - text: in Newark, or through the statewide virtual criminal hearing system. JP Court 11 operates 24 hours a day, so initial appearances, arraignments, and bail-setting hearings happen around the clock — even on weekends and holidays.
+              - paragraph [ref=f37e156]: "When the judicial officer sets bail, Delaware law directs them to weigh several factors:"
+              - list [ref=f37e157]:
+                - listitem [ref=f37e158]: The risk that the defendant will not appear in court
+                - listitem [ref=f37e159]: The type of charge and how serious it is
+                - listitem [ref=f37e160]: The defendant's criminal history, including any prior DUI or DUS convictions
+                - listitem [ref=f37e161]: How long the defendant has lived in Delaware and their ties to the community
+                - listitem [ref=f37e162]: The safety of the community
+                - listitem [ref=f37e163]: Whether the arrest involved an accident, injury, or a child passenger
+              - paragraph [ref=f37e164]: A first-time DUI with no accident, a moderate blood alcohol content (BAC), and strong community ties is much more likely to result in a moderate bail amount — or even release on personal recognizance. A repeat offense, a very high BAC, or a crash involving injury can push bail much higher.
+            - generic [ref=f37e165]:
+              - heading "Typical DUI Bail Amounts in Delaware" [level=2] [ref=f37e166]
+              - paragraph [ref=f37e167]: DUI bail is set on a case-by-case basis, so there is no fixed price list. Still, most first-offense DUI cases fall within a fairly predictable range.
+              - table [ref=f37e169]:
+                - rowgroup [ref=f37e170]:
+                  - row [ref=f37e171]:
+                    - columnheader "Situation" [ref=f37e172]
+                    - columnheader "Typical bail range" [ref=f37e173]
+                - rowgroup [ref=f37e174]:
+                  - row [ref=f37e175]:
+                    - cell "First offense, no accident, moderate BAC" [ref=f37e176]
+                    - cell "$500 – $2,500" [ref=f37e177]
+                  - row [ref=f37e178]:
+                    - cell "First offense with aggravating factors (high BAC, child in car)" [ref=f37e179]
+                    - cell "$2,500 – $5,000+" [ref=f37e180]
+                  - row [ref=f37e181]:
+                    - cell "Second or third offense" [ref=f37e182]
+                    - cell "$2,000 – $7,500+" [ref=f37e183]
+                  - row [ref=f37e184]:
+                    - cell "DUI with serious injury or felony-level charges" [ref=f37e185]
+                    - cell "$10,000 – $50,000+" [ref=f37e186]
+              - paragraph [ref=f37e187]:
+                - text: "Three things matter more than the average: the"
+                - strong [ref=f37e188]: exact bail amount on the written order
+                - text: ", the"
+                - strong [ref=f37e189]: bail type the court allows
+                - text: ", and"
+                - strong [ref=f37e190]: who is permitted to post it
+                - text: . Do not rely on what someone heard by phone. If you are trying to confirm the amount, read our guide on
+                - link "how to find out how much someone's bail is" [ref=f37e191] [cursor=pointer]:
+                  - /url: /blog/how-do-you-find-out-how-much-someones-bail-is
+                - text: .
+            - generic [ref=f37e192]:
+              - 'heading "What You Actually Pay: Bail vs Bond Premium" [level=2] [ref=f37e193]'
+              - paragraph [ref=f37e194]: The bail amount and the out-of-pocket cost are not the same thing. Understanding the difference can save your family thousands of dollars in confusion.
+              - list [ref=f37e195]:
+                - listitem [ref=f37e196]:
+                  - strong [ref=f37e197]: "Cash bail:"
+                  - text: The full amount is paid to the court and refunded at the end of the case if every appearance is met. On a $3,000 bail, you need $3,000 in cash up front.
+                - listitem [ref=f37e198]:
+                  - strong [ref=f37e199]: "Surety bond:"
+                  - text: A licensed bail bond company posts the full bail for a non-refundable premium. In Delaware, that premium is a filed rate generally between
+                  - strong [ref=f37e200]: 5% and 10%
+                  - text: of the bail amount for bonds over $1,000. On a $3,000 bail, the premium would typically be
+                  - strong [ref=f37e201]: $150 to $300
+                  - text: — not $3,000.
+              - paragraph [ref=f37e202]: The premium is a service fee and is not refunded, even if the case is dismissed. Any collateral you post is returned when the bond is exonerated and the case closes.
+            - generic [ref=f37e203]:
+              - 'heading "Delaware DUI Bail Bond Cost: The Rules" [level=2] [ref=f37e204]'
+              - paragraph [ref=f37e205]:
+                - text: Delaware law is specific about what a bail bond company may charge. For a surety bail bond, the premium must match the rate filed with and approved by the state. For surety bonds over $1,000, Delaware law sets the total filed premium between
+                - strong [ref=f37e206]: 5% and 10%
+                - text: ", and at least"
+                - strong [ref=f37e207]: 5%
+                - text: must be collected before the bond is posted.
+              - paragraph [ref=f37e208]: Delaware law does not allow unapproved administrative, service, company, or agent fees on top of the filed premium. If an agent quotes a price that seems inconsistent with the filed rate, ask for it in writing and confirm the terms before signing. A licensed agent must provide a written contract.
+              - paragraph [ref=f37e209]:
+                - text: For the complete breakdown of premiums, payment plans, collateral, and refunds, read our
+                - link "Delaware bail bond cost guide" [ref=f37e210] [cursor=pointer]:
+                  - /url: /blog/how-much-does-a-bail-bond-cost-in-delaware
+                - text: .
+            - generic [ref=f37e211]:
+              - heading "What If You Can't Afford the Premium?" [level=2] [ref=f37e212]
+              - paragraph [ref=f37e213]: If the full premium is more than your family can pay in one payment, ask about payment arrangements. Payment plans may be available depending on the bond, the applicant, and the written agreement. A payment plan is not the same as a discount on the filed premium — the rate is still set by law — but it can spread the cost over a manageable schedule.
+              - paragraph [ref=f37e214]: "If the bail itself feels unreasonably high, a DUI defense attorney can ask the court to review the amount. That is separate from the bail bond process: an attorney advises on the legal case, while a licensed bail agent handles the release process. Many families work with both."
+            - generic [ref=f37e215]:
+              - 'heading "Urgent: The 15-Day DMV License Deadline" [level=2] [ref=f37e216]'
+              - paragraph [ref=f37e217]: "A DUI arrest in Delaware triggers two separate processes at the same time: the criminal court case and an administrative hearing with the Delaware Division of Motor Vehicles (DMV)."
+              - blockquote [ref=f37e218]:
+                - text: "\""
+                - strong [ref=f37e219]: You have only 15 days from the date of the arrest
+                - text: to request an administrative hearing with the DMV. If you miss this deadline, the driver's license is automatically suspended.
+              - paragraph [ref=f37e220]:
+                - text: Getting out of jail quickly matters here — a released defendant can meet that deadline, consult with an attorney, and protect their driving privileges. For the full walkthrough of a DUI arrest in the Wilmington area, see our guide to
+                - link "traffic arrest bail bonds in Wilmington" [ref=f37e221] [cursor=pointer]:
+                  - /url: /blog/traffic-bail-bonds-wilmington-delaware
+                - text: .
+            - generic [ref=f37e222]:
+              - heading "What Happens After Release" [level=2] [ref=f37e223]
+              - paragraph [ref=f37e224]: "Posting bail gets the defendant out of custody — it does not end the case. After release, the defendant must follow every condition in the bond order and attend all future hearings. In DUI cases, conditions can include:"
+              - list [ref=f37e225]:
+                - listitem [ref=f37e226]: Attending every scheduled court date
+                - listitem [ref=f37e227]: No driving without a valid license
+                - listitem [ref=f37e228]: Installing an ignition interlock device
+                - listitem [ref=f37e229]: Abstaining from alcohol or drugs
+                - listitem [ref=f37e230]: Completing alcohol education or treatment programs
+              - paragraph [ref=f37e231]:
+                - text: Missing court can lead to a bench warrant and financial responsibility for whoever signed the bond. Put every hearing date on a calendar, save the paperwork, and contact the court or agent immediately if there is a genuine scheduling problem. For step-by-step guidance, read our article on
+                - link "how to bond someone out of jail in Delaware" [ref=f37e232] [cursor=pointer]:
+                  - /url: /blog/how-to-bond-someone-out-of-jail-delaware
+                - text: .
+            - generic [ref=f37e233]:
+              - heading "DUI Bail FAQs" [level=2] [ref=f37e234]
+              - generic [ref=f37e235]:
+                - group [ref=f37e236]:
+                  - heading "How much is bail for a DUI in Delaware?" [level=3] [ref=f37e238] [cursor=pointer]
+                  - paragraph [ref=f37e240]: For a first offense, bail is commonly set between $500 and $5,000. Repeat offenses, high blood alcohol content, accidents, or injuries can raise the amount significantly. The exact figure depends on the facts of the case and the judicial officer's decision.
+                - group [ref=f37e241]:
+                  - heading "How much does a DUI bail bond cost?" [level=3] [ref=f37e243] [cursor=pointer]
+                - group [ref=f37e244]:
+                  - heading "Is a DUI bail bond premium refundable?" [level=3] [ref=f37e246] [cursor=pointer]
+                - group [ref=f37e247]:
+                  - heading "How long do you stay in jail after a DUI in Delaware?" [level=3] [ref=f37e249] [cursor=pointer]
+                - group [ref=f37e250]:
+                  - heading "Can you be released without bail after a DUI?" [level=3] [ref=f37e252] [cursor=pointer]
+                - group [ref=f37e253]:
+                  - heading "Do I need a lawyer for a DUI in Delaware?" [level=3] [ref=f37e255] [cursor=pointer]
+            - generic [ref=f37e256]:
+              - heading "Act Fast, Get the Facts Right" [level=2] [ref=f37e257]
+              - paragraph [ref=f37e258]: The most important step after a DUI arrest is acting quickly and getting the facts right. Confirm the exact bail amount and type on the written order, protect the 15-day DMV deadline, and decide whether cash bail or a surety bond fits your family's finances.
+              - paragraph [ref=f37e259]:
+                - link "Contact A Way to Freedom Bail Bonds" [ref=f37e260] [cursor=pointer]:
+                  - /url: /contact
+                - text: for clear, confidential 24/7 guidance from a licensed Delaware agent.
+              - paragraph [ref=f37e261]:
+                - strong [ref=f37e262]: "Legal disclaimer:"
+                - text: This article is for general information only and is not legal advice. Consult a licensed Delaware attorney for advice about your case.
+            - generic [ref=f37e263]:
+              - generic [ref=f37e264]:
+                - generic [ref=f37e265]: "Tags:"
+                - generic [ref=f37e266]: DUI Bail
+                - generic [ref=f37e267]: DUI Bail Bond Cost
+                - generic [ref=f37e268]: Delaware DUI
+                - generic [ref=f37e269]: Bail Bond Premium
+                - generic [ref=f37e270]: Family Guide
+                - generic [ref=f37e271]: JP Court 11
+              - generic [ref=f37e272]:
+                - generic [ref=f37e273]: "Share this article:"
+                - link "Share on Facebook" [ref=f37e274] [cursor=pointer]:
+                  - /url: https://www.facebook.com/sharer/sharer.php
+                  - generic [ref=f37e275]: 
+                - link "Share on X" [ref=f37e276] [cursor=pointer]:
+                  - /url: https://twitter.com/intent/tweet
+                  - generic [ref=f37e277]: 
+                - link "Share on LinkedIn" [ref=f37e278] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/sharing/share-offsite/
+                  - generic [ref=f37e279]: 
+                - button "Copy link" [ref=f37e280] [cursor=pointer]:
+                  - generic [ref=f37e281]: 
+            - generic [ref=f37e282]:
+              - link [ref=f37e283] [cursor=pointer]:
+                - /url: "#/blog/bail-vs-bond-delaware"
+                - paragraph [ref=f37e284]:
+                  - generic [ref=f37e285]: 
+                  - text: Previous Post
+                - paragraph [ref=f37e286]: "Bail vs Bond in Delaware: What's the Difference?"
+              - link [ref=f37e287] [cursor=pointer]:
+                - /url: "#/blog/felony-vs-misdemeanor-bonds-delaware"
+                - paragraph [ref=f37e288]:
+                  - text: Next Post
+                  - generic [ref=f37e289]: 
+                - paragraph [ref=f37e290]: "Felony vs. Misdemeanor Bonds in Delaware: What Families Need to Know"
+        - complementary "Article sidebar" [ref=f37e291]:
+          - generic [ref=f37e292]:
+            - paragraph [ref=f37e293]: About the Author
+            - img "Simone Harris, licensed bail bond agent in Delaware" [ref=f37e294]
+            - generic [ref=f37e295]:
+              - generic [ref=f37e296]: SIMONE HARRIS
+              - generic "Verified" [ref=f37e297]: 
+            - paragraph [ref=f37e298]: Licensed Bail Bond Agent
+            - paragraph [ref=f37e299]: In my experience helping Delaware families, the most important thing is calm guidance. Families do not need confusing legal talk during a crisis. They need clear steps, honest answers, and support they can trust.
+          - generic [ref=f37e300]:
+            - paragraph [ref=f37e301]: Related Articles
+            - link [ref=f37e302] [cursor=pointer]:
+              - /url: "#/blog/bail-vs-bond-delaware"
+              - 'img "Bail vs Bond in Delaware: What''s the Difference?" [ref=f37e303]'
+              - generic [ref=f37e304]:
+                - paragraph [ref=f37e305]: "Bail vs Bond in Delaware: What's the Difference?"
+                - paragraph [ref=f37e306]:
+                  - generic [ref=f37e307]: 
+                  - text: What's the difference between bail and bond in Delaware? Learn how bail is set, how surety bonds work, what the premium is, and which option fits your family.
+            - link [ref=f37e308] [cursor=pointer]:
+              - /url: "#/blog/felony-vs-misdemeanor-bonds-delaware"
+              - 'img "Felony vs. Misdemeanor Bonds in Delaware: What Families Need to Know" [ref=f37e309]'
+              - generic [ref=f37e310]:
+                - paragraph [ref=f37e311]: "Felony vs. Misdemeanor Bonds in Delaware: What Families Need to Know"
+                - paragraph [ref=f37e312]:
+                  - generic [ref=f37e313]: 
+                  - text: Compare felony and misdemeanor bonds in Delaware. Learn which bail types apply, how bail is set, and what a bail bondsman can help with for each charge type.
+            - link [ref=f37e314] [cursor=pointer]:
+              - /url: "#/blog/secured-bail-vs-cash-only-bail-delaware"
+              - 'img "Secured Bail vs. Cash-Only Bail in Delaware: What Families Need to Know" [ref=f37e315]'
+              - generic [ref=f37e316]:
+                - paragraph [ref=f37e317]: "Secured Bail vs. Cash-Only Bail in Delaware: What Families Need to Know"
+                - paragraph [ref=f37e318]:
+                  - generic [ref=f37e319]: 
+                  - text: Compare secured bail and cash-only bail in Delaware. Learn what the court requires, whether a bail bondsman can help, and what to confirm before paying.
+          - generic [ref=f37e320]:
+            - generic [ref=f37e321]: 
+            - heading "Need Bail Bond Help Now?" [level=3] [ref=f37e323]
+            - paragraph [ref=f37e324]: Speak with a local agent for fast, clear guidance after an arrest.
+            - link "Start the Process" [ref=f37e325] [cursor=pointer]:
+              - /url: /contact
+  - contentinfo [ref=f37e326]:
+    - generic [ref=f37e328]:
+      - generic [ref=f37e329]:
+        - generic [ref=f37e330]: 
+        - text: Serving
+        - link "New Castle County bail bonds" [ref=f37e331] [cursor=pointer]:
+          - /url: /new-castle-county-bail-bonds
+        - text: "&"
+        - link "Kent County, Delaware" [ref=f37e332] [cursor=pointer]:
+          - /url: /service-areas
+      - paragraph [ref=f37e333]: Licensed Bail Bond Services • Confidential & Professional Assistance • Available 24/7
+      - generic [ref=f37e334]:
+        - link "Facebook" [ref=f37e335] [cursor=pointer]:
+          - /url: https://www.facebook.com/people/A-Way-to-Freedom-Bail-Bonds/100094085200363/
+          - generic [ref=f37e336]: 
+        - link "Instagram" [ref=f37e337] [cursor=pointer]:
+          - /url: https://www.instagram.com
+          - generic [ref=f37e338]: 
+        - link "Email" [ref=f37e339] [cursor=pointer]:
+          - /url: mailto:away2freedom302@gmail.com
+          - generic [ref=f37e340]: 
+      - paragraph [ref=f37e342]: © 2026 A Way to Freedom Bail Bonds. All rights reserved.
+  - generic [ref=f37e343]:
+    - link "Chat on WhatsApp" [ref=f37e344] [cursor=pointer]:
+      - /url: https://wa.me/13029819223?text=Hi%20Simone%2C%20I%20need%20help%20with%20bail%20bond%20services.%20Please%20let%20me%20know%20how%20you%20can%20assist%20me.
+      - generic [ref=f37e345]: 
+    - link "Call Now" [ref=f37e346] [cursor=pointer]:
+      - /url: tel:+17024478550
+      - generic [ref=f37e347]: 
+  - generic [ref=f37e348]:
+    - link "Facebook" [ref=f37e349] [cursor=pointer]:
+      - /url: https://www.facebook.com/people/A-Way-to-Freedom-Bail-Bonds/100094085200363/
+      - generic [ref=f37e350]: 
+    - link "Instagram" [ref=f37e351] [cursor=pointer]:
+      - /url: https://www.instagram.com
+      - generic [ref=f37e352]: 
+    - link "Email" [ref=f37e353] [cursor=pointer]:
+      - /url: mailto:away2freedom302@gmail.com
+      - generic [ref=f37e354]: 

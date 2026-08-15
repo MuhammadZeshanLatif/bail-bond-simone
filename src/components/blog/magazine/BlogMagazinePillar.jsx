@@ -15,6 +15,8 @@ import { BailBondCostDelawareArticle } from './BailBondCostDelawareArticle';
 import { TrafficBondsWilmingtonArticle } from './TrafficBondsWilmingtonArticle';
 import { SecuredVsCashOnlyArticle } from './SecuredVsCashOnlyArticle';
 import { FelonyVsMisdemeanorArticle } from './FelonyVsMisdemeanorArticle';
+import { BailVsBondArticle } from './BailVsBondArticle';
+import { DuiBailBondArticle } from './DuiBailBondArticle';
 import { LegacyMagazineArticle } from './LegacyMagazineArticle';
 import { MagazineToc } from './MagazineToc';
 import '../../../blog-magazine.css';
@@ -36,6 +38,8 @@ const ARTICLE_MAP = {
   'traffic-bonds-wilmington': TrafficBondsWilmingtonArticle,
   'secured-vs-cash-only': SecuredVsCashOnlyArticle,
   'felony-vs-misdemeanor': FelonyVsMisdemeanorArticle,
+  'bail-vs-bond': BailVsBondArticle,
+  'dui-bail-bond': DuiBailBondArticle,
 };
 
 const DEFAULT_BLOG_CTA = {

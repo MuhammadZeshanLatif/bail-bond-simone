@@ -1,0 +1,295 @@
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - button "Skip to content" [ref=f4e4]
+    - banner [ref=f4e7]:
+      - navigation [ref=f4e10]:
+        - menubar [ref=f4e11]:
+          - menuitem "More" [ref=f4e12] [cursor=pointer]
+          - menuitem "My profile" [ref=f4e13] [cursor=pointer]
+    - navigation [ref=f4e17]:
+      - generic [ref=f4e18]:
+        - list [ref=f4e19]:
+          - listitem [ref=f4e20]:
+            - link "Home" [ref=f4e21] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/home/
+          - listitem [ref=f4e26]:
+            - link "SEO" [ref=f4e27] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/seo/
+        - list [ref=f4e32]:
+          - listitem [ref=f4e33]:
+            - link "AI" [ref=f4e34] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/ai-seo/overview/
+          - listitem [ref=f4e39]:
+            - link "Traffic & Market" [ref=f4e40] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/traffic/
+          - listitem [ref=f4e44]:
+            - link "Local" [ref=f4e45] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/local-business/
+          - listitem [ref=f4e50]:
+            - link "Content" [ref=f4e51] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/content/
+          - listitem [ref=f4e56]:
+            - link "Ad" [ref=f4e57] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/advertising/
+          - listitem [ref=f4e63]:
+            - link "AI PR" [ref=f4e64] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/pr-toolkit/
+          - listitem [ref=f4e68]:
+            - link "Social" [ref=f4e69] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/social-media/
+        - list [ref=f4e76]:
+          - listitem [ref=f4e77]:
+            - link "Reports" [ref=f4e78] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/my_reports/grid/
+          - listitem [ref=f4e82]:
+            - link "Apps" [ref=f4e83] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/apps/
+      - generic [ref=f4e90]:
+        - generic [ref=f4e91]: SEO
+        - list [ref=f4e93]:
+          - listitem [ref=f4e94]:
+            - link "Dashboard" [ref=f4e96] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/seo/
+        - list [ref=f4e98]:
+          - listitem [ref=f4e99]:
+            - generic [ref=f4e100]: Site Performance
+          - listitem [ref=f4e101]:
+            - link "Site Audit" [ref=f4e103] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/siteaudit/
+          - listitem [ref=f4e104]:
+            - link "Position Tracking" [ref=f4e106] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/position-tracking/
+        - list [ref=f4e108]:
+          - listitem [ref=f4e109]:
+            - generic [ref=f4e110]: Competitive Analysis
+          - listitem [ref=f4e111]:
+            - link "Domain Overview" [ref=f4e113] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/overview/?db=us
+          - listitem [ref=f4e114]:
+            - link "Organic Rankings" [ref=f4e116] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/organic/overview?db=us
+          - listitem [ref=f4e117]:
+            - link "Top Pages" [ref=f4e119] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/toppages/?db=us
+          - listitem [ref=f4e120]:
+            - link "Compare Domains" [ref=f4e122] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/comparedomains/?db=us
+          - listitem [ref=f4e123]:
+            - link "Keyword Gap" [ref=f4e125] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/keywordgap/?db=us
+          - listitem [ref=f4e126]:
+            - link "Backlink Gap" [ref=f4e128] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/gap/backlinks/
+        - list [ref=f4e130]:
+          - listitem [ref=f4e131]:
+            - generic [ref=f4e132]: Keyword Research
+          - listitem [ref=f4e133]:
+            - link "Keyword Overview" [ref=f4e135] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/keywordoverview/?db=us&q=dui+bail+bond
+          - listitem [ref=f4e136]:
+            - link "Keyword Magic Tool" [ref=f4e138] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/keywordmagic/?db=us&q=dui+bail+bond
+          - listitem [ref=f4e139]:
+            - link "Keyword Strategy Builder" [ref=f4e141] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/keywordmanager/?db=us&q=dui+bail+bond
+        - list [ref=f4e143]:
+          - listitem [ref=f4e144]:
+            - generic [ref=f4e145]: Content Ideas
+          - listitem [ref=f4e146]:
+            - link "SEO Writing Assistant" [ref=f4e148] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/swa/
+          - listitem [ref=f4e149]:
+            - link "Topic Research" [ref=f4e151] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/topic-research/
+        - list [ref=f4e153]:
+          - listitem [ref=f4e154]:
+            - generic [ref=f4e155]: Link Building
+          - listitem [ref=f4e156]:
+            - link "Backlinks" [ref=f4e158] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/backlinks/overview/
+          - listitem [ref=f4e159]:
+            - link "Referring Domains" [ref=f4e161] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/refdomains/report/
+          - listitem [ref=f4e162]:
+            - link "Backlink Audit" [ref=f4e164] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/backlink_audit/
+        - list [ref=f4e166]:
+          - listitem [ref=f4e167]:
+            - generic [ref=f4e168]: Extras
+          - listitem [ref=f4e169]:
+            - link "Sensor" [ref=f4e171] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/sensor/?utm_medium=footer&utm_source=semrush
+          - listitem [ref=f4e172]:
+            - link "SEOquake" [ref=f4e174] [cursor=pointer]:
+              - /url: https://www.seoquake.com/
+          - listitem [ref=f4e175]:
+            - link "Semrush Rank" [ref=f4e177] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/ranks/rank/?db=us
+        - list [ref=f4e179]:
+          - listitem [ref=f4e180]:
+            - generic [ref=f4e181]: Other
+          - listitem [ref=f4e182]:
+            - link "On Page SEO Checker" [ref=f4e184] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/on-page-seo-checker/
+          - listitem [ref=f4e185]:
+            - link "Organic Traffic Insights" [ref=f4e187] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/organic_traffic_insights/
+      - button "Hide navigation" [expanded] [ref=f4e189] [cursor=pointer]
+    - main [ref=f4e194]:
+      - generic [ref=f4e196]:
+        - generic [ref=f4e198]:
+          - generic [ref=f4e199]:
+            - navigation "Breadcrumbs" [ref=f4e200]:
+              - list [ref=f4e201]:
+                - listitem [ref=f4e202]:
+                  - link "Home" [ref=f4e203] [cursor=pointer]:
+                    - /url: https://sm.hindseo.com/home
+                - listitem [ref=f4e207]:
+                  - link "SEO" [ref=f4e208] [cursor=pointer]:
+                    - /url: https://sm.hindseo.com/seo
+                - listitem [ref=f4e212]:
+                  - generic [ref=f4e213]: Keyword Magic Tool
+            - generic [ref=f4e214]:
+              - link "Go to the Keyword Research course" [ref=f4e215] [cursor=pointer]:
+                - /url: https://sm.hindseo.com/academy/courses/keyword-research-with-semrush-step-by-step-guide/
+                - generic [ref=f4e216]: Keyword Research course
+              - link "Go to the Keyword Magic Tool user manual" [ref=f4e217] [cursor=pointer]:
+                - /url: https://sm.hindseo.com/kb/617-keyword-magic-tool-manual
+                - generic [ref=f4e218]: User manual
+              - button "Send feedback" [ref=f4e219] [cursor=pointer]
+          - generic [ref=f4e220]:
+            - 'heading "Keyword Magic Tool: dui bail bond" [level=1] [ref=f4e221]':
+              - generic [ref=f4e222]: "Keyword Magic Tool:"
+              - generic [ref=f4e223]: dui bail bond
+            - link "View search history" [ref=f4e224] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/keywordmagic/start
+          - generic [ref=f4e228]:
+            - generic [ref=f4e229]:
+              - generic [ref=f4e230]: "Database:"
+              - button "Select country United States" [ref=f4e231] [cursor=pointer]:
+                - generic [ref=f4e234]: United States
+            - generic [ref=f4e238]:
+              - generic [ref=f4e239]: "Currency:"
+              - generic [ref=f4e240]: USD
+        - separator [ref=f4e242]
+        - region "Filters" [ref=f4e244]:
+          - generic [ref=f4e245]:
+            - tablist "Keyword type" [ref=f4e247]:
+              - tab "All" [selected] [ref=f4e249] [cursor=pointer]
+              - tab "Questions" [ref=f4e252] [cursor=pointer]
+            - tablist "Match modifiers" [ref=f4e255]:
+              - tab "All Keywords" [selected] [ref=f4e257] [cursor=pointer]
+              - tab "Broad Match" [ref=f4e260] [cursor=pointer]
+              - tab "Phrase Match" [ref=f4e263] [cursor=pointer]
+              - tab "Exact Match" [ref=f4e266] [cursor=pointer]
+              - tab "Related" [ref=f4e269] [cursor=pointer]
+            - combobox "Select language" [ref=f4e275] [cursor=pointer]:
+              - generic [ref=f4e276]: Languages
+          - combobox "Enter domain for personalized data" [ref=f4e287]
+          - generic [ref=f4e289]:
+            - combobox "Select volume" [ref=f4e291] [cursor=pointer]:
+              - generic [ref=f4e292]: Volume
+            - combobox "Select keyword difficulty" [ref=f4e295] [cursor=pointer]:
+              - generic [ref=f4e296]: KD %
+            - combobox "Select search intent" [ref=f4e301] [cursor=pointer]:
+              - generic [ref=f4e302]: Intent
+            - combobox "Select cost per click" [ref=f4e306] [cursor=pointer]:
+              - generic [ref=f4e307]: CPC (USD)
+            - combobox "Include keywords" [ref=f4e310] [cursor=pointer]
+            - combobox "Exclude keywords" [ref=f4e314] [cursor=pointer]
+            - combobox "Advanced filters" [ref=f4e318] [cursor=pointer]
+        - generic [ref=f4e322]:
+          - region "Keyword groups" [ref=f4e323]:
+            - generic [ref=f4e324]:
+              - tablist [ref=f4e326]:
+                - tab "Topics new" [selected] [ref=f4e329] [cursor=pointer]:
+                  - generic [ref=f4e330]: Topics
+                  - generic [ref=f4e331]: new
+                - tab "Groups" [ref=f4e334] [cursor=pointer]
+              - generic [ref=f4e337]:
+                - generic [ref=f4e338]: Topic
+                - generic [ref=f4e339]: Keywords
+              - generic [ref=f4e341]:
+                - generic [ref=f4e342]:
+                  - img "Loading…" [ref=f4e343]
+                  - img "Loading…" [ref=f4e345]
+                - generic [ref=f4e347]:
+                  - img "Loading…" [ref=f4e348]
+                  - img "Loading…" [ref=f4e350]
+                - generic [ref=f4e352]:
+                  - img "Loading…" [ref=f4e353]
+                  - img "Loading…" [ref=f4e355]
+          - region "Keywords" [ref=f4e357]:
+            - generic [ref=f4e359]:
+              - generic [ref=f4e361]:
+                - generic [ref=f4e365]:
+                  - generic [ref=f4e366]:
+                    - generic [ref=f4e367]: "All keywords:"
+                    - img "Loading…" [ref=f4e369]
+                  - generic [ref=f4e371]:
+                    - generic [ref=f4e372]: "Total Volume:"
+                    - img "Loading…" [ref=f4e374]
+                  - generic [ref=f4e376]:
+                    - generic [ref=f4e377]: "Average KD:"
+                    - img "Loading…" [ref=f4e379]
+                - generic [ref=f4e382]:
+                  - button "Send keywords" [ref=f4e383] [cursor=pointer]
+                  - button "Update metrics" [ref=f4e387] [cursor=pointer]
+                  - combobox "Manage columns" [ref=f4e390] [cursor=pointer]
+                  - button "Export keywords" [ref=f4e393] [cursor=pointer]
+              - region "Notification" [ref=f4e395]:
+                - generic [ref=f4e398]:
+                  - text: How would you rate Keyword Topics?
+                  - generic [ref=f4e399]:
+                    - 'button "Rate the keyword topics: 1 out of 5 stars" [ref=f4e400] [cursor=pointer]'
+                    - 'button "Rate the keyword topics: 2 out of 5 stars" [ref=f4e401] [cursor=pointer]'
+                    - 'button "Rate the keyword topics: 3 out of 5 stars" [ref=f4e402] [cursor=pointer]'
+                    - 'button "Rate the keyword topics: 4 out of 5 stars" [ref=f4e403] [cursor=pointer]'
+                    - 'button "Rate the keyword topics: 5 out of 5 stars" [ref=f4e404] [cursor=pointer]'
+              - table [ref=f4e405]:
+                - rowgroup [ref=f4e408]:
+                  - row [ref=f4e410]:
+                    - columnheader "Select all keywords" [ref=f4e411]:
+                      - generic [ref=f4e415] [cursor=pointer]:
+                        - generic [ref=f4e416]: Select all keywords
+                        - checkbox "Select all keywords" [ref=f4e417]
+                    - columnheader "Keyword" [ref=f4e419] [cursor=pointer]
+                    - columnheader "Intent" [ref=f4e427]
+                    - columnheader "Relevance" [ref=f4e431] [cursor=pointer]
+                    - columnheader "Volume" [ref=f4e440] [cursor=pointer]
+                    - columnheader "KD %" [ref=f4e449] [cursor=pointer]
+                    - columnheader "Com." [ref=f4e458] [cursor=pointer]
+                    - columnheader "Updated" [ref=f4e467] [cursor=pointer]
+                - rowgroup [ref=f4e477]:
+                  - generic [ref=f4e478]:
+                    - row [ref=f4e479]:
+                      - cell [ref=f4e480]:
+                        - checkbox [disabled] [ref=f4e483]
+                      - cell [ref=f4e485]
+                      - cell [ref=f4e489]
+                      - cell [ref=f4e493]
+                      - cell [ref=f4e497]
+                      - cell [ref=f4e501]
+                      - cell [ref=f4e505]
+                      - cell [ref=f4e509]
+                    - row [ref=f4e513]:
+                      - cell [ref=f4e514]:
+                        - checkbox [disabled] [ref=f4e517]
+                      - cell [ref=f4e519]
+                      - cell [ref=f4e523]
+                      - cell [ref=f4e527]
+                      - cell [ref=f4e531]
+                      - cell [ref=f4e535]
+                      - cell [ref=f4e539]
+                      - cell [ref=f4e543]
+                    - row [ref=f4e547]:
+                      - cell [ref=f4e548]:
+                        - checkbox [disabled] [ref=f4e551]
+                      - cell [ref=f4e553]
+                      - cell [ref=f4e557]
+                      - cell [ref=f4e561]
+                      - cell [ref=f4e565]
+                      - cell [ref=f4e569]
+                      - cell [ref=f4e573]
+                      - cell [ref=f4e577]
+  - region "Notifications"

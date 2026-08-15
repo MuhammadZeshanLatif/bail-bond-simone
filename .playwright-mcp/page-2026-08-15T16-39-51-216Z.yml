@@ -1,0 +1,452 @@
+- generic [ref=f8e2]:
+  - banner [ref=f8e3]:
+    - generic [ref=f8e5]:
+      - generic [ref=f8e6]:
+        - generic [ref=f8e7]: 
+        - generic [ref=f8e8]: Licensed & Bonded - Available 24/7
+      - generic [ref=f8e9]:
+        - generic [ref=f8e10]: 
+        - link "(702) 447-8550" [ref=f8e11] [cursor=pointer]:
+          - /url: tel:+17024478550
+        - generic [ref=f8e12]: "|"
+        - link "(302) 600-1886" [ref=f8e13] [cursor=pointer]:
+          - /url: tel:+13026001886
+    - navigation [ref=f8e14]:
+      - generic [ref=f8e15]:
+        - link [ref=f8e16] [cursor=pointer]:
+          - /url: /
+          - img "A Way to Freedom Bail Bonds" [ref=f8e17]
+        - text: 
+        - generic [ref=f8e18]:
+          - list [ref=f8e19]:
+            - listitem [ref=f8e20]:
+              - link "Home" [ref=f8e21] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f8e22]:
+              - button "Services " [ref=f8e23] [cursor=pointer]:
+                - text: Services
+                - generic [ref=f8e24]: 
+            - listitem [ref=f8e25]:
+              - link "About" [ref=f8e26] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f8e27]:
+              - link "How It Works" [ref=f8e28] [cursor=pointer]:
+                - /url: /how-it-works
+            - listitem [ref=f8e29]:
+              - link "FAQ" [ref=f8e30] [cursor=pointer]:
+                - /url: /faq
+            - listitem [ref=f8e31]:
+              - link "Blog" [ref=f8e32] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=f8e33]:
+              - link "Contact" [ref=f8e34] [cursor=pointer]:
+                - /url: /contact
+          - link " Call Now" [ref=f8e35] [cursor=pointer]:
+            - /url: tel:+17024478550
+            - generic [ref=f8e36]: 
+            - text: Call Now
+  - main [ref=f8e37]:
+    - main [ref=f8e39]:
+      - link "All Articles" [ref=f8e41] [cursor=pointer]:
+        - /url: /blog
+        - generic [ref=f8e42]: 
+        - text: All Articles
+      - generic [ref=f8e43]:
+        - generic [ref=f8e44]:
+          - text: 
+          - generic [ref=f8e45]:
+            - paragraph [ref=f8e46]: Table of Contents
+            - list [ref=f8e47]:
+              - listitem [ref=f8e48]:
+                - link "1. Quick Answer" [ref=f8e50] [cursor=pointer]:
+                  - /url: "#section-intro"
+                  - generic [ref=f8e51]: "1."
+                  - text: Quick Answer
+              - listitem [ref=f8e52]:
+                - link "2. What Is Bail?" [ref=f8e54] [cursor=pointer]:
+                  - /url: "#section-what-is-bail"
+                  - generic [ref=f8e55]: "2."
+                  - text: What Is Bail?
+              - listitem [ref=f8e56]:
+                - link "3. What Is a Bond?" [ref=f8e58] [cursor=pointer]:
+                  - /url: "#section-what-is-bond"
+                  - generic [ref=f8e59]: "3."
+                  - text: What Is a Bond?
+              - listitem [ref=f8e60]:
+                - link "4. 5 Key Differences" [ref=f8e62] [cursor=pointer]:
+                  - /url: "#section-key-differences"
+                  - generic [ref=f8e63]: "4."
+                  - text: 5 Key Differences
+              - listitem [ref=f8e64]:
+                - link "5. Cash Bail vs Surety Bond" [ref=f8e66] [cursor=pointer]:
+                  - /url: "#section-cash-vs-surety"
+                  - generic [ref=f8e67]: "5."
+                  - text: Cash Bail vs Surety Bond
+              - listitem [ref=f8e68]:
+                - link "6. Bail Bond Cost in Delaware" [ref=f8e70] [cursor=pointer]:
+                  - /url: "#section-cost"
+                  - generic [ref=f8e71]: "6."
+                  - text: Bail Bond Cost in Delaware
+              - listitem [ref=f8e72]:
+                - link "7. If the Defendant Misses Court" [ref=f8e74] [cursor=pointer]:
+                  - /url: "#section-missed-court"
+                  - generic [ref=f8e75]: "7."
+                  - text: If the Defendant Misses Court
+              - listitem [ref=f8e76]:
+                - link "8. Can You Get Your Money Back?" [ref=f8e78] [cursor=pointer]:
+                  - /url: "#section-refund"
+                  - generic [ref=f8e79]: "8."
+                  - text: Can You Get Your Money Back?
+              - listitem [ref=f8e80]:
+                - link "9. Which Option Should You Choose?" [ref=f8e82] [cursor=pointer]:
+                  - /url: "#section-which-option"
+                  - generic [ref=f8e83]: "9."
+                  - text: Which Option Should You Choose?
+              - listitem [ref=f8e84]:
+                - link "10. FAQs" [ref=f8e86] [cursor=pointer]:
+                  - /url: "#section-faq"
+                  - generic [ref=f8e87]: "10."
+                  - text: FAQs
+              - listitem [ref=f8e88]:
+                - link "11. Next Steps" [ref=f8e90] [cursor=pointer]:
+                  - /url: "#section-final"
+                  - generic [ref=f8e91]: "11."
+                  - text: Next Steps
+            - generic [ref=f8e92]:
+              - heading "Need Bail Bond Help Now?" [level=4] [ref=f8e93]
+              - paragraph [ref=f8e94]: Speak with a local agent for fast, clear guidance after an arrest.
+              - link "Start the Process →" [ref=f8e95] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=f8e96]:
+          - generic [ref=f8e97]:
+            - navigation "Breadcrumb" [ref=f8e98]:
+              - link "Home" [ref=f8e99] [cursor=pointer]:
+                - /url: /
+              - text: ›
+              - link "Blog" [ref=f8e100] [cursor=pointer]:
+                - /url: /blog
+              - text: "› Bail Types › Bail vs Bond in Delaware: What's the Difference?"
+            - 'heading "Bail vs Bond in Delaware: What''s the Difference?" [level=1] [ref=f8e101]'
+            - paragraph [ref=f8e102]: Learn the difference between bail and bond in Delaware, including cash bail, surety bonds, the 5%–10% filed premium, refunds, and what happens if the defendant misses court.
+            - generic [ref=f8e103]:
+              - img "Simone Harris, licensed bail bond agent in Delaware" [ref=f8e104]
+              - generic [ref=f8e105]:
+                - text: By
+                - strong [ref=f8e106]: Simone Harris
+              - generic [ref=f8e107]:
+                - generic [ref=f8e108]: 
+                - time [ref=f8e109]: August 15, 2026
+              - generic [ref=f8e110]:
+                - generic [ref=f8e111]: 
+                - text: 12 min read
+              - generic [ref=f8e112]:
+                - generic [ref=f8e113]: 
+                - text: 12.4K views
+              - generic [ref=f8e114]:
+                - generic [ref=f8e115]: 
+                - text: "Updated:"
+                - time [ref=f8e116]: August 15, 2026
+            - img "Bail vs bond in Delaware — a simple family guide comparing cash bail and surety bonds, from A Way to Freedom Bail Bonds" [ref=f8e118]
+            - list [ref=f8e119]:
+              - listitem [ref=f8e120]:
+                - generic [ref=f8e121]: 
+                - generic [ref=f8e123]:
+                  - strong [ref=f8e124]: Know the Difference
+                  - generic [ref=f8e125]: Bail vs Bond
+              - listitem [ref=f8e126]:
+                - generic [ref=f8e127]: $
+                - generic [ref=f8e129]:
+                  - strong [ref=f8e130]: Clear Pricing
+                  - generic [ref=f8e131]: 5%–10% Premium
+              - listitem [ref=f8e132]:
+                - generic [ref=f8e133]: 
+                - generic [ref=f8e135]:
+                  - strong [ref=f8e136]: Refunds Explained
+                  - generic [ref=f8e137]: What Comes Back
+              - listitem [ref=f8e138]:
+                - generic [ref=f8e139]: 
+                - generic [ref=f8e141]:
+                  - strong [ref=f8e142]: Get Help 24/7
+                  - generic [ref=f8e143]: DE Licensed Agent
+          - article [ref=f8e144]:
+            - generic [ref=f8e145]:
+              - paragraph [ref=f8e146]:
+                - strong [ref=f8e147]: By Simone Harris
+                - text: Licensed Bail Bond Agent
+              - paragraph [ref=f8e148]:
+                - text: When a loved one is arrested in Delaware, family members often hear the words
+                - strong [ref=f8e149]: bail
+                - text: and
+                - strong [ref=f8e150]: bond
+                - text: used as if they mean the same thing. The two terms are related, but they are not interchangeable — and confusing them can lead a family to arrange the wrong payment, wait longer for a release, or expect money back that was never refundable.
+              - paragraph [ref=f8e152]:
+                - strong [ref=f8e153]: "Quick answer:"
+                - text: Bail is the amount of money or security the court sets to allow a defendant to be released before trial. A bond is the financial guarantee that satisfies that requirement. Cash bail is paid in full to the court. A surety bond is posted by a licensed bail bond company in exchange for a non-refundable premium — in Delaware, a filed rate generally between 5% and 10% of the bail amount for bonds over $1,000.
+              - paragraph [ref=f8e154]: The right choice depends on the bail amount, the court's order, and your family's financial situation. This guide explains both options clearly so you can decide what to do next with confidence.
+            - generic [ref=f8e155]:
+              - heading "What Is Bail?" [level=2] [ref=f8e156]
+              - paragraph [ref=f8e157]: Bail is the amount of money or security set by the court that allows a defendant to be released from custody while their case is pending. It is not a fine or a punishment. It is a financial arrangement designed to give the defendant an incentive to return for every required court appearance.
+              - paragraph [ref=f8e158]: In Delaware, judges consider several factors when setting bail, including the seriousness of the charge, the defendant's criminal history, their ties to the community, and the risk that they might not return to court. The amount is set during the bail hearing or arraignment, and it can be reviewed or changed by the court later in the case.
+              - paragraph [ref=f8e159]:
+                - text: The bail amount itself is only one piece of the puzzle. Just as important is the
+                - strong [ref=f8e160]: type of bail
+                - text: the court orders — cash bail, surety bond, unsecured bond, or own recognizance. Each type has different requirements and a different effect on your family's finances. If you are trying to figure out how much was set, read our guide on
+                - link "how to find out how much someone's bail is" [ref=f8e161] [cursor=pointer]:
+                  - /url: /blog/how-do-you-find-out-how-much-someones-bail-is
+                - text: .
+            - generic [ref=f8e162]:
+              - heading "What Is a Bond?" [level=2] [ref=f8e163]
+              - paragraph [ref=f8e164]: A bond is a written, legally binding promise that the full bail amount will be paid if the defendant fails to appear in court. When a family uses a bail bond company, the company agrees to post the full bail amount with the court on the defendant's behalf. In exchange, the family pays the company a premium — a non-refundable service fee based on the bail amount.
+              - paragraph [ref=f8e165]: "There are several types of bonds in Delaware, and the one the court allows depends on the order:"
+              - list [ref=f8e166]:
+                - listitem [ref=f8e167]:
+                  - strong [ref=f8e168]: "Cash bond:"
+                  - text: The full bail amount is paid to the court in cash.
+                - listitem [ref=f8e169]:
+                  - strong [ref=f8e170]: "Surety bond:"
+                  - text: A licensed bail bond company posts the bail for a premium.
+                - listitem [ref=f8e171]:
+                  - strong [ref=f8e172]: "Unsecured bond:"
+                  - text: A signed promise to appear, without paying money up front.
+                - listitem [ref=f8e173]:
+                  - strong [ref=f8e174]: "Own recognizance (O.R.):"
+                  - text: Release on a personal promise to return to court.
+              - paragraph [ref=f8e175]:
+                - text: If the order permits a surety bond, a licensed Delaware bail agent can help. The agent reviews the case, the amount, and any co-signer or collateral requirements before posting the bond. Learn more about how this works in our guide to
+                - link "bonding someone out of jail in Delaware" [ref=f8e176] [cursor=pointer]:
+                  - /url: /blog/how-to-bond-someone-out-of-jail-delaware
+                - text: .
+            - generic [ref=f8e177]:
+              - 'heading "Bail vs Bond: The 5 Key Differences" [level=2] [ref=f8e178]'
+              - paragraph [ref=f8e179]: Here is the clearest way to separate the two terms — and the two very different ways to get someone out of custody.
+              - table [ref=f8e181]:
+                - rowgroup [ref=f8e182]:
+                  - row [ref=f8e183]:
+                    - columnheader "Question" [ref=f8e184]
+                    - columnheader "Bail" [ref=f8e185]
+                    - columnheader "Bond" [ref=f8e186]
+                - rowgroup [ref=f8e187]:
+                  - row [ref=f8e188]:
+                    - cell "What is it?" [ref=f8e189]
+                    - cell "The amount set by the court for release." [ref=f8e190]
+                    - cell "The financial guarantee that satisfies the bail requirement." [ref=f8e191]
+                  - row [ref=f8e192]:
+                    - cell "Who sets the amount?" [ref=f8e193]
+                    - cell "The court, based on the case." [ref=f8e194]
+                    - cell "The bail bond company posts it; the court sets the underlying amount." [ref=f8e195]
+                  - row [ref=f8e196]:
+                    - cell "How much do you pay?" [ref=f8e197]
+                    - cell "The full bail amount, if paid in cash." [ref=f8e198]
+                    - cell "The premium — generally 5% to 10% in Delaware." [ref=f8e199]
+                  - row [ref=f8e200]:
+                    - cell "Do you get money back?" [ref=f8e201]
+                    - cell "Cash bail is refunded when the case ends and all appearances are met." [ref=f8e202]
+                    - cell "The premium is not refundable; collateral may be returned." [ref=f8e203]
+                  - row [ref=f8e204]:
+                    - cell "Who is responsible?" [ref=f8e205]
+                    - cell "The defendant or whoever posts the cash." [ref=f8e206]
+                    - cell "The co-signer shares responsibility for the full amount." [ref=f8e207]
+              - paragraph [ref=f8e208]:
+                - text: "Put simply:"
+                - strong [ref=f8e209]: bail is the amount
+                - text: ", and"
+                - strong [ref=f8e210]: a bond is how that amount gets covered
+                - text: . If the court allows a surety bond, a company covers the full amount for a premium so your family does not have to pay the entire bail figure out of pocket.
+            - generic [ref=f8e211]:
+              - heading "Cash Bail vs Surety Bond" [level=2] [ref=f8e212]
+              - paragraph [ref=f8e213]: These are the two options families most often compare. Each has a different cost structure and a different refund outcome.
+              - heading "Cash Bail" [level=3] [ref=f8e214]
+              - paragraph [ref=f8e215]: With cash bail, the full amount set by the court is paid directly to the court. The money is held until the case ends. If the defendant attends every required hearing, the cash is refunded — usually minus any court fees or fines ordered as part of the case.
+              - paragraph [ref=f8e216]: The trade-off is that your family must come up with the entire amount up front. For a $10,000 bail, that means $10,000 in cash today, tied up until the case concludes.
+              - heading "Surety Bond" [level=3] [ref=f8e217]
+              - paragraph [ref=f8e218]: With a surety bond, a licensed bail bond company posts the full bail amount with the court. The family pays the company a premium instead of the full bail figure. Under Delaware law, for surety bonds over $1,000, the filed premium must be between 5% and 10% of the bail amount, and at least 5% must be collected before the bond is posted.
+              - paragraph [ref=f8e219]: For the same $10,000 bail, a surety bond would generally cost a premium of $500 to $1,000 — a far smaller upfront commitment than the full $10,000. The trade-off is that the premium is not refundable, and whoever signs as co-signer may be responsible for the full amount if the defendant fails to appear.
+            - generic [ref=f8e220]:
+              - heading "How Much Does a Bail Bond Cost in Delaware?" [level=2] [ref=f8e221]
+              - paragraph [ref=f8e222]: Delaware law is specific about what a bail bond company may charge. For a surety bail bond, the premium must match the rate filed with and approved by the state. For surety bonds over $1,000, that filed premium is generally between 5% and 10% of the bail amount, and at least 5% must be collected before the bond is posted.
+              - paragraph [ref=f8e223]: Delaware law does not allow unapproved administrative, service, company, or agent fees on top of the filed premium. Always ask the agent to explain every charge in writing, and confirm the premium and any collateral requirement before you sign. A licensed agent must provide a written contract.
+              - paragraph [ref=f8e224]:
+                - text: Need the full picture on costs, payment plans, and collateral? Read our complete
+                - link "Delaware bail bond cost guide" [ref=f8e225] [cursor=pointer]:
+                  - /url: /blog/how-much-does-a-bail-bond-cost-in-delaware
+                - text: .
+            - generic [ref=f8e226]:
+              - heading "What Happens If the Defendant Misses Court?" [level=2] [ref=f8e227]
+              - paragraph [ref=f8e228]: Missing a court date is serious under any bail arrangement. The court can issue a bench warrant for the defendant's arrest, and the bail — whether cash paid to the court or a surety bond — can be forfeited.
+              - paragraph [ref=f8e229]: With cash bail, a missed appearance can mean the court keeps the full amount. With a surety bond, the company can be required to pay the court the full bail amount, and it can then turn to the co-signer to recover that money. Collateral posted for the bond may also be kept.
+              - paragraph [ref=f8e230]: That is why the co-signer's role matters so much. Before anyone signs, they should understand that they are guaranteeing the defendant's appearance — not just paying a fee. Keep every court date in a calendar and contact the court or agent immediately if there is a genuine scheduling problem.
+            - generic [ref=f8e231]:
+              - heading "Can You Get Your Money Back?" [level=2] [ref=f8e232]
+              - paragraph [ref=f8e233]: The refund rules are different for each option, and knowing them before you pay can prevent a painful surprise later.
+              - list [ref=f8e234]:
+                - listitem [ref=f8e235]:
+                  - strong [ref=f8e236]: "Cash bail:"
+                  - text: Refundable at the end of the case, provided the defendant attends every required hearing. Court costs or fines may be deducted.
+                - listitem [ref=f8e237]:
+                  - strong [ref=f8e238]: "Surety bond premium:"
+                  - text: Not refundable. It is a service fee paid to the bond company, even if the case is dismissed.
+                - listitem [ref=f8e239]:
+                  - strong [ref=f8e240]: "Collateral:"
+                  - text: Returned when the bond is exonerated and the case is closed, as long as all conditions are met.
+              - paragraph [ref=f8e241]:
+                - text: Ask for the refund and collateral terms
+                - strong [ref=f8e242]: in writing
+                - text: before signing any agreement. Verbal promises are not a substitute for the terms on the contract. If the court ordered an unsecured bond instead, read our guide to
+                - link "unsecured bail in Delaware" [ref=f8e243] [cursor=pointer]:
+                  - /url: /blog/what-is-unsecured-bail-delaware
+                - text: to see how that type works.
+            - generic [ref=f8e244]:
+              - heading "Which Option Should You Choose?" [level=2] [ref=f8e245]
+              - paragraph [ref=f8e246]: There is no single right answer — the best choice depends on the amount, the court's order, and what your family can manage.
+              - list [ref=f8e247]:
+                - listitem [ref=f8e248]:
+                  - strong [ref=f8e249]: Choose cash bail if
+                  - text: your family can pay the full amount up front and wants the money back when the case ends.
+                - listitem [ref=f8e250]:
+                  - strong [ref=f8e251]: Choose a surety bond if
+                  - text: the court allows it and you want to avoid tying up the full amount for months.
+                - listitem [ref=f8e252]:
+                  - strong [ref=f8e253]: Ask about payment plans
+                  - text: if the premium is still more than the family can pay at once.
+              - paragraph [ref=f8e254]: A licensed Delaware bail agent can review the order, explain the options that apply to the case, and help you weigh the trade-offs before any money changes hands.
+            - generic [ref=f8e255]:
+              - heading "Bail vs Bond FAQs" [level=2] [ref=f8e256]
+              - generic [ref=f8e257]:
+                - group [ref=f8e258]:
+                  - heading "What is the difference between bail and bond?" [level=3] [ref=f8e260] [cursor=pointer]
+                  - paragraph [ref=f8e262]: Bail is the money or security set by the court that allows a defendant to be released before trial. A bond is a promise or financial guarantee, often posted by a bail bond company, that ensures the defendant appears in court. When a surety bond is used, the defendant or co-signer pays a non-refundable premium rather than the full bail amount.
+                - group [ref=f8e263]:
+                  - heading "Is bail the same as bond?" [level=3] [ref=f8e265] [cursor=pointer]
+                - group [ref=f8e266]:
+                  - 'heading "Which is cheaper in Delaware: cash bail or a bail bond?" [level=3] [ref=f8e268] [cursor=pointer]'
+                - group [ref=f8e269]:
+                  - heading "Is a bail bond premium refundable in Delaware?" [level=3] [ref=f8e271] [cursor=pointer]
+                - group [ref=f8e272]:
+                  - heading "What happens if the defendant misses court?" [level=3] [ref=f8e274] [cursor=pointer]
+                - group [ref=f8e275]:
+                  - heading "Can a bail bond company help with any bail type in Delaware?" [level=3] [ref=f8e277] [cursor=pointer]
+            - generic [ref=f8e278]:
+              - heading "Get Clear Guidance Before You Pay" [level=2] [ref=f8e279]
+              - paragraph [ref=f8e280]: The difference between bail and bond can be worth thousands of dollars to your family. Understanding which option the court allowed — and what it actually costs — is the most important step you can take after an arrest.
+              - paragraph [ref=f8e281]:
+                - link "Contact A Way to Freedom Bail Bonds" [ref=f8e282] [cursor=pointer]:
+                  - /url: /contact
+                - text: for clear, confidential 24/7 guidance from a licensed Delaware agent.
+              - paragraph [ref=f8e283]:
+                - strong [ref=f8e284]: "Legal disclaimer:"
+                - text: This article is for general information only and is not legal advice. Consult a licensed Delaware attorney for advice about your case.
+            - generic [ref=f8e285]:
+              - generic [ref=f8e286]:
+                - generic [ref=f8e287]: "Tags:"
+                - generic [ref=f8e288]: Bail vs Bond
+                - generic [ref=f8e289]: Difference Between Bail and Bond
+                - generic [ref=f8e290]: Cash Bail
+                - generic [ref=f8e291]: Surety Bond
+                - generic [ref=f8e292]: Delaware Bail Bonds
+                - generic [ref=f8e293]: Family Guide
+              - generic [ref=f8e294]:
+                - generic [ref=f8e295]: "Share this article:"
+                - link "Share on Facebook" [ref=f8e296] [cursor=pointer]:
+                  - /url: https://www.facebook.com/sharer/sharer.php
+                  - generic [ref=f8e297]: 
+                - link "Share on X" [ref=f8e298] [cursor=pointer]:
+                  - /url: https://twitter.com/intent/tweet
+                  - generic [ref=f8e299]: 
+                - link "Share on LinkedIn" [ref=f8e300] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/sharing/share-offsite/
+                  - generic [ref=f8e301]: 
+                - button "Copy link" [ref=f8e302] [cursor=pointer]:
+                  - generic [ref=f8e303]: 
+            - generic [ref=f8e304]:
+              - link [ref=f8e305] [cursor=pointer]:
+                - /url: "#/blog/felony-vs-misdemeanor-bonds-delaware"
+                - paragraph [ref=f8e306]:
+                  - generic [ref=f8e307]: 
+                  - text: Previous Post
+                - paragraph [ref=f8e308]: "Felony vs. Misdemeanor Bonds in Delaware: What Families Need to Know"
+              - link [ref=f8e309] [cursor=pointer]:
+                - /url: "#/blog/secured-bail-vs-cash-only-bail-delaware"
+                - paragraph [ref=f8e310]:
+                  - text: Next Post
+                  - generic [ref=f8e311]: 
+                - paragraph [ref=f8e312]: "Secured Bail vs. Cash-Only Bail in Delaware: What Families Need to Know"
+        - complementary "Article sidebar" [ref=f8e313]:
+          - generic [ref=f8e314]:
+            - paragraph [ref=f8e315]: About the Author
+            - img "Simone Harris, licensed bail bond agent in Delaware" [ref=f8e316]
+            - generic [ref=f8e317]:
+              - generic [ref=f8e318]: SIMONE HARRIS
+              - generic "Verified" [ref=f8e319]: 
+            - paragraph [ref=f8e320]: Licensed Bail Bond Agent
+            - paragraph [ref=f8e321]: In my experience helping Delaware families, the most important thing is calm guidance. Families do not need confusing legal talk during a crisis. They need clear steps, honest answers, and support they can trust.
+          - generic [ref=f8e322]:
+            - paragraph [ref=f8e323]: Related Articles
+            - link [ref=f8e324] [cursor=pointer]:
+              - /url: "#/blog/felony-vs-misdemeanor-bonds-delaware"
+              - 'img "Felony vs. Misdemeanor Bonds in Delaware: What Families Need to Know" [ref=f8e325]'
+              - generic [ref=f8e326]:
+                - paragraph [ref=f8e327]: "Felony vs. Misdemeanor Bonds in Delaware: What Families Need to Know"
+                - paragraph [ref=f8e328]:
+                  - generic [ref=f8e329]: 
+                  - text: Compare felony and misdemeanor bonds in Delaware. Learn which bail types apply, how bail is set, and what a bail bondsman can help with for each charge type.
+            - link [ref=f8e330] [cursor=pointer]:
+              - /url: "#/blog/secured-bail-vs-cash-only-bail-delaware"
+              - 'img "Secured Bail vs. Cash-Only Bail in Delaware: What Families Need to Know" [ref=f8e331]'
+              - generic [ref=f8e332]:
+                - paragraph [ref=f8e333]: "Secured Bail vs. Cash-Only Bail in Delaware: What Families Need to Know"
+                - paragraph [ref=f8e334]:
+                  - generic [ref=f8e335]: 
+                  - text: Compare secured bail and cash-only bail in Delaware. Learn what the court requires, whether a bail bondsman can help, and what to confirm before paying.
+            - link [ref=f8e336] [cursor=pointer]:
+              - /url: "#/blog/traffic-bail-bonds-wilmington-delaware"
+              - 'img "Traffic Arrest Bail Bonds in Wilmington Delaware: A Complete Family Guide" [ref=f8e337]'
+              - generic [ref=f8e338]:
+                - paragraph [ref=f8e339]: "Traffic Arrest Bail Bonds in Wilmington Delaware: A Complete Family Guide"
+                - paragraph [ref=f8e340]:
+                  - generic [ref=f8e341]: 
+                  - text: Need a traffic bail bond in Wilmington, Delaware? Learn about DUIs, suspended license arrests, JP Court 11, secured bonds, costs, and fast release options.
+          - generic [ref=f8e342]:
+            - generic [ref=f8e343]: 
+            - heading "Need Bail Bond Help Now?" [level=3] [ref=f8e345]
+            - paragraph [ref=f8e346]: Speak with a local agent for fast, clear guidance after an arrest.
+            - link "Start the Process" [ref=f8e347] [cursor=pointer]:
+              - /url: /contact
+  - contentinfo [ref=f8e348]:
+    - generic [ref=f8e350]:
+      - generic [ref=f8e351]:
+        - generic [ref=f8e352]: 
+        - text: Serving
+        - link "New Castle County bail bonds" [ref=f8e353] [cursor=pointer]:
+          - /url: /new-castle-county-bail-bonds
+        - text: "&"
+        - link "Kent County, Delaware" [ref=f8e354] [cursor=pointer]:
+          - /url: /service-areas
+      - paragraph [ref=f8e355]: Licensed Bail Bond Services • Confidential & Professional Assistance • Available 24/7
+      - generic [ref=f8e356]:
+        - link "Facebook" [ref=f8e357] [cursor=pointer]:
+          - /url: https://www.facebook.com/people/A-Way-to-Freedom-Bail-Bonds/100094085200363/
+          - generic [ref=f8e358]: 
+        - link "Instagram" [ref=f8e359] [cursor=pointer]:
+          - /url: https://www.instagram.com
+          - generic [ref=f8e360]: 
+        - link "Email" [ref=f8e361] [cursor=pointer]:
+          - /url: mailto:away2freedom302@gmail.com
+          - generic [ref=f8e362]: 
+      - paragraph [ref=f8e364]: © 2026 A Way to Freedom Bail Bonds. All rights reserved.
+  - generic [ref=f8e365]:
+    - link "Chat on WhatsApp" [ref=f8e366] [cursor=pointer]:
+      - /url: https://wa.me/13029819223?text=Hi%20Simone%2C%20I%20need%20help%20with%20bail%20bond%20services.%20Please%20let%20me%20know%20how%20you%20can%20assist%20me.
+      - generic [ref=f8e367]: 
+    - link "Call Now" [ref=f8e368] [cursor=pointer]:
+      - /url: tel:+17024478550
+      - generic [ref=f8e369]: 
+  - generic [ref=f8e370]:
+    - link "Facebook" [ref=f8e371] [cursor=pointer]:
+      - /url: https://www.facebook.com/people/A-Way-to-Freedom-Bail-Bonds/100094085200363/
+      - generic [ref=f8e372]: 
+    - link "Instagram" [ref=f8e373] [cursor=pointer]:
+      - /url: https://www.instagram.com
+      - generic [ref=f8e374]: 
+    - link "Email" [ref=f8e375] [cursor=pointer]:
+      - /url: mailto:away2freedom302@gmail.com
+      - generic [ref=f8e376]: 

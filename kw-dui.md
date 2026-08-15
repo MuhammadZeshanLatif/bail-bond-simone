@@ -1,0 +1,2701 @@
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - button "Skip to content" [ref=f4e4]
+    - banner [ref=f4e7]:
+      - generic [ref=f4e8]:
+        - generic [ref=f4e583]:
+          - generic [ref=f4e587]:
+            - generic [ref=f4e588]:
+              - combobox "Enter website or keyword" [ref=f4e589]: dui bail bond
+              - generic: dui bail bond
+            - button "Clear" [ref=f4e591] [cursor=pointer]
+          - button "Analyze" [ref=f4e594] [cursor=pointer]
+        - navigation [ref=f4e10]:
+          - menubar [ref=f4e11]:
+            - menuitem "More" [ref=f4e12] [cursor=pointer]
+            - menuitem "My profile" [ref=f4e13] [cursor=pointer]
+    - navigation [ref=f4e17]:
+      - generic [ref=f4e18]:
+        - list [ref=f4e19]:
+          - listitem [ref=f4e20]:
+            - link "Home" [ref=f4e21] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/home/
+          - listitem [ref=f4e26]:
+            - link "SEO" [ref=f4e27] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/seo/
+        - list [ref=f4e32]:
+          - listitem [ref=f4e33]:
+            - link "AI" [ref=f4e34] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/ai-seo/overview/
+          - listitem [ref=f4e39]:
+            - link "Traffic & Market" [ref=f4e40] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/traffic/
+          - listitem [ref=f4e44]:
+            - link "Local" [ref=f4e45] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/local-business/
+          - listitem [ref=f4e50]:
+            - link "Content" [ref=f4e51] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/content/
+          - listitem [ref=f4e56]:
+            - link "Ad" [ref=f4e57] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/advertising/
+          - listitem [ref=f4e63]:
+            - link "AI PR" [ref=f4e64] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/pr-toolkit/
+          - listitem [ref=f4e68]:
+            - link "Social" [ref=f4e69] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/social-media/
+        - list [ref=f4e76]:
+          - listitem [ref=f4e77]:
+            - link "Reports" [ref=f4e78] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/my_reports/grid/
+          - listitem [ref=f4e82]:
+            - link "Apps" [ref=f4e83] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/apps/
+      - generic [ref=f4e90]:
+        - generic [ref=f4e91]: SEO
+        - list [ref=f4e93]:
+          - listitem [ref=f4e94]:
+            - link "Dashboard" [ref=f4e96] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/seo/
+        - list [ref=f4e98]:
+          - listitem [ref=f4e99]:
+            - generic [ref=f4e100]: Site Performance
+          - listitem [ref=f4e101]:
+            - link "Site Audit" [ref=f4e103] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/siteaudit/
+          - listitem [ref=f4e104]:
+            - link "Position Tracking" [ref=f4e106] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/position-tracking/
+        - list [ref=f4e108]:
+          - listitem [ref=f4e109]:
+            - generic [ref=f4e110]: Competitive Analysis
+          - listitem [ref=f4e111]:
+            - link "Domain Overview" [ref=f4e113] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/overview/?db=us
+          - listitem [ref=f4e114]:
+            - link "Organic Rankings" [ref=f4e116] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/organic/overview?db=us
+          - listitem [ref=f4e117]:
+            - link "Top Pages" [ref=f4e119] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/toppages/?db=us
+          - listitem [ref=f4e120]:
+            - link "Compare Domains" [ref=f4e122] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/comparedomains/?db=us
+          - listitem [ref=f4e123]:
+            - link "Keyword Gap" [ref=f4e125] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/keywordgap/?db=us
+          - listitem [ref=f4e126]:
+            - link "Backlink Gap" [ref=f4e128] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/gap/backlinks/
+        - list [ref=f4e130]:
+          - listitem [ref=f4e131]:
+            - generic [ref=f4e132]: Keyword Research
+          - listitem [ref=f4e133]:
+            - link "Keyword Overview" [ref=f4e135] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/keywordoverview/?db=us&q=dui+bail+bond
+          - listitem [ref=f4e136]:
+            - link "Keyword Magic Tool" [ref=f4e138] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/keywordmagic/?db=us&q=dui+bail+bond
+          - listitem [ref=f4e139]:
+            - link "Keyword Strategy Builder" [ref=f4e141] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/keywordmanager/?db=us&q=dui+bail+bond
+        - list [ref=f4e143]:
+          - listitem [ref=f4e144]:
+            - generic [ref=f4e145]: Content Ideas
+          - listitem [ref=f4e146]:
+            - link "SEO Writing Assistant" [ref=f4e148] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/swa/
+          - listitem [ref=f4e149]:
+            - link "Topic Research" [ref=f4e151] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/topic-research/
+        - list [ref=f4e153]:
+          - listitem [ref=f4e154]:
+            - generic [ref=f4e155]: Link Building
+          - listitem [ref=f4e156]:
+            - link "Backlinks" [ref=f4e158] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/backlinks/overview/
+          - listitem [ref=f4e159]:
+            - link "Referring Domains" [ref=f4e161] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/refdomains/report/
+          - listitem [ref=f4e162]:
+            - link "Backlink Audit" [ref=f4e164] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/backlink_audit/
+        - list [ref=f4e166]:
+          - listitem [ref=f4e167]:
+            - generic [ref=f4e168]: Extras
+          - listitem [ref=f4e169]:
+            - link "Sensor" [ref=f4e171] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/sensor/?utm_medium=footer&utm_source=semrush
+          - listitem [ref=f4e172]:
+            - link "SEOquake" [ref=f4e174] [cursor=pointer]:
+              - /url: https://www.seoquake.com/
+          - listitem [ref=f4e175]:
+            - link "Semrush Rank" [ref=f4e177] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/ranks/rank/?db=us
+        - list [ref=f4e179]:
+          - listitem [ref=f4e180]:
+            - generic [ref=f4e181]: Other
+          - listitem [ref=f4e182]:
+            - link "On Page SEO Checker" [ref=f4e184] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/on-page-seo-checker/
+          - listitem [ref=f4e185]:
+            - link "Organic Traffic Insights" [ref=f4e187] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/organic_traffic_insights/
+      - button "Hide navigation" [expanded] [ref=f4e189] [cursor=pointer]
+    - main [ref=f4e194]:
+      - generic [ref=f4e196]:
+        - generic [ref=f4e198]:
+          - generic [ref=f4e199]:
+            - navigation "Breadcrumbs" [ref=f4e200]:
+              - list [ref=f4e201]:
+                - listitem [ref=f4e202]:
+                  - link "Home" [ref=f4e203] [cursor=pointer]:
+                    - /url: https://sm.hindseo.com/home
+                - listitem [ref=f4e207]:
+                  - link "SEO" [ref=f4e208] [cursor=pointer]:
+                    - /url: https://sm.hindseo.com/seo
+                - listitem [ref=f4e212]:
+                  - generic [ref=f4e213]: Keyword Magic Tool
+            - generic [ref=f4e214]:
+              - link "Go to the Keyword Research course" [ref=f4e215] [cursor=pointer]:
+                - /url: https://sm.hindseo.com/academy/courses/keyword-research-with-semrush-step-by-step-guide/
+                - generic [ref=f4e216]: Keyword Research course
+              - link "Go to the Keyword Magic Tool user manual" [ref=f4e217] [cursor=pointer]:
+                - /url: https://sm.hindseo.com/kb/617-keyword-magic-tool-manual
+                - generic [ref=f4e218]: User manual
+              - button "Send feedback" [ref=f4e219] [cursor=pointer]
+          - generic [ref=f4e220]:
+            - 'heading "Keyword Magic Tool: dui bail bond" [level=1] [ref=f4e221]':
+              - generic [ref=f4e222]: "Keyword Magic Tool:"
+              - generic [ref=f4e223]: dui bail bond
+            - link "View search history" [ref=f4e224] [cursor=pointer]:
+              - /url: https://sm.hindseo.com/analytics/keywordmagic/start
+          - generic [ref=f4e228]:
+            - generic [ref=f4e229]:
+              - generic [ref=f4e230]: "Database:"
+              - button "Select country United States" [ref=f4e231] [cursor=pointer]:
+                - generic [ref=f4e234]: United States
+            - generic [ref=f4e238]:
+              - generic [ref=f4e239]: "Currency:"
+              - generic [ref=f4e240]: USD
+        - separator [ref=f4e242]
+        - region "Filters" [ref=f4e244]:
+          - generic [ref=f4e245]:
+            - tablist "Keyword type" [ref=f4e247]:
+              - tab "All" [selected] [ref=f4e249] [cursor=pointer]
+              - tab "Questions" [ref=f4e252] [cursor=pointer]
+            - tablist "Match modifiers" [ref=f4e255]:
+              - tab "All Keywords" [selected] [ref=f4e257] [cursor=pointer]
+              - tab "Broad Match" [ref=f4e260] [cursor=pointer]
+              - tab "Phrase Match" [ref=f4e263] [cursor=pointer]
+              - tab "Exact Match" [ref=f4e266] [cursor=pointer]
+              - tab "Related" [ref=f4e269] [cursor=pointer]
+            - combobox "Select language" [ref=f4e275] [cursor=pointer]:
+              - generic [ref=f4e276]: Languages
+          - combobox "Enter domain for personalized data" [ref=f4e287]
+          - generic [ref=f4e289]:
+            - combobox "Select volume" [ref=f4e291] [cursor=pointer]:
+              - generic [ref=f4e292]: Volume
+            - combobox "Select keyword difficulty" [ref=f4e295] [cursor=pointer]:
+              - generic [ref=f4e296]: KD %
+            - combobox "Select search intent" [ref=f4e301] [cursor=pointer]:
+              - generic [ref=f4e302]: Intent
+            - combobox "Select cost per click" [ref=f4e306] [cursor=pointer]:
+              - generic [ref=f4e307]: CPC (USD)
+            - combobox "Include keywords" [ref=f4e310] [cursor=pointer]
+            - combobox "Exclude keywords" [ref=f4e314] [cursor=pointer]
+            - combobox "Advanced filters" [ref=f4e318] [cursor=pointer]
+        - generic [ref=f4e322]:
+          - region "Keyword groups" [ref=f4e323]:
+            - generic [ref=f4e324]:
+              - tablist [ref=f4e326]:
+                - tab "Topics new" [selected] [ref=f4e329] [cursor=pointer]:
+                  - generic [ref=f4e330]: Topics
+                  - generic [ref=f4e331]: new
+                - tab "Groups" [ref=f4e334] [cursor=pointer]
+              - generic [ref=f4e337]:
+                - generic [ref=f4e338]: Topic
+                - generic [ref=f4e339]: Keywords
+              - generic [ref=f4e597]:
+                - generic [ref=f4e601]:
+                  - generic [ref=f4e602] [cursor=pointer]:
+                    - button "All" [ref=f4e603]
+                    - generic [ref=f4e606]: 41K
+                  - generic [ref=f4e607] [cursor=pointer]:
+                    - button "DUI Bail Costs" [ref=f4e608]
+                    - generic [ref=f4e611]: "358"
+                  - generic [ref=f4e612] [cursor=pointer]:
+                    - button "Dwi Bail Bonds" [ref=f4e613]
+                    - generic [ref=f4e616]: "362"
+                  - generic [ref=f4e617] [cursor=pointer]:
+                    - button "DUI Charges After Fact" [ref=f4e618]
+                    - generic [ref=f4e621]: "241"
+                  - generic [ref=f4e622] [cursor=pointer]:
+                    - button "Probation Violation Bail Bonds" [ref=f4e623]
+                    - generic [ref=f4e626]: "276"
+                  - generic [ref=f4e627] [cursor=pointer]:
+                    - button "DUI Pretrial Conference" [ref=f4e628]
+                    - generic [ref=f4e631]: "450"
+                  - generic [ref=f4e632] [cursor=pointer]:
+                    - button "Bail And Bonds" [ref=f4e633]
+                    - generic [ref=f4e636]: 1.5K
+                  - generic [ref=f4e637] [cursor=pointer]:
+                    - button "Marijuana Dui Law" [ref=f4e638]
+                    - generic [ref=f4e641]: "788"
+                  - generic [ref=f4e642] [cursor=pointer]:
+                    - button "Dui Plea Options" [ref=f4e643]
+                    - generic [ref=f4e646]: "872"
+                  - generic [ref=f4e647] [cursor=pointer]:
+                    - button "Dui Lawyer" [ref=f4e648]
+                    - generic [ref=f4e651]: "247"
+                  - generic [ref=f4e652] [cursor=pointer]:
+                    - button "California DUI License Suspension" [ref=f4e653]
+                    - generic [ref=f4e656]: "265"
+                  - generic [ref=f4e657] [cursor=pointer]:
+                    - button "Bui Versus Dui" [ref=f4e658]
+                    - generic [ref=f4e661]: "351"
+                  - generic [ref=f4e662] [cursor=pointer]:
+                    - button "DUI Probation" [ref=f4e663]
+                    - generic [ref=f4e666]: "876"
+                  - generic [ref=f4e667] [cursor=pointer]:
+                    - button "DUI License Suspension" [ref=f4e668]
+                    - generic [ref=f4e671]: 1.6K
+                  - generic [ref=f4e672] [cursor=pointer]:
+                    - button "California DUI Laws" [ref=f4e673]
+                    - generic [ref=f4e676]: 1.4K
+                  - generic [ref=f4e677] [cursor=pointer]:
+                    - button "Bail Release Status" [ref=f4e678]
+                    - generic [ref=f4e681]: "428"
+                  - generic [ref=f4e682] [cursor=pointer]:
+                    - button "Dui Public Defender" [ref=f4e683]
+                    - generic [ref=f4e686]: "255"
+                  - generic [ref=f4e687] [cursor=pointer]:
+                    - button "Federal DUI Law" [ref=f4e688]
+                    - generic [ref=f4e691]: "200"
+                  - generic [ref=f4e692] [cursor=pointer]:
+                    - button "DUI And Reckless Driving" [ref=f4e693]
+                    - generic [ref=f4e696]: "267"
+                  - generic [ref=f4e697] [cursor=pointer]:
+                    - button "DUI Dismissals California" [ref=f4e698]
+                    - generic [ref=f4e701]: "303"
+                  - generic [ref=f4e702] [cursor=pointer]:
+                    - button "Florida DUI Costs" [ref=f4e703]
+                    - generic [ref=f4e706]: "185"
+                  - generic [ref=f4e707] [cursor=pointer]:
+                    - button "Dui Trial Outcomes" [ref=f4e708]
+                    - generic [ref=f4e711]: "421"
+                  - generic [ref=f4e712] [cursor=pointer]:
+                    - button "Third DUI Penalties" [ref=f4e713]
+                    - generic [ref=f4e716]: "577"
+                  - generic [ref=f4e717] [cursor=pointer]:
+                    - button "DUI Case Timelines" [ref=f4e718]
+                    - generic [ref=f4e721]: "202"
+                  - generic [ref=f4e722] [cursor=pointer]:
+                    - button "Second Dui Penalties" [ref=f4e723]
+                    - generic [ref=f4e726]: 1.1K
+                  - generic [ref=f4e727] [cursor=pointer]:
+                    - button "DUI Interstate Transfer" [ref=f4e728]
+                    - generic [ref=f4e731]: "764"
+                  - generic [ref=f4e732] [cursor=pointer]:
+                    - button "Bail Lawyer Services" [ref=f4e733]
+                    - generic [ref=f4e736]: "333"
+                  - generic [ref=f4e737] [cursor=pointer]:
+                    - button "DUI On Private Property" [ref=f4e738]
+                    - generic [ref=f4e741]: "545"
+                  - generic [ref=f4e742] [cursor=pointer]:
+                    - button "Dui Dwi Probable Cause" [ref=f4e743]
+                    - generic [ref=f4e746]: "242"
+                  - generic [ref=f4e747] [cursor=pointer]:
+                    - button "Criminal Charges Time Limits" [ref=f4e748]
+                    - generic [ref=f4e751]: "412"
+                  - generic [ref=f4e752] [cursor=pointer]:
+                    - button "DUI Not Driving" [ref=f4e753]
+                    - generic [ref=f4e756]: "461"
+                  - generic [ref=f4e757] [cursor=pointer]:
+                    - button "Florida Dui Laws" [ref=f4e758]
+                    - generic [ref=f4e761]: 1.2K
+                  - generic [ref=f4e762] [cursor=pointer]:
+                    - button "Breathalyzer Dwi Information" [ref=f4e763]
+                    - generic [ref=f4e766]: "686"
+                  - generic [ref=f4e767] [cursor=pointer]:
+                    - button "Dui Lawyers Virginia" [ref=f4e768]
+                    - generic [ref=f4e771]: "678"
+                  - generic [ref=f4e772] [cursor=pointer]:
+                    - button "Fourth DUI California" [ref=f4e773]
+                    - generic [ref=f4e776]: "494"
+                  - generic [ref=f4e777] [cursor=pointer]:
+                    - button "DUI Expungement California" [ref=f4e778]
+                    - generic [ref=f4e781]: "618"
+                  - generic [ref=f4e782] [cursor=pointer]:
+                    - button "DUI Lawyer Consultation" [ref=f4e783]
+                    - generic [ref=f4e786]: "187"
+                  - generic [ref=f4e787] [cursor=pointer]:
+                    - button "Dwi Arrest Demographics" [ref=f4e788]
+                    - generic [ref=f4e791]: "297"
+                  - generic [ref=f4e792] [cursor=pointer]:
+                    - button "Grand Theft Auto Law" [ref=f4e793]
+                    - generic [ref=f4e796]: "750"
+                  - generic [ref=f4e797] [cursor=pointer]:
+                    - button "Douglas County DUI Attorneys" [ref=f4e798]
+                    - generic [ref=f4e801]: "486"
+                  - generic [ref=f4e802] [cursor=pointer]:
+                    - button "Dui Lawyer Auburn" [ref=f4e803]
+                    - generic [ref=f4e806]: "207"
+                  - generic [ref=f4e807] [cursor=pointer]:
+                    - button "Second Dui Lawyer" [ref=f4e808]
+                    - generic [ref=f4e811]: "746"
+                  - generic [ref=f4e812] [cursor=pointer]:
+                    - button "Dui Attorney Reviews" [ref=f4e813]
+                    - generic [ref=f4e816]: "645"
+                  - generic [ref=f4e817] [cursor=pointer]:
+                    - button "Police Officer Assault Penalties" [ref=f4e818]
+                    - generic [ref=f4e821]: 1.1K
+                  - generic [ref=f4e822] [cursor=pointer]:
+                    - button "Drunk Driving Case" [ref=f4e823]
+                    - generic [ref=f4e826]: "278"
+                  - generic [ref=f4e827] [cursor=pointer]:
+                    - button "Vehicle Seizure After Arrest" [ref=f4e828]
+                    - generic [ref=f4e831]: "570"
+                  - generic [ref=f4e832] [cursor=pointer]:
+                    - button "Marijuana DUI Testing" [ref=f4e833]
+                    - generic [ref=f4e836]: 3.6K
+                  - generic [ref=f4e837] [cursor=pointer]:
+                    - button "DUI Attorneys Hollywood Florida" [ref=f4e838]
+                    - generic [ref=f4e841]: "95"
+                  - generic [ref=f4e842] [cursor=pointer]:
+                    - button "Third DUI Defense" [ref=f4e843]
+                    - generic [ref=f4e846]: "380"
+                  - generic [ref=f4e847] [cursor=pointer]:
+                    - button "DUI Expungement Florida" [ref=f4e848]
+                    - generic [ref=f4e851]: "594"
+                  - generic [ref=f4e852] [cursor=pointer]:
+                    - button "Pharmacist DUI Consequences" [ref=f4e853]
+                    - generic [ref=f4e856]: "342"
+                  - button "Show more groups" [ref=f4e857] [cursor=pointer]: Show more
+                - scrollbar [ref=f4e858]:
+                  - generic [ref=f4e859] [cursor=pointer]
+          - region "Keywords" [ref=f4e357]:
+            - generic [ref=f4e359]:
+              - generic [ref=f4e361]:
+                - generic [ref=f4e365]:
+                  - generic [ref=f4e366]:
+                    - generic [ref=f4e367]: "All keywords:"
+                    - generic [ref=f4e368]: 41.0K
+                  - generic [ref=f4e371]:
+                    - generic [ref=f4e372]: "Total Volume:"
+                    - generic [ref=f4e373]: 868,320
+                  - generic [ref=f4e376]:
+                    - generic [ref=f4e377]: "Average KD:"
+                    - generic [ref=f4e378]: 16%
+                - generic [ref=f4e382]:
+                  - button "Send keywords" [ref=f4e383] [cursor=pointer]
+                  - button "Update metrics" [ref=f4e387] [cursor=pointer]
+                  - combobox "Manage columns" [ref=f4e390] [cursor=pointer]
+                  - button "Export keywords" [ref=f4e393] [cursor=pointer]
+              - region "Notification" [ref=f4e395]:
+                - generic [ref=f4e398]:
+                  - text: How would you rate Keyword Topics?
+                  - generic [ref=f4e399]:
+                    - 'button "Rate the keyword topics: 1 out of 5 stars" [ref=f4e400] [cursor=pointer]'
+                    - 'button "Rate the keyword topics: 2 out of 5 stars" [ref=f4e401] [cursor=pointer]'
+                    - 'button "Rate the keyword topics: 3 out of 5 stars" [ref=f4e402] [cursor=pointer]'
+                    - 'button "Rate the keyword topics: 4 out of 5 stars" [ref=f4e403] [cursor=pointer]'
+                    - 'button "Rate the keyword topics: 5 out of 5 stars" [ref=f4e404] [cursor=pointer]'
+              - table [ref=f4e405]:
+                - rowgroup [ref=f4e408]:
+                  - row [ref=f4e410]:
+                    - columnheader "Select all keywords" [ref=f4e411]:
+                      - generic [ref=f4e415] [cursor=pointer]:
+                        - generic [ref=f4e416]: Select all keywords
+                        - checkbox "Select all keywords" [ref=f4e417]
+                    - columnheader "Keyword" [ref=f4e419] [cursor=pointer]
+                    - columnheader "Intent" [ref=f4e427]
+                    - columnheader "Relevance" [ref=f4e431] [cursor=pointer]
+                    - columnheader "Volume" [ref=f4e440] [cursor=pointer]
+                    - columnheader "KD %" [ref=f4e449] [cursor=pointer]
+                    - columnheader "Com." [ref=f4e458] [cursor=pointer]
+                    - columnheader "Updated" [ref=f4e467] [cursor=pointer]
+                - generic [ref=f4e860]:
+                  - generic [ref=f4e862]:
+                    - generic [ref=f4e863]: Selected:0
+                    - button "Deselect all keywords" [ref=f4e864] [cursor=pointer]:
+                      - generic [ref=f4e865]: Deselect all
+                    - button "Copy selected keywords to clipboard" [ref=f4e868] [cursor=pointer]:
+                      - generic [ref=f4e869]: Copy
+                  - generic [ref=f4e875]:
+                    - rowgroup [ref=f4e877]:
+                      - generic [ref=f4e878]:
+                        - row [ref=f4e879]:
+                          - cell "dui bail bond" [ref=f4e880]:
+                            - generic [ref=f4e881] [cursor=pointer]:
+                              - generic [ref=f4e882]: dui bail bond
+                              - checkbox "dui bail bond" [ref=f4e883]
+                          - cell [ref=f4e885]:
+                            - generic [ref=f4e886]:
+                              - img "Loading…" [ref=f4e890]
+                              - generic [ref=f4e892]:
+                                - link "Analyze dui bail bond in Keyword Overview" [ref=f4e893] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20bail%20bond&db=us
+                                  - text: dui bail bond
+                                - button "Open overview" [ref=f4e898] [cursor=pointer]
+                          - cell [ref=f4e901]:
+                            - button "Informational. Apply filter" [ref=f4e904] [cursor=pointer]: I
+                          - cell "100" [ref=f4e905]
+                          - cell "70" [ref=f4e907]
+                          - cell "0" [ref=f4e908]
+                          - cell "0.00" [ref=f4e913]
+                          - cell "1 month Update metrics for dui bail bond" [ref=f4e915]:
+                            - generic [ref=f4e917]:
+                              - generic [ref=f4e918]: 1 month
+                              - button "Update metrics for dui bail bond" [ref=f4e925] [cursor=pointer]:
+                                - img "Update metrics for dui bail bond" [ref=f4e926]
+                        - row [ref=f4e928]:
+                          - cell "bail bonds for dui" [ref=f4e929]:
+                            - generic [ref=f4e930] [cursor=pointer]:
+                              - generic [ref=f4e931]: bail bonds for dui
+                              - checkbox "bail bonds for dui" [ref=f4e932]
+                          - cell [ref=f4e934]:
+                            - generic [ref=f4e935]:
+                              - img "Loading…" [ref=f4e939]
+                              - generic [ref=f4e941]:
+                                - link "Analyze bail bonds for dui in Keyword Overview" [ref=f4e942] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=bail%20bonds%20for%20dui&db=us
+                                  - text: bail bonds for dui
+                                - button "Open overview" [ref=f4e947] [cursor=pointer]
+                          - cell [ref=f4e950]:
+                            - button "Commercial. Apply filter" [ref=f4e953] [cursor=pointer]: C
+                          - cell "72" [ref=f4e954]
+                          - cell "70" [ref=f4e956]
+                          - cell "2" [ref=f4e957]
+                          - cell "0.00" [ref=f4e962]
+                          - cell "1 month Update metrics for bail bonds for dui" [ref=f4e964]:
+                            - generic [ref=f4e966]:
+                              - generic [ref=f4e967]: 1 month
+                              - button "Update metrics for bail bonds for dui" [ref=f4e974] [cursor=pointer]:
+                                - img "Update metrics for bail bonds for dui" [ref=f4e975]
+                        - row [ref=f4e977]:
+                          - cell "dui bail bonds" [ref=f4e978]:
+                            - generic [ref=f4e979] [cursor=pointer]:
+                              - generic [ref=f4e980]: dui bail bonds
+                              - checkbox "dui bail bonds" [ref=f4e981]
+                          - cell [ref=f4e983]:
+                            - generic [ref=f4e984]:
+                              - img "Loading…" [ref=f4e988]
+                              - generic [ref=f4e990]:
+                                - link "Analyze dui bail bonds in Keyword Overview" [ref=f4e991] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20bail%20bonds&db=us
+                                  - text: dui bail bonds
+                                - button "Open overview" [ref=f4e996] [cursor=pointer]
+                          - cell [ref=f4e999]:
+                            - button "Commercial. Apply filter" [ref=f4e1002] [cursor=pointer]: C
+                          - cell "71" [ref=f4e1003]
+                          - cell "390" [ref=f4e1005]
+                          - cell "6" [ref=f4e1006]
+                          - cell "0.00" [ref=f4e1011]
+                          - cell "1 month Update metrics for dui bail bonds" [ref=f4e1013]:
+                            - generic [ref=f4e1015]:
+                              - generic [ref=f4e1016]: 1 month
+                              - button "Update metrics for dui bail bonds" [ref=f4e1023] [cursor=pointer]:
+                                - img "Update metrics for dui bail bonds" [ref=f4e1024]
+                        - row [ref=f4e1026]:
+                          - cell "bond for dui" [ref=f4e1027]:
+                            - generic [ref=f4e1028] [cursor=pointer]:
+                              - generic [ref=f4e1029]: bond for dui
+                              - checkbox "bond for dui" [ref=f4e1030]
+                          - cell [ref=f4e1032]:
+                            - generic [ref=f4e1033]:
+                              - img "Loading…" [ref=f4e1037]
+                              - generic [ref=f4e1039]:
+                                - link "Analyze bond for dui in Keyword Overview" [ref=f4e1040] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=bond%20for%20dui&db=us
+                                  - text: bond for dui
+                                - button "Open overview" [ref=f4e1045] [cursor=pointer]
+                          - cell [ref=f4e1048]:
+                            - button "Informational. Apply filter" [ref=f4e1051] [cursor=pointer]: I
+                          - cell "70" [ref=f4e1052]
+                          - cell "110" [ref=f4e1054]
+                          - cell "1" [ref=f4e1055]
+                          - cell "0.02" [ref=f4e1060]
+                          - cell "1 month Update metrics for bond for dui" [ref=f4e1062]:
+                            - generic [ref=f4e1064]:
+                              - generic [ref=f4e1065]: 1 month
+                              - button "Update metrics for bond for dui" [ref=f4e1072] [cursor=pointer]:
+                                - img "Update metrics for bond for dui" [ref=f4e1073]
+                        - row [ref=f4e1075]:
+                          - cell "dui bond" [ref=f4e1076]:
+                            - generic [ref=f4e1077] [cursor=pointer]:
+                              - generic [ref=f4e1078]: dui bond
+                              - checkbox "dui bond" [ref=f4e1079]
+                          - cell [ref=f4e1081]:
+                            - generic [ref=f4e1082]:
+                              - img "Loading…" [ref=f4e1086]
+                              - generic [ref=f4e1088]:
+                                - link "Analyze dui bond in Keyword Overview" [ref=f4e1089] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20bond&db=us
+                                  - text: dui bond
+                                - button "Open overview" [ref=f4e1094] [cursor=pointer]
+                          - cell [ref=f4e1097]:
+                            - button "Informational. Apply filter" [ref=f4e1100] [cursor=pointer]: I
+                          - cell "70" [ref=f4e1101]
+                          - cell "90" [ref=f4e1103]
+                          - cell "0" [ref=f4e1104]
+                          - cell "0.00" [ref=f4e1109]
+                          - cell "1 month Update metrics for dui bond" [ref=f4e1111]:
+                            - generic [ref=f4e1113]:
+                              - generic [ref=f4e1114]: 1 month
+                              - button "Update metrics for dui bond" [ref=f4e1121] [cursor=pointer]:
+                                - img "Update metrics for dui bond" [ref=f4e1122]
+                        - row [ref=f4e1124]:
+                          - cell "dui bail" [ref=f4e1125]:
+                            - generic [ref=f4e1126] [cursor=pointer]:
+                              - generic [ref=f4e1127]: dui bail
+                              - checkbox "dui bail" [ref=f4e1128]
+                          - cell [ref=f4e1130]:
+                            - generic [ref=f4e1131]:
+                              - img "Loading…" [ref=f4e1135]
+                              - generic [ref=f4e1137]:
+                                - link "Analyze dui bail in Keyword Overview" [ref=f4e1138] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20bail&db=us
+                                  - text: dui bail
+                                - button "Open overview" [ref=f4e1143] [cursor=pointer]
+                          - cell [ref=f4e1146]:
+                            - button "Informational. Apply filter" [ref=f4e1149] [cursor=pointer]: I
+                          - cell "69" [ref=f4e1150]
+                          - cell "210" [ref=f4e1152]
+                          - cell "1" [ref=f4e1153]
+                          - cell "0.00" [ref=f4e1158]
+                          - cell "1 month Update metrics for dui bail" [ref=f4e1160]:
+                            - generic [ref=f4e1162]:
+                              - generic [ref=f4e1163]: 1 month
+                              - button "Update metrics for dui bail" [ref=f4e1170] [cursor=pointer]:
+                                - img "Update metrics for dui bail" [ref=f4e1171]
+                        - row [ref=f4e1173]:
+                          - cell "bond for a dui" [ref=f4e1174]:
+                            - generic [ref=f4e1175] [cursor=pointer]:
+                              - generic [ref=f4e1176]: bond for a dui
+                              - checkbox "bond for a dui" [ref=f4e1177]
+                          - cell [ref=f4e1179]:
+                            - generic [ref=f4e1180]:
+                              - img "Loading…" [ref=f4e1184]
+                              - generic [ref=f4e1186]:
+                                - link "Analyze bond for a dui in Keyword Overview" [ref=f4e1187] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=bond%20for%20a%20dui&db=us
+                                  - text: bond for a dui
+                                - button "Open overview" [ref=f4e1192] [cursor=pointer]
+                          - cell [ref=f4e1195]:
+                            - button "Informational. Apply filter" [ref=f4e1198] [cursor=pointer]: I
+                          - cell "69" [ref=f4e1199]
+                          - cell "70" [ref=f4e1201]
+                          - cell "1" [ref=f4e1202]
+                          - cell "0.33" [ref=f4e1207]
+                          - cell "1 month Update metrics for bond for a dui" [ref=f4e1209]:
+                            - generic [ref=f4e1211]:
+                              - generic [ref=f4e1212]: 1 month
+                              - button "Update metrics for bond for a dui" [ref=f4e1219] [cursor=pointer]:
+                                - img "Update metrics for bond for a dui" [ref=f4e1220]
+                        - row [ref=f4e1222]:
+                          - cell "bail dui" [ref=f4e1223]:
+                            - generic [ref=f4e1224] [cursor=pointer]:
+                              - generic [ref=f4e1225]: bail dui
+                              - checkbox "bail dui" [ref=f4e1226]
+                          - cell [ref=f4e1228]:
+                            - generic [ref=f4e1229]:
+                              - img "Loading…" [ref=f4e1233]
+                              - generic [ref=f4e1235]:
+                                - link "Analyze bail dui in Keyword Overview" [ref=f4e1236] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=bail%20dui&db=us
+                                  - text: bail dui
+                                - button "Open overview" [ref=f4e1241] [cursor=pointer]
+                          - cell [ref=f4e1244]:
+                            - button "Informational. Apply filter" [ref=f4e1247] [cursor=pointer]: I
+                          - cell "65" [ref=f4e1248]
+                          - cell "40" [ref=f4e1250]
+                          - cell "0" [ref=f4e1251]
+                          - cell "0.02" [ref=f4e1256]
+                          - cell "1 month Update metrics for bail dui" [ref=f4e1258]:
+                            - generic [ref=f4e1260]:
+                              - generic [ref=f4e1261]: 1 month
+                              - button "Update metrics for bail dui" [ref=f4e1268] [cursor=pointer]:
+                                - img "Update metrics for bail dui" [ref=f4e1269]
+                        - row [ref=f4e1271]:
+                          - cell "bail for dui" [ref=f4e1272]:
+                            - generic [ref=f4e1273] [cursor=pointer]:
+                              - generic [ref=f4e1274]: bail for dui
+                              - checkbox "bail for dui" [ref=f4e1275]
+                          - cell [ref=f4e1277]:
+                            - generic [ref=f4e1278]:
+                              - img "Loading…" [ref=f4e1282]
+                              - generic [ref=f4e1284]:
+                                - link "Analyze bail for dui in Keyword Overview" [ref=f4e1285] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=bail%20for%20dui&db=us
+                                  - text: bail for dui
+                                - button "Open overview" [ref=f4e1290] [cursor=pointer]
+                          - cell [ref=f4e1293]:
+                            - button "Informational. Apply filter" [ref=f4e1296] [cursor=pointer]: I
+                          - cell "64" [ref=f4e1297]
+                          - cell "210" [ref=f4e1299]
+                          - cell "1" [ref=f4e1300]
+                          - cell "0.01" [ref=f4e1305]
+                          - cell "1 month Update metrics for bail for dui" [ref=f4e1307]:
+                            - generic [ref=f4e1309]:
+                              - generic [ref=f4e1310]: 1 month
+                              - button "Update metrics for bail for dui" [ref=f4e1317] [cursor=pointer]:
+                                - img "Update metrics for bail for dui" [ref=f4e1318]
+                        - row [ref=f4e1320]:
+                          - cell "how much is a bail for dui" [ref=f4e1321]:
+                            - generic [ref=f4e1322] [cursor=pointer]:
+                              - generic [ref=f4e1323]: how much is a bail for dui
+                              - checkbox "how much is a bail for dui" [ref=f4e1324]
+                          - cell [ref=f4e1326]:
+                            - generic [ref=f4e1327]:
+                              - img "Loading…" [ref=f4e1331]
+                              - generic [ref=f4e1333]:
+                                - link "Analyze how much is a bail for dui in Keyword Overview" [ref=f4e1334] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20a%20bail%20for%20dui&db=us
+                                  - text: how much is a bail for dui
+                                - button "Open overview" [ref=f4e1339] [cursor=pointer]
+                          - cell [ref=f4e1342]:
+                            - button "Informational. Apply filter" [ref=f4e1345] [cursor=pointer]: I
+                          - cell "63" [ref=f4e1346]
+                          - cell "590" [ref=f4e1348]
+                          - cell "0" [ref=f4e1349]
+                          - cell "0.33" [ref=f4e1354]
+                          - cell "1 month Update metrics for how much is a bail for dui" [ref=f4e1356]:
+                            - generic [ref=f4e1358]:
+                              - generic [ref=f4e1359]: 1 month
+                              - button "Update metrics for how much is a bail for dui" [ref=f4e1366] [cursor=pointer]:
+                                - img "Update metrics for how much is a bail for dui" [ref=f4e1367]
+                        - row [ref=f4e1369]:
+                          - cell "how much is bail for a dui" [ref=f4e1370]:
+                            - generic [ref=f4e1371] [cursor=pointer]:
+                              - generic [ref=f4e1372]: how much is bail for a dui
+                              - checkbox "how much is bail for a dui" [ref=f4e1373]
+                          - cell [ref=f4e1375]:
+                            - generic [ref=f4e1376]:
+                              - img "Loading…" [ref=f4e1380]
+                              - generic [ref=f4e1382]:
+                                - link "Analyze how much is bail for a dui in Keyword Overview" [ref=f4e1383] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bail%20for%20a%20dui&db=us
+                                  - text: how much is bail for a dui
+                                - button "Open overview" [ref=f4e1388] [cursor=pointer]
+                          - cell [ref=f4e1391]:
+                            - button "Informational. Apply filter" [ref=f4e1394] [cursor=pointer]: I
+                          - cell "63" [ref=f4e1395]
+                          - cell "590" [ref=f4e1397]
+                          - cell "1" [ref=f4e1398]
+                          - cell "0.33" [ref=f4e1403]
+                          - cell "1 month Update metrics for how much is bail for a dui" [ref=f4e1405]:
+                            - generic [ref=f4e1407]:
+                              - generic [ref=f4e1408]: 1 month
+                              - button "Update metrics for how much is bail for a dui" [ref=f4e1415] [cursor=pointer]:
+                                - img "Update metrics for how much is bail for a dui" [ref=f4e1416]
+                        - row [ref=f4e1418]:
+                          - cell "how much is bail on a dui" [ref=f4e1419]:
+                            - generic [ref=f4e1420] [cursor=pointer]:
+                              - generic [ref=f4e1421]: how much is bail on a dui
+                              - checkbox "how much is bail on a dui" [ref=f4e1422]
+                          - cell [ref=f4e1424]:
+                            - generic [ref=f4e1425]:
+                              - img "Loading…" [ref=f4e1429]
+                              - generic [ref=f4e1431]:
+                                - link "Analyze how much is bail on a dui in Keyword Overview" [ref=f4e1432] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bail%20on%20a%20dui&db=us
+                                  - text: how much is bail on a dui
+                                - button "Open overview" [ref=f4e1437] [cursor=pointer]
+                          - cell [ref=f4e1440]:
+                            - button "Informational. Apply filter" [ref=f4e1443] [cursor=pointer]: I
+                          - cell "63" [ref=f4e1444]
+                          - cell "590" [ref=f4e1446]
+                          - cell "2" [ref=f4e1447]
+                          - cell "0.33" [ref=f4e1452]
+                          - cell "1 month Update metrics for how much is bail on a dui" [ref=f4e1454]:
+                            - generic [ref=f4e1456]:
+                              - generic [ref=f4e1457]: 1 month
+                              - button "Update metrics for how much is bail on a dui" [ref=f4e1464] [cursor=pointer]:
+                                - img "Update metrics for how much is bail on a dui" [ref=f4e1465]
+                        - row [ref=f4e1467]:
+                          - cell "how much is bail for drunk driving" [ref=f4e1468]:
+                            - generic [ref=f4e1469] [cursor=pointer]:
+                              - generic [ref=f4e1470]: how much is bail for drunk driving
+                              - checkbox "how much is bail for drunk driving" [ref=f4e1471]
+                          - cell [ref=f4e1473]:
+                            - generic [ref=f4e1474]:
+                              - img "Loading…" [ref=f4e1478]
+                              - generic [ref=f4e1480]:
+                                - link "Analyze how much is bail for drunk driving in Keyword Overview" [ref=f4e1481] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bail%20for%20drunk%20driving&db=us
+                                  - text: how much is bail for drunk driving
+                                - button "Open overview" [ref=f4e1486] [cursor=pointer]
+                          - cell [ref=f4e1489]:
+                            - button "Informational. Apply filter" [ref=f4e1492] [cursor=pointer]: I
+                          - cell "63" [ref=f4e1493]
+                          - cell "480" [ref=f4e1495]
+                          - cell "3" [ref=f4e1496]
+                          - cell "0.33" [ref=f4e1501]
+                          - cell "1 month Update metrics for how much is bail for drunk driving" [ref=f4e1503]:
+                            - generic [ref=f4e1505]:
+                              - generic [ref=f4e1506]: 1 month
+                              - button "Update metrics for how much is bail for drunk driving" [ref=f4e1513] [cursor=pointer]:
+                                - img "Update metrics for how much is bail for drunk driving" [ref=f4e1514]
+                        - row [ref=f4e1516]:
+                          - cell "how much is bail for dwi" [ref=f4e1517]:
+                            - generic [ref=f4e1518] [cursor=pointer]:
+                              - generic [ref=f4e1519]: how much is bail for dwi
+                              - checkbox "how much is bail for dwi" [ref=f4e1520]
+                          - cell [ref=f4e1522]:
+                            - generic [ref=f4e1523]:
+                              - img "Loading…" [ref=f4e1527]
+                              - generic [ref=f4e1529]:
+                                - link "Analyze how much is bail for dwi in Keyword Overview" [ref=f4e1530] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bail%20for%20dwi&db=us
+                                  - text: how much is bail for dwi
+                                - button "Open overview" [ref=f4e1535] [cursor=pointer]
+                          - cell [ref=f4e1538]:
+                            - button "Informational. Apply filter" [ref=f4e1541] [cursor=pointer]: I
+                          - cell "63" [ref=f4e1542]
+                          - cell "480" [ref=f4e1544]
+                          - cell "0" [ref=f4e1545]
+                          - cell "0.33" [ref=f4e1550]
+                          - cell "1 month Update metrics for how much is bail for dwi" [ref=f4e1552]:
+                            - generic [ref=f4e1554]:
+                              - generic [ref=f4e1555]: 1 month
+                              - button "Update metrics for how much is bail for dwi" [ref=f4e1562] [cursor=pointer]:
+                                - img "Update metrics for how much is bail for dwi" [ref=f4e1563]
+                        - row [ref=f4e1565]:
+                          - cell "how much is a dui fine" [ref=f4e1566]:
+                            - generic [ref=f4e1567] [cursor=pointer]:
+                              - generic [ref=f4e1568]: how much is a dui fine
+                              - checkbox "how much is a dui fine" [ref=f4e1569]
+                          - cell [ref=f4e1571]:
+                            - generic [ref=f4e1572]:
+                              - img "Loading…" [ref=f4e1576]
+                              - generic [ref=f4e1578]:
+                                - link "Analyze how much is a dui fine in Keyword Overview" [ref=f4e1579] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20a%20dui%20fine&db=us
+                                  - text: how much is a dui fine
+                                - button "Open overview" [ref=f4e1584] [cursor=pointer]
+                          - cell [ref=f4e1587]:
+                            - button "Informational. Apply filter" [ref=f4e1590] [cursor=pointer]: I
+                          - cell "63" [ref=f4e1591]
+                          - cell "390" [ref=f4e1593]
+                          - cell "21" [ref=f4e1594]
+                          - cell "0.10" [ref=f4e1599]
+                          - cell "1 month Update metrics for how much is a dui fine" [ref=f4e1601]:
+                            - generic [ref=f4e1603]:
+                              - generic [ref=f4e1604]: 1 month
+                              - button "Update metrics for how much is a dui fine" [ref=f4e1611] [cursor=pointer]:
+                                - img "Update metrics for how much is a dui fine" [ref=f4e1612]
+                        - row [ref=f4e1614]:
+                          - cell "how much is a dui ticket" [ref=f4e1615]:
+                            - generic [ref=f4e1616] [cursor=pointer]:
+                              - generic [ref=f4e1617]: how much is a dui ticket
+                              - checkbox "how much is a dui ticket" [ref=f4e1618]
+                          - cell [ref=f4e1620]:
+                            - generic [ref=f4e1621]:
+                              - img "Loading…" [ref=f4e1625]
+                              - generic [ref=f4e1627]:
+                                - link "Analyze how much is a dui ticket in Keyword Overview" [ref=f4e1628] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20a%20dui%20ticket&db=us
+                                  - text: how much is a dui ticket
+                                - button "Open overview" [ref=f4e1633] [cursor=pointer]
+                          - cell [ref=f4e1636]:
+                            - button "Informational. Apply filter" [ref=f4e1639] [cursor=pointer]: I
+                          - cell "63" [ref=f4e1640]
+                          - cell "320" [ref=f4e1642]
+                          - cell "16" [ref=f4e1643]
+                          - cell "0.13" [ref=f4e1648]
+                          - cell "1 month Update metrics for how much is a dui ticket" [ref=f4e1650]:
+                            - generic [ref=f4e1652]:
+                              - generic [ref=f4e1653]: 1 month
+                              - button "Update metrics for how much is a dui ticket" [ref=f4e1660] [cursor=pointer]:
+                                - img "Update metrics for how much is a dui ticket" [ref=f4e1661]
+                        - row [ref=f4e1663]:
+                          - cell "drunk driving bail amount" [ref=f4e1664]:
+                            - generic [ref=f4e1665] [cursor=pointer]:
+                              - generic [ref=f4e1666]: drunk driving bail amount
+                              - checkbox "drunk driving bail amount" [ref=f4e1667]
+                          - cell [ref=f4e1669]:
+                            - generic [ref=f4e1670]:
+                              - img "Loading…" [ref=f4e1674]
+                              - generic [ref=f4e1676]:
+                                - link "Analyze drunk driving bail amount in Keyword Overview" [ref=f4e1677] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=drunk%20driving%20bail%20amount&db=us
+                                  - text: drunk driving bail amount
+                                - button "Open overview" [ref=f4e1682] [cursor=pointer]
+                          - cell [ref=f4e1685]:
+                            - button "Informational. Apply filter" [ref=f4e1688] [cursor=pointer]: I
+                          - cell "63" [ref=f4e1689]
+                          - cell "260" [ref=f4e1691]
+                          - cell "0" [ref=f4e1692]
+                          - cell "0.33" [ref=f4e1697]
+                          - cell "1 month Update metrics for drunk driving bail amount" [ref=f4e1699]:
+                            - generic [ref=f4e1701]:
+                              - generic [ref=f4e1702]: 1 month
+                              - button "Update metrics for drunk driving bail amount" [ref=f4e1709] [cursor=pointer]:
+                                - img "Update metrics for drunk driving bail amount" [ref=f4e1710]
+                        - row [ref=f4e1712]:
+                          - cell "how much is bond for dui" [ref=f4e1713]:
+                            - generic [ref=f4e1714] [cursor=pointer]:
+                              - generic [ref=f4e1715]: how much is bond for dui
+                              - checkbox "how much is bond for dui" [ref=f4e1716]
+                          - cell [ref=f4e1718]:
+                            - generic [ref=f4e1719]:
+                              - img "Loading…" [ref=f4e1723]
+                              - generic [ref=f4e1725]:
+                                - link "Analyze how much is bond for dui in Keyword Overview" [ref=f4e1726] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bond%20for%20dui&db=us
+                                  - text: how much is bond for dui
+                                - button "Open overview" [ref=f4e1731] [cursor=pointer]
+                          - cell [ref=f4e1734]:
+                            - button "Informational. Apply filter" [ref=f4e1737] [cursor=pointer]: I
+                          - cell "63" [ref=f4e1738]
+                          - cell "260" [ref=f4e1740]
+                          - cell "0" [ref=f4e1741]
+                          - cell "0.33" [ref=f4e1746]
+                          - cell "4 weeks Update metrics for how much is bond for dui" [ref=f4e1748]:
+                            - generic [ref=f4e1750]:
+                              - generic [ref=f4e1751]: 4 weeks
+                              - button "Update metrics for how much is bond for dui" [ref=f4e1758] [cursor=pointer]:
+                                - img "Update metrics for how much is bond for dui" [ref=f4e1759]
+                        - row [ref=f4e1761]:
+                          - cell "how much is dui" [ref=f4e1762]:
+                            - generic [ref=f4e1763] [cursor=pointer]:
+                              - generic [ref=f4e1764]: how much is dui
+                              - checkbox "how much is dui" [ref=f4e1765]
+                          - cell [ref=f4e1767]:
+                            - generic [ref=f4e1768]:
+                              - img "Loading…" [ref=f4e1772]
+                              - generic [ref=f4e1774]:
+                                - link "Analyze how much is dui in Keyword Overview" [ref=f4e1775] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20dui&db=us
+                                  - text: how much is dui
+                                - button "Open overview" [ref=f4e1780] [cursor=pointer]
+                          - cell [ref=f4e1783]:
+                            - button "Informational. Apply filter" [ref=f4e1786] [cursor=pointer]: I
+                          - cell "63" [ref=f4e1787]
+                          - cell "260" [ref=f4e1789]
+                          - cell "11" [ref=f4e1790]
+                          - cell "0.09" [ref=f4e1795]
+                          - cell "1 month Update metrics for how much is dui" [ref=f4e1797]:
+                            - generic [ref=f4e1799]:
+                              - generic [ref=f4e1800]: 1 month
+                              - button "Update metrics for how much is dui" [ref=f4e1807] [cursor=pointer]:
+                                - img "Update metrics for how much is dui" [ref=f4e1808]
+                        - row [ref=f4e1810]:
+                          - cell "how much is bail for dui" [ref=f4e1811]:
+                            - generic [ref=f4e1812] [cursor=pointer]:
+                              - generic [ref=f4e1813]: how much is bail for dui
+                              - checkbox "how much is bail for dui" [ref=f4e1814]
+                          - cell [ref=f4e1816]:
+                            - generic [ref=f4e1817]:
+                              - img "Loading…" [ref=f4e1821]
+                              - generic [ref=f4e1823]:
+                                - link "Analyze how much is bail for dui in Keyword Overview" [ref=f4e1824] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bail%20for%20dui&db=us
+                                  - text: how much is bail for dui
+                                - button "Open overview" [ref=f4e1829] [cursor=pointer]
+                          - cell [ref=f4e1832]:
+                            - button "Informational. Apply filter" [ref=f4e1835] [cursor=pointer]: I
+                          - cell "63" [ref=f4e1836]
+                          - cell "210" [ref=f4e1838]
+                          - cell "1" [ref=f4e1839]
+                          - cell "0.33" [ref=f4e1844]
+                          - cell "1 month Update metrics for how much is bail for dui" [ref=f4e1846]:
+                            - generic [ref=f4e1848]:
+                              - generic [ref=f4e1849]: 1 month
+                              - button "Update metrics for how much is bail for dui" [ref=f4e1856] [cursor=pointer]:
+                                - img "Update metrics for how much is bail for dui" [ref=f4e1857]
+                        - row [ref=f4e1859]:
+                          - cell "dui bail amount" [ref=f4e1860]:
+                            - generic [ref=f4e1861] [cursor=pointer]:
+                              - generic [ref=f4e1862]: dui bail amount
+                              - checkbox "dui bail amount" [ref=f4e1863]
+                          - cell [ref=f4e1865]:
+                            - generic [ref=f4e1866]:
+                              - img "Loading…" [ref=f4e1870]
+                              - generic [ref=f4e1872]:
+                                - link "Analyze dui bail amount in Keyword Overview" [ref=f4e1873] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20bail%20amount&db=us
+                                  - text: dui bail amount
+                                - button "Open overview" [ref=f4e1878] [cursor=pointer]
+                          - cell [ref=f4e1881]:
+                            - button "Informational. Apply filter" [ref=f4e1884] [cursor=pointer]: I
+                          - cell "63" [ref=f4e1885]
+                          - cell "170" [ref=f4e1887]
+                          - cell "0" [ref=f4e1888]
+                          - cell "0.33" [ref=f4e1893]
+                          - cell "1 month Update metrics for dui bail amount" [ref=f4e1895]:
+                            - generic [ref=f4e1897]:
+                              - generic [ref=f4e1898]: 1 month
+                              - button "Update metrics for dui bail amount" [ref=f4e1905] [cursor=pointer]:
+                                - img "Update metrics for dui bail amount" [ref=f4e1906]
+                        - row [ref=f4e1908]:
+                          - cell "dui bond amount" [ref=f4e1909]:
+                            - generic [ref=f4e1910] [cursor=pointer]:
+                              - generic [ref=f4e1911]: dui bond amount
+                              - checkbox "dui bond amount" [ref=f4e1912]
+                          - cell [ref=f4e1914]:
+                            - generic [ref=f4e1915]:
+                              - img "Loading…" [ref=f4e1919]
+                              - generic [ref=f4e1921]:
+                                - link "Analyze dui bond amount in Keyword Overview" [ref=f4e1922] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20bond%20amount&db=us
+                                  - text: dui bond amount
+                                - button "Open overview" [ref=f4e1927] [cursor=pointer]
+                          - cell [ref=f4e1930]:
+                            - button "Informational. Apply filter" [ref=f4e1933] [cursor=pointer]: I
+                          - cell "63" [ref=f4e1934]
+                          - cell "170" [ref=f4e1936]
+                          - cell "0" [ref=f4e1937]
+                          - cell "0.33" [ref=f4e1942]
+                          - cell "1 month Update metrics for dui bond amount" [ref=f4e1944]:
+                            - generic [ref=f4e1946]:
+                              - generic [ref=f4e1947]: 1 month
+                              - button "Update metrics for dui bond amount" [ref=f4e1954] [cursor=pointer]:
+                                - img "Update metrics for dui bond amount" [ref=f4e1955]
+                        - row [ref=f4e1957]:
+                          - cell "how much is a fine for a dui" [ref=f4e1958]:
+                            - generic [ref=f4e1959] [cursor=pointer]:
+                              - generic [ref=f4e1960]: how much is a fine for a dui
+                              - checkbox "how much is a fine for a dui" [ref=f4e1961]
+                          - cell [ref=f4e1963]:
+                            - generic [ref=f4e1964]:
+                              - img "Loading…" [ref=f4e1968]
+                              - generic [ref=f4e1970]:
+                                - link "Analyze how much is a fine for a dui in Keyword Overview" [ref=f4e1971] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20a%20fine%20for%20a%20dui&db=us
+                                  - text: how much is a fine for a dui
+                                - button "Open overview" [ref=f4e1976] [cursor=pointer]
+                          - cell [ref=f4e1979]:
+                            - button "Informational. Apply filter" [ref=f4e1982] [cursor=pointer]: I
+                          - cell "63" [ref=f4e1983]
+                          - cell "170" [ref=f4e1985]
+                          - cell "48" [ref=f4e1986]
+                          - cell "0.07" [ref=f4e1991]
+                          - cell "1 month Update metrics for how much is a fine for a dui" [ref=f4e1993]:
+                            - generic [ref=f4e1995]:
+                              - generic [ref=f4e1996]: 1 month
+                              - button "Update metrics for how much is a fine for a dui" [ref=f4e2003] [cursor=pointer]:
+                                - img "Update metrics for how much is a fine for a dui" [ref=f4e2004]
+                        - row [ref=f4e2006]:
+                          - cell "dui bail cost" [ref=f4e2007]:
+                            - generic [ref=f4e2008] [cursor=pointer]:
+                              - generic [ref=f4e2009]: dui bail cost
+                              - checkbox "dui bail cost" [ref=f4e2010]
+                          - cell [ref=f4e2012]:
+                            - generic [ref=f4e2013]:
+                              - img "Loading…" [ref=f4e2017]
+                              - generic [ref=f4e2019]:
+                                - link "Analyze dui bail cost in Keyword Overview" [ref=f4e2020] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20bail%20cost&db=us
+                                  - text: dui bail cost
+                                - button "Open overview" [ref=f4e2025] [cursor=pointer]
+                          - cell [ref=f4e2028]:
+                            - button "Informational. Apply filter" [ref=f4e2031] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2032]
+                          - cell "140" [ref=f4e2034]
+                          - cell "0" [ref=f4e2035]
+                          - cell "0.01" [ref=f4e2040]
+                          - cell "1 month Update metrics for dui bail cost" [ref=f4e2042]:
+                            - generic [ref=f4e2044]:
+                              - generic [ref=f4e2045]: 1 month
+                              - button "Update metrics for dui bail cost" [ref=f4e2052] [cursor=pointer]:
+                                - img "Update metrics for dui bail cost" [ref=f4e2053]
+                        - row [ref=f4e2055]:
+                          - cell "how much is bail for a first-time dui" [ref=f4e2056]:
+                            - generic [ref=f4e2057] [cursor=pointer]:
+                              - generic [ref=f4e2058]: how much is bail for a first-time dui
+                              - checkbox "how much is bail for a first-time dui" [ref=f4e2059]
+                          - cell [ref=f4e2061]:
+                            - generic [ref=f4e2062]:
+                              - img "Loading…" [ref=f4e2066]
+                              - generic [ref=f4e2068]:
+                                - link "Analyze how much is bail for a first-time dui in Keyword Overview" [ref=f4e2069] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bail%20for%20a%20first-time%20dui&db=us
+                                  - text: how much is bail for a first-time dui
+                                - button "Open overview" [ref=f4e2074] [cursor=pointer]
+                          - cell [ref=f4e2077]:
+                            - button "Informational. Apply filter" [ref=f4e2080] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2081]
+                          - cell "140" [ref=f4e2083]
+                          - cell "0" [ref=f4e2084]
+                          - cell "0.33" [ref=f4e2089]
+                          - cell "1 month Update metrics for how much is bail for a first-time dui" [ref=f4e2091]:
+                            - generic [ref=f4e2093]:
+                              - generic [ref=f4e2094]: 1 month
+                              - button "Update metrics for how much is bail for a first-time dui" [ref=f4e2101] [cursor=pointer]:
+                                - img "Update metrics for how much is bail for a first-time dui" [ref=f4e2102]
+                        - row [ref=f4e2104]:
+                          - cell "how much is the fine for dui" [ref=f4e2105]:
+                            - generic [ref=f4e2106] [cursor=pointer]:
+                              - generic [ref=f4e2107]: how much is the fine for dui
+                              - checkbox "how much is the fine for dui" [ref=f4e2108]
+                          - cell [ref=f4e2110]:
+                            - generic [ref=f4e2111]:
+                              - img "Loading…" [ref=f4e2115]
+                              - generic [ref=f4e2117]:
+                                - link "Analyze how much is the fine for dui in Keyword Overview" [ref=f4e2118] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20the%20fine%20for%20dui&db=us
+                                  - text: how much is the fine for dui
+                                - button "Open overview" [ref=f4e2123] [cursor=pointer]
+                          - cell [ref=f4e2126]:
+                            - button "Informational. Apply filter" [ref=f4e2129] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2130]
+                          - cell "140" [ref=f4e2132]
+                          - cell "49" [ref=f4e2133]
+                          - cell "0.07" [ref=f4e2138]
+                          - cell "1 month Update metrics for how much is the fine for dui" [ref=f4e2140]:
+                            - generic [ref=f4e2142]:
+                              - generic [ref=f4e2143]: 1 month
+                              - button "Update metrics for how much is the fine for dui" [ref=f4e2150] [cursor=pointer]:
+                                - img "Update metrics for how much is the fine for dui" [ref=f4e2151]
+                        - row [ref=f4e2153]:
+                          - cell "bail for drunk driving" [ref=f4e2154]:
+                            - generic [ref=f4e2155] [cursor=pointer]:
+                              - generic [ref=f4e2156]: bail for drunk driving
+                              - checkbox "bail for drunk driving" [ref=f4e2157]
+                          - cell [ref=f4e2159]:
+                            - generic [ref=f4e2160]:
+                              - img "Loading…" [ref=f4e2164]
+                              - generic [ref=f4e2166]:
+                                - link "Analyze bail for drunk driving in Keyword Overview" [ref=f4e2167] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=bail%20for%20drunk%20driving&db=us
+                                  - text: bail for drunk driving
+                                - button "Open overview" [ref=f4e2172] [cursor=pointer]
+                          - cell [ref=f4e2175]:
+                            - button "Informational. Apply filter" [ref=f4e2178] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2179]
+                          - cell "110" [ref=f4e2181]
+                          - cell "1" [ref=f4e2182]
+                          - cell "0.01" [ref=f4e2187]
+                          - cell "1 month Update metrics for bail for drunk driving" [ref=f4e2189]:
+                            - generic [ref=f4e2191]:
+                              - generic [ref=f4e2192]: 1 month
+                              - button "Update metrics for bail for drunk driving" [ref=f4e2199] [cursor=pointer]:
+                                - img "Update metrics for bail for drunk driving" [ref=f4e2200]
+                        - row [ref=f4e2202]:
+                          - cell "how much is a bond for a dui" [ref=f4e2203]:
+                            - generic [ref=f4e2204] [cursor=pointer]:
+                              - generic [ref=f4e2205]: how much is a bond for a dui
+                              - checkbox "how much is a bond for a dui" [ref=f4e2206]
+                          - cell [ref=f4e2208]:
+                            - generic [ref=f4e2209]:
+                              - img "Loading…" [ref=f4e2213]
+                              - generic [ref=f4e2215]:
+                                - link "Analyze how much is a bond for a dui in Keyword Overview" [ref=f4e2216] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20a%20bond%20for%20a%20dui&db=us
+                                  - text: how much is a bond for a dui
+                                - button "Open overview" [ref=f4e2221] [cursor=pointer]
+                          - cell [ref=f4e2224]:
+                            - button "Informational. Apply filter" [ref=f4e2227] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2228]
+                          - cell "110" [ref=f4e2230]
+                          - cell "0" [ref=f4e2231]
+                          - cell "0.04" [ref=f4e2236]
+                          - cell "1 month Update metrics for how much is a bond for a dui" [ref=f4e2238]:
+                            - generic [ref=f4e2240]:
+                              - generic [ref=f4e2241]: 1 month
+                              - button "Update metrics for how much is a bond for a dui" [ref=f4e2248] [cursor=pointer]:
+                                - img "Update metrics for how much is a bond for a dui" [ref=f4e2249]
+                        - row [ref=f4e2251]:
+                          - cell "how much is dui bail" [ref=f4e2252]:
+                            - generic [ref=f4e2253] [cursor=pointer]:
+                              - generic [ref=f4e2254]: how much is dui bail
+                              - checkbox "how much is dui bail" [ref=f4e2255]
+                          - cell [ref=f4e2257]:
+                            - generic [ref=f4e2258]:
+                              - img "Loading…" [ref=f4e2262]
+                              - generic [ref=f4e2264]:
+                                - link "Analyze how much is dui bail in Keyword Overview" [ref=f4e2265] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20dui%20bail&db=us
+                                  - text: how much is dui bail
+                                - button "Open overview" [ref=f4e2270] [cursor=pointer]
+                          - cell [ref=f4e2273]:
+                            - button "Informational. Apply filter" [ref=f4e2276] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2277]
+                          - cell "110" [ref=f4e2279]
+                          - cell "8" [ref=f4e2280]
+                          - cell "0.33" [ref=f4e2285]
+                          - cell "1 month Update metrics for how much is dui bail" [ref=f4e2287]:
+                            - generic [ref=f4e2289]:
+                              - generic [ref=f4e2290]: 1 month
+                              - button "Update metrics for how much is dui bail" [ref=f4e2297] [cursor=pointer]:
+                                - img "Update metrics for how much is dui bail" [ref=f4e2298]
+                        - row [ref=f4e2300]:
+                          - cell "how much is the bail for dui" [ref=f4e2301]:
+                            - generic [ref=f4e2302] [cursor=pointer]:
+                              - generic [ref=f4e2303]: how much is the bail for dui
+                              - checkbox "how much is the bail for dui" [ref=f4e2304]
+                          - cell [ref=f4e2306]:
+                            - generic [ref=f4e2307]:
+                              - img "Loading…" [ref=f4e2311]
+                              - generic [ref=f4e2313]:
+                                - link "Analyze how much is the bail for dui in Keyword Overview" [ref=f4e2314] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20the%20bail%20for%20dui&db=us
+                                  - text: how much is the bail for dui
+                                - button "Open overview" [ref=f4e2319] [cursor=pointer]
+                          - cell [ref=f4e2322]:
+                            - button "Informational. Apply filter" [ref=f4e2325] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2326]
+                          - cell "110" [ref=f4e2328]
+                          - cell "0" [ref=f4e2329]
+                          - cell "0.33" [ref=f4e2334]
+                          - cell "1 month Update metrics for how much is the bail for dui" [ref=f4e2336]:
+                            - generic [ref=f4e2338]:
+                              - generic [ref=f4e2339]: 1 month
+                              - button "Update metrics for how much is the bail for dui" [ref=f4e2346] [cursor=pointer]:
+                                - img "Update metrics for how much is the bail for dui" [ref=f4e2347]
+                        - row [ref=f4e2349]:
+                          - cell "how much is a bond for dui" [ref=f4e2350]:
+                            - generic [ref=f4e2351] [cursor=pointer]:
+                              - generic [ref=f4e2352]: how much is a bond for dui
+                              - checkbox "how much is a bond for dui" [ref=f4e2353]
+                          - cell [ref=f4e2355]:
+                            - generic [ref=f4e2356]:
+                              - img "Loading…" [ref=f4e2360]
+                              - generic [ref=f4e2362]:
+                                - link "Analyze how much is a bond for dui in Keyword Overview" [ref=f4e2363] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20a%20bond%20for%20dui&db=us
+                                  - text: how much is a bond for dui
+                                - button "Open overview" [ref=f4e2368] [cursor=pointer]
+                          - cell [ref=f4e2371]:
+                            - button "Informational. Apply filter" [ref=f4e2374] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2375]
+                          - cell "90" [ref=f4e2377]
+                          - cell "0" [ref=f4e2378]
+                          - cell "0.04" [ref=f4e2383]
+                          - cell "1 month Update metrics for how much is a bond for dui" [ref=f4e2385]:
+                            - generic [ref=f4e2387]:
+                              - generic [ref=f4e2388]: 1 month
+                              - button "Update metrics for how much is a bond for dui" [ref=f4e2395] [cursor=pointer]:
+                                - img "Update metrics for how much is a bond for dui" [ref=f4e2396]
+                        - row [ref=f4e2398]:
+                          - cell "how much is a ticket for dui" [ref=f4e2399]:
+                            - generic [ref=f4e2400] [cursor=pointer]:
+                              - generic [ref=f4e2401]: how much is a ticket for dui
+                              - checkbox "how much is a ticket for dui" [ref=f4e2402]
+                          - cell [ref=f4e2404]:
+                            - generic [ref=f4e2405]:
+                              - img "Loading…" [ref=f4e2409]
+                              - generic [ref=f4e2411]:
+                                - link "Analyze how much is a ticket for dui in Keyword Overview" [ref=f4e2412] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20a%20ticket%20for%20dui&db=us
+                                  - text: how much is a ticket for dui
+                                - button "Open overview" [ref=f4e2417] [cursor=pointer]
+                          - cell [ref=f4e2420]:
+                            - button "Informational. Apply filter" [ref=f4e2423] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2424]
+                          - cell "90" [ref=f4e2426]
+                          - cell "11" [ref=f4e2427]
+                          - cell "0.13" [ref=f4e2432]
+                          - cell "1 month Update metrics for how much is a ticket for dui" [ref=f4e2434]:
+                            - generic [ref=f4e2436]:
+                              - generic [ref=f4e2437]: 1 month
+                              - button "Update metrics for how much is a ticket for dui" [ref=f4e2444] [cursor=pointer]:
+                                - img "Update metrics for how much is a ticket for dui" [ref=f4e2445]
+                        - row [ref=f4e2447]:
+                          - cell "how much is bail for a dui in california" [ref=f4e2448]:
+                            - generic [ref=f4e2449] [cursor=pointer]:
+                              - generic [ref=f4e2450]: how much is bail for a dui in california
+                              - checkbox "how much is bail for a dui in california" [ref=f4e2451]
+                          - cell [ref=f4e2453]:
+                            - generic [ref=f4e2454]:
+                              - img "Loading…" [ref=f4e2458]
+                              - generic [ref=f4e2460]:
+                                - link "Analyze how much is bail for a dui in california in Keyword Overview" [ref=f4e2461] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bail%20for%20a%20dui%20in%20california&db=us
+                                  - text: how much is bail for a dui in california
+                                - button "Open overview" [ref=f4e2466] [cursor=pointer]
+                          - cell [ref=f4e2469]:
+                            - button "Informational. Apply filter" [ref=f4e2472] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2473]
+                          - cell "90" [ref=f4e2475]
+                          - cell "16" [ref=f4e2476]
+                          - cell "0.33" [ref=f4e2481]
+                          - cell "1 month Update metrics for how much is bail for a dui in california" [ref=f4e2483]:
+                            - generic [ref=f4e2485]:
+                              - generic [ref=f4e2486]: 1 month
+                              - button "Update metrics for how much is bail for a dui in california" [ref=f4e2493] [cursor=pointer]:
+                                - img "Update metrics for how much is bail for a dui in california" [ref=f4e2494]
+                        - row [ref=f4e2496]:
+                          - cell "how much is bond for a dui" [ref=f4e2497]:
+                            - generic [ref=f4e2498] [cursor=pointer]:
+                              - generic [ref=f4e2499]: how much is bond for a dui
+                              - checkbox "how much is bond for a dui" [ref=f4e2500]
+                          - cell [ref=f4e2502]:
+                            - generic [ref=f4e2503]:
+                              - img "Loading…" [ref=f4e2507]
+                              - generic [ref=f4e2509]:
+                                - link "Analyze how much is bond for a dui in Keyword Overview" [ref=f4e2510] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bond%20for%20a%20dui&db=us
+                                  - text: how much is bond for a dui
+                                - button "Open overview" [ref=f4e2515] [cursor=pointer]
+                          - cell [ref=f4e2518]:
+                            - button "Informational. Apply filter" [ref=f4e2521] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2522]
+                          - cell "90" [ref=f4e2524]
+                          - cell "0" [ref=f4e2525]
+                          - cell "0.04" [ref=f4e2530]
+                          - cell "1 month Update metrics for how much is bond for a dui" [ref=f4e2532]:
+                            - generic [ref=f4e2534]:
+                              - generic [ref=f4e2535]: 1 month
+                              - button "Update metrics for how much is bond for a dui" [ref=f4e2542] [cursor=pointer]:
+                                - img "Update metrics for how much is bond for a dui" [ref=f4e2543]
+                        - row [ref=f4e2545]:
+                          - cell "what is the fine for a dui" [ref=f4e2546]:
+                            - generic [ref=f4e2547] [cursor=pointer]:
+                              - generic [ref=f4e2548]: what is the fine for a dui
+                              - checkbox "what is the fine for a dui" [ref=f4e2549]
+                          - cell [ref=f4e2551]:
+                            - generic [ref=f4e2552]:
+                              - img "Loading…" [ref=f4e2556]
+                              - generic [ref=f4e2558]:
+                                - link "Analyze what is the fine for a dui in Keyword Overview" [ref=f4e2559] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=what%20is%20the%20fine%20for%20a%20dui&db=us
+                                  - text: what is the fine for a dui
+                                - button "Open overview" [ref=f4e2564] [cursor=pointer]
+                          - cell [ref=f4e2567]:
+                            - button "Informational. Apply filter" [ref=f4e2570] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2571]
+                          - cell "90" [ref=f4e2573]
+                          - cell "50" [ref=f4e2574]
+                          - cell "0.07" [ref=f4e2579]
+                          - cell "1 month Update metrics for what is the fine for a dui" [ref=f4e2581]:
+                            - generic [ref=f4e2583]:
+                              - generic [ref=f4e2584]: 1 month
+                              - button "Update metrics for what is the fine for a dui" [ref=f4e2591] [cursor=pointer]:
+                                - img "Update metrics for what is the fine for a dui" [ref=f4e2592]
+                        - row [ref=f4e2594]:
+                          - cell "bail after a dui arrest" [ref=f4e2595]:
+                            - generic [ref=f4e2596] [cursor=pointer]:
+                              - generic [ref=f4e2597]: bail after a dui arrest
+                              - checkbox "bail after a dui arrest" [ref=f4e2598]
+                          - cell [ref=f4e2600]:
+                            - generic [ref=f4e2601]:
+                              - img "Loading…" [ref=f4e2605]
+                              - generic [ref=f4e2607]:
+                                - link "Analyze bail after a dui arrest in Keyword Overview" [ref=f4e2608] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=bail%20after%20a%20dui%20arrest&db=us
+                                  - text: bail after a dui arrest
+                                - button "Open overview" [ref=f4e2613] [cursor=pointer]
+                          - cell [ref=f4e2616]:
+                            - button "Informational. Apply filter" [ref=f4e2619] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2620]
+                          - cell "70" [ref=f4e2622]
+                          - cell "0" [ref=f4e2623]
+                          - cell "0.00" [ref=f4e2628]
+                          - cell "1 month Update metrics for bail after a dui arrest" [ref=f4e2630]:
+                            - generic [ref=f4e2632]:
+                              - generic [ref=f4e2633]: 1 month
+                              - button "Update metrics for bail after a dui arrest" [ref=f4e2640] [cursor=pointer]:
+                                - img "Update metrics for bail after a dui arrest" [ref=f4e2641]
+                        - row [ref=f4e2643]:
+                          - cell "dui bond cost" [ref=f4e2644]:
+                            - generic [ref=f4e2645] [cursor=pointer]:
+                              - generic [ref=f4e2646]: dui bond cost
+                              - checkbox "dui bond cost" [ref=f4e2647]
+                          - cell [ref=f4e2649]:
+                            - generic [ref=f4e2650]:
+                              - img "Loading…" [ref=f4e2654]
+                              - generic [ref=f4e2656]:
+                                - link "Analyze dui bond cost in Keyword Overview" [ref=f4e2657] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20bond%20cost&db=us
+                                  - text: dui bond cost
+                                - button "Open overview" [ref=f4e2662] [cursor=pointer]
+                          - cell [ref=f4e2665]:
+                            - button "Informational. Apply filter" [ref=f4e2668] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2669]
+                          - cell "70" [ref=f4e2671]
+                          - cell "1" [ref=f4e2672]
+                          - cell "0.33" [ref=f4e2677]
+                          - cell "1 month Update metrics for dui bond cost" [ref=f4e2679]:
+                            - generic [ref=f4e2681]:
+                              - generic [ref=f4e2682]: 1 month
+                              - button "Update metrics for dui bond cost" [ref=f4e2689] [cursor=pointer]:
+                                - img "Update metrics for dui bond cost" [ref=f4e2690]
+                        - row [ref=f4e2692]:
+                          - cell "average bail amount for dui" [ref=f4e2693]:
+                            - generic [ref=f4e2694] [cursor=pointer]:
+                              - generic [ref=f4e2695]: average bail amount for dui
+                              - checkbox "average bail amount for dui" [ref=f4e2696]
+                          - cell [ref=f4e2698]:
+                            - generic [ref=f4e2699]:
+                              - img "Loading…" [ref=f4e2703]
+                              - generic [ref=f4e2705]:
+                                - link "Analyze average bail amount for dui in Keyword Overview" [ref=f4e2706] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=average%20bail%20amount%20for%20dui&db=us
+                                  - text: average bail amount for dui
+                                - button "Open overview" [ref=f4e2711] [cursor=pointer]
+                          - cell [ref=f4e2714]:
+                            - button "Informational. Apply filter" [ref=f4e2717] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2718]
+                          - cell "50" [ref=f4e2720]
+                          - cell "0" [ref=f4e2721]
+                          - cell "0.33" [ref=f4e2726]
+                          - cell "1 month Update metrics for average bail amount for dui" [ref=f4e2728]:
+                            - generic [ref=f4e2730]:
+                              - generic [ref=f4e2731]: 1 month
+                              - button "Update metrics for average bail amount for dui" [ref=f4e2738] [cursor=pointer]:
+                                - img "Update metrics for average bail amount for dui" [ref=f4e2739]
+                        - row [ref=f4e2741]:
+                          - cell "bail amount for dui" [ref=f4e2742]:
+                            - generic [ref=f4e2743] [cursor=pointer]:
+                              - generic [ref=f4e2744]: bail amount for dui
+                              - checkbox "bail amount for dui" [ref=f4e2745]
+                          - cell [ref=f4e2747]:
+                            - generic [ref=f4e2748]:
+                              - img "Loading…" [ref=f4e2752]
+                              - generic [ref=f4e2754]:
+                                - link "Analyze bail amount for dui in Keyword Overview" [ref=f4e2755] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=bail%20amount%20for%20dui&db=us
+                                  - text: bail amount for dui
+                                - button "Open overview" [ref=f4e2760] [cursor=pointer]
+                          - cell [ref=f4e2763]:
+                            - button "Informational. Apply filter" [ref=f4e2766] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2767]
+                          - cell "50" [ref=f4e2769]
+                          - cell "0" [ref=f4e2770]
+                          - cell "0.33" [ref=f4e2775]
+                          - cell "1 month Update metrics for bail amount for dui" [ref=f4e2777]:
+                            - generic [ref=f4e2779]:
+                              - generic [ref=f4e2780]: 1 month
+                              - button "Update metrics for bail amount for dui" [ref=f4e2787] [cursor=pointer]:
+                                - img "Update metrics for bail amount for dui" [ref=f4e2788]
+                        - row [ref=f4e2790]:
+                          - cell "bail for a dui" [ref=f4e2791]:
+                            - generic [ref=f4e2792] [cursor=pointer]:
+                              - generic [ref=f4e2793]: bail for a dui
+                              - checkbox "bail for a dui" [ref=f4e2794]
+                          - cell [ref=f4e2796]:
+                            - generic [ref=f4e2797]:
+                              - img "Loading…" [ref=f4e2801]
+                              - generic [ref=f4e2803]:
+                                - link "Analyze bail for a dui in Keyword Overview" [ref=f4e2804] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=bail%20for%20a%20dui&db=us
+                                  - text: bail for a dui
+                                - button "Open overview" [ref=f4e2809] [cursor=pointer]
+                          - cell [ref=f4e2812]:
+                            - button "Informational. Apply filter" [ref=f4e2815] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2816]
+                          - cell "50" [ref=f4e2818]
+                          - cell "0" [ref=f4e2819]
+                          - cell "0.01" [ref=f4e2824]
+                          - cell "1 month Update metrics for bail for a dui" [ref=f4e2826]:
+                            - generic [ref=f4e2828]:
+                              - generic [ref=f4e2829]: 1 month
+                              - button "Update metrics for bail for a dui" [ref=f4e2836] [cursor=pointer]:
+                                - img "Update metrics for bail for a dui" [ref=f4e2837]
+                        - row [ref=f4e2839]:
+                          - cell "dui fine cost" [ref=f4e2840]:
+                            - generic [ref=f4e2841] [cursor=pointer]:
+                              - generic [ref=f4e2842]: dui fine cost
+                              - checkbox "dui fine cost" [ref=f4e2843]
+                          - cell [ref=f4e2845]:
+                            - generic [ref=f4e2846]:
+                              - img "Loading…" [ref=f4e2850]
+                              - generic [ref=f4e2852]:
+                                - link "Analyze dui fine cost in Keyword Overview" [ref=f4e2853] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20fine%20cost&db=us
+                                  - text: dui fine cost
+                                - button "Open overview" [ref=f4e2858] [cursor=pointer]
+                          - cell [ref=f4e2861]:
+                            - button "Informational. Apply filter" [ref=f4e2864] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2865]
+                          - cell "50" [ref=f4e2867]
+                          - cell "3" [ref=f4e2868]
+                          - cell "0.12" [ref=f4e2873]
+                          - cell "1 month Update metrics for dui fine cost" [ref=f4e2875]:
+                            - generic [ref=f4e2877]:
+                              - generic [ref=f4e2878]: 1 month
+                              - button "Update metrics for dui fine cost" [ref=f4e2885] [cursor=pointer]:
+                                - img "Update metrics for dui fine cost" [ref=f4e2886]
+                        - row [ref=f4e2888]:
+                          - cell "how much are dui fines" [ref=f4e2889]:
+                            - generic [ref=f4e2890] [cursor=pointer]:
+                              - generic [ref=f4e2891]: how much are dui fines
+                              - checkbox "how much are dui fines" [ref=f4e2892]
+                          - cell [ref=f4e2894]:
+                            - generic [ref=f4e2895]:
+                              - img "Loading…" [ref=f4e2899]
+                              - generic [ref=f4e2901]:
+                                - link "Analyze how much are dui fines in Keyword Overview" [ref=f4e2902] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20are%20dui%20fines&db=us
+                                  - text: how much are dui fines
+                                - button "Open overview" [ref=f4e2907] [cursor=pointer]
+                          - cell [ref=f4e2910]:
+                            - button "Informational. Apply filter" [ref=f4e2913] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2914]
+                          - cell "50" [ref=f4e2916]
+                          - cell "16" [ref=f4e2917]
+                          - cell "0.07" [ref=f4e2922]
+                          - cell "1 month Update metrics for how much are dui fines" [ref=f4e2924]:
+                            - generic [ref=f4e2926]:
+                              - generic [ref=f4e2927]: 1 month
+                              - button "Update metrics for how much are dui fines" [ref=f4e2934] [cursor=pointer]:
+                                - img "Update metrics for how much are dui fines" [ref=f4e2935]
+                        - row [ref=f4e2937]:
+                          - cell "how much is a dui bail" [ref=f4e2938]:
+                            - generic [ref=f4e2939] [cursor=pointer]:
+                              - generic [ref=f4e2940]: how much is a dui bail
+                              - checkbox "how much is a dui bail" [ref=f4e2941]
+                          - cell [ref=f4e2943]:
+                            - generic [ref=f4e2944]:
+                              - img "Loading…" [ref=f4e2948]
+                              - generic [ref=f4e2950]:
+                                - link "Analyze how much is a dui bail in Keyword Overview" [ref=f4e2951] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20a%20dui%20bail&db=us
+                                  - text: how much is a dui bail
+                                - button "Open overview" [ref=f4e2956] [cursor=pointer]
+                          - cell [ref=f4e2959]:
+                            - button "Informational. Apply filter" [ref=f4e2962] [cursor=pointer]: I
+                          - cell "63" [ref=f4e2963]
+                          - cell "50" [ref=f4e2965]
+                          - cell "0" [ref=f4e2966]
+                          - cell "0.33" [ref=f4e2971]
+                          - cell "1 month Update metrics for how much is a dui bail" [ref=f4e2973]:
+                            - generic [ref=f4e2975]:
+                              - generic [ref=f4e2976]: 1 month
+                              - button "Update metrics for how much is a dui bail" [ref=f4e2983] [cursor=pointer]:
+                                - img "Update metrics for how much is a dui bail" [ref=f4e2984]
+                        - row [ref=f4e2986]:
+                          - cell "how much is a dui bond" [ref=f4e2987]:
+                            - generic [ref=f4e2988] [cursor=pointer]:
+                              - generic [ref=f4e2989]: how much is a dui bond
+                              - checkbox "how much is a dui bond" [ref=f4e2990]
+                          - cell [ref=f4e2992]:
+                            - generic [ref=f4e2993]:
+                              - img "Loading…" [ref=f4e2997]
+                              - generic [ref=f4e2999]:
+                                - link "Analyze how much is a dui bond in Keyword Overview" [ref=f4e3000] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20a%20dui%20bond&db=us
+                                  - text: how much is a dui bond
+                                - button "Open overview" [ref=f4e3005] [cursor=pointer]
+                          - cell [ref=f4e3008]:
+                            - button "Informational. Apply filter" [ref=f4e3011] [cursor=pointer]: I
+                          - cell "63" [ref=f4e3012]
+                          - cell "50" [ref=f4e3014]
+                          - cell "0" [ref=f4e3015]
+                          - cell "0.33" [ref=f4e3020]
+                          - cell "1 month Update metrics for how much is a dui bond" [ref=f4e3022]:
+                            - generic [ref=f4e3024]:
+                              - generic [ref=f4e3025]: 1 month
+                              - button "Update metrics for how much is a dui bond" [ref=f4e3032] [cursor=pointer]:
+                                - img "Update metrics for how much is a dui bond" [ref=f4e3033]
+                        - row [ref=f4e3035]:
+                          - cell "average bail for dui" [ref=f4e3036]:
+                            - generic [ref=f4e3037] [cursor=pointer]:
+                              - generic [ref=f4e3038]: average bail for dui
+                              - checkbox "average bail for dui" [ref=f4e3039]
+                          - cell [ref=f4e3041]:
+                            - generic [ref=f4e3042]:
+                              - img "Loading…" [ref=f4e3046]
+                              - generic [ref=f4e3048]:
+                                - link "Analyze average bail for dui in Keyword Overview" [ref=f4e3049] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=average%20bail%20for%20dui&db=us
+                                  - text: average bail for dui
+                                - button "Open overview" [ref=f4e3054] [cursor=pointer]
+                          - cell [ref=f4e3057]:
+                            - button "Informational. Apply filter" [ref=f4e3060] [cursor=pointer]: I
+                          - cell "63" [ref=f4e3061]
+                          - cell "40" [ref=f4e3063]
+                          - cell "0" [ref=f4e3064]
+                          - cell "0.33" [ref=f4e3069]
+                          - cell "1 month Update metrics for average bail for dui" [ref=f4e3071]:
+                            - generic [ref=f4e3073]:
+                              - generic [ref=f4e3074]: 1 month
+                              - button "Update metrics for average bail for dui" [ref=f4e3081] [cursor=pointer]:
+                                - img "Update metrics for average bail for dui" [ref=f4e3082]
+                        - row [ref=f4e3084]:
+                          - cell "how much is bail for 2nd dui" [ref=f4e3085]:
+                            - generic [ref=f4e3086] [cursor=pointer]:
+                              - generic [ref=f4e3087]: how much is bail for 2nd dui
+                              - checkbox "how much is bail for 2nd dui" [ref=f4e3088]
+                          - cell [ref=f4e3090]:
+                            - generic [ref=f4e3091]:
+                              - img "Loading…" [ref=f4e3095]
+                              - generic [ref=f4e3097]:
+                                - link "Analyze how much is bail for 2nd dui in Keyword Overview" [ref=f4e3098] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bail%20for%202nd%20dui&db=us
+                                  - text: how much is bail for 2nd dui
+                                - button "Open overview" [ref=f4e3103] [cursor=pointer]
+                          - cell [ref=f4e3106]:
+                            - button "Informational. Apply filter" [ref=f4e3109] [cursor=pointer]: I
+                          - cell "63" [ref=f4e3110]
+                          - cell "40" [ref=f4e3112]
+                          - cell "0" [ref=f4e3113]
+                          - cell "0.33" [ref=f4e3118]
+                          - cell "1 month Update metrics for how much is bail for 2nd dui" [ref=f4e3120]:
+                            - generic [ref=f4e3122]:
+                              - generic [ref=f4e3123]: 1 month
+                              - button "Update metrics for how much is bail for 2nd dui" [ref=f4e3130] [cursor=pointer]:
+                                - img "Update metrics for how much is bail for 2nd dui" [ref=f4e3131]
+                        - row [ref=f4e3133]:
+                          - cell "what is bail for a dui" [ref=f4e3134]:
+                            - generic [ref=f4e3135] [cursor=pointer]:
+                              - generic [ref=f4e3136]: what is bail for a dui
+                              - checkbox "what is bail for a dui" [ref=f4e3137]
+                          - cell [ref=f4e3139]:
+                            - generic [ref=f4e3140]:
+                              - img "Loading…" [ref=f4e3144]
+                              - generic [ref=f4e3146]:
+                                - link "Analyze what is bail for a dui in Keyword Overview" [ref=f4e3147] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=what%20is%20bail%20for%20a%20dui&db=us
+                                  - text: what is bail for a dui
+                                - button "Open overview" [ref=f4e3152] [cursor=pointer]
+                          - cell [ref=f4e3155]:
+                            - button "Informational. Apply filter" [ref=f4e3158] [cursor=pointer]: I
+                          - cell "63" [ref=f4e3159]
+                          - cell "40" [ref=f4e3161]
+                          - cell "0" [ref=f4e3162]
+                          - cell "0.33" [ref=f4e3167]
+                          - cell "1 month Update metrics for what is bail for a dui" [ref=f4e3169]:
+                            - generic [ref=f4e3171]:
+                              - generic [ref=f4e3172]: 1 month
+                              - button "Update metrics for what is bail for a dui" [ref=f4e3179] [cursor=pointer]:
+                                - img "Update metrics for what is bail for a dui" [ref=f4e3180]
+                        - row [ref=f4e3182]:
+                          - cell "how much are the fines for a dui" [ref=f4e3183]:
+                            - generic [ref=f4e3184] [cursor=pointer]:
+                              - generic [ref=f4e3185]: how much are the fines for a dui
+                              - checkbox "how much are the fines for a dui" [ref=f4e3186]
+                          - cell [ref=f4e3188]:
+                            - generic [ref=f4e3189]:
+                              - img "Loading…" [ref=f4e3193]
+                              - generic [ref=f4e3195]:
+                                - link "Analyze how much are the fines for a dui in Keyword Overview" [ref=f4e3196] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20are%20the%20fines%20for%20a%20dui&db=us
+                                  - text: how much are the fines for a dui
+                                - button "Open overview" [ref=f4e3201] [cursor=pointer]
+                          - cell "n/a" [ref=f4e3204]
+                          - cell "63" [ref=f4e3206]
+                          - cell "30" [ref=f4e3208]
+                          - cell "n/a" [ref=f4e3209]
+                          - cell "0.07" [ref=f4e3214]
+                          - cell "Refresh Update metrics for how much are the fines for a dui" [ref=f4e3216]:
+                            - generic [ref=f4e3218]:
+                              - generic [ref=f4e3219]: Refresh
+                              - button "Update metrics for how much are the fines for a dui" [ref=f4e3226] [cursor=pointer]:
+                                - img "Update metrics for how much are the fines for a dui" [ref=f4e3227]
+                        - row [ref=f4e3229]:
+                          - cell "how much to bail someone out of jail for dui" [ref=f4e3230]:
+                            - generic [ref=f4e3231] [cursor=pointer]:
+                              - generic [ref=f4e3232]: how much to bail someone out of jail for dui
+                              - checkbox "how much to bail someone out of jail for dui" [ref=f4e3233]
+                          - cell [ref=f4e3235]:
+                            - generic [ref=f4e3236]:
+                              - img "Loading…" [ref=f4e3240]
+                              - generic [ref=f4e3242]:
+                                - link "Analyze how much to bail someone out of jail for dui in Keyword Overview" [ref=f4e3243] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20to%20bail%20someone%20out%20of%20jail%20for%20dui&db=us
+                                  - text: how much to bail someone out of jail for dui
+                                - button "Open overview" [ref=f4e3248] [cursor=pointer]
+                          - cell "n/a" [ref=f4e3251]
+                          - cell "63" [ref=f4e3253]
+                          - cell "30" [ref=f4e3255]
+                          - cell "n/a" [ref=f4e3256]
+                          - cell "0.33" [ref=f4e3261]
+                          - cell "Refresh Update metrics for how much to bail someone out of jail for dui" [ref=f4e3263]:
+                            - generic [ref=f4e3265]:
+                              - generic [ref=f4e3266]: Refresh
+                              - button "Update metrics for how much to bail someone out of jail for dui" [ref=f4e3273] [cursor=pointer]:
+                                - img "Update metrics for how much to bail someone out of jail for dui" [ref=f4e3274]
+                        - row [ref=f4e3276]:
+                          - cell "average bail amount dui" [ref=f4e3277]:
+                            - generic [ref=f4e3278] [cursor=pointer]:
+                              - generic [ref=f4e3279]: average bail amount dui
+                              - checkbox "average bail amount dui" [ref=f4e3280]
+                          - cell [ref=f4e3282]:
+                            - generic [ref=f4e3283]:
+                              - img "Loading…" [ref=f4e3287]
+                              - generic [ref=f4e3289]:
+                                - link "Analyze average bail amount dui in Keyword Overview" [ref=f4e3290] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=average%20bail%20amount%20dui&db=us
+                                  - text: average bail amount dui
+                                - button "Open overview" [ref=f4e3295] [cursor=pointer]
+                          - cell "n/a" [ref=f4e3298]
+                          - cell "63" [ref=f4e3300]
+                          - cell "20" [ref=f4e3302]
+                          - cell "n/a" [ref=f4e3303]
+                          - cell "0.00" [ref=f4e3308]
+                          - cell "Refresh Update metrics for average bail amount dui" [ref=f4e3310]:
+                            - generic [ref=f4e3312]:
+                              - generic [ref=f4e3313]: Refresh
+                              - button "Update metrics for average bail amount dui" [ref=f4e3320] [cursor=pointer]:
+                                - img "Update metrics for average bail amount dui" [ref=f4e3321]
+                        - row [ref=f4e3323]:
+                          - cell "average bond for dui" [ref=f4e3324]:
+                            - generic [ref=f4e3325] [cursor=pointer]:
+                              - generic [ref=f4e3326]: average bond for dui
+                              - checkbox "average bond for dui" [ref=f4e3327]
+                          - cell [ref=f4e3329]:
+                            - generic [ref=f4e3330]:
+                              - img "Loading…" [ref=f4e3334]
+                              - generic [ref=f4e3336]:
+                                - link "Analyze average bond for dui in Keyword Overview" [ref=f4e3337] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=average%20bond%20for%20dui&db=us
+                                  - text: average bond for dui
+                                - button "Open overview" [ref=f4e3342] [cursor=pointer]
+                          - cell "n/a" [ref=f4e3345]
+                          - cell "63" [ref=f4e3347]
+                          - cell "20" [ref=f4e3349]
+                          - cell "n/a" [ref=f4e3350]
+                          - cell "0.02" [ref=f4e3355]
+                          - cell "Refresh Update metrics for average bond for dui" [ref=f4e3357]:
+                            - generic [ref=f4e3359]:
+                              - generic [ref=f4e3360]: Refresh
+                              - button "Update metrics for average bond for dui" [ref=f4e3367] [cursor=pointer]:
+                                - img "Update metrics for average bond for dui" [ref=f4e3368]
+                        - row [ref=f4e3370]:
+                          - cell "average dui bail cost" [ref=f4e3371]:
+                            - generic [ref=f4e3372] [cursor=pointer]:
+                              - generic [ref=f4e3373]: average dui bail cost
+                              - checkbox "average dui bail cost" [ref=f4e3374]
+                          - cell [ref=f4e3376]:
+                            - generic [ref=f4e3377]:
+                              - img "Loading…" [ref=f4e3381]
+                              - generic [ref=f4e3383]:
+                                - link "Analyze average dui bail cost in Keyword Overview" [ref=f4e3384] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=average%20dui%20bail%20cost&db=us
+                                  - text: average dui bail cost
+                                - button "Open overview" [ref=f4e3389] [cursor=pointer]
+                          - cell "n/a" [ref=f4e3392]
+                          - cell "63" [ref=f4e3394]
+                          - cell "20" [ref=f4e3396]
+                          - cell "n/a" [ref=f4e3397]
+                          - cell "0.33" [ref=f4e3402]
+                          - cell "Refresh Update metrics for average dui bail cost" [ref=f4e3404]:
+                            - generic [ref=f4e3406]:
+                              - generic [ref=f4e3407]: Refresh
+                              - button "Update metrics for average dui bail cost" [ref=f4e3414] [cursor=pointer]:
+                                - img "Update metrics for average dui bail cost" [ref=f4e3415]
+                        - row [ref=f4e3417]:
+                          - cell "bail cost for dui" [ref=f4e3418]:
+                            - generic [ref=f4e3419] [cursor=pointer]:
+                              - generic [ref=f4e3420]: bail cost for dui
+                              - checkbox "bail cost for dui" [ref=f4e3421]
+                          - cell [ref=f4e3423]:
+                            - generic [ref=f4e3424]:
+                              - img "Loading…" [ref=f4e3428]
+                              - generic [ref=f4e3430]:
+                                - link "Analyze bail cost for dui in Keyword Overview" [ref=f4e3431] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=bail%20cost%20for%20dui&db=us
+                                  - text: bail cost for dui
+                                - button "Open overview" [ref=f4e3436] [cursor=pointer]
+                          - cell "n/a" [ref=f4e3439]
+                          - cell "63" [ref=f4e3441]
+                          - cell "20" [ref=f4e3443]
+                          - cell "n/a" [ref=f4e3444]
+                          - cell "0.33" [ref=f4e3449]
+                          - cell "Refresh Update metrics for bail cost for dui" [ref=f4e3451]:
+                            - generic [ref=f4e3453]:
+                              - generic [ref=f4e3454]: Refresh
+                              - button "Update metrics for bail cost for dui" [ref=f4e3461] [cursor=pointer]:
+                                - img "Update metrics for bail cost for dui" [ref=f4e3462]
+                        - row [ref=f4e3464]:
+                          - cell "bail for drinking and driving" [ref=f4e3465]:
+                            - generic [ref=f4e3466] [cursor=pointer]:
+                              - generic [ref=f4e3467]: bail for drinking and driving
+                              - checkbox "bail for drinking and driving" [ref=f4e3468]
+                          - cell [ref=f4e3470]:
+                            - generic [ref=f4e3471]:
+                              - img "Loading…" [ref=f4e3475]
+                              - generic [ref=f4e3477]:
+                                - link "Analyze bail for drinking and driving in Keyword Overview" [ref=f4e3478] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=bail%20for%20drinking%20and%20driving&db=us
+                                  - text: bail for drinking and driving
+                                - button "Open overview" [ref=f4e3483] [cursor=pointer]
+                          - cell "n/a" [ref=f4e3486]
+                          - cell "63" [ref=f4e3488]
+                          - cell "20" [ref=f4e3490]
+                          - cell "n/a" [ref=f4e3491]
+                          - cell "0.33" [ref=f4e3496]
+                          - cell "Refresh Update metrics for bail for drinking and driving" [ref=f4e3498]:
+                            - generic [ref=f4e3500]:
+                              - generic [ref=f4e3501]: Refresh
+                              - button "Update metrics for bail for drinking and driving" [ref=f4e3508] [cursor=pointer]:
+                                - img "Update metrics for bail for drinking and driving" [ref=f4e3509]
+                        - row [ref=f4e3511]:
+                          - cell "bail for drunk and disorderly" [ref=f4e3512]:
+                            - generic [ref=f4e3513] [cursor=pointer]:
+                              - generic [ref=f4e3514]: bail for drunk and disorderly
+                              - checkbox "bail for drunk and disorderly" [ref=f4e3515]
+                          - cell [ref=f4e3517]:
+                            - generic [ref=f4e3518]:
+                              - img "Loading…" [ref=f4e3522]
+                              - generic [ref=f4e3524]:
+                                - link "Analyze bail for drunk and disorderly in Keyword Overview" [ref=f4e3525] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=bail%20for%20drunk%20and%20disorderly&db=us
+                                  - text: bail for drunk and disorderly
+                                - button "Open overview" [ref=f4e3530] [cursor=pointer]
+                          - cell "n/a" [ref=f4e3533]
+                          - cell "63" [ref=f4e3535]
+                          - cell "20" [ref=f4e3537]
+                          - cell "n/a" [ref=f4e3538]
+                          - cell "0.33" [ref=f4e3543]
+                          - cell "Refresh Update metrics for bail for drunk and disorderly" [ref=f4e3545]:
+                            - generic [ref=f4e3547]:
+                              - generic [ref=f4e3548]: Refresh
+                              - button "Update metrics for bail for drunk and disorderly" [ref=f4e3555] [cursor=pointer]:
+                                - img "Update metrics for bail for drunk and disorderly" [ref=f4e3556]
+                        - row [ref=f4e3558]:
+                          - cell "cost of bail for dui" [ref=f4e3559]:
+                            - generic [ref=f4e3560] [cursor=pointer]:
+                              - generic [ref=f4e3561]: cost of bail for dui
+                              - checkbox "cost of bail for dui" [ref=f4e3562]
+                          - cell [ref=f4e3564]:
+                            - generic [ref=f4e3565]:
+                              - img "Loading…" [ref=f4e3569]
+                              - generic [ref=f4e3571]:
+                                - link "Analyze cost of bail for dui in Keyword Overview" [ref=f4e3572] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=cost%20of%20bail%20for%20dui&db=us
+                                  - text: cost of bail for dui
+                                - button "Open overview" [ref=f4e3577] [cursor=pointer]
+                          - cell "n/a" [ref=f4e3580]
+                          - cell "63" [ref=f4e3582]
+                          - cell "20" [ref=f4e3584]
+                          - cell "n/a" [ref=f4e3585]
+                          - cell "0.33" [ref=f4e3590]
+                          - cell "Refresh Update metrics for cost of bail for dui" [ref=f4e3592]:
+                            - generic [ref=f4e3594]:
+                              - generic [ref=f4e3595]: Refresh
+                              - button "Update metrics for cost of bail for dui" [ref=f4e3602] [cursor=pointer]:
+                                - img "Update metrics for cost of bail for dui" [ref=f4e3603]
+                        - row [ref=f4e3605]:
+                          - cell "do you have to post bail for a dui" [ref=f4e3606]:
+                            - generic [ref=f4e3607] [cursor=pointer]:
+                              - generic [ref=f4e3608]: do you have to post bail for a dui
+                              - checkbox "do you have to post bail for a dui" [ref=f4e3609]
+                          - cell [ref=f4e3611]:
+                            - generic [ref=f4e3612]:
+                              - img "Loading…" [ref=f4e3616]
+                              - generic [ref=f4e3618]:
+                                - link "Analyze do you have to post bail for a dui in Keyword Overview" [ref=f4e3619] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=do%20you%20have%20to%20post%20bail%20for%20a%20dui&db=us
+                                  - text: do you have to post bail for a dui
+                                - button "Open overview" [ref=f4e3624] [cursor=pointer]
+                          - cell "n/a" [ref=f4e3627]
+                          - cell "63" [ref=f4e3629]
+                          - cell "20" [ref=f4e3631]
+                          - cell "n/a" [ref=f4e3632]
+                          - cell "0.33" [ref=f4e3637]
+                          - cell "Refresh Update metrics for do you have to post bail for a dui" [ref=f4e3639]:
+                            - generic [ref=f4e3641]:
+                              - generic [ref=f4e3642]: Refresh
+                              - button "Update metrics for do you have to post bail for a dui" [ref=f4e3649] [cursor=pointer]:
+                                - img "Update metrics for do you have to post bail for a dui" [ref=f4e3650]
+                        - row [ref=f4e3652]:
+                          - cell "dui bail amount california" [ref=f4e3653]:
+                            - generic [ref=f4e3654] [cursor=pointer]:
+                              - generic [ref=f4e3655]: dui bail amount california
+                              - checkbox "dui bail amount california" [ref=f4e3656]
+                          - cell [ref=f4e3658]:
+                            - generic [ref=f4e3659]:
+                              - img "Loading…" [ref=f4e3663]
+                              - generic [ref=f4e3665]:
+                                - link "Analyze dui bail amount california in Keyword Overview" [ref=f4e3666] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20bail%20amount%20california&db=us
+                                  - text: dui bail amount california
+                                - button "Open overview" [ref=f4e3671] [cursor=pointer]
+                          - cell "n/a" [ref=f4e3674]
+                          - cell "63" [ref=f4e3676]
+                          - cell "20" [ref=f4e3678]
+                          - cell "n/a" [ref=f4e3679]
+                          - cell "0.33" [ref=f4e3684]
+                          - cell "Refresh Update metrics for dui bail amount california" [ref=f4e3686]:
+                            - generic [ref=f4e3688]:
+                              - generic [ref=f4e3689]: Refresh
+                              - button "Update metrics for dui bail amount california" [ref=f4e3696] [cursor=pointer]:
+                                - img "Update metrics for dui bail amount california" [ref=f4e3697]
+                        - row [ref=f4e3699]:
+                          - cell "dui bail amount texas" [ref=f4e3700]:
+                            - generic [ref=f4e3701] [cursor=pointer]:
+                              - generic [ref=f4e3702]: dui bail amount texas
+                              - checkbox "dui bail amount texas" [ref=f4e3703]
+                          - cell [ref=f4e3705]:
+                            - generic [ref=f4e3706]:
+                              - img "Loading…" [ref=f4e3710]
+                              - generic [ref=f4e3712]:
+                                - link "Analyze dui bail amount texas in Keyword Overview" [ref=f4e3713] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20bail%20amount%20texas&db=us
+                                  - text: dui bail amount texas
+                                - button "Open overview" [ref=f4e3718] [cursor=pointer]
+                          - cell "n/a" [ref=f4e3721]
+                          - cell "63" [ref=f4e3723]
+                          - cell "20" [ref=f4e3725]
+                          - cell "n/a" [ref=f4e3726]
+                          - cell "0.33" [ref=f4e3731]
+                          - cell "Refresh Update metrics for dui bail amount texas" [ref=f4e3733]:
+                            - generic [ref=f4e3735]:
+                              - generic [ref=f4e3736]: Refresh
+                              - button "Update metrics for dui bail amount texas" [ref=f4e3743] [cursor=pointer]:
+                                - img "Update metrics for dui bail amount texas" [ref=f4e3744]
+                        - row [ref=f4e3746]:
+                          - cell "dui bail cost california" [ref=f4e3747]:
+                            - generic [ref=f4e3748] [cursor=pointer]:
+                              - generic [ref=f4e3749]: dui bail cost california
+                              - checkbox "dui bail cost california" [ref=f4e3750]
+                          - cell [ref=f4e3752]:
+                            - generic [ref=f4e3753]:
+                              - img "Loading…" [ref=f4e3757]
+                              - generic [ref=f4e3759]:
+                                - link "Analyze dui bail cost california in Keyword Overview" [ref=f4e3760] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20bail%20cost%20california&db=us
+                                  - text: dui bail cost california
+                                - button "Open overview" [ref=f4e3765] [cursor=pointer]
+                          - cell "n/a" [ref=f4e3768]
+                          - cell "63" [ref=f4e3770]
+                          - cell "20" [ref=f4e3772]
+                          - cell "n/a" [ref=f4e3773]
+                          - cell "0.33" [ref=f4e3778]
+                          - cell "Refresh Update metrics for dui bail cost california" [ref=f4e3780]:
+                            - generic [ref=f4e3782]:
+                              - generic [ref=f4e3783]: Refresh
+                              - button "Update metrics for dui bail cost california" [ref=f4e3790] [cursor=pointer]:
+                                - img "Update metrics for dui bail cost california" [ref=f4e3791]
+                        - row [ref=f4e3793]:
+                          - cell "dui bail out" [ref=f4e3794]:
+                            - generic [ref=f4e3795] [cursor=pointer]:
+                              - generic [ref=f4e3796]: dui bail out
+                              - checkbox "dui bail out" [ref=f4e3797]
+                          - cell [ref=f4e3799]:
+                            - generic [ref=f4e3800]:
+                              - img "Loading…" [ref=f4e3804]
+                              - generic [ref=f4e3806]:
+                                - link "Analyze dui bail out in Keyword Overview" [ref=f4e3807] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20bail%20out&db=us
+                                  - text: dui bail out
+                                - button "Open overview" [ref=f4e3812] [cursor=pointer]
+                          - cell "n/a" [ref=f4e3815]
+                          - cell "63" [ref=f4e3817]
+                          - cell "20" [ref=f4e3819]
+                          - cell "n/a" [ref=f4e3820]
+                          - cell "0.33" [ref=f4e3825]
+                          - cell "Refresh Update metrics for dui bail out" [ref=f4e3827]:
+                            - generic [ref=f4e3829]:
+                              - generic [ref=f4e3830]: Refresh
+                              - button "Update metrics for dui bail out" [ref=f4e3837] [cursor=pointer]:
+                                - img "Update metrics for dui bail out" [ref=f4e3838]
+                        - row [ref=f4e3840]:
+                          - cell "dui bail out cost" [ref=f4e3841]:
+                            - generic [ref=f4e3842] [cursor=pointer]:
+                              - generic [ref=f4e3843]: dui bail out cost
+                              - checkbox "dui bail out cost" [ref=f4e3844]
+                          - cell [ref=f4e3846]:
+                            - generic [ref=f4e3847]:
+                              - img "Loading…" [ref=f4e3851]
+                              - generic [ref=f4e3853]:
+                                - link "Analyze dui bail out cost in Keyword Overview" [ref=f4e3854] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20bail%20out%20cost&db=us
+                                  - text: dui bail out cost
+                                - button "Open overview" [ref=f4e3859] [cursor=pointer]
+                          - cell "n/a" [ref=f4e3862]
+                          - cell "63" [ref=f4e3864]
+                          - cell "20" [ref=f4e3866]
+                          - cell "n/a" [ref=f4e3867]
+                          - cell "0.33" [ref=f4e3872]
+                          - cell "Refresh Update metrics for dui bail out cost" [ref=f4e3874]:
+                            - generic [ref=f4e3876]:
+                              - generic [ref=f4e3877]: Refresh
+                              - button "Update metrics for dui bail out cost" [ref=f4e3884] [cursor=pointer]:
+                                - img "Update metrics for dui bail out cost" [ref=f4e3885]
+                        - row [ref=f4e3887]:
+                          - cell "dui bail price" [ref=f4e3888]:
+                            - generic [ref=f4e3889] [cursor=pointer]:
+                              - generic [ref=f4e3890]: dui bail price
+                              - checkbox "dui bail price" [ref=f4e3891]
+                          - cell [ref=f4e3893]:
+                            - generic [ref=f4e3894]:
+                              - img "Loading…" [ref=f4e3898]
+                              - generic [ref=f4e3900]:
+                                - link "Analyze dui bail price in Keyword Overview" [ref=f4e3901] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20bail%20price&db=us
+                                  - text: dui bail price
+                                - button "Open overview" [ref=f4e3906] [cursor=pointer]
+                          - cell "n/a" [ref=f4e3909]
+                          - cell "63" [ref=f4e3911]
+                          - cell "20" [ref=f4e3913]
+                          - cell "n/a" [ref=f4e3914]
+                          - cell "0.33" [ref=f4e3919]
+                          - cell "Refresh Update metrics for dui bail price" [ref=f4e3921]:
+                            - generic [ref=f4e3923]:
+                              - generic [ref=f4e3924]: Refresh
+                              - button "Update metrics for dui bail price" [ref=f4e3931] [cursor=pointer]:
+                                - img "Update metrics for dui bail price" [ref=f4e3932]
+                        - row [ref=f4e3934]:
+                          - cell "dui fine amount" [ref=f4e3935]:
+                            - generic [ref=f4e3936] [cursor=pointer]:
+                              - generic [ref=f4e3937]: dui fine amount
+                              - checkbox "dui fine amount" [ref=f4e3938]
+                          - cell [ref=f4e3940]:
+                            - generic [ref=f4e3941]:
+                              - img "Loading…" [ref=f4e3945]
+                              - generic [ref=f4e3947]:
+                                - link "Analyze dui fine amount in Keyword Overview" [ref=f4e3948] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20fine%20amount&db=us
+                                  - text: dui fine amount
+                                - button "Open overview" [ref=f4e3953] [cursor=pointer]
+                          - cell "n/a" [ref=f4e3956]
+                          - cell "63" [ref=f4e3958]
+                          - cell "20" [ref=f4e3960]
+                          - cell "n/a" [ref=f4e3961]
+                          - cell "0.10" [ref=f4e3966]
+                          - cell "Refresh Update metrics for dui fine amount" [ref=f4e3968]:
+                            - generic [ref=f4e3970]:
+                              - generic [ref=f4e3971]: Refresh
+                              - button "Update metrics for dui fine amount" [ref=f4e3978] [cursor=pointer]:
+                                - img "Update metrics for dui fine amount" [ref=f4e3979]
+                        - row [ref=f4e3981]:
+                          - cell "dui money" [ref=f4e3982]:
+                            - generic [ref=f4e3983] [cursor=pointer]:
+                              - generic [ref=f4e3984]: dui money
+                              - checkbox "dui money" [ref=f4e3985]
+                          - cell [ref=f4e3987]:
+                            - generic [ref=f4e3988]:
+                              - img "Loading…" [ref=f4e3992]
+                              - generic [ref=f4e3994]:
+                                - link "Analyze dui money in Keyword Overview" [ref=f4e3995] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20money&db=us
+                                  - text: dui money
+                                - button "Open overview" [ref=f4e4000] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4003]
+                          - cell "63" [ref=f4e4005]
+                          - cell "20" [ref=f4e4007]
+                          - cell "n/a" [ref=f4e4008]
+                          - cell "0.07" [ref=f4e4013]
+                          - cell "Refresh Update metrics for dui money" [ref=f4e4015]:
+                            - generic [ref=f4e4017]:
+                              - generic [ref=f4e4018]: Refresh
+                              - button "Update metrics for dui money" [ref=f4e4025] [cursor=pointer]:
+                                - img "Update metrics for dui money" [ref=f4e4026]
+                        - row [ref=f4e4028]:
+                          - cell "dui payment" [ref=f4e4029]:
+                            - generic [ref=f4e4030] [cursor=pointer]:
+                              - generic [ref=f4e4031]: dui payment
+                              - checkbox "dui payment" [ref=f4e4032]
+                          - cell [ref=f4e4034]:
+                            - generic [ref=f4e4035]:
+                              - img "Loading…" [ref=f4e4039]
+                              - generic [ref=f4e4041]:
+                                - link "Analyze dui payment in Keyword Overview" [ref=f4e4042] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=dui%20payment&db=us
+                                  - text: dui payment
+                                - button "Open overview" [ref=f4e4047] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4050]
+                          - cell "63" [ref=f4e4052]
+                          - cell "20" [ref=f4e4054]
+                          - cell "n/a" [ref=f4e4055]
+                          - cell "0.04" [ref=f4e4060]
+                          - cell "Refresh Update metrics for dui payment" [ref=f4e4062]:
+                            - generic [ref=f4e4064]:
+                              - generic [ref=f4e4065]: Refresh
+                              - button "Update metrics for dui payment" [ref=f4e4072] [cursor=pointer]:
+                                - img "Update metrics for dui payment" [ref=f4e4073]
+                        - row [ref=f4e4075]:
+                          - cell "for a conviction of a dui you could pay" [ref=f4e4076]:
+                            - generic [ref=f4e4077] [cursor=pointer]:
+                              - generic [ref=f4e4078]: for a conviction of a dui you could pay
+                              - checkbox "for a conviction of a dui you could pay" [ref=f4e4079]
+                          - cell [ref=f4e4081]:
+                            - generic [ref=f4e4082]:
+                              - img "Loading…" [ref=f4e4086]
+                              - generic [ref=f4e4088]:
+                                - link "Analyze for a conviction of a dui you could pay in Keyword Overview" [ref=f4e4089] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=for%20a%20conviction%20of%20a%20dui%20you%20could%20pay&db=us
+                                  - text: for a conviction of a dui you could pay
+                                - button "Open overview" [ref=f4e4094] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4097]
+                          - cell "63" [ref=f4e4099]
+                          - cell "20" [ref=f4e4101]
+                          - cell "n/a" [ref=f4e4102]
+                          - cell "0.17" [ref=f4e4107]
+                          - cell "Refresh Update metrics for for a conviction of a dui you could pay" [ref=f4e4109]:
+                            - generic [ref=f4e4111]:
+                              - generic [ref=f4e4112]: Refresh
+                              - button "Update metrics for for a conviction of a dui you could pay" [ref=f4e4119] [cursor=pointer]:
+                                - img "Update metrics for for a conviction of a dui you could pay" [ref=f4e4120]
+                        - row [ref=f4e4122]:
+                          - cell "for a conviction of dui you could pay" [ref=f4e4123]:
+                            - generic [ref=f4e4124] [cursor=pointer]:
+                              - generic [ref=f4e4125]: for a conviction of dui you could pay
+                              - checkbox "for a conviction of dui you could pay" [ref=f4e4126]
+                          - cell [ref=f4e4128]:
+                            - generic [ref=f4e4129]:
+                              - img "Loading…" [ref=f4e4133]
+                              - generic [ref=f4e4135]:
+                                - link "Analyze for a conviction of dui you could pay in Keyword Overview" [ref=f4e4136] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=for%20a%20conviction%20of%20dui%20you%20could%20pay&db=us
+                                  - text: for a conviction of dui you could pay
+                                - button "Open overview" [ref=f4e4141] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4144]
+                          - cell "63" [ref=f4e4146]
+                          - cell "20" [ref=f4e4148]
+                          - cell "n/a" [ref=f4e4149]
+                          - cell "0.17" [ref=f4e4154]
+                          - cell "Refresh Update metrics for for a conviction of dui you could pay" [ref=f4e4156]:
+                            - generic [ref=f4e4158]:
+                              - generic [ref=f4e4159]: Refresh
+                              - button "Update metrics for for a conviction of dui you could pay" [ref=f4e4166] [cursor=pointer]:
+                                - img "Update metrics for for a conviction of dui you could pay" [ref=f4e4167]
+                        - row [ref=f4e4169]:
+                          - cell "how much are dui" [ref=f4e4170]:
+                            - generic [ref=f4e4171] [cursor=pointer]:
+                              - generic [ref=f4e4172]: how much are dui
+                              - checkbox "how much are dui" [ref=f4e4173]
+                          - cell [ref=f4e4175]:
+                            - generic [ref=f4e4176]:
+                              - img "Loading…" [ref=f4e4180]
+                              - generic [ref=f4e4182]:
+                                - link "Analyze how much are dui in Keyword Overview" [ref=f4e4183] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20are%20dui&db=us
+                                  - text: how much are dui
+                                - button "Open overview" [ref=f4e4188] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4191]
+                          - cell "63" [ref=f4e4193]
+                          - cell "20" [ref=f4e4195]
+                          - cell "n/a" [ref=f4e4196]
+                          - cell "0.08" [ref=f4e4201]
+                          - cell "Refresh Update metrics for how much are dui" [ref=f4e4203]:
+                            - generic [ref=f4e4205]:
+                              - generic [ref=f4e4206]: Refresh
+                              - button "Update metrics for how much are dui" [ref=f4e4213] [cursor=pointer]:
+                                - img "Update metrics for how much are dui" [ref=f4e4214]
+                        - row [ref=f4e4216]:
+                          - cell "how much does a dui cost in iowa" [ref=f4e4217]:
+                            - generic [ref=f4e4218] [cursor=pointer]:
+                              - generic [ref=f4e4219]: how much does a dui cost in iowa
+                              - checkbox "how much does a dui cost in iowa" [ref=f4e4220]
+                          - cell [ref=f4e4222]:
+                            - generic [ref=f4e4223]:
+                              - img "Loading…" [ref=f4e4227]
+                              - generic [ref=f4e4229]:
+                                - link "Analyze how much does a dui cost in iowa in Keyword Overview" [ref=f4e4230] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20does%20a%20dui%20cost%20in%20iowa&db=us
+                                  - text: how much does a dui cost in iowa
+                                - button "Open overview" [ref=f4e4235] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4238]
+                          - cell "63" [ref=f4e4240]
+                          - cell "20" [ref=f4e4242]
+                          - cell "n/a" [ref=f4e4243]
+                          - cell "0.09" [ref=f4e4248]
+                          - cell "Refresh Update metrics for how much does a dui cost in iowa" [ref=f4e4250]:
+                            - generic [ref=f4e4252]:
+                              - generic [ref=f4e4253]: Refresh
+                              - button "Update metrics for how much does a dui cost in iowa" [ref=f4e4260] [cursor=pointer]:
+                                - img "Update metrics for how much does a dui cost in iowa" [ref=f4e4261]
+                        - row [ref=f4e4263]:
+                          - cell "how much does a dui fine cost" [ref=f4e4264]:
+                            - generic [ref=f4e4265] [cursor=pointer]:
+                              - generic [ref=f4e4266]: how much does a dui fine cost
+                              - checkbox "how much does a dui fine cost" [ref=f4e4267]
+                          - cell [ref=f4e4269]:
+                            - generic [ref=f4e4270]:
+                              - img "Loading…" [ref=f4e4274]
+                              - generic [ref=f4e4276]:
+                                - link "Analyze how much does a dui fine cost in Keyword Overview" [ref=f4e4277] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20does%20a%20dui%20fine%20cost&db=us
+                                  - text: how much does a dui fine cost
+                                - button "Open overview" [ref=f4e4282] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4285]
+                          - cell "63" [ref=f4e4287]
+                          - cell "20" [ref=f4e4289]
+                          - cell "n/a" [ref=f4e4290]
+                          - cell "0.10" [ref=f4e4295]
+                          - cell "Refresh Update metrics for how much does a dui fine cost" [ref=f4e4297]:
+                            - generic [ref=f4e4299]:
+                              - generic [ref=f4e4300]: Refresh
+                              - button "Update metrics for how much does a dui fine cost" [ref=f4e4307] [cursor=pointer]:
+                                - img "Update metrics for how much does a dui fine cost" [ref=f4e4308]
+                        - row [ref=f4e4310]:
+                          - cell "how much does a dui ticket cost" [ref=f4e4311]:
+                            - generic [ref=f4e4312] [cursor=pointer]:
+                              - generic [ref=f4e4313]: how much does a dui ticket cost
+                              - checkbox "how much does a dui ticket cost" [ref=f4e4314]
+                          - cell [ref=f4e4316]:
+                            - generic [ref=f4e4317]:
+                              - img "Loading…" [ref=f4e4321]
+                              - generic [ref=f4e4323]:
+                                - link "Analyze how much does a dui ticket cost in Keyword Overview" [ref=f4e4324] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20does%20a%20dui%20ticket%20cost&db=us
+                                  - text: how much does a dui ticket cost
+                                - button "Open overview" [ref=f4e4329] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4332]
+                          - cell "63" [ref=f4e4334]
+                          - cell "20" [ref=f4e4336]
+                          - cell "n/a" [ref=f4e4337]
+                          - cell "0.08" [ref=f4e4342]
+                          - cell "Refresh Update metrics for how much does a dui ticket cost" [ref=f4e4344]:
+                            - generic [ref=f4e4346]:
+                              - generic [ref=f4e4347]: Refresh
+                              - button "Update metrics for how much does a dui ticket cost" [ref=f4e4354] [cursor=pointer]:
+                                - img "Update metrics for how much does a dui ticket cost" [ref=f4e4355]
+                        - row [ref=f4e4357]:
+                          - cell "how much does bail cost for dui" [ref=f4e4358]:
+                            - generic [ref=f4e4359] [cursor=pointer]:
+                              - generic [ref=f4e4360]: how much does bail cost for dui
+                              - checkbox "how much does bail cost for dui" [ref=f4e4361]
+                          - cell [ref=f4e4363]:
+                            - generic [ref=f4e4364]:
+                              - img "Loading…" [ref=f4e4368]
+                              - generic [ref=f4e4370]:
+                                - link "Analyze how much does bail cost for dui in Keyword Overview" [ref=f4e4371] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20does%20bail%20cost%20for%20dui&db=us
+                                  - text: how much does bail cost for dui
+                                - button "Open overview" [ref=f4e4376] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4379]
+                          - cell "63" [ref=f4e4381]
+                          - cell "20" [ref=f4e4383]
+                          - cell "n/a" [ref=f4e4384]
+                          - cell "0.10" [ref=f4e4389]
+                          - cell "Refresh Update metrics for how much does bail cost for dui" [ref=f4e4391]:
+                            - generic [ref=f4e4393]:
+                              - generic [ref=f4e4394]: Refresh
+                              - button "Update metrics for how much does bail cost for dui" [ref=f4e4401] [cursor=pointer]:
+                                - img "Update metrics for how much does bail cost for dui" [ref=f4e4402]
+                        - row [ref=f4e4404]:
+                          - cell "how much does bailing out cost" [ref=f4e4405]:
+                            - generic [ref=f4e4406] [cursor=pointer]:
+                              - generic [ref=f4e4407]: how much does bailing out cost
+                              - checkbox "how much does bailing out cost" [ref=f4e4408]
+                          - cell [ref=f4e4410]:
+                            - generic [ref=f4e4411]:
+                              - img "Loading…" [ref=f4e4415]
+                              - generic [ref=f4e4417]:
+                                - link "Analyze how much does bailing out cost in Keyword Overview" [ref=f4e4418] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20does%20bailing%20out%20cost&db=us
+                                  - text: how much does bailing out cost
+                                - button "Open overview" [ref=f4e4423] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4426]
+                          - cell "63" [ref=f4e4428]
+                          - cell "20" [ref=f4e4430]
+                          - cell "n/a" [ref=f4e4431]
+                          - cell "0.33" [ref=f4e4436]
+                          - cell "Refresh Update metrics for how much does bailing out cost" [ref=f4e4438]:
+                            - generic [ref=f4e4440]:
+                              - generic [ref=f4e4441]: Refresh
+                              - button "Update metrics for how much does bailing out cost" [ref=f4e4448] [cursor=pointer]:
+                                - img "Update metrics for how much does bailing out cost" [ref=f4e4449]
+                        - row [ref=f4e4451]:
+                          - cell "how much dui" [ref=f4e4452]:
+                            - generic [ref=f4e4453] [cursor=pointer]:
+                              - generic [ref=f4e4454]: how much dui
+                              - checkbox "how much dui" [ref=f4e4455]
+                          - cell [ref=f4e4457]:
+                            - generic [ref=f4e4458]:
+                              - img "Loading…" [ref=f4e4462]
+                              - generic [ref=f4e4464]:
+                                - link "Analyze how much dui in Keyword Overview" [ref=f4e4465] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20dui&db=us
+                                  - text: how much dui
+                                - button "Open overview" [ref=f4e4470] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4473]
+                          - cell "63" [ref=f4e4475]
+                          - cell "20" [ref=f4e4477]
+                          - cell "n/a" [ref=f4e4478]
+                          - cell "0.13" [ref=f4e4483]
+                          - cell "Refresh Update metrics for how much dui" [ref=f4e4485]:
+                            - generic [ref=f4e4487]:
+                              - generic [ref=f4e4488]: Refresh
+                              - button "Update metrics for how much dui" [ref=f4e4495] [cursor=pointer]:
+                                - img "Update metrics for how much dui" [ref=f4e4496]
+                        - row [ref=f4e4498]:
+                          - cell "how much fine for dui" [ref=f4e4499]:
+                            - generic [ref=f4e4500] [cursor=pointer]:
+                              - generic [ref=f4e4501]: how much fine for dui
+                              - checkbox "how much fine for dui" [ref=f4e4502]
+                          - cell [ref=f4e4504]:
+                            - generic [ref=f4e4505]:
+                              - img "Loading…" [ref=f4e4509]
+                              - generic [ref=f4e4511]:
+                                - link "Analyze how much fine for dui in Keyword Overview" [ref=f4e4512] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20fine%20for%20dui&db=us
+                                  - text: how much fine for dui
+                                - button "Open overview" [ref=f4e4517] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4520]
+                          - cell "63" [ref=f4e4522]
+                          - cell "20" [ref=f4e4524]
+                          - cell "n/a" [ref=f4e4525]
+                          - cell "0.11" [ref=f4e4530]
+                          - cell "Refresh Update metrics for how much fine for dui" [ref=f4e4532]:
+                            - generic [ref=f4e4534]:
+                              - generic [ref=f4e4535]: Refresh
+                              - button "Update metrics for how much fine for dui" [ref=f4e4542] [cursor=pointer]:
+                                - img "Update metrics for how much fine for dui" [ref=f4e4543]
+                        - row [ref=f4e4545]:
+                          - cell "how much for a dui ticket" [ref=f4e4546]:
+                            - generic [ref=f4e4547] [cursor=pointer]:
+                              - generic [ref=f4e4548]: how much for a dui ticket
+                              - checkbox "how much for a dui ticket" [ref=f4e4549]
+                          - cell [ref=f4e4551]:
+                            - generic [ref=f4e4552]:
+                              - img "Loading…" [ref=f4e4556]
+                              - generic [ref=f4e4558]:
+                                - link "Analyze how much for a dui ticket in Keyword Overview" [ref=f4e4559] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20for%20a%20dui%20ticket&db=us
+                                  - text: how much for a dui ticket
+                                - button "Open overview" [ref=f4e4564] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4567]
+                          - cell "63" [ref=f4e4569]
+                          - cell "20" [ref=f4e4571]
+                          - cell "n/a" [ref=f4e4572]
+                          - cell "0.46" [ref=f4e4577]
+                          - cell "Refresh Update metrics for how much for a dui ticket" [ref=f4e4579]:
+                            - generic [ref=f4e4581]:
+                              - generic [ref=f4e4582]: Refresh
+                              - button "Update metrics for how much for a dui ticket" [ref=f4e4589] [cursor=pointer]:
+                                - img "Update metrics for how much for a dui ticket" [ref=f4e4590]
+                        - row [ref=f4e4592]:
+                          - cell "how much is a bail for a dui" [ref=f4e4593]:
+                            - generic [ref=f4e4594] [cursor=pointer]:
+                              - generic [ref=f4e4595]: how much is a bail for a dui
+                              - checkbox "how much is a bail for a dui" [ref=f4e4596]
+                          - cell [ref=f4e4598]:
+                            - generic [ref=f4e4599]:
+                              - img "Loading…" [ref=f4e4603]
+                              - generic [ref=f4e4605]:
+                                - link "Analyze how much is a bail for a dui in Keyword Overview" [ref=f4e4606] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20a%20bail%20for%20a%20dui&db=us
+                                  - text: how much is a bail for a dui
+                                - button "Open overview" [ref=f4e4611] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4614]
+                          - cell "63" [ref=f4e4616]
+                          - cell "20" [ref=f4e4618]
+                          - cell "n/a" [ref=f4e4619]
+                          - cell "0.33" [ref=f4e4624]
+                          - cell "Refresh Update metrics for how much is a bail for a dui" [ref=f4e4626]:
+                            - generic [ref=f4e4628]:
+                              - generic [ref=f4e4629]: Refresh
+                              - button "Update metrics for how much is a bail for a dui" [ref=f4e4636] [cursor=pointer]:
+                                - img "Update metrics for how much is a bail for a dui" [ref=f4e4637]
+                        - row [ref=f4e4639]:
+                          - cell "how much is a fine for dui" [ref=f4e4640]:
+                            - generic [ref=f4e4641] [cursor=pointer]:
+                              - generic [ref=f4e4642]: how much is a fine for dui
+                              - checkbox "how much is a fine for dui" [ref=f4e4643]
+                          - cell [ref=f4e4645]:
+                            - generic [ref=f4e4646]:
+                              - img "Loading…" [ref=f4e4650]
+                              - generic [ref=f4e4652]:
+                                - link "Analyze how much is a fine for dui in Keyword Overview" [ref=f4e4653] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20a%20fine%20for%20dui&db=us
+                                  - text: how much is a fine for dui
+                                - button "Open overview" [ref=f4e4658] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4661]
+                          - cell "63" [ref=f4e4663]
+                          - cell "20" [ref=f4e4665]
+                          - cell "n/a" [ref=f4e4666]
+                          - cell "0.11" [ref=f4e4671]
+                          - cell "Refresh Update metrics for how much is a fine for dui" [ref=f4e4673]:
+                            - generic [ref=f4e4675]:
+                              - generic [ref=f4e4676]: Refresh
+                              - button "Update metrics for how much is a fine for dui" [ref=f4e4683] [cursor=pointer]:
+                                - img "Update metrics for how much is a fine for dui" [ref=f4e4684]
+                        - row [ref=f4e4686]:
+                          - cell "how much is a misdemeanor dui" [ref=f4e4687]:
+                            - generic [ref=f4e4688] [cursor=pointer]:
+                              - generic [ref=f4e4689]: how much is a misdemeanor dui
+                              - checkbox "how much is a misdemeanor dui" [ref=f4e4690]
+                          - cell [ref=f4e4692]:
+                            - generic [ref=f4e4693]:
+                              - img "Loading…" [ref=f4e4697]
+                              - generic [ref=f4e4699]:
+                                - link "Analyze how much is a misdemeanor dui in Keyword Overview" [ref=f4e4700] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20a%20misdemeanor%20dui&db=us
+                                  - text: how much is a misdemeanor dui
+                                - button "Open overview" [ref=f4e4705] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4708]
+                          - cell "63" [ref=f4e4710]
+                          - cell "20" [ref=f4e4712]
+                          - cell "n/a" [ref=f4e4713]
+                          - cell "0.24" [ref=f4e4718]
+                          - cell "Refresh Update metrics for how much is a misdemeanor dui" [ref=f4e4720]:
+                            - generic [ref=f4e4722]:
+                              - generic [ref=f4e4723]: Refresh
+                              - button "Update metrics for how much is a misdemeanor dui" [ref=f4e4730] [cursor=pointer]:
+                                - img "Update metrics for how much is a misdemeanor dui" [ref=f4e4731]
+                        - row [ref=f4e4733]:
+                          - cell "how much is bail for a dui in indiana" [ref=f4e4734]:
+                            - generic [ref=f4e4735] [cursor=pointer]:
+                              - generic [ref=f4e4736]: how much is bail for a dui in indiana
+                              - checkbox "how much is bail for a dui in indiana" [ref=f4e4737]
+                          - cell [ref=f4e4739]:
+                            - generic [ref=f4e4740]:
+                              - img "Loading…" [ref=f4e4744]
+                              - generic [ref=f4e4746]:
+                                - link "Analyze how much is bail for a dui in indiana in Keyword Overview" [ref=f4e4747] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bail%20for%20a%20dui%20in%20indiana&db=us
+                                  - text: how much is bail for a dui in indiana
+                                - button "Open overview" [ref=f4e4752] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4755]
+                          - cell "63" [ref=f4e4757]
+                          - cell "20" [ref=f4e4759]
+                          - cell "n/a" [ref=f4e4760]
+                          - cell "0.33" [ref=f4e4765]
+                          - cell "Refresh Update metrics for how much is bail for a dui in indiana" [ref=f4e4767]:
+                            - generic [ref=f4e4769]:
+                              - generic [ref=f4e4770]: Refresh
+                              - button "Update metrics for how much is bail for a dui in indiana" [ref=f4e4777] [cursor=pointer]:
+                                - img "Update metrics for how much is bail for a dui in indiana" [ref=f4e4778]
+                        - row [ref=f4e4780]:
+                          - cell "how much is bail for a dui in kentucky" [ref=f4e4781]:
+                            - generic [ref=f4e4782] [cursor=pointer]:
+                              - generic [ref=f4e4783]: how much is bail for a dui in kentucky
+                              - checkbox "how much is bail for a dui in kentucky" [ref=f4e4784]
+                          - cell [ref=f4e4786]:
+                            - generic [ref=f4e4787]:
+                              - img "Loading…" [ref=f4e4791]
+                              - generic [ref=f4e4793]:
+                                - link "Analyze how much is bail for a dui in kentucky in Keyword Overview" [ref=f4e4794] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bail%20for%20a%20dui%20in%20kentucky&db=us
+                                  - text: how much is bail for a dui in kentucky
+                                - button "Open overview" [ref=f4e4799] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4802]
+                          - cell "63" [ref=f4e4804]
+                          - cell "20" [ref=f4e4806]
+                          - cell "n/a" [ref=f4e4807]
+                          - cell "0.33" [ref=f4e4812]
+                          - cell "Refresh Update metrics for how much is bail for a dui in kentucky" [ref=f4e4814]:
+                            - generic [ref=f4e4816]:
+                              - generic [ref=f4e4817]: Refresh
+                              - button "Update metrics for how much is bail for a dui in kentucky" [ref=f4e4824] [cursor=pointer]:
+                                - img "Update metrics for how much is bail for a dui in kentucky" [ref=f4e4825]
+                        - row [ref=f4e4827]:
+                          - cell "how much is bail for a dui in texas" [ref=f4e4828]:
+                            - generic [ref=f4e4829] [cursor=pointer]:
+                              - generic [ref=f4e4830]: how much is bail for a dui in texas
+                              - checkbox "how much is bail for a dui in texas" [ref=f4e4831]
+                          - cell [ref=f4e4833]:
+                            - generic [ref=f4e4834]:
+                              - img "Loading…" [ref=f4e4838]
+                              - generic [ref=f4e4840]:
+                                - link "Analyze how much is bail for a dui in texas in Keyword Overview" [ref=f4e4841] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bail%20for%20a%20dui%20in%20texas&db=us
+                                  - text: how much is bail for a dui in texas
+                                - button "Open overview" [ref=f4e4846] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4849]
+                          - cell "63" [ref=f4e4851]
+                          - cell "20" [ref=f4e4853]
+                          - cell "n/a" [ref=f4e4854]
+                          - cell "0.33" [ref=f4e4859]
+                          - cell "Refresh Update metrics for how much is bail for a dui in texas" [ref=f4e4861]:
+                            - generic [ref=f4e4863]:
+                              - generic [ref=f4e4864]: Refresh
+                              - button "Update metrics for how much is bail for a dui in texas" [ref=f4e4871] [cursor=pointer]:
+                                - img "Update metrics for how much is bail for a dui in texas" [ref=f4e4872]
+                        - row [ref=f4e4874]:
+                          - cell "how much is bail for a dui in washington state" [ref=f4e4875]:
+                            - generic [ref=f4e4876] [cursor=pointer]:
+                              - generic [ref=f4e4877]: how much is bail for a dui in washington state
+                              - checkbox "how much is bail for a dui in washington state" [ref=f4e4878]
+                          - cell [ref=f4e4880]:
+                            - generic [ref=f4e4881]:
+                              - img "Loading…" [ref=f4e4885]
+                              - generic [ref=f4e4887]:
+                                - link "Analyze how much is bail for a dui in washington state in Keyword Overview" [ref=f4e4888] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bail%20for%20a%20dui%20in%20washington%20state&db=us
+                                  - text: how much is bail for a dui in washington state
+                                - button "Open overview" [ref=f4e4893] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4896]
+                          - cell "63" [ref=f4e4898]
+                          - cell "20" [ref=f4e4900]
+                          - cell "n/a" [ref=f4e4901]
+                          - cell "0.33" [ref=f4e4906]
+                          - cell "Refresh Update metrics for how much is bail for a dui in washington state" [ref=f4e4908]:
+                            - generic [ref=f4e4910]:
+                              - generic [ref=f4e4911]: Refresh
+                              - button "Update metrics for how much is bail for a dui in washington state" [ref=f4e4918] [cursor=pointer]:
+                                - img "Update metrics for how much is bail for a dui in washington state" [ref=f4e4919]
+                        - row [ref=f4e4921]:
+                          - cell "how much is bail for a first time dui" [ref=f4e4922]:
+                            - generic [ref=f4e4923] [cursor=pointer]:
+                              - generic [ref=f4e4924]: how much is bail for a first time dui
+                              - checkbox "how much is bail for a first time dui" [ref=f4e4925]
+                          - cell [ref=f4e4927]:
+                            - generic [ref=f4e4928]:
+                              - img "Loading…" [ref=f4e4932]
+                              - generic [ref=f4e4934]:
+                                - link "Analyze how much is bail for a first time dui in Keyword Overview" [ref=f4e4935] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bail%20for%20a%20first%20time%20dui&db=us
+                                  - text: how much is bail for a first time dui
+                                - button "Open overview" [ref=f4e4940] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4943]
+                          - cell "63" [ref=f4e4945]
+                          - cell "20" [ref=f4e4947]
+                          - cell "n/a" [ref=f4e4948]
+                          - cell "0.33" [ref=f4e4953]
+                          - cell "Refresh Update metrics for how much is bail for a first time dui" [ref=f4e4955]:
+                            - generic [ref=f4e4957]:
+                              - generic [ref=f4e4958]: Refresh
+                              - button "Update metrics for how much is bail for a first time dui" [ref=f4e4965] [cursor=pointer]:
+                                - img "Update metrics for how much is bail for a first time dui" [ref=f4e4966]
+                        - row [ref=f4e4968]:
+                          - cell "how much is bail for drinking and driving" [ref=f4e4969]:
+                            - generic [ref=f4e4970] [cursor=pointer]:
+                              - generic [ref=f4e4971]: how much is bail for drinking and driving
+                              - checkbox "how much is bail for drinking and driving" [ref=f4e4972]
+                          - cell [ref=f4e4974]:
+                            - generic [ref=f4e4975]:
+                              - img "Loading…" [ref=f4e4979]
+                              - generic [ref=f4e4981]:
+                                - link "Analyze how much is bail for drinking and driving in Keyword Overview" [ref=f4e4982] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bail%20for%20drinking%20and%20driving&db=us
+                                  - text: how much is bail for drinking and driving
+                                - button "Open overview" [ref=f4e4987] [cursor=pointer]
+                          - cell "n/a" [ref=f4e4990]
+                          - cell "63" [ref=f4e4992]
+                          - cell "20" [ref=f4e4994]
+                          - cell "n/a" [ref=f4e4995]
+                          - cell "0.33" [ref=f4e5000]
+                          - cell "Refresh Update metrics for how much is bail for drinking and driving" [ref=f4e5002]:
+                            - generic [ref=f4e5004]:
+                              - generic [ref=f4e5005]: Refresh
+                              - button "Update metrics for how much is bail for drinking and driving" [ref=f4e5012] [cursor=pointer]:
+                                - img "Update metrics for how much is bail for drinking and driving" [ref=f4e5013]
+                        - row [ref=f4e5015]:
+                          - cell "how much is bail for driving without license" [ref=f4e5016]:
+                            - generic [ref=f4e5017] [cursor=pointer]:
+                              - generic [ref=f4e5018]: how much is bail for driving without license
+                              - checkbox "how much is bail for driving without license" [ref=f4e5019]
+                          - cell [ref=f4e5021]:
+                            - generic [ref=f4e5022]:
+                              - img "Loading…" [ref=f4e5026]
+                              - generic [ref=f4e5028]:
+                                - link "Analyze how much is bail for driving without license in Keyword Overview" [ref=f4e5029] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bail%20for%20driving%20without%20license&db=us
+                                  - text: how much is bail for driving without license
+                                - button "Open overview" [ref=f4e5034] [cursor=pointer]
+                          - cell "n/a" [ref=f4e5037]
+                          - cell "63" [ref=f4e5039]
+                          - cell "20" [ref=f4e5041]
+                          - cell "n/a" [ref=f4e5042]
+                          - cell "0.33" [ref=f4e5047]
+                          - cell "Refresh Update metrics for how much is bail for driving without license" [ref=f4e5049]:
+                            - generic [ref=f4e5051]:
+                              - generic [ref=f4e5052]: Refresh
+                              - button "Update metrics for how much is bail for driving without license" [ref=f4e5059] [cursor=pointer]:
+                                - img "Update metrics for how much is bail for driving without license" [ref=f4e5060]
+                        - row [ref=f4e5062]:
+                          - cell "how much is bail for dui in california" [ref=f4e5063]:
+                            - generic [ref=f4e5064] [cursor=pointer]:
+                              - generic [ref=f4e5065]: how much is bail for dui in california
+                              - checkbox "how much is bail for dui in california" [ref=f4e5066]
+                          - cell [ref=f4e5068]:
+                            - generic [ref=f4e5069]:
+                              - img "Loading…" [ref=f4e5073]
+                              - generic [ref=f4e5075]:
+                                - link "Analyze how much is bail for dui in california in Keyword Overview" [ref=f4e5076] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20bail%20for%20dui%20in%20california&db=us
+                                  - text: how much is bail for dui in california
+                                - button "Open overview" [ref=f4e5081] [cursor=pointer]
+                          - cell "n/a" [ref=f4e5084]
+                          - cell "63" [ref=f4e5086]
+                          - cell "20" [ref=f4e5088]
+                          - cell "n/a" [ref=f4e5089]
+                          - cell "0.33" [ref=f4e5094]
+                          - cell "Refresh Update metrics for how much is bail for dui in california" [ref=f4e5096]:
+                            - generic [ref=f4e5098]:
+                              - generic [ref=f4e5099]: Refresh
+                              - button "Update metrics for how much is bail for dui in california" [ref=f4e5106] [cursor=pointer]:
+                                - img "Update metrics for how much is bail for dui in california" [ref=f4e5107]
+                        - row [ref=f4e5109]:
+                          - cell "how much is dui bond" [ref=f4e5110]:
+                            - generic [ref=f4e5111] [cursor=pointer]:
+                              - generic [ref=f4e5112]: how much is dui bond
+                              - checkbox "how much is dui bond" [ref=f4e5113]
+                          - cell [ref=f4e5115]:
+                            - generic [ref=f4e5116]:
+                              - img "Loading…" [ref=f4e5120]
+                              - generic [ref=f4e5122]:
+                                - link "Analyze how much is dui bond in Keyword Overview" [ref=f4e5123] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20dui%20bond&db=us
+                                  - text: how much is dui bond
+                                - button "Open overview" [ref=f4e5128] [cursor=pointer]
+                          - cell "n/a" [ref=f4e5131]
+                          - cell "63" [ref=f4e5133]
+                          - cell "20" [ref=f4e5135]
+                          - cell "n/a" [ref=f4e5136]
+                          - cell "0.33" [ref=f4e5141]
+                          - cell "Refresh Update metrics for how much is dui bond" [ref=f4e5143]:
+                            - generic [ref=f4e5145]:
+                              - generic [ref=f4e5146]: Refresh
+                              - button "Update metrics for how much is dui bond" [ref=f4e5153] [cursor=pointer]:
+                                - img "Update metrics for how much is dui bond" [ref=f4e5154]
+                        - row [ref=f4e5156]:
+                          - cell "how much is dui ticket" [ref=f4e5157]:
+                            - generic [ref=f4e5158] [cursor=pointer]:
+                              - generic [ref=f4e5159]: how much is dui ticket
+                              - checkbox "how much is dui ticket" [ref=f4e5160]
+                          - cell [ref=f4e5162]:
+                            - generic [ref=f4e5163]:
+                              - img "Loading…" [ref=f4e5167]
+                              - generic [ref=f4e5169]:
+                                - link "Analyze how much is dui ticket in Keyword Overview" [ref=f4e5170] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20dui%20ticket&db=us
+                                  - text: how much is dui ticket
+                                - button "Open overview" [ref=f4e5175] [cursor=pointer]
+                          - cell "n/a" [ref=f4e5178]
+                          - cell "63" [ref=f4e5180]
+                          - cell "20" [ref=f4e5182]
+                          - cell "n/a" [ref=f4e5183]
+                          - cell "0.15" [ref=f4e5188]
+                          - cell "Refresh Update metrics for how much is dui ticket" [ref=f4e5190]:
+                            - generic [ref=f4e5192]:
+                              - generic [ref=f4e5193]: Refresh
+                              - button "Update metrics for how much is dui ticket" [ref=f4e5200] [cursor=pointer]:
+                                - img "Update metrics for how much is dui ticket" [ref=f4e5201]
+                        - row [ref=f4e5203]:
+                          - cell "how much is it for a dui" [ref=f4e5204]:
+                            - generic [ref=f4e5205] [cursor=pointer]:
+                              - generic [ref=f4e5206]: how much is it for a dui
+                              - checkbox "how much is it for a dui" [ref=f4e5207]
+                          - cell [ref=f4e5209]:
+                            - generic [ref=f4e5210]:
+                              - img "Loading…" [ref=f4e5214]
+                              - generic [ref=f4e5216]:
+                                - link "Analyze how much is it for a dui in Keyword Overview" [ref=f4e5217] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20it%20for%20a%20dui&db=us
+                                  - text: how much is it for a dui
+                                - button "Open overview" [ref=f4e5222] [cursor=pointer]
+                          - cell "n/a" [ref=f4e5225]
+                          - cell "63" [ref=f4e5227]
+                          - cell "20" [ref=f4e5229]
+                          - cell "n/a" [ref=f4e5230]
+                          - cell "0.33" [ref=f4e5235]
+                          - cell "Refresh Update metrics for how much is it for a dui" [ref=f4e5237]:
+                            - generic [ref=f4e5239]:
+                              - generic [ref=f4e5240]: Refresh
+                              - button "Update metrics for how much is it for a dui" [ref=f4e5247] [cursor=pointer]:
+                                - img "Update metrics for how much is it for a dui" [ref=f4e5248]
+                        - row [ref=f4e5250]:
+                          - cell "how much is the bond for a dui" [ref=f4e5251]:
+                            - generic [ref=f4e5252] [cursor=pointer]:
+                              - generic [ref=f4e5253]: how much is the bond for a dui
+                              - checkbox "how much is the bond for a dui" [ref=f4e5254]
+                          - cell [ref=f4e5256]:
+                            - generic [ref=f4e5257]:
+                              - img "Loading…" [ref=f4e5261]
+                              - generic [ref=f4e5263]:
+                                - link "Analyze how much is the bond for a dui in Keyword Overview" [ref=f4e5264] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20is%20the%20bond%20for%20a%20dui&db=us
+                                  - text: how much is the bond for a dui
+                                - button "Open overview" [ref=f4e5269] [cursor=pointer]
+                          - cell "n/a" [ref=f4e5272]
+                          - cell "63" [ref=f4e5274]
+                          - cell "20" [ref=f4e5276]
+                          - cell "n/a" [ref=f4e5277]
+                          - cell "0.07" [ref=f4e5282]
+                          - cell "Refresh Update metrics for how much is the bond for a dui" [ref=f4e5284]:
+                            - generic [ref=f4e5286]:
+                              - generic [ref=f4e5287]: Refresh
+                              - button "Update metrics for how much is the bond for a dui" [ref=f4e5294] [cursor=pointer]:
+                                - img "Update metrics for how much is the bond for a dui" [ref=f4e5295]
+                        - row [ref=f4e5297]:
+                          - cell "how much money is a dui" [ref=f4e5298]:
+                            - generic [ref=f4e5299] [cursor=pointer]:
+                              - generic [ref=f4e5300]: how much money is a dui
+                              - checkbox "how much money is a dui" [ref=f4e5301]
+                          - cell [ref=f4e5303]:
+                            - generic [ref=f4e5304]:
+                              - img "Loading…" [ref=f4e5308]
+                              - generic [ref=f4e5310]:
+                                - link "Analyze how much money is a dui in Keyword Overview" [ref=f4e5311] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20money%20is%20a%20dui&db=us
+                                  - text: how much money is a dui
+                                - button "Open overview" [ref=f4e5316] [cursor=pointer]
+                          - cell "n/a" [ref=f4e5319]
+                          - cell "63" [ref=f4e5321]
+                          - cell "20" [ref=f4e5323]
+                          - cell "n/a" [ref=f4e5324]
+                          - cell "0.04" [ref=f4e5329]
+                          - cell "Refresh Update metrics for how much money is a dui" [ref=f4e5331]:
+                            - generic [ref=f4e5333]:
+                              - generic [ref=f4e5334]: Refresh
+                              - button "Update metrics for how much money is a dui" [ref=f4e5341] [cursor=pointer]:
+                                - img "Update metrics for how much money is a dui" [ref=f4e5342]
+                        - row [ref=f4e5344]:
+                          - cell "how much to bail out of jail for dui" [ref=f4e5345]:
+                            - generic [ref=f4e5346] [cursor=pointer]:
+                              - generic [ref=f4e5347]: how much to bail out of jail for dui
+                              - checkbox "how much to bail out of jail for dui" [ref=f4e5348]
+                          - cell [ref=f4e5350]:
+                            - generic [ref=f4e5351]:
+                              - img "Loading…" [ref=f4e5355]
+                              - generic [ref=f4e5357]:
+                                - link "Analyze how much to bail out of jail for dui in Keyword Overview" [ref=f4e5358] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20to%20bail%20out%20of%20jail%20for%20dui&db=us
+                                  - text: how much to bail out of jail for dui
+                                - button "Open overview" [ref=f4e5363] [cursor=pointer]
+                          - cell "n/a" [ref=f4e5366]
+                          - cell "63" [ref=f4e5368]
+                          - cell "20" [ref=f4e5370]
+                          - cell "n/a" [ref=f4e5371]
+                          - cell "0.33" [ref=f4e5376]
+                          - cell "Refresh Update metrics for how much to bail out of jail for dui" [ref=f4e5378]:
+                            - generic [ref=f4e5380]:
+                              - generic [ref=f4e5381]: Refresh
+                              - button "Update metrics for how much to bail out of jail for dui" [ref=f4e5388] [cursor=pointer]:
+                                - img "Update metrics for how much to bail out of jail for dui" [ref=f4e5389]
+                        - row [ref=f4e5391]:
+                          - cell "how much to bail someone out for dui" [ref=f4e5392]:
+                            - generic [ref=f4e5393] [cursor=pointer]:
+                              - generic [ref=f4e5394]: how much to bail someone out for dui
+                              - checkbox "how much to bail someone out for dui" [ref=f4e5395]
+                          - cell [ref=f4e5397]:
+                            - generic [ref=f4e5398]:
+                              - img "Loading…" [ref=f4e5402]
+                              - generic [ref=f4e5404]:
+                                - link "Analyze how much to bail someone out for dui in Keyword Overview" [ref=f4e5405] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20much%20to%20bail%20someone%20out%20for%20dui&db=us
+                                  - text: how much to bail someone out for dui
+                                - button "Open overview" [ref=f4e5410] [cursor=pointer]
+                          - cell "n/a" [ref=f4e5413]
+                          - cell "63" [ref=f4e5415]
+                          - cell "20" [ref=f4e5417]
+                          - cell "n/a" [ref=f4e5418]
+                          - cell "0.33" [ref=f4e5423]
+                          - cell "Refresh Update metrics for how much to bail someone out for dui" [ref=f4e5425]:
+                            - generic [ref=f4e5427]:
+                              - generic [ref=f4e5428]: Refresh
+                              - button "Update metrics for how much to bail someone out for dui" [ref=f4e5435] [cursor=pointer]:
+                                - img "Update metrics for how much to bail someone out for dui" [ref=f4e5436]
+                        - row [ref=f4e5438]:
+                          - cell "how to pay for a dui" [ref=f4e5439]:
+                            - generic [ref=f4e5440] [cursor=pointer]:
+                              - generic [ref=f4e5441]: how to pay for a dui
+                              - checkbox "how to pay for a dui" [ref=f4e5442]
+                          - cell [ref=f4e5444]:
+                            - generic [ref=f4e5445]:
+                              - img "Loading…" [ref=f4e5449]
+                              - generic [ref=f4e5451]:
+                                - link "Analyze how to pay for a dui in Keyword Overview" [ref=f4e5452] [cursor=pointer]:
+                                  - /url: https://sm.hindseo.com/analytics/keywordoverview/?q=how%20to%20pay%20for%20a%20dui&db=us
+                                  - text: how to pay for a dui
+                                - button "Open overview" [ref=f4e5457] [cursor=pointer]
+                          - cell "n/a" [ref=f4e5460]
+                          - cell "63" [ref=f4e5462]
+                          - cell "20" [ref=f4e5464]
+                          - cell "n/a" [ref=f4e5465]
+                          - cell "0.00" [ref=f4e5470]
+                          - cell "Refresh Update metrics for how to pay for a dui" [ref=f4e5472]:
+                            - generic [ref=f4e5474]:
+                              - generic [ref=f4e5475]: Refresh
+                              - button "Update metrics for how to pay for a dui" [ref=f4e5482] [cursor=pointer]:
+                                - img "Update metrics for how to pay for a dui" [ref=f4e5483]
+                    - navigation "Pagination" [ref=f4e5485]:
+                      - button "First page" [disabled]
+                      - button "Prev" [disabled]
+                      - button "Next" [ref=f4e5486] [cursor=pointer]
+                      - generic [ref=f4e5489]: "Page:"
+                      - textbox "Current page" [ref=f4e5491]: "1"
+                      - generic [ref=f4e5493]: of
+                      - 'button "Last page #410" [ref=f4e5494] [cursor=pointer]':
+                        - generic [ref=f4e5495]: "410"
+                      - status [ref=f4e5497]: "Page: 1"
+  - region "Notifications"
+  - generic [ref=f4e5498]:
+    - button "📄 Export (Current Page)" [ref=f4e5499] [cursor=pointer]
+    - generic [ref=f4e5500]: 📑 Export (Multiple Pages)
+    - generic [ref=f4e5501]:
+      - spinbutton [ref=f4e5502]: "10"
+      - generic [ref=f4e5503]: pages
+    - button "▶ Start Export" [ref=f4e5504] [cursor=pointer]

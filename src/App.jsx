@@ -2085,19 +2085,42 @@ const HomePage = ({ navigate }) => {
             <div className="gold-divider"></div>
             <h2>Featured Delaware Bail Resource</h2>
           </div>
-          <div className="service-card reveal">
-            <h3>How Much Is Bail for a DUI in Delaware?</h3>
-            <p>
-              Learn which factors affect DUI bail, how the court&apos;s bail amount differs from a surety bond premium,
-              and what information families should confirm before paying.
-            </p>
-            <a
-              href="/blog/dui-bail-bond-cost-delaware"
-              onClick={(e) => { e.preventDefault(); navigate('/blog/dui-bail-bond-cost-delaware'); }}
-              className="btn-secondary-outline mt-2"
-            >
-              Read the Delaware DUI Bail Guide
-            </a>
+          <div className="blog-grid">
+            <article className="blog-card reveal visible">
+              <a
+                href="/blog/dui-bail-bond-cost-delaware"
+                onClick={(e) => { e.preventDefault(); navigate('/blog/dui-bail-bond-cost-delaware'); }}
+                aria-label="Read How Much Is Bail for a DUI in Delaware?"
+              >
+                <img
+                  src={DUI_BAIL_BOND_THUMBNAIL}
+                  alt="How much is bail for a DUI in Delaware guide"
+                  className="blog-card-image"
+                  loading="lazy"
+                  width="400"
+                  height="300"
+                />
+              </a>
+              <div className="blog-card-content">
+                <span className="blog-card-category">Bail Types</span>
+                <h4>
+                  <a
+                    href="/blog/dui-bail-bond-cost-delaware"
+                    onClick={(e) => { e.preventDefault(); navigate('/blog/dui-bail-bond-cost-delaware'); }}
+                  >
+                    How Much Is Bail for a DUI in Delaware?
+                  </a>
+                </h4>
+                <p className="blog-card-excerpt">
+                  Learn which factors affect DUI bail, how bail differs from a surety bond premium, and what families
+                  should confirm before paying.
+                </p>
+                <div className="blog-card-meta">
+                  <span><i className="far fa-clock me-1"></i>12 min read</span>
+                  <span>August 15, 2026</span>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>

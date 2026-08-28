@@ -325,8 +325,8 @@ export const MAGAZINE_POSTS = {
     tocEntries: DUI_BAIL_BOND_TOC,
     articleKey: 'dui-bail-bond',
     customSchema: DUI_BAIL_BOND_SCHEMA,
-    publishedAt: '2026-08-15',
-    updatedAt: '2026-08-15',
+    publishedAt: '2026-08-28',
+    updatedAt: '2026-08-28',
   },
   [BAIL_VS_BOND_SLUG]: {
     slug: BAIL_VS_BOND_SLUG,

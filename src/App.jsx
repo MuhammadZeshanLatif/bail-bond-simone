@@ -2117,7 +2117,7 @@ const HomePage = ({ navigate }) => {
                 </p>
                 <div className="blog-card-meta">
                   <span><i className="far fa-clock me-1"></i>12 min read</span>
-                  <span>August 15, 2026</span>
+                  <span>August 28, 2026</span>
                 </div>
               </div>
             </article>
@@ -3229,8 +3229,8 @@ const blogPosts = [
     title: DUI_BAIL_BOND_TITLE,
     excerpt: DUI_BAIL_BOND_META_DESCRIPTION,
     category: 'Bail Types',
-    readTime: '11 min read',
-    date: '2026-08-15',
+    readTime: '12 min read',
+    date: '2026-08-28',
     image: DUI_BAIL_BOND_THUMBNAIL,
     heroImage: DUI_BAIL_BOND_IMAGE,
     isMagazine: true,

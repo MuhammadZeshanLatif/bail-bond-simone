@@ -81,7 +81,7 @@ export const DUI_BAIL_BOND_SCHEMA = {
       image: 'https://delawarebailbond.com/images/blog/dui-bail-bond-hero.webp',
       author: { '@type': 'Person', name: 'Simone Harris' },
       publisher: { '@type': 'Organization', name: 'A Way to Freedom Bail Bonds LLC', url: 'https://delawarebailbond.com' },
-      datePublished: '2026-08-15',
+      datePublished: '2026-08-28',
       dateModified: '2026-08-28',
       about: ['DUI bail', 'DUI bail bond cost', 'Delaware DUI', 'Bail bond premium'],
       inLanguage: 'en-US',

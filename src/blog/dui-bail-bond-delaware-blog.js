@@ -1,133 +1,107 @@
 export const DUI_BAIL_BOND_SLUG = 'dui-bail-bond-cost-delaware';
 
 export const DUI_BAIL_BOND_TITLE =
-  'How Much Is Bail for a DUI in Delaware? Family Cost Guide';
+  'How Much Is Bail for a DUI in Delaware? Bail and Bond Costs Explained';
 
 export const DUI_BAIL_BOND_SUBTITLE =
-  'Learn how much bail for a DUI is in Delaware, typical first-offense amounts, the 5%–10% surety premium, payment plans, the 15-day DMV deadline, and what happens after release.';
+  'Learn how Delaware courts set DUI bail, what a surety bond may cost, which factors affect the amount, and how to confirm the exact bail before paying.';
 
 export const DUI_BAIL_BOND_META_TITLE =
-  'How Much Is Bail for a DUI in Delaware? | Family Guide';
+  'How Much Is Bail for a DUI in Delaware? Costs Explained';
 
 export const DUI_BAIL_BOND_META_DESCRIPTION =
-  'How much is bail for a DUI in Delaware? Learn typical DUI bail amounts, the 5-10% bond premium, payment plans, the 15-day DMV deadline, and what to do after an arrest.';
+  'Learn how Delaware courts set DUI bail, what a bail bond may cost, which factors affect the amount, and how families can confirm the exact bail.';
 
 export const DUI_BAIL_BOND_KEYWORDS =
-  'how much is bail for a dui, dui bail bond cost, bail for dui, dui bail amount, how much is bail for drunk driving, drunk driving bail amount, dui bail bonds Delaware, DUI bail Delaware';
+  'how much is bail for a dui, how much is bond for a dui, average bail for dui, dui bail bond cost, dui bail bonds Delaware, DUI bail Delaware';
 
 export const DUI_BAIL_BOND_IMAGE = '/images/blog/dui-bail-bond-hero.webp';
-
 export const DUI_BAIL_BOND_THUMBNAIL = '/images/blog/dui-bail-bond-thumbnail.webp';
-
-export const DUI_BAIL_BOND_HERO_ALT =
-  'How much is bail for a DUI in Delaware — a family cost guide from A Way to Freedom Bail Bonds';
-
+export const DUI_BAIL_BOND_HERO_ALT = 'Delaware DUI bail and bail bond cost guide';
 export const DUI_BAIL_BOND_CATEGORY = 'Bail Types';
-
-export const DUI_BAIL_BOND_READ_MIN = 11;
+export const DUI_BAIL_BOND_READ_MIN = 12;
 
 export const DUI_BAIL_BOND_BENEFITS = [
-  { icon: 'fa-dollar-sign', label: 'Cost Explained', sub: 'Amounts + Premium' },
-  { icon: 'fa-clock', label: '24/7 Arraignment', sub: 'JP Court 11' },
-  { icon: 'fa-file-signature', label: '15-Day DMV Alert', sub: 'Don\'t Miss It' },
-  { icon: 'fa-phone-alt', label: 'Get Help Fast', sub: 'DE Licensed Agent' },
+  { icon: 'fa-scale-balanced', label: 'Bail Explained', sub: 'Court Factors' },
+  { icon: 'fa-dollar-sign', label: 'Cost Example', sub: 'Premium Math' },
+  { icon: 'fa-list-check', label: 'Call Checklist', sub: 'Confirm the Order' },
+  { icon: 'fa-phone-alt', label: '24/7 Help', sub: 'Licensed DE Agent' },
 ];
 
 export const DUI_BAIL_BOND_TAGS = [
-  'DUI Bail',
-  'DUI Bail Bond Cost',
-  'Delaware DUI',
-  'Bail Bond Premium',
-  'Family Guide',
-  'JP Court 11',
+  'DUI Bail', 'DUI Bail Bond Cost', 'Delaware DUI', 'Bail Bond Premium', 'Family Guide',
 ];
 
 export const DUI_BAIL_BOND_FAQS = [
   {
     question: 'How much is bail for a DUI in Delaware?',
-    answer:
-      'For a first offense, bail is commonly set between $500 and $5,000. Repeat offenses, high blood alcohol content, accidents, or injuries can raise the amount significantly. The exact figure depends on the facts of the case and the judicial officer\'s decision.',
+    answer: 'Delaware does not publish one standard DUI bail amount. A judicial officer sets bail after reviewing the charge, court-appearance risk, criminal history, community ties, public safety, and the facts of the arrest. The written bail order is the reliable source for the exact amount and bond type.',
   },
   {
-    question: 'How much does a DUI bail bond cost?',
-    answer:
-      'If a licensed agent posts a surety bond, you pay a premium equal to the filed rate — generally 5% to 10% of the bail amount for bonds over $1,000. On a $2,000 bail, the premium is typically $100 to $200.',
+    question: 'What is the average bail for a DUI?',
+    answer: 'A statewide Delaware average is not a dependable way to predict an individual case. Two DUI arrests can produce different bail decisions because the court considers the defendant and the circumstances. Confirm the amount with the court, detention facility, written order, attorney, or licensed bail agent.',
+  },
+  {
+    question: 'How much does a DUI bail bond cost in Delaware?',
+    answer: 'For a surety bail bond over $1,000, Delaware law provides for a filed premium of 5% to 10% of the bond amount. The exact charge must follow the bail bond company’s filed rate and written agreement. Ask for the full written cost before signing.',
+  },
+  {
+    question: 'What would the premium be on a $5,000 DUI bail?',
+    answer: 'Using Delaware’s statutory 5% to 10% range only as an illustration, the premium on a $5,000 surety bond would be $250 to $500. This example does not predict the bail amount, confirm that a surety bond is allowed, or include any collateral terms in a specific agreement.',
+  },
+  {
+    question: 'Can someone be released without paying cash after a DUI arrest?',
+    answer: 'Possibly. Delaware recognizes Own Recognizance and unsecured bail as well as secured and cash-only bail. The judicial officer decides which type applies. Read the written order before assuming that cash, collateral, or a commercial surety bond is required.',
+  },
+  {
+    question: 'How long does release take after DUI bail is posted?',
+    answer: 'There is no guaranteed release time. The facility must verify the bond, complete paperwork, check for other holds, and finish its release process. Ask the facility or bail agent about current conditions, but treat any time estimate as an estimate rather than a promise.',
   },
   {
     question: 'Is a DUI bail bond premium refundable?',
-    answer:
-      'No. The premium is a service fee paid to the bond company and is not refunded, even if the case is dismissed. Collateral posted for the bond is returned when the bond is exonerated and the case closes.',
+    answer: 'A surety premium is generally the charge for the bond service rather than a deposit with the court. Refund and collateral treatment depend on the written agreement and applicable law. Review those terms before signing and ask when any collateral may be released.',
   },
   {
-    question: 'How long do you stay in jail after a DUI in Delaware?',
-    answer:
-      'After bail is posted, the facility still has its own processing steps. In many cases, release happens within a few hours, but timing depends on the jail, the paperwork, and the circumstances of the case.',
-  },
-  {
-    question: 'Can you be released without bail after a DUI?',
-    answer:
-      'Yes. For a first-time offense with no aggravating factors, a judicial officer may release the defendant on personal recognizance or an unsecured bond, which requires a signed promise to appear rather than money up front.',
-  },
-  {
-    question: 'Do I need a lawyer for a DUI in Delaware?',
-    answer:
-      'A bail bond agent helps with the release process; a licensed DUI defense attorney advises on the criminal case and can request a bail review or DMV hearing. Most families benefit from having both.',
+    question: 'Does posting DUI bail handle the Delaware DMV case?',
+    answer: 'No. Posting bail addresses release from custody; it does not resolve the criminal charge or the separate DMV process. Delaware DMV says a driver generally has 15 days after the relevant notice is issued to request an administrative hearing, so review the notice promptly and seek legal advice.',
   },
 ];
+
+const canonicalUrl = 'https://delawarebailbond.com/blog/dui-bail-bond-cost-delaware';
 
 export const DUI_BAIL_BOND_SCHEMA = {
   '@context': 'https://schema.org',
   '@graph': [
     {
       '@type': 'BlogPosting',
-      '@id': 'https://delawarebailbond.com/blog/dui-bail-bond-cost-delaware/#blogposting',
-      mainEntityOfPage: {
-        '@type': 'WebPage',
-        '@id': 'https://delawarebailbond.com/blog/dui-bail-bond-cost-delaware',
-      },
-      headline: 'How Much Is Bail for a DUI in Delaware? Family Cost Guide',
-      description:
-        'How much is bail for a DUI in Delaware? Learn typical DUI bail amounts, the 5-10% bond premium, payment plans, the 15-day DMV deadline, and what to do after an arrest.',
-      image:
-        'https://delawarebailbond.com/images/blog/dui-bail-bond-hero.webp',
-      author: {
-        '@type': 'Organization',
-        name: 'A Way to Freedom Bail Bonds LLC',
-      },
-      publisher: {
-        '@type': 'Organization',
-        name: 'A Way to Freedom Bail Bonds LLC',
-        url: 'https://delawarebailbond.com',
-      },
+      '@id': `${canonicalUrl}#blogposting`,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
+      headline: DUI_BAIL_BOND_TITLE,
+      description: DUI_BAIL_BOND_META_DESCRIPTION,
+      image: 'https://delawarebailbond.com/images/blog/dui-bail-bond-hero.webp',
+      author: { '@type': 'Person', name: 'Simone Harris' },
+      publisher: { '@type': 'Organization', name: 'A Way to Freedom Bail Bonds LLC', url: 'https://delawarebailbond.com' },
       datePublished: '2026-08-15',
-      dateModified: '2026-08-15',
+      dateModified: '2026-08-28',
       about: ['DUI bail', 'DUI bail bond cost', 'Delaware DUI', 'Bail bond premium'],
       inLanguage: 'en-US',
     },
     {
       '@type': 'FAQPage',
-      '@id': 'https://delawarebailbond.com/blog/dui-bail-bond-cost-delaware/#faq',
+      '@id': `${canonicalUrl}#faq`,
       mainEntity: DUI_BAIL_BOND_FAQS.map((faq) => ({
         '@type': 'Question',
         name: faq.question,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: faq.answer,
-        },
+        acceptedAnswer: { '@type': 'Answer', text: faq.answer },
       })),
     },
     {
       '@type': 'BreadcrumbList',
-      '@id': 'https://delawarebailbond.com/blog/dui-bail-bond-cost-delaware/#breadcrumb',
+      '@id': `${canonicalUrl}#breadcrumb`,
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://delawarebailbond.com/' },
         { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://delawarebailbond.com/blog' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'How Much Is Bail for a DUI in Delaware? Family Cost Guide',
-          item: 'https://delawarebailbond.com/blog/dui-bail-bond-cost-delaware',
-        },
+        { '@type': 'ListItem', position: 3, name: DUI_BAIL_BOND_TITLE, item: canonicalUrl },
       ],
     },
   ],

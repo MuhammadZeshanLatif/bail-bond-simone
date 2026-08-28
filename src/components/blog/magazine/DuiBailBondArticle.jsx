@@ -1,5 +1,10 @@
 import { DUI_BAIL_BOND_FAQS } from '../../../blog/dui-bail-bond-delaware-blog';
-import { FaqAccordion, QuickAnswerBox } from './MagazineArticleParts';
+import { ArticleFigure, FaqAccordion, QuickAnswerBox } from './MagazineArticleParts';
+
+const DELAWARE_BAIL_URL = 'https://www.courts.delaware.gov/help/bail/';
+const DELAWARE_CODE_URL = 'https://www.delcode.delaware.gov/title11/c021/index.html';
+const PREMIUM_LAW_URL = 'https://delcode.delaware.gov/title18/c043/sc02/';
+const DMV_FAQ_URL = 'https://dmv.de.gov/DriverServices/faqs/index.shtml?dc=dr_faq_di';
 
 export function DuiBailBondArticle({ navigate, onContactClick }) {
   const handleNav = (event, path) => {
@@ -16,187 +21,210 @@ export function DuiBailBondArticle({ navigate, onContactClick }) {
   return (
     <>
       <section id="section-intro">
-        <p className="bm-author-line"><strong>By Simone Harris</strong><br />Licensed Bail Bond Agent</p>
+        <p className="bm-author-line"><strong>By Simone Harris</strong><br />Licensed Delaware Bail Bond Agent</p>
         <p>
-          An arrest for driving under the influence (DUI) is stressful and confusing, especially when you are trying to
-          figure out how much money it will take to get your loved one home. The bail amount is only part of the story.
-          What you actually pay out of pocket depends on the bail type the court allows, whether a licensed agent can
-          post a bond, and the filed premium rate.
+          When someone is arrested for driving under the influence, families often ask one urgent question: how much
+          is bail for a DUI in Delaware? There is no single statewide amount. A judicial officer decides the amount,
+          bail type, and release conditions after considering the person and the facts of the case.
+        </p>
+        <p>
+          The safest way to plan is to confirm the written bail order before arranging money. This guide explains what
+          affects DUI bail, how cash bail differs from a surety bond premium, what information to gather, and which
+          separate DMV deadline may require prompt attention.
         </p>
         <QuickAnswerBox>
           <p>
-            <strong>Quick answer:</strong> For a first DUI offense in Delaware, bail is commonly set between{' '}
-            <strong>$500 and $5,000</strong>. If you use a licensed bail bond company, you pay a premium — in Delaware,
-            a filed rate generally between <strong>5% and 10%</strong> of the bail amount for bonds over $1,000 —
-            instead of the full amount. For example, on a $2,000 bail, the premium would typically be{' '}
-            <strong>$100 to $200</strong>.
+            <strong>Quick answer:</strong> Delaware does not use a fixed DUI bail schedule that can predict every case.
+            The court considers appearance risk, charge severity, criminal history, community ties, public safety, and
+            the circumstances of the arrest. If surety bail is allowed, the family may pay a licensed bond company&apos;s
+            filed premium instead of depositing the full bail amount with the court.
           </p>
         </QuickAnswerBox>
-        <p>
-          This guide explains how DUI bail is set in Delaware, what amounts are typical, what you will actually pay, and
-          the urgent deadlines you cannot afford to miss.
-        </p>
       </section>
 
-      <section id="section-how-set">
-        <h2>How Is DUI Bail Set in Delaware?</h2>
+      <section id="section-factors">
+        <h2>How Does a Delaware Court Determine DUI Bail?</h2>
         <p>
-          After a DUI arrest in New Castle County, the defendant is usually brought before a magistrate at{' '}
-          <strong>Justice of the Peace (JP) Court 11</strong> in Newark, or through the statewide virtual criminal
-          hearing system. JP Court 11 operates 24 hours a day, so initial appearances, arraignments, and bail-setting
-          hearings happen around the clock — even on weekends and holidays.
-        </p>
-        <p>
-          When the judicial officer sets bail, Delaware law directs them to weigh several factors:
+          The court makes an individualized decision. Delaware&apos;s bail law directs the judicial officer to consider
+          whether the person is likely to appear, the nature of the charge, prior record, community ties, and public
+          safety. The alleged facts can also matter, including an accident, injury, a child passenger, or other charges.
         </p>
         <ul>
-          <li>The risk that the defendant will not appear in court</li>
-          <li>The type of charge and how serious it is</li>
-          <li>The defendant&apos;s criminal history, including any prior DUI or DUS convictions</li>
-          <li>How long the defendant has lived in Delaware and their ties to the community</li>
-          <li>The safety of the community</li>
-          <li>Whether the arrest involved an accident, injury, or a child passenger</li>
+          <li>The nature and circumstances of the alleged offense</li>
+          <li>The likelihood that the defendant will attend future hearings</li>
+          <li>Prior criminal history and previous failures to appear</li>
+          <li>Family, employment, residence, and other Delaware community ties</li>
+          <li>Potential danger to another person or the community</li>
+          <li>Other active cases, warrants, holds, or release conditions</li>
         </ul>
         <p>
-          A first-time DUI with no accident, a moderate blood alcohol content (BAC), and strong community ties is much
-          more likely to result in a moderate bail amount — or even release on personal recognizance. A repeat offense,
-          a very high BAC, or a crash involving injury can push bail much higher.
+          These factors explain why two people facing a DUI charge may receive different decisions. The{' '}
+          <a href={DELAWARE_CODE_URL} target="_blank" rel="noopener noreferrer">Delaware Code&apos;s bail provisions</a>{' '}
+          and the <a href={DELAWARE_BAIL_URL} target="_blank" rel="noopener noreferrer">Delaware Courts bail guide</a>{' '}
+          provide the official framework.
         </p>
       </section>
 
-      <section id="section-amounts">
-        <h2>Typical DUI Bail Amounts in Delaware</h2>
+      <ArticleFigure
+        src="/images/blog/delaware-dui-bail-decision-flow.webp"
+        alt="Steps for confirming DUI bail and bond costs in Delaware"
+        caption="The written Delaware court order controls the bail amount, type, and release conditions at every stage."
+      />
+
+      <section id="section-average">
+        <h2>Is There an Average Bail for a DUI in Delaware?</h2>
         <p>
-          DUI bail is set on a case-by-case basis, so there is no fixed price list. Still, most first-offense DUI cases
-          fall within a fairly predictable range.
+          A statewide average is not a reliable estimate for an individual arrest. Delaware&apos;s public guidance explains
+          bail types and decision factors, but it does not publish a standard dollar range for every DUI. Online figures
+          from another case or state may create a false expectation.
+        </p>
+        <p>
+          Focus on three details: the exact amount on the order, the bail type, and any conditions or holds. If the
+          amount is still unknown, use our guide to{' '}
+          <a href="/blog/how-do-you-find-out-how-much-someones-bail-is" onClick={(event) => handleNav(event, '/blog/how-do-you-find-out-how-much-someones-bail-is')}>
+            find out someone&apos;s exact bail amount
+          </a>.
+        </p>
+      </section>
+
+      <section id="section-types">
+        <h2>Which Bail Types May Apply After a DUI Arrest?</h2>
+        <p>
+          Delaware Courts identifies Own Recognizance, unsecured, secured, and cash-only bail. The label on the order
+          changes what must happen before release, so do not assume every stated amount must be paid in cash.
+        </p>
+        <ul>
+          <li><strong>Own Recognizance:</strong> release based on a written promise to appear, subject to the order.</li>
+          <li><strong>Unsecured bail:</strong> no security is deposited upfront, but the stated amount may become due after a violation.</li>
+          <li><strong>Secured bail:</strong> approved security is required; a surety bond may be an option if the order permits it.</li>
+          <li><strong>Cash-only bail:</strong> the amount must be posted in the form required by the court; a commercial surety bond does not replace it.</li>
+        </ul>
+      </section>
+
+      <section id="section-cost">
+        <h2>What Is the Difference Between DUI Bail and Bond Cost?</h2>
+        <p>
+          Bail is the amount and conditions set by the court. A bail bond premium is the charge for a licensed surety
+          company to post an eligible bond. They are not interchangeable numbers, and the bond option depends on the
+          type of bail ordered.
         </p>
         <div className="bm-table-wrap">
           <table className="blog-data-table">
-            <thead><tr><th>Situation</th><th>Typical bail range</th></tr></thead>
+            <thead><tr><th>Term</th><th>What it means</th><th>What to verify</th></tr></thead>
             <tbody>
-              <tr><td>First offense, no accident, moderate BAC</td><td>$500 – $2,500</td></tr>
-              <tr><td>First offense with aggravating factors (high BAC, child in car)</td><td>$2,500 – $5,000+</td></tr>
-              <tr><td>Second or third offense</td><td>$2,000 – $7,500+</td></tr>
-              <tr><td>DUI with serious injury or felony-level charges</td><td>$10,000 – $50,000+</td></tr>
+              <tr><td>Bail amount</td><td>The amount set in the court order</td><td>Amount, type, conditions, and other holds</td></tr>
+              <tr><td>Cash deposit</td><td>Money posted as directed by the court</td><td>Accepted payer, payment method, receipt, and return rules</td></tr>
+              <tr><td>Surety premium</td><td>The bond company&apos;s filed charge for posting an eligible bond</td><td>Filed rate, written agreement, payment terms, and collateral</td></tr>
             </tbody>
           </table>
         </div>
         <p>
-          Three things matter more than the average: the <strong>exact bail amount on the written order</strong>, the{' '}
-          <strong>bail type the court allows</strong>, and <strong>who is permitted to post it</strong>. Do not rely on
-          what someone heard by phone. If you are trying to confirm the amount, read our guide on{' '}
-          <a href="/blog/how-do-you-find-out-how-much-someones-bail-is" onClick={(event) => handleNav(event, '/blog/how-do-you-find-out-how-much-someones-bail-is')}>
-            how to find out how much someone&apos;s bail is
-          </a>.
-        </p>
-      </section>
-
-      <section id="section-bail-vs-premium">
-        <h2>What You Actually Pay: Bail vs Bond Premium</h2>
-        <p>
-          The bail amount and the out-of-pocket cost are not the same thing. Understanding the difference can save your
-          family thousands of dollars in confusion.
-        </p>
-        <ul>
-          <li><strong>Cash bail:</strong> The full amount is paid to the court and refunded at the end of the case if every appearance is met. On a $3,000 bail, you need $3,000 in cash up front.</li>
-          <li><strong>Surety bond:</strong> A licensed bail bond company posts the full bail for a non-refundable premium. In Delaware, that premium is a filed rate generally between <strong>5% and 10%</strong> of the bail amount for bonds over $1,000. On a $3,000 bail, the premium would typically be <strong>$150 to $300</strong> — not $3,000.</li>
-        </ul>
-        <p>
-          The premium is a service fee and is not refunded, even if the case is dismissed. Any collateral you post is
-          returned when the bond is exonerated and the case closes.
-        </p>
-      </section>
-
-      <section id="section-cost-rules">
-        <h2>Delaware DUI Bail Bond Cost: The Rules</h2>
-        <p>
-          Delaware law is specific about what a bail bond company may charge. For a surety bail bond, the premium must
-          match the rate filed with and approved by the state. For surety bonds over $1,000, Delaware law sets the total
-          filed premium between <strong>5% and 10%</strong>, and at least <strong>5%</strong> must be collected before
-          the bond is posted.
-        </p>
-        <p>
-          Delaware law does not allow unapproved administrative, service, company, or agent fees on top of the filed
-          premium. If an agent quotes a price that seems inconsistent with the filed rate, ask for it in writing and
-          confirm the terms before signing. A licensed agent must provide a written contract.
-        </p>
-        <p>
-          For the complete breakdown of premiums, payment plans, collateral, and refunds, read our{' '}
+          For surety bonds over $1,000, Delaware law provides for a filed premium between 5% and 10% of the bond amount.
+          As a calculation example only, a $5,000 eligible surety bond would produce a $250 to $500 premium. That example
+          does not predict DUI bail or confirm that a surety bond is allowed in a specific case. Read the{' '}
+          <a href={PREMIUM_LAW_URL} target="_blank" rel="noopener noreferrer">Delaware bail bond premium law</a>{' '}
+          and our guide to{' '}
           <a href="/blog/how-much-does-a-bail-bond-cost-in-delaware" onClick={(event) => handleNav(event, '/blog/how-much-does-a-bail-bond-cost-in-delaware')}>
-            Delaware bail bond cost guide
-          </a>.
+            how much a bail bond costs in Delaware
+          </a>{' '}for more detail.
         </p>
       </section>
 
-      <section id="section-cant-afford">
-        <h2>What If You Can&apos;t Afford the Premium?</h2>
+      <section id="section-confirm">
+        <h2>How Can a Family Confirm the Exact DUI Bail Amount?</h2>
         <p>
-          If the full premium is more than your family can pay in one payment, ask about payment arrangements. Payment
-          plans may be available depending on the bond, the applicant, and the written agreement. A payment plan is not
-          the same as a discount on the filed premium — the rate is still set by law — but it can spread the cost over a
-          manageable schedule.
+          Start with the written order or an official source connected to the case. A court clerk, detention facility,
+          attorney, or licensed bail agent may help confirm the information. Gather the following details before calling:
         </p>
+        <ol>
+          <li>The defendant&apos;s full legal name and date of birth</li>
+          <li>The detention facility or arresting agency</li>
+          <li>The booking, case, or complaint number, if available</li>
+          <li>The exact bail amount and bond type shown on the order</li>
+          <li>Any separate holds, warrants, or release conditions</li>
+          <li>The next court date and the court handling the case</li>
+        </ol>
         <p>
-          If the bail itself feels unreasonably high, a DUI defense attorney can ask the court to review the amount.
-          That is separate from the bail bond process: an attorney advises on the legal case, while a licensed bail
-          agent handles the release process. Many families work with both.
+          Ask for the complete written price and agreement before sending money or signing for collateral. If you need
+          help reviewing the release information, you can{' '}
+          <a href="/contact" onClick={handleCta}>contact a Delaware bail bond agent</a>.
+        </p>
+      </section>
+
+      <ArticleFigure
+        src="/images/blog/delaware-dui-bail-call-checklist.webp"
+        alt="Information families need when calling about a Delaware DUI bail bond"
+        caption="Having the defendant and case details ready helps the court, facility, attorney, or licensed bail agent verify the correct order."
+      />
+
+      <section id="section-agent-attorney">
+        <h2>Should You Call a Bail Agent or a DUI Attorney?</h2>
+        <p>
+          A licensed bail agent handles an eligible bond and explains the related agreement. A Delaware attorney advises
+          on the criminal charge, defenses, hearings, bail-review requests, and DMV consequences. A bail agent cannot
+          provide legal advice, and an attorney&apos;s role does not replace the facility&apos;s release process.
+        </p>
+      </section>
+
+      <section id="section-release">
+        <h2>How Long Does Release Take After Bail Is Posted?</h2>
+        <p>
+          No one can guarantee an exact release time. After a payment or bond is accepted, the facility may need to
+          verify documents, update records, check for other holds, return property, and complete its normal discharge
+          process. Staffing, time of day, and case complexity can affect the timeline.
+        </p>
+      </section>
+
+      <section id="section-afford">
+        <h2>What If the Family Cannot Afford the Full Amount?</h2>
+        <p>
+          First confirm the bail type; Own Recognizance or unsecured bail may not require an upfront cash deposit. If
+          secured bail permits a surety bond, ask the licensed company for its filed premium, payment terms, collateral
+          requirements, and complete written agreement. Payment arrangements are not guaranteed and do not change the
+          court order. An attorney may advise whether requesting a bail review is appropriate.
         </p>
       </section>
 
       <section id="section-dmv">
-        <h2>Urgent: The 15-Day DMV License Deadline</h2>
+        <h2>What Delaware DMV Deadline Follows a DUI Arrest?</h2>
         <p>
-          A DUI arrest in Delaware triggers two separate processes at the same time: the criminal court case and an
-          administrative hearing with the Delaware Division of Motor Vehicles (DMV).
+          The criminal case and the administrative license process are separate. Delaware DMV guidance says a driver
+          generally has 15 days after the relevant notice is issued to request an administrative hearing. Read the
+          notice immediately because posting bail does not preserve that deadline or resolve the license issue.
         </p>
-        <blockquote className="bm-pullquote">
-          <strong>You have only 15 days from the date of the arrest</strong> to request an administrative hearing with
-          the DMV. If you miss this deadline, the driver&apos;s license is automatically suspended.
-        </blockquote>
         <p>
-          Getting out of jail quickly matters here — a released defendant can meet that deadline, consult with an
-          attorney, and protect their driving privileges. For the full walkthrough of a DUI arrest in the Wilmington
-          area, see our guide to{' '}
-          <a href="/blog/traffic-bail-bonds-wilmington-delaware" onClick={(event) => handleNav(event, '/blog/traffic-bail-bonds-wilmington-delaware')}>
-            traffic arrest bail bonds in Wilmington
-          </a>.
+          Review the <a href={DMV_FAQ_URL} target="_blank" rel="noopener noreferrer">Delaware DMV DUI FAQ</a> and speak
+          with a qualified Delaware attorney about the specific notice and case.
         </p>
       </section>
 
       <section id="section-after-release">
-        <h2>What Happens After Release</h2>
-        <p>
-          Posting bail gets the defendant out of custody — it does not end the case. After release, the defendant must
-          follow every condition in the bond order and attend all future hearings. In DUI cases, conditions can include:
-        </p>
+        <h2>What Should the Defendant Do After Release?</h2>
         <ul>
-          <li>Attending every scheduled court date</li>
-          <li>No driving without a valid license</li>
-          <li>Installing an ignition interlock device</li>
-          <li>Abstaining from alcohol or drugs</li>
-          <li>Completing alcohol education or treatment programs</li>
+          <li>Read and follow every condition in the release order.</li>
+          <li>Save the bail, bond, and facility paperwork.</li>
+          <li>Record every court date and arrive early.</li>
+          <li>Address the DMV notice within the stated deadline.</li>
+          <li>Do not drive unless legally authorized to do so.</li>
+          <li>Keep the attorney and bond company informed of permitted contact changes.</li>
         </ul>
         <p>
-          Missing court can lead to a bench warrant and financial responsibility for whoever signed the bond. Put every
-          hearing date on a calendar, save the paperwork, and contact the court or agent immediately if there is a
-          genuine scheduling problem. For step-by-step guidance, read our article on{' '}
-          <a href="/blog/how-to-bond-someone-out-of-jail-delaware" onClick={(event) => handleNav(event, '/blog/how-to-bond-someone-out-of-jail-delaware')}>
-            how to bond someone out of jail in Delaware
-          </a>.
+          Posting bail permits release while the case continues; it is not a finding of guilt or innocence. Missing court
+          or violating conditions can lead to a warrant, forfeiture proceedings, or other consequences.
         </p>
       </section>
 
-      <section id="section-faq"><h2>DUI Bail FAQs</h2><FaqAccordion faqs={DUI_BAIL_BOND_FAQS} /></section>
+      <section id="section-faq"><h2>Delaware DUI Bail FAQs</h2><FaqAccordion faqs={DUI_BAIL_BOND_FAQS} /></section>
 
       <section id="section-final">
-        <h2>Act Fast, Get the Facts Right</h2>
+        <h2>Get the Written Bail Details Before You Pay</h2>
         <p>
-          The most important step after a DUI arrest is acting quickly and getting the facts right. Confirm the exact
-          bail amount and type on the written order, protect the 15-day DMV deadline, and decide whether cash bail or a
-          surety bond fits your family&apos;s finances.
+          Delaware DUI bail depends on an individualized court decision, so confirm the written amount, bail type,
+          conditions, and other holds before arranging payment. A licensed bail agent can explain an eligible surety
+          bond, while a Delaware attorney can advise on the criminal and DMV matters. For clear 24/7 help with the
+          release process, <a href="/contact" onClick={handleCta}>contact A Way to Freedom Bail Bonds</a>.
         </p>
-        <p><a href="/contact" onClick={handleCta}>Contact A Way to Freedom Bail Bonds</a> for clear, confidential 24/7 guidance from a licensed Delaware agent.</p>
-        <p><strong>Legal disclaimer:</strong> This article is for general information only and is not legal advice. Consult a licensed Delaware attorney for advice about your case.</p>
+        <p><strong>Legal disclaimer:</strong> This article provides general information, not legal advice. Laws, procedures, and case circumstances can change. Consult a licensed Delaware attorney about a specific case.</p>
       </section>
     </>
   );

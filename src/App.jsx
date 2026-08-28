@@ -2078,6 +2078,30 @@ const HomePage = ({ navigate }) => {
         </div>
       </section>
 
+      {/* Featured DUI resource */}
+      <section className="section-dark-alt">
+        <div className="container">
+          <div className="section-title">
+            <div className="gold-divider"></div>
+            <h2>Featured Delaware Bail Resource</h2>
+          </div>
+          <div className="service-card reveal">
+            <h3>How Much Is Bail for a DUI in Delaware?</h3>
+            <p>
+              Learn which factors affect DUI bail, how the court&apos;s bail amount differs from a surety bond premium,
+              and what information families should confirm before paying.
+            </p>
+            <a
+              href="/blog/dui-bail-bond-cost-delaware"
+              onClick={(e) => { e.preventDefault(); navigate('/blog/dui-bail-bond-cost-delaware'); }}
+              className="btn-secondary-outline mt-2"
+            >
+              Read the Delaware DUI Bail Guide
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="section-dark-alt">
         <div className="container">

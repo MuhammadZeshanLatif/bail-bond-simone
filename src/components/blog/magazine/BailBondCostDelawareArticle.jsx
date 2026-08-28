@@ -92,7 +92,9 @@ export function BailBondCostDelawareArticle({ navigate, onContactClick }) {
           <a href="/blog/how-do-you-find-out-how-much-someones-bail-is" onClick={(e) => handleNav(e, '/blog/how-do-you-find-out-how-much-someones-bail-is')}>
             how to find out how much someone&apos;s bail is
           </a>
-          . The cost conversation gets easier once you know the amount and bond type.
+          . The cost conversation gets easier once you know the amount and bond type. For a charge-specific example,
+          read how <a href="/blog/dui-bail-bond-cost-delaware" onClick={(e) => handleNav(e, '/blog/dui-bail-bond-cost-delaware')}>DUI bail costs in Delaware</a>{' '}
+          are evaluated without relying on a fixed statewide average.
         </p>
       </section>
 

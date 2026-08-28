@@ -87,7 +87,9 @@ export function TrafficBondsWilmingtonArticle({ navigate, onContactClick }) {
           <strong>Urgent Timeline Warning:</strong> You have only 15 days from the date of a DUI arrest to request an administrative hearing with the Delaware Division of Motor Vehicles (DMV). If you miss this deadline, your driver&apos;s license will be automatically suspended.
         </blockquote>
         <p>
-          For more details on commercial surety options, see our dedicated page on{' '}
+          For a Delaware-specific explanation of the court factors, bail types, and cost calculation, read our{' '}
+          <a href="/blog/dui-bail-bond-cost-delaware" onClick={(e) => handleNav(e, '/blog/dui-bail-bond-cost-delaware')}>Delaware DUI bail guide</a>.
+          {' '}For more details on commercial surety options, see our dedicated page on{' '}
           <a href="/services/surety" onClick={(e) => handleNav(e, '/services/surety')}>surety bail bonds Delaware</a>.
         </p>
       </section>

@@ -130,6 +130,9 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
           <li><strong>Cash-only bail:</strong> The designated amount must be paid to the court according to its order.</li>
         </ul>
         <p>
+          If another state is involved, our guide to <a href="/blog/fugitive-from-justice-charge-delaware">out-of-state holds in Delaware</a> explains which information to clarify.
+        </p>
+        <p>
           Delaware Courts identifies these four primary forms of bail. It explains that secured bail may involve cash or property posted by the defendant or someone acting on the defendant's behalf, including a relative or bail bondsman. Cash-only bail requires the designated payment to be made to the court.{' '}
           <a href="https://courts.delaware.gov/help/bail/" target="_blank" rel="noopener noreferrer">
             Compare Delaware bail types <i className="fas fa-external-link-alt" style={{ fontSize: '0.8em' }} />

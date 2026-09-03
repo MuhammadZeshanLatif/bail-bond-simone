@@ -305,8 +305,10 @@ import {
   DUI_BAIL_BOND_SCHEMA,
 } from './dui-bail-bond-delaware-blog';
 import { DUI_BAIL_BOND_TOC } from './magazine-toc-dui-bail-bond';
+import { FUGITIVE_POST } from './fugitive-from-justice-blog';
 
 export const MAGAZINE_POSTS = {
+  [FUGITIVE_POST.slug]: FUGITIVE_POST,
   [DUI_BAIL_BOND_SLUG]: {
     slug: DUI_BAIL_BOND_SLUG,
     title: DUI_BAIL_BOND_TITLE,

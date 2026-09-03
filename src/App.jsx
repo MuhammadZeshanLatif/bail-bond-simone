@@ -129,6 +129,7 @@ import {
   DUI_BAIL_BOND_IMAGE,
   DUI_BAIL_BOND_THUMBNAIL,
 } from './blog/dui-bail-bond-delaware-blog';
+import { FUGITIVE_POST } from './blog/fugitive-from-justice-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -1252,6 +1253,29 @@ const SimoneHomePage = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured interstate custody resource */}
+      <section className="section-dark-alt">
+        <div className="container">
+          <div className="section-title">
+            <div className="gold-divider"></div>
+            <h2>Delaware Bail Information</h2>
+          </div>
+          <div className="blog-grid">
+            <article className="blog-card reveal visible">
+              <a href={`/blog/${FUGITIVE_POST.slug}`} onClick={(e) => { e.preventDefault(); navigate(`/blog/${FUGITIVE_POST.slug}`); }}>
+                <img src={FUGITIVE_POST.thumbnail} alt="" className="blog-card-image" loading="lazy" width="800" height="450" />
+              </a>
+              <div className="blog-card-content">
+                <span className="blog-card-category">Bail Process</span>
+                <h4><a href={`/blog/${FUGITIVE_POST.slug}`} onClick={(e) => { e.preventDefault(); navigate(`/blog/${FUGITIVE_POST.slug}`); }}>Understanding Out-of-State Holds in Delaware</a></h4>
+                <p className="blog-card-excerpt">Questions about court paperwork, bond arrangements and when to seek legal advice.</p>
+                <div className="blog-card-meta"><span><i className="far fa-clock me-1"></i>{FUGITIVE_POST.readMin} min read</span><span>September 3, 2026</span></div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -3224,6 +3248,18 @@ const FAQPage = ({ navigate }) => {
 // BLOG DATA
 // ===============================================================================
 const blogPosts = [
+  {
+    slug: FUGITIVE_POST.slug,
+    title: FUGITIVE_POST.title,
+    excerpt: FUGITIVE_POST.metaDescription,
+    category: FUGITIVE_POST.categoryLabel,
+    readTime: `${FUGITIVE_POST.readMin} min read`,
+    date: FUGITIVE_POST.publishedAt,
+    image: FUGITIVE_POST.thumbnail,
+    heroImage: FUGITIVE_POST.heroImage,
+    isMagazine: true,
+    content: '',
+  },
   {
     slug: DUI_BAIL_BOND_SLUG,
     title: DUI_BAIL_BOND_TITLE,

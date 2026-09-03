@@ -17,6 +17,7 @@ import { SecuredVsCashOnlyArticle } from './SecuredVsCashOnlyArticle';
 import { FelonyVsMisdemeanorArticle } from './FelonyVsMisdemeanorArticle';
 import { BailVsBondArticle } from './BailVsBondArticle';
 import { DuiBailBondArticle } from './DuiBailBondArticle';
+import { FugitiveFromJusticeArticle } from './FugitiveFromJusticeArticle';
 import { LegacyMagazineArticle } from './LegacyMagazineArticle';
 import { MagazineToc } from './MagazineToc';
 import '../../../blog-magazine.css';
@@ -40,6 +41,7 @@ const ARTICLE_MAP = {
   'felony-vs-misdemeanor': FelonyVsMisdemeanorArticle,
   'bail-vs-bond': BailVsBondArticle,
   'dui-bail-bond': DuiBailBondArticle,
+  'fugitive-from-justice': FugitiveFromJusticeArticle,
 };
 
 const DEFAULT_BLOG_CTA = {
@@ -138,26 +140,26 @@ export function BlogMagazinePillar({
               {magazine.subtitle && <p className="bm-subtitle">{magazine.subtitle}</p>}
 
               <div className="bm-meta-row">
-                <img src="/images/simoneimg.webp" alt="Simone Harris, licensed bail bond agent in Delaware" className="bm-meta-avatar" />
-                <span className="bm-meta-item">By <strong>{displayAuthor}</strong></span>
+                {!magazine.hideUnverifiedAuthor && <><img src="/images/simoneimg.webp" alt="Simone Harris, licensed bail bond agent in Delaware" className="bm-meta-avatar" /><span className="bm-meta-item">By <strong>{displayAuthor}</strong></span></>}
                 <span className="bm-meta-item"><i className="far fa-calendar" aria-hidden /><time dateTime={magazine.publishedAt}>{publishedLabel}</time></span>
                 <span className="bm-meta-item"><i className="far fa-clock" aria-hidden />{magazine.readMin} min read</span>
-                <span className="bm-meta-item"><i className="fas fa-eye" aria-hidden />12.4K views</span>
+                {magazine.viewCount && <span className="bm-meta-item"><i className="fas fa-eye" aria-hidden />{magazine.viewCount} views</span>}
                 <span className="bm-meta-item bm-meta-item--updated"><i className="fas fa-sync-alt" aria-hidden />Updated: <time dateTime={magazine.updatedAt}>{updatedLabel}</time></span>
               </div>
 
               <div className="bm-hero-image-wrap">
-                <img src={heroSrc} alt={magazine.heroAlt} className="bm-hero-img" width={1200} height={630} />
+                <img src={heroSrc} alt={magazine.heroAlt} className="bm-hero-img" width={magazine.heroWidth || 1200} height={magazine.heroHeight || 630} fetchPriority="high" />
+                {magazine.heroCaption && <p className="bm-figure-caption">{magazine.heroCaption}</p>}
               </div>
 
-              <div className="bm-benefits" role="list">
+              {magazine.benefits.length > 0 && <div className="bm-benefits" role="list">
                 {magazine.benefits.map((b) => (
                   <div className="bm-benefit" role="listitem" key={b.label}>
                     <div className="bm-benefit-icon"><i className={`fas ${b.icon} bm-icon-gold`} aria-hidden /></div>
                     <div className="bm-benefit-text"><strong>{b.label}</strong><span>{b.sub}</span></div>
                   </div>
                 ))}
-              </div>
+              </div>}
             </header>
 
             <article className="bm-article">
@@ -207,13 +209,13 @@ export function BlogMagazinePillar({
           </div>
 
           <aside className="bm-sidebar" aria-label="Article sidebar">
-            <div className="bm-widget">
+            {!magazine.hideUnverifiedAuthor && <div className="bm-widget">
               <p className="bm-widget-label">About the Author</p>
               <img src="/images/simoneimg.webp" alt="Simone Harris, licensed bail bond agent in Delaware" className="bm-author-avatar" width={56} height={56} />
               <div className="bm-author-name"><span>{displayAuthor.toUpperCase()}</span><i className="fas fa-check-circle bm-icon-gold" aria-label="Verified" /></div>
               <p className="bm-author-role">Licensed Bail Bond Agent</p>
               <p className="bm-author-bio">In my experience helping Delaware families, the most important thing is calm guidance. Families do not need confusing legal talk during a crisis. They need clear steps, honest answers, and support they can trust.</p>
-            </div>
+            </div>}
 
             {relatedPosts.length > 0 && (
               <div className="bm-widget">

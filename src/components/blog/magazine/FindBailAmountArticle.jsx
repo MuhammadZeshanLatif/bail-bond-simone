@@ -226,6 +226,7 @@ export function FindBailAmountArticle({ navigate, onContactClick }) {
           <li>What happens after the bond is posted?</li>
         </ol>
         <p>Writing the answers down can prevent mistakes, especially if several family members are making calls.</p>
+        <p>For a matter involving another state, read our guide to <a href="/blog/fugitive-from-justice-charge-delaware">interstate custody questions</a> before assuming a listed bond addresses every issue.</p>
       </section>
 
       <section id="section-cost">

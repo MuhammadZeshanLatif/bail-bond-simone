@@ -306,8 +306,30 @@ import {
 } from './dui-bail-bond-delaware-blog';
 import { DUI_BAIL_BOND_TOC } from './magazine-toc-dui-bail-bond';
 import { FUGITIVE_POST } from './fugitive-from-justice-blog';
+import { DOMESTIC_VIOLENCE_BAIL_POST } from './domestic-violence-bail-delaware-blog';
 
 export const MAGAZINE_POSTS = {
+  [DOMESTIC_VIOLENCE_BAIL_POST.slug]: {
+    slug: DOMESTIC_VIOLENCE_BAIL_POST.slug,
+    title: DOMESTIC_VIOLENCE_BAIL_POST.title,
+    subtitle: '',
+    metaTitle: DOMESTIC_VIOLENCE_BAIL_POST.metaTitle,
+    metaDescription: DOMESTIC_VIOLENCE_BAIL_POST.metaDescription,
+    keywords: 'how much is bail for domestic violence, domestic violence bail amount, domestic violence bail bonds',
+    heroImage: DOMESTIC_VIOLENCE_BAIL_POST.heroImage,
+    thumbnail: DOMESTIC_VIOLENCE_BAIL_POST.image,
+    heroAlt: DOMESTIC_VIOLENCE_BAIL_POST.heroAlt,
+    categoryLabel: DOMESTIC_VIOLENCE_BAIL_POST.category,
+    readMin: 10,
+    benefits: [],
+    tags: ['Domestic Violence Bail', 'Bail Amounts', 'Delaware Bail Help'],
+    faqs: [],
+    tocEntries: [],
+    articleKey: 'legacy',
+    legacyContent: DOMESTIC_VIOLENCE_BAIL_POST.content,
+    publishedAt: DOMESTIC_VIOLENCE_BAIL_POST.date,
+    updatedAt: DOMESTIC_VIOLENCE_BAIL_POST.date,
+  },
   [FUGITIVE_POST.slug]: FUGITIVE_POST,
   [DUI_BAIL_BOND_SLUG]: {
     slug: DUI_BAIL_BOND_SLUG,

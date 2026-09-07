@@ -130,6 +130,7 @@ import {
   DUI_BAIL_BOND_THUMBNAIL,
 } from './blog/dui-bail-bond-delaware-blog';
 import { FUGITIVE_POST } from './blog/fugitive-from-justice-blog';
+import { DOMESTIC_VIOLENCE_BAIL_POST } from './blog/domestic-violence-bail-delaware-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -3248,6 +3249,18 @@ const FAQPage = ({ navigate }) => {
 // BLOG DATA
 // ===============================================================================
 const blogPosts = [
+  {
+    slug: DOMESTIC_VIOLENCE_BAIL_POST.slug,
+    title: DOMESTIC_VIOLENCE_BAIL_POST.title,
+    excerpt: DOMESTIC_VIOLENCE_BAIL_POST.metaDescription,
+    category: DOMESTIC_VIOLENCE_BAIL_POST.category,
+    readTime: '10 min read',
+    date: DOMESTIC_VIOLENCE_BAIL_POST.date,
+    image: DOMESTIC_VIOLENCE_BAIL_POST.image,
+    heroImage: DOMESTIC_VIOLENCE_BAIL_POST.heroImage,
+    isMagazine: false,
+    content: DOMESTIC_VIOLENCE_BAIL_POST.content,
+  },
   {
     slug: FUGITIVE_POST.slug,
     title: FUGITIVE_POST.title,

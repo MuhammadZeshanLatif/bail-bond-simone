@@ -31,6 +31,15 @@ function SectionBody({ nodes }) {
       return;
     }
     flushList(`list-${index}`);
+    if (node.type === 'image') {
+      elements.push(
+        <figure key={`image-${index}`} className="bm-legacy-image">
+          <img src={node.src} alt={node.alt} loading="lazy" width="1200" height="800" />
+          <figcaption>{node.caption}</figcaption>
+        </figure>,
+      );
+      return;
+    }
     elements.push(<p key={`p-${index}`}>{node.text}</p>);
   });
   flushList('list-end');

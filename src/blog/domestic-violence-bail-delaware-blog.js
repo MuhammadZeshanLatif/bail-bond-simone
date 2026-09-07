@@ -27,6 +27,8 @@ What determines the bail amount in a domestic-violence case?
 Bail amount versus bail-bond premium
 The bail amount is the financial condition ordered by the court. The bail-bond premium is the fee charged by a surety-bond company for posting a bond. They are different amounts and may have different refund rules. Request premium, collateral, payment, and cancellation terms in writing.
 
+[[IMAGE|/images/domestic-violence-bail-delaware/domestic-violence-bail-cost-comparison.webp|Comparison of court bail amount and bail bond premium|Court bail and bond premium are different financial terms.]]
+
 Can you be released immediately after a domestic-violence arrest?
 Release timing depends on the charge, arresting agency, jail, court procedure, and any hold or hearing requirement. Paying money cannot override a court-ordered hold. Confirm the amount, bond type, hearing status, conditions, and accepted documents.
 
@@ -48,6 +50,8 @@ How to confirm the exact Delaware bail amount
 - Ask whether a review or reduction hearing is scheduled.
 - Request written premium and collateral terms from any surety agency.
 - Keep receipts and signed documents.
+
+[[IMAGE|/images/domestic-violence-bail-delaware/delaware-domestic-violence-bail-checklist.webp|Checklist for confirming a Delaware domestic violence bail amount|Verify these details before arranging a bond.]]
 
 What if the bail amount is unaffordable?
 Confirm the amount and bond type first. Ask defense counsel whether review or reduction options are available. If a surety bond is permitted, ask about premium, payment schedule, collateral, co-signer responsibility, cancellation, and missed-court consequences.

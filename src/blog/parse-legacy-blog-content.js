@@ -53,6 +53,12 @@ export function parseLegacyContent(raw) {
       listItems.push(trimmed.slice(2));
       continue;
     }
+    const imageMatch = trimmed.match(/^\[\[IMAGE\|([^|]+)\|([^|]+)\|([^\]]+)\]\]$/);
+    if (imageMatch) {
+      flushList();
+      current.nodes.push({ type: 'image', src: imageMatch[1], alt: imageMatch[2], caption: imageMatch[3] });
+      continue;
+    }
     if (isHeadingLine(trimmed)) {
       flushSection();
       const title = trimmed.replace(/:$/, '');

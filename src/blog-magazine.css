@@ -224,6 +224,31 @@
   padding: clamp(22px, 3vw, 40px) clamp(16px, 2vw, 28px) clamp(28px, 3vw, 44px);
 }
 
+.blog-magazine .bm-legacy-image {
+  width: 100%;
+  max-width: 920px;
+  margin: 28px auto;
+  text-align: center;
+}
+
+.blog-magazine .bm-legacy-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(228, 231, 236, 0.22);
+}
+
+.blog-magazine .bm-legacy-image figcaption {
+  margin-top: 8px;
+  color: var(--bm-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
 @media (max-width: 1100px) {
   .blog-magazine .bm-grid { grid-template-columns: 1fr; }
   .blog-magazine .bm-toc-col { position: static; }

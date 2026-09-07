@@ -705,7 +705,10 @@ export const MAGAZINE_POSTS = {
 };
 
 export function getMagazinePost(slug) {
-  return MAGAZINE_POSTS[slug] ?? null;
+  const post = MAGAZINE_POSTS[slug];
+  if (!post) return null;
+  // Every hero is a valid OG fallback unless a post explicitly supplies a dedicated OG asset.
+  return { ...post, ogImage: post.ogImage || post.heroImage };
 }
 
 export function isMagazinePost(slug) {

@@ -131,6 +131,7 @@ import {
 } from './blog/dui-bail-bond-delaware-blog';
 import { FUGITIVE_POST } from './blog/fugitive-from-justice-blog';
 import { DOMESTIC_VIOLENCE_BAIL_POST } from './blog/domestic-violence-bail-delaware-blog';
+import { IMMIGRATION_BONDS_POST } from './blog/immigration-bonds-delaware-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -1266,6 +1267,17 @@ const SimoneHomePage = () => {
             <h2>Delaware Bail Information</h2>
           </div>
           <div className="blog-grid">
+            <article className="blog-card reveal visible">
+              <a href={`/blog/${IMMIGRATION_BONDS_POST.slug}`} onClick={(e) => { e.preventDefault(); navigate(`/blog/${IMMIGRATION_BONDS_POST.slug}`); }}>
+                <img src={IMMIGRATION_BONDS_POST.thumbnail} alt="" className="blog-card-image" loading="lazy" width="800" height="450" />
+              </a>
+              <div className="blog-card-content">
+                <span className="blog-card-category">Bail Process</span>
+                <h4><a href={`/blog/${IMMIGRATION_BONDS_POST.slug}`} onClick={(e) => { e.preventDefault(); navigate(`/blog/${IMMIGRATION_BONDS_POST.slug}`); }}>Immigration Bonds, Hearings, and Release</a></h4>
+                <p className="blog-card-excerpt">How federal immigration bonds differ from Delaware criminal bail and what families should confirm first.</p>
+                <div className="blog-card-meta"><span><i className="far fa-clock me-1"></i>{IMMIGRATION_BONDS_POST.readMin} min read</span><span>September 9, 2026</span></div>
+              </div>
+            </article>
             <article className="blog-card reveal visible">
               <a href={`/blog/${FUGITIVE_POST.slug}`} onClick={(e) => { e.preventDefault(); navigate(`/blog/${FUGITIVE_POST.slug}`); }}>
                 <img src={FUGITIVE_POST.thumbnail} alt="" className="blog-card-image" loading="lazy" width="800" height="450" />
@@ -3249,6 +3261,18 @@ const FAQPage = ({ navigate }) => {
 // BLOG DATA
 // ===============================================================================
 const blogPosts = [
+  {
+    slug: IMMIGRATION_BONDS_POST.slug,
+    title: IMMIGRATION_BONDS_POST.title,
+    excerpt: IMMIGRATION_BONDS_POST.metaDescription,
+    category: IMMIGRATION_BONDS_POST.categoryLabel,
+    readTime: `${IMMIGRATION_BONDS_POST.readMin} min read`,
+    date: IMMIGRATION_BONDS_POST.publishedAt,
+    image: IMMIGRATION_BONDS_POST.thumbnail,
+    heroImage: IMMIGRATION_BONDS_POST.heroImage,
+    isMagazine: true,
+    content: '',
+  },
   {
     slug: DOMESTIC_VIOLENCE_BAIL_POST.slug,
     title: DOMESTIC_VIOLENCE_BAIL_POST.title,

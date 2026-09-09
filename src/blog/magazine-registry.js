@@ -307,8 +307,10 @@ import {
 import { DUI_BAIL_BOND_TOC } from './magazine-toc-dui-bail-bond';
 import { FUGITIVE_POST } from './fugitive-from-justice-blog';
 import { DOMESTIC_VIOLENCE_BAIL_POST } from './domestic-violence-bail-delaware-blog';
+import { IMMIGRATION_BONDS_POST } from './immigration-bonds-delaware-blog';
 
 export const MAGAZINE_POSTS = {
+  [IMMIGRATION_BONDS_POST.slug]: IMMIGRATION_BONDS_POST,
   [DOMESTIC_VIOLENCE_BAIL_POST.slug]: {
     slug: DOMESTIC_VIOLENCE_BAIL_POST.slug,
     title: DOMESTIC_VIOLENCE_BAIL_POST.title,

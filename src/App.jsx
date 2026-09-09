@@ -198,6 +198,13 @@ const useRouter = () => {
 const useSEO = (title, description, keywords = '', ogTitle = '', ogDescription = '', ogImage = '') => {
 useEffect(() => {
     document.title = title || 'A Way to Freedom Bail Bonds';
+    const getImageType = (imageUrl) => {
+      const cleanUrl = imageUrl.split('?')[0].toLowerCase();
+      if (cleanUrl.endsWith('.webp')) return 'image/webp';
+      if (cleanUrl.endsWith('.png')) return 'image/png';
+      if (cleanUrl.endsWith('.gif')) return 'image/gif';
+      return 'image/jpeg';
+    };
     
     // Update meta description
     let metaDesc = document.querySelector('meta[name="description"]');
@@ -242,6 +249,10 @@ useEffect(() => {
       let twitterImageEl = document.querySelector('meta[name="twitter:image"]');
       if (twitterImageEl) {
         twitterImageEl.setAttribute('content', ogImage);
+      }
+      let ogImageTypeEl = document.querySelector('meta[property="og:image:type"]');
+      if (ogImageTypeEl) {
+        ogImageTypeEl.setAttribute('content', getImageType(ogImage));
       }
     }
 

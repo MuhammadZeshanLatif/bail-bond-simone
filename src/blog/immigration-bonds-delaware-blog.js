@@ -7,9 +7,9 @@ export const IMMIGRATION_BONDS_POST = {
     'Learn what immigration bonds mean, how bond hearings and payment may work, and what Delaware families should confirm before arranging help.',
   keywords:
     'immigration bonds, immigration bail bond, what is a bond hearing, how to pay immigration bond',
-  heroImage: '/images/blog/immigration-bonds-delaware-hero.png',
-  thumbnail: '/images/blog/immigration-bonds-delaware-hero.png',
-  ogImage: '/images/blog/immigration-bonds-delaware-hero.png',
+  heroImage: '/images/blog/immigration-bonds-delaware-hero.webp',
+  thumbnail: '/images/blog/immigration-bonds-delaware-hero.webp',
+  ogImage: '/images/blog/immigration-bonds-delaware-hero.webp',
   heroAlt:
     'Legal guide graphic for immigration bonds in Delaware with Simone Harris, courthouse background, bond document, and scales of justice.',
   heroCaption: 'Illustration; not legal advice or a real immigration case document.',
@@ -89,7 +89,7 @@ export const IMMIGRATION_BONDS_POST = {
         description:
           'Learn what immigration bonds mean, how bond hearings and payment may work, and what Delaware families should confirm before arranging help.',
         inLanguage: 'en-US',
-        image: 'https://delawarebailbond.com/images/blog/immigration-bonds-delaware-hero.png',
+        image: 'https://delawarebailbond.com/images/blog/immigration-bonds-delaware-hero.webp',
         datePublished: '2026-09-09',
         dateModified: '2026-09-09',
         publisher: {

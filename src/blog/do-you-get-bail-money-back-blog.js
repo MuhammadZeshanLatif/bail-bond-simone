@@ -8,7 +8,7 @@ export const BAIL_MONEY_BACK_POST = {
   keywords:
     'do you get bail money back, bail money do you get it back, do you get your bail money back, do you get bond money back, is bail money returned, where does bail money go, how to get bail money back',
   heroImage: '/images/blog/do-you-get-bail-money-back/do-you-get-bail-money-back-title.webp',
-  thumbnail: '/images/blog/do-you-get-bail-money-back/do-you-get-bail-money-back-delaware-hero.webp',
+  thumbnail: '/images/blog/do-you-get-bail-money-back/do-you-get-bail-money-back-title.webp',
   ogImage: '/images/blog/do-you-get-bail-money-back/do-you-get-bail-money-back-delaware-og.webp',
   flowImage: '/images/blog/do-you-get-bail-money-back/where-bail-money-goes-delaware.webp',
   heroAlt: 'Do You Get Bail Money Back Delaware refund guide by Simone Harris',

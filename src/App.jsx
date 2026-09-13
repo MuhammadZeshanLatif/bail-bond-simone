@@ -132,6 +132,7 @@ import {
 import { FUGITIVE_POST } from './blog/fugitive-from-justice-blog';
 import { DOMESTIC_VIOLENCE_BAIL_POST } from './blog/domestic-violence-bail-delaware-blog';
 import { IMMIGRATION_BONDS_POST } from './blog/immigration-bonds-delaware-blog';
+import { BAIL_MONEY_BACK_POST } from './blog/do-you-get-bail-money-back-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -689,7 +690,7 @@ const SimoneHomePage = () => {
             "name": "Do you get bail money back?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "If the full bail is paid directly to the court, it may be returned at the end of the case if all court requirements are met. If a bail bond company is used, the fee paid for the bond is not refunded."
+              "text": "If cash is paid directly to the court, it may be returned after the required court process, subject to forfeiture, court orders, or applicable obligations. Bail bond premiums and collateral follow different rules."
             }
           },
           {
@@ -1279,6 +1280,17 @@ const SimoneHomePage = () => {
           </div>
           <div className="blog-grid">
             <article className="blog-card reveal visible">
+              <a href={`/blog/${BAIL_MONEY_BACK_POST.slug}`} onClick={(e) => { e.preventDefault(); navigate(`/blog/${BAIL_MONEY_BACK_POST.slug}`); }}>
+                <img src={BAIL_MONEY_BACK_POST.thumbnail} alt="" className="blog-card-image" loading="lazy" width="800" height="450" />
+              </a>
+              <div className="blog-card-content">
+                <span className="blog-card-category">{BAIL_MONEY_BACK_POST.categoryLabel}</span>
+                <h4><a href={`/blog/${BAIL_MONEY_BACK_POST.slug}`} onClick={(e) => { e.preventDefault(); navigate(`/blog/${BAIL_MONEY_BACK_POST.slug}`); }}>Do You Get Bail Money Back? Delaware Refunds Explained</a></h4>
+                <p className="blog-card-excerpt">Learn the difference between cash posted with a court, a bail bond premium, and collateral.</p>
+                <div className="blog-card-meta"><span><i className="far fa-clock me-1"></i>{BAIL_MONEY_BACK_POST.readMin} min read</span><span>September 14, 2026</span></div>
+              </div>
+            </article>
+            <article className="blog-card reveal visible">
               <a href={`/blog/${IMMIGRATION_BONDS_POST.slug}`} onClick={(e) => { e.preventDefault(); navigate(`/blog/${IMMIGRATION_BONDS_POST.slug}`); }}>
                 <img src={IMMIGRATION_BONDS_POST.thumbnail} alt="" className="blog-card-image" loading="lazy" width="800" height="450" />
               </a>
@@ -1557,7 +1569,8 @@ const SimoneHomePage = () => {
                   </h2>
                   <div id="faq8" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div className="accordion-body">
-                      If the full bail is paid directly to the court, it may be returned at the end of the case if all court requirements are met. If a bail bond company is used, the fee paid for the bond is not refunded.
+                      If cash is paid directly to the court, it may be returned after the required court process, subject to forfeiture, court orders, or applicable obligations. Bail bond premiums and collateral follow different rules. Read the{' '}
+                      <a href="/blog/do-you-get-bail-money-back" onClick={(e) => { e.preventDefault(); navigate('/blog/do-you-get-bail-money-back'); }}>full Delaware bail refund guide</a>.
                     </div>
                   </div>
                 </div>
@@ -3272,6 +3285,18 @@ const FAQPage = ({ navigate }) => {
 // BLOG DATA
 // ===============================================================================
 const blogPosts = [
+  {
+    slug: BAIL_MONEY_BACK_POST.slug,
+    title: BAIL_MONEY_BACK_POST.title,
+    excerpt: BAIL_MONEY_BACK_POST.metaDescription,
+    category: BAIL_MONEY_BACK_POST.categoryLabel,
+    readTime: `${BAIL_MONEY_BACK_POST.readMin} min read`,
+    date: BAIL_MONEY_BACK_POST.publishedAt,
+    image: BAIL_MONEY_BACK_POST.thumbnail,
+    heroImage: BAIL_MONEY_BACK_POST.heroImage,
+    isMagazine: true,
+    content: '',
+  },
   {
     slug: IMMIGRATION_BONDS_POST.slug,
     title: IMMIGRATION_BONDS_POST.title,

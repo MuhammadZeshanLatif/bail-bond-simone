@@ -205,7 +205,9 @@ export function BailBondCostDelawareArticle({ navigate, onContactClick }) {
         <p>
           If you are comparing cash bail and a commercial bond, read{' '}
           <a href="/blog/what-is-cash-bond" onClick={(e) => handleNav(e, '/blog/what-is-cash-bond')}>what is a cash bond</a>{' '}
-          before deciding. The lowest upfront option is not always the same as the lowest total risk.
+          before deciding. For the full money-back explanation, see{' '}
+          <a href="/blog/do-you-get-bail-money-back" onClick={(e) => handleNav(e, '/blog/do-you-get-bail-money-back')}>do you get bail money back</a>.
+          The lowest upfront option is not always the same as the lowest total risk.
         </p>
       </section>
 

@@ -79,12 +79,12 @@ export function WhatIsCashBondArticle({ navigate, onContactClick }) {
 
       <section id="section-refund">
         <h2>Do You Get Your Cash Bond Money Back?</h2>
-        <p>In many cases, yes.</p>
+        <p>In many cases, cash posted directly with the court may be returned after the required court process, but the result depends on the court record, the posting party, forfeiture issues, and any applicable order.</p>
         <p>
-          If the defendant appears for every court hearing and follows all court-ordered conditions, the cash bond is generally refunded once the case has been completed.
-        </p>
-        <p>
-          However, the refund may not be issued immediately. Depending on the court, it may take several weeks or even months to process the payment after the case is closed.
+          For the deeper refund explanation, read our guide on{' '}
+          <a href="/blog/do-you-get-bail-money-back" onClick={(e) => { e.preventDefault(); navigate('/blog/do-you-get-bail-money-back'); }}>
+            when bail money is returned in Delaware
+          </a>.
         </p>
         <p>If the defendant violates the court&apos;s conditions or fails to appear, part or all of the cash bond may be forfeited.</p>
       </section>

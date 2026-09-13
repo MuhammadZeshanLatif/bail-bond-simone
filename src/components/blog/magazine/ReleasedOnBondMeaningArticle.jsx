@@ -325,13 +325,15 @@ export function ReleasedOnBondMeaningArticle() {
       <section id="section-money-back">
         <h2>When Do You Get Bond Money Back?</h2>
         <p>
-          In Delaware, bond money is generally returned to the person who posted it after the defendant&apos;s trial has
-          concluded, as long as the defendant appears as required and the bond is not forfeited. Delaware Courts explains
-          that once the trial has concluded, bail is returned to the person who posted it.
+          In Delaware, money posted directly with the court follows a different path from a bail bond premium or collateral.
+          Delaware Courts explains that once the trial has concluded, bail is returned to the person who posted it, but
+          forfeiture, orders, and payment type still matter.
         </p>
         <p>
-          The timing can depend on the court process and the facts of the case. If a bail bondsman was used, the fee paid to
-          the bondsman may not be refundable. That fee is different from money posted directly with the court.
+          For the detailed breakdown, read our{' '}
+          <a href="/blog/do-you-get-bail-money-back" onClick={(e) => { e.preventDefault(); navigate('/blog/do-you-get-bail-money-back'); }}>
+            bail money refund guide
+          </a>.
         </p>
       </section>
 

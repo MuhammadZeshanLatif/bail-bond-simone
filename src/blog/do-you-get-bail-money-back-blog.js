@@ -12,7 +12,6 @@ export const BAIL_MONEY_BACK_POST = {
   ogImage: '/images/blog/do-you-get-bail-money-back/do-you-get-bail-money-back-delaware-og.webp',
   flowImage: '/images/blog/do-you-get-bail-money-back/where-bail-money-goes-delaware.webp',
   heroAlt: 'Do You Get Bail Money Back Delaware refund guide by Simone Harris',
-  heroCaption: 'Educational guide; not legal advice or a guarantee of any refund.',
   heroWidth: 1600,
   heroHeight: 1200,
   categoryLabel: 'Bail Costs',

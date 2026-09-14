@@ -23,12 +23,22 @@ export function BailMoneyBackArticle({ navigate }) {
       </p>
 
       <section id="bail-refund-section-1">
-        <h2>Quick Answer</h2>
+        <h2>Do You Get Your Money Back When You Post Bail?</h2>
         <QuickAnswerBox>
           <p>
-            So, <strong>do you get bail money back?</strong> Sometimes, but the answer starts with identifying what kind of
-            payment was made. Cash posted directly with a Delaware court, a bail bond premium, and collateral are three
-            different types of payments.
+            If you use a bail bond agency and pay a premium, that premium is <strong>non-refundable once the bail is posted</strong>.
+            This applies to both secured bail and cash bail handled through a bail bond agency.
+          </p>
+          <p>
+            The premium is the fee paid to the bail bond agency for providing the bail bond service. Once the bail has been
+            posted, you do not get that premium back regardless of the outcome of the case or how long the case lasts.
+          </p>
+          <p>
+            Money paid directly to the court is different. Refund policies and procedures may vary depending on the court and
+            circumstances. Contact the court where the bail was paid for information about refunds and specific requirements.
+          </p>
+          <p>
+            <strong>Bottom line:</strong> Premiums paid to a bail bond agency are non-refundable once the bail is posted.
           </p>
         </QuickAnswerBox>
 
@@ -45,12 +55,12 @@ export function BailMoneyBackArticle({ navigate }) {
               <tr>
                 <td>Cash bail</td>
                 <td>Delaware court</td>
-                <td>May be returned after the required court process, subject to forfeiture, court orders, or applicable financial obligations.</td>
+                <td>Refund rules depend on the court and circumstances. Contact the court where bail was paid for specific requirements.</td>
               </tr>
               <tr>
                 <td>Bail bond premium</td>
-                <td>Bail agent</td>
-                <td>Payment for the bail bond service; separate from a court cash-bail refund.</td>
+                <td>Bail bond agency</td>
+                <td>Non-refundable once the bail is posted, including for secured bail or cash bail handled through an agency.</td>
               </tr>
               <tr>
                 <td>Collateral</td>

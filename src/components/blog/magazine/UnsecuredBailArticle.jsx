@@ -167,7 +167,7 @@ export function UnsecuredBailArticle({ navigate, onContactClick }) {
         />
         <h3>Unsecured Bail vs. Secured Bail</h3>
         <p>
-          The main difference is what must happen before release. Unsecured bail ordinarily requires the defendant's signature but no financial security upfront. Secured bail requires money, property, or another accepted form of security before release. Families dealing with this type of order can review <a href="/services/secured" onClick={(e) => handleNav(e, '/services/secured')}>how secured bail works in Delaware</a> and <a href="/services/surety" onClick={(e) => handleNav(e, '/services/surety')}>Delaware surety bail bond help</a>.
+          The main difference is what must happen before release. Unsecured bail ordinarily requires the defendant's signature but no financial security upfront. Secured bail requires money, property, or another accepted form of security before release. Families dealing with this type of order can review <a href="/services/secured" onClick={(e) => handleNav(e, '/services/secured')}>how secured bail works in Delaware</a>, <a href="/services/surety" onClick={(e) => handleNav(e, '/services/surety')}>Delaware surety bail bond help</a>, and <a href="/blog/what-is-a-surety-bond-jail" onClick={(e) => handleNav(e, '/blog/what-is-a-surety-bond-jail')}>how a surety bond differs from unsecured bail</a>.
         </p>
         <h3>Unsecured Bail vs. Cash-Only Bail</h3>
         <p>

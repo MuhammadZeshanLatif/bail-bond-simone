@@ -47,7 +47,7 @@ export function SecuredVsCashOnlyArticle({ navigate, onContactClick }) {
           Secured bail means that release depends on posting the security required by the court. Depending on the order, that may involve cash, property, or another approved form of security. A family should confirm what the court will accept and who is permitted to post it.
         </p>
         <p>
-          In some cases, a licensed bail bond agent can help with secured bail by posting a surety bond. That does not change the defendant&apos;s duty to attend every court date or the co-signer&apos;s responsibility under the written agreement. Learn more on our <a href="/services/secured" onClick={(event) => handleNav(event, '/services/secured')}>secured bail help in Delaware</a> page.
+          In some cases, a licensed bail bond agent can help with secured bail by posting a surety bond. That does not change the defendant&apos;s duty to attend every court date or the co-signer&apos;s responsibility under the written agreement. Learn more in our guide to <a href="/blog/what-is-a-surety-bond-jail" onClick={(event) => handleNav(event, '/blog/what-is-a-surety-bond-jail')}>surety bonds for jail</a> and on our <a href="/services/secured" onClick={(event) => handleNav(event, '/services/secured')}>secured bail help in Delaware</a> page.
         </p>
         <h3>Example: A Secured Bail Order</h3>
         <p>

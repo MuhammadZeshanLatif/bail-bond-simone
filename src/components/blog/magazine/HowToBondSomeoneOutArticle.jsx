@@ -140,7 +140,11 @@ export function HowToBondSomeoneOutArticle({ navigate, onContactClick }) {
         </p>
 
         <h3>Step 3: Contact a Delaware-Licensed Bail Agent</h3>
-        <p>When a commercial bond may be used, speak with an agent licensed in Delaware. Ask the agent to explain:</p>
+        <p>
+          When a commercial bond may be used, speak with an agent licensed in Delaware. Before signing, review{' '}
+          <a href="/blog/what-is-a-surety-bond-jail" onClick={(e) => handleCta(e, '/blog/what-is-a-surety-bond-jail')}>what a surety bond means in jail</a>{' '}
+          and ask the agent to explain:
+        </p>
         <ul>
           <li>Whether the court-ordered bail type is eligible</li>
           <li>What identification and documents are required</li>

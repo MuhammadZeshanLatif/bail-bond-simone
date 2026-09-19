@@ -117,7 +117,9 @@ export function BailBondCostDelawareArticle({ navigate, onContactClick }) {
         <p>
           For bond-type context, see our pages on{' '}
           <a href="/services/surety" onClick={(e) => handleNav(e, '/services/surety')}>surety bail bonds Delaware</a>{' '}
-          and <a href="/services/secured" onClick={(e) => handleNav(e, '/services/secured')}>secured bail Delaware</a>.
+          and <a href="/services/secured" onClick={(e) => handleNav(e, '/services/secured')}>secured bail Delaware</a>. Our guide to{' '}
+          <a href="/blog/what-is-a-surety-bond-jail" onClick={(e) => handleNav(e, '/blog/what-is-a-surety-bond-jail')}>what a surety bond means in jail</a>{' '}
+          explains the process and signing responsibilities in more detail.
         </p>
       </section>
 

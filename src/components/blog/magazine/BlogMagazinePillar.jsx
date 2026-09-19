@@ -20,6 +20,7 @@ import { DuiBailBondArticle } from './DuiBailBondArticle';
 import { FugitiveFromJusticeArticle } from './FugitiveFromJusticeArticle';
 import { ImmigrationBondsArticle } from './ImmigrationBondsArticle';
 import { BailMoneyBackArticle } from './BailMoneyBackArticle';
+import { SuretyBondJailArticle } from './SuretyBondJailArticle';
 import { LegacyMagazineArticle } from './LegacyMagazineArticle';
 import { MagazineToc } from './MagazineToc';
 import '../../../blog-magazine.css';
@@ -46,6 +47,7 @@ const ARTICLE_MAP = {
   'fugitive-from-justice': FugitiveFromJusticeArticle,
   'immigration-bonds': ImmigrationBondsArticle,
   'bail-money-back': BailMoneyBackArticle,
+  'surety-bond-jail': SuretyBondJailArticle,
 };
 
 const DEFAULT_BLOG_CTA = {

@@ -133,6 +133,7 @@ import { FUGITIVE_POST } from './blog/fugitive-from-justice-blog';
 import { DOMESTIC_VIOLENCE_BAIL_POST } from './blog/domestic-violence-bail-delaware-blog';
 import { IMMIGRATION_BONDS_POST } from './blog/immigration-bonds-delaware-blog';
 import { BAIL_MONEY_BACK_POST } from './blog/do-you-get-bail-money-back-blog';
+import { SURETY_BOND_JAIL_POST } from './blog/surety-bond-jail-delaware-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
 
@@ -1279,6 +1280,17 @@ const SimoneHomePage = () => {
             <h2>Delaware Bail Information</h2>
           </div>
           <div className="blog-grid">
+            <article className="blog-card reveal visible">
+              <a href={`/blog/${SURETY_BOND_JAIL_POST.slug}`} onClick={(e) => { e.preventDefault(); navigate(`/blog/${SURETY_BOND_JAIL_POST.slug}`); }}>
+                <img src={SURETY_BOND_JAIL_POST.thumbnail} alt="" className="blog-card-image" loading="lazy" width="800" height="450" />
+              </a>
+              <div className="blog-card-content">
+                <span className="blog-card-category">{SURETY_BOND_JAIL_POST.categoryLabel}</span>
+                <h4><a href={`/blog/${SURETY_BOND_JAIL_POST.slug}`} onClick={(e) => { e.preventDefault(); navigate(`/blog/${SURETY_BOND_JAIL_POST.slug}`); }}>What Is a Surety Bond in Jail?</a></h4>
+                <p className="blog-card-excerpt">Learn what a surety bond can mean in a Delaware bail case, how it relates to secured bail, and what families should check before signing.</p>
+                <div className="blog-card-meta"><span><i className="far fa-clock me-1"></i>{SURETY_BOND_JAIL_POST.readMin} min read</span><span>September 19, 2026</span></div>
+              </div>
+            </article>
             <article className="blog-card reveal visible">
               <a href={`/blog/${BAIL_MONEY_BACK_POST.slug}`} onClick={(e) => { e.preventDefault(); navigate(`/blog/${BAIL_MONEY_BACK_POST.slug}`); }}>
                 <img src={BAIL_MONEY_BACK_POST.thumbnail} alt="" className="blog-card-image" loading="lazy" width="800" height="450" />
@@ -2528,6 +2540,7 @@ const ServiceDetailPage = ({ serviceKey, navigate }) => {
         { question: 'What should I ask before posting secured bail?', answer: 'Ask about the full bail amount, security required, premium or payment arrangement, collateral, co-signer responsibility, receipts, and missed-court consequences.' }
       ],
       relatedLinks: [
+        { path: '/blog/what-is-a-surety-bond-jail', label: 'what a surety bond means in jail' },
         { path: '/services/surety', label: 'surety bail bonds Delaware' },
         { path: '/blog/how-to-bond-someone-out-of-jail-delaware', label: 'Delaware jail bond guide' },
         { path: '/blog/what-is-unsecured-bail-delaware', label: 'what unsecured bail means in Delaware' },
@@ -2560,6 +2573,7 @@ const ServiceDetailPage = ({ serviceKey, navigate }) => {
         { question: 'Can I start a surety bail bond by phone?', answer: 'Many initial steps can begin by phone using the defendant name, date of birth, bond amount, and basic case details if available.' }
       ],
       relatedLinks: [
+        { path: '/blog/what-is-a-surety-bond-jail', label: 'what a surety bond means in jail' },
         { path: '/services/secured', label: 'secured bail in Delaware' },
         { path: '/services/payment', label: 'bail bond payment plans Delaware' },
         { path: '/blog/what-is-unsecured-bail-delaware', label: 'unsecured bail in Delaware' },
@@ -3285,6 +3299,18 @@ const FAQPage = ({ navigate }) => {
 // BLOG DATA
 // ===============================================================================
 const blogPosts = [
+  {
+    slug: SURETY_BOND_JAIL_POST.slug,
+    title: SURETY_BOND_JAIL_POST.title,
+    excerpt: SURETY_BOND_JAIL_POST.metaDescription,
+    category: SURETY_BOND_JAIL_POST.categoryLabel,
+    readTime: `${SURETY_BOND_JAIL_POST.readMin} min read`,
+    date: SURETY_BOND_JAIL_POST.publishedAt,
+    image: SURETY_BOND_JAIL_POST.thumbnail,
+    heroImage: SURETY_BOND_JAIL_POST.heroImage,
+    isMagazine: true,
+    content: '',
+  },
   {
     slug: BAIL_MONEY_BACK_POST.slug,
     title: BAIL_MONEY_BACK_POST.title,

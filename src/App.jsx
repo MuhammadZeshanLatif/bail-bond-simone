@@ -133,6 +133,7 @@ import { FUGITIVE_POST } from './blog/fugitive-from-justice-blog';
 import { DOMESTIC_VIOLENCE_BAIL_POST } from './blog/domestic-violence-bail-delaware-blog';
 import { IMMIGRATION_BONDS_POST } from './blog/immigration-bonds-delaware-blog';
 import { BAIL_MONEY_BACK_POST } from './blog/do-you-get-bail-money-back-blog';
+import { SURETY_BOND_COST_POST } from './blog/surety-bond-cost-delaware-blog';
 import { SURETY_BOND_JAIL_POST } from './blog/surety-bond-jail-delaware-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
@@ -1280,6 +1281,19 @@ const SimoneHomePage = () => {
             <h2>Delaware Bail Information</h2>
           </div>
           <div className="blog-grid">
+            <article className="blog-card reveal visible">
+              <a href="/blog/how-much-is-a-surety-bond" onClick={(e) => { e.preventDefault(); navigate('/blog/how-much-is-a-surety-bond'); }}>
+                <img src={SURETY_BOND_COST_POST.thumbnail} alt={SURETY_BOND_COST_POST.heroAlt} className="blog-card-image" loading="lazy" width="1536" height="1024" />
+              </a>
+              <div className="blog-card-content">
+                <span className="blog-card-category">Bail Costs</span>
+                <h4><a href="/blog/how-much-is-a-surety-bond" onClick={(e) => { e.preventDefault(); navigate('/blog/how-much-is-a-surety-bond'); }}>How Much Is a Surety Bond in Delaware?</a></h4>
+                <p className="blog-card-excerpt">See how surety bail bond premiums, payment terms and collateral can work under Delaware rules.</p>
+                <div className="blog-card-meta"><span>11 min read</span><span>October 6, 2026</span></div>
+                <a href="/blog/how-much-is-a-surety-bond" onClick={(e) => { e.preventDefault(); navigate('/blog/how-much-is-a-surety-bond'); }}>Read the Cost Guide</a>
+              </div>
+            </article>
+
             <article className="blog-card reveal visible">
               <a href={`/blog/${SURETY_BOND_JAIL_POST.slug}`} onClick={(e) => { e.preventDefault(); navigate(`/blog/${SURETY_BOND_JAIL_POST.slug}`); }}>
                 <img src={SURETY_BOND_JAIL_POST.thumbnail} alt="" className="blog-card-image" loading="lazy" width="800" height="450" />
@@ -3300,6 +3314,18 @@ const FAQPage = ({ navigate }) => {
 // ===============================================================================
 const blogPosts = [
   {
+    slug: SURETY_BOND_COST_POST.slug,
+    title: SURETY_BOND_COST_POST.title,
+    excerpt: SURETY_BOND_COST_POST.excerpt,
+    category: SURETY_BOND_COST_POST.categoryLabel,
+    readTime: `${SURETY_BOND_COST_POST.readMin} min read`,
+    date: SURETY_BOND_COST_POST.publishedAt,
+    image: SURETY_BOND_COST_POST.thumbnail,
+    heroImage: SURETY_BOND_COST_POST.heroImage,
+    isMagazine: true,
+    content: '',
+  },
+  {
     slug: SURETY_BOND_JAIL_POST.slug,
     title: SURETY_BOND_JAIL_POST.title,
     excerpt: SURETY_BOND_JAIL_POST.metaDescription,
@@ -4312,7 +4338,7 @@ const BlogPostPage = ({ slug, navigate }) => {
     magazine ? magazine.metaDescription : post ? post.excerpt : 'The requested blog post could not be found.',
     magazine ? magazine.keywords : 'bail bonds, Delaware bail, Newark Delaware',
     magazine ? magazine.metaTitle : '',
-    magazine ? magazine.metaDescription : '',
+    magazine ? (magazine.ogDescription || magazine.metaDescription) : '',
     magazine ? toAbsoluteUrl(magazine.ogImage || magazine.heroImage) : ''
   );
 
@@ -4370,7 +4396,7 @@ const BlogPostPage = ({ slug, navigate }) => {
       <BlogMagazinePillar
         navigate={navigate}
         magazine={magazine}
-        relatedPosts={blogPosts.filter((p) => p.slug !== canonicalSlug).slice(0, 3)}
+        relatedPosts={blogPosts.filter((p) => p.slug !== canonicalSlug && (canonicalSlug === SURETY_BOND_COST_POST.slug || p.slug !== SURETY_BOND_COST_POST.slug)).slice(0, 3)}
         onContactClick={(e) => {
           e.preventDefault();
           navigate('/contact');

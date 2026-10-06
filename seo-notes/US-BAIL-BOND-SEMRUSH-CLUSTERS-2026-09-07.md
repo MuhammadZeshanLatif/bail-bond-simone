@@ -14,6 +14,8 @@
 
 ## Cluster 1 — Immigration bond: meaning, hearing and payment
 
+**Status:** DONE — implemented at `https://delawarebailbond.com/blog/immigration-bonds-delaware` on 2026-09-09.
+
 **Recommended topic:** *What Is an Immigration Bond? Hearings, Payment and Release Explained*  
 **Primary keyword:** `immigration bonds` — **Volume:** 1.9K — **KD:** 23  
 **Cluster total observed:** 3,280 question volume across 11 questions; use only the relevant rows below.
@@ -104,10 +106,11 @@ Semrush returned high-volume terms, but they did **not** pass the requested KD<3
 
 ## Priority order
 
-1. **Immigration bonds** — strongest volume and question depth; review carefully against any existing immigration-related URL.
-2. **Jail bond vs bail** — 880 volume and KD 21; clean comparison intent.
-3. **Bail bonds payment plans** — lower volume but KD 0–1 and high service relevance.
-4. **Cashless bail** — defer until KD falls below 30 or the strategy explicitly allows a higher KD.
+1. **Jail bond vs bail** — 880 volume and KD 21; clean comparison intent.
+2. **Bail bonds payment plans** — lower volume but KD 0–1 and high service relevance.
+3. **Cashless bail** — defer until KD falls below 30 or the strategy explicitly allows a higher KD.
+
+**Completed:** Immigration bonds — implemented at `https://delawarebailbond.com/blog/immigration-bonds-delaware`.
 
 ## Pre-publish cannibalization checklist
 
@@ -135,7 +138,7 @@ The following is the required working matrix for the additional trend seeds. Eac
 
 | Seed | Candidate blog topic | Primary keyword | Vol. | KD | Secondary/question keywords | Status |
 |---|---|---|---:|---:|---|---|
-| immigration bond | Immigration bond basics | immigration bonds | 1.9K | 23 | what is an immigration bond (110/24); immigration bail bond (880/29) | Approved |
+| immigration bond | Immigration bond basics | immigration bonds | 1.9K | 23 | what is an immigration bond (110/24); immigration bail bond (880/29) | Done — `/blog/immigration-bonds-delaware` |
 | immigration bond | Immigration bond hearing | what is a bond hearing | 880 | 0 | what is a bond hearing in court (110/0); immigration bond hearing (210/27); bond hearings (110/13) | Approved |
 | immigration bond | Posting/payment process | how to pay immigration bond | 110 | 20 | how do you pay bond (110/29); bond payment (320/20) | Approved |
 | immigration bond | Bond refund | bond refund immigration | 110 | 14 | refund timing/eligibility questions | Approved |
@@ -180,7 +183,7 @@ The following is the required working matrix for the additional trend seeds. Eac
 
 | Exact keyword family | Owner URL/cluster | Reuse in current blog? |
 |---|---|---|
-| immigration bonds | Cluster 1 — Immigration bond basics | No |
+| immigration bonds | `/blog/immigration-bonds-delaware` | No |
 | immigration bail bond / immigration bail bonds near me | Cluster 1D — service | No |
 | what is a bond hearing | Cluster 1B — hearing explainer | No |
 | immigration bond hearing | New Immigration Bond Hearing cluster | Yes, as primary only |
@@ -199,11 +202,11 @@ Semrush US result summary: **434 keywords, 147,590 total volume, average KD 14%*
 
 | Blog topic | Primary keyword | Volume | KD | Unique supporting/question keywords | Use |
 |---|---|---:|---:|---|---|
-| Bail-bond process explainer | `how does a bail bond work` | 1.3K | 26 | `how do bail bonds work` (720/23), `how bail bonds work` (480/29), `how does bail and bond work` (480/21) | Main process article |
-| Getting someone released | `how can you bail someone out of jail` | 1.6K | 23 | `how can i bail someone out of jail` (480/17), `how do you bail someone out of jail` (720/13), `how to bail someone out of jail` (1.6K/14) | Step-by-step release guide |
-| Bond payment and return | `bail money do you get it back` | 5.4K | 16 | `do you get bail money back` (5.4K/14), `do you get your bail money back` (2.4K/15), `is bail money returned` (590/12) | Cash-bail refund article; do not use immigration-refund terms |
-| Secured vs unsecured bonds | `unsecured bond` | 880 | 4 | `what is a secured bond` (880/13), `secured vs unsecured bond` (480/2), `unsecured bond meaning` (720/10) | Comparison/definition article |
-| Bail-bond economics | `how does a bail bond make money` | 720 | 28 | `how does a bail bondsman make money` (480/27), `how much do bail bondsman make` (480/12) | Educational article; not a service landing page |
+| Bail-bond process explainer | `how does a bail bond work` | 1.3K | 26 | `how do bail bonds work` (720/23), `how bail bonds work` (480/29), `how does bail and bond work` (480/21) | Done — `/blog/how-bail-bonds-work-in-delaware` |
+| Getting someone released | `how can you bail someone out of jail` | 1.6K | 23 | `how can i bail someone out of jail` (480/17), `how do you bail someone out of jail` (720/13), `how to bail someone out of jail` (1.6K/14) | Done — `/blog/how-to-bond-someone-out-of-jail-delaware` |
+| Bond payment and return | `bail money do you get it back` | 5.4K | 16 | `do you get bail money back` (5.4K/14), `do you get your bail money back` (2.4K/15), `is bail money returned` (590/12) | Done — `/blog/do-you-get-bail-money-back`; do not use immigration-refund terms |
+| Secured vs unsecured bonds | `unsecured bond` | 880 | 4 | `what is a secured bond` (880/13), `secured vs unsecured bond` (480/2), `unsecured bond meaning` (720/10) | Done — `/blog/what-is-unsecured-bail-delaware` and `/blog/secured-bail-vs-cash-only-bail-delaware` |
+| Bail-bond economics | `how does a bail bond make money` | 720 | 28 | `how does a bail bondsman make money` (480/27), `how much do bail bondsman make` (480/12) | Open — educational article; not a service landing page |
 
 **Excluded as duplicates:** `difference between bail and bond` and `jail bond vs bail` belong to Cluster 3; `what does it mean to post a bond` belongs to the immigration/posting cluster; `cash bond` belongs to the cash-bail comparison cluster. Exact duplicates must not be copied into these URLs.
 
@@ -213,12 +216,12 @@ Semrush US summary with Vol 100+ / KD 0–30%: **159 keywords, 44,720 total volu
 
 | Blog topic | Primary keyword | Volume | KD | Unique supporting/question keywords | Use |
 |---|---|---:|---:|---|---|
-| Cash bail definition | `cash bond` | 1.0K | 29 | `cash bond meaning` (320/12), `cash bond means` (170/14), `what is a cash bond` (480/27) | Definition and Delaware process |
+| Cash bail definition | `cash bond` | 1.0K | 29 | `cash bond meaning` (320/12), `cash bond means` (170/14), `what is a cash bond` (480/27) | Done — `/blog/what-is-cash-bond` and `/blog/cash-bond-meaning` |
 | Paying cash bail | `how much do you have to pay for bail` | 210 | 19 | `how much bail do you have to pay` (390/28), `what percentage of bail do you pay` (210/20), `what percent of bail do you pay` (170/18) | Cost/payment explainer |
 | Cash bail payment methods | `can you pay bail with a credit card` | 170 | 14 | `how does a cash bond work` (170/21), `how do you post bail` (210/29) | Payment-method FAQ |
 | Cashless bail meaning | `what is a cashless bail` | 320 | 28 | `cashless bond` (170/24), `no bail meaning` (170/11) | Explain policy term; avoid state-policy claims without sourcing |
-| Bail-money destination | `what happens to bail money` | 320 | 11 | `where does bond money go` (390/9), `what happens with the bail money` (260/20) | Refund/handling section |
-| Release logistics | `can you bail someone out of jail` | 140 | 8 | `can you bail someone out of jail on the weekend` (140/0), `how to post bail for someone` (210/19) | Practical FAQ; keep separate from general bonds explainer |
+| Bail-money destination | `what happens to bail money` | 320 | 11 | `where does bond money go` (390/9), `what happens with the bail money` (260/20) | Done — covered in `/blog/do-you-get-bail-money-back` |
+| Release logistics | `can you bail someone out of jail` | 140 | 8 | `can you bail someone out of jail on the weekend` (140/0), `how to post bail for someone` (210/19) | Partial — general release covered at `/blog/how-to-bond-someone-out-of-jail-delaware`; weekend angle still open |
 
 **Not reused:** `how does a bail bond work`, `how do bail bonds work`, and the generic jail-release variants are already owned by the How Do Bail Bonds Work cluster. State-specific Illinois/Michigan/California rows and KD 30 rows are excluded.
 
@@ -228,8 +231,8 @@ Semrush US summary with Vol 100+ / KD 0–30%: **566 keywords, 159,910 total vol
 
 | Blog topic | Primary keyword | Volume | KD | Supporting keywords | Use |
 |---|---|---:|---:|---|---|
-| Surety bond in jail explained | `what is a surety bond jail` | 1.9K | 3 | `whats a surety bond in jail` (880/10), `what is a surety bond for jail` (1.3K/8) | Jail-bond education |
-| Surety bond cost | `how much is a surety bond` | 1.6K | 3 | `surety bond cost` (1.0K/22), `how much does a surety bond cost` (880/15), `surety bond price` (480/23) | Cost explainer |
+| Surety bond in jail explained | `what is a surety bond jail` | 1.9K | 3 | `whats a surety bond in jail` (880/10), `what is a surety bond for jail` (1.3K/8) | Done — `/blog/what-is-a-surety-bond-jail` |
+| Surety bond cost | `how much is a surety bond` | 1.6K | 3 | `surety bond cost` (1.0K/22), `how much does a surety bond cost` (880/15), `surety bond price` (480/23) | Done — `/blog/how-much-is-a-surety-bond`; cost article implemented with company 10% premium and minimum 5% before posting |
 | Surety bond meaning | `what does surety bond mean` | 720 | 24 | `whats a surety bond` (390/29), `suretyship` (720/22) | Definition; keep separate from jail-specific page |
 | Cash surety bond | `what is a cash surety bond` | 590 | 0 | `cash surety bond` (1.0K/4) | Comparison/FAQ |
 | Buying a surety bond | `how to purchase a surety bond` | 720 | 20 | `buy surety bond` (880/27), `how to get bonded` (590/25) | Process; only if service scope supports it |
@@ -286,11 +289,11 @@ Semrush US summary with KD 0–30%: **64 keywords, total volume 8,680, average K
 
 | Intent block | Primary keyword | Volume | KD | Supporting keywords | Action |
 |---|---|---:|---:|---|---|
-| DUI bail amount | `how much is a bail for dui` | 590 | 0 | `how much is bail for a dui` (590/0), `how much is bail on a dui` (590/2), `dui bail amount` (170/0), `average bail amount for dui` (50/0) | Existing DUI article; do not create duplicate |
-| DUI/DWI cost | `how much is bail for drunk driving` | 480 | 3 | `how much is bail for dwi` (480/0), `dui bail cost` (140/0), `dui bond cost` (70/1), `how much does bail cost` (170/3) | Existing DUI article; use as sections/FAQs |
-| DUI bail bond service | `dui bail bonds` | 390 | 6 | `bail bonds for dui` (70/2), `dui bail bond` (70/0), `bond for dui` (110/1), `dui bond amount` (170/0) | Existing service page/article; internal-link only |
-| First/repeat DUI | `how much is bail for a first-time dui` | 140 | 0 | `how much is bail for 2nd dui` (50/0), `normal bail for dui` (50/0) | Add FAQ section, not a new URL |
-| DUI release process | `bail after a dui arrest` | 70 | 0 | `what is bail for a dui` (40/0), `how do you post bail` (210/29) | Add process section; avoid generic-process duplication |
+| DUI bail amount | `how much is a bail for dui` | 590 | 0 | `how much is bail for a dui` (590/0), `how much is bail on a dui` (590/2), `dui bail amount` (170/0), `average bail amount for dui` (50/0) | Done — `/blog/dui-bail-bond-cost-delaware`; do not create duplicate |
+| DUI/DWI cost | `how much is bail for drunk driving` | 480 | 3 | `how much is bail for dwi` (480/0), `dui bail cost` (140/0), `dui bond cost` (70/1), `how much does bail cost` (170/3) | Done — `/blog/dui-bail-bond-cost-delaware` |
+| DUI bail bond service | `dui bail bonds` | 390 | 6 | `bail bonds for dui` (70/2), `dui bail bond` (70/0), `bond for dui` (110/1), `dui bond amount` (170/0) | Done — existing DUI article/service coverage; internal-link only |
+| First/repeat DUI | `how much is bail for a first-time dui` | 140 | 0 | `how much is bail for 2nd dui` (50/0), `normal bail for dui` (50/0) | Done — FAQ/supporting angle in `/blog/dui-bail-bond-cost-delaware`; no new URL |
+| DUI release process | `bail after a dui arrest` | 70 | 0 | `what is bail for a dui` (40/0), `how do you post bail` (210/29) | Done — process angle covered in `/blog/dui-bail-bond-cost-delaware`; avoid generic-process duplication |
 
 **Cannibalization decision:** Keep all DUI amount/cost terms on the existing DUI article unless a future content audit proves a distinct search intent and a new canonical is approved. Exclude Texas, Georgia, Florida, North Carolina and other state-specific rows from the Delaware site plan.
 
@@ -311,7 +314,7 @@ These are separate intents and can be separate URLs. Do not put all five titles 
 | Article | Unique primary keyword | Volume | KD | Supporting keywords | Intent |
 |---|---|---:|---:|---|---|
 | Cash bail vs bail bond | `cash bond vs bail` | 260 | 14 | `cash bail vs surety bond` (seed; re-check metric), `cash bond meaning` (320/12) | Comparison |
-| Cash bail refund rules | `do you get bail money back` | 5.4K | 14 | `bail money do you get it back` (5.4K/16), `do you get your bail money back` (2.4K/15) | Refund |
+| Cash bail refund rules | `do you get bail money back` | 5.4K | 14 | `bail money do you get it back` (5.4K/16), `do you get your bail money back` (2.4K/15) | Done — `/blog/do-you-get-bail-money-back` |
 | Posting bail for someone | `how to post bail for someone` | 210 | 19 | `how do i bail someone out of jail` (480/18), `how do you bond someone out of jail` (320/12) | Immediate process |
 | Weekend jail release | `can you bail someone out of jail on the weekend` | 140 | 0 | `can you bail someone out of jail` (140/8), `can you get bailed out of jail on a weekend` (140/0) | Timing/logistics |
 | Cash bail percentage | `what percentage of bail do you pay` | 210 | 20 | `what percent of bail do you pay` (170/18), `how much of a bond do you pay` (320/23) | Cost |
@@ -325,9 +328,9 @@ Semrush Keyword Magic Tool, United States database, All keywords, KD 0–30%: **
 
 | Blog topic | Primary keyword | Volume | KD | Supporting keywords (volume/KD) | Use / cannibalization action |
 |---|---|---:|---:|---|---|
-| Domestic-violence bail cost guide | `how much is bail for domestic violence` | 320 | 0 | `how much is bail for domestic abuse` (390/6), `how much is bail for domestic assault` (390/0), `how much is a domestic violence bail` (260/0), `how much is bail on domestic violence` (260/0), `domestic violence bail amount` (140/0), `bail amount for domestic violence` (110/2), `how much is the bail for domestic violence` (110/0), `how much is domestic violence bail` (40/4), `how much is bail for assault on a female` (40/0) | New DV-specific cost article; keep all amount variants here. |
+| Domestic-violence bail cost guide | `how much is bail for domestic violence` | 320 | 0 | `how much is bail for domestic abuse` (390/6), `how much is bail for domestic assault` (390/0), `how much is a domestic violence bail` (260/0), `how much is bail on domestic violence` (260/0), `domestic violence bail amount` (140/0), `bail amount for domestic violence` (110/2), `how much is the bail for domestic violence` (110/0), `how much is domestic violence bail` (40/4), `how much is bail for assault on a female` (40/0) | Done — `/blog/how-much-is-bail-for-domestic-violence-delaware`; keep all amount variants here. |
 | Domestic-violence bail bonds | `domestic violence bail bonds` | 320 | 5 | `domestic violence bail bond` (re-check), `domestic violence bond` (170/10), `bond for domestic violence` (110/8), `bail bonds for domestic violence` (90/1), `domestic violence bondsman` (40/0), `affordable domestic violence bail bonds` (50/0), `24 hour domestic violence bail bonds` (40/0), `dv bonds` (50/0) | Commercial/service article. Do not use generic `bail bonds` or `how do bail bonds work` as primary; those remain with existing owners. |
-| Domestic-violence release conditions FAQ | *(no separate primary)* | — | — | `domestic abuse bail` (110/20), `domestic violence bail` (50/10), `domestic violence bond amount` (110/0), `how much is bond for domestic violence` (320/6), `how much is a bond for domestic violence` (170/0), `how much is a domestic violence bond` (170/0), `what is the bond for domestic violence` (40/0), `bond for domestic violence` (110/8), `stay away from pw as a condition of bond` (50/3) | Merged into the cost article as FAQ/conditions section; no separate URL to prevent cannibalization. |
+| Domestic-violence release conditions FAQ | *(no separate primary)* | — | — | `domestic abuse bail` (110/20), `domestic violence bail` (50/10), `domestic violence bond amount` (110/0), `how much is bond for domestic violence` (320/6), `how much is a bond for domestic violence` (170/0), `how much is a domestic violence bond` (170/0), `what is the bond for domestic violence` (40/0), `bond for domestic violence` (110/8), `stay away from pw as a condition of bond` (50/3) | Done — merged into `/blog/how-much-is-bail-for-domestic-violence-delaware`; no separate URL to prevent cannibalization. |
 
 ### Rows excluded from the Delaware/US plan
 

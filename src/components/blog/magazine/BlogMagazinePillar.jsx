@@ -20,12 +20,14 @@ import { DuiBailBondArticle } from './DuiBailBondArticle';
 import { FugitiveFromJusticeArticle } from './FugitiveFromJusticeArticle';
 import { ImmigrationBondsArticle } from './ImmigrationBondsArticle';
 import { BailMoneyBackArticle } from './BailMoneyBackArticle';
+import { SuretyBondCostArticle } from './SuretyBondCostArticle';
 import { SuretyBondJailArticle } from './SuretyBondJailArticle';
 import { LegacyMagazineArticle } from './LegacyMagazineArticle';
 import { MagazineToc } from './MagazineToc';
 import '../../../blog-magazine.css';
 
 const ARTICLE_MAP = {
+  'surety-bond-cost': SuretyBondCostArticle,
   'how-bail-bonds-work': BailBondGuideArticle,
   'bail-bond-company': BailBondCompanyArticle,
   'released-on-bail': ReleasedOnBailArticle,

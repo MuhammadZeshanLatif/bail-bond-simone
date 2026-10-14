@@ -311,8 +311,10 @@ import { IMMIGRATION_BONDS_POST } from './immigration-bonds-delaware-blog';
 import { BAIL_MONEY_BACK_POST } from './do-you-get-bail-money-back-blog';
 import { SURETY_BOND_COST_POST } from './surety-bond-cost-delaware-blog';
 import { SURETY_BOND_JAIL_POST } from './surety-bond-jail-delaware-blog';
+import { PAYMENT_PLANS_POST } from './bail-bond-payment-plans-delaware-blog';
 
 export const MAGAZINE_POSTS = {
+  [PAYMENT_PLANS_POST.slug]: PAYMENT_PLANS_POST,
   [SURETY_BOND_COST_POST.slug]: SURETY_BOND_COST_POST,
   [SURETY_BOND_JAIL_POST.slug]: SURETY_BOND_JAIL_POST,
   [BAIL_MONEY_BACK_POST.slug]: BAIL_MONEY_BACK_POST,

@@ -411,6 +411,11 @@ export const SURETY_BOND_COST_BLOCKS = [
     "text": "A Way to Freedom Bail Bonds publishes information about payment options; availability and terms should be confirmed for the specific situation."
   },
   {
+    "style": "",
+    "type": "p",
+    "text": "For the full setup, examples, and co-signer questions, read how bail bond payment plans work."
+  },
+  {
     "style": "Heading1",
     "type": "p",
     "text": "Is the Surety Bond Premium Refundable?",

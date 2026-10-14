@@ -63,6 +63,8 @@ Supporting: `immigration bail bonds near me` (590, KD 21) only when the page cle
 
 ## Cluster 2 — Bail bond payment plans
 
+**Status:** DONE — implemented at `/blog/how-do-bail-bond-payment-plans-work` on 2026-10-15 (covers Cluster 2 and 2A as one URL). Hero and 2 infographics generated with ChatGPT and saved in `public/images/blog/how-do-bail-bond-payment-plans-work/` (prompts in `seo-notes/drafts/how-do-bail-bond-payment-plans-work-image-prompts.md`).
+
 **Recommended topic:** *Do Bail Bonds Offer Payment Plans? Costs, Eligibility and How It Works*  
 **Primary keyword:** `bail bonds payment plans` — **Volume:** 170 — **KD:** 0  
 
@@ -83,6 +85,8 @@ Supporting: `immigration bail bonds near me` (590, KD 21) only when the page cle
 Supporting: `bail bond payment plans` (140, KD 0), `bail bonds payment plan` (70, KD 0), and `bail bonds that do payment plans` (70, KD 0). These are one intent and should remain one URL.
 
 ## Cluster 3 — Jail bond vs bail (education)
+
+**Status:** DONE — covered at `https://delawarebailbond.com/blog/bail-vs-bond-delaware` (keywords include `jail bond vs bail`, `difference between bail and bond`). Do not create a separate URL. Marked 2026-10-15.
 
 **Recommended topic:** *Jail Bond vs Bail: What Is the Difference?*  
 **Primary keyword:** `jail bond vs bail` — **Volume:** 880 — **KD:** 21  
@@ -106,8 +110,8 @@ Semrush returned high-volume terms, but they did **not** pass the requested KD<3
 
 ## Priority order
 
-1. **Jail bond vs bail** — 880 volume and KD 21; clean comparison intent.
-2. **Bail bonds payment plans** — lower volume but KD 0–1 and high service relevance.
+1. **Jail bond vs bail** — 880 volume and KD 21; clean comparison intent. **DONE** — `/blog/bail-vs-bond-delaware`.
+2. **Bail bonds payment plans** — lower volume but KD 0–1 and high service relevance. **DONE** — `/blog/how-do-bail-bond-payment-plans-work`.
 3. **Cashless bail** — defer until KD falls below 30 or the strategy explicitly allows a higher KD.
 
 **Completed:** Immigration bonds — implemented at `https://delawarebailbond.com/blog/immigration-bonds-delaware`.
@@ -190,8 +194,8 @@ The following is the required working matrix for the additional trend seeds. Eac
 | how to pay immigration bond / pay immigration bond | Cluster 1A — payment | No |
 | bond refund immigration | Cluster 1C — refund | No |
 | how to post bond / post bond / posting bond | Cluster 1 — posting process | No |
-| bail bonds payment plans variants | Cluster 2 — payment plans | No |
-| jail bond vs bail | Cluster 3 — comparison | No |
+| bail bonds payment plans variants | `/blog/how-do-bail-bond-payment-plans-work` (informational); `/services/payment` (commercial, `bail bond payment plans Delaware`) | No |
+| jail bond vs bail | `/blog/bail-vs-bond-delaware` (Cluster 3 — done) | No |
 | bond letter / Form I-286 / I-352 | ICE Bond forms cluster | No |
 
 Before drafting any new article, compare its proposed primary and secondary list against this registry. A close synonym can be used naturally only when it does not become another page's primary intent; exact duplicates are prohibited.
@@ -301,11 +305,11 @@ Semrush US summary with KD 0–30%: **64 keywords, total volume 8,680, average K
 
 | Article | Unique primary keyword | Volume | KD | Supporting keywords | Intent |
 |---|---|---:|---:|---|---|
-| Bail-bond application steps | `how to get a bail bond` | Re-check | Re-check | `how do i post bail` (170/26), `how to post bail` (260/26) | Process; approve only after exact row is visible |
+| Bail-bond application steps | `how to get a bail bond` | Re-check | Re-check | `how do i post bail` (170/26), `how to post bail` (260/26) | Done — covered at `/blog/bail-bond-process-step-by-step`; no new URL |
 | Bail-bond jail release timing | `how long does it take to get out after posting bail` | Re-check | Re-check | `how long can you be held without bond` (320/3), `release on bond` (140/11) | Timing; approve only after exact row is visible |
-| Bail-bond premium explanation | `how much of a bond do you have to pay` | 480 | 22 | `how much bail do you have to pay` (390/28), `how much do you have to pay for bail` (210/19) | Cost |
+| Bail-bond premium explanation | `how much of a bond do you have to pay` | 480 | 22 | `how much bail do you have to pay` (390/28), `how much do you have to pay for bail` (210/19) | Done — covered at `/blog/how-much-does-a-bail-bond-cost-in-delaware` |
 | Bail-bond co-signer basics | `what does a bail bondsman do` | 170 | 24 | `how does a bondsman work` (720/23), `how does bail bondsman work` (320/25) | Role/education |
-| Bail-bond money-back questions | `do you get your bond money back` | 480 | 16 | `do you get bond money back` (2.4K/7), `is bail money returned` (590/12) | Refund; do not reuse immigration refund terms |
+| Bail-bond money-back questions | `do you get your bond money back` | 480 | 16 | `do you get bond money back` (2.4K/7), `is bail money returned` (590/12) | Done — covered at `/blog/do-you-get-bail-money-back` |
 
 These are separate intents and can be separate URLs. Do not put all five titles under the original explainer URL.
 
@@ -313,7 +317,7 @@ These are separate intents and can be separate URLs. Do not put all five titles 
 
 | Article | Unique primary keyword | Volume | KD | Supporting keywords | Intent |
 |---|---|---:|---:|---|---|
-| Cash bail vs bail bond | `cash bond vs bail` | 260 | 14 | `cash bail vs surety bond` (seed; re-check metric), `cash bond meaning` (320/12) | Comparison |
+| Cash bail vs bail bond | `cash bond vs bail` | 260 | 14 | `cash bail vs surety bond` (seed; re-check metric), `cash bond meaning` (320/12) | Done — covered at `/blog/what-is-cash-bond` (cash bond vs bail bond) and `/blog/bail-vs-bond-delaware` |
 | Cash bail refund rules | `do you get bail money back` | 5.4K | 14 | `bail money do you get it back` (5.4K/16), `do you get your bail money back` (2.4K/15) | Done — `/blog/do-you-get-bail-money-back` |
 | Posting bail for someone | `how to post bail for someone` | 210 | 19 | `how do i bail someone out of jail` (480/18), `how do you bond someone out of jail` (320/12) | Immediate process |
 | Weekend jail release | `can you bail someone out of jail on the weekend` | 140 | 0 | `can you bail someone out of jail` (140/8), `can you get bailed out of jail on a weekend` (140/0) | Timing/logistics |
@@ -464,3 +468,219 @@ Keep all “how much is bail…” domestic-violence variants on one canonical a
 ### Claims requiring verification before drafting
 
 Verify the current Delaware court/bail-setting procedure, any applicable hold or hearing rule, surety-premium limits, refund/collateral wording, firearm/no-contact requirements, and the exact live URLs for court, contact, FAQ, and existing internal pages. Do not publish these as facts until verified.
+
+## Step 2 — US live SERP research: Bail Bonds Payment Plans
+
+Query: `bail bonds payment plans` (Google US, checked 2026-10-15). The SERP is almost entirely bail-agency pages: one local service page, payment-option pages, and short agency blogs. No government, legal-publisher, or large-media article ranks. A local pack (Metro Bail Bonds) and a People Also Ask box appeared; an AI Overview could not be verified. `actionplusbb.com` (loan/financing products), `acmebail.com`, and `justbailbond.com` were skipped as weak or off-intent.
+
+**People Also Ask:** Does bail bondsman take payments? · How much does a $30,000 bond cost? · Can you make monthly payments on a bond? · How much does a $1000 bail bond cost?
+
+| # | URL / title | Intent and angle | ~Words / freshness / schema | Strengths | Missing value to beat |
+|---|---|---|---|---|---|
+| 1 | [A Better Bail Bond — Payment-Plans](https://abetterbailbond.net/payment-plans) | Transactional Houston service page; co-signer pays premium over agreed time; some serious charges excluded. | ~350 body; no date; no schema/FAQ | Ranks #1; honest note that some charges are not eligible. | Thin; no numbers, terms, or steps; multiple H1s; Texas-only. |
+| 2 | [AA Professional Bail Bonding — Payment Options & Plans](https://gabailbonding.com) | Payment-method list (cards, PayPal, Zelle, Cash App, checks). | Short list page | Answers "how can I pay" quickly. | Not a payment-plan explainer; Georgia-only; no eligibility or risk info. |
+| 3 | [Metro Bail Bonds — Flexible Payment Plans: How They Work](https://www.metrobailbondsmn.com/blog/payment-plans) | Commercial-informational MN blog: 10% premium, 3–5% initial payment, 120-day/1-year terms, weekly/bi-weekly/monthly, "interest-free", missed-payment consequences. | ~900; "Apr 26, 2026" in SERP; no schema | Concrete numbers, $10,000 worked example, co-signer liability, promissory note named. | Keyword stuffing; inconsistent % claims; H4-only structure; Minnesota terms; no FAQ schema. |
+| 4 | [Bail Hotline — How Bail Bond Payment Plans Work in California](https://mybailhotline.com/2026/05/bail-bond-payment-plans/) | Deep informational guide: setup, schedules, records, changes, case ending before balance paid, examples, 8 FAQs, sources. | ~3,000+; modified 2026-09-27; heavy Organization/Service/Person schema | Strongest page: full lifecycle, FAQ, sources, author/credential schema. | California-only; long and abstract; few concrete numbers; no plan-type table. |
+| 5 | [Affordable Bail Bonds Phoenix — Bail Bonds with Payment Plans](https://affordablebailbondsphoenix.com/understanding-bail-bonds-with-payment-plans-options-for-phoenix-families-in-crisis/) | Family guide: down payment below 10%, 30/60/90-day terms, questions to ask, charges where plans help, documents. | ~800; 2025-06-06; Article + Breadcrumb + LocalBusiness | Simple; useful "what to ask" and "what to bring" lists. | Section titles are not real headings (only H1); no risks or contract details; Arizona-only. |
+| 6 (supplemental) | [Mike Snapp — Understanding and Setting Up Bail Bond Payment Plans](https://www.mikesnappbailbonds.com/blog/2023/understanding-and-setting-up-bail-bond-payment-plans.html) | Short Orlando blog: 10–20% down, autopay, read the contract. | ~700; 2023-02-16; BlogPosting + Breadcrumb | Simple definition. | Outdated; vague claims about interest and "insurance"; no numbers. |
+
+### Delaware SERP check (`bail bonds payment plans delaware`)
+
+Results: Delaware Courts bail help page, thbailbondagency.com, 1stchoicebail.com (home + `/bail-cost`), newcastlecobailbonds.com, **delawarebailbond.com homepage (#5)**, Yelp, Delaware Courts CCP bail Q&A. No Delaware result is a dedicated payment-plan article. 1st Choice `/bail-cost` (~500 words, no date) says the Delaware fee is 10% set by the Department of Insurance and gives only one generic payment-plan line.
+
+### SERP requirements for this article
+
+Answer "yes, many agencies offer plans, but the full premium is still owed" in the first 60 words. Separate court bail amount, 10% premium, down payment, and remaining balance with a Delaware worked example (verify the current Delaware premium/minimum-down rule first). Explain eligibility (co-signer, income, charge type, collateral), the written agreement, and missed-payment consequences. Answer the four PAA questions (including $1,000 and $30,000 examples). Add a "questions to ask before signing" checklist, a documents list, FAQ schema, a real date, and Delaware sourcing. Depth target ≈1,800–2,300 words: deeper than the short agency pages, more concrete and local than Bail Hotline.
+
+## Step 3 — Competitor headings and proposed outline: Bail Bonds Payment Plans
+
+Headings extracted from live HTML on 2026-10-15 (navigation, sidebar, office-list and footer headings removed).
+
+**1. abetterbailbond.net/payment-plans**
+- H1: Payment-Plans
+- H1: Bail Bond Payment Plans – Affordable Payment Plans By A Better Bail Bond
+- H1: Bail Bond Payment Plans 24/7 – A Better Bail Bond
+- H2: Understanding the Payment Plan
+- H2: Payment Plans Not Available for All Criminal Charges
+- H3: Tailored Solutions
+- H3: Personalized Assistance
+- H4: For more information about our bail bond payment plans or to initiate the process, please contact A Better Bail Bond at (713) 224-8400 or (713) 635-8400.
+
+**2. gabailbonding.com/bonds/payment-options/** (~90 words)
+- H1: PAYMENT OPTIONS
+
+**3. metrobailbondsmn.com/blog/payment-plans**
+- H1: Flexible Payment Plans for Bail Bonds at Metro Bail Bonds: How They Work
+- H4: How Bail Bond Payment Plans Work
+- H4: Making Payments on Your Bail Bond
+- H4: What happens if I miss a payment?
+
+**4. mybailhotline.com/2026/05/bail-bond-payment-plans/**
+- H1: How Bail Bond Payment Plans Work in California
+- H2: A Payment Plan at a Glance
+- H2: What a Bail Bond Payment Plan Covers
+- H2: How to Set Up an Approved Plan
+  - H3: Confirm the person, transaction and current requirements
+  - H3: Describe the resources that are actually available
+  - H3: Obtain the approved terms in writing
+  - H3: Confirm the requirements before posting
+- H2: Make the Payment Schedule Clear
+- H2: A Payment Method Is One Part of the Plan
+- H2: Keep a Simple Payment Record
+- H2: When You Need to Change an Arrangement
+  - H3: A due date or available amount changes
+  - H3: The card, bank account or payer changes
+  - H3: Contact information changes
+- H2: What Costs Should the Written Plan Explain?
+- H2: When the Case Ends or the Payment Plan Is Complete
+  - H3: The case may finish before the agreed balance is paid
+  - H3: Continuing installments are different from a renewal premium
+  - H3: Confirm what the final payment completes
+- H2: Two Everyday Examples
+- H2: How Bail Hotline Can Help (H3: Build an approved plan around the actual transaction; Use Financial Services for the account's next step; Support beyond the payment schedule)
+- H2: Frequently Asked Questions (H3: What amount must be paid before a bond is posted?; Is a payment plan approved automatically when a bond is discussed?; Is requesting an online payment link the same as making a payment?; Can several relatives contribute using different methods?; Can the schedule change after release?; What if I do not have the transaction ID?; Does dismissal of the case erase the remaining premium balance?; What should I keep after the final installment?)
+- H2: Why We Publish This
+- H2: Sources and Further Reading
+
+**5. affordablebailbondsphoenix.com/understanding-bail-bonds-with-payment-plans-options-for-phoenix-families-in-crisis/**
+- H1: UNDERSTANDING BAIL BONDS WITH PAYMENT PLANS: OPTIONS FOR PHOENIX FAMILIES IN CRISIS
+- (Visual subheads only, not heading tags: Why Payment Plans for Bail Bonds Are So Important in Phoenix; How Bail Bond Payment Plans Work; What to Ask When Choosing a Bail Bond Company in Phoenix; Situations Where Payment Plans Make the Most Difference; How to Apply for a Bail Bond Payment Plan in Phoenix; Conclusion: Flexible Bail Bonds Offer Peace of Mind)
+
+**6. mikesnappbailbonds.com (supplemental)**
+- H1: Understanding and Setting Up Bail Bond Payment Plans
+- H2: What Is A Payment Plan?
+- H2: Requirements For Payment Plans
+- H2: Important Things To Know About Payment Plans
+
+### Proposed improved outline
+
+Delaware facts to use (already published on-site, re-verify in QA): 18 Del. C. § 4347 premium range 5%–10% for bonds over $1,000, filed with the Delaware Department of Insurance; A Way to Freedom charges 10% total, at least 5% collected before posting.
+
+- H1: Bail Bonds Payment Plans in Delaware: How They Work, What You Pay, and Who Qualifies — *topic shared with competitors; Delaware + cost + eligibility framing is new*
+- H2: Quick answer: do bail bonds offer payment plans? **[NEW - NOT FROM COMPETITORS]** — 40–60 word AEO answer for featured snippets/AI answers.
+- H2: What a payment plan covers: bail amount vs premium vs down payment — *from Bail Hotline "What a Bail Bond Payment Plan Covers"; three-way split is new*
+  - H3: Delaware's premium rule and the minimum due before posting **[NEW - NOT FROM COMPETITORS]** — no competitor is Delaware-specific; uses § 4347.
+- H2: How bail bond payment plans work, step by step — *from Metro / Bail Hotline*
+  - H3: Step 1: Confirm the bail amount and bond type — *from Bail Hotline "Confirm the person…"*
+  - H3: Step 2: Explain what you can pay now and later — *from Bail Hotline "Describe the resources…"*
+  - H3: Step 3: Sign the indemnity agreement and written schedule — *from Bail Hotline "Obtain the approved terms in writing"*
+  - H3: Step 4: Pay the amount due before posting **[NEW - NOT FROM COMPETITORS]** — ties to Delaware 5% minimum.
+  - H3: Step 5: Pay the balance on schedule — *from Metro "Making Payments on Your Bail Bond"*
+- H2: Payment plan examples: $1,000, $10,000, and $30,000 bail **[NEW - NOT FROM COMPETITORS]** — table answering two PAA questions; link to cost guide for deeper cost detail.
+- H2: Who qualifies for a bail bond payment plan? — *from Mike Snapp "Requirements For Payment Plans"*
+  - H3: What a co-signer agrees to **[NEW - NOT FROM COMPETITORS]** — co-signer liability is mentioned in body copy only by Metro.
+  - H3: When collateral may be requested **[NEW - NOT FROM COMPETITORS]**
+  - H3: Cases where a plan may not be offered — *from A Better "Payment Plans Not Available for All Criminal Charges"*; covers cash-only bail, which a bondsman cannot finance.
+- H2: What to bring when you set up a plan — *Phoenix subhead (not a heading tag there)*
+- H2: What happens if you miss a payment? — *from Metro*
+  - H3: A missed payment vs a missed court date **[NEW - NOT FROM COMPETITORS]** — separates the contract risk from the court risk.
+- H2: What happens if the case ends before the plan is paid off? — *from Bail Hotline "When the Case Ends…"*
+- H2: Payment plan vs other ways to cover bail **[NEW - NOT FROM COMPETITORS]** — comparison table: paying full cash bail, unsecured bail, card payment, personal loan, payment plan.
+- H2: Questions to ask before you sign — *Phoenix subhead "What to Ask…"; Delaware checklist and red-flag note (rates below/above the filed rate) are new*
+- H2: Bail bond payment plan FAQs — *Bail Hotline FAQ format; questions chosen from PAA*
+  - H3: Do bail bondsmen take payments? — PAA
+  - H3: Can you make monthly payments on a bond? — PAA
+  - H3: How much does a $1,000 bail bond cost? — PAA
+  - H3: How much does a $30,000 bond cost? — PAA
+  - H3: Do bail bond payment plans charge interest? **[NEW - NOT FROM COMPETITORS]**
+  - H3: Do bail bonds that do payment plans check credit? **[NEW - NOT FROM COMPETITORS]** — covers the `bail bonds that do payment plans` variant.
+  - H3: Is the premium refunded if charges are dropped? — *from Bail Hotline "Does dismissal… erase…"*
+- H2: Get help setting up a payment plan in Delaware **[NEW - NOT FROM COMPETITORS]** — restrained CTA after the useful content.
+
+**Keyword placement:** `bail bonds payment plans` in H1, first 100 words, meta. Variants `bail bond payment plans`, `payment plan bail bonds`, `bail bonds payment plan`, and `bail bonds that do payment plans` go once each in H2/H3/body, no stuffing.
+
+**Cannibalization guard:** The examples table stays short and links to `/blog/how-much-does-a-bail-bond-cost-in-delaware` and `/blog/how-much-is-a-surety-bond`. The refund FAQ links to `/blog/do-you-get-bail-money-back`; it does not use refund keywords as headings.
+
+**Revision after site check (2026-10-15):** `/services/payment` already targets `bail bond payment plans Delaware` (commercial service page). To avoid cannibalization the blog takes the informational "how do they work" angle (Cluster 2A wording). Final H1: *How Do Bail Bond Payment Plans Work? A Delaware Guide to Down Payments, Terms, and Eligibility*. Slug: `/blog/how-do-bail-bond-payment-plans-work`. The service page stays the commercial owner; the blog and service page link to each other.
+
+## Step 4 — Gap and outranking strategy: Bail Bond Payment Plans
+
+### Gaps vs the current SERP
+
+1. **Topic/entity gap:** No ranking page cites a statute. Delaware's 18 Del. C. § 4347 (verified 2026-10-15) gives exact rules: total filed surety premium 5%–10% on bonds over $1,000; at least 5% must be received before posting; a written contract signed by the parties is required; unfiled administrative/service fees are unlawful. § 4347(f): cash bail through a property bail agent costs 20%–30% with at least 20% upfront. § 4348: collateral must be reasonable and receipted. § 4341: agents keep premium and collateral receipts.
+2. **Example gap:** Only Metro gives one example. Add a $1,000 / $5,000 / $10,000 / $30,000 table (PAA asks for $1,000 and $30,000).
+3. **Freshness gap:** Ranking pages date from 2023 to 2026, and two show no date. Publish with a visible date and "last reviewed".
+4. **E-E-A-T gap:** Only Bail Hotline shows a named expert. Use Simone Harris as author with the site's existing licensed-agent byline, cite the statute, and add a legal-information disclaimer.
+5. **UX gap:** Competitors have weak heading structure (multiple H1s, H4-only, no tags). Use a clean H2/H3 tree, a TOC, a quick-answer box, tables, a checklist, and FAQ schema.
+6. **Risk-clarity gap:** Competitors blur missed payments and missed court dates. Separate the contract risk from the court/forfeiture risk.
+7. **Conversion gap:** Give a calm CTA to `/services/payment` and `/contact` after the useful content, not before.
+
+### Realistic ranking assessment
+
+The national head term is dominated by agencies with local and authority signals; a Delaware site will not reach the national top 3 quickly. Realistic targets: top 10 for `bail bonds payment plans delaware`, `how do bail bond payment plans work`, and PAA-style long-tail variants within a few months, supported by internal links and the homepage feature. The site already ranks #5 for the Delaware query, so this page plus the service page can strengthen that cluster.
+
+### Backlink/authority note
+
+Earn links from local resources (legal-aid or re-entry resource lists, community directories) by offering the Delaware payment-plan checklist as a reference. No paid links.
+
+## Step 4.5 — AdSense and quality review
+
+- **Thin/duplicate risk:** Low if the page goes beyond the service page's checklist with statute-backed explanation, examples, and scenarios. Do not reuse the service page or cost-guide copy.
+- **Doorway risk:** One URL only; variants (`bail bond payment plans`, `payment plan bail bonds`, `bail bonds payment plan`, `bail bonds that do payment plans`) stay inside this page.
+- **Unsupported claims:** Do not promise approval, "no credit check", "0% down", "interest-free", or release times. State only verified Delaware law and the company's published 10% / 5% terms.
+- **Financial-advice tone:** Explain options neutrally; recommend reading the contract and consulting an attorney for legal questions. No pressure language.
+- **Trust pages:** About, Contact, Privacy, Terms, and FAQ exist in the site navigation; keep the author byline and disclaimer visible.
+- **Ads:** Keep ads away from the quick answer, tables, and the CTA.
+- **Depth:** 1,800–2,300 words is enough to beat the SERP without filler.
+
+**Verdict:** Publishable once copy is limited to verified facts and the cannibalization split with `/services/payment` is respected.
+
+## Step 5 — Audience and search-intent profile
+
+| Audience | Situation / pain point | Desired outcome | Knowledge | Objections | Matching sections |
+|---|---|---|---|---|---|
+| Primary: family member or friend paying the premium | Loved one is in jail; cannot pay the full premium tonight. | Know the minimum due now and what the monthly plan will look like. | Beginner, urgent, stressed. | "Do I need the full 10% today?" "Will I be approved?" | Quick answer, premium vs down payment, examples table, step-by-step. |
+| Secondary: co-signer/indemnitor | Asked to sign for someone else. | Understand what they are liable for if payments or court dates are missed. | Beginner. | "What if they skip court?" "Is my house at risk?" | Co-signer H3, collateral H3, missed payment vs missed court. |
+| Tertiary: defendant after release | Already out; managing payments. | Avoid default; know what happens when the case ends. | Intermediate. | "Do I still owe if charges are dropped?" | Missed-payment section, case-ends section, FAQs. |
+| Comparison researcher | Weighing a plan vs cash bail, loans, or cards. | Choose the least risky route. | Intermediate. | "Is a loan cheaper?" "Can I use a credit card?" | Comparison table, questions to ask. |
+
+**Intent:** Informational with urgent commercial follow-up. Serve the explanation first; the CTA points to the service page.
+
+## Step 6 — AEO/GEO answer plan
+
+| Question (H2/H3) | Direct 40–60 word answer plan | Format after the answer | Source needed |
+|---|---|---|---|
+| Do bail bonds offer payment plans? | Yes, many agencies let you pay the premium over time. In Delaware, the agent must receive at least 5% of a surety bond over $1,000 before posting; the rest of the filed premium (up to 10%) can follow a written schedule. | Quick-answer box | § 4347(b) |
+| What does a payment plan cover? | The plan covers the agency's premium, not the full bail amount. The court sets bail; the agency posts it and charges a non-refundable premium. Collateral is separate security and is returned under the agreement's terms. | 3-row comparison table | § 4332 definitions, § 4348 |
+| How do bail bond payment plans work? | You confirm the bail amount and bond type, agree on what you can pay, sign the indemnity agreement and schedule, pay the amount due before posting, then pay the balance on the agreed dates. | Numbered steps | § 4347(b) written contract |
+| How much is due upfront on $1,000 / $10,000 / $30,000? | Worked examples using the company's 10% premium and the 5% statutory minimum before posting. | Table | Company terms (on-site) |
+| Who qualifies? | Approval depends on the agency's review: the co-signer's income and ties, the charge, the bond amount, and sometimes collateral. Cash-only bail cannot be financed by a surety agent. | Bullets | Agency practice; label as general |
+| What happens if you miss a payment? | The contract controls: late notices, collection of the balance, and possible action against the indemnitor under § 4347(d). Missing court is different and can lead to forfeiture and a warrant. | Two-column table | § 4347(d) |
+
+**Value formats planned:** quick-answer box; premium/down-payment/balance table; examples table; numbered setup steps; documents checklist; plan vs alternatives table; "questions before signing" checklist; 7 FAQs with FAQ schema; 2 infographics (hero + payment-plan example).
+
+**Claims needing sources:** all Delaware percentages (§ 4347), collateral rules (§ 4348), and company terms (10% total, 5% before posting: published on `/blog/how-much-is-a-surety-bond`). Phrase interest, credit checks, and term lengths as "ask the agency"; they are not fixed by Delaware law.
+
+## Steps 7–10 — Draft, value adds, bracket tags, QA: Bail Bond Payment Plans
+
+- **Step 7 (draft):** Written directly as site data in `src/blog/bail-bond-payment-plans-delaware-blog.js`. Intro is exactly 2 paragraphs; the conclusion is 1 paragraph and does not start with "In conclusion". About 2,400 words.
+- **Step 8 (value adds included):** a quick-answer box (featured snippet / AI answer); a bail vs premium vs down-payment table (the main confusion in the SERP); a $1k/$5k/$10k/$30k examples table plus a payment-plan infographic (answers PAA); 5 numbered setup steps; a "what to bring" list; a missed payment vs missed court table; a plan vs alternatives table; an 8-question pre-signing checklist plus a checklist infographic; 7 FAQs with FAQPage schema.
+- **Step 9 (bracket tags):** Full article saved to `seo-notes/drafts/how-do-bail-bond-payment-plans-work-bracket-tags.txt` (generated from the data file so both stay identical).
+- **Step 10 (QA):** Statute claims checked against the live Delaware Code (§ 4332, § 4341, § 4347(b)(c)(d)(f), § 4348) on 2026-10-15. Company terms (10% total, 5% before posting, premium non-refundable once posted) match `/blog/how-much-is-a-surety-bond`. Unverified items were removed or phrased as questions: interest, credit checks, term length, and the Sussex County service area. The human-voice scanner scored LOW risk (4.8): no em dashes, banned vocabulary, or "not just X but Y" templates. Two reflexive triads were rewritten. No competitor sentences were reused.
+
+## Step 11 — Technical SEO (React/Vite)
+
+- **Route:** `/blog/how-do-bail-bond-payment-plans-work` through `MAGAZINE_POSTS` (`magazine-registry.js`) and the `BlogMagazinePillar` article map (`articleKey: 'bail-bond-payment-plans'`).
+- **Meta title** (52 chars): Bail Bonds Payment Plans: How They Work in Delaware.
+- **Meta description** (155 chars): starts with the focus keyword.
+- **Canonical:** self-referencing `https://delawarebailbond.com/blog/how-do-bail-bond-payment-plans-work` (handled by the existing blog head logic).
+- **OG/Twitter:** hero image 1536×1024 (the site's existing OG fallback pattern).
+- **JSON-LD:** BlogPosting + BreadcrumbList + FAQPage (visible FAQs only), in `customSchema`.
+- **Sitemap:** add the URL to `public/sitemap.xml`. One H1. Responsive tables via `bm-table-wrap`. Hero gets priority loading; in-article images are lazy-loaded.
+
+## Step 12 — Links, cannibalization, images
+
+**Internal links from the new article:** `/blog/how-do-you-find-out-how-much-someones-bail-is` (Step 1), `/blog/bail-bond-process-step-by-step` (Step 5), `/blog/how-much-does-a-bail-bond-cost-in-delaware` + `/blog/how-much-is-a-surety-bond` (examples), `/blog/secured-bail-vs-cash-only-bail-delaware` (cash-only), `/blog/do-you-get-bail-money-back` (case ends), `/blog/what-is-unsecured-bail-delaware` (alternatives), `/services/payment` + `/contact` (CTA). External: Delaware Code Title 18 Ch. 43 Subch. II.
+
+**Links into the new article:** `/blog/how-much-is-a-surety-bond` ("Can You Make Payments on a Surety Bond?" section), the `/services/payment` related links, and the homepage "Delaware Bail Information" card grid (mandatory homepage link, a new card).
+
+**Cannibalization:** `/services/payment` (focus `bail bond payment plans Delaware`, commercial) — keep separate; the blog is informational with a different H1/slug, and the two cross-link. `/blog/how-much-is-a-surety-bond` has a short payments section — keep it and add a link to the new owner page. `/blog/how-much-does-a-bail-bond-cost-in-delaware` lists `bail bond payment plans Delaware` as a keyword — leave the body unchanged; the payment-plan intent now belongs to this URL. No 301, noindex, or cross-canonical needed.
+
+**Images (style: dark navy/gold, Simone Harris portrait, Delaware courthouse, icon row, "By Simone Harris" badge, same as `/blog/how-much-is-a-surety-bond`):**
+| Image | File | Size | Placement | Alt | Loading |
+|---|---|---|---|---|---|
+| Hero / OG / card | `how-do-bail-bond-payment-plans-work-delaware.webp` | 1536×1024 | Article hero, OG, blog cards | How bail bond payment plans work in Delaware guide by Simone Harris | eager / high priority |
+| Example infographic | `bail-bond-payment-plan-example-delaware.webp` | ~1448×1086 | After the examples table | Delaware bail bond payment plan example on a $10,000 bond showing 5% before posting and the balance | lazy |
+| Checklist infographic | `bail-bond-payment-plan-questions-checklist.webp` | ~1448×1086 | After the pre-signing questions | Checklist of questions to ask before signing a Delaware bail bond payment plan | lazy |
+
+All in `public/images/blog/how-do-bail-bond-payment-plans-work/`, WebP at about 80 quality, under ~250 KB each. Generated with ChatGPT using the surety-cost hero as a style and likeness reference.

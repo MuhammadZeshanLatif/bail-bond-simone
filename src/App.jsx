@@ -134,6 +134,7 @@ import { DOMESTIC_VIOLENCE_BAIL_POST } from './blog/domestic-violence-bail-delaw
 import { IMMIGRATION_BONDS_POST } from './blog/immigration-bonds-delaware-blog';
 import { BAIL_MONEY_BACK_POST } from './blog/do-you-get-bail-money-back-blog';
 import { SURETY_BOND_COST_POST } from './blog/surety-bond-cost-delaware-blog';
+import { PAYMENT_PLANS_POST } from './blog/bail-bond-payment-plans-delaware-blog';
 import { SURETY_BOND_JAIL_POST } from './blog/surety-bond-jail-delaware-blog';
 import { getMagazinePost } from './blog/magazine-registry';
 import { buildLegacyMagazinePost } from './blog/legacy-blog-utils';
@@ -1281,6 +1282,19 @@ const SimoneHomePage = () => {
             <h2>Delaware Bail Information</h2>
           </div>
           <div className="blog-grid">
+            <article className="blog-card reveal visible">
+              <a href={`/blog/${PAYMENT_PLANS_POST.slug}`} onClick={(e) => { e.preventDefault(); navigate(`/blog/${PAYMENT_PLANS_POST.slug}`); }}>
+                <img src={PAYMENT_PLANS_POST.thumbnail} alt={PAYMENT_PLANS_POST.heroAlt} className="blog-card-image" loading="lazy" width="1536" height="1024" />
+              </a>
+              <div className="blog-card-content">
+                <span className="blog-card-category">{PAYMENT_PLANS_POST.categoryLabel}</span>
+                <h4><a href={`/blog/${PAYMENT_PLANS_POST.slug}`} onClick={(e) => { e.preventDefault(); navigate(`/blog/${PAYMENT_PLANS_POST.slug}`); }}>How Do Bail Bond Payment Plans Work?</a></h4>
+                <p className="blog-card-excerpt">See what Delaware requires before a bond is posted, how the balance is paid, and what to ask before you sign.</p>
+                <div className="blog-card-meta"><span>{PAYMENT_PLANS_POST.readMin} min read</span><span>October 15, 2026</span></div>
+                <a href={`/blog/${PAYMENT_PLANS_POST.slug}`} onClick={(e) => { e.preventDefault(); navigate(`/blog/${PAYMENT_PLANS_POST.slug}`); }}>Read the Payment Plan Guide</a>
+              </div>
+            </article>
+
             <article className="blog-card reveal visible">
               <a href="/blog/how-much-is-a-surety-bond" onClick={(e) => { e.preventDefault(); navigate('/blog/how-much-is-a-surety-bond'); }}>
                 <img src={SURETY_BOND_COST_POST.thumbnail} alt={SURETY_BOND_COST_POST.heroAlt} className="blog-card-image" loading="lazy" width="1536" height="1024" />
@@ -2653,6 +2667,7 @@ const ServiceDetailPage = ({ serviceKey, navigate }) => {
       relatedLinks: [
         { path: '/services/surety', label: 'surety bail bonds Delaware' },
         { path: '/services/secured', label: 'secured bail help' },
+        { path: '/blog/how-do-bail-bond-payment-plans-work', label: 'how bail bond payment plans work' },
         { path: '/blog/how-much-does-a-bail-bond-cost-in-delaware', label: 'how much does a bail bond cost in Delaware' },
         { path: '/blog/bail-bond-process-step-by-step', label: 'Delaware bail bond process steps' },
         { path: '/blog/how-do-you-find-out-how-much-someones-bail-is', label: 'how to find out the bail amount' }
@@ -3313,6 +3328,18 @@ const FAQPage = ({ navigate }) => {
 // BLOG DATA
 // ===============================================================================
 const blogPosts = [
+  {
+    slug: PAYMENT_PLANS_POST.slug,
+    title: PAYMENT_PLANS_POST.title,
+    excerpt: PAYMENT_PLANS_POST.excerpt,
+    category: PAYMENT_PLANS_POST.categoryLabel,
+    readTime: `${PAYMENT_PLANS_POST.readMin} min read`,
+    date: PAYMENT_PLANS_POST.publishedAt,
+    image: PAYMENT_PLANS_POST.thumbnail,
+    heroImage: PAYMENT_PLANS_POST.heroImage,
+    isMagazine: true,
+    content: '',
+  },
   {
     slug: SURETY_BOND_COST_POST.slug,
     title: SURETY_BOND_COST_POST.title,

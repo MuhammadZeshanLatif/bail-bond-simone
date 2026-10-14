@@ -7,6 +7,7 @@ const links = [
   ['what a surety bond means in jail', '/blog/what-is-a-surety-bond-jail'],
   ['do you get bail money back', '/blog/do-you-get-bail-money-back'],
   ['payment options', '/services/payment'],
+  ['how bail bond payment plans work', '/blog/how-do-bail-bond-payment-plans-work'],
   ['secured bail vs. cash-only bail in Delaware', '/blog/secured-bail-vs-cash-only-bail-delaware'],
   ['how much a bail bond costs in Delaware', '/blog/how-much-does-a-bail-bond-cost-in-delaware'],
   ['surety bail bond services', '/services/surety'],

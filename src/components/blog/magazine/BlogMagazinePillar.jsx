@@ -22,11 +22,13 @@ import { ImmigrationBondsArticle } from './ImmigrationBondsArticle';
 import { BailMoneyBackArticle } from './BailMoneyBackArticle';
 import { SuretyBondCostArticle } from './SuretyBondCostArticle';
 import { SuretyBondJailArticle } from './SuretyBondJailArticle';
+import { BailBondPaymentPlansArticle } from './BailBondPaymentPlansArticle';
 import { LegacyMagazineArticle } from './LegacyMagazineArticle';
 import { MagazineToc } from './MagazineToc';
 import '../../../blog-magazine.css';
 
 const ARTICLE_MAP = {
+  'bail-bond-payment-plans': BailBondPaymentPlansArticle,
   'surety-bond-cost': SuretyBondCostArticle,
   'how-bail-bonds-work': BailBondGuideArticle,
   'bail-bond-company': BailBondCompanyArticle,

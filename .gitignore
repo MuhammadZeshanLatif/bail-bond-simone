@@ -1,1 +1,3 @@
 node_modules
+# Local secrets (admin login for scripts/push-blog-draft.mjs)
+.env.local

@@ -254,6 +254,10 @@
   margin: 0 auto;
   padding: 24px;
 }
+/* Contact submissions rendered inside the admin workspace */
+.bbadmin-shell--embedded { min-height: 0; background: none; }
+.bbadmin-shell--embedded .bbadmin-content { max-width: none; padding: 0; }
+.bbadmin-section-actions { justify-content: flex-end; margin-bottom: 18px; }
 .bbadmin-banner-error {
   background: rgba(248, 81, 73, 0.12);
   border: 1px solid rgba(248, 81, 73, 0.4);

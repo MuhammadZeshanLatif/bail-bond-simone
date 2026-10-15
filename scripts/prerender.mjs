@@ -119,6 +119,10 @@ async function main() {
     process.exit(1);
   }
 
+  // Keep the empty SPA shell before "/" overwrites index.html; public/blog-router.php uses it
+  // as the template for server-rendered database blog posts.
+  fs.copyFileSync(path.join(distDir, 'index.html'), path.join(distDir, 'spa-shell.html'));
+
   console.log(`Prerendering ${STATIC_ROUTES.length} routes from sitemap...`);
   const server = await startStaticServer();
 

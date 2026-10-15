@@ -9,7 +9,15 @@ import {
   fetchContacts,
   getAdminSession,
 } from '../../lib/supabase';
+import { adminFetchPosts, postState } from '../../lib/blogPosts';
+import AdminWorkspace, { ADMIN_SECTIONS } from './AdminWorkspace';
+import BlogManager from './BlogManager';
 import './AdminPortal.css';
+
+const sectionFromPath = () => {
+  const id = window.location.pathname.replace(/^\/admin\/?/, '').split('/')[0];
+  return ADMIN_SECTIONS.some((s) => s.id === id) ? id : 'dashboard';
+};
 
 const STATUS_OPTIONS = [
   { value: 'new', label: 'New' },
@@ -56,6 +64,9 @@ export default function AdminPortal() {
   const [formMode, setFormMode] = useState({ kind: 'closed' }); // 'closed' | 'add' | {kind:'edit', record}
   const [detail, setDetail] = useState(null);
   const [savedMessage, setSavedMessage] = useState('');
+  const [section, setSection] = useState(sectionFromPath);
+  const [adminEmail, setAdminEmail] = useState('');
+  const [blogPosts, setBlogPosts] = useState([]);
 
   const loadData = useCallback(async () => {
     setLoadingData(true);
@@ -67,6 +78,7 @@ export default function AdminPortal() {
     } finally {
       setLoadingData(false);
     }
+    adminFetchPosts().then(setBlogPosts).catch(() => setBlogPosts([]));
   }, []);
 
   useEffect(() => {
@@ -74,11 +86,24 @@ export default function AdminPortal() {
       .then((session) => {
         if (session) {
           setAuthenticated(true);
+          setAdminEmail(session.user?.email || '');
           loadData();
         }
       })
       .finally(() => setCheckingSession(false));
   }, [loadData]);
+
+  useEffect(() => {
+    const onPop = () => setSection(sectionFromPath());
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, []);
+
+  function changeSection(id) {
+    const path = id === 'dashboard' ? '/admin' : `/admin/${id}`;
+    if (window.location.pathname !== path) window.history.pushState({}, '', path);
+    setSection(id);
+  }
 
   async function login(event) {
     event.preventDefault();
@@ -89,6 +114,7 @@ export default function AdminPortal() {
       return;
     }
     setAuthenticated(true);
+    getAdminSession().then((session) => setAdminEmail(session?.user?.email || email));
     await loadData();
   }
 
@@ -211,27 +237,25 @@ export default function AdminPortal() {
   }
 
   return (
-    <main className="bbadmin-shell">
-      <header className="bbadmin-topbar">
-        <div className="bbadmin-brand">
-          <span className="bbadmin-brand__mark">A2F</span>
-          <div>
-            <strong>Bail Bonds <span>Admin</span></strong>
-            <small>CONTACT SUBMISSIONS</small>
-          </div>
-        </div>
-        <div className="bbadmin-topbar__actions">
-          <button type="button" className="bbadmin-btn-ghost" onClick={loadData}>
-            ↻ Refresh
-          </button>
-          <button type="button" className="bbadmin-btn-primary" onClick={() => setFormMode({ kind: 'add' })}>
-            + Add Entry
-          </button>
-          <button type="button" className="bbadmin-btn-logout" onClick={logout}>
-            Log out
-          </button>
-        </div>
-      </header>
+    <AdminWorkspace activeSection={section} onSectionChange={changeSection} email={adminEmail} onSignOut={logout}>
+      {section === 'dashboard' && (
+        <DashboardOverview
+          contacts={contacts}
+          posts={blogPosts}
+          onOpen={changeSection}
+        />
+      )}
+      {section === 'blog' && <BlogManager onPostsChange={setBlogPosts} />}
+      {section === 'contacts' && (
+    <div className="bbadmin-shell bbadmin-shell--embedded">
+      <div className="bbadmin-topbar__actions bbadmin-section-actions">
+        <button type="button" className="bbadmin-btn-ghost" onClick={loadData}>
+          ↻ Refresh
+        </button>
+        <button type="button" className="bbadmin-btn-primary" onClick={() => setFormMode({ kind: 'add' })}>
+          + Add Entry
+        </button>
+      </div>
 
       <div className="bbadmin-content">
         {error && <p className="bbadmin-banner-error">{error}</p>}
@@ -366,7 +390,42 @@ export default function AdminPortal() {
       )}
 
       {detail && <DetailModal contact={detail} onClose={() => setDetail(null)} />}
-    </main>
+    </div>
+      )}
+    </AdminWorkspace>
+  );
+}
+
+function DashboardOverview({ contacts, posts, onOpen }) {
+  const counts = posts.reduce((acc, p) => { acc[postState(p)] += 1; return acc; }, { draft: 0, scheduled: 0, published: 0 });
+  const upcoming = posts
+    .filter((p) => postState(p) === 'scheduled')
+    .sort((a, b) => Date.parse(a.publishedAt) - Date.parse(b.publishedAt))
+    .slice(0, 5);
+  const newContacts = contacts.filter((c) => c.status === 'new').length;
+
+  return (
+    <>
+      <section className="aw-overview" aria-label="Overview">
+        <div className="aw-overview-card aw-overview-card--gold"><span>Published posts</span><strong>{counts.published}</strong></div>
+        <div className="aw-overview-card"><span>Scheduled posts</span><strong>{counts.scheduled}</strong></div>
+        <div className="aw-overview-card"><span>Drafts</span><strong>{counts.draft}</strong></div>
+        <div className="aw-overview-card"><span>New contact submissions</span><strong>{newContacts}</strong></div>
+      </section>
+      <section className="aw-panel">
+        <h2>Coming up</h2>
+        <p>Scheduled posts go live on the blog and sitemap automatically at their publish time.</p>
+        {upcoming.length ? (
+          <ul className="aw-upcoming">
+            {upcoming.map((p) => <li key={p.id}><span>{p.title}</span><small>{formatDate(p.publishedAt)}</small></li>)}
+          </ul>
+        ) : <p>No scheduled posts.</p>}
+        <div className="aw-quick-actions">
+          <button type="button" className="bbadmin-btn-primary" onClick={() => onOpen('blog')}>Manage blog posts</button>
+          <button type="button" className="bbadmin-btn-ghost" onClick={() => onOpen('contacts')}>View contact submissions ({contacts.length})</button>
+        </div>
+      </section>
+    </>
   );
 }
 

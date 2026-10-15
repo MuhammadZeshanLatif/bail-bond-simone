@@ -18,6 +18,12 @@ RewriteRule ^home/?$ / [R=301,L]
 # Legacy thin payment article -> stronger cost guide
 RewriteRule ^blog/payment-options-bail-bonds/?$ /blog/how-much-does-a-bail-bond-cost-in-delaware [R=301,L]
 
+# Sitemap = static pages + live posts from the admin blog (sitemap.php)
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+# Internal template / settings for the PHP blog renderer are not public pages
+RewriteRule ^(spa-shell\.html|blog-config\.php|blog-lib\.php)$ - [F,L]
+
 # Real files (images, css, js) serve directly
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule ^ - [L]
@@ -32,6 +38,11 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html -f
 RewriteRule ^(.+?)/?$ $1/index.html [L]
+
+# Blog posts published from the admin dashboard (no prerendered page) → PHP renderer
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blog/([a-z0-9]+(?:-[a-z0-9]+)*)/?$ blog-router.php?slug=$1 [L,QSA]
 
 # SPA fallback only when no static page exists
 RewriteCond %{REQUEST_FILENAME} !-f

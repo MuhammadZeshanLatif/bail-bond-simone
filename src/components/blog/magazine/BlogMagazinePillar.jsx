@@ -23,6 +23,7 @@ import { BailMoneyBackArticle } from './BailMoneyBackArticle';
 import { SuretyBondCostArticle } from './SuretyBondCostArticle';
 import { SuretyBondJailArticle } from './SuretyBondJailArticle';
 import { BailBondPaymentPlansArticle } from './BailBondPaymentPlansArticle';
+import { DatabaseArticle } from './DatabaseArticle';
 import { LegacyMagazineArticle } from './LegacyMagazineArticle';
 import { MagazineToc } from './MagazineToc';
 import '../../../blog-magazine.css';
@@ -84,8 +85,10 @@ export function BlogMagazinePillar({
             onContactClick={onContactClick}
           />
         )
-      : ARTICLE_MAP[magazine.articleKey];
-  const displayAuthor = 'Simone Harris';
+      : magazine.articleKey === 'database'
+        ? () => <DatabaseArticle html={magazine.articleHtml} navigate={navigate} />
+        : ARTICLE_MAP[magazine.articleKey];
+  const displayAuthor = magazine.author || 'Simone Harris';
   const trimmed = magazine.heroImage?.trim() ?? '';
   const heroSrc = trimmed && (trimmed.startsWith('/') || trimmed.startsWith('http')) ? trimmed : PILLAR_DEFAULT_HERO;
 

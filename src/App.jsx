@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import SimoneAboutSection from './components/SimoneAboutSection';
 import AdminPortal from './components/admin/AdminPortal';
 import { submitContact } from './lib/supabase';
+import { fetchLivePostBySlug, fetchLivePosts, toListPost, toMagazinePost } from './lib/blogPosts';
 import { BlogMagazinePillar } from './components/blog/magazine/BlogMagazinePillar';
 import {
   HARDCODED_BLOG_SLUG,
@@ -4092,7 +4093,19 @@ const BlogPage = ({ navigate }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
+  const [databasePosts, setDatabasePosts] = useState([]);
   const postsPerPage = 6;
+
+  // Posts published from the admin dashboard (live and due) appear first, newest first.
+  useEffect(() => {
+    let active = true;
+    fetchLivePosts().then((rows) => { if (active) setDatabasePosts(rows.map(toListPost)); });
+    return () => { active = false; };
+  }, []);
+  const allPosts = useMemo(() => {
+    const staticSlugs = new Set(blogPosts.map((p) => p.slug));
+    return [...databasePosts.filter((p) => !staticSlugs.has(p.slug)), ...blogPosts];
+  }, [databasePosts]);
 
   useSEO(
     'Blog | Bail Bond Resources in Delaware',
@@ -4111,7 +4124,7 @@ const BlogPage = ({ navigate }) => {
   });
 
   // Get all unique categories with counts
-  const categories = blogPosts.reduce((acc, post) => {
+  const categories = allPosts.reduce((acc, post) => {
     const cat = post.category;
     if (!acc[cat]) {
       acc[cat] = 0;
@@ -4120,7 +4133,7 @@ const BlogPage = ({ navigate }) => {
     return acc;
   }, {});
 
-  const filteredPosts = blogPosts.filter(post => {
+  const filteredPosts = allPosts.filter(post => {
     const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = !selectedCategory || post.category === selectedCategory;
@@ -4272,7 +4285,7 @@ const BlogPage = ({ navigate }) => {
                       }}
                       className={selectedCategory === '' ? 'active' : ''}
                     >
-                      All Categories <span>({blogPosts.length})</span>
+                      All Categories <span>({allPosts.length})</span>
                     </a>
                   </li>
                   {Object.entries(categories).map(([category, count]) => (
@@ -4296,7 +4309,7 @@ const BlogPage = ({ navigate }) => {
               <div className="sidebar-widget">
                 <h4>Recent Posts</h4>
                 <div className="recent-posts-list">
-                  {blogPosts.slice(0, 5).map((post) => (
+                  {allPosts.slice(0, 5).map((post) => (
                     <div key={post.slug} className="recent-post-item">
                       <a 
                         href={`#/blog/${post.slug}`}
@@ -4352,7 +4365,21 @@ const BlogPostPage = ({ slug, navigate }) => {
   const redirectedSlug = legacyBlogRedirects[slug];
   const canonicalSlug = redirectedSlug || slug;
   const post = blogPosts.find(p => p.slug === canonicalSlug);
-  const magazine = getMagazinePost(canonicalSlug) || (post?.content ? buildLegacyMagazinePost(post) : null);
+  const staticMagazine = getMagazinePost(canonicalSlug) || (post?.content ? buildLegacyMagazinePost(post) : null);
+  // Articles published from the admin dashboard are loaded from Supabase when no built-in article matches.
+  const [database, setDatabase] = useState({ slug: null, magazine: null });
+  const needsDatabase = !staticMagazine && !post;
+  const magazine = staticMagazine || (database.slug === canonicalSlug ? database.magazine : null);
+  const loadingDatabase = needsDatabase && database.slug !== canonicalSlug;
+
+  useEffect(() => {
+    if (!needsDatabase) return undefined;
+    let active = true;
+    fetchLivePostBySlug(canonicalSlug).then((row) => {
+      if (active) setDatabase({ slug: canonicalSlug, magazine: row ? toMagazinePost(row) : null });
+    });
+    return () => { active = false; };
+  }, [canonicalSlug, needsDatabase]);
 
   useEffect(() => {
     if (redirectedSlug) {
@@ -4361,7 +4388,7 @@ const BlogPostPage = ({ slug, navigate }) => {
   }, [redirectedSlug, navigate]);
 
   useSEO(
-    magazine ? magazine.metaTitle : post ? `${post.title} | A Way to Freedom Bail Bonds` : 'Blog Post Not Found',
+    magazine ? magazine.metaTitle : post ? `${post.title} | A Way to Freedom Bail Bonds` : loadingDatabase ? 'Delaware Bail Bond Blog | A Way to Freedom Bail Bonds' : 'Blog Post Not Found',
     magazine ? magazine.metaDescription : post ? post.excerpt : 'The requested blog post could not be found.',
     magazine ? magazine.keywords : 'bail bonds, Delaware bail, Newark Delaware',
     magazine ? magazine.metaTitle : '',
@@ -4429,6 +4456,16 @@ const BlogPostPage = ({ slug, navigate }) => {
           navigate('/contact');
         }}
       />
+    );
+  }
+
+  if (!post && loadingDatabase) {
+    return (
+      <div className="page-container">
+        <div className="container py-5 text-center">
+          <p style={{color: 'var(--text-light-secondary)'}}>Loading article…</p>
+        </div>
+      </div>
     );
   }
 

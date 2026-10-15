@@ -238,7 +238,7 @@ Semrush US summary with Vol 100+ / KD 0–30%: **566 keywords, 159,910 total vol
 | Surety bond in jail explained | `what is a surety bond jail` | 1.9K | 3 | `whats a surety bond in jail` (880/10), `what is a surety bond for jail` (1.3K/8) | Done — `/blog/what-is-a-surety-bond-jail` |
 | Surety bond cost | `how much is a surety bond` | 1.6K | 3 | `surety bond cost` (1.0K/22), `how much does a surety bond cost` (880/15), `surety bond price` (480/23) | Done — `/blog/how-much-is-a-surety-bond`; cost article implemented with company 10% premium and minimum 5% before posting |
 | Surety bond meaning | `what does surety bond mean` | 720 | 24 | `whats a surety bond` (390/29), `suretyship` (720/22) | Definition; keep separate from jail-specific page |
-| Cash surety bond | `what is a cash surety bond` | 590 | 0 | `cash surety bond` (1.0K/4) | Comparison/FAQ |
+| Cash surety bond | `what is a cash surety bond` | 590 | 0 | `cash surety bond` (1.0K/4) | DRAFT in admin — `/blog/what-is-a-cash-surety-bond` pushed 2026-10-16 (publish/schedule from /admin/blog) |
 | Buying a surety bond | `how to purchase a surety bond` | 720 | 20 | `buy surety bond` (880/27), `how to get bonded` (590/25) | Process; only if service scope supports it |
 | Surety bond near me | `surety bond near me` | 1.3K | 29 | `surety bonds near me` (1.0K/16), `surety bond company near me` (1.3K/29) | Local/commercial landing page; verify Delaware relevance |
 
@@ -281,7 +281,7 @@ Semrush US result summary with KD 0–30%: **6 keywords, total volume 640, avera
 
 | Blog topic | Primary keyword | Volume | KD | Supporting keywords | Use |
 |---|---|---:|---:|---|---|
-| Bench-warrant bail amount | `how much is bail for a bench warrant` | 210 | 3 | `no bail warrant` (90/7), `warrant without bail` (70/14) | Amount/process guide |
+| Bench-warrant bail amount | `how much is bail for a bench warrant` | 210 | 3 | `no bail warrant` (90/7), `warrant without bail` (70/14) | DRAFT in admin — `/blog/how-much-is-bail-for-a-bench-warrant` pushed 2026-10-16 (publish/schedule from /admin/blog) |
 | Bail-bondsman warrant rights | `can bail bondsman enter your home with a warrant` | 110 | 7 | `can bail bondsman enter your home without a warrant` (90/6) | Rights and limits FAQ |
 | Bail-bondsman warrant checks | `can a bail bondsman check for warrants` | 70 | 0 | `warrant bail` seed (re-check exact metric) | Pre-bond FAQ |
 
@@ -320,7 +320,7 @@ These are separate intents and can be separate URLs. Do not put all five titles 
 | Cash bail vs bail bond | `cash bond vs bail` | 260 | 14 | `cash bail vs surety bond` (seed; re-check metric), `cash bond meaning` (320/12) | Done — covered at `/blog/what-is-cash-bond` (cash bond vs bail bond) and `/blog/bail-vs-bond-delaware` |
 | Cash bail refund rules | `do you get bail money back` | 5.4K | 14 | `bail money do you get it back` (5.4K/16), `do you get your bail money back` (2.4K/15) | Done — `/blog/do-you-get-bail-money-back` |
 | Posting bail for someone | `how to post bail for someone` | 210 | 19 | `how do i bail someone out of jail` (480/18), `how do you bond someone out of jail` (320/12) | Immediate process |
-| Weekend jail release | `can you bail someone out of jail on the weekend` | 140 | 0 | `can you bail someone out of jail` (140/8), `can you get bailed out of jail on a weekend` (140/0) | Timing/logistics |
+| Weekend jail release | `can you bail someone out of jail on the weekend` | 140 | 0 | `can you bail someone out of jail` (140/8), `can you get bailed out of jail on a weekend` (140/0) | DRAFT in admin — `/blog/can-you-bail-someone-out-of-jail-on-the-weekend` pushed 2026-10-16 (publish/schedule from /admin/blog) |
 | Cash bail percentage | `what percentage of bail do you pay` | 210 | 20 | `what percent of bail do you pay` (170/18), `how much of a bond do you pay` (320/23) | Cost |
 | Cash bail and credit cards | `can you pay bail with a credit card` | 170 | 14 | `how much do you have to pay for bail` (210/19) | Payment method |
 
@@ -684,3 +684,271 @@ Earn links from local resources (legal-aid or re-entry resource lists, community
 | Checklist infographic | `bail-bond-payment-plan-questions-checklist.webp` | ~1448×1086 | After the pre-signing questions | Checklist of questions to ask before signing a Delaware bail bond payment plan | lazy |
 
 All in `public/images/blog/how-do-bail-bond-payment-plans-work/`, WebP at about 80 quality, under ~250 KB each. Generated with ChatGPT using the surety-cost hero as a style and likeness reference.
+
+## Blog: What Is a Cash Surety Bond? (admin draft)
+
+Primary: `what is a cash surety bond` (590/KD 0). Supporting: `cash surety bond` (1.0K/4), PAA variants (`what is a $5000 cash surety bond`, `what does $100,000 cash surety bond mean`, `how much does a $100,000 surety bond cost`, `what does a $30,000 cash bond mean`). Owner check: no existing page uses "cash surety"; `/blog/what-is-cash-bond` (cash bond), `/blog/what-is-a-surety-bond-jail` (surety in jail) and `/blog/secured-bail-vs-cash-only-bail-delaware` are linked, not duplicated.
+
+### Step 2 — Live SERP (Google US, 2026-10-16)
+
+An AI Overview appears. It calls "cash surety bond" a label for two options (pay cash or use a surety) and shows a cash vs surety table. PAA: $5,000 cash surety bond; $100,000 cash surety bond meaning; $100,000 surety bond cost; $30,000 cash bond meaning. `worldinsurance.com` and `lancesuretybonds.com` were skipped as commercial-surety (contractor/insurance) intent.
+
+| # | URL | Intent / angle | ~Words / date / schema | Strengths | Missing value |
+|---|---|---|---|---|---|
+| 1 | [Colorado Judicial — Types of Bonds](https://www.coloradojudicial.gov/self-help/types-bonds) | Official bond-type list | ~370; no date; none | Government authority; clear definitions | Colorado only; no "cash surety" explanation, costs or examples |
+| 2 | [Haddad Law — Cash bond vs surety bond](https://www.mannyhaddadlaw.com/faq-items/cash-bond-vs-surety-bond/) | Attorney FAQ | ~380; 2018; Attorney/Review | Plain pros/cons; refund vs premium | Texas; dated; no headings, numbers or local rules |
+| 3 | [Jose Espinoza Bail Bonds — Cash Surety Bond](https://joseespinozabailbonds.com/bail-bond/how-does-a-cash-surety-bond-work/) | Long guide | ~5,800; Nov 2025; Article/Person | Most complete: steps, cost, collateral, forfeiture, takeaways | California; mixes in commercial-surety credit-score advice; padded |
+| 4 | [Doc's Bail Bonds — Cash vs Surety in Texas](https://www.docsbailbonds.com/get-out-of-jail-texas/cash-bond-vs-surety-bond-in-texas) | Comparison | ~1,300; Jan 2026; none | Comparison factors (refundability, speed, risk) | Texas law; no examples table |
+| 5 | [Sinkler Bail Bonds — Surety vs Cash](https://sinklerbonding.com/surety-bond-vs-cash-bond/) | Simple explainer | ~1,040; 2017; Article | "Who pays, who takes the risk" framing | South Carolina; dated; no numbers |
+
+**Required to compete:** answer in 40–60 words that a "cash/surety" bond lets you post bail either in full cash or through a licensed surety; map it to Delaware's *secured bail* (cash or property, or a surety); give dollar examples for $5k/$30k/$100k at A Way to Freedom's 10% premium with 5% before posting (18 Del. C. § 4347); compare refund/forfeiture; explain the cash-only exception; FAQ schema answering the PAA. ~1,600–2,000 words; no commercial-surety (contractor) confusion.
+
+### Step 3 — Competitor headings (exact) and outline
+
+- Colorado: H1 Types of Bonds; H2 About Bonds; H3 Types of Bonds; H4 Cash Bond; H4 Personal Recognizance Bond (PR Bond); H4 Professional Surety Bond; H4 Property Bond; H3 Additional Resources.
+- Haddad: no article headings (FAQ body text only: "Cash Bonds", "Surety Bonds" as bold text).
+- Espinoza: H1 Cash Surety Bond: What It Is & How It Works; H2 Key Takeaways; H2 What Is a Cash Surety Bond? (H3 How Does a Surety Bond Work for Bail?; H3 What Does a Bail Bond Company Do?); H2 How Bail is Determined by the Court (H3 The Arraignment Process; H3 Factors Influencing the Bail Amount); H2 Cash Surety Bond vs. Cash Bond: What's the Difference? (H3 Who Is Involved in a Surety Bond?; H3 How Do Cash Bonds Work?; H3 Disadvantages of Paying a Cash Bond; H3 Comparing Costs and Refund Rules); H2 Other Types of Bail Bonds to Know (H3 PR Bonds; H3 Property Bonds; H3 10-Percent Bonds); H2 How to Get a Cash Surety Bond: A Step-by-Step Guide (Steps 1–4); H2 What Does a Cash Surety Bond Really Cost? (H3 Factors That Influence the Premium; H4 Your Credit Score; H4 Financial History and Experience; H4 How to Get a Better Rate; H3 Why Is the Premium Non-Refundable?; H3 What Is Collateral (And What Are the Risks)?; H3 Is a Surety Bond Cheaper Than a Cash Bond?); H2 What Happens If Someone Misses Their Court Date? (H3 What Does "Bond Forfeiture" Mean?; H3 Other Reasons a Bond Can Be Forfeited; H3 Can You Lose Your Collateral?; H3 What Are You Responsible For?); H2 Is a Surety Bond the Right Choice for You? (3 H3s).
+- Doc's: H1 Cash Bond Vs. Surety Bond in Texas; H2 What is a Cash Bond?; H2 What is a Surety Bond?; H2 Comparing Cash Bonds and Surety Bonds (H3 Financial Capability; Refundability; Release Speed; Long-term Financial Impact; Risk and Responsibility); H2 What Happens After You Post Bond?; H2 Can You Get Your Money Back from a Surety Bond?; H2 The Legalities of Bail in Texas; H2 Making Your Decision Between a Cash Bond and Surety Bond.
+- Sinkler: H1 Surety Bond vs. Cash Bond: What's the difference?; H2 Put your money where your mouth is; H2 What is a cash bond?; H2 What is a surety bond?; H2 Who's buying?; H2 Who is at risk?; H2 Conclusion: The difference is who pays and who takes the risk.
+
+**Outline**
+- H1 What Is a Cash Surety Bond? How Cash or Surety Bail Works in Delaware *(topic shared; Delaware framing new)*
+- H2 What Is a Cash Surety Bond? *(from Espinoza)*
+- H2 How "Cash or Surety" Bail Maps to Delaware's Secured Bail **[NEW - NOT FROM COMPETITORS]** — Delaware Courts bail types
+- H2 Paying Cash vs Using a Surety: Side-by-Side *(from Doc's comparison)*
+- H2 What a Cash Surety Bond Costs: $5,000, $30,000 and $100,000 Examples **[NEW - NOT FROM COMPETITORS]** — PAA + § 4347
+- H2 How to Post a Cash Surety Bond in Delaware, Step by Step *(from Espinoza steps; Delaware details new)*
+- H2 When Cash Is the Only Option **[NEW - NOT FROM COMPETITORS]** — cash-only bail and property bail agents (§ 4347(f))
+- H2 What Happens to the Money When the Case Ends? *(Doc's "money back")*
+- H2 What Happens If the Defendant Misses Court? *(Espinoza)*
+- H2 How to Choose Between Cash and Surety **[NEW - NOT FROM COMPETITORS]** — decision checklist
+- H2 Frequently Asked Questions *(PAA)*
+- H2 Get Help With Bail in Delaware **[NEW - NOT FROM COMPETITORS]**
+
+### Step 4 — Gaps and outranking strategy
+
+- **Entity/local gap:** no ranking page is Delaware-specific; none maps "cash/surety" to Delaware's four bail types (OR, unsecured, secured, cash only) from the Delaware Courts bail page.
+- **Number gap:** PAA asks for $5k/$30k/$100k meaning and cost; only Espinoza gives generic percentages. Add a worked table using the 10% premium and the 5% minimum before posting (§ 4347(b)).
+- **Accuracy gap:** Espinoza applies contractor-surety credit-score pricing to bail. Delaware premiums must match the filed rate (no discounts or extra unfiled fees, § 4347(b)(c)); say that plainly.
+- **Freshness:** two results date from 2017–2018. Publish with a visible 2026 date.
+- **E-E-A-T:** cite the Delaware Code and Delaware Courts; Simone Harris byline; legal-information disclaimer.
+- **Realistic outlook:** KD 0–4 and weak/out-of-state competitors; a top-5 for `what is a cash surety bond` and Delaware variants is realistic with internal links from the surety and cash-bond guides.
+
+### Step 4.5 — AdSense / quality
+
+No thin or doorway risk if the page stays a single explainer and links (not repeats) the cash-bond, surety, refund and secured-vs-cash-only guides. Avoid promising release times, refunds of premium, or "cheap" bail (below-filed-rate pricing is unlawful in Delaware). Keep one restrained CTA. Trust pages exist in navigation.
+
+### Step 5 — Audience and intent
+
+| Audience | Pain point | Wants | Matching sections |
+|---|---|---|---|
+| Family member reading a bail order or jail listing that says "cash/surety" | Does not know if they must pay it all | Know the two payment routes and the cost of each | Definition, Delaware mapping, examples table |
+| Co-signer | Worried about liability | Understand forfeiture, collateral and responsibilities | Missed-court, choose section |
+| Defendant comparing options | Wants money back if possible | Know when cash returns and premium does not | Money-back section, comparison table |
+
+Intent: informational with a local commercial follow-up.
+
+### Step 6 — AEO/GEO answer plan
+
+| Question | 40–60 word answer plan | Format |
+|---|---|---|
+| What is a cash surety bond? | Bail that may be satisfied either by paying the full amount in cash to the court or by having a licensed bail agent post a surety bond for a premium. | Quick-answer box |
+| What does a $100,000 cash surety bond mean? | Pay $100,000 to the court, or about $10,000 premium (at a 10% rate) with at least $5,000 before posting in Delaware. | Table + FAQ |
+| Is a cash surety bond refundable? | Cash posted to the court is returned after the case if conditions are met (minus court deductions); a surety premium is not. | Comparison table |
+| Can I use a surety if bail is cash only? | No; cash-only bail must be paid in money. A Delaware property bail agent may post cash bail for a 20%–30% charge. | Short section |
+| What happens if the defendant misses court? | Forfeiture risk: cash can be forfeited; with a surety the co-signer owes the agent and may lose collateral. | List |
+
+Sources to cite: 18 Del. C. § 4347 (Delaware Code Title 18 Ch. 43 Subch. II); Delaware Courts "Bail and Bail Bonds" help page.
+
+### Steps 7–10 — Draft, value adds, bracket source, QA
+
+- Draft (Markdown for the admin CMS): `seo-notes/drafts/what-is-a-cash-surety-bond.md`, ~1,650 words. Intro is 2 paragraphs; the conclusion is 1 paragraph (does not start with "In conclusion").
+- Value adds: quick-answer box; Delaware bail-type table; cash vs surety comparison table; $5k/$30k/$100k cost table + infographic; 7-step posting list; decision questions; 6 FAQs (FAQ schema generated automatically by the CMS).
+- QA: § 4347(b)(c)(f) and the Delaware Courts bail page re-checked 2026-10-16. Unverified "court deductions on refund" claim removed. Human-voice scan LOW (0.6).
+
+### Step 11 — Technical SEO (admin CMS fields)
+
+- Slug: `what-is-a-cash-surety-bond` → `https://delawarebailbond.com/blog/what-is-a-cash-surety-bond` (self canonical)
+- SEO title (54): What Is a Cash Surety Bond? Delaware Cash vs Surety Bail
+- SEO description (152): A cash surety bond lets you pay bail in full cash or through a bail agent. See Delaware rules, costs on $5k–$100k bonds, refunds, and how to choose.
+- Primary keyword: what is a cash surety bond · Secondary: cash surety bond, cash or surety bond, $100,000 cash surety bond, cash bond vs surety bond Delaware
+- Category: Bond Types · Tags: Cash Surety Bond, Secured Bail, Bail Costs, Delaware Bail
+- Schema: BlogPosting + BreadcrumbList + FAQPage (built by `blog-router.php` / React from the saved post). Sitemap: automatic once published.
+
+### Step 12 — Links, cannibalization, images
+
+- Outbound internal links (in draft): find bail amount, what is cash bond, surety bond in jail, payment plans, bail bond process, secured vs cash-only, do you get bail money back, contact.
+- Inbound links to add after publish: from `/blog/what-is-cash-bond` and `/blog/what-is-a-surety-bond-jail` (one contextual sentence each).
+- Cannibalization: none; no page targets "cash surety". Keep cash-bond definitions on `/blog/what-is-cash-bond`.
+- Images in `public/images/blog/what-is-a-cash-surety-bond/` (ChatGPT, same style as the surety cost hero): hero `what-is-a-cash-surety-bond-delaware.webp` 1536×1024 (alt "What is a cash surety bond in Delaware guide by Simone Harris"); cost infographic `cash-vs-surety-bond-cost-delaware.webp` after the cost table, lazy.
+
+## Blog: How Much Is Bail for a Bench Warrant? (admin draft)
+
+Primary: `how much is bail for a bench warrant` (210/KD 3). Supporting: `no bail warrant` (90/7), `warrant without bail` (70/14), PAA (`can you bail out of jail on a bench warrant`, `how long do you stay in jail for a bench warrant`). Owner check: bench warrants are only mentioned in passing on bail-vs-bond, company and common-mistakes pages; no URL targets this keyword. Not the Fugitive-from-Justice intent.
+
+### Step 2 — Live SERP (Google US, 2026-10-16)
+
+No AI Overview. PAA: Can you bail out of jail on a bench warrant? · How long do you stay in jail for a bench warrant? · What is the highest bail amount? · How much does a $1000 bail bond cost? Skipped: Avvo Q&A, potralawfirm, Missouri/Illinois law-firm pages (weak or off-intent), mrniceguybailbonds (thin service page).
+
+| # | URL | Angle | ~Words / date / schema | Strengths | Missing |
+|---|---|---|---|---|---|
+| 1 | [Castle Bail Bonds — Bench Warrant Bail Bonds](https://bailbonds4u.com/bench-warrant-bail-bonds/) | Service FAQ (bench vs capias) | ~670; no date; Org/Breadcrumb | Mentions capias; FAQ format | Generic; claims "always misdemeanor"; no amounts or law |
+| 2 | [J. Ryan Brown Law — Post bond on a bench warrant (GA)](https://jryanbrownlaw.com/blog/post-bond-bench-warrant-georgia/) | Attorney guide | ~2,300; Aug 2025; BlogPosting/LegalService | Bond factors, hearing, denial, FAQ | Georgia; pushes attorney; no surety cost math |
+| 3 | [Greg Hill & Associates — Facing a bench warrant (CA)](https://www.greghillassociates.com/so-you-face-a-bench-warrant.html) | Attorney article | ~1,280; no date; LegalService | Practical "what to do" | California; single H1, no structure |
+| 4 | [Free at Last Bail Bonds — Bail for a bench warrant (GA)](https://freeatlastbb.com/blog/how-much-is-bail-for-a-bench-warrant/) | Exact-match agency guide | ~1,600; Aug 2026; Article | Clear: amount follows the case; set vs judge-decided bond; steps | Georgia; no statute; no worked examples |
+
+**Required to compete:** answer that there is no fixed price; in Delaware a bench warrant is usually a **capias**, and bail is the amount endorsed on the capias, or set by the magistrate if none (CCP Crim. R. 4(f)); explain "no bail" capias; FTA consequences (11 Del. C. § 2113); surety cost examples (10% / 5% before posting); what to do (contact court/attorney, turn in, Safe Surrender note); FAQ for PAA. ~1,500–1,900 words.
+
+### Step 3 — Competitor headings (exact) and outline
+
+- Castle: H1 Bench Warrant Bail Bonds; H2 What is a bench warrant?; H3 Is a bench warrant the same as an arrest warrant?; H3 Will I get a bench warrant if I miss my court date?; H3 How much is bail for a FTA bench warrant?; H3 Why do I have to pay bail for a bench warrant?; H3 How do I pay the bond for my bench warrant?; H3 Does a background check show a bench warrant?; H2 What is a capias warrant?; H3 If I have a capias warrant, will I be arrested?; H3 What should I do if I have a capias warrant?; H3 Who can get a capias warrant?
+- J. Ryan Brown: H1 Can I Post Bond if I'm Arrested for a Bench Warrant in Georgia?; H2 Can You Post Bond for a Bench Warrant? Kind of. What You Really Need is Your Bench Warrant Lifted.; H2 What Factors Affect Your Bond Decision; H2 Common Types of Bench Warrants in Georgia (H3 Failure to Appear (FTA) Warrants; H3 Probation Violation Warrants); H2 The Bond Hearing Process (H3 Your Rights During the Hearing); H2 How Much Will Bond Cost?; H2 What If Bond Is Denied?; H2 How to Improve Your Chances of Getting Bond (H3 Before You're Arrested; H3 At the Bond Hearing); H2 FAQs; H2 Why You Need an Attorney; H2 Don't Let a Bench Warrant Ruin Your Life.
+- Greg Hill: H1 So You Face a Bench Warrant? What Should You Do Now? (no other headings).
+- Free at Last: H1 How Much Is Bail for a Bench Warrant in Georgia; H2 What Is a Bench Warrant in Georgia; H2 Why Bail Amounts Vary for a Bench Warrant; H2 When a Bond Is Already Set and When a Judge Must Decide; H2 How Georgia Courts Handle Different Warrant Bonds; H2 What a Bail Bondsman Charges for a Bench Warrant; H2 Steps to Clear a Bench Warrant Bond in Georgia (H3 Confirm the Warrant and Bond Status; H3 Bring Proof to the Judge; H3 Line Up Bond Help Early); H2 Get Help With a Bench Warrant Bond.
+
+**Outline**
+- H1 How Much Is Bail for a Bench Warrant? Delaware Capias Bail Explained *(Delaware/capias framing new)*
+- H2 Is There a Set Bail Amount for a Bench Warrant? *(from Free at Last "Why bail amounts vary")*
+- H2 Bench Warrant vs Capias in Delaware **[NEW - NOT FROM COMPETITORS]** — Delaware term + CCP Rule 4(f)
+- H2 How Bail Is Set on a Delaware Capias **[NEW]** — endorsed amount vs magistrate decides
+- H2 What Is a "No Bail" Warrant? *(supporting keyword; Castle touches "capias" only)*
+- H2 What Can Change the Amount *(from J. Ryan Brown "factors")*
+- H2 What a Bail Bond Costs on a Bench Warrant: Examples **[NEW]** — 10% / 5% table
+- H2 What Happens After a Missed Court Date in Delaware **[NEW]** — § 2113 (cancel bail, redetermine, separate crime, forfeiture)
+- H2 What to Do If You Have a Bench Warrant *(from Free at Last steps / Greg Hill)*
+- H2 Frequently Asked Questions *(PAA)*
+- H2 Get Help With a Bench Warrant Bond in Delaware **[NEW]**
+
+### Step 4 — Gaps and outranking strategy
+
+- Every ranking page is out of state (GA, CA, generic). None uses Delaware's "capias" term, CCP Crim. R. 4(f), or 11 Del. C. § 2113.
+- No page shows surety cost math for a warrant bond; add a 10% / 5% table.
+- "No bail warrant" is unexplained on the SERP; answer it plainly (held until a judge sees the person).
+- Castle claims bench warrants are "always misdemeanor"; Delaware issues capiases in felony cases too. Correct it.
+- KD 3 with weak local competition: top-5 for Delaware variants is realistic; the national head term is reachable with good internal links (from bail-vs-bond, common-mistakes and company pages, which already mention bench warrants).
+
+### Step 4.5 — AdSense / quality
+
+Single explainer; no doorway. Do not advise evading arrest; recommend contacting the court/attorney and turning in. No promises of release or bail amounts. Safe Surrender is mentioned only as a past/occasional program ("check the Delaware Courts site"); the program page currently returns 404. Legal-information disclaimer.
+
+### Step 5 — Audience and intent
+
+| Audience | Pain point | Wants | Sections |
+|---|---|---|---|
+| Person who missed court / learned of a capias | Fear of arrest, unknown cost | Know the amount, what happens, what to do now | Amount, capias, what to do, FAQ |
+| Family member after an arrest on a capias | Needs to post bail fast | Amount, whether a bondsman can help, cost | Endorsed bail, no-bail, cost table |
+| Co-signer on the original bond | Worried about forfeiture | What happens to the first bond and their money | § 2113 section |
+
+Intent: informational, urgent local follow-up.
+
+### Step 6 — AEO/GEO answer plan
+
+| Question | 40–60 word answer plan | Format |
+|---|---|---|
+| How much is bail for a bench warrant? | No fixed amount; in Delaware the bail is what the judge endorsed on the capias, or what the magistrate sets; it is often higher than the original bail. | Quick-answer box |
+| Can you bail out on a bench warrant? | Usually yes if bail is endorsed or set; not if it is a no-bail capias, until a judge sees the person. | FAQ |
+| How long in jail on a bench warrant? | Until bail is posted, or until the next court session / judge review on a no-bail capias. | FAQ |
+| What happens to the original bail? | § 2113: bail is cancelled and redetermined; forfeiture only for failure to appear. | Section |
+| What does a bondsman charge? | 10% premium at A Way to Freedom, at least 5% before posting (§ 4347). | Table |
+
+Sources: CCP Criminal Rule 4(f) (courts.delaware.gov PDF), 11 Del. C. § 2113, 18 Del. C. § 4347.
+
+### Steps 7–10 — Draft, value adds, QA
+
+- Draft: `seo-notes/drafts/how-much-is-bail-for-a-bench-warrant.md` (~1,560 words). Intro is 2 paragraphs; the conclusion is 1 paragraph.
+- Value adds: quick-answer box; capias bail table (endorsed / magistrate / no bail); factors list; premium table ($2.5k/$10k/$25k); missed-court process infographic; 6-step action list; 6 FAQs (auto FAQ schema).
+- QA: CCP Crim. R. 4(f) text verified in the official courts.delaware.gov PDF; 11 Del. C. § 2113(a)(b)(c)(e) verified on delcode (version effective until Feb 1, 2027, so the article says "as of October 2026"); § 4347 re-used. The Superior Court rule claim was removed (could not open the source). The Safe Surrender page currently 404s, so it is mentioned only as past events. Human-voice scan LOW (0.3).
+
+### Step 11 — Technical SEO (front-matter → admin fields)
+
+Slug `how-much-is-bail-for-a-bench-warrant`; SEO title (50) "How Much Is Bail for a Bench Warrant? Delaware Guide"; description 155 chars; category Bail Costs; BlogPosting + Breadcrumb + FAQPage generated; sitemap automatic on publish; self canonical.
+
+### Step 12 — Links, cannibalization, images
+
+- Outbound: find bail amount, secured vs cash-only, payment plans, contact; Delaware Code § 4347 and § 2113.
+- Inbound to add after publish: one sentence each from `/blog/bail-vs-bond-delaware` and `/blog/common-mistakes-to-avoid-when-posting-bail-in-delaware` (both mention bench warrants).
+- Cannibalization: none (the Fugitive-from-Justice blog has a different intent).
+- Images (ChatGPT, surety-cost hero style): hero `how-much-is-bail-for-a-bench-warrant-delaware.webp` 1536×1024; infographic `delaware-capias-bail-process.webp` in the § 2113 section.
+
+## Blog: Can You Bail Someone Out of Jail on the Weekend? (admin draft)
+
+Primary: `can you bail someone out of jail on the weekend` (140/KD 0). Supporting: `can you get bailed out of jail on a weekend` (140/0), PAA (`can you get bail on a Saturday`, `can people be released from jail on a Sunday`, `fastest way to get someone out of jail`, `can bail be granted on weekends`). `can you bail someone out of jail` (140/8) is used only as a variant; the general process stays owned by `/blog/how-to-bond-someone-out-of-jail-delaware` (linked, not duplicated).
+
+### Step 2 — Live SERP (Google US, 2026-10-16)
+
+No AI Overview. Two Reddit/Facebook threads rank (#5–6); NYC311 ranks (#8). All agency results are out of state.
+
+| # | URL | Angle | ~Words / date / schema | Strengths | Missing |
+|---|---|---|---|---|---|
+| 1 | [Bail Bonding Angels (NC) — weekend or at night](https://www.bailbondingangels.com/can-you-bail-someone-out-on-the-weekend-or-at-night) | After-hours guide | ~1,750; Mar 2026; BlogPosting | Clear steps; info to have; warns against after-hours surcharges | NC; release-time claims (1–4 h) unsourced; headings not marked up |
+| 2 | [A-Affordable (MN) — night or weekends](https://a-affordablebailbond.com/can-you-bail-someone-out-at-night-or-on-the-weekends-in-minnesota/) | Short explainer | ~630; 2022; FAQPage | Explains jail staffing/population delays | MN; dated; thin |
+| 3 | [Aladdin — weekend FAQ](https://www.aladdinbailbonds.com/faqs/can-you-bail-someone-out-of-jail-on-a-weekend/) | One-paragraph FAQ | ~110; 2018; FAQPage | Direct answer | Thin |
+| 4 | [Beehive (UT) — post bail on the weekend](https://beehivebailbonds.com/weekend-bail-bonds-utah/) | Guide | ~1,090; Aug 2025; Article | Court schedules, processing times, agent availability, special circumstances | Utah; double H1 |
+| 5 | [Chuck Brown II (OH) — weekend bail](https://chuckbrowniibailbonds.com/can-you-bail-someone-out-on-the-weekend/) | Guide | ~1,300; Sep 2025; Article | Costs, steps, which charges, FAQ | Ohio |
+
+**Required to compete:** direct "yes, but" answer; Delaware-specific court hours (JP Court 11 24/7; JP 7 and JP 3 6 a.m.–midnight; CCP clerk weekdays 8:30–4:30); what can be done on a weekend vs what waits for Monday (no-bail holds, cash to a court office that is closed); same premium on weekends (§ 4347, no unfiled fees); what to have ready; FAQ for PAA. ~1,400–1,800 words.
+
+### Step 3 — Competitor headings (exact) and outline
+
+- Angels: H1 Can You Bail Someone Out on the Weekend or at Night? (section titles are styled text, not headings: The Short Answer: Yes, Bail Is Available 24/7; How After-Hours Bail Works; Does Weekend or Night Bail Take Longer?; What You'll Need to Get Started; Are Bail Bond Fees Higher After Hours?; Why Acting Fast Matters).
+- A-Affordable: H2 After Hours Bail; H3 Defendant Population; H3 Jail Staffing; H2 What to do in Any Scenario.
+- Aladdin: H1 Can you bail someone out of jail on a weekend?
+- Beehive: H1 Can You Post Bail on the Weekend? On After-Hours Arrests; H2 Can You Post Bail on a Weekend?; H2 Court Schedules; H2 Jail Processing Times; H2 Bail Bond Agent Availability; H2 Special Circumstances.
+- Chuck Brown II: H2 How Does Bail Work on Weekends?; H3 Understanding Weekend Bail Costs; H3 Why Availability of Bondsmen Matters; H3 Challenges You May Face on Weekends; H3 Steps to Bail Someone Out on a Weekend; H3 Can All Charges Be Bailed Out on Weekends?; H3 In Closing:; H3 FAQ's.
+
+**Outline**
+- H1 Can You Bail Someone Out of Jail on the Weekend? Delaware Guide
+- H2 Yes, But Timing Depends on Two Things *(from Beehive/Chuck "can you post on a weekend")*
+- H2 Which Delaware Courts Are Open on Weekends **[NEW - NOT FROM COMPETITORS]** — verified JP hours table
+- H2 What Can Happen on a Weekend, and What Waits for Monday **[NEW]**
+- H2 Step by Step: Bailing Someone Out on a Saturday or Sunday *(from Chuck steps)*
+- H2 Why Weekend Release Can Take Longer *(from A-Affordable/Beehive processing)*
+- H2 Does Bail Cost More on a Weekend? *(from Angels/Chuck)* — § 4347 filed rate
+- H2 Charges That May Not Get Weekend Release *(from Chuck "Can all charges")*
+- H2 What to Have Ready Before You Call *(from Angels)*
+- H2 Frequently Asked Questions *(PAA)*
+- H2 Get Weekend Bail Help in Delaware **[NEW]**
+
+### Step 4 — Gaps and outranking strategy
+
+- No Delaware page answers this. Verified court hours (JP 11 24/7; JP 7 Dover and JP 3 Georgetown 6 a.m.–midnight daily; CCP clerk weekdays 8:30–4:30) are a unique, citable asset.
+- Competitors promise release times (e.g. "1–4 hours") without sources; we give the factors instead.
+- Weekend cost: tie to § 4347(b)(c) (filed rate only; unfiled service fees unlawful). No competitor cites law.
+- Forum results (Reddit, Facebook) show weak competition; KD 0 → top-3 realistic for the Delaware variant, top-10 nationally with internal links from the how-to-bond and fast-reliable guides.
+
+### Step 4.5 — AdSense / quality
+
+Avoid guaranteed release times and "instant release". No surcharge promises beyond the filed-rate rule. Keep the CTA single. The general release process is linked, not repeated (cannibalization with `/blog/how-to-bond-someone-out-of-jail-delaware`).
+
+### Step 5 — Audience and intent
+
+| Audience | Pain point | Wants | Sections |
+|---|---|---|---|
+| Family member, Friday night / weekend arrest | Fears waiting until Monday | Know if release is possible now and what to do | Answer, court hours, steps |
+| Person with cash wanting to pay directly | Court office closed | Where/when cash can be paid | What waits for Monday |
+| Employer-worried defendant | Missing work Monday | How long it may take | Timing factors, FAQ |
+
+Intent: urgent informational with an immediate local service need.
+
+### Step 6 — AEO/GEO answer plan
+
+| Question | 40–60 word answer plan | Format |
+|---|---|---|
+| Can you bail someone out on the weekend? | Yes, if bail has been set and the bail type allows it; Delaware's JP Court 11 runs 24/7, and a 24/7 bail agent can post a surety bond any day; holds and no-bail cases wait for a judge. | Quick-answer box |
+| Can you get bail on a Saturday? | Yes, through the JP courts and a bail agent, once bail is set. | FAQ |
+| Can people be released on a Sunday? | Yes; release depends on bail being set and posted and the facility processing paperwork. | FAQ |
+| Fastest way to get someone out? | Have the details ready, confirm bail type/amount, use a 24/7 licensed agent. | Steps |
+| Does weekend bail cost more? | No; the premium must match the filed rate (§ 4347). | Section |
+
+### Steps 7–10 — Draft, value adds, QA
+
+- Draft: `seo-notes/drafts/can-you-bail-someone-out-of-jail-on-the-weekend.md` (~1,400 words). Intro is 2 paragraphs; the conclusion is 1 paragraph.
+- Value adds: quick-answer box; verified Delaware court-hours table + infographic; "weekend vs waits for Monday" table; 7 steps; cost section with a $5,000 example; at-risk charges list; what-to-have list; 6 FAQs.
+- QA: JP 11/JP 7/JP 3 hours verified on courts.delaware.gov location pages (2026-10-16); CCP clerk hours from the Delaware Courts CCP bail Q&A; § 4347 re-used. No release-time promises. The link to the unpublished bench-warrant draft was removed (it would 404 until published). Human-voice scan LOW (6.2).
+
+### Steps 11–12 — Technical SEO, links, images
+
+- Slug `can-you-bail-someone-out-of-jail-on-the-weekend`; SEO title (57) "Can You Bail Someone Out of Jail on the Weekend? DE Guide"; description 152; category Bail Process; schemas auto; sitemap on publish.
+- Links out: secured vs cash-only, how to bond someone out, payment plans, DV bail, contact, Delaware Courts JP locations, § 4347. Inbound after publish: from `/blog/how-to-bond-someone-out-of-jail-delaware` and `/blog/fast-reliable-bail-bonds-delaware`. Once both are published, add a link to the bench-warrant post in the "Charges That May Not Get Weekend Release" list.
+- Cannibalization: the general process stays on how-to-bond (linked); this URL owns the weekend/after-hours intent only.
+- Images: hero `can-you-bail-someone-out-on-the-weekend-delaware.webp`; infographic `delaware-weekend-bail-court-hours.webp` (court-hours table).

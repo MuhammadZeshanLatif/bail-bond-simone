@@ -10,7 +10,7 @@
  *   $env:SUPABASE_URL="https://iyaoylugxjhmblnlkjky.supabase.co"
  *   $env:SUPABASE_SECRET_KEY="sb_secret_..."
  *   $env:ADMIN_EMAIL="away2freedom302@gmail.com"
- *   $env:ADMIN_PASSWORD="away2freedom302"
+ *   $env:ADMIN_PASSWORD="<choose a strong password>"
  *   node scripts/create-admin-user.mjs
  */
 import { createClient } from '@supabase/supabase-js';

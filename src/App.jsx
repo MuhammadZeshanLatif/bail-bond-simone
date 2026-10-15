@@ -2,7 +2,8 @@ import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react'
 import SimoneAboutSection from './components/SimoneAboutSection';
 import AdminPortal from './components/admin/AdminPortal';
 import { submitContact } from './lib/supabase';
-import { fetchLivePostBySlug, fetchLivePosts, toListPost, toMagazinePost } from './lib/blogPosts';
+import { fetchLivePostBySlug, fetchLivePosts, fetchLiveSlugs, toListPost, toMagazinePost } from './lib/blogPosts';
+import { unlinkDeadBlogLinks } from './lib/blogMarkdown';
 import { BlogMagazinePillar } from './components/blog/magazine/BlogMagazinePillar';
 import {
   HARDCODED_BLOG_SLUG,
@@ -4375,8 +4376,15 @@ const BlogPostPage = ({ slug, navigate }) => {
   useEffect(() => {
     if (!needsDatabase) return undefined;
     let active = true;
-    fetchLivePostBySlug(canonicalSlug).then((row) => {
-      if (active) setDatabase({ slug: canonicalSlug, magazine: row ? toMagazinePost(row) : null });
+    Promise.all([fetchLivePostBySlug(canonicalSlug), fetchLiveSlugs()]).then(([row, liveSlugs]) => {
+      if (!active) return;
+      let magazine = row ? toMagazinePost(row) : null;
+      if (magazine) {
+        // Links to posts that are not live yet show as plain text until those posts are published.
+        const isLive = (s) => liveSlugs.has(s) || Boolean(getMagazinePost(s)) || blogPosts.some((p) => p.slug === s) || Boolean(legacyBlogRedirects[s]);
+        magazine = { ...magazine, articleHtml: unlinkDeadBlogLinks(magazine.articleHtml, isLive) };
+      }
+      setDatabase({ slug: canonicalSlug, magazine });
     });
     return () => { active = false; };
   }, [canonicalSlug, needsDatabase]);

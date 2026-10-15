@@ -143,6 +143,22 @@ function render_body($content) {
   return ['html' => $html, 'faqs' => $faqs];
 }
 
+// Links to /blog/<slug> posts that are not live (drafts, scheduled, deleted) become plain text.
+// A slug is live if it is a published, due database post or a prerendered static page.
+// Keep in step with unlinkDeadBlogLinks() in src/lib/blogMarkdown.js.
+function unlink_dead_blog_links($html) {
+  if (strpos($html, '/blog/') === false) return $html;
+  $rows = a2f_fetch_posts(['select' => 'slug', 'limit' => 1000]);
+  if ($rows === null) return $html; // Supabase unreachable: leave links as they are.
+  $live = [];
+  foreach ($rows as $row) $live[$row['slug']] = true;
+  return preg_replace_callback('~<a href="(?:https://delawarebailbond\.com)?/blog/([a-z0-9-]+)/?(?:#[^"]*)?"[^>]*>([\s\S]*?)</a>~', function ($m) use ($live) {
+    $slug = $m[1];
+    if (isset($live[$slug]) || is_file(__DIR__ . '/blog/' . $slug . '/index.html')) return $m[0];
+    return $m[2];
+  }, $html);
+}
+
 function absolute_url($url) {
   $c = a2f_config();
   return ($url !== '' && $url[0] === '/') ? $c['origin'] . $url : $url;

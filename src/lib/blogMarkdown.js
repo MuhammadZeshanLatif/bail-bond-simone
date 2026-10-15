@@ -133,6 +133,14 @@ export function renderArticle(content = '') {
   return { html, toc, faqs };
 }
 
+// Links to /blog/<slug> posts that are not live yet (drafts, scheduled, deleted) become plain text,
+// so articles can link to each other before publication. Keep in step with unlink_dead_blog_links()
+// in public/blog-lib.php.
+export function unlinkDeadBlogLinks(html, isLiveSlug) {
+  return html.replace(/<a href="(?:https:\/\/delawarebailbond\.com)?\/blog\/([a-z0-9-]+)\/?(?:#[^"]*)?"[^>]*>([\s\S]*?)<\/a>/g,
+    (link, slug, text) => (isLiveSlug(slug) ? link : text));
+}
+
 export function readMinutes(content = '') {
   const words = stripHtmlMarker(content).replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length;
   return Math.max(1, Math.round(words / 220));

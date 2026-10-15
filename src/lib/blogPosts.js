@@ -192,6 +192,21 @@ export async function fetchLivePosts() {
   }
 }
 
+export async function fetchLiveSlugs() {
+  if (!isSupabaseConfigured()) return new Set();
+  try {
+    const { data, error } = await getSupabase()
+      .from(BLOG_TABLE)
+      .select('slug')
+      .eq('status', 'published')
+      .lte('published_at', new Date().toISOString())
+      .limit(1000);
+    return new Set(error ? [] : (data || []).map((row) => row.slug));
+  } catch {
+    return new Set();
+  }
+}
+
 export async function fetchLivePostBySlug(slug) {
   if (!isSupabaseConfigured()) return null;
   try {

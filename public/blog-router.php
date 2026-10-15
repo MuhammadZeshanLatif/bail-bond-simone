@@ -39,6 +39,7 @@ $image = absolute_url(!empty($p['og_image']) ? $p['og_image'] : (!empty($p['imag
 $keywords = implode(', ', array_filter(array_merge([$p['primary_keyword'] ?? ''], $p['secondary_keywords'] ?? [], $p['tags'] ?? [])));
 $author = !empty($p['author']) ? $p['author'] : 'Simone Harris';
 $rendered = render_body($p['content']);
+$rendered['html'] = unlink_dead_blog_links($rendered['html']);
 $published = date('F j, Y', strtotime($p['published_at']));
 
 $graph = [

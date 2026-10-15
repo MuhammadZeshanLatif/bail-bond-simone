@@ -952,3 +952,243 @@ Intent: urgent informational with an immediate local service need.
 - Links out: secured vs cash-only, how to bond someone out, payment plans, DV bail, contact, Delaware Courts JP locations, § 4347. Inbound after publish: from `/blog/how-to-bond-someone-out-of-jail-delaware` and `/blog/fast-reliable-bail-bonds-delaware`. Once both are published, add a link to the bench-warrant post in the "Charges That May Not Get Weekend Release" list.
 - Cannibalization: the general process stays on how-to-bond (linked); this URL owns the weekend/after-hours intent only.
 - Images: hero `can-you-bail-someone-out-on-the-weekend-delaware.webp`; infographic `delaware-weekend-bail-court-hours.webp` (court-hours table).
+
+## Blog: What Is a Bond Hearing? (admin draft, queue #4)
+
+Primary: `what is a bond hearing` (880/KD 0). Supporting: `what is a bond hearing in court` (110/0), `bond hearings` (110/13), `bond motion` (110/2). PAA: is a bond hearing a good thing; what usually happens at a bond hearing; can a case be dismissed at a bond hearing; bond vs bail. `immigration bond hearing` is reserved for queue #15 (one short section here that links to it); `immigration bonds` stays on `/blog/immigration-bonds-delaware`.
+
+### Step 2 — Live SERP (Google US, 2026-10-17)
+
+An AI Overview appears: it defines the hearing as deciding release and conditions, not guilt, and says it happens within 24–48 hours. Results are attorney pages from other states.
+
+| # | URL | ~Words / date / schema | Strengths | Missing |
+|---|---|---|---|---|
+| 1 | [Church Law (GA) — What happens at a bond hearing](https://www.church.law/what-is-a-bond-hearing/) | ~880; 2020; Article + Video | Video explainer | Dated; no structure; GA |
+| 2 | [Dan Mellen — Bail and bond hearings](https://www.danmellenattorney.com/blog-1/bail-and-bond-hearings-what-happens-and-how-to-secure-release-before-trial/) | ~1,530; BlogPosting | 15 H2s covering the whole topic | Generic, no state law, no examples |
+| 3 | [Watson Fowler — What is a bond hearing](https://www.watsonfowler.com/what-is-a-bond-hearing/) | ~1,860; LegalService | Long | One H1, no structure |
+| 4 | [Knox Defense (TN) — Bond hearing in Tennessee](https://knoxdefense.com/what-is-a-bond-hearing-in-tennessee-and-how-does-it-work/) | ~620; Jul 2026; BlogPosting | Bond types section | TN; thin |
+| — | odekirklaw.com | Blocked (Cloudflare) | — | — |
+
+**Required to compete:** answer in 40–60 words; Delaware specifics (11 Del. C. § 2104 four bond types; § 2105 factors list; § 2101 non-monetary preference; CCP Crim. R. 5 "without reasonable delay"; motion to modify bond; § 2116 revocation); what to bring/expect; how a bond turns into a bail agent's job; FAQ for PAA. ~1,600–1,900 words.
+
+### Step 3 — Competitor headings and outline
+
+- Church: H1 What happens at a bond hearing? (no article H2s).
+- Dan Mellen: H1 Bail and Bond Hearings: What Happens and How to Secure Release Before Trial; H2 What Bail Means; How Bond Affects Release; What Happens at a Bail Hearing; Conditions of Release Without Bail; How Prosecutors and Defense Attorneys Influence Bail Hearings; How Bail Decisions Affect Life Before Trial; Financial Considerations of Bail and Bond; Common Misconceptions About Bail and Bond; Options for Those Who Can't Pay Bail; Preparing for a Bail or Bond Hearing; Consequences of Failing to Comply With Bail Conditions; How Bail Intersects With Trial Preparation; Community and Family Impact; Long-Term Considerations of Bail and Bond.
+- Watson Fowler: H1 What Is a Bond Hearing? (no H2s).
+- Knox: H1 What Is A Bond Hearing In Tennessee And How Does It Work?; H3 Understanding Bond In Tennessee; What Happens At A Bond Hearing; Types Of Bond In Tennessee; Why Legal Representation Matters Early.
+
+**Outline:** H1 What Is a Bond Hearing? How Bail Is Decided in Delaware · H2 What Is a Bond Hearing? · H2 When the First Bond Hearing Happens in Delaware [NEW: CCP R.5] · H2 What the Judge Can Order: Delaware's Four Bond Types [NEW: § 2104] · H2 What the Judge Considers [NEW: § 2105 list] · H2 What Happens at the Hearing, Step by Step (from Mellen/Knox) · H2 How to Prepare (from Mellen "Preparing") · H2 After the Hearing: Posting the Bond [NEW, cost table] · H2 Asking for a Bond Review or Modification [NEW] · H2 Immigration Bond Hearings Are Different [NEW, link #15] · H2 FAQ (PAA) · H2 Get Help in Delaware [NEW]
+
+### Steps 4–6 — Gaps, quality, intent, AEO
+
+- Gaps: no Delaware page; nobody lists statutory factors or bond types; no posting-cost examples; AI Overview's "24–48 hours" is generic (we say "without reasonable delay" per CCP R.5 and avoid hour promises).
+- Quality: no legal advice tone; disclaimer; do not promise release or outcomes; "can a case be dismissed at a bond hearing" answered as "usually not, it decides release only."
+- Audience: family after an arrest (what happens, what to bring); defendant (what judge weighs, how to ask for review); co-signer (posting cost). Intent: informational with urgent local follow-up.
+- AEO answers: definition (quick box); timing; bond types table; factors list; dismissal FAQ; bond vs bail FAQ linking `/blog/bail-vs-bond-delaware`.
+
+### Steps 7–12 — Draft, QA, SEO, links, images
+
+- Draft `seo-notes/drafts/what-is-a-bond-hearing.md` (~1,535 words; intro 2 paragraphs, conclusion 1). Value adds: quick answer; § 2104 bond-type table + infographic; § 2105 factor list; 6 hearing steps; prep list; premium table; modification/revocation section; 6 FAQs.
+- QA: § 2101/2104/2105/2116 verified on delcode (version effective until Feb 1, 2027); CCP Crim. R. 5 "without reasonable delay" verified in the official PDF; Motion to Modify Bond from the Delaware Courts CCP bail page. Scan LOW (1.0).
+- SEO: title (55) "What Is a Bond Hearing? How Bail Is Decided in Delaware"; description 150; category Bail Process; self canonical; FAQ schema auto.
+- Links: bail-vs-bond, unsecured, secured-vs-cash-only, payment plans, how-to-bond, immigration-bonds, contact; drafts (auto-activate when live): weekend, cash-surety, bench-warrant, immigration-bond-hearing (queue #15). Cannibalization: immigration hearing intent only summarized → #15.
+- Images: hero `what-is-a-bond-hearing-delaware.webp`; infographic `delaware-four-bond-types.webp`.
+
+## Blog: How Does a Bail Bond Make Money? (admin draft, queue #5)
+
+Primary: `how does a bail bond make money` (720/28). Supporting: `how does a bail bondsman make money` (480/27), `how much do bail bondsman make` (480/12), PAA (how do bail bonds make profit; how does a bail bondsman lose money; $100,000 / $75,000 bond cost). Educational, not a service page; cost math links to the cost guides.
+
+### Step 2 — SERP (Google US, 2026-10-17)
+
+An AI Overview appears (premium 10–15%, non-refundable). Reddit ELI5 and a YouTube video rank.
+
+| URL | ~Words | Strengths | Missing |
+|---|---|---|---|
+| [Brennan Center — How profit shapes the bail bond system](https://www.brennancenter.org/our-work/analysis-opinion/how-profit-shapes-bail-bond-system) | ~1,100 | Policy authority, insurer role | Advocacy angle, no consumer guidance |
+| [Apex Bail Bonds](https://www.apexbailbond.com/how-do-bail-bondsmen-make-money) | ~1,570 | 7 revenue streams list, FAQ | Recruiting angle; financing fees not Delaware-legal |
+| [Captira](https://www.captira.com/blogs/bail/how-do-bail-bonds-make-money) | ~2,980 | Premium split, build-up fund, worked illustrations | Software vendor; generic |
+| [Balboa (CA)](https://balboabailbonds.com/blog/how-do-bail-bonds-companies-make-money/) | ~1,160; 2023 | Simple basics | CA; thin |
+| [Sportsman's](https://www.sportsmansbailbonds.com/blog/how-does-a-bailbondsman-make-money) | ~1,110 | Risk + collateral | Few numbers |
+
+**Required:** Delaware rules make this concrete: premium must equal the filed 5–10% rate (§ 4347(b)); no unfiled admin/service fees (§ 4347(c)); reimbursement limited to the bond plus receipted expenses on breach (§ 4347(d)); collateral reasonable and receipted (§ 4348); property bail agents 20–30% on cash bail (§ 4347(f)); forfeiture risk only on failure to appear (11 Del. C. § 2113(b)). Worked example of one bond; how agents lose money; what it means for families.
+
+### Step 3 — Headings and outline
+
+Competitor headings (exact) — Apex: H2 1. The Primary Source Of Income: Bail Bond Premiums; 2. Collateral-Based Revenue: Seizing Assets When Defendants Fail To Appear; 3. Payment Plans & Financing Fees; 4. Forfeited Bonds: Recovering Losses When Defendants Skip Court; 5. Transfer Bonds & Out-Of-State Bail Bond Services; 6. Federal & Immigration Bonds: Higher Fees & Greater Risk; 7. Additional Revenue Streams: Notary Services & Legal Support; How Bail Bond Companies Maximize Profits; FAQs. Captira: H2 The short answer; Understanding bail bonds; The role of a bail bonds agent; The bail premium: the main source of income; What fees can bail bondsmen charge besides the premium?; Why the premium is non-refundable; How bail bondsmen get paid when families cannot pay up front; Where the premium goes: the surety's share and the build-up fund (H3 Illustration: one bond, start to finish); Collateral and indemnity agreements; Forfeitures: why defendants who skip are the main risk (H3 Illustration: what one skip costs); How recovery costs fit in; The bottom line. Balboa: H2 What is Bail?; What is a Bail Bonds Agent?; What Does a Bail Bonds Agent Do?; How Do Bail Bonds Companies Make Money?; Is the Fee Refundable?; Is the Bail Bonds Fee Included in the Bail Amount?; Do You Need a Bail Bonds Agent? Sportsman's: H2 How do Bail Bond Companies Get Paid?; Risks When Paying Someone's Bail (H3 Collateral in Bail Bond Agreements; Returning Collateral; Important Considerations).
+
+Outline: H1 How Does a Bail Bond Make Money? A Delaware Look Inside the Premium · H2 Short answer · H2 The Premium: Where the Money Comes From (Captira) · H2 Delaware's Rules on What an Agent Can Charge [NEW § 4347] · H2 Where the Premium Goes (Captira) · H2 One Bond, Start to Finish: A Delaware Example [NEW] · H2 How a Bail Agent Loses Money (Apex/Captira forfeiture) · H2 Collateral Is Security, Not Profit [NEW § 4348] · H2 Cash Bail Through a Property Bail Agent [NEW § 4347(f)] · H2 What This Means for Families [NEW] · H2 FAQ · H2 CTA
+
+### Steps 4–6
+
+- Gaps: no competitor cites the law that caps what an agent may charge; Apex promotes "financing fees" that would be unlawful in Delaware unless filed; give a Delaware example and the forfeiture math.
+- Quality: transparent, not salesy; no income claims for agents (no reliable Delaware salary data, so the "how much do bail bondsman make" question is answered as "it depends" without inventing numbers); disclaimer.
+- Audience: curious families comparing cash vs bond; co-signers wanting to know why the premium isn't refunded; people considering the job (secondary).
+- AEO: short answer (premium = income); "can they charge extra fees?" (§ 4347(c)); "how do they lose money?" (forfeiture); "$100,000 bond cost" (10% = $10,000, at least $5,000 before posting).
+
+### Steps 7–12
+
+- Draft `seo-notes/drafts/how-does-a-bail-bond-make-money.md` (~1,400 words). Value adds: quick answer; Delaware pricing-rules list; $20,000 bond lifecycle table + infographic; loss/forfeiture section; collateral and property-bail sections; family checklist; 6 FAQs.
+- QA: § 4347(b)(c)(d)(f), § 4348(a) and 11 Del. C. § 2113(b) as verified earlier. No invented agent income or premium-split numbers. Scan LOW (4.4).
+- SEO: title (55); description 153; category Bail Costs. Links: bail money back, surety cost, bail bond cost, secured vs cash-only, payment plans, contact; drafts: bench warrant, cash surety.
+- Images: hero `how-does-a-bail-bond-make-money-delaware.webp`; infographic `bail-bond-premium-example-delaware.webp`.
+
+## Blog: What Is Cashless Bail? (admin draft, queue #6)
+
+Primary: `what is a cashless bail` (320/28). Supporting: `cashless bond` (170/24), `no bail meaning` (170/11), `cashless bail meaning`. Policy-sensitive topic: neutral, sourced, no political opinion.
+
+### Step 2 — SERP (Google US, 2026-10-17)
+
+No AI Overview or PAA. Results are politics/news: Bail Project (advocacy, Oct 2025, ~590 words, single H1); White House EO 14340 (Aug 25, 2025, DC cashless bail); Stateline explainer (Sep 2025, Cloudflare-blocked); 3D Bail Bonds (CT, 2022, ~850 words, H2 What is Cashless Bail?; Cashless Bail Explained; The Pros and Cons of Cashless Bail; What The 2024 Presidential Elections Mean for No Money Bail States); congress.gov bill; ABC7; Wikipedia.
+
+**Required:** plain definition; what it is NOT (not "free release", conditions still apply); how Delaware actually works today (four bond types, non-monetary preference, risk assessment) and what changes on **Feb 1, 2027** (least-restrictive standard, preventive detention for listed offenses, § 2107(c)); neutral note on the federal EO; what it means for families and bail bonds.
+
+### Step 3 — Headings and outline
+
+Competitor headings: Bail Project — H1 What Is Cashless Bail? only. 3D — H1 CASHLESS BAIL EXPLAINED; H2 What is Cashless Bail?; Cashless Bail Explained; The Pros and Cons of Cashless Bail; What The 2024 Presidential Elections Mean for No Money Bail States.
+Outline: H1 What Is Cashless Bail? What It Means and How Delaware Handles It · H2 What Cashless Bail Means (3D) · H2 What Cashless Bail Is Not [NEW] · H2 Is Delaware a Cashless Bail State? [NEW] · H2 Delaware's Bail Law Changes on February 1, 2027 [NEW] · H2 Where the Debate Stands (3D pros/cons, made neutral) · H2 What This Means If Someone Is Arrested in Delaware [NEW] · H2 FAQ · H2 CTA
+
+### Steps 4–6
+
+- Gaps: no ranking page explains Delaware; none mentions the 2027 Delaware changes; the bail-industry page is outdated (2022).
+- Quality: avoid partisan language; attribute positions ("supporters say / critics say"); verify every legal claim; no claims about crime data.
+- Audience: families confused by news coverage; defendants asking if they'll need money; researchers. Intent: informational.
+- AEO: definition box; "Is Delaware cashless?" (no: four bond types, money bail still possible, non-monetary preferred); "What is preventive detention?" (§ 2116 effective Feb 1, 2027); "no bail meaning" FAQ.
+
+### Steps 7–12
+
+- Draft `seo-notes/drafts/what-is-cashless-bail.md` (~1,350 words). Value adds: quick answer; "is not" list; Delaware four-bond table + infographic; 2027 changes list; neutral debate section; 5-step "if arrested" list; 6 FAQs.
+- QA: § 2104 (current and 2027 text), 2027 §§ 2101/2104(e)/2107/2116(b) verified on delcode 2026-10-17; EO 14340 verified on whitehouse.gov; § 4347 re-used. Positions attributed neutrally. Scan LOW (4.7; bold-stem bullets removed).
+- SEO: title (57); description 154; category Bail Guides. Links: unsecured, secured vs cash-only, contact; drafts: bench warrant, bond hearing, cash surety.
+- Images: hero `what-is-cashless-bail-delaware.webp`; infographic `is-delaware-cashless-bail.webp`.
+- Follow-up done: the bond-hearing draft updated with a 2027 note (§ 2116 becomes preventive detention).
+
+## Blog: Can You Pay Bail With a Credit Card? (admin draft, queue #7)
+
+Primary: `can you pay bail with a credit card` (170/14). Supporting: `how does a cash bond work` (170/21) (variant only; owner is the cash-bond guide), `pay bail with debit card`, `bail bondsman credit card`. PAA: $1,000 bail bond cost; why do you only pay 10%; $50,000 cash bail meaning; $75,000 bail bond cost.
+
+### Steps 2–6 (SERP 2026-10-17)
+
+An AI Overview appears (yes: directly where the court/jail accepts it, or through a bondsman). Results: Atlas Bail (2020, ~640 words, H1 only); Reddit; Maricopa CC bail bonds; Bada Bing (CA, Jul 2026, 14 H2s: direct vs bondsman, how jails accept cards, bondsman cards/financing, steps, cost of using a card, options if a card won't work, questions to ask, county tips, key takeaways); NY Courts; Legal Aid NYC; Mr Nice Guy (~1,980 words; H2s: Can You Pay Bail With a Credit Card?; Cash Bail vs. Bail Bond; Can You Pay a Bail Bondsman With a Credit Card?; Can a Cosigner Use a Credit Card for Bail?; How Paying Bail With a Credit Card Works; Is It Better…; Alternatives; Can You Pay Bail Online…; Common Questions).
+Delaware facts verified: the Delaware Courts ePayment page lists credit card for CCP criminal fines/restitution and JP traffic violations, with no mention of bail; no official Delaware bail payment-method list was found, so the article tells readers to confirm with the court. Company card acceptance is not verified on site, so the article says "ask the agent which payment methods it accepts". § 4347(b)(c) applies to card fees (no unfiled surcharges).
+Outline: H1 Can You Pay Bail With a Credit Card? Delaware Guide · H2 Two very different card payments [NEW] · H2 Paying the court directly in Delaware [NEW, ePayment facts] · H2 Paying a bail agent's premium by card (Mr Nice Guy/Bada Bing) · H2 Can a co-signer use their card? (Mr Nice Guy) · H2 Card surcharges and Delaware's fee rule [NEW § 4347(c)] · H2 Is a card a good idea? Pros and cons (Mr Nice Guy) · H2 Options if a card won't work (Bada Bing) · H2 FAQ (PAA) · H2 CTA.
+Quality: no claims that courts accept cards for bail; no APR advice beyond "card interest adds cost". Intent: urgent transactional-informational.
+
+### Steps 7–12 (#7 credit card)
+
+Draft `seo-notes/drafts/can-you-pay-bail-with-a-credit-card.md` (~1,250 words; scan LOW 4.0). Value adds: two-routes table + infographic ($5,000 example), court questions list, premium table ($1k/$5k/$50k/$75k for PAA), co-signer note, § 4347(c) fee rule, pros/cons, alternatives list, 6 FAQs. SEO title (51), description 150, category Bail Costs. Links: secured vs cash-only, what is cash bond, payment plans, how bail bonds work, bail money back, unsecured, contact; draft link: bond hearing. Images: hero `can-you-pay-bail-with-a-credit-card-delaware.webp`, infographic `credit-card-bail-two-ways-delaware.webp`. Pushed as draft 2026-10-17.
+
+## Blog: What Percentage of Bail Do You Pay? (admin draft, queue #8)
+
+Primary: `what percentage of bail do you pay` (210/20). Supporting: `what percent of bail do you pay` (170/18), `how much of a bond do you pay` (320/23), `if bail is $250,000 how much do i pay` (260/0). Owner check: `how-much-does-a-bail-bond-cost-in-delaware` owns general cost; this post owns the percentage-by-bond-type angle and worked dollar examples, and links to the cost guide instead of repeating it.
+
+### Steps 2–6 (SERP 2026-10-15)
+
+AI Overview: 100% if paid directly to the court, 10–15% through a bondsman. PAA: What is 10% of a $5000 bond?; Do you have to pay the full amount of a bond?; How much is bail on a $1000 bond?; What does a $25,000 bail mean? Results: Reddit; NY Courts; lawfirmocala (FL, blocked); egattorneys (CA); myfloridalaw; law.uw.edu; Harrison Bail Bonds (Jan 2024, ~890 words; H2s Affordability, Encouraging Compliance, Use of Bail Bonds, Bail Bondsmen's Role, Legal Compliance, Financial Security); Philadelphia Criminal Lawyers (PA, Jun 2024; H2s How Much Money Do You Have to Pay for Bail in PA? (H3 Secured, Unsecured), Factors the Court May Consider, Reducing the Amount); dfs.ny.gov.
+Gap: no result gives a state-law percentage table by bond type; none covers a property bail agent's 20–30% on cash bail; PAA dollar examples answered only generically.
+Delaware facts verified 2026-10-15 at delcode: § 4347(b) surety premium 5–10% on bonds over $1,000, at least 5% before posting, written contract; § 4347(f) property bail agent on cash bail 20–30%, at least 20% before posting; § 4347(c) no unfiled fees; 11 Del. C. § 2104 four bond types.
+Outline: H1 What Percentage of Bail Do You Pay? Delaware Guide · H2 The short answer by bond type [NEW table] · H2 Why you only pay 10% with a bail agent (Harrison) · H2 Delaware's legal limits on the percentage [NEW § 4347(b)(f)] · H2 Worked examples $1k/$5k/$25k/$250k (PAA) · H2 When you pay 100% (cash only/paying direct) · H2 When you pay nothing (PCL unsecured) · H2 Can the percentage be lowered? (PCL reducing) · H2 FAQ · H2 CTA.
+Quality: no "10–15%" claim for Delaware (law caps surety at 10%). Intent: urgent informational/commercial.
+
+### Steps 7–12 (#8 percentage)
+
+Draft `seo-notes/drafts/what-percentage-of-bail-do-you-pay.md`. Category Bail Costs. Links: cost guide, surety bond cost, unsecured, secured vs cash-only, cash bond, bail money back, payment plans, contact; draft links: cash surety, bond hearing, credit card, how bail bonds make money. Images: hero `what-percentage-of-bail-do-you-pay-delaware.webp`, infographic `bail-percentage-by-bond-type-delaware.webp`. ~1,450 words, scan LOW 4.4. Pushed as draft 2026-10-15; verified (draft, images 200, not public).
+
+## Blog: Domestic Violence Bail Bonds in Delaware (admin draft, queue #9)
+
+Primary: `domestic violence bail bonds` (320/5). Supporting: `domestic violence bond` (170/10), `bail bonds for domestic violence` (90/1), `domestic violence bondsman` (40/0), `24 hour domestic violence bail bonds` (40/0), `dv bonds` (50/0). Owner check: amount/cost variants stay on live `/blog/how-much-is-bail-for-domestic-violence-delaware`; this post is the commercial "using a bail agent on a DV charge" article and links to it in the intro.
+
+### Steps 2–6 (SERP 2026-10-15)
+
+No AI Overview. PAA: How much is bail for a first time DV charge?; Can bail be granted in a DV case?; (Oregon grant, chances of winning: off-topic). Results: Colorado DV bail page; DV pretrial release (gov); SC DV bond; court local rule LR90; SFL Bail Bonds "Domestic Violence Bail Bonds: A Comprehensive Guide" (~610 words; H2s Legal Context, Bail Bonds Process for DV, Key Considerations, Conclusion); "Bail on DV Charges: What to Expect"; Ohio § 2919.251; NC DV bail bond guide; "How Much Is Bail in a DV Arrest?". Competitors are thin and state-specific; none is Delaware.
+Delaware facts verified 2026-10-15 at delcode: current § 2107(c) presumption of cash-only bail (within/above guidelines) for listed offenses incl. strangulation (§ 607), abuse of a pregnant female 1st, felony DV causing physical/serious physical injury, violent felony vs same victim while DV pending (and reverse); § 2107(d) bail review; § 2107(f) firearm relinquishment for listed offenses. § 2108(a)(4) no-contact/restricted contact conditions. 2027 version: § 2104(e) DV risk instrument; § 2116 preventive detention list incl. strangulation and felony DV causing injury. § 4347(b)(f) premiums. Family Court jurisdiction not verified, so not claimed.
+Outline: H1 Domestic Violence Bail Bonds in Delaware: How They Work · H2 How a bail bond works on a DV charge (SFL process) · H2 When Delaware presumes cash-only bail [NEW § 2107(c)] · H2 The no-contact order comes with the bond [NEW § 2108] · H2 Who should co-sign a DV bond [NEW] · H2 What changes on Feb 1, 2027 [NEW] · H2 How to get a DV bail bond (steps) · H2 FAQ (PAA) · H2 CTA (with 911 line).
+
+### Steps 7–12 (#9 DV bonds)
+
+Draft `seo-notes/drafts/domestic-violence-bail-bonds-delaware.md` (~1,450 words; scan LOW 0.7). Category Charges & Bail. Links: DV cost guide, secured vs cash-only, payment plans, how bail bonds work, contact; draft links: percentage, cash surety, bench warrant, cashless, bond hearing, weekend. Images: hero `domestic-violence-bail-bonds-delaware.webp`, infographic `domestic-violence-bail-bond-process-delaware.webp`. Inbound after publish: add a link from the live DV cost guide. Pushed as draft 2026-10-15; verified (draft, images 200, not public).
+
+## Blog: What Does a Bail Bondsman Do? (admin draft, queue #10)
+
+Primary: `what does a bail bondsman do` (170/24). Supporting: `how does a bondsman work` (720/23), `how does bail bondsman work` (320/25). Owner check: live `how-bail-bonds-work-in-delaware` owns the process/co-signer basics and `bail-bond-company-delaware` the service; draft `how-does-a-bail-bond-make-money` owns the business model. This post owns the agent's job: duties, collateral handling, FTA duties and legal prohibitions.
+
+### Steps 2–6 (SERP 2026-10-15)
+
+AI Overview: bondsman acts as surety, posts bail, charges a non-refundable fee "usually 10% to 15%" (not true for Delaware: capped at 10%). PAA: Why would someone use a bail bondsman?; How much is 10% of a $50,000 bond?; How does a bail bondsman actually make money?; What powers does a bail bondsman have? Results: Bloom Legal "How Does a Bail Bondsman Work?" (~1,110 words; H2s What happens when you're arrested?, That's where a bail bondsman comes in, Before you call, FAQs); explainer pages; Reddit ELI5; Wikipedia; law-firm guide; MN Freedom Fund "What is a Bail Bondsman?" (~1,040 words, single H2); career page; LII Wex.
+Gap: no result covers state rules on what an agent may not do, collateral trust duties, or FTA notice duties.
+Delaware facts verified 2026-10-15 at delcode 18 Del. C. ch. 43 subch. II: § 4332 bail agent = surety or property bail agent, bail enforcement agent separate (24 Del. C. ch. 55); § 4346 public place of business, licenses and fees displayed; § 4347 premium; § 4348 collateral reasonable, fiduciary, kept separate, no title transfer (lien only), prompt return; § 4349 notify nearest law enforcement after capias for FTA, may hire bail enforcement agent with costs to indemnitor; § 4350 prohibited acts (no attorney referrals, no soliciting at jail/court, no rebates, no paying for reductions, no "discounted" ads, license number in ads) and barred persons.
+Outline: H1 What Does a Bail Bondsman Do? Duties and Limits in Delaware · H2 What a bondsman does, step by step (Bloom) · H2 How a bondsman gets paid · H2 Collateral: held in trust [NEW § 4348] · H2 What happens if the defendant misses court [NEW § 4349] · H2 What a bail bondsman can't do in Delaware [NEW § 4350, § 4346] · H2 Why families use a bondsman (PAA) · H2 FAQ · H2 CTA.
+
+### Steps 7–12 (#10 bondsman)
+
+Draft `seo-notes/drafts/what-does-a-bail-bondsman-do.md` (~1,270 words; scan LOW after removing bold-stem steps). Category Bail Guides. Links: process step by step, how bail bonds work, common mistakes, payment plans, unsecured, bail bond company, contact; draft links: make money, percentage, bench warrant. Images: hero `what-does-a-bail-bondsman-do-delaware.webp`, infographic `what-a-bail-bondsman-does-delaware.webp`.
+
+## Blog: Can a Bail Bondsman Enter Your Home? (admin draft, queue #11)
+
+Primary: `can bail bondsman enter your home with a warrant` (110/7). Supporting: `can bail bondsman enter your home without a warrant` (90/6). PAA: How much authority does a bail bondsman have?; Can you refuse a bounty hunter?; Do you have to answer the door for bail bondsman?; Can a bail bondsman enter your home without permission?
+
+### Steps 2–6 (SERP 2026-10-15)
+
+No AI Overview. Results: law Q&A ("Can I shoot a bail bondsman…"), Avvo-style Q&A, Reddit r/AskLE, "Do Bail Bond Agents Need a Warrant for Arrest?", state pages for CA, OK, FL, listicle "5 Shocking Facts", bounty-hunter warrant page. All state-specific to other states or forums; no Delaware page.
+Delaware facts verified 2026-10-15: 24 Del. C. § 5506 (only law enforcement, court employees at judge's direction, or licensed BEAs may apprehend/detain a bailed person); § 5507 licensing (21+, no felony, etc.); § 5510 ID card and badge carried on duty; § 5515 penalties. 24 DE Admin. Code 5500 (amended 29 DE Reg. 709, 02/01/26): 2.1 clothing rules, "Bail Enforcement Agent" on outer garment, no seals; 4.2 firearm needs 40-hour course; 5.1 baton/spray/handcuff training; 6.2 training incl. Bill of Rights and search and seizure; 8.1 notify PSAP before any apprehension/surveillance attempt and on clearing; 8.2 custody transferred to police. 18 Del. C. § 4349 bail agent notice duty. Delaware statute has no explicit home-entry rule → cite Taylor v. Taintor (1872) as traditional rule; third-party homes described as legally risky, no absolute claim; "talk to a lawyer".
+Outline: H1 Can a Bail Bondsman Enter Your Home? What Delaware Law Says · H2 Who can arrest someone who skipped bail [NEW § 5506] · H2 Rules a BEA must follow [NEW table] · H2 With vs without a warrant · H2 Defendant's home vs someone else's · H2 What to do if they knock [NEW steps] · H2 If you're the one who missed court · H2 FAQ (PAA) · H2 CTA.
+
+### Steps 7–12 (#11 home entry)
+
+Draft `seo-notes/drafts/can-a-bail-bondsman-enter-your-home.md` (~1,230 words; scan LOW 4.4). Category Bail Guides. Links: how bail bonds work, bail money back, contact; draft links: what does a bail bondsman do, bench warrant. Images: hero `can-a-bail-bondsman-enter-your-home-delaware.webp`, infographic `bail-enforcement-agent-rules-delaware.webp`. Pushed as draft 2026-10-15; verified.
+
+## Blog: Can a Bail Bondsman Check for Warrants? (admin draft, queue #12)
+
+Primary: `can a bail bondsman check for warrants` (70/0). PAA: Can a bail bondsman see if I have a warrant?; Can you refuse a bounty hunter?; Is there a way to pay off a warrant?; How long do you have to stay in jail if you can't pay your bond?
+
+### Steps 2–6 (SERP 2026-10-15)
+
+AI Overview: yes; claims bondsmen access "law enforcement databases" (not supported for Delaware; article says agents use public records). Results: bail-company warrant-check pages (Sacramento, FL), Avvo-style Q&As ("Will a bail bondsman tell the police…"), "How Surety Bail Bondsmen Help Handle Arrest Warrants", "Using a Bail Bonding Company to Conduct a Warrant Search". No Delaware page.
+Delaware facts verified 2026-10-15: DELJIS Wanted Persons public search (pubsrv.deljis.delaware.gov/WantedPublic) for active warrants/capiases from Delaware courts; DSP notice (2019-01-04): recent changes may not show, only law enforcement arrests on the info, encourages voluntary surrender; DELJIS home lists Wanted Persons, VINE, ePayment. 18 Del. C. § 4349 notice duty limited to FTA defendants on the agent's bonds; 24 Del. C. § 5506. CCP Crim. R. 4(f) capias bail "as endorsed".
+Outline: H1 Can a Bail Bondsman Check for Warrants? A Delaware Guide · H2 How to check for a warrant in Delaware [NEW DELJIS steps] · H2 What a bondsman can and can't do · H2 Will a bondsman tell the police? (PAA) · H2 Types of warrants you might find [NEW table] · H2 How to turn yourself in with bail ready [NEW] · H2 FAQ · H2 CTA.
+
+### Steps 7–12 (#12 warrants)
+
+Draft `seo-notes/drafts/can-a-bail-bondsman-check-for-warrants.md` (~1,140 words; scan LOW 4.4). Category Bail Guides. Links: how to bond someone out, contact; draft links: bondsman do, bench warrant, weekend, percentage, bond hearing. Images: hero `can-a-bail-bondsman-check-for-warrants-delaware.webp`, infographic `delaware-warrant-check-steps.webp`.
+
+## Blog: How to Pay an Immigration Bond (admin draft, queue #13)
+
+Primary: `how to pay immigration bond` (110/20). Supporting: `bond payment` (320/20), `how to pay bond` (210/26), `pay immigration bond` (110/26), `immigration bond payment` (110/28). Owner check: live `/blog/immigration-bonds-delaware` has a short payment section; this is the step-by-step payment URL approved as Cluster 1A and links back to it.
+
+### Steps 2–6 (2026-10-15)
+
+Primary source review: ICE "Post a Bond" page (updated 07/01/2026): CeBONDS online since Apr 20, 2023; users in the U.S. only; U.S. citizens, LPRs, law firms, non-profits can post delivery/VD/OSUP bonds; aliens can post VD/OSUP for themselves; eligibility documents list; payment by Fedwire or ACH only; no bank access → Treasury-certified surety companies or community orgs; verification ~1–2 hours; posting hours Mon–Fri 9–3 in the detention time zone, excl. holidays; release typically by end of day after approval and I-352 signing; in-person case by case; I-333 change of address; refund help Burlington FSC. Fact sheet: amount set by DHS or EOIR; cash bond full amount at posting; delivery bond I-340 notices; VD proof within 30 days; breach notice I-323 forfeits deposit but interest refunded; bond in effect until I-391 cancellation.
+Outline: H1 How to Pay an Immigration Bond: ICE CeBONDS Step by Step · H2 Before you pay: three things to confirm · H2 Who can pay [table of documents] · H2 How to pay through CeBONDS, step by step · H2 Payment methods and hours · H2 What happens after you pay · H2 Cash bond vs immigration bond company [table] · H2 FAQ · H2 CTA.
+
+### Steps 7–12 (#13 pay immigration bond)
+
+Draft `seo-notes/drafts/how-to-pay-immigration-bond.md` (~1,250 words; scan LOW 4.8). Category Immigration Bonds. Links: immigration-bonds-delaware, contact; draft links: immigration bond hearing, refund, forms. Images: hero `how-to-pay-immigration-bond.webp`, infographic `ice-cebonds-payment-steps.webp`. No claim that the company posts immigration bonds. Pushed as draft 2026-10-16; verified.
+
+## Blog: Immigration Bond Refund (admin draft, queue #14, Cluster 1C)
+
+Primary: `bond refund immigration` (110/14). PAA: How can I get my bond money back from immigration?; Does ICE ask for bond money?; Are immigration bonds refunded?; How long does it take for ICE to approve a bond? AI Overview: refund via DHS after case closed; obligor only; I-391 + I-305.
+SERP: ICE Post a Bond; Stanford Law "Right to Reclaim Your Immigration Bond Money" PDF; Justia; USCIS I-356 (public charge, off-intent); Envision Freedom Fund lawsuit; law firm; Community Justice Exchange; ICE Form I-352 PDF; Gonzales & Gonzales.
+Primary sources verified 2026-10-16: ICE Form I-352 (11/23) text: refund of cash deposit + interest to obligor at address on file after I-391; TIN for interest; I-333 address duty; cancellation events (custody, removal, LPR grant, termination but not admin closure/stay, death, VD with proof); no breach while in custody/outside U.S.; I-323 breach, 30 days to appeal/reconsider; notice to obligor or co-obligor sufficient. ICE FAQ: breach forfeits deposit but interest refunded; refund help Burlington FSC (BondRefund.HelpDesk@ice.dhs.gov, 877-491-6521 opt 1).
+Draft `seo-notes/drafts/immigration-bond-refund.md` (~1,160 words; scan LOW). Images: hero `immigration-bond-refund.webp`, infographic `immigration-bond-refund-steps.webp`.
+
+## Blog: Immigration Bond Hearing (admin draft, queue #15, Cluster 1B)
+
+Primary: `immigration bond hearing` (210/27). Supporting: `bond hearings` (110/13). (`what is a bond hearing` is owned by the Delaware bond-hearing draft, so not used as primary here.)
+Sources verified 2026-10-16: CLINIC analysis of Matter of Yajure-Hurtado, 29 I&N Dec. 216 (BIA 2025): IJs lack authority to grant bond to people present without inspection and admission; also Matter of Akhmedov. AILA/law firm reports: Maldonado Bautista v. Santacruz vacated Yajure Hurtado on Feb 18, 2026; government appealed and the order was stayed on appeal (spring 2026). Article states status as "being litigated, check with an attorney". $1,500 statutory minimum (INA § 236(a)(2)(A)); Matter of Guerra factors; bond record separate.
+Draft `seo-notes/drafts/immigration-bond-hearing.md` (~1,210 words; scan LOW 4.4). Images: hero `immigration-bond-hearing.webp`, infographic `immigration-bond-hearing-checklist.webp`.
+
+## Blog: Immigration Bail Bonds in Delaware (admin draft, queue #16, Cluster 1D)
+
+Primary: `immigration bail bond` (880/29). Supporting: `immigration bail bonds near me` (590/21) with Delaware service-area facts, `icebond`. Sources verified 2026-10-16: ICE Philadelphia Field Office AOR = Delaware, Pennsylvania, West Virginia; Dover, DE check-in location; I-352 surety terms (Treasury Circular 570, agent co-obligor jointly liable); ICE FAQ points unbanked families to Treasury-certified sureties. No fee figures claimed (company-set). No claim the company posts immigration bonds.
+Draft `seo-notes/drafts/immigration-bail-bonds-delaware.md` (~1,110 words; scan LOW 5.4). Images: hero `immigration-bail-bonds-delaware.webp`, infographic `immigration-bail-bond-options-delaware.webp`.
+
+## Blog: ICE Bond Forms I-286 and I-352 (admin draft, queue #17)
+
+Primary: `bond letter` (140/3). Supporting: `form i-286` (110), `form i 352` (140/29), `i352` (140/23). Sources: I-352 text (above); ILRC/Justia/FBA confirm I-286 = Notice of Custody Determination with IJ review request; ICE FAQ for I-220B, I-333, I-862.
+Draft `seo-notes/drafts/ice-bond-forms-i-352-i-286.md` (scan LOW). Images: hero `ice-bond-forms-i-352-i-286.webp`, infographic `ice-bond-forms-timeline.webp`.
+
+## Blog: How to Post Bond in Delaware (admin draft, queue #18)
+
+Primary: `how to post bond` (210/28). Supporting: `what does it mean to post a bond` (390/5), `what does posting a bond mean` (260/3), `post bond` (320/23), `posting bond`. Delaware-first process guide with an immigration-posting section linking to #13/#16. Facts reused from verified § 4347 and § 2104. Draft `seo-notes/drafts/how-to-post-bond.md` (~1,080 words; scan LOW 5.4). Images: hero `how-to-post-bond-delaware.webp`, infographic `how-to-post-bond-delaware-options.webp`.
+
+Queue #8–#18 all pushed as admin drafts 2026-10-15/16 and verified (status draft, images 200, not public).

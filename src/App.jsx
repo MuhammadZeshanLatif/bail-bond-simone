@@ -295,6 +295,7 @@ useEffect(() => {
 // ============================================
 const injectSchema = (schema) => {
   useEffect(() => {
+    if (!schema) return undefined;
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.text = JSON.stringify(schema);
@@ -4404,9 +4405,12 @@ const BlogPostPage = ({ slug, navigate }) => {
     magazine ? toAbsoluteUrl(magazine.ogImage || magazine.heroImage) : ''
   );
 
+  // injectSchema is a hook, so it must run on every render: database posts have no
+  // magazine on the first render and one once the fetch resolves.
+  let schema = null;
   if (magazine) {
     if (magazine.customSchema) {
-      injectSchema(magazine.customSchema);
+      schema = magazine.customSchema;
     } else {
       const schemaGraph = [
         {
@@ -4451,9 +4455,12 @@ const BlogPostPage = ({ slug, navigate }) => {
           })),
         });
       }
-      injectSchema({ "@context": "https://schema.org", "@graph": schemaGraph });
+      schema = { "@context": "https://schema.org", "@graph": schemaGraph };
     }
+  }
+  injectSchema(schema);
 
+  if (magazine) {
     return (
       <BlogMagazinePillar
         navigate={navigate}
